@@ -50,9 +50,9 @@ MUTATIONS = [
      "    return True", "certificates/tests"),
     ("US-42 vérification publique : numéro inconnu = 404", "certificates/views.py",
      'certificate = get_object_or_404(Certificate.objects.select_related("partie__formation"), public_id=public_id)\n'
-     '    return render(request, "certificates/verify.html"',
+     '    # US-42 : score',
      'certificate = Certificate.objects.filter(public_id=public_id).first()\n'
-     '    return render(request, "certificates/verify.html"',
+     '    # US-42 : score',
      "certificates/tests"),
     ("US-53 export CSV : formules neutralisées", "progress/views.py",
      'FORMULA_PREFIXES = ("=", "+", "-", "@", "\\t", "\\r")', "FORMULA_PREFIXES = ()", "progress/tests"),
