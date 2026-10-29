@@ -178,3 +178,18 @@ def test_the_rate_page_lists_the_questions_to_review(client, module):
 
     assert "TVA sur une facture ?" in html
     assert "Sans rapport ?" not in html
+
+
+@pytest.mark.parametrize("path, fields", [
+    ("courses/formation", ("title_fr", "title_en", "description_fr", "description_en")),
+    ("courses/section", ("title_fr", "title_en", "body_md_fr", "body_md_en")),
+    ("assessments/question", ("prompt_fr", "prompt_en", "explanation_fr", "explanation_en")),
+])
+@pytest.mark.django_db
+def test_us60_back_office_edits_content_in_french_and_in_english(client, path, fields):
+    """US-60 : formations, sections et questions s'éditent en FR et en EN dans le back-office."""
+    client.force_login(make("ventisax", User.Role.ADMIN))
+
+    form = client.get(f"/fr/admin/{path}/add/").context["adminform"].form
+
+    assert set(fields) <= set(form.fields)

@@ -160,6 +160,16 @@ MUTATIONS = [
      '    return User.objects.exclude(pk__in=never_confirmed())', '    return User.objects.none()', 'accounts/tests/test_signup.py'),
     ('US-01 lien perdu : réinscription indiquée', 'templates/accounts/login.html',
      'Lien de confirmation jamais reçu ? Réinscrivez-vous avec la même adresse', 'Aide', 'accounts/tests/test_signup.py'),
+    ('US-11 programme : heures des modules', 'catalog/views.py',
+     '        "hours": hours or 0,', '        "hours": 0,', 'catalog/tests'),
+    ('US-11 programme : examen de partie annoncé', 'templates/catalog/formation_detail.html',
+     '{% translate "Examen chronométré en fin de partie ; certificat vérifiable si vous le réussissez." %}', '', 'catalog/tests courses/tests'),
+    ('US-27 schémas : montants au format de la langue', 'tools/schemas/compta.py',
+     '    return grouped if common.LANG == "en" else grouped.replace(",", " ")', '    return grouped', 'courses/tests/test_schemas_tool.py'),
+    ("US-51 détail d'une tentative : écriture journal", 'progress/views.py',
+     '    if question.qtype == Question.Type.JOURNAL:  # US-51', '    if False:  # US-51', 'progress/tests'),
+    ('US-60 back-office : sections en FR et en EN', 'courses/translation.py',
+     '    fields = ("title", "body_md")', '    fields = ("title",)', 'accounts/tests/test_backoffice.py'),
 ]
 
 

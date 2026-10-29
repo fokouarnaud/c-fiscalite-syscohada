@@ -139,3 +139,11 @@ def test_us15_a_prerequisite_never_blocks_enrolment(client, learner, open_format
     client.post(f"/fr/catalogue/{open_formation.public_id}/inscription/")
 
     assert Enrollment.objects.filter(user=learner, formation=open_formation).exists()
+
+
+def test_us11_programme_announces_the_exam_and_the_languages(client, open_formation):
+    """US-11 : le programme annonce l'examen de chaque partie et les langues de la formation."""
+    body = client.get(f"/fr/catalogue/{open_formation.public_id}/").content.decode()
+
+    assert "Examen chronométré en fin de partie" in body
+    assert "FR, EN" in body
