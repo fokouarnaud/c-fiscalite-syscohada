@@ -9,6 +9,8 @@ from django.conf import settings
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from django.core.mail import send_mail
+from django.db import transaction
+from django.db.models import Q
 from django.template.loader import render_to_string
 from django.urls import reverse
 from django.utils import timezone
@@ -47,11 +49,25 @@ class SignupForm(UserCreationForm):
         for name in ("email", "first_name", "last_name"):
             self.fields[name].required = True
 
+    def clean_username(self):
+        username = self.cleaned_data.get("username")
+        if username and not confirmed_or_active().filter(username__iexact=username).exists():
+            return username  # libre, ou tenu par un compte jamais confirmé que l'inscription remplacera
+        return super().clean_username()
+
     def clean_email(self):
         email = self.cleaned_data["email"].strip()
-        if User.objects.filter(email__iexact=email).exists():
+        if confirmed_or_active().filter(email__iexact=email).exists():
             raise forms.ValidationError(_("Un compte utilise déjà cette adresse e-mail."))
         return email
+
+    def validate_unique(self):
+        # L'unicité de l'identifiant est jugée par clean_username, qui ignore les comptes jamais confirmés.
+        exclude = self._get_validation_exclusions() | {"username"}
+        try:
+            self.instance.validate_unique(exclude=exclude)
+        except forms.ValidationError as e:
+            self._update_errors(e)
 
     @property
     def is_bot(self):
@@ -71,7 +87,21 @@ def is_signup_throttled(ip_hash, now=None):
     return SignupThrottle.objects.filter(ip_hash=ip_hash).count() >= settings.SIGNUP_MAX_PER_HOUR
 
 
+def never_confirmed():
+    """Comptes créés par l'inscription publique dont le lien n'a jamais servi (US-01)."""
+    return User.objects.filter(is_active=False, email_verified=False)
+
+
+def confirmed_or_active():
+    return User.objects.exclude(pk__in=never_confirmed())
+
+
+@transaction.atomic
 def create_pending_learner(form):
+    """Crée le compte en attente ; un compte jamais confirmé qui portait cet identifiant ou cette adresse est remplacé,
+    pour qu'un lien perdu (ou jamais parti) ne bloque pas l'apprenant."""
+    username, email = form.cleaned_data["username"], form.cleaned_data["email"]
+    never_confirmed().filter(Q(username__iexact=username) | Q(email__iexact=email)).delete()
     user = form.save(commit=False)
     user.is_active = False
     user.role = User.Role.LEARNER

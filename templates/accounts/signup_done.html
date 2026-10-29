@@ -5,5 +5,6 @@
   <h1 id="titre-page">{% translate "Vérifiez vos e-mails" %}</h1>
   <p>{% translate "Si les informations sont valides, un lien de confirmation vient de vous être envoyé. Ouvrez-le pour activer votre compte." %}</p>
   <p class="muted small">{% translate "Sans confirmation, le compte est supprimé au bout de 7 jours. Pensez à regarder dans les courriers indésirables." %}</p>
+  <p class="muted small"><a href="{% url 'signup' %}">{% translate "Lien de confirmation jamais reçu ? Réinscrivez-vous avec la même adresse : un nouveau lien vous sera envoyé." %}</a></p>
   <a class="btn btn-ghost" href="{% url 'login' %}">{% translate "Aller à la connexion" %}</a>
 {% endblock %}

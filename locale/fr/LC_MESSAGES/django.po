@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-29 04:07+0100\n"
+"POT-Creation-Date: 2026-10-29 04:34+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,15 +98,15 @@ msgstr ""
 msgid "code d'accès actif"
 msgstr ""
 
-#: .\accounts\signup.py:39 .\templates\accounts\signup.html:28
+#: .\accounts\signup.py:41 .\templates\accounts\signup.html:28
 msgid "Site web"
 msgstr ""
 
-#: .\accounts\signup.py:53
+#: .\accounts\signup.py:61
 msgid "Un compte utilise déjà cette adresse e-mail."
 msgstr ""
 
-#: .\accounts\signup.py:87
+#: .\accounts\signup.py:117
 msgid "Confirmez votre inscription à ComptaFisca Acad Ventisax"
 msgstr ""
 
@@ -947,6 +947,12 @@ msgstr ""
 msgid "Créer un compte"
 msgstr ""
 
+#: .\templates\accounts\login.html:36 .\templates\accounts\signup_done.html:8
+msgid ""
+"Lien de confirmation jamais reçu ? Réinscrivez-vous avec la même adresse : "
+"un nouveau lien vous sera envoyé."
+msgstr ""
+
 #: .\templates\accounts\password_reset_complete.html:2
 #: .\templates\accounts\password_reset_complete.html:5
 msgid "Mot de passe changé"
@@ -988,7 +994,7 @@ msgid ""
 msgstr ""
 
 #: .\templates\accounts\password_reset_done.html:7
-#: .\templates\accounts\signup_done.html:8
+#: .\templates\accounts\signup_done.html:9
 msgid "Aller à la connexion"
 msgstr ""
 

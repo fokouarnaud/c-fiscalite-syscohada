@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Acad Ventisax\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-29 04:07+0100\n"
+"POT-Creation-Date: 2026-10-29 04:34+0100\n"
 "PO-Revision-Date: 2026-10-17 12:00+0100\n"
 "Last-Translator: Acad Ventisax\n"
 "Language-Team: English\n"
@@ -94,15 +94,15 @@ msgstr "join code"
 msgid "code d'accès actif"
 msgstr "join code active"
 
-#: .\accounts\signup.py:39 .\templates\accounts\signup.html:28
+#: .\accounts\signup.py:41 .\templates\accounts\signup.html:28
 msgid "Site web"
 msgstr "Website"
 
-#: .\accounts\signup.py:53
+#: .\accounts\signup.py:61
 msgid "Un compte utilise déjà cette adresse e-mail."
 msgstr "An account already uses this e-mail address."
 
-#: .\accounts\signup.py:87
+#: .\accounts\signup.py:117
 msgid "Confirmez votre inscription à ComptaFisca Acad Ventisax"
 msgstr "Confirm your ComptaFisca Acad Ventisax registration"
 
@@ -118,7 +118,9 @@ msgstr "Too many sign-ups from this connection. Try again in an hour."
 msgid ""
 "L'e-mail de confirmation n'a pas pu être envoyé. Votre compte n'a pas été "
 "créé : réessayez dans quelques minutes."
-msgstr "The confirmation email could not be sent. Your account was not created: please try again in a few minutes."
+msgstr ""
+"The confirmation email could not be sent. Your account was not created: "
+"please try again in a few minutes."
 
 #: .\accounts\views.py:112
 msgid "Ce lien de confirmation est invalide ou a déjà servi."
@@ -949,6 +951,12 @@ msgstr "Forgot your password?"
 msgid "Créer un compte"
 msgstr "Create an account"
 
+#: .\templates\accounts\login.html:36 .\templates\accounts\signup_done.html:8
+msgid ""
+"Lien de confirmation jamais reçu ? Réinscrivez-vous avec la même adresse : "
+"un nouveau lien vous sera envoyé."
+msgstr "Never received the confirmation link? Sign up again with the same address: a new link will be sent to you."
+
 #: .\templates\accounts\password_reset_complete.html:2
 #: .\templates\accounts\password_reset_complete.html:5
 msgid "Mot de passe changé"
@@ -992,7 +1000,7 @@ msgstr ""
 "stays valid for 24 hours."
 
 #: .\templates\accounts\password_reset_done.html:7
-#: .\templates\accounts\signup_done.html:8
+#: .\templates\accounts\signup_done.html:9
 msgid "Aller à la connexion"
 msgstr "Go to sign in"
 

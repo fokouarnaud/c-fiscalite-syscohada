@@ -263,3 +263,45 @@ def test_us01_signup_says_when_the_verification_email_could_not_be_sent(client, 
     assert "L'e-mail de confirmation n'a pas pu être envoyé" in html.unescape(response.content.decode())
     assert not User.objects.filter(username="nadia").exists()
     assert any(r.levelname == "ERROR" and "nadia@example.cm" in r.getMessage() for r in caplog.records)
+
+
+@pytest.mark.django_db
+def test_us01_signing_up_again_replaces_a_never_confirmed_account(client):
+    """US-01 : un compte jamais confirmé (lien perdu ou jamais parti) ne bloque ni l'adresse ni l'identifiant ;
+    se réinscrire le remplace et envoie un nouveau lien, qui active le compte."""
+    signup(client)
+    first = User.objects.get(username="nadia")
+
+    response = signup(client)
+
+    assert response.status_code == 302
+    [account] = User.objects.filter(username="nadia")
+    assert account.pk != first.pk
+    assert len(mail.outbox) == 2
+    client.get(verification_link())
+    account.refresh_from_db()
+    assert account.is_active and account.email_verified
+
+
+@pytest.mark.django_db
+def test_us01_a_confirmed_account_keeps_its_email_and_username(client):
+    """US-01 : seul un compte jamais confirmé est remplaçable ; un compte confirmé garde son adresse et son identifiant."""
+    User.objects.create_user(username="nadia", email="autre@example.cm", password=PASSWORD, email_verified=True)
+    User.objects.create_user(username="awa", email="nadia@example.cm", password=PASSWORD, email_verified=True)
+
+    response = signup(client)
+
+    assert response.status_code == 200
+    assert set(response.context["form"].errors) == {"username", "email"}
+    assert User.objects.count() == 2
+
+
+@pytest.mark.parametrize("url", ["/fr/connexion/", "/fr/inscription/envoye/"])
+@pytest.mark.django_db
+def test_us01_a_lost_link_is_answered_by_signing_up_again(client, url):
+    """US-01 : sans lien reçu, l'apprenant sait qu'il peut se réinscrire avec la même adresse pour en recevoir un nouveau."""
+    import html
+
+    body = html.unescape(client.get(url).content.decode())
+
+    assert "Lien de confirmation jamais reçu ? Réinscrivez-vous avec la même adresse" in body
