@@ -66,3 +66,17 @@ def test_outline_numbers_modules_across_the_formation_like_the_dashboard(client,
 
     assert [row["number"] for row in response.context["outline"]] == [3]  # deux modules dans la Partie 1
     assert "M3. Le courant alternatif" in response.content.decode()
+
+
+@pytest.mark.django_db
+def test_us20_resume_card_points_to_the_first_unfinished_module_and_its_next_section(client, enrolled, course):
+    """US-20 : la carte « Reprendre » mène au premier module non terminé, à sa première section non lue."""
+    for s in course["sections"][:2]:
+        mark_section_viewed(enrolled, s)
+    client.force_login(enrolled)
+
+    response = client.get("/fr/")
+
+    current = response.context["current"]
+    assert (current["resume"], current["resume_section"]) == (course["modules"][1], course["sections"][2])
+    assert "Plan" in response.content.decode().split('class="resume"', 1)[1]
