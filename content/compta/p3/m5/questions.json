@@ -1,0 +1,690 @@
+[
+ {
+  "id": "C-P3-M5-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achat à crédit de marchandises pour 10 000 USD, cours du jour 600 FCFA (import, hors TVA dans cet exercice). Passez l'écriture.",
+   "en": "2026 financial year. Goods bought on credit for 10,000 USD, rate on the day 600 CFA francs (import, no VAT in this exercise). Record the entry."
+  },
+  "explanation": {
+   "fr": "10 000 × 600 = 6 000 000 : débit 601, crédit 401.",
+   "en": "10,000 × 600 = 6,000,000: debit 601, credit 401."
+  },
+  "journal": [
+   {
+    "account": "601",
+    "match": "3",
+    "side": "debit",
+    "amount": "6000000",
+    "label": {
+     "fr": "Achats de marchandises",
+     "en": "Purchases of goods"
+    }
+   },
+   {
+    "account": "401",
+    "match": "3",
+    "side": "credit",
+    "amount": "6000000",
+    "label": {
+     "fr": "Fournisseurs",
+     "en": "Suppliers"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M5-002",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. La dette de 10 000 USD (comptabilisée 6 000 000 FCFA) est payée au cours de 610. Passez l'écriture.",
+   "en": "2026 financial year. The 10,000 USD debt (booked at 6,000,000 CFA francs) is paid at a rate of 610. Record the entry."
+  },
+  "explanation": {
+   "fr": "Paiement 6 100 000 ; perte de change 100 000 en 676.",
+   "en": "Payment 6,100,000; exchange loss 100,000 in 676."
+  },
+  "journal": [
+   {
+    "account": "401",
+    "match": "3",
+    "side": "debit",
+    "amount": "6000000",
+    "label": {
+     "fr": "Fournisseurs",
+     "en": "Suppliers"
+    }
+   },
+   {
+    "account": "676",
+    "match": "3",
+    "side": "debit",
+    "amount": "100000",
+    "label": {
+     "fr": "Pertes de change",
+     "en": "Exchange losses"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "6100000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M5-003",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. À la clôture, une dette de 10 000 USD comptabilisée 6 000 000 FCFA vaut 6 200 000 FCFA (cours 620). Passez l'écriture d'écart de conversion.",
+   "en": "2026 financial year. At year end, a 10,000 USD debt booked at 6,000,000 CFA francs is worth 6,200,000 (rate 620). Record the translation difference."
+  },
+  "explanation": {
+   "fr": "Perte latente : débit 478, crédit 401 de 200 000.",
+   "en": "Unrealised loss: debit 478, credit 401 with 200,000."
+  },
+  "journal": [
+   {
+    "account": "478",
+    "match": "3",
+    "side": "debit",
+    "amount": "200000",
+    "label": {
+     "fr": "Écarts de conversion-actif",
+     "en": "Translation differences, assets"
+    }
+   },
+   {
+    "account": "401",
+    "match": "3",
+    "side": "credit",
+    "amount": "200000",
+    "label": {
+     "fr": "Fournisseurs",
+     "en": "Suppliers"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M5-004",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Constituez la provision pour la perte de change latente de 200 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. Set up the provision for the 200,000 CFA franc unrealised exchange loss. Record the entry."
+  },
+  "explanation": {
+   "fr": "Dotation financière 697, provision pour pertes de change 194.",
+   "en": "Financial charge 697, provision for exchange losses 194."
+  },
+  "journal": [
+   {
+    "account": "697",
+    "match": "3",
+    "side": "debit",
+    "amount": "200000",
+    "label": {
+     "fr": "Dotations financières",
+     "en": "Financial provisions"
+    }
+   },
+   {
+    "account": "194",
+    "match": "3",
+    "side": "credit",
+    "amount": "200000",
+    "label": {
+     "fr": "Provisions pour pertes de change",
+     "en": "Provisions for exchange losses"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M5-005",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Dette de 10 000 USD comptabilisée au cours de 600, payée au cours de 610. Quelle est la perte de change ?",
+   "en": "2026 financial year. A 10,000 USD debt booked at 600, paid at 610. What is the exchange loss?"
+  },
+  "explanation": {
+   "fr": "10 000 × (610 − 600) = 100 000 FCFA.",
+   "en": "10,000 × (610 − 600) = 100,000 CFA francs."
+  },
+  "numeric": {
+   "value": "100000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P3-M5-006",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un gain de change latent à la clôture est comptabilisé en produit.",
+   "en": "True or false: an unrealised exchange gain at year end is recorded as income."
+  },
+  "explanation": {
+   "fr": "Faux : il va en 479, sans produit, par prudence.",
+   "en": "False: it goes to 479, without income, by prudence."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M5-007",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une facture en euros ne crée pas de différence de change.",
+   "en": "True or false: a euro invoice creates no exchange difference."
+  },
+  "explanation": {
+   "fr": "Vrai : la parité euro/FCFA est fixe (655,957).",
+   "en": "True: the euro/CFA parity is fixed (655.957)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M5-008",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une perte de change réalisée au règlement s'enregistre en…",
+   "en": "An exchange loss realised on settlement is recorded in…"
+  },
+  "explanation": {
+   "fr": "676.",
+   "en": "676."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "676",
+     "en": "676"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "776",
+     "en": "776"
+    }
+   },
+   {
+    "text": {
+     "fr": "478",
+     "en": "478"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M5-009",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Une créance de 5 000 USD comptabilisée 3 000 000 FCFA est encaissée au cours de 590. Passez l'écriture.",
+   "en": "2026 financial year. A 5,000 USD receivable booked at 3,000,000 CFA francs is collected at a rate of 590. Record the entry."
+  },
+  "explanation": {
+   "fr": "Encaissement 2 950 000 ; perte de change 50 000.",
+   "en": "Receipt 2,950,000; exchange loss 50,000."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "2950000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "676",
+    "match": "3",
+    "side": "debit",
+    "amount": "50000",
+    "label": {
+     "fr": "Pertes de change",
+     "en": "Exchange losses"
+    }
+   },
+   {
+    "account": "411",
+    "match": "3",
+    "side": "credit",
+    "amount": "3000000",
+    "label": {
+     "fr": "Clients",
+     "en": "Customers"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M5-010",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une créance en devises qui augmente à la clôture donne un…",
+   "en": "A foreign currency receivable that rises at year end gives a…"
+  },
+  "explanation": {
+   "fr": "Écart de conversion-passif (479), gain latent.",
+   "en": "Translation difference, liabilities (479), unrealised gain."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "écart de conversion-passif",
+     "en": "translation difference, liabilities"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "gain de change en 776",
+     "en": "exchange gain in 776"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M5-011",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "À quel cours convertit-on une facture en devises ?",
+   "en": "At what rate is a foreign currency invoice converted?"
+  },
+  "explanation": {
+   "fr": "Au cours du jour de l'opération.",
+   "en": "At the rate on the transaction date."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "au cours du jour de l'opération",
+     "en": "the rate on the transaction date"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "au cours de clôture",
+     "en": "the closing rate"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M5-012",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Dette de 10 000 USD comptabilisée à 600 ; cours de clôture 620. Quel est l'écart de conversion ?",
+   "en": "2026 financial year. 10,000 USD debt booked at 600; closing rate 620. What is the translation difference?"
+  },
+  "explanation": {
+   "fr": "10 000 × 20 = 200 000 FCFA.",
+   "en": "10,000 × 20 = 200,000 CFA francs."
+  },
+  "numeric": {
+   "value": "200000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P3-M5-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un gain de change réalisé s'enregistre en…",
+   "en": "A realised exchange gain is recorded in…"
+  },
+  "explanation": {
+   "fr": "776.",
+   "en": "776."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "776",
+     "en": "776"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "676",
+     "en": "676"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M5-102",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une perte de change latente justifie une provision.",
+   "en": "True or false: an unrealised exchange loss calls for a provision."
+  },
+  "explanation": {
+   "fr": "Vrai : prudence.",
+   "en": "True: prudence."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M5-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achat de 4 000 USD au cours de 605. Quel est le montant en FCFA ?",
+   "en": "2026 financial year. Purchase of 4,000 USD at 605. What is the amount in CFA francs?"
+  },
+  "explanation": {
+   "fr": "4 000 × 605 = 2 420 000 FCFA.",
+   "en": "4,000 × 605 = 2,420,000 CFA francs."
+  },
+  "numeric": {
+   "value": "2420000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P3-M5-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une perte latente sur dette en devises se constate au débit de…",
+   "en": "An unrealised loss on a foreign currency debt is debited to…"
+  },
+  "explanation": {
+   "fr": "478 Écarts de conversion-actif.",
+   "en": "478 Translation differences, assets."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "478",
+     "en": "478"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "479",
+     "en": "479"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M5-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. À la clôture, une créance de 5 000 USD comptabilisée 3 000 000 FCFA vaut 3 050 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. At year end, a 5,000 USD receivable booked at 3,000,000 CFA francs is worth 3,050,000. Record the entry."
+  },
+  "explanation": {
+   "fr": "Gain latent : débit 411, crédit 479 de 50 000.",
+   "en": "Unrealised gain: debit 411, credit 479 with 50,000."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "match": "3",
+    "side": "debit",
+    "amount": "50000",
+    "label": {
+     "fr": "Clients",
+     "en": "Customers"
+    }
+   },
+   {
+    "account": "479",
+    "match": "3",
+    "side": "credit",
+    "amount": "50000",
+    "label": {
+     "fr": "Écarts de conversion-passif",
+     "en": "Translation differences, liabilities"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M5-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Combien vaut 1 euro en francs CFA ?",
+   "en": "How much is 1 euro in CFA francs?"
+  },
+  "explanation": {
+   "fr": "655,957 FCFA, parité fixe.",
+   "en": "655.957 CFA francs, a fixed parity."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "655,957 FCFA",
+     "en": "655.957 CFA francs"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "600 FCFA",
+     "en": "600 CFA francs"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M5-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un écart de conversion-actif est une perte déjà réalisée.",
+   "en": "True or false: a translation difference, assets, is a realised loss."
+  },
+  "explanation": {
+   "fr": "Faux : la perte est latente, non réalisée.",
+   "en": "False: the loss is unrealised."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M5-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La provision pour perte de change s'enregistre en…",
+   "en": "The provision for exchange loss is recorded in…"
+  },
+  "explanation": {
+   "fr": "194.",
+   "en": "194."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "194",
+     "en": "194"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "676",
+     "en": "676"
+    }
+   }
+  ]
+ }
+]

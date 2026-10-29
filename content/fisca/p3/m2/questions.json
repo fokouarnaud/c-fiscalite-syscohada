@@ -1,0 +1,619 @@
+[
+ {
+  "id": "F-P3-M2-001",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Droits redressés de 2 000 000 FCFA, 10 mois de retard. Quel intérêt de retard (1,5 % par mois) ?",
+   "en": "2026 financial year. Reassessed duties of 2,000,000 CFA francs, 10 months late. What late interest (1.5% a month)?"
+  },
+  "explanation": {
+   "fr": "15 % × 2 000 000 = 300 000 FCFA.",
+   "en": "15% × 2,000,000 = 300,000 CFA francs."
+  },
+  "numeric": {
+   "value": "300000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P3-M2-002",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Droits redressés de 2 000 000 FCFA, 40 mois de retard. Quel intérêt de retard ?",
+   "en": "2026 financial year. Reassessed duties of 2,000,000 CFA francs, 40 months late. What late interest?"
+  },
+  "explanation": {
+   "fr": "60 % plafonné à 50 % : 1 000 000 FCFA (art. L 95).",
+   "en": "60% capped at 50%: 1,000,000 CFA francs (s. L 95)."
+  },
+  "numeric": {
+   "value": "1000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P3-M2-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Taxation d'office : impôt de 1 000 000 FCFA, majoration de 100 %. Quel total (impôt + majoration) ?",
+   "en": "2026 financial year. Ex officio assessment: tax of 1,000,000 CFA francs, 100% increase. What total (tax + increase)?"
+  },
+  "explanation": {
+   "fr": "2 000 000 FCFA (art. L 97).",
+   "en": "2,000,000 CFA francs (s. L 97)."
+  },
+  "numeric": {
+   "value": "2000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P3-M2-004",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Dans quel délai faut-il former une réclamation ?",
+   "en": "Within what time must a claim be filed?"
+  },
+  "explanation": {
+   "fr": "30 jours (art. L 116).",
+   "en": "30 days (s. L 116)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "30 jours",
+     "en": "30 days"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "1 an",
+     "en": "1 year"
+    }
+   },
+   {
+    "text": {
+     "fr": "4 ans",
+     "en": "4 years"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M2-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quelle amende pour une déclaration non souscrite par une grande entreprise ?",
+   "en": "What fine for an unfiled return by a large company?"
+  },
+  "explanation": {
+   "fr": "200 000 FCFA (art. L 97).",
+   "en": "200,000 CFA francs (s. L 97)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "200 000 FCFA",
+     "en": "200,000 CFA francs"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "50 000 FCFA",
+     "en": "50,000 CFA francs"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M2-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "En cas de récidive, la majoration de la taxation d'office est de…",
+   "en": "For a repeat offence, the ex officio increase is…"
+  },
+  "explanation": {
+   "fr": "150 %.",
+   "en": "150%."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "150 %",
+     "en": "150%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "100 %",
+     "en": "100%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M2-007",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : pour l'intérêt de retard, tout mois commencé compte pour un mois entier.",
+   "en": "True or false: for late interest, any month started counts as a full month."
+  },
+  "explanation": {
+   "fr": "Vrai (art. L 98).",
+   "en": "True (s. L 98)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M2-008",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une réclamation de 50 000 000 FCFA en principal relève…",
+   "en": "A claim of 50,000,000 CFA francs in principal goes to…"
+  },
+  "explanation": {
+   "fr": "Du chef de centre régional des impôts (jusqu'à 75 000 000).",
+   "en": "The head of the regional tax centre (up to 75,000,000)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "du chef de centre régional",
+     "en": "the regional centre head"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "du ministre",
+     "en": "the minister"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M2-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Après une décision insatisfaisante de l'administration, le contribuable saisit…",
+   "en": "After an unsatisfactory decision, the taxpayer turns to…"
+  },
+  "explanation": {
+   "fr": "Le ministre chargé des finances (art. L 118).",
+   "en": "The minister in charge of finance (s. L 118)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "le ministre des finances",
+     "en": "the finance minister"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "le maire",
+     "en": "the mayor"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M2-010",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la réclamation peut être orale.",
+   "en": "True or false: the claim may be made orally."
+  },
+  "explanation": {
+   "fr": "Faux : par écrit (art. L 116).",
+   "en": "False: in writing (s. L 116)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M2-011",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "L'intérêt de retard est plafonné à…",
+   "en": "Late interest is capped at…"
+  },
+  "explanation": {
+   "fr": "50 % des droits.",
+   "en": "50% of the duties."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "50 %",
+     "en": "50%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "100 %",
+     "en": "100%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M2-012",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Droits redressés de 600 000 FCFA, 4 mois et 3 jours de retard. Quel intérêt de retard ?",
+   "en": "2026 financial year. Reassessed duties of 600,000 CFA francs, 4 months and 3 days late. What late interest?"
+  },
+  "explanation": {
+   "fr": "5 mois comptés : 7,5 % × 600 000 = 45 000 FCFA.",
+   "en": "5 months counted: 7.5% × 600,000 = 45,000 CFA francs."
+  },
+  "numeric": {
+   "value": "45000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P3-M2-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "L'intérêt de retard mensuel est de…",
+   "en": "Monthly late interest is…"
+  },
+  "explanation": {
+   "fr": "1,5 %.",
+   "en": "1.5%."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "1,5 %",
+     "en": "1.5%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "10 %",
+     "en": "10%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M2-102",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la taxation d'office suit une mise en demeure restée sans effet.",
+   "en": "True or false: ex officio assessment follows an ignored formal notice."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M2-103",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Amende pour une déclaration non souscrite d'un particulier ?",
+   "en": "Fine for an unfiled return by an individual?"
+  },
+  "explanation": {
+   "fr": "50 000 FCFA.",
+   "en": "50,000 CFA francs."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "50 000 FCFA",
+     "en": "50,000 CFA francs"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "200 000 FCFA",
+     "en": "200,000 CFA francs"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M2-104",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Droits de 1 000 000 FCFA, 6 mois de retard. Quel intérêt de retard ?",
+   "en": "2026 financial year. Duties of 1,000,000 CFA francs, 6 months late. What late interest?"
+  },
+  "explanation": {
+   "fr": "9 % : 90 000 FCFA.",
+   "en": "9%: 90,000 CFA francs."
+  },
+  "numeric": {
+   "value": "90000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P3-M2-105",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une réclamation de 150 000 000 FCFA d'une grande entreprise relève…",
+   "en": "A 150,000,000 CFA franc claim by a large company goes to…"
+  },
+  "explanation": {
+   "fr": "Du directeur des grandes entreprises (jusqu'à 200 000 000).",
+   "en": "The director of large companies (up to 200,000,000)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "du directeur des grandes entreprises",
+     "en": "the large companies director"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "du chef de centre régional",
+     "en": "the regional centre head"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M2-106",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la majoration de taxation d'office est de 100 %.",
+   "en": "True or false: the ex officio increase is 100%."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M2-107",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le délai de réclamation court à partir…",
+   "en": "The claim period runs from…"
+  },
+  "explanation": {
+   "fr": "De l'émission de l'avis de mise en recouvrement ou de la connaissance certaine de l'imposition.",
+   "en": "Issue of the collection notice or certain knowledge of the assessment."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "de l'avis de mise en recouvrement",
+     "en": "the collection notice"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "de la fin de l'année",
+     "en": "year end"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M2-108",
+  "type": "matching",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Associez chaque sanction à son taux.",
+   "en": "Match each penalty with its rate."
+  },
+  "explanation": {
+   "fr": "Intérêt mensuel 1,5 %, plafond 50 %, majoration d'office 100 %.",
+   "en": "Monthly interest 1.5%, cap 50%, ex officio increase 100%."
+  },
+  "pairs": [
+   {
+    "left": {
+     "fr": "Intérêt de retard mensuel",
+     "en": "Monthly late interest"
+    },
+    "right": {
+     "fr": "1,5 %",
+     "en": "1.5%"
+    }
+   },
+   {
+    "left": {
+     "fr": "Plafond de l'intérêt de retard",
+     "en": "Late interest cap"
+    },
+    "right": {
+     "fr": "50 %",
+     "en": "50%"
+    }
+   },
+   {
+    "left": {
+     "fr": "Majoration de taxation d'office",
+     "en": "Ex officio increase"
+    },
+    "right": {
+     "fr": "100 %",
+     "en": "100%"
+    }
+   }
+  ]
+ }
+]

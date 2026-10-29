@@ -1,0 +1,362 @@
+{
+  "slug": "fisca",
+  "prefix": "F",
+  "open": true,
+  "icon": "receipt",
+  "title": {
+    "fr": "Fiscalité camerounaise",
+    "en": "Cameroonian taxation"
+  },
+  "description": {
+    "fr": "Le Code général des impôts du Cameroun, édition 2026 : impôts sur les revenus, TVA et droits, fiscalité locale et procédures.",
+    "en": "Cameroon's General Tax Code, 2026 edition: income taxes, VAT and duties, local taxation and procedures."
+  },
+  "legal_reference": {
+    "fr": "CGI Cameroun, éd. 2026",
+    "en": "Cameroon GTC, 2026 ed."
+  },
+  "prerequisite_note": {
+    "fr": "Recommandé après les Parties 1 et 2 de Comptabilité",
+    "en": "Recommended after Parts 1 and 2 of Accounting"
+  },
+  "parties": [
+    {
+      "slug": "p1",
+      "order": 1,
+      "title": {
+        "fr": "Impôts sur les revenus",
+        "en": "Income taxes"
+      },
+      "description": {
+        "fr": "Système fiscal et régimes, impôt sur les sociétés, impôt sur le revenu des personnes physiques.",
+        "en": "Tax system and regimes, corporate income tax, personal income tax."
+      },
+      "modules": [
+        {
+          "order": 1,
+          "dir": "p1/m1",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Le système fiscal et les régimes d'imposition",
+            "en": "The tax system and tax regimes"
+          },
+          "competence": {
+            "fr": "Situer le CGI, s'immatriculer et identifier son régime d'imposition.",
+            "en": "Navigate the Tax Code, register and identify one's tax regime."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 1.",
+            "en": "Unlimited module quiz; Part 1 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-cgi",
+              "kind": "content",
+              "title": {
+                "fr": "Le Code général des impôts",
+                "en": "The General Tax Code"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-regimes",
+              "kind": "content",
+              "title": {
+                "fr": "Les régimes d'imposition",
+                "en": "Tax regimes"
+              }
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "dir": "p1/m2",
+          "duration_hours": 6,
+          "title": {
+            "fr": "L'impôt sur les sociétés",
+            "en": "Corporate income tax"
+          },
+          "competence": {
+            "fr": "Déterminer le bénéfice imposable et calculer l'IS et le minimum de perception.",
+            "en": "Determine taxable profit and compute corporate tax and the minimum tax."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 1.",
+            "en": "Unlimited module quiz; Part 1 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-champ",
+              "kind": "content",
+              "title": {
+                "fr": "Champ et bénéfice imposable",
+                "en": "Scope and taxable profit"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-calcul",
+              "kind": "content",
+              "title": {
+                "fr": "Taux et minimum de perception",
+                "en": "Rates and minimum tax"
+              }
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "dir": "p1/m3",
+          "duration_hours": 6,
+          "title": {
+            "fr": "L'impôt sur le revenu des personnes physiques",
+            "en": "Personal income tax"
+          },
+          "competence": {
+            "fr": "Calculer l'IRPP sur salaires et l'impôt sur les revenus de capitaux mobiliers.",
+            "en": "Compute income tax on salaries and on investment income."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 1.",
+            "en": "Unlimited module quiz; Part 1 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-salaires",
+              "kind": "content",
+              "title": {
+                "fr": "Les traitements et salaires",
+                "en": "Salaries and wages"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-capitaux",
+              "kind": "content",
+              "title": {
+                "fr": "Les revenus de capitaux mobiliers",
+                "en": "Investment income"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "p2",
+      "order": 2,
+      "title": {
+        "fr": "Taxes sur la dépense et droits",
+        "en": "Consumption taxes and duties"
+      },
+      "description": {
+        "fr": "TVA et droits d'accises, enregistrement et timbre, fiscalité locale.",
+        "en": "VAT and excise duties, registration and stamp duties, local taxation."
+      },
+      "modules": [
+        {
+          "order": 1,
+          "dir": "p2/m1",
+          "duration_hours": 6,
+          "title": {
+            "fr": "La TVA et les droits d'accises",
+            "en": "VAT and excise duties"
+          },
+          "competence": {
+            "fr": "Identifier les opérations imposables et appliquer les taux de TVA et d'accises.",
+            "en": "Identify taxable transactions and apply VAT and excise rates."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 2.",
+            "en": "Unlimited module quiz; Part 2 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-tva",
+              "kind": "content",
+              "title": {
+                "fr": "Le champ de la TVA",
+                "en": "The scope of VAT"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-accises",
+              "kind": "content",
+              "title": {
+                "fr": "Les droits d'accises",
+                "en": "Excise duties"
+              }
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "dir": "p2/m2",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Enregistrement et timbre",
+            "en": "Registration and stamp duties"
+          },
+          "competence": {
+            "fr": "Identifier les actes soumis à l'enregistrement et calculer les droits.",
+            "en": "Identify deeds subject to registration and compute the duties."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 2.",
+            "en": "Unlimited module quiz; Part 2 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-droits",
+              "kind": "content",
+              "title": {
+                "fr": "Les droits d'enregistrement",
+                "en": "Registration duties"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-timbre",
+              "kind": "content",
+              "title": {
+                "fr": "Le timbre et la comptabilisation",
+                "en": "Stamp duty and accounting"
+              }
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "dir": "p2/m3",
+          "duration_hours": 6,
+          "title": {
+            "fr": "La fiscalité locale",
+            "en": "Local taxation"
+          },
+          "competence": {
+            "fr": "Identifier les impôts locaux et calculer la taxe foncière et la TDL.",
+            "en": "Identify local taxes and compute property tax and the local development tax."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 2.",
+            "en": "Unlimited module quiz; Part 2 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-impots",
+              "kind": "content",
+              "title": {
+                "fr": "Les impôts locaux",
+                "en": "Local taxes"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-foncier",
+              "kind": "content",
+              "title": {
+                "fr": "Taxe foncière et taxe de développement local",
+                "en": "Property tax and local development tax"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "p3",
+      "order": 3,
+      "title": {
+        "fr": "Procédures fiscales",
+        "en": "Tax procedures"
+      },
+      "description": {
+        "fr": "Obligations déclaratives et contrôle, sanctions et contentieux.",
+        "en": "Filing obligations and audits, penalties and disputes."
+      },
+      "modules": [
+        {
+          "order": 1,
+          "dir": "p3/m1",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Obligations déclaratives et contrôle",
+            "en": "Filing obligations and audits"
+          },
+          "competence": {
+            "fr": "Respecter les obligations déclaratives et connaître le droit de contrôle de l'administration.",
+            "en": "Meet filing obligations and know the tax authority's audit powers."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 3.",
+            "en": "Unlimited module quiz; Part 3 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-obligations",
+              "kind": "content",
+              "title": {
+                "fr": "Déclarer et payer",
+                "en": "Filing and paying"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-controle",
+              "kind": "content",
+              "title": {
+                "fr": "Le droit de contrôle",
+                "en": "The right to audit"
+              }
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "dir": "p3/m2",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Sanctions et contentieux",
+            "en": "Penalties and disputes"
+          },
+          "competence": {
+            "fr": "Calculer les pénalités et former une réclamation dans les délais.",
+            "en": "Compute penalties and file a claim on time."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 3.",
+            "en": "Unlimited module quiz; Part 3 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-sanctions",
+              "kind": "content",
+              "title": {
+                "fr": "Les sanctions",
+                "en": "Penalties"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-contentieux",
+              "kind": "content",
+              "title": {
+                "fr": "Réclamer",
+                "en": "Filing a claim"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

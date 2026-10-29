@@ -1,0 +1,624 @@
+[
+ {
+  "id": "C-P4-M3-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Annulez le stock initial de marchandises de 2 000 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. Reverse the opening inventory of goods of 2,000,000 CFA francs. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 6031, crédit 31.",
+   "en": "Debit 6031, credit 31."
+  },
+  "journal": [
+   {
+    "account": "6031",
+    "match": "4",
+    "side": "debit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Variation des stocks",
+     "en": "Change in inventories"
+    }
+   },
+   {
+    "account": "311",
+    "match": "2",
+    "side": "credit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Marchandises",
+     "en": "Goods"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M3-002",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Constatez le stock final de marchandises de 2 600 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. Record the closing inventory of goods of 2,600,000 CFA francs. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 31, crédit 6031.",
+   "en": "Debit 31, credit 6031."
+  },
+  "journal": [
+   {
+    "account": "311",
+    "match": "2",
+    "side": "debit",
+    "amount": "2600000",
+    "label": {
+     "fr": "Marchandises",
+     "en": "Goods"
+    }
+   },
+   {
+    "account": "6031",
+    "match": "4",
+    "side": "credit",
+    "amount": "2600000",
+    "label": {
+     "fr": "Variation des stocks",
+     "en": "Change in inventories"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M3-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achats 10 000 000 FCFA ; stock initial 2 000 000 ; stock final 2 600 000. Quel est le coût d'achat des marchandises vendues ?",
+   "en": "2026 financial year. Purchases 10,000,000 CFA francs; opening inventory 2,000,000; closing inventory 2,600,000. What is the cost of goods sold?"
+  },
+  "explanation": {
+   "fr": "10 000 000 + 2 000 000 − 2 600 000 = 9 400 000 FCFA.",
+   "en": "10,000,000 + 2,000,000 − 2,600,000 = 9,400,000 CFA francs."
+  },
+  "numeric": {
+   "value": "9400000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M3-004",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Stock : 100 unités à 1 000 FCFA, puis 300 à 1 200. Sortie de 250 unités au CMUP. Quelle est la valeur de la sortie ?",
+   "en": "2026 financial year. Inventory: 100 units at 1,000 CFA francs, then 300 at 1,200. 250 units issued at weighted average cost. What is the value of the issue?"
+  },
+  "explanation": {
+   "fr": "CMUP 1 150 ; 250 × 1 150 = 287 500 FCFA.",
+   "en": "Average 1,150; 250 × 1,150 = 287,500 CFA francs."
+  },
+  "numeric": {
+   "value": "287500",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M3-005",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Même stock ; sortie de 250 unités en PEPS. Quelle est la valeur de la sortie ?",
+   "en": "2026 financial year. Same inventory; 250 units issued FIFO. What is the value of the issue?"
+  },
+  "explanation": {
+   "fr": "100 × 1 000 + 150 × 1 200 = 280 000 FCFA.",
+   "en": "100 × 1,000 + 150 × 1,200 = 280,000 CFA francs."
+  },
+  "numeric": {
+   "value": "280000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M3-006",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Un lot de marchandises coûtant 800 000 FCFA ne vaut plus que 500 000. Passez l'écriture de dépréciation.",
+   "en": "2026 financial year. A batch of goods costing 800,000 CFA francs is now worth only 500,000. Record the impairment."
+  },
+  "explanation": {
+   "fr": "300 000 : débit 659, crédit 391.",
+   "en": "300,000: debit 659, credit 391."
+  },
+  "journal": [
+   {
+    "account": "659",
+    "match": "3",
+    "side": "debit",
+    "amount": "300000",
+    "label": {
+     "fr": "Dépréciations des stocks",
+     "en": "Inventory impairment"
+    }
+   },
+   {
+    "account": "391",
+    "match": "3",
+    "side": "credit",
+    "amount": "300000",
+    "label": {
+     "fr": "Dépréciations des marchandises",
+     "en": "Impairment of goods"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M3-007",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une hausse des stocks diminue le coût d'achat des marchandises vendues.",
+   "en": "True or false: an increase in inventory reduces the cost of goods sold."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M3-008",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La variation des stocks de marchandises s'enregistre en…",
+   "en": "The change in inventories of goods is recorded in…"
+  },
+  "explanation": {
+   "fr": "6031.",
+   "en": "6031."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "6031",
+     "en": "6031"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "601",
+     "en": "601"
+    }
+   },
+   {
+    "text": {
+     "fr": "736",
+     "en": "736"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M3-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "En PEPS, les sorties sont évaluées…",
+   "en": "Under FIFO, issues are valued…"
+  },
+  "explanation": {
+   "fr": "Au coût des lots les plus anciens.",
+   "en": "At the cost of the oldest lots."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "au coût des lots les plus anciens",
+     "en": "at the oldest lots' cost"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "au coût le plus récent",
+     "en": "at the latest cost"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M3-010",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Stock : 100 unités à 1 000 FCFA et 300 à 1 200. Quel est le CMUP ?",
+   "en": "2026 financial year. Inventory: 100 units at 1,000 CFA francs and 300 at 1,200. What is the weighted average cost?"
+  },
+  "explanation": {
+   "fr": "(100 000 + 360 000) / 400 = 1 150 FCFA.",
+   "en": "(100,000 + 360,000) / 400 = 1,150 CFA francs."
+  },
+  "numeric": {
+   "value": "1150",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M3-011",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la dépréciation d'un stock est constatée quand sa valeur actuelle est inférieure à son coût.",
+   "en": "True or false: inventory is impaired when its recoverable value is below cost."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M3-012",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le stock final de marchandises s'enregistre au débit de…",
+   "en": "Closing inventory of goods is debited to…"
+  },
+  "explanation": {
+   "fr": "31 Marchandises.",
+   "en": "31 Goods."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "31",
+     "en": "31"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "6031",
+     "en": "6031"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M3-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "On annule le stock initial au…",
+   "en": "Opening inventory is reversed…"
+  },
+  "explanation": {
+   "fr": "Débit de 6031, crédit de 31.",
+   "en": "Debit 6031, credit 31."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "débit 6031, crédit 31",
+     "en": "debit 6031, credit 31"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "débit 31, crédit 6031",
+     "en": "debit 31, credit 6031"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M3-102",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Stock initial 1 500 000 FCFA ; stock final 1 200 000. Quelle est la variation (SI − SF) ?",
+   "en": "2026 financial year. Opening inventory 1,500,000 CFA francs; closing 1,200,000. What is the change (opening − closing)?"
+  },
+  "explanation": {
+   "fr": "1 500 000 − 1 200 000 = 300 000 FCFA, qui s'ajoutent aux achats.",
+   "en": "1,500,000 − 1,200,000 = 300,000 CFA francs, added to purchases."
+  },
+  "numeric": {
+   "value": "300000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M3-103",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le CMUP lisse les variations de prix d'achat.",
+   "en": "True or false: the weighted average cost smooths purchase price changes."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M3-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La dépréciation des stocks de marchandises va en…",
+   "en": "Impairment of goods inventory goes to…"
+  },
+  "explanation": {
+   "fr": "391.",
+   "en": "391."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "391",
+     "en": "391"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "291",
+     "en": "291"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M3-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Stock final de marchandises : 1 200 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. Closing inventory of goods: 1,200,000 CFA francs. Record the entry."
+  },
+  "explanation": {
+   "fr": "31 au débit, 6031 au crédit.",
+   "en": "31 debited, 6031 credited."
+  },
+  "journal": [
+   {
+    "account": "311",
+    "match": "2",
+    "side": "debit",
+    "amount": "1200000",
+    "label": {
+     "fr": "Marchandises",
+     "en": "Goods"
+    }
+   },
+   {
+    "account": "6031",
+    "match": "4",
+    "side": "credit",
+    "amount": "1200000",
+    "label": {
+     "fr": "Variation des stocks",
+     "en": "Change in inventories"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M3-106",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achats 5 000 000 ; SI 800 000 ; SF 1 000 000. Quel est le coût d'achat des marchandises vendues ?",
+   "en": "2026 financial year. Purchases 5,000,000; opening 800,000; closing 1,000,000. What is the cost of goods sold?"
+  },
+  "explanation": {
+   "fr": "5 000 000 + 800 000 − 1 000 000 = 4 800 000 FCFA.",
+   "en": "5,000,000 + 800,000 − 1,000,000 = 4,800,000 CFA francs."
+  },
+  "numeric": {
+   "value": "4800000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M3-107",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Inventaire intermittent : les achats de l'année vont en…",
+   "en": "Periodic inventory: the year's purchases go to…"
+  },
+  "explanation": {
+   "fr": "Charges (classe 6).",
+   "en": "Expenses (class 6)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "charges",
+     "en": "expenses"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "stocks",
+     "en": "inventories"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M3-108",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : en PEPS, le stock restant est évalué aux prix les plus récents.",
+   "en": "True or false: under FIFO, remaining inventory is valued at the latest prices."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ }
+]

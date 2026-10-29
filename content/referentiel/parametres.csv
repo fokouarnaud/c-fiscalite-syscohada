@@ -1,0 +1,65 @@
+key;exercice;value;unit;label_fr;label_en;source_article
+tva.taux_principal;2026;17.5;%;Taux général de la TVA;Standard VAT rate;CGI art. 142
+tva.taux_reduit;2026;10;%;Taux réduit de la TVA;Reduced VAT rate;CGI art. 142
+cac.taux;2026;10;%;Centimes additionnels communaux sur la TVA, l'IS et l'IRPP;Additional council cents on VAT, CIT and PIT;CGI art. C 83 (1)
+cac.taux_accises;2026;5;%;Centimes additionnels communaux sur les droits d'accises;Additional council cents on excise duties;CGI art. C 83 (2)
+tva.taux_global;2026;19.25;%;Taux global de la TVA, centimes additionnels compris;Overall VAT rate, council cents included;CGI art. 142 et C 83
+is.taux;2026;30;%;Taux de l'impôt sur les sociétés;Corporate income tax rate;CGI art. 17
+is.taux_reduit;2026;25;%;Taux réduit de l'IS (chiffre d'affaires jusqu'à 3 milliards);Reduced CIT rate (turnover up to 3 billion);CGI art. 17 bis
+is.seuil_taux_reduit;2026;3000000000;FCFA;Seuil de chiffre d'affaires du taux réduit de l'IS;Turnover threshold for the reduced CIT rate;CGI art. 17 bis
+is.taux_minimum_perception;2026;2;%;Taux du minimum de perception (régime du réel);Minimum tax rate (actual regime);CGI art. 21 (2)
+is.taux_minimum_perception_simplifie;2026;5;%;Taux du minimum de perception (régime simplifié);Minimum tax rate (simplified regime);CGI art. 21 (2)
+irpp.taux_frais_professionnels;2026;30;%;Frais professionnels forfaitaires sur salaires;Flat-rate professional expenses on salaries;CGI art. 34
+irpp.plafond_frais_professionnels;2026;4800000;FCFA;Plafond annuel des frais professionnels;Annual cap on professional expenses;CGI art. 34
+irpp.abattement_salaires;2026;500000;FCFA;Abattement forfaitaire annuel sur salaires;Annual flat allowance on salaries;CGI art. 29
+irpp.tranche1_plafond;2026;2000000;FCFA;Plafond de la 1re tranche du barème IRPP;Upper limit of the 1st PIT bracket;CGI art. 69
+irpp.tranche1_taux;2026;10;%;Taux de la 1re tranche du barème IRPP;Rate of the 1st PIT bracket;CGI art. 69
+irpp.tranche2_plafond;2026;3000000;FCFA;Plafond de la 2e tranche du barème IRPP;Upper limit of the 2nd PIT bracket;CGI art. 69
+irpp.tranche2_taux;2026;15;%;Taux de la 2e tranche du barème IRPP;Rate of the 2nd PIT bracket;CGI art. 69
+irpp.tranche3_plafond;2026;5000000;FCFA;Plafond de la 3e tranche du barème IRPP;Upper limit of the 3rd PIT bracket;CGI art. 69
+irpp.tranche3_taux;2026;25;%;Taux de la 3e tranche du barème IRPP;Rate of the 3rd PIT bracket;CGI art. 69
+irpp.tranche4_taux;2026;35;%;Taux de la tranche supérieure du barème IRPP;Rate of the top PIT bracket;CGI art. 69
+cfc.taux_salarie;2026;1;%;Contribution au Crédit Foncier, part salariale;Land Credit contribution, employee share;Loi 77-10 art. 6 (annexe CGI)
+cfc.taux_employeur;2026;2.5;%;Contribution au Crédit Foncier, part patronale;Land Credit contribution, employer share;Loi 77-10 art. 6 (annexe CGI)
+rav.tranche1_plafond;2026;50000;FCFA;Redevance audiovisuelle : plafond de la tranche 1 (brut mensuel);Audiovisual fee: bracket 1 ceiling (gross monthly);Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche1_montant;2026;0;FCFA;Redevance audiovisuelle mensuelle de la tranche 1;Monthly audiovisual fee, bracket 1;Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche2_plafond;2026;100000;FCFA;Redevance audiovisuelle : plafond de la tranche 2 (brut mensuel);Audiovisual fee: bracket 2 ceiling (gross monthly);Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche2_montant;2026;750;FCFA;Redevance audiovisuelle mensuelle de la tranche 2;Monthly audiovisual fee, bracket 2;Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche3_plafond;2026;200000;FCFA;Redevance audiovisuelle : plafond de la tranche 3 (brut mensuel);Audiovisual fee: bracket 3 ceiling (gross monthly);Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche3_montant;2026;1950;FCFA;Redevance audiovisuelle mensuelle de la tranche 3;Monthly audiovisual fee, bracket 3;Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche4_plafond;2026;300000;FCFA;Redevance audiovisuelle : plafond de la tranche 4 (brut mensuel);Audiovisual fee: bracket 4 ceiling (gross monthly);Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche4_montant;2026;3250;FCFA;Redevance audiovisuelle mensuelle de la tranche 4;Monthly audiovisual fee, bracket 4;Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche5_plafond;2026;400000;FCFA;Redevance audiovisuelle : plafond de la tranche 5 (brut mensuel);Audiovisual fee: bracket 5 ceiling (gross monthly);Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche5_montant;2026;4550;FCFA;Redevance audiovisuelle mensuelle de la tranche 5;Monthly audiovisual fee, bracket 5;Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche6_plafond;2026;500000;FCFA;Redevance audiovisuelle : plafond de la tranche 6 (brut mensuel);Audiovisual fee: bracket 6 ceiling (gross monthly);Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche6_montant;2026;5850;FCFA;Redevance audiovisuelle mensuelle de la tranche 6;Monthly audiovisual fee, bracket 6;Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche7_plafond;2026;600000;FCFA;Redevance audiovisuelle : plafond de la tranche 7 (brut mensuel);Audiovisual fee: bracket 7 ceiling (gross monthly);Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche7_montant;2026;7150;FCFA;Redevance audiovisuelle mensuelle de la tranche 7;Monthly audiovisual fee, bracket 7;Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche8_plafond;2026;700000;FCFA;Redevance audiovisuelle : plafond de la tranche 8 (brut mensuel);Audiovisual fee: bracket 8 ceiling (gross monthly);Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche8_montant;2026;8450;FCFA;Redevance audiovisuelle mensuelle de la tranche 8;Monthly audiovisual fee, bracket 8;Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche9_plafond;2026;800000;FCFA;Redevance audiovisuelle : plafond de la tranche 9 (brut mensuel);Audiovisual fee: bracket 9 ceiling (gross monthly);Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche9_montant;2026;9750;FCFA;Redevance audiovisuelle mensuelle de la tranche 9;Monthly audiovisual fee, bracket 9;Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche10_plafond;2026;900000;FCFA;Redevance audiovisuelle : plafond de la tranche 10 (brut mensuel);Audiovisual fee: bracket 10 ceiling (gross monthly);Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche10_montant;2026;11050;FCFA;Redevance audiovisuelle mensuelle de la tranche 10;Monthly audiovisual fee, bracket 10;Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche11_plafond;2026;1000000;FCFA;Redevance audiovisuelle : plafond de la tranche 11 (brut mensuel);Audiovisual fee: bracket 11 ceiling (gross monthly);Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche11_montant;2026;12350;FCFA;Redevance audiovisuelle mensuelle de la tranche 11;Monthly audiovisual fee, bracket 11;Loi RAV art. 3 (5) (annexe CGI)
+rav.tranche12_montant;2026;13000;FCFA;Redevance audiovisuelle mensuelle de la tranche 12;Monthly audiovisual fee, bracket 12;Loi RAV art. 3 (5) (annexe CGI)
+tdl.tranche1_plafond;2026;61999;FCFA;Taxe de développement local : plafond de la tranche 1 (salaire de base mensuel);Local development tax: bracket 1 ceiling (monthly base salary);CGI art. C 86
+tdl.tranche1_montant;2026;0;FCFA;Taxe de développement local annuelle de la tranche 1;Yearly local development tax, bracket 1;CGI art. C 86
+tdl.tranche2_plafond;2026;75000;FCFA;Taxe de développement local : plafond de la tranche 2 (salaire de base mensuel);Local development tax: bracket 2 ceiling (monthly base salary);CGI art. C 86
+tdl.tranche2_montant;2026;3000;FCFA;Taxe de développement local annuelle de la tranche 2;Yearly local development tax, bracket 2;CGI art. C 86
+tdl.tranche3_plafond;2026;100000;FCFA;Taxe de développement local : plafond de la tranche 3 (salaire de base mensuel);Local development tax: bracket 3 ceiling (monthly base salary);CGI art. C 86
+tdl.tranche3_montant;2026;6000;FCFA;Taxe de développement local annuelle de la tranche 3;Yearly local development tax, bracket 3;CGI art. C 86
+tdl.tranche4_plafond;2026;125000;FCFA;Taxe de développement local : plafond de la tranche 4 (salaire de base mensuel);Local development tax: bracket 4 ceiling (monthly base salary);CGI art. C 86
+tdl.tranche4_montant;2026;9000;FCFA;Taxe de développement local annuelle de la tranche 4;Yearly local development tax, bracket 4;CGI art. C 86
+tdl.tranche5_plafond;2026;150000;FCFA;Taxe de développement local : plafond de la tranche 5 (salaire de base mensuel);Local development tax: bracket 5 ceiling (monthly base salary);CGI art. C 86
+tdl.tranche5_montant;2026;12000;FCFA;Taxe de développement local annuelle de la tranche 5;Yearly local development tax, bracket 5;CGI art. C 86
+tdl.tranche6_plafond;2026;200000;FCFA;Taxe de développement local : plafond de la tranche 6 (salaire de base mensuel);Local development tax: bracket 6 ceiling (monthly base salary);CGI art. C 86
+tdl.tranche6_montant;2026;15000;FCFA;Taxe de développement local annuelle de la tranche 6;Yearly local development tax, bracket 6;CGI art. C 86
+tdl.tranche7_plafond;2026;250000;FCFA;Taxe de développement local : plafond de la tranche 7 (salaire de base mensuel);Local development tax: bracket 7 ceiling (monthly base salary);CGI art. C 86
+tdl.tranche7_montant;2026;18000;FCFA;Taxe de développement local annuelle de la tranche 7;Yearly local development tax, bracket 7;CGI art. C 86
+tdl.tranche8_plafond;2026;300000;FCFA;Taxe de développement local : plafond de la tranche 8 (salaire de base mensuel);Local development tax: bracket 8 ceiling (monthly base salary);CGI art. C 86
+tdl.tranche8_montant;2026;24000;FCFA;Taxe de développement local annuelle de la tranche 8;Yearly local development tax, bracket 8;CGI art. C 86
+tdl.tranche9_plafond;2026;500000;FCFA;Taxe de développement local : plafond de la tranche 9 (salaire de base mensuel);Local development tax: bracket 9 ceiling (monthly base salary);CGI art. C 86
+tdl.tranche9_montant;2026;27000;FCFA;Taxe de développement local annuelle de la tranche 9;Yearly local development tax, bracket 9;CGI art. C 86
+tdl.tranche10_montant;2026;30000;FCFA;Taxe de développement local annuelle de la tranche 10;Yearly local development tax, bracket 10;CGI art. C 86

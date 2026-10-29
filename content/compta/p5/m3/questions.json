@@ -1,0 +1,648 @@
+[
+ {
+  "id": "C-P5-M3-001",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Ventes de marchandises 42 000 000 FCFA ; coût d'achat des marchandises vendues 29 400 000. Quelle est la marge commerciale ?",
+   "en": "2026 financial year. Sales of goods 42,000,000 CFA francs; cost of goods sold 29,400,000. What is the gross trading margin?"
+  },
+  "explanation": {
+   "fr": "42 000 000 − 29 400 000 = 12 600 000 FCFA.",
+   "en": "42,000,000 − 29,400,000 = 12,600,000 CFA francs."
+  },
+  "numeric": {
+   "value": "12600000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M3-002",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Marge commerciale 12 600 000 FCFA ; consommations externes 4 800 000. Quelle est la valeur ajoutée ?",
+   "en": "2026 financial year. Gross trading margin 12,600,000 CFA francs; external consumption 4,800,000. What is value added?"
+  },
+  "explanation": {
+   "fr": "12 600 000 − 4 800 000 = 7 800 000 FCFA.",
+   "en": "12,600,000 − 4,800,000 = 7,800,000 CFA francs."
+  },
+  "numeric": {
+   "value": "7800000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M3-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Valeur ajoutée 7 800 000 FCFA ; charges de personnel 2 700 000. Quel est l'EBE ?",
+   "en": "2026 financial year. Value added 7,800,000 CFA francs; staff costs 2,700,000. What is the gross operating surplus?"
+  },
+  "explanation": {
+   "fr": "7 800 000 − 2 700 000 = 5 100 000 FCFA.",
+   "en": "7,800,000 − 2,700,000 = 5,100,000 CFA francs."
+  },
+  "numeric": {
+   "value": "5100000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M3-004",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. EBE 5 100 000 FCFA ; dotations aux amortissements 1 500 000 ; aucune reprise. Quel est le résultat d'exploitation ?",
+   "en": "2026 financial year. GOS 5,100,000 CFA francs; depreciation 1,500,000; no reversals. What is the operating result?"
+  },
+  "explanation": {
+   "fr": "5 100 000 − 1 500 000 = 3 600 000 FCFA.",
+   "en": "5,100,000 − 1,500,000 = 3,600,000 CFA francs."
+  },
+  "numeric": {
+   "value": "3600000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M3-005",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Soldez les comptes : ventes 42 000 000 ; achats 30 000 000 ; loyers 4 800 000 ; salaires 2 700 000. Passez l'écriture de détermination du résultat.",
+   "en": "2026 financial year. Clear the accounts: sales 42,000,000; purchases 30,000,000; rent 4,800,000; wages 2,700,000. Record the result entry."
+  },
+  "explanation": {
+   "fr": "Débit 701 ; crédit 601, 622, 661 ; bénéfice 4 500 000 en 131.",
+   "en": "Debit 701; credit 601, 622, 661; profit 4,500,000 in 131."
+  },
+  "journal": [
+   {
+    "account": "701",
+    "match": "3",
+    "side": "debit",
+    "amount": "42000000",
+    "label": {
+     "fr": "Ventes de marchandises",
+     "en": "Sales of goods"
+    }
+   },
+   {
+    "account": "601",
+    "match": "3",
+    "side": "credit",
+    "amount": "30000000",
+    "label": {
+     "fr": "Achats de marchandises",
+     "en": "Purchases of goods"
+    }
+   },
+   {
+    "account": "622",
+    "match": "3",
+    "side": "credit",
+    "amount": "4800000",
+    "label": {
+     "fr": "Locations",
+     "en": "Rents"
+    }
+   },
+   {
+    "account": "661",
+    "match": "3",
+    "side": "credit",
+    "amount": "2700000",
+    "label": {
+     "fr": "Rémunérations",
+     "en": "Pay"
+    }
+   },
+   {
+    "account": "131",
+    "match": "3",
+    "side": "credit",
+    "amount": "4500000",
+    "label": {
+     "fr": "Bénéfice",
+     "en": "Profit"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M3-006",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Produits financiers 300 000 FCFA ; charges financières 1 000 000. Quel est le résultat financier ?",
+   "en": "2026 financial year. Financial income 300,000 CFA francs; financial expenses 1,000,000. What is the financial result?"
+  },
+  "explanation": {
+   "fr": "300 000 − 1 000 000 = −700 000 FCFA.",
+   "en": "300,000 − 1,000,000 = −700,000 CFA francs."
+  },
+  "numeric": {
+   "value": "-700000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M3-007",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Résultat d'exploitation 3 600 000 FCFA ; résultat financier −700 000. Quel est le résultat des activités ordinaires ?",
+   "en": "2026 financial year. Operating result 3,600,000 CFA francs; financial result −700,000. What is the result from ordinary activities?"
+  },
+  "explanation": {
+   "fr": "3 600 000 − 700 000 = 2 900 000 FCFA.",
+   "en": "3,600,000 − 700,000 = 2,900,000 CFA francs."
+  },
+  "numeric": {
+   "value": "2900000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M3-008",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "L'EBE se calcule…",
+   "en": "The gross operating surplus is computed…"
+  },
+  "explanation": {
+   "fr": "Valeur ajoutée − charges de personnel.",
+   "en": "Value added − staff costs."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "VA − charges de personnel",
+     "en": "VA − staff costs"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "VA − dotations",
+     "en": "VA − depreciation"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M3-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une plus-value de cession d'immobilisation entre dans…",
+   "en": "A gain on disposal of a fixed asset is part of…"
+  },
+  "explanation": {
+   "fr": "Le résultat hors activités ordinaires.",
+   "en": "The non-ordinary result."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "le RHAO",
+     "en": "the non-ordinary result"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "la marge commerciale",
+     "en": "the gross trading margin"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M3-010",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les dotations aux amortissements sont déduites avant l'EBE.",
+   "en": "True or false: depreciation is deducted before the GOS."
+  },
+  "explanation": {
+   "fr": "Faux : après l'EBE, pour arriver au résultat d'exploitation.",
+   "en": "False: after the GOS, to reach the operating result."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M3-011",
+  "type": "matching",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Associez chaque solde à son compte.",
+   "en": "Match each balance with its account."
+  },
+  "explanation": {
+   "fr": "MC 132, VA 133, EBE 134, RE 135.",
+   "en": "Margin 132, VA 133, GOS 134, operating result 135."
+  },
+  "pairs": [
+   {
+    "left": {
+     "fr": "Marge commerciale",
+     "en": "Gross trading margin"
+    },
+    "right": {
+     "fr": "132",
+     "en": "132"
+    }
+   },
+   {
+    "left": {
+     "fr": "Valeur ajoutée",
+     "en": "Value added"
+    },
+    "right": {
+     "fr": "133",
+     "en": "133"
+    }
+   },
+   {
+    "left": {
+     "fr": "Excédent brut d'exploitation",
+     "en": "Gross operating surplus"
+    },
+    "right": {
+     "fr": "134",
+     "en": "134"
+    }
+   },
+   {
+    "left": {
+     "fr": "Résultat d'exploitation",
+     "en": "Operating result"
+    },
+    "right": {
+     "fr": "135",
+     "en": "135"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M3-012",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. RAO 2 900 000 FCFA ; RHAO 1 000 000 ; impôt 1 000 000 ; pas de participation. Quel est le résultat net ?",
+   "en": "2026 financial year. ROA 2,900,000 CFA francs; non-ordinary result 1,000,000; tax 1,000,000; no profit sharing. What is the net result?"
+  },
+  "explanation": {
+   "fr": "2 900 000 + 1 000 000 − 1 000 000 = 2 900 000 FCFA.",
+   "en": "2,900,000 + 1,000,000 − 1,000,000 = 2,900,000 CFA francs."
+  },
+  "numeric": {
+   "value": "2900000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M3-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La marge commerciale concerne…",
+   "en": "The gross trading margin concerns…"
+  },
+  "explanation": {
+   "fr": "Les marchandises achetées et revendues.",
+   "en": "Goods bought and resold."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "les marchandises revendues",
+     "en": "goods resold"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "les produits fabriqués",
+     "en": "manufactured goods"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M3-102",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Ventes de marchandises 10 000 000 FCFA ; coût d'achat des marchandises vendues 7 000 000. Quelle est la marge commerciale ?",
+   "en": "2026 financial year. Sales of goods 10,000,000 CFA francs; cost of goods sold 7,000,000. What is the gross trading margin?"
+  },
+  "explanation": {
+   "fr": "3 000 000 FCFA.",
+   "en": "3,000,000 CFA francs."
+  },
+  "numeric": {
+   "value": "3000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M3-103",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : l'impôt sur le résultat est déduit après le résultat des activités ordinaires et HAO.",
+   "en": "True or false: income tax is deducted after the ordinary and non-ordinary results."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M3-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le résultat financier = …",
+   "en": "Financial result = …"
+  },
+  "explanation": {
+   "fr": "Produits financiers − charges financières.",
+   "en": "Financial income − financial expenses."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "produits financiers − charges financières",
+     "en": "financial income − financial expenses"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "ventes − achats",
+     "en": "sales − purchases"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M3-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Soldez : ventes 9 000 000 ; achats 7 350 000. Passez l'écriture de détermination du résultat.",
+   "en": "2026 financial year. Clear: sales 9,000,000; purchases 7,350,000. Record the result entry."
+  },
+  "explanation": {
+   "fr": "Débit 701, crédit 601 et 131 (1 650 000).",
+   "en": "Debit 701, credit 601 and 131 (1,650,000)."
+  },
+  "journal": [
+   {
+    "account": "701",
+    "match": "3",
+    "side": "debit",
+    "amount": "9000000",
+    "label": {
+     "fr": "Ventes de marchandises",
+     "en": "Sales of goods"
+    }
+   },
+   {
+    "account": "601",
+    "match": "3",
+    "side": "credit",
+    "amount": "7350000",
+    "label": {
+     "fr": "Achats de marchandises",
+     "en": "Purchases of goods"
+    }
+   },
+   {
+    "account": "131",
+    "match": "3",
+    "side": "credit",
+    "amount": "1650000",
+    "label": {
+     "fr": "Bénéfice",
+     "en": "Profit"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M3-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La valeur ajoutée mesure…",
+   "en": "Value added measures…"
+  },
+  "explanation": {
+   "fr": "La richesse créée par l'entreprise.",
+   "en": "The wealth created by the business."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "la richesse créée",
+     "en": "the wealth created"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "la trésorerie",
+     "en": "cash"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M3-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le RAO = résultat d'exploitation + résultat financier.",
+   "en": "True or false: ROA = operating result + financial result."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M3-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le résultat hors activités ordinaires va en…",
+   "en": "The non-ordinary result goes to…"
+  },
+  "explanation": {
+   "fr": "138.",
+   "en": "138."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "138",
+     "en": "138"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "137",
+     "en": "137"
+    }
+   }
+  ]
+ }
+]

@@ -1,0 +1,626 @@
+[
+ {
+  "id": "F-P2-M2-001",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achat d'un immeuble urbain bâti de 50 000 000 FCFA. Quels droits d'enregistrement au taux de 10 % ?",
+   "en": "2026 financial year. Purchase of a developed urban building for 50,000,000 CFA francs. What registration duties at 10%?"
+  },
+  "explanation": {
+   "fr": "5 000 000 FCFA (art. 543).",
+   "en": "5,000,000 CFA francs (s. 543)."
+  },
+  "numeric": {
+   "value": "5000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P2-M2-002",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel taux frappe les mutations d'immeubles urbains bâtis ?",
+   "en": "What rate applies to transfers of developed urban property?"
+  },
+  "explanation": {
+   "fr": "Le taux intermédiaire de 10 % (art. 543).",
+   "en": "The intermediate rate of 10% (s. 543)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "10 %",
+     "en": "10%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "1 %",
+     "en": "1%"
+    }
+   },
+   {
+    "text": {
+     "fr": "15 %",
+     "en": "15%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M2-003",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un droit fixe est…",
+   "en": "A fixed duty is…"
+  },
+  "explanation": {
+   "fr": "Indépendant de la valeur de l'acte.",
+   "en": "Independent of the deed's value."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "indépendant de la valeur",
+     "en": "independent of value"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "proportionnel à la valeur",
+     "en": "proportional to value"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M2-004",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quels montants de droits fixes spécifiques prévoit l'article 545 ?",
+   "en": "What specific fixed duties does section 545 provide?"
+  },
+  "explanation": {
+   "fr": "50 000 FCFA et 20 000 FCFA.",
+   "en": "50,000 and 20,000 CFA francs."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "50 000 et 20 000 FCFA",
+     "en": "50,000 and 20,000 CFA francs"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "1 000 000 FCFA",
+     "en": "1,000,000 CFA francs"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M2-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les apports en capital lors de la constitution d'une société supportent des droits…",
+   "en": "Capital contributions on forming a company bear duties that are…"
+  },
+  "explanation": {
+   "fr": "Dégressifs, par tranches (art. 544).",
+   "en": "Degressive, by bracket (s. 544)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "dégressifs",
+     "en": "degressive"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "de 10 %",
+     "en": "10%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M2-006",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la mutation de jouissance d'un fonds de commerce est soumise au taux de 10 %.",
+   "en": "True or false: the lease of a business is subject to the 10% rate."
+  },
+  "explanation": {
+   "fr": "Vrai (art. 543).",
+   "en": "True (s. 543)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M2-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "L'enregistrement d'un acte lui donne…",
+   "en": "Registering a deed gives it…"
+  },
+  "explanation": {
+   "fr": "Date certaine.",
+   "en": "A certain date."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "date certaine",
+     "en": "a certain date"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "une valeur comptable",
+     "en": "a book value"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M2-008",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Droits d'enregistrement de 80 000 FCFA sur un bail commercial, payés par virement. Passez l'écriture.",
+   "en": "2026 financial year. Registration duties of 80,000 CFA francs on a commercial lease, paid by transfer. Record the entry."
+  },
+  "explanation": {
+   "fr": "Charge 646, banque 521.",
+   "en": "Expense 646, bank 521."
+  },
+  "journal": [
+   {
+    "account": "646",
+    "match": "3",
+    "side": "debit",
+    "amount": "80000",
+    "label": {
+     "fr": "Droits d'enregistrement",
+     "en": "Registration duties"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "80000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M2-009",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Acte soumis au taux super réduit de 1 % sur une valeur de 30 000 000 FCFA. Quels droits ?",
+   "en": "2026 financial year. A deed at the very reduced 1% rate on a value of 30,000,000 CFA francs. What duties?"
+  },
+  "explanation": {
+   "fr": "300 000 FCFA.",
+   "en": "300,000 CFA francs."
+  },
+  "numeric": {
+   "value": "300000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P2-M2-010",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les actes enregistrés au droit fixe donnent ouverture au droit de timbre gradué.",
+   "en": "True or false: deeds registered at a fixed duty also bear graduated stamp duty."
+  },
+  "explanation": {
+   "fr": "Vrai (art. 545).",
+   "en": "True (s. 545)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M2-011",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les droits d'enregistrement courants se comptabilisent en…",
+   "en": "Routine registration duties are recorded in…"
+  },
+  "explanation": {
+   "fr": "646.",
+   "en": "646."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "646",
+     "en": "646"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "641",
+     "en": "641"
+    }
+   },
+   {
+    "text": {
+     "fr": "891",
+     "en": "891"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M2-012",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les droits payés à l'achat d'un immeuble sont, en comptabilité, …",
+   "en": "Duties paid on buying a building are, in the accounts, …"
+  },
+  "explanation": {
+   "fr": "Des frais d'acquisition de l'immeuble.",
+   "en": "Acquisition costs of the building."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "des frais d'acquisition",
+     "en": "acquisition costs"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "un produit",
+     "en": "income"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M2-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les droits proportionnels se calculent…",
+   "en": "Proportional duties are computed…"
+  },
+  "explanation": {
+   "fr": "En pourcentage de la valeur.",
+   "en": "As a percentage of value."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "en pourcentage de la valeur",
+     "en": "as a percentage of value"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "forfaitairement",
+     "en": "as a flat amount"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M2-102",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Immeuble urbain bâti de 20 000 000 FCFA ; taux 10 %. Quels droits ?",
+   "en": "2026 financial year. Developed urban building of 20,000,000 CFA francs; 10% rate. What duties?"
+  },
+  "explanation": {
+   "fr": "2 000 000 FCFA.",
+   "en": "2,000,000 CFA francs."
+  },
+  "numeric": {
+   "value": "2000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P2-M2-103",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un droit fixe varie avec le prix de vente.",
+   "en": "True or false: a fixed duty varies with the sale price."
+  },
+  "explanation": {
+   "fr": "Faux.",
+   "en": "False."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M2-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel article fixe les taux proportionnels de 10 % et 1 % ?",
+   "en": "Which section sets the 10% and 1% proportional rates?"
+  },
+  "explanation": {
+   "fr": "L'article 543.",
+   "en": "Section 543."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "543",
+     "en": "543"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "142",
+     "en": "142"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M2-105",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le timbre gradué accompagne…",
+   "en": "Graduated stamp duty accompanies…"
+  },
+  "explanation": {
+   "fr": "Les actes enregistrés au droit fixe.",
+   "en": "Deeds registered at a fixed duty."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "les actes à droit fixe",
+     "en": "fixed-duty deeds"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "les salaires",
+     "en": "salaries"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M2-106",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : l'augmentation de capital d'une société supporte des droits dégressifs.",
+   "en": "True or false: a company's capital increase bears degressive duties."
+  },
+  "explanation": {
+   "fr": "Vrai (art. 544).",
+   "en": "True (s. 544)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M2-107",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Trois actes au droit fixe de 20 000 FCFA. Total des droits fixes ?",
+   "en": "2026 financial year. Three deeds at a fixed duty of 20,000 CFA francs. Total fixed duties?"
+  },
+  "explanation": {
+   "fr": "60 000 FCFA.",
+   "en": "60,000 CFA francs."
+  },
+  "numeric": {
+   "value": "60000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P2-M2-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La mutation d'un immeuble urbain bâti est taxée à…",
+   "en": "The transfer of a developed urban building is taxed at…"
+  },
+  "explanation": {
+   "fr": "10 %.",
+   "en": "10%."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "10 %",
+     "en": "10%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "2 %",
+     "en": "2%"
+    }
+   }
+  ]
+ }
+]

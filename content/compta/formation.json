@@ -1,0 +1,1172 @@
+{
+  "slug": "compta",
+  "prefix": "C",
+  "open": true,
+  "icon": "ledger",
+  "title": {
+    "fr": "Comptabilité SYSCOHADA",
+    "en": "SYSCOHADA accounting"
+  },
+  "description": {
+    "fr": "Tenir la comptabilité d'une entreprise camerounaise selon le SYSCOHADA révisé : principes, écritures courantes, inventaire et états financiers.",
+    "en": "Keep the books of a Cameroonian business under the revised SYSCOHADA: principles, everyday entries, year-end work and financial statements."
+  },
+  "legal_reference": {
+    "fr": "SYSCOHADA révisé (AUDCIF)",
+    "en": "Revised SYSCOHADA (AUDCIF)"
+  },
+  "parties": [
+    {
+      "slug": "p1",
+      "order": 1,
+      "title": {
+        "fr": "Fondamentaux",
+        "en": "Fundamentals"
+      },
+      "description": {
+        "fr": "Le cadre comptable OHADA, les principes, le plan de comptes et l'écriture en partie double.",
+        "en": "The OHADA accounting framework, its principles, the chart of accounts and double-entry bookkeeping."
+      },
+      "modules": [
+        {
+          "order": 1,
+          "dir": "p1/m1",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Le cadre comptable OHADA",
+            "en": "The OHADA accounting framework"
+          },
+          "competence": {
+            "fr": "Situer le SYSCOHADA révisé, appliquer ses principes et classer une opération dans le plan de comptes.",
+            "en": "Place the revised SYSCOHADA, apply its principles and classify a transaction in the chart of accounts."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 1.",
+            "en": "Unlimited module quiz; Part 1 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-cadre",
+              "kind": "content",
+              "title": {
+                "fr": "Le SYSCOHADA révisé",
+                "en": "The revised SYSCOHADA"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-principes",
+              "kind": "content",
+              "title": {
+                "fr": "Les principes comptables",
+                "en": "Accounting principles"
+              }
+            },
+            {
+              "order": 3,
+              "file": "03-plan-de-comptes",
+              "kind": "content",
+              "title": {
+                "fr": "Le plan de comptes et la partie double",
+                "en": "The chart of accounts and double entry"
+              }
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "dir": "p1/m2",
+          "duration_hours": 6,
+          "title": {
+            "fr": "L'écriture comptable",
+            "en": "Bookkeeping entries"
+          },
+          "competence": {
+            "fr": "Passer une écriture équilibrée et suivre un compte du journal à la balance.",
+            "en": "Record a balanced entry and follow an account from the journal to the trial balance."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 1.",
+            "en": "Unlimited module quiz; Part 1 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-debit-credit",
+              "kind": "content",
+              "title": {
+                "fr": "Débit et crédit",
+                "en": "Debit and credit"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-journal-balance",
+              "kind": "content",
+              "title": {
+                "fr": "Journal, grand livre et balance",
+                "en": "Journal, ledger and trial balance"
+              }
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "dir": "p1/m3",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Actif et passif",
+            "en": "Assets and liabilities"
+          },
+          "competence": {
+            "fr": "Lire et construire un bilan simple, classer chaque élément.",
+            "en": "Read and build a simple balance sheet, classify each item."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 1.",
+            "en": "Unlimited module quiz; Part 1 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-bilan",
+              "kind": "content",
+              "title": {
+                "fr": "Le bilan",
+                "en": "The balance sheet"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-classer",
+              "kind": "content",
+              "title": {
+                "fr": "Classer un élément du bilan",
+                "en": "Classifying a balance sheet item"
+              }
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "dir": "p1/m4",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Charges et produits",
+            "en": "Expenses and income"
+          },
+          "competence": {
+            "fr": "Classer charges et produits et calculer le résultat de l'exercice.",
+            "en": "Classify expenses and income and compute the year's result."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 1.",
+            "en": "Unlimited module quiz; Part 1 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-charges-produits",
+              "kind": "content",
+              "title": {
+                "fr": "Le compte de résultat",
+                "en": "The income statement"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-classer-charges",
+              "kind": "content",
+              "title": {
+                "fr": "Ranger charges et produits",
+                "en": "Filing expenses and income"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "p2",
+      "order": 2,
+      "title": {
+        "fr": "Opérations courantes",
+        "en": "Everyday operations"
+      },
+      "description": {
+        "fr": "TVA, achats, ventes, réductions, frais accessoires, autres charges et produits, paie et règlements.",
+        "en": "VAT, purchases, sales, discounts, incidental costs, other expenses and income, payroll and settlements."
+      },
+      "modules": [
+        {
+          "order": 1,
+          "dir": "p2/m1",
+          "duration_hours": 6,
+          "title": {
+            "fr": "La TVA : mécanisme et déclaration",
+            "en": "VAT: mechanism and return"
+          },
+          "competence": {
+            "fr": "Calculer la TVA collectée et déductible, puis liquider la TVA due ou le crédit.",
+            "en": "Compute output and input VAT, then settle VAT due or a credit."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 2.",
+            "en": "Unlimited module quiz; Part 2 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-mecanisme",
+              "kind": "content",
+              "title": {
+                "fr": "Le mécanisme de la TVA",
+                "en": "How VAT works"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-declaration",
+              "kind": "content",
+              "title": {
+                "fr": "Déduction et déclaration mensuelle",
+                "en": "Deduction and monthly return"
+              }
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "dir": "p2/m2",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Les achats",
+            "en": "Purchases"
+          },
+          "competence": {
+            "fr": "Enregistrer un achat de biens, ses frais accessoires et les emballages consignés.",
+            "en": "Record a purchase of goods, its incidental costs and returnable packaging."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 2.",
+            "en": "Unlimited module quiz; Part 2 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-achats",
+              "kind": "content",
+              "title": {
+                "fr": "Enregistrer un achat",
+                "en": "Recording a purchase"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-emballages",
+              "kind": "content",
+              "title": {
+                "fr": "Les emballages consignés",
+                "en": "Returnable packaging"
+              }
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "dir": "p2/m3",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Les ventes",
+            "en": "Sales"
+          },
+          "competence": {
+            "fr": "Enregistrer une vente, les frais refacturés et les emballages consignés aux clients.",
+            "en": "Record a sale, re-invoiced costs and packaging deposited with customers."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 2.",
+            "en": "Unlimited module quiz; Part 2 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-ventes",
+              "kind": "content",
+              "title": {
+                "fr": "Enregistrer une vente",
+                "en": "Recording a sale"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-emballages-clients",
+              "kind": "content",
+              "title": {
+                "fr": "Consignes facturées aux clients",
+                "en": "Deposits charged to customers"
+              }
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "dir": "p2/m4",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Réductions commerciales et financières",
+            "en": "Trade and cash discounts"
+          },
+          "competence": {
+            "fr": "Traiter remises, rabais, ristournes et escomptes, sur facture ou par avoir.",
+            "en": "Handle trade discounts, allowances, rebates and cash discounts, on the invoice or by credit note."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 2.",
+            "en": "Unlimited module quiz; Part 2 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-reductions",
+              "kind": "content",
+              "title": {
+                "fr": "Réductions commerciales",
+                "en": "Trade discounts"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-escompte",
+              "kind": "content",
+              "title": {
+                "fr": "L'escompte de règlement",
+                "en": "Cash discount"
+              }
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "dir": "p2/m5",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Les frais accessoires",
+            "en": "Incidental costs"
+          },
+          "competence": {
+            "fr": "Distinguer frais sur achats, frais sur ventes et frais refacturés.",
+            "en": "Tell apart purchase costs, selling costs and re-invoiced costs."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 2.",
+            "en": "Unlimited module quiz; Part 2 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-frais",
+              "kind": "content",
+              "title": {
+                "fr": "Frais sur achats et frais sur ventes",
+                "en": "Purchase costs and selling costs"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-exemples",
+              "kind": "content",
+              "title": {
+                "fr": "Deux factures de transport",
+                "en": "Two transport invoices"
+              }
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "dir": "p2/m6",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Autres charges et autres produits",
+            "en": "Other expenses and income"
+          },
+          "competence": {
+            "fr": "Enregistrer services extérieurs, impôts et taxes, produits accessoires.",
+            "en": "Record external services, taxes and ancillary income."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 2.",
+            "en": "Unlimited module quiz; Part 2 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-services",
+              "kind": "content",
+              "title": {
+                "fr": "Services extérieurs, impôts et taxes",
+                "en": "External services, taxes and duties"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-produits",
+              "kind": "content",
+              "title": {
+                "fr": "Les produits accessoires",
+                "en": "Ancillary income"
+              }
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "dir": "p2/m7",
+          "duration_hours": 6,
+          "title": {
+            "fr": "La paie",
+            "en": "Payroll"
+          },
+          "competence": {
+            "fr": "Passer les écritures de paie : brut, retenues, charges patronales et paiement.",
+            "en": "Record payroll: gross pay, withholdings, employer charges and payment."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 2.",
+            "en": "Unlimited module quiz; Part 2 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-bulletin",
+              "kind": "content",
+              "title": {
+                "fr": "Du brut au net",
+                "en": "From gross to net pay"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-ecritures",
+              "kind": "content",
+              "title": {
+                "fr": "Les écritures de paie",
+                "en": "Payroll entries"
+              }
+            }
+          ]
+        },
+        {
+          "order": 8,
+          "dir": "p2/m8",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Les règlements",
+            "en": "Settlements"
+          },
+          "competence": {
+            "fr": "Enregistrer encaissements, décaissements, effets de commerce et virements internes.",
+            "en": "Record receipts, payments, bills of exchange and internal transfers."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 2.",
+            "en": "Unlimited module quiz; Part 2 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-tresorerie",
+              "kind": "content",
+              "title": {
+                "fr": "Encaisser et payer",
+                "en": "Receiving and paying"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-effets",
+              "kind": "content",
+              "title": {
+                "fr": "Les effets de commerce",
+                "en": "Bills of exchange"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "p3",
+      "order": 3,
+      "title": {
+        "fr": "Investissement et financement",
+        "en": "Investment and financing"
+      },
+      "description": {
+        "fr": "Immobilisations, titres, emprunts et apports, subventions, opérations en devises.",
+        "en": "Fixed assets, securities, loans and contributions, grants, foreign currency transactions."
+      },
+      "modules": [
+        {
+          "order": 1,
+          "dir": "p3/m1",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Les immobilisations",
+            "en": "Fixed assets"
+          },
+          "competence": {
+            "fr": "Déterminer le coût d'entrée d'une immobilisation et l'enregistrer.",
+            "en": "Determine the cost of a fixed asset and record it."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 3.",
+            "en": "Unlimited module quiz; Part 3 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-cout",
+              "kind": "content",
+              "title": {
+                "fr": "Le coût d'entrée",
+                "en": "Initial cost"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-production",
+              "kind": "content",
+              "title": {
+                "fr": "Immobilisations produites par l'entreprise",
+                "en": "Self-constructed assets"
+              }
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "dir": "p3/m2",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Les opérations sur titres",
+            "en": "Securities"
+          },
+          "competence": {
+            "fr": "Classer et enregistrer l'achat, la cession et les revenus des titres.",
+            "en": "Classify and record the purchase, sale and income of securities."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 3.",
+            "en": "Unlimited module quiz; Part 3 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-classer",
+              "kind": "content",
+              "title": {
+                "fr": "Trois familles de titres",
+                "en": "Three kinds of securities"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-cession",
+              "kind": "content",
+              "title": {
+                "fr": "Céder des titres de placement",
+                "en": "Selling short-term securities"
+              }
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "dir": "p3/m3",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Les opérations de financement",
+            "en": "Financing"
+          },
+          "competence": {
+            "fr": "Enregistrer emprunts, remboursements, apports et location-acquisition.",
+            "en": "Record loans, repayments, contributions and lease-purchase."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 3.",
+            "en": "Unlimited module quiz; Part 3 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-emprunts",
+              "kind": "content",
+              "title": {
+                "fr": "Emprunter et rembourser",
+                "en": "Borrowing and repaying"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-fonds-propres",
+              "kind": "content",
+              "title": {
+                "fr": "Apports et location-acquisition",
+                "en": "Contributions and lease-purchase"
+              }
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "dir": "p3/m4",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Les subventions",
+            "en": "Grants"
+          },
+          "competence": {
+            "fr": "Distinguer subventions d'investissement et d'exploitation et les enregistrer.",
+            "en": "Tell investment grants from operating grants and record them."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 3.",
+            "en": "Unlimited module quiz; Part 3 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-investissement",
+              "kind": "content",
+              "title": {
+                "fr": "Subvention d'investissement",
+                "en": "Investment grant"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-exploitation",
+              "kind": "content",
+              "title": {
+                "fr": "Subvention d'exploitation",
+                "en": "Operating grant"
+              }
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "dir": "p3/m5",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Les opérations en devises",
+            "en": "Foreign currency transactions"
+          },
+          "competence": {
+            "fr": "Convertir une opération en devises, constater les écarts de change et les écarts de conversion.",
+            "en": "Convert a foreign currency transaction, record exchange differences and translation differences."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 3.",
+            "en": "Unlimited module quiz; Part 3 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-change",
+              "kind": "content",
+              "title": {
+                "fr": "Achats, ventes et règlements en devises",
+                "en": "Purchases, sales and settlements in foreign currency"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-cloture",
+              "kind": "content",
+              "title": {
+                "fr": "Les écarts de conversion à la clôture",
+                "en": "Translation differences at year end"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "p4",
+      "order": 4,
+      "title": {
+        "fr": "Travaux d'inventaire",
+        "en": "Year-end work"
+      },
+      "description": {
+        "fr": "Amortissements, dépréciations, stocks, créances douteuses, provisions, cessions et régularisations.",
+        "en": "Depreciation, impairment, inventories, doubtful receivables, provisions, disposals and adjustments."
+      },
+      "modules": [
+        {
+          "order": 1,
+          "dir": "p4/m1",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Les amortissements",
+            "en": "Depreciation"
+          },
+          "competence": {
+            "fr": "Calculer et enregistrer la dotation aux amortissements.",
+            "en": "Compute and record the depreciation charge."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 4.",
+            "en": "Unlimited module quiz; Part 4 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-plan",
+              "kind": "content",
+              "title": {
+                "fr": "Le plan d'amortissement",
+                "en": "The depreciation schedule"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-ecriture",
+              "kind": "content",
+              "title": {
+                "fr": "L'écriture de dotation",
+                "en": "The depreciation entry"
+              }
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "dir": "p4/m2",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Les dépréciations des immobilisations",
+            "en": "Impairment of fixed assets"
+          },
+          "competence": {
+            "fr": "Constater et reprendre une dépréciation d'immobilisation.",
+            "en": "Record and reverse a fixed asset impairment."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 4.",
+            "en": "Unlimited module quiz; Part 4 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-test",
+              "kind": "content",
+              "title": {
+                "fr": "Valeur actuelle et VNC",
+                "en": "Recoverable value and NBV"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-exemple",
+              "kind": "content",
+              "title": {
+                "fr": "Un matériel déprécié",
+                "en": "Impaired equipment"
+              }
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "dir": "p4/m3",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Les stocks à l'inventaire",
+            "en": "Inventories at year end"
+          },
+          "competence": {
+            "fr": "Constater la variation des stocks, les évaluer et les déprécier.",
+            "en": "Record inventory changes, value and impair inventories."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 4.",
+            "en": "Unlimited module quiz; Part 4 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-variation",
+              "kind": "content",
+              "title": {
+                "fr": "La variation des stocks",
+                "en": "Change in inventories"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-evaluation",
+              "kind": "content",
+              "title": {
+                "fr": "Évaluer et déprécier les stocks",
+                "en": "Valuing and impairing inventories"
+              }
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "dir": "p4/m4",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Les créances douteuses",
+            "en": "Doubtful receivables"
+          },
+          "competence": {
+            "fr": "Isoler une créance douteuse, la déprécier et constater une perte.",
+            "en": "Isolate a doubtful receivable, impair it and record a loss."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 4.",
+            "en": "Unlimited module quiz; Part 4 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-douteuses",
+              "kind": "content",
+              "title": {
+                "fr": "Isoler et déprécier",
+                "en": "Isolate and impair"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-perte",
+              "kind": "content",
+              "title": {
+                "fr": "La perte définitive",
+                "en": "Final loss"
+              }
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "dir": "p4/m5",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Les provisions pour risques et charges",
+            "en": "Provisions for risks and charges"
+          },
+          "competence": {
+            "fr": "Constater, ajuster et reprendre une provision.",
+            "en": "Record, adjust and reverse a provision."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 4.",
+            "en": "Unlimited module quiz; Part 4 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-provision",
+              "kind": "content",
+              "title": {
+                "fr": "Une dette probable",
+                "en": "A probable liability"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-ajuster",
+              "kind": "content",
+              "title": {
+                "fr": "Ajuster chaque année",
+                "en": "Adjusting each year"
+              }
+            }
+          ]
+        },
+        {
+          "order": 6,
+          "dir": "p4/m6",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Les cessions d'immobilisations",
+            "en": "Disposals of fixed assets"
+          },
+          "competence": {
+            "fr": "Enregistrer la cession d'une immobilisation et calculer la plus- ou moins-value.",
+            "en": "Record the disposal of a fixed asset and compute the gain or loss."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 4.",
+            "en": "Unlimited module quiz; Part 4 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-cession",
+              "kind": "content",
+              "title": {
+                "fr": "Sortir un bien de l'actif",
+                "en": "Removing an asset"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-exemple",
+              "kind": "content",
+              "title": {
+                "fr": "Le camion revendu",
+                "en": "The lorry sold"
+              }
+            }
+          ]
+        },
+        {
+          "order": 7,
+          "dir": "p4/m7",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Les autres régularisations",
+            "en": "Other adjustments"
+          },
+          "competence": {
+            "fr": "Rattacher charges et produits au bon exercice.",
+            "en": "Attach expenses and income to the right year."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 4.",
+            "en": "Unlimited module quiz; Part 4 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-avance",
+              "kind": "content",
+              "title": {
+                "fr": "Charges et produits constatés d'avance",
+                "en": "Prepaid expenses and deferred income"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-recevoir",
+              "kind": "content",
+              "title": {
+                "fr": "Charges à payer et produits à recevoir",
+                "en": "Accrued expenses and accrued income"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "slug": "p5",
+      "order": 5,
+      "title": {
+        "fr": "Clôture et états financiers",
+        "en": "Closing and financial statements"
+      },
+      "description": {
+        "fr": "Clôture et affectation du résultat, bilan, compte de résultat, tableau des flux de trésorerie, organisation et contrôles.",
+        "en": "Closing and appropriation, balance sheet, income statement, cash flow statement, organisation and controls."
+      },
+      "modules": [
+        {
+          "order": 1,
+          "dir": "p5/m1",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Clôture, réouverture et affectation du résultat",
+            "en": "Closing, reopening and appropriation"
+          },
+          "competence": {
+            "fr": "Déterminer le résultat, l'affecter et rouvrir les comptes.",
+            "en": "Determine the result, appropriate it and reopen the books."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 5.",
+            "en": "Unlimited module quiz; Part 5 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-cloture",
+              "kind": "content",
+              "title": {
+                "fr": "Clôturer l'exercice",
+                "en": "Closing the year"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-affectation",
+              "kind": "content",
+              "title": {
+                "fr": "Affecter le résultat",
+                "en": "Appropriating the result"
+              }
+            }
+          ]
+        },
+        {
+          "order": 2,
+          "dir": "p5/m2",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Le bilan SYSCOHADA",
+            "en": "The SYSCOHADA balance sheet"
+          },
+          "competence": {
+            "fr": "Lire le bilan et calculer fonds de roulement, besoin de financement et trésorerie nette.",
+            "en": "Read the balance sheet and compute working capital, financing need and net cash."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 5.",
+            "en": "Unlimited module quiz; Part 5 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-structure",
+              "kind": "content",
+              "title": {
+                "fr": "La structure du bilan",
+                "en": "Balance sheet layout"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-equilibre",
+              "kind": "content",
+              "title": {
+                "fr": "Les grands équilibres",
+                "en": "Key balances"
+              }
+            }
+          ]
+        },
+        {
+          "order": 3,
+          "dir": "p5/m3",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Le compte de résultat et ses soldes",
+            "en": "The income statement and its balances"
+          },
+          "competence": {
+            "fr": "Calculer les soldes intermédiaires du SYSCOHADA.",
+            "en": "Compute the SYSCOHADA intermediate balances."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 5.",
+            "en": "Unlimited module quiz; Part 5 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-soldes",
+              "kind": "content",
+              "title": {
+                "fr": "Les soldes intermédiaires",
+                "en": "Intermediate balances"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-exemple",
+              "kind": "content",
+              "title": {
+                "fr": "Les soldes de Mbarga Distribution",
+                "en": "Mbarga Distribution's balances"
+              }
+            }
+          ]
+        },
+        {
+          "order": 4,
+          "dir": "p5/m4",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Le tableau des flux de trésorerie",
+            "en": "The cash flow statement"
+          },
+          "competence": {
+            "fr": "Classer les flux de trésorerie et expliquer la variation de la trésorerie.",
+            "en": "Classify cash flows and explain the change in cash."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 5.",
+            "en": "Unlimited module quiz; Part 5 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-flux",
+              "kind": "content",
+              "title": {
+                "fr": "Trois familles de flux",
+                "en": "Three kinds of flows"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-exemple",
+              "kind": "content",
+              "title": {
+                "fr": "L'année de Mbarga Distribution",
+                "en": "Mbarga Distribution's year"
+              }
+            }
+          ]
+        },
+        {
+          "order": 5,
+          "dir": "p5/m5",
+          "duration_hours": 6,
+          "title": {
+            "fr": "Organisation et contrôles comptables",
+            "en": "Accounting organisation and controls"
+          },
+          "competence": {
+            "fr": "Organiser les journaux et contrôler les comptes, dont le rapprochement bancaire.",
+            "en": "Organise the journals and check the accounts, including bank reconciliation."
+          },
+          "evaluation_note": {
+            "fr": "Quiz de module illimité ; examen de la partie 5.",
+            "en": "Unlimited module quiz; Part 5 exam."
+          },
+          "sections": [
+            {
+              "order": 1,
+              "file": "01-organisation",
+              "kind": "content",
+              "title": {
+                "fr": "Journaux et systèmes",
+                "en": "Journals and systems"
+              }
+            },
+            {
+              "order": 2,
+              "file": "02-rapprochement",
+              "kind": "content",
+              "title": {
+                "fr": "Le rapprochement bancaire",
+                "en": "Bank reconciliation"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

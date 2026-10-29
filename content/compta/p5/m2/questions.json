@@ -1,0 +1,627 @@
+[
+ {
+  "id": "C-P5-M2-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. L'impôt sur les bénéfices de l'exercice, 1 000 000 FCFA, n'est pas encore payé. Passez l'écriture.",
+   "en": "2026 financial year. The year's income tax, 1,000,000 CFA francs, is not yet paid. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 891, crédit 441.",
+   "en": "Debit 891, credit 441."
+  },
+  "journal": [
+   {
+    "account": "891",
+    "match": "3",
+    "side": "debit",
+    "amount": "1000000",
+    "label": {
+     "fr": "Impôt sur les bénéfices",
+     "en": "Income tax"
+    }
+   },
+   {
+    "account": "441",
+    "match": "3",
+    "side": "credit",
+    "amount": "1000000",
+    "label": {
+     "fr": "État, impôt sur les bénéfices",
+     "en": "State, income tax"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M2-002",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Ressources stables 25 000 000 FCFA ; actif immobilisé 18 000 000. Quel est le fonds de roulement ?",
+   "en": "2026 financial year. Long-term funds 25,000,000 CFA francs; fixed assets 18,000,000. What is working capital?"
+  },
+  "explanation": {
+   "fr": "25 000 000 − 18 000 000 = 7 000 000 FCFA.",
+   "en": "25,000,000 − 18,000,000 = 7,000,000 CFA francs."
+  },
+  "numeric": {
+   "value": "7000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M2-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. FR 7 000 000 FCFA ; besoin de financement 5 000 000. Quelle est la trésorerie nette ?",
+   "en": "2026 financial year. Working capital 7,000,000 CFA francs; financing need 5,000,000. What is net cash?"
+  },
+  "explanation": {
+   "fr": "7 000 000 − 5 000 000 = 2 000 000 FCFA.",
+   "en": "7,000,000 − 5,000,000 = 2,000,000 CFA francs."
+  },
+  "numeric": {
+   "value": "2000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M2-004",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Actif circulant 9 000 000 FCFA ; passif circulant 4 000 000. Quel est le besoin de financement ?",
+   "en": "2026 financial year. Current assets 9,000,000 CFA francs; current liabilities 4,000,000. What is the financing need?"
+  },
+  "explanation": {
+   "fr": "9 000 000 − 4 000 000 = 5 000 000 FCFA.",
+   "en": "9,000,000 − 4,000,000 = 5,000,000 CFA francs."
+  },
+  "numeric": {
+   "value": "5000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M2-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un découvert bancaire figure au bilan en…",
+   "en": "A bank overdraft appears in the balance sheet as…"
+  },
+  "explanation": {
+   "fr": "Trésorerie-passif.",
+   "en": "Cash liabilities."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "trésorerie-passif",
+     "en": "cash liabilities"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "dettes financières",
+     "en": "financial debts"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M2-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "L'impôt sur le résultat non payé à la clôture figure en…",
+   "en": "Income tax unpaid at year end appears in…"
+  },
+  "explanation": {
+   "fr": "Passif circulant (441).",
+   "en": "Current liabilities (441)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "passif circulant",
+     "en": "current liabilities"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "capitaux propres",
+     "en": "equity"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M2-007",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : à l'actif du bilan, chaque poste figure brut, amortissements et dépréciations, puis net.",
+   "en": "True or false: on the assets side, each line shows gross, depreciation and impairment, then net."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M2-008",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le fonds de roulement est égal à…",
+   "en": "Working capital equals…"
+  },
+  "explanation": {
+   "fr": "Ressources stables − actif immobilisé.",
+   "en": "Long-term funds − fixed assets."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "ressources stables − actif immobilisé",
+     "en": "long-term funds − fixed assets"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "actif circulant − passif circulant",
+     "en": "current assets − current liabilities"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M2-009",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : trésorerie nette = fonds de roulement − besoin de financement.",
+   "en": "True or false: net cash = working capital − financing need."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M2-010",
+  "type": "multiple",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Lesquels sont des ressources stables ?",
+   "en": "Which are long-term funds?"
+  },
+  "explanation": {
+   "fr": "Capitaux propres et dettes financières ; les dettes fournisseurs sont du passif circulant.",
+   "en": "Equity and financial debts; trade payables are current liabilities."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Capital social",
+     "en": "Share capital"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Emprunt bancaire à long terme",
+     "en": "Long-term bank loan"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Dettes fournisseurs",
+     "en": "Trade payables"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Découvert bancaire",
+     "en": "Bank overdraft"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M2-011",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Trésorerie-actif 2 600 000 FCFA ; trésorerie-passif 600 000. Quelle est la trésorerie nette ?",
+   "en": "2026 financial year. Cash assets 2,600,000 CFA francs; cash liabilities 600,000. What is net cash?"
+  },
+  "explanation": {
+   "fr": "2 600 000 − 600 000 = 2 000 000 FCFA.",
+   "en": "2,600,000 − 600,000 = 2,000,000 CFA francs."
+  },
+  "numeric": {
+   "value": "2000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M2-012",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un écart de conversion-actif figure…",
+   "en": "A translation difference, assets, appears…"
+  },
+  "explanation": {
+   "fr": "À l'actif, sur une ligne distincte.",
+   "en": "On the assets side, on a separate line."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "à l'actif",
+     "en": "on the assets side"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "au passif",
+     "en": "on the liabilities side"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M2-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les dettes fournisseurs figurent en…",
+   "en": "Trade payables appear in…"
+  },
+  "explanation": {
+   "fr": "Passif circulant.",
+   "en": "Current liabilities."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "passif circulant",
+     "en": "current liabilities"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "dettes financières",
+     "en": "financial debts"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M2-102",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Ressources stables 12 000 000 FCFA ; actif immobilisé 13 500 000. Quel est le fonds de roulement ?",
+   "en": "2026 financial year. Long-term funds 12,000,000 CFA francs; fixed assets 13,500,000. What is working capital?"
+  },
+  "explanation": {
+   "fr": "12 000 000 − 13 500 000 = −1 500 000 FCFA (insuffisant).",
+   "en": "12,000,000 − 13,500,000 = −1,500,000 CFA francs (insufficient)."
+  },
+  "numeric": {
+   "value": "-1500000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M2-103",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un fonds de roulement négatif signifie que des immobilisations sont financées par des ressources courtes.",
+   "en": "True or false: negative working capital means some fixed assets are funded by short-term sources."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M2-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les stocks figurent en…",
+   "en": "Inventories appear in…"
+  },
+  "explanation": {
+   "fr": "Actif circulant.",
+   "en": "Current assets."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "actif circulant",
+     "en": "current assets"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "actif immobilisé",
+     "en": "fixed assets"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M2-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Impôt sur les bénéfices de 650 000 FCFA dû à la clôture. Passez l'écriture.",
+   "en": "2026 financial year. Income tax of 650,000 CFA francs due at year end. Record the entry."
+  },
+  "explanation": {
+   "fr": "891 / 441.",
+   "en": "891 / 441."
+  },
+  "journal": [
+   {
+    "account": "891",
+    "match": "3",
+    "side": "debit",
+    "amount": "650000",
+    "label": {
+     "fr": "Impôt sur les bénéfices",
+     "en": "Income tax"
+    }
+   },
+   {
+    "account": "441",
+    "match": "3",
+    "side": "credit",
+    "amount": "650000",
+    "label": {
+     "fr": "État, impôt sur les bénéfices",
+     "en": "State, income tax"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M2-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le besoin de financement = …",
+   "en": "Financing need = …"
+  },
+  "explanation": {
+   "fr": "Actif circulant − passif circulant.",
+   "en": "Current assets − current liabilities."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "actif circulant − passif circulant",
+     "en": "current assets − current liabilities"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "capitaux propres − dettes",
+     "en": "equity − debts"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M2-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le capital social fait partie des capitaux propres.",
+   "en": "True or false: share capital is part of equity."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M2-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La trésorerie-actif comprend…",
+   "en": "Cash assets include…"
+  },
+  "explanation": {
+   "fr": "Banque créditrice pour l'entreprise et caisse.",
+   "en": "Positive bank balances and cash on hand."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "banque et caisse",
+     "en": "bank and cash"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "stocks",
+     "en": "inventories"
+    }
+   }
+  ]
+ }
+]

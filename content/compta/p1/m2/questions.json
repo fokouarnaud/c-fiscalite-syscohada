@@ -1,0 +1,709 @@
+[
+ {
+  "id": "C-P1-M2-001",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un compte d'actif augmente…",
+   "en": "An asset account increases…"
+  },
+  "explanation": {
+   "fr": "Un actif (emploi) augmente au débit et diminue au crédit.",
+   "en": "An asset (use) increases on the debit side and decreases on the credit side."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "au débit",
+     "en": "on the debit side"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "au crédit",
+     "en": "on the credit side"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-002",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une dette fournisseur augmente…",
+   "en": "A supplier debt increases…"
+  },
+  "explanation": {
+   "fr": "Une dette est une ressource (passif) : elle augmente au crédit.",
+   "en": "A debt is a source of funds (liability): it increases on the credit side."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "au crédit",
+     "en": "on the credit side"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "au débit",
+     "en": "on the debit side"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-003",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "De quel côté enregistre-t-on une charge ?",
+   "en": "Which side records an expense?"
+  },
+  "explanation": {
+   "fr": "Une charge s'enregistre au débit d'un compte de classe 6.",
+   "en": "An expense is recorded on the debit side of a class 6 account."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Au débit",
+     "en": "Debit"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Au crédit",
+     "en": "Credit"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-004",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "De quel côté enregistre-t-on un produit ?",
+   "en": "Which side records income?"
+  },
+  "explanation": {
+   "fr": "Un produit s'enregistre au crédit d'un compte de classe 7.",
+   "en": "Income is recorded on the credit side of a class 7 account."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Au crédit",
+     "en": "Credit"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Au débit",
+     "en": "Debit"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-005",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : dans une balance juste, le total des débits égale le total des crédits.",
+   "en": "True or false: in a correct trial balance, total debits equal total credits."
+  },
+  "explanation": {
+   "fr": "Vrai : chaque écriture est équilibrée, donc la balance l'est aussi.",
+   "en": "True: every entry balances, so the trial balance does too."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel document enregistre les opérations dans l'ordre chronologique ?",
+   "en": "Which book records transactions in date order?"
+  },
+  "explanation": {
+   "fr": "Le journal ; le grand livre les regroupe ensuite compte par compte.",
+   "en": "The journal; the general ledger then groups them account by account."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le journal",
+     "en": "The journal"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Le grand livre",
+     "en": "The general ledger"
+    }
+   },
+   {
+    "text": {
+     "fr": "La balance",
+     "en": "The trial balance"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel document donne le solde de chaque compte, ligne à ligne ?",
+   "en": "Which book gives each account's balance, line by line?"
+  },
+  "explanation": {
+   "fr": "Le grand livre regroupe toutes les lignes d'un même compte.",
+   "en": "The general ledger groups all the lines of the same account."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le grand livre",
+     "en": "The general ledger"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Le journal",
+     "en": "The journal"
+    }
+   },
+   {
+    "text": {
+     "fr": "La pièce justificative",
+     "en": "The supporting document"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-008",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Le compte Caisse totalise 780 000 FCFA au débit et 545 000 FCFA au crédit. Quel est son solde débiteur ?",
+   "en": "2026 financial year. The cash account totals 780,000 CFA francs of debits and 545,000 of credits. What is its debit balance?"
+  },
+  "explanation": {
+   "fr": "780 000 − 545 000 = 235 000 FCFA.",
+   "en": "780,000 − 545,000 = 235,000 CFA francs."
+  },
+  "numeric": {
+   "value": "235000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P1-M2-009",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Mbarga Distribution paie par virement bancaire une dette fournisseur de 350 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. Mbarga Distribution pays a supplier debt of 350,000 CFA francs by bank transfer. Record the entry."
+  },
+  "explanation": {
+   "fr": "La dette diminue : débit 401 ; la banque diminue : crédit 521.",
+   "en": "The debt decreases: debit 401; the bank decreases: credit 521."
+  },
+  "journal": [
+   {
+    "account": "401",
+    "match": "3",
+    "side": "debit",
+    "amount": "350000",
+    "label": {
+     "fr": "Fournisseurs",
+     "en": "Suppliers"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "350000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-010",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Un client remet 240 000 FCFA en espèces pour solder sa facture. Passez l'écriture.",
+   "en": "2026 financial year. A customer pays 240,000 CFA francs in cash to settle an invoice. Record the entry."
+  },
+  "explanation": {
+   "fr": "La caisse augmente : débit 571 ; la créance client diminue : crédit 411.",
+   "en": "Cash increases: debit 571; the receivable decreases: credit 411."
+  },
+  "journal": [
+   {
+    "account": "571",
+    "match": "3",
+    "side": "debit",
+    "amount": "240000",
+    "label": {
+     "fr": "Caisse",
+     "en": "Cash"
+    }
+   },
+   {
+    "account": "411",
+    "match": "3",
+    "side": "credit",
+    "amount": "240000",
+    "label": {
+     "fr": "Clients",
+     "en": "Customers"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-011",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Le loyer du mois, 400 000 FCFA, est payé par chèque bancaire (opération hors TVA dans cet exercice). Passez l'écriture.",
+   "en": "2026 financial year. The monthly rent, 400,000 CFA francs, is paid by bank cheque (no VAT in this exercise). Record the entry."
+  },
+  "explanation": {
+   "fr": "Le loyer est une charge : débit 622 ; la banque diminue : crédit 521.",
+   "en": "Rent is an expense: debit 622; the bank decreases: credit 521."
+  },
+  "journal": [
+   {
+    "account": "622",
+    "match": "3",
+    "side": "debit",
+    "amount": "400000",
+    "label": {
+     "fr": "Locations",
+     "en": "Rents"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "400000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-012",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une écriture peut être passée sans pièce justificative si le montant est faible.",
+   "en": "True or false: an entry may be made without a supporting document if the amount is small."
+  },
+  "explanation": {
+   "fr": "Faux : toute écriture s'appuie sur une pièce justificative.",
+   "en": "False: every entry rests on a supporting document."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le compte Banque augmente. On l'inscrit…",
+   "en": "The bank account increases. It goes…"
+  },
+  "explanation": {
+   "fr": "La banque est un actif : elle augmente au débit.",
+   "en": "The bank is an asset: it increases on the debit side."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "au débit",
+     "en": "on the debit side"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "au crédit",
+     "en": "on the credit side"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-102",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un compte de passif a normalement un solde créditeur.",
+   "en": "True or false: a liability account normally has a credit balance."
+  },
+  "explanation": {
+   "fr": "Vrai : un passif augmente au crédit.",
+   "en": "True: a liability increases on the credit side."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-103",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel document vérifie que débits et crédits sont égaux pour tous les comptes ?",
+   "en": "Which document checks that debits and credits are equal across all accounts?"
+  },
+  "explanation": {
+   "fr": "La balance reprend tous les comptes avec leurs totaux.",
+   "en": "The trial balance lists every account with its totals."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "La balance",
+     "en": "The trial balance"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Le journal",
+     "en": "The journal"
+    }
+   },
+   {
+    "text": {
+     "fr": "La facture",
+     "en": "The invoice"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-104",
+  "type": "matching",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Associez chaque compte à son sens d'augmentation.",
+   "en": "Match each account with the side on which it increases."
+  },
+  "explanation": {
+   "fr": "Actifs et charges augmentent au débit ; passifs et produits au crédit.",
+   "en": "Assets and expenses increase on the debit side; liabilities and income on the credit side."
+  },
+  "pairs": [
+   {
+    "left": {
+     "fr": "521 Banque",
+     "en": "521 Bank"
+    },
+    "right": {
+     "fr": "Débit",
+     "en": "Debit"
+    }
+   },
+   {
+    "left": {
+     "fr": "401 Fournisseurs",
+     "en": "401 Suppliers"
+    },
+    "right": {
+     "fr": "Crédit",
+     "en": "Credit"
+    }
+   },
+   {
+    "left": {
+     "fr": "701 Ventes",
+     "en": "701 Sales"
+    },
+    "right": {
+     "fr": "Crédit, produit",
+     "en": "Credit, income"
+    }
+   },
+   {
+    "left": {
+     "fr": "622 Locations",
+     "en": "622 Rents"
+    },
+    "right": {
+     "fr": "Débit, charge",
+     "en": "Debit, expense"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-105",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Le compte Fournisseurs totalise 1 500 000 FCFA au crédit et 900 000 FCFA au débit. Quel est son solde créditeur ?",
+   "en": "2026 financial year. The suppliers account totals 1,500,000 CFA francs of credits and 900,000 of debits. What is its credit balance?"
+  },
+  "explanation": {
+   "fr": "1 500 000 − 900 000 = 600 000 FCFA restant dus.",
+   "en": "1,500,000 − 900,000 = 600,000 CFA francs still owed."
+  },
+  "numeric": {
+   "value": "600000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P1-M2-106",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Mbarga Distribution règle en espèces une facture fournisseur de 75 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. Mbarga Distribution pays a supplier invoice of 75,000 CFA francs in cash. Record the entry."
+  },
+  "explanation": {
+   "fr": "La dette diminue : débit 401 ; la caisse diminue : crédit 571.",
+   "en": "The debt decreases: debit 401; cash decreases: credit 571."
+  },
+  "journal": [
+   {
+    "account": "401",
+    "match": "3",
+    "side": "debit",
+    "amount": "75000",
+    "label": {
+     "fr": "Fournisseurs",
+     "en": "Suppliers"
+    }
+   },
+   {
+    "account": "571",
+    "match": "3",
+    "side": "credit",
+    "amount": "75000",
+    "label": {
+     "fr": "Caisse",
+     "en": "Cash"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-107",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Que mentionne une ligne du journal ?",
+   "en": "What does a journal line show?"
+  },
+  "explanation": {
+   "fr": "Date, compte, libellé, montant au débit ou au crédit et référence de la pièce.",
+   "en": "Date, account, label, debit or credit amount and document reference."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "La date, le compte, le libellé, le montant et la pièce",
+     "en": "Date, account, label, amount and document"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Seulement le montant total du mois",
+     "en": "Only the month's total"
+    }
+   },
+   {
+    "text": {
+     "fr": "Le solde de la balance",
+     "en": "The trial balance total"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M2-108",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une vente de marchandises s'enregistre au crédit du compte 701.",
+   "en": "True or false: a sale of goods is recorded on the credit side of account 701."
+  },
+  "explanation": {
+   "fr": "Vrai : un produit s'enregistre au crédit d'un compte de classe 7.",
+   "en": "True: income is recorded on the credit side of a class 7 account."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ }
+]

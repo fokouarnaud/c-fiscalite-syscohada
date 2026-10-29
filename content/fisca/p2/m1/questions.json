@@ -1,0 +1,639 @@
+[
+ {
+  "id": "F-P2-M1-001",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel est le taux général de la TVA hors centimes ?",
+   "en": "What is the standard VAT rate excluding council cents?"
+  },
+  "explanation": {
+   "fr": "17,5 % (art. 142).",
+   "en": "17.5% (s. 142)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "17,5 %",
+     "en": "17.5%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "19,25 %",
+     "en": "19.25%"
+    }
+   },
+   {
+    "text": {
+     "fr": "10 %",
+     "en": "10%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M1-002",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel est le taux réduit de TVA ?",
+   "en": "What is the reduced VAT rate?"
+  },
+  "explanation": {
+   "fr": "10 % (art. 142).",
+   "en": "10% (s. 142)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "10 %",
+     "en": "10%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "5 %",
+     "en": "5%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M1-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Vente de 2 400 000 FCFA HT au taux global de 19,25 %. Quelle TVA ?",
+   "en": "2026 financial year. Sale of 2,400,000 CFA francs excl. tax at the 19.25% overall rate. What VAT?"
+  },
+  "explanation": {
+   "fr": "462 000 FCFA.",
+   "en": "462,000 CFA francs."
+  },
+  "numeric": {
+   "value": "462000",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "F-P2-M1-004",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel est le taux élevé des droits d'accises ?",
+   "en": "What is the high excise rate?"
+  },
+  "explanation": {
+   "fr": "30 % (art. 142).",
+   "en": "30% (s. 142)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "30 %",
+     "en": "30%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "50 %",
+     "en": "50%"
+    }
+   },
+   {
+    "text": {
+     "fr": "25 %",
+     "en": "25%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M1-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel taux de centimes additionnels s'applique aux droits d'accises ?",
+   "en": "What council cents rate applies to excise duties?"
+  },
+  "explanation": {
+   "fr": "5 % (art. C 83).",
+   "en": "5% (s. C 83)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "5 %",
+     "en": "5%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "10 %",
+     "en": "10%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M1-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Pour une importation, le fait générateur de la TVA est…",
+   "en": "For an import, the VAT taxable event is…"
+  },
+  "explanation": {
+   "fr": "L'introduction des biens sur le territoire (art. 133).",
+   "en": "The entry of goods into the territory (s. 133)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "l'introduction sur le territoire",
+     "en": "entry into the territory"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "la revente",
+     "en": "resale"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M1-007",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : certains produits de première nécessité sont exonérés de TVA.",
+   "en": "True or false: some basic necessities are VAT-exempt."
+  },
+  "explanation": {
+   "fr": "Vrai (art. 128).",
+   "en": "True (s. 128)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M1-008",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les droits d'accises remplacent la TVA sur les produits concernés.",
+   "en": "True or false: excise duties replace VAT on the products concerned."
+  },
+  "explanation": {
+   "fr": "Faux : ils s'ajoutent à la TVA.",
+   "en": "False: they are added to VAT."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M1-009",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Base de 1 000 000 FCFA soumise au droit d'accises au taux général (25 %). Quel droit, hors centimes ?",
+   "en": "2026 financial year. A base of 1,000,000 CFA francs subject to excise at the standard rate (25%). What duty, excluding council cents?"
+  },
+  "explanation": {
+   "fr": "250 000 FCFA.",
+   "en": "250,000 CFA francs."
+  },
+  "numeric": {
+   "value": "250000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P2-M1-010",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une prestation de services devient taxable…",
+   "en": "A service becomes taxable…"
+  },
+  "explanation": {
+   "fr": "À son exécution (art. 133).",
+   "en": "On performance (s. 133)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "à son exécution",
+     "en": "on performance"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "à la commande",
+     "en": "on ordering"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M1-011",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Droit d'accises de 250 000 FCFA. Quels centimes additionnels (5 %) ?",
+   "en": "2026 financial year. Excise duty of 250,000 CFA francs. What council cents (5%)?"
+  },
+  "explanation": {
+   "fr": "12 500 FCFA.",
+   "en": "12,500 CFA francs."
+  },
+  "numeric": {
+   "value": "12500",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P2-M1-012",
+  "type": "multiple",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quelles opérations sont imposables à la TVA ?",
+   "en": "Which transactions are subject to VAT?"
+  },
+  "explanation": {
+   "fr": "Livraisons de biens, prestations de services, importations (art. 127).",
+   "en": "Supplies of goods, services, imports (s. 127)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Livraisons de biens",
+     "en": "Supplies of goods"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Prestations de services",
+     "en": "Services"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Importations",
+     "en": "Imports"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Salaires versés",
+     "en": "Wages paid"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M1-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le taux global de TVA, centimes compris, est de…",
+   "en": "The overall VAT rate, council cents included, is…"
+  },
+  "explanation": {
+   "fr": "19,25 %.",
+   "en": "19.25%."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "19,25 %",
+     "en": "19.25%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "17,5 %",
+     "en": "17.5%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M1-102",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le taux super élevé des accises est de…",
+   "en": "The very high excise rate is…"
+  },
+  "explanation": {
+   "fr": "50 %.",
+   "en": "50%."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "50 %",
+     "en": "50%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "30 %",
+     "en": "30%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M1-103",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un acompte encaissé rend la TVA exigible sur son montant.",
+   "en": "True or false: an advance received makes VAT chargeable on its amount."
+  },
+  "explanation": {
+   "fr": "Vrai (art. 134).",
+   "en": "True (s. 134)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M1-104",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Prix HT 500 000 FCFA ; TVA 19,25 %. Quel est le TTC ?",
+   "en": "2026 financial year. Price excl. tax 500,000 CFA francs; VAT 19.25%. What is the total?"
+  },
+  "explanation": {
+   "fr": "596 250 FCFA.",
+   "en": "596,250 CFA francs."
+  },
+  "numeric": {
+   "value": "596250",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "F-P2-M1-105",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les exportations relèvent du taux…",
+   "en": "Exports fall under the rate…"
+  },
+  "explanation": {
+   "fr": "Zéro.",
+   "en": "Zero."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "zéro",
+     "en": "zero"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "général",
+     "en": "standard"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M1-106",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les droits d'accises supportent 10 % de centimes additionnels.",
+   "en": "True or false: excise duties carry 10% council cents."
+  },
+  "explanation": {
+   "fr": "Faux : 5 %.",
+   "en": "False: 5%."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M1-107",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel article fixe les taux de TVA et d'accises ?",
+   "en": "Which section sets VAT and excise rates?"
+  },
+  "explanation": {
+   "fr": "L'article 142.",
+   "en": "Section 142."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "142",
+     "en": "142"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "17",
+     "en": "17"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M1-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le taux moyen des droits d'accises est de…",
+   "en": "The medium excise rate is…"
+  },
+  "explanation": {
+   "fr": "12,5 %.",
+   "en": "12.5%."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "12,5 %",
+     "en": "12.5%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "5 %",
+     "en": "5%"
+    }
+   }
+  ]
+ }
+]

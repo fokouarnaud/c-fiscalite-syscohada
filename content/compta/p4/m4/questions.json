@@ -1,0 +1,668 @@
+[
+ {
+  "id": "C-P4-M4-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Le client Ndongo conteste une facture de 1 192 500 FCFA TTC. Transférez la créance en créances douteuses.",
+   "en": "2026 financial year. Customer Ndongo disputes an invoice of 1,192,500 CFA francs including tax. Transfer the receivable to doubtful receivables."
+  },
+  "explanation": {
+   "fr": "Débit 416, crédit 411, au TTC.",
+   "en": "Debit 416, credit 411, including tax."
+  },
+  "journal": [
+   {
+    "account": "416",
+    "match": "3",
+    "side": "debit",
+    "amount": "1192500",
+    "label": {
+     "fr": "Créances douteuses",
+     "en": "Doubtful receivables"
+    }
+   },
+   {
+    "account": "411",
+    "match": "3",
+    "side": "credit",
+    "amount": "1192500",
+    "label": {
+     "fr": "Clients",
+     "en": "Customers"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M4-002",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Même créance (1 000 000 HT), risque estimé à 40 %. Passez l'écriture de dépréciation.",
+   "en": "2026 financial year. Same receivable (1,000,000 excl. tax), estimated risk 40%. Record the impairment."
+  },
+  "explanation": {
+   "fr": "400 000 sur le HT : débit 659, crédit 491.",
+   "en": "400,000 on the amount excl. tax: debit 659, credit 491."
+  },
+  "journal": [
+   {
+    "account": "659",
+    "match": "3",
+    "side": "debit",
+    "amount": "400000",
+    "label": {
+     "fr": "Dépréciations des créances",
+     "en": "Receivable impairment"
+    }
+   },
+   {
+    "account": "491",
+    "match": "3",
+    "side": "credit",
+    "amount": "400000",
+    "label": {
+     "fr": "Dépréciations des comptes clients",
+     "en": "Impairment of customer accounts"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M4-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Créance de 1 192 500 FCFA TTC (TVA 19,25 %), risque 40 %. Quel est le montant de la dépréciation ?",
+   "en": "2026 financial year. A receivable of 1,192,500 CFA francs including tax (VAT 19.25%), 40% risk. What is the impairment?"
+  },
+  "explanation": {
+   "fr": "HT 1 000 000 × 40 % = 400 000 FCFA.",
+   "en": "Excl. tax 1,000,000 × 40% = 400,000 CFA francs."
+  },
+  "numeric": {
+   "value": "400000",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P4-M4-004",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Créance douteuse de 500 000 FCFA (hors TVA) déclarée irrécouvrable. Passez l'écriture de perte.",
+   "en": "2026 financial year. A doubtful receivable of 500,000 CFA francs (no VAT) is declared uncollectible. Record the loss."
+  },
+  "explanation": {
+   "fr": "Débit 651, crédit 416.",
+   "en": "Debit 651, credit 416."
+  },
+  "journal": [
+   {
+    "account": "651",
+    "match": "3",
+    "side": "debit",
+    "amount": "500000",
+    "label": {
+     "fr": "Pertes sur créances",
+     "en": "Bad debt losses"
+    }
+   },
+   {
+    "account": "416",
+    "match": "3",
+    "side": "credit",
+    "amount": "500000",
+    "label": {
+     "fr": "Créances douteuses",
+     "en": "Doubtful receivables"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M4-005",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Reprenez la dépréciation de 300 000 FCFA de cette créance devenue perte. Passez l'écriture.",
+   "en": "2026 financial year. Reverse the 300,000 CFA franc impairment of this receivable now written off. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 491, crédit 759.",
+   "en": "Debit 491, credit 759."
+  },
+  "journal": [
+   {
+    "account": "491",
+    "match": "3",
+    "side": "debit",
+    "amount": "300000",
+    "label": {
+     "fr": "Dépréciations des comptes clients",
+     "en": "Impairment of customer accounts"
+    }
+   },
+   {
+    "account": "759",
+    "match": "3",
+    "side": "credit",
+    "amount": "300000",
+    "label": {
+     "fr": "Reprises de dépréciations",
+     "en": "Impairment reversals"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M4-006",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la dépréciation d'une créance se calcule sur le montant TTC.",
+   "en": "True or false: a receivable's impairment is computed on the amount including tax."
+  },
+  "explanation": {
+   "fr": "Faux : sur le hors taxes.",
+   "en": "False: on the amount excluding tax."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M4-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une créance douteuse est transférée au compte…",
+   "en": "A doubtful receivable is transferred to account…"
+  },
+  "explanation": {
+   "fr": "416.",
+   "en": "416."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "416",
+     "en": "416"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "491",
+     "en": "491"
+    }
+   },
+   {
+    "text": {
+     "fr": "651",
+     "en": "651"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M4-008",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une perte définitive sur créance client va en…",
+   "en": "A final loss on a customer receivable goes to…"
+  },
+  "explanation": {
+   "fr": "651.",
+   "en": "651."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "651",
+     "en": "651"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "659",
+     "en": "659"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M4-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La reprise d'une dépréciation de créance se crédite à…",
+   "en": "Reversing a receivable impairment credits…"
+  },
+  "explanation": {
+   "fr": "759.",
+   "en": "759."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "759",
+     "en": "759"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "791",
+     "en": "791"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M4-010",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Créance de 2 385 000 FCFA TTC (TVA 19,25 %), risque 50 %. Quelle dépréciation constater ?",
+   "en": "2026 financial year. A receivable of 2,385,000 CFA francs including tax (VAT 19.25%), 50% risk. What impairment is recorded?"
+  },
+  "explanation": {
+   "fr": "HT 2 000 000 × 50 % = 1 000 000 FCFA.",
+   "en": "Excl. tax 2,000,000 × 50% = 1,000,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1000000",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P4-M4-011",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : isoler une créance douteuse change son montant.",
+   "en": "True or false: isolating a doubtful receivable changes its amount."
+  },
+  "explanation": {
+   "fr": "Faux : elle passe de 411 à 416 pour le même montant.",
+   "en": "False: it moves from 411 to 416 for the same amount."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M4-012",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel principe impose de déprécier une créance à risque ?",
+   "en": "Which principle requires impairing a risky receivable?"
+  },
+  "explanation": {
+   "fr": "La prudence.",
+   "en": "Prudence."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "La prudence",
+     "en": "Prudence"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Le coût historique",
+     "en": "Historical cost"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M4-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La dépréciation d'une créance s'enregistre au débit de…",
+   "en": "A receivable impairment is debited to…"
+  },
+  "explanation": {
+   "fr": "659.",
+   "en": "659."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "659",
+     "en": "659"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "491",
+     "en": "491"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M4-102",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une créance douteuse reste à l'actif.",
+   "en": "True or false: a doubtful receivable stays in assets."
+  },
+  "explanation": {
+   "fr": "Vrai, sous déduction de sa dépréciation.",
+   "en": "True, net of its impairment."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M4-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Créance HT 600 000 FCFA, risque 25 %. Quelle est la dépréciation ?",
+   "en": "2026 financial year. Receivable excl. tax 600,000 CFA francs, 25% risk. What is the impairment?"
+  },
+  "explanation": {
+   "fr": "600 000 × 25 % = 150 000 FCFA.",
+   "en": "600,000 × 25% = 150,000 CFA francs."
+  },
+  "numeric": {
+   "value": "150000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M4-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les dépréciations des comptes clients vont en…",
+   "en": "Impairment of customer accounts goes to…"
+  },
+  "explanation": {
+   "fr": "491.",
+   "en": "491."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "491",
+     "en": "491"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "416",
+     "en": "416"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M4-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Dépréciation de 150 000 FCFA sur une créance douteuse. Passez l'écriture.",
+   "en": "2026 financial year. A 150,000 CFA franc impairment on a doubtful receivable. Record the entry."
+  },
+  "explanation": {
+   "fr": "659 / 491.",
+   "en": "659 / 491."
+  },
+  "journal": [
+   {
+    "account": "659",
+    "match": "3",
+    "side": "debit",
+    "amount": "150000",
+    "label": {
+     "fr": "Dépréciations des créances",
+     "en": "Receivable impairment"
+    }
+   },
+   {
+    "account": "491",
+    "match": "3",
+    "side": "credit",
+    "amount": "150000",
+    "label": {
+     "fr": "Dépréciations des comptes clients",
+     "en": "Impairment of customer accounts"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M4-106",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la reprise d'une dépréciation de créance est un produit.",
+   "en": "True or false: reversing a receivable impairment is income."
+  },
+  "explanation": {
+   "fr": "Vrai : 759.",
+   "en": "True: 759."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M4-107",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "On transfère une créance en douteuse pour son montant…",
+   "en": "A receivable is transferred to doubtful for its amount…"
+  },
+  "explanation": {
+   "fr": "TTC.",
+   "en": "Including tax."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "TTC",
+     "en": "including tax"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "HT",
+     "en": "excluding tax"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M4-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une créance irrécouvrable devient…",
+   "en": "An uncollectible receivable becomes…"
+  },
+  "explanation": {
+   "fr": "Une perte (651).",
+   "en": "A loss (651)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "une perte",
+     "en": "a loss"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "un produit",
+     "en": "income"
+    }
+   }
+  ]
+ }
+]

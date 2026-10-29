@@ -1,0 +1,712 @@
+[
+ {
+  "id": "C-P1-M4-001",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le compte de résultat décrit…",
+   "en": "The income statement describes…"
+  },
+  "explanation": {
+   "fr": "L'activité d'un exercice : produits gagnés et charges consommées.",
+   "en": "A year's activity: income earned and expenses incurred."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "l'activité d'un exercice",
+     "en": "a financial year's activity"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "le patrimoine à une date",
+     "en": "the position at a date"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M4-002",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Dans quelle classe enregistre-t-on les charges des activités ordinaires ?",
+   "en": "Which class records expenses from ordinary activities?"
+  },
+  "explanation": {
+   "fr": "La classe 6.",
+   "en": "Class 6."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Classe 6",
+     "en": "Class 6"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Classe 7",
+     "en": "Class 7"
+    }
+   },
+   {
+    "text": {
+     "fr": "Classe 2",
+     "en": "Class 2"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M4-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Produits : 42 000 000 FCFA ; charges : 37 500 000 FCFA. Quel est le résultat ?",
+   "en": "2026 financial year. Income: 42,000,000 CFA francs; expenses: 37,500,000. What is the result?"
+  },
+  "explanation": {
+   "fr": "Résultat = produits − charges = 4 500 000 FCFA de bénéfice.",
+   "en": "Result = income − expenses = a profit of 4,500,000 CFA francs."
+  },
+  "numeric": {
+   "value": "4500000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P1-M4-004",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un bénéfice s'inscrit au compte…",
+   "en": "A profit is recorded in account…"
+  },
+  "explanation": {
+   "fr": "131 Résultat net : bénéfice ; une perte va en 139.",
+   "en": "131 Net profit; a loss goes to 139."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "131",
+     "en": "131"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "139",
+     "en": "139"
+    }
+   },
+   {
+    "text": {
+     "fr": "701",
+     "en": "701"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M4-005",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Les salaires bruts du mois, 1 800 000 FCFA, sont dus au personnel (sans retenues dans cet exercice). Passez l'écriture.",
+   "en": "2026 financial year. The month's gross wages, 1,800,000 CFA francs, are owed to staff (no withholdings in this exercise). Record the entry."
+  },
+  "explanation": {
+   "fr": "Charge de personnel : débit 661 ; dette envers le personnel : crédit 422.",
+   "en": "Staff cost: debit 661; amount owed to staff: credit 422."
+  },
+  "journal": [
+   {
+    "account": "661",
+    "match": "3",
+    "side": "debit",
+    "amount": "1800000",
+    "label": {
+     "fr": "Rémunérations du personnel",
+     "en": "Staff pay"
+    }
+   },
+   {
+    "account": "422",
+    "match": "3",
+    "side": "credit",
+    "amount": "1800000",
+    "label": {
+     "fr": "Personnel, rémunérations dues",
+     "en": "Staff, wages payable"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M4-006",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. La banque crédite le compte de Mbarga Distribution de 120 000 FCFA d'intérêts sur un placement. Passez l'écriture.",
+   "en": "2026 financial year. The bank credits Mbarga Distribution's account with 120,000 CFA francs of interest on an investment. Record the entry."
+  },
+  "explanation": {
+   "fr": "La banque augmente : débit 521 ; produit financier : crédit 771.",
+   "en": "The bank increases: debit 521; financial income: credit 771."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "120000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "771",
+    "match": "3",
+    "side": "credit",
+    "amount": "120000",
+    "label": {
+     "fr": "Intérêts reçus",
+     "en": "Interest received"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M4-007",
+  "type": "matching",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Associez chaque opération à son compte.",
+   "en": "Match each transaction with its account."
+  },
+  "explanation": {
+   "fr": "Achats de marchandises 601, loyer 622, ventes de marchandises 701, salaires 661.",
+   "en": "Purchases of goods 601, rent 622, sales of goods 701, wages 661."
+  },
+  "pairs": [
+   {
+    "left": {
+     "fr": "Achat de marchandises",
+     "en": "Purchase of goods"
+    },
+    "right": {
+     "fr": "601",
+     "en": "601"
+    }
+   },
+   {
+    "left": {
+     "fr": "Loyer du local",
+     "en": "Shop rent"
+    },
+    "right": {
+     "fr": "622",
+     "en": "622"
+    }
+   },
+   {
+    "left": {
+     "fr": "Vente de marchandises",
+     "en": "Sale of goods"
+    },
+    "right": {
+     "fr": "701",
+     "en": "701"
+    }
+   },
+   {
+    "left": {
+     "fr": "Salaires",
+     "en": "Wages"
+    },
+    "right": {
+     "fr": "661",
+     "en": "661"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M4-008",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un achat de marchandises destinées à la revente est une charge.",
+   "en": "True or false: a purchase of goods for resale is an expense."
+  },
+  "explanation": {
+   "fr": "Vrai : il s'enregistre en 601 ; la variation de stock corrige à la clôture.",
+   "en": "True: it is recorded in 601; the inventory change adjusts it at year end."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M4-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les intérêts payés sur un emprunt sont…",
+   "en": "Interest paid on a loan is…"
+  },
+  "explanation": {
+   "fr": "Une charge financière (671).",
+   "en": "A financial expense (671)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "une charge financière",
+     "en": "a financial expense"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "un produit",
+     "en": "income"
+    }
+   },
+   {
+    "text": {
+     "fr": "un actif",
+     "en": "an asset"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M4-010",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Ventes : 25 000 000 FCFA ; achats de marchandises : 17 000 000 ; autres charges : 9 200 000. Quel est le montant de la perte ?",
+   "en": "2026 financial year. Sales: 25,000,000 CFA francs; purchases of goods: 17,000,000; other expenses: 9,200,000. What is the loss?"
+  },
+  "explanation": {
+   "fr": "Charges : 26 200 000 ; produits : 25 000 000 ; perte de 1 200 000 FCFA.",
+   "en": "Expenses: 26,200,000; income: 25,000,000; a loss of 1,200,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1200000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P1-M4-011",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un produit s'enregistre au débit d'un compte de classe 7.",
+   "en": "True or false: income is recorded on the debit side of a class 7 account."
+  },
+  "explanation": {
+   "fr": "Faux : un produit s'enregistre au crédit.",
+   "en": "False: income is recorded on the credit side."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M4-012",
+  "type": "multiple",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Lesquels sont des produits ?",
+   "en": "Which of these are income?"
+  },
+  "explanation": {
+   "fr": "Ventes et intérêts reçus sont des produits ; salaires et loyers sont des charges.",
+   "en": "Sales and interest received are income; wages and rent are expenses."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Ventes de marchandises",
+     "en": "Sales of goods"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Intérêts reçus",
+     "en": "Interest received"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Salaires",
+     "en": "Wages"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Loyer",
+     "en": "Rent"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M4-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Dans quelle classe enregistre-t-on les ventes ?",
+   "en": "Which class records sales?"
+  },
+  "explanation": {
+   "fr": "La classe 7, compte 70 Ventes.",
+   "en": "Class 7, account 70 Sales."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Classe 7",
+     "en": "Class 7"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Classe 6",
+     "en": "Class 6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M4-102",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : si les charges dépassent les produits, l'exercice se solde par une perte.",
+   "en": "True or false: if expenses exceed income, the year ends with a loss."
+  },
+  "explanation": {
+   "fr": "Vrai : résultat = produits − charges, négatif ici.",
+   "en": "True: result = income − expenses, negative here."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M4-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Produits : 9 000 000 FCFA ; charges : 7 350 000 FCFA. Quel est le bénéfice ?",
+   "en": "2026 financial year. Income: 9,000,000 CFA francs; expenses: 7,350,000. What is the profit?"
+  },
+  "explanation": {
+   "fr": "9 000 000 − 7 350 000 = 1 650 000 FCFA.",
+   "en": "9,000,000 − 7,350,000 = 1,650,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1650000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P1-M4-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une perte s'inscrit au compte…",
+   "en": "A loss is recorded in account…"
+  },
+  "explanation": {
+   "fr": "139 Résultat net : perte.",
+   "en": "139 Net loss."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "139",
+     "en": "139"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "131",
+     "en": "131"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M4-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Mbarga Distribution paie en espèces 60 000 FCFA de frais de transport sur ventes (hors TVA dans cet exercice). Passez l'écriture.",
+   "en": "2026 financial year. Mbarga Distribution pays 60,000 CFA francs in cash for transport on sales (no VAT in this exercise). Record the entry."
+  },
+  "explanation": {
+   "fr": "Charge de transport sur ventes : débit 612 ; la caisse diminue : crédit 571.",
+   "en": "Transport on sales is an expense: debit 612; cash decreases: credit 571."
+  },
+  "journal": [
+   {
+    "account": "612",
+    "match": "3",
+    "side": "debit",
+    "amount": "60000",
+    "label": {
+     "fr": "Transports sur ventes",
+     "en": "Transport on sales"
+    }
+   },
+   {
+    "account": "571",
+    "match": "3",
+    "side": "credit",
+    "amount": "60000",
+    "label": {
+     "fr": "Caisse",
+     "en": "Cash"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M4-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les frais bancaires prélevés par la banque sont enregistrés en…",
+   "en": "Bank charges deducted by the bank are recorded in…"
+  },
+  "explanation": {
+   "fr": "631 Frais bancaires, une charge.",
+   "en": "631 Bank charges, an expense."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "631",
+     "en": "631"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "771",
+     "en": "771"
+    }
+   },
+   {
+    "text": {
+     "fr": "521 au débit",
+     "en": "521 debit"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M4-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le compte de résultat est établi pour un exercice.",
+   "en": "True or false: the income statement covers a financial year."
+  },
+  "explanation": {
+   "fr": "Vrai : il résume les produits et les charges de l'exercice.",
+   "en": "True: it sums up the year's income and expenses."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M4-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quelle classe regroupe les charges et produits hors activités ordinaires ?",
+   "en": "Which class holds expenses and income outside ordinary activities?"
+  },
+  "explanation": {
+   "fr": "La classe 8.",
+   "en": "Class 8."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Classe 8",
+     "en": "Class 8"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Classe 9",
+     "en": "Class 9"
+    }
+   },
+   {
+    "text": {
+     "fr": "Classe 5",
+     "en": "Class 5"
+    }
+   }
+  ]
+ }
+]

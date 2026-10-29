@@ -1,0 +1,641 @@
+[
+ {
+  "id": "C-P5-M5-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Rapprochement : frais bancaires de 20 000 FCFA figurant sur le relevé, non comptabilisés. Passez l'écriture.",
+   "en": "2026 financial year. Reconciliation: bank charges of 20,000 CFA francs on the statement, not yet recorded. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 631, crédit 521.",
+   "en": "Debit 631, credit 521."
+  },
+  "journal": [
+   {
+    "account": "631",
+    "match": "3",
+    "side": "debit",
+    "amount": "20000",
+    "label": {
+     "fr": "Frais bancaires",
+     "en": "Bank charges"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "20000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M5-002",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Rapprochement : virement d'un client de 100 000 FCFA reçu par la banque, non comptabilisé. Passez l'écriture.",
+   "en": "2026 financial year. Reconciliation: a customer transfer of 100,000 CFA francs received by the bank, not yet recorded. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 521, crédit 411.",
+   "en": "Debit 521, credit 411."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "100000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "411",
+    "match": "3",
+    "side": "credit",
+    "amount": "100000",
+    "label": {
+     "fr": "Clients",
+     "en": "Customers"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M5-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Solde comptable de la banque 1 250 000 FCFA ; frais non comptabilisés 20 000 ; virement client non comptabilisé 100 000. Quel est le solde comptable corrigé ?",
+   "en": "2026 financial year. Book bank balance 1,250,000 CFA francs; unrecorded charges 20,000; unrecorded customer transfer 100,000. What is the corrected book balance?"
+  },
+  "explanation": {
+   "fr": "1 250 000 − 20 000 + 100 000 = 1 330 000 FCFA.",
+   "en": "1,250,000 − 20,000 + 100,000 = 1,330,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1330000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M5-004",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le rapprochement bancaire compare…",
+   "en": "Bank reconciliation compares…"
+  },
+  "explanation": {
+   "fr": "Le compte banque de l'entreprise et le relevé de la banque.",
+   "en": "The business's bank account and the bank statement."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "le compte 521 et le relevé",
+     "en": "account 521 and the statement"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "la caisse et la banque",
+     "en": "cash and bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M5-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le lettrage sert à…",
+   "en": "Matching is used to…"
+  },
+  "explanation": {
+   "fr": "Rapprocher factures et règlements dans un compte de tiers.",
+   "en": "Pair invoices with payments in a third-party account."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "rapprocher factures et règlements",
+     "en": "pair invoices and payments"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "calculer la TVA",
+     "en": "compute VAT"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M5-006",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une balance équilibrée garantit l'absence de toute erreur.",
+   "en": "True or false: a balanced trial balance guarantees there are no errors."
+  },
+  "explanation": {
+   "fr": "Faux : une écriture passée sur un mauvais compte reste équilibrée.",
+   "en": "False: an entry posted to the wrong account still balances."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M5-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quels journaux auxiliaires tient le plus souvent une entreprise commerciale ?",
+   "en": "Which subsidiary journals does a trading business usually keep?"
+  },
+  "explanation": {
+   "fr": "Achats, ventes, banque, caisse et opérations diverses.",
+   "en": "Purchases, sales, bank, cash and miscellaneous."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "achats, ventes, banque, caisse, OD",
+     "en": "purchases, sales, bank, cash, misc."
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "un seul journal",
+     "en": "a single journal"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M5-008",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un chèque émis par l'entreprise mais pas encore présenté à la banque explique un écart de rapprochement.",
+   "en": "True or false: a cheque issued but not yet presented explains a reconciliation difference."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M5-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "L'inventaire physique de la caisse compare…",
+   "en": "A physical cash count compares…"
+  },
+  "explanation": {
+   "fr": "Le solde du compte 571 et l'argent réellement présent.",
+   "en": "The balance of account 571 and the cash actually present."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "le compte 571 et l'argent présent",
+     "en": "account 571 and the cash present"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "la banque et le relevé",
+     "en": "the bank and the statement"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M5-010",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une entité sous les seuils fixés par l'Acte uniforme peut tenir…",
+   "en": "An entity below the Uniform Act thresholds may use…"
+  },
+  "explanation": {
+   "fr": "Le système minimal de trésorerie.",
+   "en": "The minimal cash system."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "le système minimal de trésorerie",
+     "en": "the minimal cash system"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "aucune comptabilité",
+     "en": "no accounting"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M5-011",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Relevé bancaire 900 000 FCFA ; un chèque émis de 150 000 n'est pas encore débité par la banque. Quel est le solde bancaire réel à retenir ?",
+   "en": "2026 financial year. Bank statement 900,000 CFA francs; a 150,000 cheque issued is not yet debited by the bank. What real bank balance should be used?"
+  },
+  "explanation": {
+   "fr": "900 000 − 150 000 = 750 000 FCFA.",
+   "en": "900,000 − 150,000 = 750,000 CFA francs."
+  },
+  "numeric": {
+   "value": "750000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M5-012",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : chaque écriture doit renvoyer à une pièce justificative.",
+   "en": "True or false: every entry must refer to a supporting document."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M5-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le journal de banque enregistre…",
+   "en": "The bank journal records…"
+  },
+  "explanation": {
+   "fr": "Les mouvements du compte bancaire.",
+   "en": "Movements on the bank account."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "les mouvements bancaires",
+     "en": "bank movements"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "les ventes à crédit",
+     "en": "credit sales"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M5-102",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les journaux auxiliaires sont centralisés périodiquement.",
+   "en": "True or false: subsidiary journals are centralised periodically."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M5-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Solde comptable 500 000 FCFA ; frais bancaires non comptabilisés 8 000. Quel est le solde corrigé ?",
+   "en": "2026 financial year. Book balance 500,000 CFA francs; unrecorded bank charges 8,000. What is the corrected balance?"
+  },
+  "explanation": {
+   "fr": "492 000 FCFA.",
+   "en": "492,000 CFA francs."
+  },
+  "numeric": {
+   "value": "492000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M5-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les frais bancaires découverts au rapprochement s'enregistrent en…",
+   "en": "Bank charges found at reconciliation are recorded in…"
+  },
+  "explanation": {
+   "fr": "631.",
+   "en": "631."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "631",
+     "en": "631"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "671",
+     "en": "671"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M5-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Rapprochement : agios de 8 000 FCFA non comptabilisés. Passez l'écriture.",
+   "en": "2026 financial year. Reconciliation: 8,000 CFA francs of bank charges not recorded. Record the entry."
+  },
+  "explanation": {
+   "fr": "631 / 521.",
+   "en": "631 / 521."
+  },
+  "journal": [
+   {
+    "account": "631",
+    "match": "3",
+    "side": "debit",
+    "amount": "8000",
+    "label": {
+     "fr": "Frais bancaires",
+     "en": "Bank charges"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "8000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M5-106",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le lettrage s'applique aux comptes clients et fournisseurs.",
+   "en": "True or false: matching applies to customer and supplier accounts."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M5-107",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La balance vérifie…",
+   "en": "The trial balance checks…"
+  },
+  "explanation": {
+   "fr": "L'égalité des débits et des crédits.",
+   "en": "That debits equal credits."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "l'égalité débits / crédits",
+     "en": "debits equal credits"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "le montant de la TVA",
+     "en": "the VAT amount"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M5-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un écart de rapprochement dû à une erreur de la banque se corrige…",
+   "en": "A reconciliation difference caused by a bank error is corrected…"
+  },
+  "explanation": {
+   "fr": "Par la banque, sans écriture chez l'entreprise.",
+   "en": "By the bank, without an entry in the business's books."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "par la banque",
+     "en": "by the bank"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "par une écriture en 631",
+     "en": "by an entry in 631"
+    }
+   }
+  ]
+ }
+]

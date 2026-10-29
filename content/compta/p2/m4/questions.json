@@ -1,0 +1,743 @@
+[
+ {
+  "id": "C-P2-M4-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achat à crédit de marchandises : 1 000 000 FCFA brut, remise de 10 % sur facture ; TVA 19,25 %. Passez l'écriture.",
+   "en": "2026 financial year. Goods bought on credit: 1,000,000 CFA francs gross, 10% discount on the invoice; VAT 19.25%. Record the entry."
+  },
+  "explanation": {
+   "fr": "La remise sur facture ne s'enregistre pas : net 900 000, TVA 173 250, TTC 1 073 250.",
+   "en": "A discount on the invoice is not recorded: net 900,000, VAT 173,250, total 1,073,250."
+  },
+  "journal": [
+   {
+    "account": "601",
+    "match": "3",
+    "side": "debit",
+    "amount": "900000",
+    "label": {
+     "fr": "Achats de marchandises",
+     "en": "Purchases of goods"
+    }
+   },
+   {
+    "account": "4452",
+    "match": "4",
+    "side": "debit",
+    "amount": "173250",
+    "label": {
+     "fr": "TVA récupérable",
+     "en": "Recoverable VAT"
+    }
+   },
+   {
+    "account": "401",
+    "match": "3",
+    "side": "credit",
+    "amount": "1073250",
+    "label": {
+     "fr": "Fournisseurs",
+     "en": "Suppliers"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M4-002",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Le fournisseur adresse un avoir pour une ristourne de 50 000 FCFA HT ; TVA 19,25 %. Passez l'écriture chez Mbarga Distribution.",
+   "en": "2026 financial year. The supplier sends a credit note for a 50,000 CFA franc rebate excl. tax; VAT 19.25%. Record it at Mbarga Distribution."
+  },
+  "explanation": {
+   "fr": "La dette diminue de 59 625 ; on crédite 6019 (50 000) et reprend la TVA 4452 (9 625).",
+   "en": "The debt falls by 59,625; credit 6019 (50,000) and reverse VAT 4452 (9,625)."
+  },
+  "journal": [
+   {
+    "account": "401",
+    "match": "3",
+    "side": "debit",
+    "amount": "59625",
+    "label": {
+     "fr": "Fournisseurs",
+     "en": "Suppliers"
+    }
+   },
+   {
+    "account": "6019",
+    "match": "4",
+    "side": "credit",
+    "amount": "50000",
+    "label": {
+     "fr": "RRR obtenus",
+     "en": "Rebates received"
+    }
+   },
+   {
+    "account": "4452",
+    "match": "4",
+    "side": "credit",
+    "amount": "9625",
+    "label": {
+     "fr": "TVA récupérable",
+     "en": "Recoverable VAT"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M4-003",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Facture d'achat : 1 000 000 FCFA brut, escompte de règlement 2 % ; TVA 19,25 % sur le net financier. Passez l'écriture.",
+   "en": "2026 financial year. Purchase invoice: 1,000,000 CFA francs gross, 2% cash discount; VAT 19.25% on the net amount. Record the entry."
+  },
+  "explanation": {
+   "fr": "Escompte 20 000 (773) ; net 980 000 ; TVA 188 650 ; TTC 1 168 650.",
+   "en": "Discount 20,000 (773); net 980,000; VAT 188,650; total 1,168,650."
+  },
+  "journal": [
+   {
+    "account": "601",
+    "match": "3",
+    "side": "debit",
+    "amount": "1000000",
+    "label": {
+     "fr": "Achats de marchandises",
+     "en": "Purchases of goods"
+    }
+   },
+   {
+    "account": "4452",
+    "match": "4",
+    "side": "debit",
+    "amount": "188650",
+    "label": {
+     "fr": "TVA récupérable",
+     "en": "Recoverable VAT"
+    }
+   },
+   {
+    "account": "773",
+    "match": "3",
+    "side": "credit",
+    "amount": "20000",
+    "label": {
+     "fr": "Escomptes obtenus",
+     "en": "Cash discounts received"
+    }
+   },
+   {
+    "account": "401",
+    "match": "3",
+    "side": "credit",
+    "amount": "1168650",
+    "label": {
+     "fr": "Fournisseurs",
+     "en": "Suppliers"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M4-004",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Vente : 2 000 000 FCFA brut, escompte accordé 1 % ; TVA 19,25 % sur le net financier. Passez l'écriture.",
+   "en": "2026 financial year. Sale: 2,000,000 CFA francs gross, 1% cash discount granted; VAT 19.25% on the net amount. Record the entry."
+  },
+  "explanation": {
+   "fr": "Escompte 20 000 (673) ; net 1 980 000 ; TVA 381 150 ; client 2 361 150.",
+   "en": "Discount 20,000 (673); net 1,980,000; VAT 381,150; customer 2,361,150."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "match": "3",
+    "side": "debit",
+    "amount": "2361150",
+    "label": {
+     "fr": "Clients",
+     "en": "Customers"
+    }
+   },
+   {
+    "account": "673",
+    "match": "3",
+    "side": "debit",
+    "amount": "20000",
+    "label": {
+     "fr": "Escomptes accordés",
+     "en": "Cash discounts granted"
+    }
+   },
+   {
+    "account": "701",
+    "match": "3",
+    "side": "credit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Ventes de marchandises",
+     "en": "Sales of goods"
+    }
+   },
+   {
+    "account": "443",
+    "match": "3",
+    "side": "credit",
+    "amount": "381150",
+    "label": {
+     "fr": "TVA facturée",
+     "en": "VAT charged"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M4-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un rabais accordé pour un défaut de qualité est une réduction…",
+   "en": "An allowance for poor quality is a…"
+  },
+  "explanation": {
+   "fr": "Commerciale.",
+   "en": "Trade reduction."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "commerciale",
+     "en": "trade reduction"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "financière",
+     "en": "financial reduction"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M4-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un escompte obtenu s'enregistre en…",
+   "en": "A cash discount received is recorded in…"
+  },
+  "explanation": {
+   "fr": "773 Escomptes obtenus, produit financier.",
+   "en": "773 Cash discounts received, financial income."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "773",
+     "en": "773"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "673",
+     "en": "673"
+    }
+   },
+   {
+    "text": {
+     "fr": "6019",
+     "en": "6019"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M4-007",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une remise portée sur la facture d'origine s'enregistre au compte 6019.",
+   "en": "True or false: a discount shown on the original invoice is recorded in account 6019."
+  },
+  "explanation": {
+   "fr": "Faux : on enregistre directement le net ; 6019 sert aux réductions obtenues après facture.",
+   "en": "False: the net is recorded directly; 6019 is for reductions received after the invoice."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M4-008",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Brut 1 000 000 FCFA, escompte 2 %, TVA 19,25 % sur le net financier. Quel est le TTC ?",
+   "en": "2026 financial year. Gross 1,000,000 CFA francs, 2% cash discount, VAT 19.25% on the net. What is the total?"
+  },
+  "explanation": {
+   "fr": "980 000 + 188 650 = 1 168 650 FCFA.",
+   "en": "980,000 + 188,650 = 1,168,650 CFA francs."
+  },
+  "numeric": {
+   "value": "1168650",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M4-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une ristourne est calculée…",
+   "en": "A rebate is computed…"
+  },
+  "explanation": {
+   "fr": "Sur le chiffre d'affaires d'une période.",
+   "en": "On a period's turnover."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "sur le chiffre d'affaires d'une période",
+     "en": "on a period's turnover"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "sur un défaut de qualité",
+     "en": "on a quality defect"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M4-010",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Facture de 500 000 FCFA brut, remise 5 % puis rabais 2 %, en cascade. Quel est le net commercial ?",
+   "en": "2026 financial year. Invoice of 500,000 CFA francs gross, 5% discount then 2% allowance, in cascade. What is the net?"
+  },
+  "explanation": {
+   "fr": "500 000 × 0,95 = 475 000 ; × 0,98 = 465 500 FCFA.",
+   "en": "500,000 × 0.95 = 475,000; × 0.98 = 465,500 CFA francs."
+  },
+  "numeric": {
+   "value": "465500",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P2-M4-011",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La TVA se calcule sur…",
+   "en": "VAT is computed on…"
+  },
+  "explanation": {
+   "fr": "Le net financier, après réductions et escompte.",
+   "en": "The net amount after discounts and cash discount."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "le net financier",
+     "en": "the net amount after cash discount"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "le montant brut",
+     "en": "the gross amount"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M4-012",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un escompte accordé est une charge financière.",
+   "en": "True or false: a cash discount granted is a financial expense."
+  },
+  "explanation": {
+   "fr": "Vrai : compte 673.",
+   "en": "True: account 673."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M4-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une réduction pour quantité achetée est…",
+   "en": "A reduction for quantity bought is…"
+  },
+  "explanation": {
+   "fr": "Une remise.",
+   "en": "A trade discount."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "une remise",
+     "en": "a trade discount"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "un escompte",
+     "en": "a cash discount"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M4-102",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un escompte accordé à un client s'enregistre en…",
+   "en": "A cash discount granted to a customer is recorded in…"
+  },
+  "explanation": {
+   "fr": "673.",
+   "en": "673."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "673",
+     "en": "673"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "773",
+     "en": "773"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M4-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Facture de 1 000 000 FCFA, remise 10 % ; TVA 19,25 %. Quel est le TTC ?",
+   "en": "2026 financial year. Invoice of 1,000,000 CFA francs, 10% discount; VAT 19.25%. What is the total?"
+  },
+  "explanation": {
+   "fr": "900 000 + 173 250 = 1 073 250 FCFA.",
+   "en": "900,000 + 173,250 = 1,073,250 CFA francs."
+  },
+  "numeric": {
+   "value": "1073250",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M4-104",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un escompte figurant sur la facture s'enregistre quand même.",
+   "en": "True or false: a cash discount shown on the invoice is still recorded."
+  },
+  "explanation": {
+   "fr": "Vrai : c'est une réduction financière.",
+   "en": "True: it is a financial reduction."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M4-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Avoir reçu pour un rabais de 100 000 FCFA HT ; TVA 19,25 %. Passez l'écriture.",
+   "en": "2026 financial year. Credit note received for an allowance of 100,000 CFA francs excl. tax; VAT 19.25%. Record the entry."
+  },
+  "explanation": {
+   "fr": "401 débité de 119 250 ; 6019 crédité de 100 000 ; 4452 crédité de 19 250.",
+   "en": "401 debited 119,250; 6019 credited 100,000; 4452 credited 19,250."
+  },
+  "journal": [
+   {
+    "account": "401",
+    "match": "3",
+    "side": "debit",
+    "amount": "119250",
+    "label": {
+     "fr": "Fournisseurs",
+     "en": "Suppliers"
+    }
+   },
+   {
+    "account": "6019",
+    "match": "4",
+    "side": "credit",
+    "amount": "100000",
+    "label": {
+     "fr": "RRR obtenus",
+     "en": "Allowances received"
+    }
+   },
+   {
+    "account": "4452",
+    "match": "4",
+    "side": "credit",
+    "amount": "19250",
+    "label": {
+     "fr": "TVA récupérable",
+     "en": "Recoverable VAT"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M4-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le compte 6019 enregistre…",
+   "en": "Account 6019 records…"
+  },
+  "explanation": {
+   "fr": "Les rabais, remises et ristournes obtenus après facture.",
+   "en": "Discounts, allowances and rebates received after the invoice."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "les réductions obtenues après facture",
+     "en": "reductions received after the invoice"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "les escomptes accordés",
+     "en": "cash discounts granted"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M4-107",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Brut 2 000 000 FCFA, escompte accordé 1 %. Quel est le net financier ?",
+   "en": "2026 financial year. Gross 2,000,000 CFA francs, 1% cash discount granted. What is the net amount?"
+  },
+  "explanation": {
+   "fr": "2 000 000 − 20 000 = 1 980 000 FCFA.",
+   "en": "2,000,000 − 20,000 = 1,980,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1980000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P2-M4-108",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un avoir pour ristourne réduit la TVA récupérable de l'acheteur.",
+   "en": "True or false: a rebate credit note reduces the buyer's recoverable VAT."
+  },
+  "explanation": {
+   "fr": "Vrai : on reprend la TVA correspondante au crédit de 4452.",
+   "en": "True: the related VAT is credited back to 4452."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ }
+]

@@ -1,0 +1,715 @@
+[
+ {
+  "id": "C-P4-M7-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Prime d'assurance annuelle de 1 200 000 FCFA payée le 1er octobre. Passez la régularisation au 31 décembre.",
+   "en": "2026 financial year. An annual insurance premium of 1,200,000 CFA francs paid on 1 October. Record the 31 December adjustment."
+  },
+  "explanation": {
+   "fr": "9 mois pour l'an prochain : 900 000 ; débit 476, crédit 625.",
+   "en": "9 months belong to next year: 900,000; debit 476, credit 625."
+  },
+  "journal": [
+   {
+    "account": "476",
+    "match": "3",
+    "side": "debit",
+    "amount": "900000",
+    "label": {
+     "fr": "Charges constatées d'avance",
+     "en": "Prepaid expenses"
+    }
+   },
+   {
+    "account": "625",
+    "match": "3",
+    "side": "credit",
+    "amount": "900000",
+    "label": {
+     "fr": "Primes d'assurance",
+     "en": "Insurance premiums"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M7-002",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Prime annuelle 1 200 000 FCFA payée le 1er octobre. Quelle charge constatée d'avance au 31 décembre ?",
+   "en": "2026 financial year. Annual premium 1,200,000 CFA francs paid on 1 October. What prepaid expense at 31 December?"
+  },
+  "explanation": {
+   "fr": "1 200 000 × 9/12 = 900 000 FCFA.",
+   "en": "1,200,000 × 9/12 = 900,000 CFA francs."
+  },
+  "numeric": {
+   "value": "900000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M7-003",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Électricité de décembre : 100 000 FCFA HT, TVA 19,25 %, facture non parvenue au 31 décembre. Passez l'écriture.",
+   "en": "2026 financial year. December electricity: 100,000 CFA francs excl. tax, VAT 19.25%, invoice not received by 31 December. Record the entry."
+  },
+  "explanation": {
+   "fr": "605 (100 000), 4455 (19 250), 408 (119 250).",
+   "en": "605 (100,000), 4455 (19,250), 408 (119,250)."
+  },
+  "journal": [
+   {
+    "account": "605",
+    "match": "3",
+    "side": "debit",
+    "amount": "100000",
+    "label": {
+     "fr": "Électricité",
+     "en": "Electricity"
+    }
+   },
+   {
+    "account": "4455",
+    "match": "4",
+    "side": "debit",
+    "amount": "19250",
+    "label": {
+     "fr": "TVA sur factures non parvenues",
+     "en": "VAT on invoices not received"
+    }
+   },
+   {
+    "account": "408",
+    "match": "3",
+    "side": "credit",
+    "amount": "119250",
+    "label": {
+     "fr": "Factures non parvenues",
+     "en": "Invoices not received"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P4-M7-004",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Marchandises livrées pour 500 000 FCFA HT, facture pas encore établie au 31 décembre ; TVA 19,25 %. Passez l'écriture.",
+   "en": "2026 financial year. Goods delivered for 500,000 CFA francs excl. tax, invoice not yet issued by 31 December; VAT 19.25%. Record the entry."
+  },
+  "explanation": {
+   "fr": "418 (596 250), 701 (500 000), 4435 (96 250).",
+   "en": "418 (596,250), 701 (500,000), 4435 (96,250)."
+  },
+  "journal": [
+   {
+    "account": "418",
+    "match": "3",
+    "side": "debit",
+    "amount": "596250",
+    "label": {
+     "fr": "Factures à établir",
+     "en": "Invoices to be issued"
+    }
+   },
+   {
+    "account": "701",
+    "match": "3",
+    "side": "credit",
+    "amount": "500000",
+    "label": {
+     "fr": "Ventes de marchandises",
+     "en": "Sales of goods"
+    }
+   },
+   {
+    "account": "4435",
+    "match": "4",
+    "side": "credit",
+    "amount": "96250",
+    "label": {
+     "fr": "TVA sur factures à établir",
+     "en": "VAT on invoices to be issued"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P4-M7-005",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Un loyer de 300 000 FCFA encaissé en décembre concerne janvier de l'exercice suivant. Passez la régularisation.",
+   "en": "2026 financial year. Rent of 300,000 CFA francs received in December relates to January of next year. Record the adjustment."
+  },
+  "explanation": {
+   "fr": "Produit constaté d'avance : débit 7073, crédit 477.",
+   "en": "Deferred income: debit 7073, credit 477."
+  },
+  "journal": [
+   {
+    "account": "7073",
+    "match": "4",
+    "side": "debit",
+    "amount": "300000",
+    "label": {
+     "fr": "Locations",
+     "en": "Rentals"
+    }
+   },
+   {
+    "account": "477",
+    "match": "3",
+    "side": "credit",
+    "amount": "300000",
+    "label": {
+     "fr": "Produits constatés d'avance",
+     "en": "Deferred income"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M7-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une facture fournisseur pas encore reçue pour un service de décembre est…",
+   "en": "A supplier invoice not yet received for a December service is…"
+  },
+  "explanation": {
+   "fr": "Une charge à payer (408).",
+   "en": "An accrued expense (408)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "une charge à payer",
+     "en": "an accrued expense"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "une charge constatée d'avance",
+     "en": "a prepaid expense"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M7-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les charges constatées d'avance vont en…",
+   "en": "Prepaid expenses go to…"
+  },
+  "explanation": {
+   "fr": "476.",
+   "en": "476."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "476",
+     "en": "476"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "477",
+     "en": "477"
+    }
+   },
+   {
+    "text": {
+     "fr": "408",
+     "en": "408"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M7-008",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les régularisations appliquent le principe de spécialisation des exercices.",
+   "en": "True or false: adjustments apply the accrual principle."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M7-009",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une charge constatée d'avance est contrepassée à l'ouverture de l'exercice suivant.",
+   "en": "True or false: a prepaid expense is reversed when the next year opens."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M7-010",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un produit facturé mais qui concerne l'exercice suivant est…",
+   "en": "Income invoiced but belonging to next year is…"
+  },
+  "explanation": {
+   "fr": "Un produit constaté d'avance (477).",
+   "en": "Deferred income (477)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "un produit constaté d'avance",
+     "en": "deferred income"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "un produit à recevoir",
+     "en": "accrued income"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M7-011",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Loyer annuel de 2 400 000 FCFA payé d'avance le 1er septembre. Quelle charge constatée d'avance au 31 décembre ?",
+   "en": "2026 financial year. Annual rent of 2,400,000 CFA francs paid in advance on 1 September. What prepaid expense at 31 December?"
+  },
+  "explanation": {
+   "fr": "8 mois sur 12 : 1 600 000 FCFA.",
+   "en": "8 months out of 12: 1,600,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1600000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M7-012",
+  "type": "matching",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Associez chaque situation à son compte.",
+   "en": "Match each situation with its account."
+  },
+  "explanation": {
+   "fr": "CCA 476, PCA 477, charge à payer 408, produit à recevoir 418.",
+   "en": "Prepaid 476, deferred 477, accrued expense 408, accrued income 418."
+  },
+  "pairs": [
+   {
+    "left": {
+     "fr": "Charge payée pour l'an prochain",
+     "en": "Expense paid for next year"
+    },
+    "right": {
+     "fr": "476",
+     "en": "476"
+    }
+   },
+   {
+    "left": {
+     "fr": "Produit encaissé pour l'an prochain",
+     "en": "Income received for next year"
+    },
+    "right": {
+     "fr": "477",
+     "en": "477"
+    }
+   },
+   {
+    "left": {
+     "fr": "Facture fournisseur non parvenue",
+     "en": "Supplier invoice not received"
+    },
+    "right": {
+     "fr": "408",
+     "en": "408"
+    }
+   },
+   {
+    "left": {
+     "fr": "Livraison non encore facturée",
+     "en": "Delivery not yet invoiced"
+    },
+    "right": {
+     "fr": "418",
+     "en": "418"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M7-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une livraison non facturée au 31 décembre donne un…",
+   "en": "A delivery not invoiced by 31 December gives…"
+  },
+  "explanation": {
+   "fr": "Produit à recevoir (418).",
+   "en": "Accrued income (418)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "produit à recevoir",
+     "en": "accrued income"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "produit constaté d'avance",
+     "en": "deferred income"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M7-102",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les produits constatés d'avance vont en…",
+   "en": "Deferred income goes to…"
+  },
+  "explanation": {
+   "fr": "477.",
+   "en": "477."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "477",
+     "en": "477"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "476",
+     "en": "476"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M7-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Abonnement de 600 000 FCFA payé le 1er juillet pour 12 mois. Quelle charge constatée d'avance au 31 décembre ?",
+   "en": "2026 financial year. A 600,000 CFA franc subscription paid on 1 July for 12 months. What prepaid expense at 31 December?"
+  },
+  "explanation": {
+   "fr": "600 000 × 6/12 = 300 000 FCFA.",
+   "en": "600,000 × 6/12 = 300,000 CFA francs."
+  },
+  "numeric": {
+   "value": "300000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M7-104",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une charge à payer augmente les charges de l'exercice.",
+   "en": "True or false: an accrued expense increases the year's expenses."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M7-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Charge constatée d'avance de 300 000 FCFA sur un abonnement (628). Passez l'écriture.",
+   "en": "2026 financial year. A 300,000 CFA franc prepaid expense on a subscription (628). Record the entry."
+  },
+  "explanation": {
+   "fr": "476 / 628.",
+   "en": "476 / 628."
+  },
+  "journal": [
+   {
+    "account": "476",
+    "match": "3",
+    "side": "debit",
+    "amount": "300000",
+    "label": {
+     "fr": "Charges constatées d'avance",
+     "en": "Prepaid expenses"
+    }
+   },
+   {
+    "account": "628",
+    "match": "3",
+    "side": "credit",
+    "amount": "300000",
+    "label": {
+     "fr": "Télécommunications",
+     "en": "Telecommunications"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M7-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La TVA d'une facture non parvenue se récupère en…",
+   "en": "VAT on an invoice not yet received is recorded in…"
+  },
+  "explanation": {
+   "fr": "4455.",
+   "en": "4455."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "4455",
+     "en": "4455"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "4435",
+     "en": "4435"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M7-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un produit constaté d'avance augmente le résultat de l'exercice.",
+   "en": "True or false: deferred income increases the year's result."
+  },
+  "explanation": {
+   "fr": "Faux : il le diminue, en retirant un produit qui appartient à l'an prochain.",
+   "en": "False: it reduces it, removing income that belongs to next year."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M7-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les factures à établir aux clients vont en…",
+   "en": "Invoices to be issued to customers go to…"
+  },
+  "explanation": {
+   "fr": "418.",
+   "en": "418."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "418",
+     "en": "418"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "408",
+     "en": "408"
+    }
+   }
+  ]
+ }
+]

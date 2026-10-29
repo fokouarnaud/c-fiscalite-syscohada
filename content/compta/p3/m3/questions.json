@@ -1,0 +1,686 @@
+[
+ {
+  "id": "C-P3-M3-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. La banque verse sur le compte un emprunt de 10 000 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. The bank pays a loan of 10,000,000 CFA francs into the account. Record the entry."
+  },
+  "explanation": {
+   "fr": "Banque 521, emprunt 162.",
+   "en": "Bank 521, loan 162."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "10000000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "162",
+    "match": "3",
+    "side": "credit",
+    "amount": "10000000",
+    "label": {
+     "fr": "Emprunts bancaires",
+     "en": "Bank loans"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M3-002",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Emprunt de 10 000 000 FCFA à 10 % sur 5 ans, annuités constantes. Quelle est l'annuité, arrondie au franc ?",
+   "en": "2026 financial year. Loan of 10,000,000 CFA francs at 10% over 5 years, level instalments. What is the instalment, rounded to the franc?"
+  },
+  "explanation": {
+   "fr": "10 000 000 × 0,10 / (1 − 1,10⁻⁵) = 2 637 975 FCFA.",
+   "en": "10,000,000 × 0.10 / (1 − 1.10⁻⁵) = 2,637,975 CFA francs."
+  },
+  "numeric": {
+   "value": "2637975",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P3-M3-003",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Première annuité de 2 637 975 FCFA : intérêts 1 000 000, capital 1 637 975 ; payée par virement. Passez l'écriture.",
+   "en": "2026 financial year. First instalment of 2,637,975 CFA francs: interest 1,000,000, capital 1,637,975; paid by transfer. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 162 (capital) et 671 (intérêts), crédit 521.",
+   "en": "Debit 162 (capital) and 671 (interest), credit 521."
+  },
+  "journal": [
+   {
+    "account": "162",
+    "match": "3",
+    "side": "debit",
+    "amount": "1637975",
+    "label": {
+     "fr": "Emprunts",
+     "en": "Loans"
+    }
+   },
+   {
+    "account": "671",
+    "match": "3",
+    "side": "debit",
+    "amount": "1000000",
+    "label": {
+     "fr": "Intérêts des emprunts",
+     "en": "Interest on loans"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "2637975",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M3-004",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Emprunt de 10 000 000 FCFA à 10 %. Quels sont les intérêts de la première année ?",
+   "en": "2026 financial year. Loan of 10,000,000 CFA francs at 10%. What is the first year's interest?"
+  },
+  "explanation": {
+   "fr": "10 000 000 × 10 % = 1 000 000 FCFA.",
+   "en": "10,000,000 × 10% = 1,000,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P3-M3-005",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Un associé avance 3 000 000 FCFA à la société en compte courant, par virement. Passez l'écriture.",
+   "en": "2026 financial year. A partner lends 3,000,000 CFA francs to the company through a current account, by transfer. Record the entry."
+  },
+  "explanation": {
+   "fr": "Banque 521, compte courant d'associé 462.",
+   "en": "Bank 521, partner's current account 462."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "3000000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "462",
+    "match": "3",
+    "side": "credit",
+    "amount": "3000000",
+    "label": {
+     "fr": "Associés, comptes courants",
+     "en": "Partners, current accounts"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M3-006",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Un camion de 12 000 000 FCFA est pris en crédit-bail. Passez l'écriture d'entrée selon le SYSCOHADA révisé.",
+   "en": "2026 financial year. A lorry worth 12,000,000 CFA francs is taken on a finance lease. Record the entry under the revised SYSCOHADA."
+  },
+  "explanation": {
+   "fr": "Le bien entre à l'actif (245) ; dette de location-acquisition, crédit-bail mobilier (173).",
+   "en": "The asset is recognised (245); lease-purchase liability, equipment leasing (173)."
+  },
+  "journal": [
+   {
+    "account": "245",
+    "match": "3",
+    "side": "debit",
+    "amount": "12000000",
+    "label": {
+     "fr": "Matériel de transport",
+     "en": "Transport equipment"
+    }
+   },
+   {
+    "account": "173",
+    "match": "3",
+    "side": "credit",
+    "amount": "12000000",
+    "label": {
+     "fr": "Dettes de crédit-bail mobilier",
+     "en": "Equipment lease liability"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M3-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les intérêts d'un emprunt s'enregistrent en…",
+   "en": "Interest on a loan is recorded in…"
+  },
+  "explanation": {
+   "fr": "671 Intérêts des emprunts.",
+   "en": "671 Interest on borrowings."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "671",
+     "en": "671"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "162",
+     "en": "162"
+    }
+   },
+   {
+    "text": {
+     "fr": "631",
+     "en": "631"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M3-008",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le remboursement du capital d'un emprunt est une charge.",
+   "en": "True or false: repaying a loan's capital is an expense."
+  },
+  "explanation": {
+   "fr": "Faux : il diminue la dette (162) ; seuls les intérêts sont une charge.",
+   "en": "False: it reduces the debt (162); only interest is an expense."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M3-009",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : selon le SYSCOHADA révisé, un bien pris en crédit-bail est inscrit à l'actif du preneur.",
+   "en": "True or false: under the revised SYSCOHADA, a leased asset is shown in the lessee's assets."
+  },
+  "explanation": {
+   "fr": "Vrai : avec une dette de location-acquisition en 17.",
+   "en": "True: with a lease-purchase liability in 17."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M3-010",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une avance d'un associé en compte courant s'enregistre en…",
+   "en": "A partner's current account advance is recorded in…"
+  },
+  "explanation": {
+   "fr": "462.",
+   "en": "462."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "462",
+     "en": "462"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "101",
+     "en": "101"
+    }
+   },
+   {
+    "text": {
+     "fr": "162",
+     "en": "162"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M3-011",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Augmentation de capital : les associés versent 5 000 000 FCFA en banque. Passez l'écriture (simplifiée).",
+   "en": "2026 financial year. Capital increase: the partners pay 5,000,000 CFA francs into the bank. Record the (simplified) entry."
+  },
+  "explanation": {
+   "fr": "Banque 521, capital social 101.",
+   "en": "Bank 521, share capital 101."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "5000000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "101",
+    "match": "3",
+    "side": "credit",
+    "amount": "5000000",
+    "label": {
+     "fr": "Capital social",
+     "en": "Share capital"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M3-012",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Avec des annuités constantes, la part d'intérêts…",
+   "en": "With level instalments, the interest share…"
+  },
+  "explanation": {
+   "fr": "Diminue chaque année, car la dette restante baisse.",
+   "en": "Falls each year, because the outstanding debt falls."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "diminue chaque année",
+     "en": "falls each year"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "augmente chaque année",
+     "en": "rises each year"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M3-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un emprunt bancaire reçu s'enregistre au crédit de…",
+   "en": "A bank loan received is credited to…"
+  },
+  "explanation": {
+   "fr": "162.",
+   "en": "162."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "162",
+     "en": "162"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "521",
+     "en": "521"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M3-102",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une augmentation de capital en numéraire augmente le compte 101.",
+   "en": "True or false: a cash capital increase increases account 101."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M3-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Annuité de 2 637 975 FCFA dont 1 000 000 d'intérêts. Quel capital est remboursé ?",
+   "en": "2026 financial year. Instalment of 2,637,975 CFA francs including 1,000,000 of interest. How much capital is repaid?"
+  },
+  "explanation": {
+   "fr": "2 637 975 − 1 000 000 = 1 637 975 FCFA.",
+   "en": "2,637,975 − 1,000,000 = 1,637,975 CFA francs."
+  },
+  "numeric": {
+   "value": "1637975",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P3-M3-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une dette de crédit-bail mobilier s'enregistre en…",
+   "en": "An equipment lease liability is recorded in…"
+  },
+  "explanation": {
+   "fr": "173.",
+   "en": "173."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "173",
+     "en": "173"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "622",
+     "en": "622"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M3-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Intérêts annuels de 400 000 FCFA payés par virement. Passez l'écriture.",
+   "en": "2026 financial year. Annual interest of 400,000 CFA francs paid by transfer. Record the entry."
+  },
+  "explanation": {
+   "fr": "Charge financière 671, banque 521.",
+   "en": "Financial expense 671, bank 521."
+  },
+  "journal": [
+   {
+    "account": "671",
+    "match": "3",
+    "side": "debit",
+    "amount": "400000",
+    "label": {
+     "fr": "Intérêts des emprunts",
+     "en": "Interest on loans"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "400000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M3-106",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une avance d'associé en compte courant est une dette de la société.",
+   "en": "True or false: a partner's current account advance is a debt of the company."
+  },
+  "explanation": {
+   "fr": "Vrai : 462.",
+   "en": "True: 462."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M3-107",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "L'annuité d'un emprunt comprend…",
+   "en": "A loan instalment comprises…"
+  },
+  "explanation": {
+   "fr": "Des intérêts et un remboursement de capital.",
+   "en": "Interest and a capital repayment."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "intérêts et capital",
+     "en": "interest and capital"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "seulement des intérêts",
+     "en": "interest only"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M3-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les emprunts sont des…",
+   "en": "Borrowings are…"
+  },
+  "explanation": {
+   "fr": "Dettes financières, ressources durables (classe 1).",
+   "en": "Financial debts, long-term funding (class 1)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "dettes financières",
+     "en": "financial debts"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "dettes fournisseurs",
+     "en": "trade payables"
+    }
+   }
+  ]
+ }
+]

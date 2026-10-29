@@ -1,0 +1,671 @@
+[
+ {
+  "id": "C-P3-M4-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. L'État verse 5 000 000 FCFA de subvention d'équipement pour l'achat d'un camion. Passez l'écriture d'encaissement.",
+   "en": "2026 financial year. The State pays a 5,000,000 CFA franc equipment grant to buy a lorry. Record the receipt."
+  },
+  "explanation": {
+   "fr": "Banque 521, subvention d'équipement 141.",
+   "en": "Bank 521, equipment grant 141."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "5000000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "141",
+    "match": "3",
+    "side": "credit",
+    "amount": "5000000",
+    "label": {
+     "fr": "Subventions d'équipement",
+     "en": "Equipment grants"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M4-002",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Le camion financé est amorti sur 5 ans. Passez l'écriture de reprise annuelle de la subvention de 5 000 000 FCFA.",
+   "en": "2026 financial year. The funded lorry is depreciated over 5 years. Record the annual release of the 5,000,000 CFA franc grant."
+  },
+  "explanation": {
+   "fr": "1 000 000 : débit 141, crédit 799.",
+   "en": "1,000,000: debit 141, credit 799."
+  },
+  "journal": [
+   {
+    "account": "141",
+    "match": "3",
+    "side": "debit",
+    "amount": "1000000",
+    "label": {
+     "fr": "Subventions d'équipement",
+     "en": "Equipment grants"
+    }
+   },
+   {
+    "account": "799",
+    "match": "3",
+    "side": "credit",
+    "amount": "1000000",
+    "label": {
+     "fr": "Reprises de subventions",
+     "en": "Grant releases"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M4-003",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Une subvention d'exploitation de 2 000 000 FCFA est encaissée. Passez l'écriture.",
+   "en": "2026 financial year. An operating grant of 2,000,000 CFA francs is received. Record the entry."
+  },
+  "explanation": {
+   "fr": "Banque 521, autres subventions d'exploitation 718.",
+   "en": "Bank 521, other operating grants 718."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "718",
+    "match": "3",
+    "side": "credit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Subventions d'exploitation",
+     "en": "Operating grants"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M4-004",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Subvention de 5 000 000 FCFA pour un bien amorti sur 5 ans. Quel montant reste en capitaux propres après 2 reprises ?",
+   "en": "2026 financial year. A 5,000,000 CFA franc grant for an asset depreciated over 5 years. How much remains in equity after 2 releases?"
+  },
+  "explanation": {
+   "fr": "5 000 000 − 2 × 1 000 000 = 3 000 000 FCFA.",
+   "en": "5,000,000 − 2 × 1,000,000 = 3,000,000 CFA francs."
+  },
+  "numeric": {
+   "value": "3000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P3-M4-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une subvention d'investissement s'inscrit…",
+   "en": "An investment grant is shown in…"
+  },
+  "explanation": {
+   "fr": "En capitaux propres (14).",
+   "en": "Equity (14)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "en capitaux propres",
+     "en": "equity"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "en produits de l'exercice",
+     "en": "the year's income"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M4-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La reprise d'une subvention d'investissement se crédite à…",
+   "en": "The release of an investment grant is credited to…"
+  },
+  "explanation": {
+   "fr": "799.",
+   "en": "799."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "799",
+     "en": "799"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "718",
+     "en": "718"
+    }
+   },
+   {
+    "text": {
+     "fr": "141",
+     "en": "141"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M4-007",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une subvention d'exploitation augmente immédiatement le résultat.",
+   "en": "True or false: an operating grant increases the result immediately."
+  },
+  "explanation": {
+   "fr": "Vrai : c'est un produit de l'exercice (71).",
+   "en": "True: it is income for the year (71)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M4-008",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une subvention d'investissement est reprise en une seule fois l'année de sa réception.",
+   "en": "True or false: an investment grant is released all at once in the year received."
+  },
+  "explanation": {
+   "fr": "Faux : elle est reprise au rythme de l'amortissement du bien.",
+   "en": "False: it is released at the pace of the asset's depreciation."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M4-009",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Subvention de 6 000 000 FCFA pour un matériel amorti sur 4 ans. Quelle est la reprise annuelle ?",
+   "en": "2026 financial year. A 6,000,000 CFA franc grant for equipment depreciated over 4 years. What is the annual release?"
+  },
+  "explanation": {
+   "fr": "6 000 000 / 4 = 1 500 000 FCFA.",
+   "en": "6,000,000 / 4 = 1,500,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1500000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P3-M4-010",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une subvention qui compense des prix de vente bas est…",
+   "en": "A grant that offsets low selling prices is…"
+  },
+  "explanation": {
+   "fr": "Une subvention d'exploitation.",
+   "en": "An operating grant."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "d'exploitation",
+     "en": "an operating grant"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "d'investissement",
+     "en": "an investment grant"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M4-011",
+  "type": "matching",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Associez chaque subvention à son compte.",
+   "en": "Match each grant with its account."
+  },
+  "explanation": {
+   "fr": "Équipement 141, exploitation 718, reprise 799.",
+   "en": "Equipment 141, operating 718, release 799."
+  },
+  "pairs": [
+   {
+    "left": {
+     "fr": "Subvention d'équipement reçue",
+     "en": "Equipment grant received"
+    },
+    "right": {
+     "fr": "141",
+     "en": "141"
+    }
+   },
+   {
+    "left": {
+     "fr": "Subvention d'exploitation reçue",
+     "en": "Operating grant received"
+    },
+    "right": {
+     "fr": "718",
+     "en": "718"
+    }
+   },
+   {
+    "left": {
+     "fr": "Reprise annuelle",
+     "en": "Annual release"
+    },
+    "right": {
+     "fr": "799",
+     "en": "799"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M4-012",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une subvention d'équilibre est…",
+   "en": "A balancing grant is…"
+  },
+  "explanation": {
+   "fr": "Un produit hors activités ordinaires (88).",
+   "en": "Non-ordinary income (88)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "un produit HAO",
+     "en": "non-ordinary income"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "une dette",
+     "en": "a debt"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M4-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une subvention d'exploitation s'enregistre en classe…",
+   "en": "An operating grant is recorded in class…"
+  },
+  "explanation": {
+   "fr": "7 (compte 71).",
+   "en": "7 (account 71)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "7",
+     "en": "7"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "1",
+     "en": "1"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M4-102",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la reprise d'une subvention d'investissement est un produit.",
+   "en": "True or false: releasing an investment grant is income."
+  },
+  "explanation": {
+   "fr": "Vrai : 799.",
+   "en": "True: 799."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M4-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Subvention de 5 000 000 FCFA, bien amorti sur 5 ans. Quelle est la reprise annuelle ?",
+   "en": "2026 financial year. 5,000,000 CFA franc grant, asset depreciated over 5 years. What is the annual release?"
+  },
+  "explanation": {
+   "fr": "5 000 000 / 5 = 1 000 000 FCFA.",
+   "en": "5,000,000 / 5 = 1,000,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P3-M4-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le compte 141 enregistre…",
+   "en": "Account 141 records…"
+  },
+  "explanation": {
+   "fr": "Les subventions d'équipement.",
+   "en": "Equipment grants."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "les subventions d'équipement",
+     "en": "equipment grants"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "les emprunts",
+     "en": "borrowings"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M4-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Reprise annuelle de 1 500 000 FCFA d'une subvention d'équipement. Passez l'écriture.",
+   "en": "2026 financial year. Annual release of 1,500,000 CFA francs of an equipment grant. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 141, crédit 799.",
+   "en": "Debit 141, credit 799."
+  },
+  "journal": [
+   {
+    "account": "141",
+    "match": "3",
+    "side": "debit",
+    "amount": "1500000",
+    "label": {
+     "fr": "Subventions d'équipement",
+     "en": "Equipment grants"
+    }
+   },
+   {
+    "account": "799",
+    "match": "3",
+    "side": "credit",
+    "amount": "1500000",
+    "label": {
+     "fr": "Reprises de subventions",
+     "en": "Grant releases"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M4-106",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une subvention d'investissement figure au passif du bilan.",
+   "en": "True or false: an investment grant appears on the liabilities and equity side."
+  },
+  "explanation": {
+   "fr": "Vrai : en capitaux propres.",
+   "en": "True: in equity."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M4-107",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La reprise d'une subvention suit…",
+   "en": "A grant release follows…"
+  },
+  "explanation": {
+   "fr": "L'amortissement du bien financé.",
+   "en": "The depreciation of the funded asset."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "l'amortissement du bien",
+     "en": "the asset's depreciation"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "le paiement des salaires",
+     "en": "payment of wages"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M4-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une subvention reçue pour couvrir les charges courantes va en…",
+   "en": "A grant received to cover current expenses goes to…"
+  },
+  "explanation": {
+   "fr": "71.",
+   "en": "71."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "71",
+     "en": "71"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "14",
+     "en": "14"
+    }
+   }
+  ]
+ }
+]

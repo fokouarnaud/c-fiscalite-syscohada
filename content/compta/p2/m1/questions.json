@@ -1,0 +1,718 @@
+[
+ {
+  "id": "C-P2-M1-001",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel est le taux global de la TVA au Cameroun, centimes additionnels compris (exercice 2026) ?",
+   "en": "What is Cameroon's overall VAT rate, council cents included (2026)?"
+  },
+  "explanation": {
+   "fr": "17,5 % × 1,10 = 19,25 % (CGI art. 142 et C 83).",
+   "en": "17.5% × 1.10 = 19.25% (GTC s. 142 and C 83)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "19,25 %",
+     "en": "19.25%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "17,5 %",
+     "en": "17.5%"
+    }
+   },
+   {
+    "text": {
+     "fr": "18 %",
+     "en": "18%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M1-002",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Pour une vente de marchandises, le fait générateur de la TVA est…",
+   "en": "For a sale of goods, the VAT taxable event is…"
+  },
+  "explanation": {
+   "fr": "La livraison des biens (CGI art. 133).",
+   "en": "The delivery of the goods (GTC s. 133)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "la livraison",
+     "en": "delivery"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "la commande",
+     "en": "the order"
+    }
+   },
+   {
+    "text": {
+     "fr": "le paiement de la facture",
+     "en": "payment of the invoice"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M1-003",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un acompte encaissé avant la livraison rend la TVA exigible sur son montant.",
+   "en": "True or false: an advance received before delivery makes VAT chargeable on its amount."
+  },
+  "explanation": {
+   "fr": "Vrai (CGI art. 134).",
+   "en": "True (GTC s. 134)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M1-004",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. TVA facturée du mois : 1 925 000 FCFA ; TVA récupérable : 770 000 FCFA. Quelle est la TVA due ?",
+   "en": "2026 financial year. Month's VAT charged: 1,925,000 CFA francs; recoverable VAT: 770,000. What is the VAT due?"
+  },
+  "explanation": {
+   "fr": "1 925 000 − 770 000 = 1 155 000 FCFA.",
+   "en": "1,925,000 − 770,000 = 1,155,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1155000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P2-M1-005",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Fin de mois : TVA facturée 1 925 000 FCFA, TVA récupérable 770 000 FCFA. Passez l'écriture de liquidation.",
+   "en": "2026 financial year. Month end: VAT charged 1,925,000 CFA francs, recoverable VAT 770,000. Record the settlement entry."
+  },
+  "explanation": {
+   "fr": "On solde 443 au débit et 445 au crédit ; la différence est due à l'État (4441).",
+   "en": "Clear 443 by a debit and 445 by a credit; the difference is due to the State (4441)."
+  },
+  "journal": [
+   {
+    "account": "443",
+    "match": "3",
+    "side": "debit",
+    "amount": "1925000",
+    "label": {
+     "fr": "TVA facturée",
+     "en": "VAT charged"
+    }
+   },
+   {
+    "account": "445",
+    "match": "3",
+    "side": "credit",
+    "amount": "770000",
+    "label": {
+     "fr": "TVA récupérable",
+     "en": "Recoverable VAT"
+    }
+   },
+   {
+    "account": "4441",
+    "match": "4",
+    "side": "credit",
+    "amount": "1155000",
+    "label": {
+     "fr": "État, TVA due",
+     "en": "State, VAT due"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M1-006",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. La TVA due de 1 155 000 FCFA est payée par virement. Passez l'écriture.",
+   "en": "2026 financial year. VAT due of 1,155,000 CFA francs is paid by transfer. Record the entry."
+  },
+  "explanation": {
+   "fr": "La dette envers l'État s'éteint : débit 4441 ; la banque diminue : crédit 521.",
+   "en": "The debt to the State is settled: debit 4441; the bank decreases: credit 521."
+  },
+  "journal": [
+   {
+    "account": "4441",
+    "match": "4",
+    "side": "debit",
+    "amount": "1155000",
+    "label": {
+     "fr": "État, TVA due",
+     "en": "State, VAT due"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "1155000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M1-007",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Fin de mois : TVA facturée 300 000 FCFA, TVA récupérable 450 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. Month end: VAT charged 300,000 CFA francs, recoverable VAT 450,000. Record the entry."
+  },
+  "explanation": {
+   "fr": "La TVA récupérable dépasse la TVA facturée : crédit de TVA de 150 000 au débit de 4449.",
+   "en": "Recoverable VAT exceeds VAT charged: a VAT credit of 150,000 debited to 4449."
+  },
+  "journal": [
+   {
+    "account": "443",
+    "match": "3",
+    "side": "debit",
+    "amount": "300000",
+    "label": {
+     "fr": "TVA facturée",
+     "en": "VAT charged"
+    }
+   },
+   {
+    "account": "4449",
+    "match": "4",
+    "side": "debit",
+    "amount": "150000",
+    "label": {
+     "fr": "Crédit de TVA",
+     "en": "VAT credit"
+    }
+   },
+   {
+    "account": "445",
+    "match": "3",
+    "side": "credit",
+    "amount": "450000",
+    "label": {
+     "fr": "TVA récupérable",
+     "en": "Recoverable VAT"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M1-008",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la TVA payée sur un repas d'affaires au restaurant est déductible.",
+   "en": "True or false: VAT paid on a business restaurant meal is deductible."
+  },
+  "explanation": {
+   "fr": "Faux : la restauration n'ouvre pas droit à déduction (CGI art. 144).",
+   "en": "False: catering gives no right to deduction (GTC s. 144)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M1-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un crédit de TVA est…",
+   "en": "A VAT credit is…"
+  },
+  "explanation": {
+   "fr": "Imputable sur les déclarations suivantes, sans limitation de délai (CGI art. 149).",
+   "en": "Set against later returns, without time limit (GTC s. 149)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "reporté sur les déclarations suivantes",
+     "en": "carried forward to later returns"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "perdu en fin d'année",
+     "en": "lost at year end"
+    }
+   },
+   {
+    "text": {
+     "fr": "payé au client",
+     "en": "paid to the customer"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M1-010",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Quelle TVA (taux global 19,25 %) collecte-t-on sur une vente de 2 400 000 FCFA hors taxes ?",
+   "en": "2026 financial year. What VAT (overall rate 19.25%) is collected on a sale of 2,400,000 CFA francs excluding tax?"
+  },
+  "explanation": {
+   "fr": "2 400 000 × 19,25 % = 462 000 FCFA.",
+   "en": "2,400,000 × 19.25% = 462,000 CFA francs."
+  },
+  "numeric": {
+   "value": "462000",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M1-011",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel compte enregistre la TVA facturée aux clients ?",
+   "en": "Which account records VAT charged to customers?"
+  },
+  "explanation": {
+   "fr": "443 État, TVA facturée.",
+   "en": "443 State, VAT charged."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "443",
+     "en": "443"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "445",
+     "en": "445"
+    }
+   },
+   {
+    "text": {
+     "fr": "4449",
+     "en": "4449"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M1-012",
+  "type": "multiple",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quelles dépenses n'ouvrent pas droit à déduction de la TVA ?",
+   "en": "Which spending gives no right to VAT deduction?"
+  },
+  "explanation": {
+   "fr": "Hébergement, restauration et réception sont exclus (CGI art. 144) ; les marchandises achetées pour la revente ouvrent droit à déduction.",
+   "en": "Accommodation, catering and receptions are excluded (GTC s. 144); goods bought for resale give a right to deduction."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Hébergement",
+     "en": "Accommodation"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Restauration",
+     "en": "Catering"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Réception",
+     "en": "Receptions"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Marchandises pour la revente",
+     "en": "Goods for resale"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M1-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Qui supporte finalement la TVA ?",
+   "en": "Who finally bears VAT?"
+  },
+  "explanation": {
+   "fr": "Le consommateur final ; l'entreprise ne fait que la collecter.",
+   "en": "The final consumer; the business only collects it."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le consommateur final",
+     "en": "The final consumer"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "L'entreprise",
+     "en": "The business"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M1-102",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Où enregistre-t-on la TVA payée sur les achats de marchandises ?",
+   "en": "Where is VAT paid on purchases of goods recorded?"
+  },
+  "explanation": {
+   "fr": "4452, TVA récupérable sur achats.",
+   "en": "4452, recoverable VAT on purchases."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "4452",
+     "en": "4452"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "443",
+     "en": "443"
+    }
+   },
+   {
+    "text": {
+     "fr": "4441",
+     "en": "4441"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M1-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. TVA facturée : 840 000 FCFA ; TVA récupérable : 315 000 FCFA. Quelle est la TVA due ?",
+   "en": "2026 financial year. VAT charged: 840,000 CFA francs; recoverable VAT: 315,000. What is the VAT due?"
+  },
+  "explanation": {
+   "fr": "840 000 − 315 000 = 525 000 FCFA.",
+   "en": "840,000 − 315,000 = 525,000 CFA francs."
+  },
+  "numeric": {
+   "value": "525000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P2-M1-104",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le taux général de la TVA, hors centimes additionnels, est de 17,5 %.",
+   "en": "True or false: the standard VAT rate, excluding council cents, is 17.5%."
+  },
+  "explanation": {
+   "fr": "Vrai (CGI art. 142).",
+   "en": "True (GTC s. 142)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M1-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Fin de mois : TVA facturée 840 000 FCFA, TVA récupérable 315 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. Month end: VAT charged 840,000 CFA francs, recoverable VAT 315,000. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 443, crédit 445 et 4441 pour la TVA due de 525 000.",
+   "en": "Debit 443, credit 445 and 4441 for the VAT due of 525,000."
+  },
+  "journal": [
+   {
+    "account": "443",
+    "match": "3",
+    "side": "debit",
+    "amount": "840000",
+    "label": {
+     "fr": "TVA facturée",
+     "en": "VAT charged"
+    }
+   },
+   {
+    "account": "445",
+    "match": "3",
+    "side": "credit",
+    "amount": "315000",
+    "label": {
+     "fr": "TVA récupérable",
+     "en": "Recoverable VAT"
+    }
+   },
+   {
+    "account": "4441",
+    "match": "4",
+    "side": "credit",
+    "amount": "525000",
+    "label": {
+     "fr": "État, TVA due",
+     "en": "State, VAT due"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M1-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Pour une prestation de services, le fait générateur est…",
+   "en": "For a service, the taxable event is…"
+  },
+  "explanation": {
+   "fr": "L'exécution du service (CGI art. 133).",
+   "en": "Performance of the service (GTC s. 133)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "l'exécution du service",
+     "en": "performance of the service"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "la signature du devis",
+     "en": "signing the quote"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M1-107",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Quelle TVA (taux global 19,25 %) paie-t-on sur un achat de 600 000 FCFA hors taxes ?",
+   "en": "2026 financial year. What VAT (overall rate 19.25%) is paid on a purchase of 600,000 CFA francs excluding tax?"
+  },
+  "explanation": {
+   "fr": "600 000 × 19,25 % = 115 500 FCFA.",
+   "en": "600,000 × 19.25% = 115,500 CFA francs."
+  },
+  "numeric": {
+   "value": "115500",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M1-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un crédit de TVA s'enregistre au…",
+   "en": "A VAT credit is recorded in…"
+  },
+  "explanation": {
+   "fr": "4449 État, crédit de TVA à reporter, au débit.",
+   "en": "4449 State, VAT credit carried forward, on the debit side."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "débit de 4449",
+     "en": "debit of 4449"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "crédit de 4441",
+     "en": "credit of 4441"
+    }
+   }
+  ]
+ }
+]

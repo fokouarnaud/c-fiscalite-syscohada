@@ -1,0 +1,734 @@
+[
+ {
+  "id": "C-P1-M3-001",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le bilan décrit…",
+   "en": "The balance sheet describes…"
+  },
+  "explanation": {
+   "fr": "Le patrimoine à une date : ce que l'entreprise possède (actif) et la façon dont c'est financé (passif).",
+   "en": "The position at one date: what the business holds (assets) and how it is funded (liabilities)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "le patrimoine à une date donnée",
+     "en": "the financial position at a given date"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "l'activité d'une année",
+     "en": "a year's activity"
+    }
+   },
+   {
+    "text": {
+     "fr": "les flux de trésorerie du mois",
+     "en": "the month's cash flows"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-002",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le total de l'actif égale toujours le total du passif.",
+   "en": "True or false: total assets always equal total liabilities and equity."
+  },
+  "explanation": {
+   "fr": "Vrai : chaque emploi a une ressource qui le finance.",
+   "en": "True: every use of funds has a source that finances it."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-003",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Où classe-t-on un camion de livraison ?",
+   "en": "Where is a delivery lorry classified?"
+  },
+  "explanation": {
+   "fr": "Un bien durable est un actif immobilisé (classe 2, compte 245 Matériel de transport).",
+   "en": "A long-lived asset is a fixed asset (class 2, account 245 Transport equipment)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Actif immobilisé",
+     "en": "Fixed assets"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Actif circulant",
+     "en": "Current assets"
+    }
+   },
+   {
+    "text": {
+     "fr": "Passif circulant",
+     "en": "Current liabilities"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-004",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Où classe-t-on les marchandises en magasin ?",
+   "en": "Where are goods held in store classified?"
+  },
+  "explanation": {
+   "fr": "Les stocks (classe 3) font partie de l'actif circulant.",
+   "en": "Inventories (class 3) are current assets."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Actif circulant",
+     "en": "Current assets"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Actif immobilisé",
+     "en": "Fixed assets"
+    }
+   },
+   {
+    "text": {
+     "fr": "Capitaux propres",
+     "en": "Equity"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un emprunt bancaire sur cinq ans est…",
+   "en": "A five-year bank loan is…"
+  },
+  "explanation": {
+   "fr": "Une dette financière, ressource durable de classe 1 (compte 162).",
+   "en": "A financial debt, long-term funding in class 1 (account 162)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "une dette financière (ressource durable)",
+     "en": "a financial debt (long-term funding)"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "un actif immobilisé",
+     "en": "a fixed asset"
+    }
+   },
+   {
+    "text": {
+     "fr": "une charge",
+     "en": "an expense"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-006",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. L'actif total vaut 18 000 000 FCFA et les dettes 11 500 000 FCFA. Que valent les capitaux propres ?",
+   "en": "2026 financial year. Total assets are 18,000,000 CFA francs and debts 11,500,000. What is equity?"
+  },
+  "explanation": {
+   "fr": "Capitaux propres = actif − dettes = 6 500 000 FCFA.",
+   "en": "Equity = assets − debts = 6,500,000 CFA francs."
+  },
+  "numeric": {
+   "value": "6500000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P1-M3-007",
+  "type": "matching",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Associez chaque élément à sa rubrique du bilan.",
+   "en": "Match each item with its balance sheet heading."
+  },
+  "explanation": {
+   "fr": "Capital : capitaux propres ; matériel : actif immobilisé ; clients : actif circulant ; banque : trésorerie-actif.",
+   "en": "Capital: equity; equipment: fixed assets; customers: current assets; bank: cash assets."
+  },
+  "pairs": [
+   {
+    "left": {
+     "fr": "Capital social",
+     "en": "Share capital"
+    },
+    "right": {
+     "fr": "Capitaux propres",
+     "en": "Equity"
+    }
+   },
+   {
+    "left": {
+     "fr": "Matériel et mobilier",
+     "en": "Equipment and furniture"
+    },
+    "right": {
+     "fr": "Actif immobilisé",
+     "en": "Fixed assets"
+    }
+   },
+   {
+    "left": {
+     "fr": "Créances clients",
+     "en": "Customer receivables"
+    },
+    "right": {
+     "fr": "Actif circulant",
+     "en": "Current assets"
+    }
+   },
+   {
+    "left": {
+     "fr": "Solde bancaire positif",
+     "en": "Positive bank balance"
+    },
+    "right": {
+     "fr": "Trésorerie-actif",
+     "en": "Cash assets"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-008",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. La banque accorde à Mbarga Distribution un emprunt de 10 000 000 FCFA, versé sur son compte. Passez l'écriture.",
+   "en": "2026 financial year. The bank grants Mbarga Distribution a loan of 10,000,000 CFA francs, paid into its account. Record the entry."
+  },
+  "explanation": {
+   "fr": "La banque augmente : débit 521 ; la dette d'emprunt augmente : crédit 162.",
+   "en": "The bank increases: debit 521; the loan liability increases: credit 162."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "10000000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "162",
+    "match": "3",
+    "side": "credit",
+    "amount": "10000000",
+    "label": {
+     "fr": "Emprunt bancaire",
+     "en": "Bank loan"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-009",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Un associé apporte à la société un véhicule de livraison évalué 8 000 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. A partner contributes a delivery vehicle valued at 8,000,000 CFA francs to the company. Record the entry."
+  },
+  "explanation": {
+   "fr": "Le véhicule entre à l'actif : débit 245 ; le capital augmente : crédit 101.",
+   "en": "The vehicle enters assets: debit 245; capital increases: credit 101."
+  },
+  "journal": [
+   {
+    "account": "245",
+    "match": "3",
+    "side": "debit",
+    "amount": "8000000",
+    "label": {
+     "fr": "Matériel de transport",
+     "en": "Transport equipment"
+    }
+   },
+   {
+    "account": "101",
+    "match": "3",
+    "side": "credit",
+    "amount": "8000000",
+    "label": {
+     "fr": "Capital social",
+     "en": "Share capital"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-010",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les dettes envers les fournisseurs figurent…",
+   "en": "Amounts owed to suppliers appear in…"
+  },
+  "explanation": {
+   "fr": "Au passif circulant (classe 4).",
+   "en": "Current liabilities (class 4)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "au passif circulant",
+     "en": "current liabilities"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "aux capitaux propres",
+     "en": "equity"
+    }
+   },
+   {
+    "text": {
+     "fr": "à l'actif immobilisé",
+     "en": "fixed assets"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-011",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un découvert bancaire figure à la trésorerie-passif.",
+   "en": "True or false: a bank overdraft appears under cash liabilities."
+  },
+  "explanation": {
+   "fr": "Vrai : un solde bancaire créditeur est une trésorerie-passif.",
+   "en": "True: a credit bank balance is a cash liability."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-012",
+  "type": "multiple",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Lesquels sont des emplois (actif) ?",
+   "en": "Which of these are uses of funds (assets)?"
+  },
+  "explanation": {
+   "fr": "Le matériel, les stocks et les créances clients sont des actifs ; le capital est une ressource.",
+   "en": "Equipment, inventories and customer receivables are assets; capital is a source of funds."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Matériel",
+     "en": "Equipment"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Stocks",
+     "en": "Inventories"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Créances clients",
+     "en": "Customer receivables"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Capital social",
+     "en": "Share capital"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le passif répond à la question…",
+   "en": "Liabilities and equity answer the question…"
+  },
+  "explanation": {
+   "fr": "Le passif montre l'origine des ressources : capitaux propres et dettes.",
+   "en": "They show where the funds come from: equity and debts."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "d'où viennent les ressources ?",
+     "en": "where do the funds come from?"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "que possède l'entreprise ?",
+     "en": "what does the business own?"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-102",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les capitaux propres égalent l'actif moins les dettes.",
+   "en": "True or false: equity equals assets minus debts."
+  },
+  "explanation": {
+   "fr": "Vrai : c'est ce qui revient aux associés.",
+   "en": "True: it is what belongs to the owners."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Capitaux propres : 4 000 000 FCFA ; dettes : 3 200 000 FCFA. Quel est le total du bilan ?",
+   "en": "2026 financial year. Equity: 4,000,000 CFA francs; debts: 3,200,000. What is the balance sheet total?"
+  },
+  "explanation": {
+   "fr": "Total du passif = 4 000 000 + 3 200 000 = 7 200 000 FCFA, égal à l'actif.",
+   "en": "Total liabilities and equity = 4,000,000 + 3,200,000 = 7,200,000 CFA francs, equal to assets."
+  },
+  "numeric": {
+   "value": "7200000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P1-M3-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Dans quelle classe se trouvent les immobilisations ?",
+   "en": "Which class holds fixed assets?"
+  },
+  "explanation": {
+   "fr": "La classe 2.",
+   "en": "Class 2."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Classe 2",
+     "en": "Class 2"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Classe 3",
+     "en": "Class 3"
+    }
+   },
+   {
+    "text": {
+     "fr": "Classe 6",
+     "en": "Class 6"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-105",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un ordinateur acheté pour le bureau, utilisé plusieurs années, est…",
+   "en": "A computer bought for the office and used for several years is…"
+  },
+  "explanation": {
+   "fr": "Un actif immobilisé (matériel et mobilier, 244).",
+   "en": "A fixed asset (equipment and furniture, 244)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "un actif immobilisé",
+     "en": "a fixed asset"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "une charge",
+     "en": "an expense"
+    }
+   },
+   {
+    "text": {
+     "fr": "un stock",
+     "en": "inventory"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-106",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Les associés versent 2 000 000 FCFA de capital en espèces dans la caisse. Passez l'écriture.",
+   "en": "2026 financial year. The partners pay 2,000,000 CFA francs of capital in cash. Record the entry."
+  },
+  "explanation": {
+   "fr": "La caisse augmente : débit 571 ; le capital augmente : crédit 101.",
+   "en": "Cash increases: debit 571; capital increases: credit 101."
+  },
+  "journal": [
+   {
+    "account": "571",
+    "match": "3",
+    "side": "debit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Caisse",
+     "en": "Cash"
+    }
+   },
+   {
+    "account": "101",
+    "match": "3",
+    "side": "credit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Capital social",
+     "en": "Share capital"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les stocks font partie de l'actif immobilisé.",
+   "en": "True or false: inventories are part of fixed assets."
+  },
+  "explanation": {
+   "fr": "Faux : ils sont dans l'actif circulant.",
+   "en": "False: they are current assets."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P1-M3-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le capital social se trouve…",
+   "en": "Share capital is found in…"
+  },
+  "explanation": {
+   "fr": "Dans les capitaux propres (classe 1).",
+   "en": "Equity (class 1)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "dans les capitaux propres",
+     "en": "equity"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "dans l'actif circulant",
+     "en": "current assets"
+    }
+   }
+  ]
+ }
+]

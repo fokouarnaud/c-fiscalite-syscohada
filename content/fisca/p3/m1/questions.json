@@ -1,0 +1,655 @@
+[
+ {
+  "id": "F-P3-M1-001",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Jusqu'à quand l'administration peut-elle redresser un impôt exigible en 2026 ?",
+   "en": "Until when can the authority reassess a tax chargeable in 2026?"
+  },
+  "explanation": {
+   "fr": "Jusqu'au 31 décembre 2030 : fin de la quatrième année suivante (art. L 34).",
+   "en": "Until 31 December 2030: end of the fourth following year (s. L 34)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "31 décembre 2030",
+     "en": "31 December 2030"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "31 décembre 2027",
+     "en": "31 December 2027"
+    }
+   },
+   {
+    "text": {
+     "fr": "sans limite",
+     "en": "without limit"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-002",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une moyenne entreprise dépose sa déclaration des résultats au plus tard le…",
+   "en": "A medium-sized company files its tax return by…"
+  },
+  "explanation": {
+   "fr": "15 avril (art. 18).",
+   "en": "15 April (s. 18)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "15 avril",
+     "en": "15 April"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "15 mars",
+     "en": "15 March"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-003",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un contribuable peut corriger spontanément une erreur de déclaration.",
+   "en": "True or false: a taxpayer may spontaneously correct a filing error."
+  },
+  "explanation": {
+   "fr": "Vrai (art. L 34).",
+   "en": "True (s. L 34)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-004",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Dans quel délai une pièce de procédure est-elle réputée reçue ?",
+   "en": "When is a procedural document deemed received?"
+  },
+  "explanation": {
+   "fr": "15 jours ouvrables après son envoi (art. L 41).",
+   "en": "15 working days after dispatch (s. L 41)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "15 jours ouvrables",
+     "en": "15 working days"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "le jour même",
+     "en": "the same day"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quelle déclaration se dépose chaque mois ?",
+   "en": "Which return is filed every month?"
+  },
+  "explanation": {
+   "fr": "La TVA, les acomptes et les retenues sur salaires.",
+   "en": "VAT, instalments and payroll withholdings."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "TVA, acomptes et retenues",
+     "en": "VAT, instalments and withholdings"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "seulement la déclaration annuelle",
+     "en": "only the annual return"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-006",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le droit de reprise de l'administration est illimité dans le temps.",
+   "en": "True or false: the authority's right to reassess has no time limit."
+  },
+  "explanation": {
+   "fr": "Faux : quatre ans (art. L 34).",
+   "en": "False: four years (s. L 34)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une vérification de comptabilité se déroule…",
+   "en": "An accounting audit takes place…"
+  },
+  "explanation": {
+   "fr": "Dans l'entreprise, sur ses livres et pièces.",
+   "en": "At the business, on its books and documents."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "dans l'entreprise",
+     "en": "at the business"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "uniquement par téléphone",
+     "en": "by telephone only"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-008",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le numéro identifiant unique doit figurer…",
+   "en": "The unique identification number must appear…"
+  },
+  "explanation": {
+   "fr": "Sur tout document matérialisant une transaction (art. L 1 bis).",
+   "en": "On every document evidencing a transaction (s. L 1 bis)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "sur les documents des transactions",
+     "en": "on transaction documents"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "seulement sur la déclaration annuelle",
+     "en": "only on the annual return"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-009",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la comptabilité doit être tenue selon le SYSCOHADA.",
+   "en": "True or false: accounts must be kept under SYSCOHADA."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-010",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un contribuable relevant d'un centre de fiscalité locale dépose sa déclaration annuelle au plus tard le…",
+   "en": "A taxpayer of a local tax centre files the annual return by…"
+  },
+  "explanation": {
+   "fr": "15 mai.",
+   "en": "15 May."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "15 mai",
+     "en": "15 May"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "15 mars",
+     "en": "15 March"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-011",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le contrôle sur pièces se fait…",
+   "en": "A desk audit is carried out…"
+  },
+  "explanation": {
+   "fr": "Au bureau, à partir des déclarations et documents.",
+   "en": "At the office, from returns and documents."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "au bureau",
+     "en": "at the office"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "dans l'entreprise",
+     "en": "at the business"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-012",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une entreprise qui démarre a 15 jours ouvrables pour s'immatriculer.",
+   "en": "True or false: a new business has 15 working days to register."
+  },
+  "explanation": {
+   "fr": "Vrai (art. L 1).",
+   "en": "True (s. L 1)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le droit de reprise dure…",
+   "en": "The right to reassess lasts…"
+  },
+  "explanation": {
+   "fr": "Jusqu'à la fin de la quatrième année suivante.",
+   "en": "Until the end of the fourth following year."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "4 ans",
+     "en": "4 years"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "10 ans",
+     "en": "10 years"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-102",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les grandes entreprises déposent leur déclaration des résultats au plus tard le 15 mars.",
+   "en": "True or false: large companies file their tax return by 15 March."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-103",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un impôt exigible en 2027 peut être redressé jusqu'au…",
+   "en": "A tax chargeable in 2027 can be reassessed until…"
+  },
+  "explanation": {
+   "fr": "31 décembre 2031.",
+   "en": "31 December 2031."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "31 décembre 2031",
+     "en": "31 December 2031"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "31 décembre 2028",
+     "en": "31 December 2028"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel livre du CGI encadre le contrôle ?",
+   "en": "Which book of the Tax Code governs audits?"
+  },
+  "explanation": {
+   "fr": "Le Livre des procédures fiscales.",
+   "en": "The Tax Procedures Book."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "le LPF",
+     "en": "the Tax Procedures Book"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "le Livre troisième",
+     "en": "Book Three"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-105",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les pièces justificatives doivent être conservées.",
+   "en": "True or false: supporting documents must be kept."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les déclarations mensuelles concernent notamment…",
+   "en": "Monthly returns cover in particular…"
+  },
+  "explanation": {
+   "fr": "La TVA.",
+   "en": "VAT."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "la TVA",
+     "en": "VAT"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "la taxe foncière",
+     "en": "property tax"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une pièce de procédure est réputée reçue dès son envoi.",
+   "en": "True or false: a procedural document is deemed received as soon as it is sent."
+  },
+  "explanation": {
+   "fr": "Faux : 15 jours ouvrables après.",
+   "en": "False: 15 working days later."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "F-P3-M1-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "S'immatriculer permet d'obtenir…",
+   "en": "Registering gives…"
+  },
+  "explanation": {
+   "fr": "Le numéro identifiant unique.",
+   "en": "The unique identification number."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "le numéro identifiant unique",
+     "en": "the unique identification number"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "une exonération",
+     "en": "an exemption"
+    }
+   }
+  ]
+ }
+]

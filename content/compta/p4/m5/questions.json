@@ -1,0 +1,677 @@
+[
+ {
+  "id": "C-P4-M5-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Un litige prud'homal fait courir un risque probable de 2 000 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. A labour dispute creates a probable risk of 2,000,000 CFA francs. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 691, crédit 191.",
+   "en": "Debit 691, credit 191."
+  },
+  "journal": [
+   {
+    "account": "691",
+    "match": "3",
+    "side": "debit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Dotations aux provisions",
+     "en": "Provision charge"
+    }
+   },
+   {
+    "account": "191",
+    "match": "3",
+    "side": "credit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Provisions pour litiges",
+     "en": "Litigation provisions"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M5-002",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Le risque du litige est ramené de 2 000 000 à 1 200 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. The litigation risk falls from 2,000,000 to 1,200,000 CFA francs. Record the entry."
+  },
+  "explanation": {
+   "fr": "Reprise de 800 000 : débit 191, crédit 791.",
+   "en": "Reversal of 800,000: debit 191, credit 791."
+  },
+  "journal": [
+   {
+    "account": "191",
+    "match": "3",
+    "side": "debit",
+    "amount": "800000",
+    "label": {
+     "fr": "Provisions pour litiges",
+     "en": "Litigation provisions"
+    }
+   },
+   {
+    "account": "791",
+    "match": "3",
+    "side": "credit",
+    "amount": "800000",
+    "label": {
+     "fr": "Reprises de provisions",
+     "en": "Provision reversals"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M5-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Provision existante 2 000 000 FCFA ; risque estimé 1 200 000. Quel montant reprendre ?",
+   "en": "2026 financial year. Existing provision 2,000,000 CFA francs; estimated risk 1,200,000. What amount is reversed?"
+  },
+  "explanation": {
+   "fr": "2 000 000 − 1 200 000 = 800 000 FCFA.",
+   "en": "2,000,000 − 1,200,000 = 800,000 CFA francs."
+  },
+  "numeric": {
+   "value": "800000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M5-004",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un risque seulement possible doit être provisionné.",
+   "en": "True or false: a merely possible risk must be provided for."
+  },
+  "explanation": {
+   "fr": "Faux : seul le risque probable est provisionné ; le risque possible est mentionné en annexe.",
+   "en": "False: only a probable risk is provided for; a possible one is disclosed in the notes."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M5-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une provision pour risques figure…",
+   "en": "A provision for risks appears…"
+  },
+  "explanation": {
+   "fr": "Au passif (19).",
+   "en": "In liabilities (19)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "au passif",
+     "en": "in liabilities"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "en déduction de l'actif",
+     "en": "deducted from assets"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M5-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une provision pour garanties données aux clients va en…",
+   "en": "A provision for customer warranties goes to…"
+  },
+  "explanation": {
+   "fr": "192.",
+   "en": "192."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "192",
+     "en": "192"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "191",
+     "en": "191"
+    }
+   },
+   {
+    "text": {
+     "fr": "491",
+     "en": "491"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M5-007",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Provision existante 1 000 000 FCFA ; risque estimé 1 600 000. Quelle dotation complémentaire ?",
+   "en": "2026 financial year. Existing provision 1,000,000 CFA francs; estimated risk 1,600,000. What additional charge?"
+  },
+  "explanation": {
+   "fr": "1 600 000 − 1 000 000 = 600 000 FCFA.",
+   "en": "1,600,000 − 1,000,000 = 600,000 CFA francs."
+  },
+  "numeric": {
+   "value": "600000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M5-008",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La reprise d'une provision d'exploitation se crédite à…",
+   "en": "Reversing an operating provision credits…"
+  },
+  "explanation": {
+   "fr": "791.",
+   "en": "791."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "791",
+     "en": "791"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "691",
+     "en": "691"
+    }
+   },
+   {
+    "text": {
+     "fr": "759",
+     "en": "759"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M5-009",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une provision pour risques est une dette dont le montant ou l'échéance est incertain.",
+   "en": "True or false: a provision for risks is a liability of uncertain amount or timing."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M5-010",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Provision pour garanties données aux clients : 450 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. Provision for customer warranties: 450,000 CFA francs. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 691, crédit 192.",
+   "en": "Debit 691, credit 192."
+  },
+  "journal": [
+   {
+    "account": "691",
+    "match": "3",
+    "side": "debit",
+    "amount": "450000",
+    "label": {
+     "fr": "Dotations aux provisions",
+     "en": "Provision charge"
+    }
+   },
+   {
+    "account": "192",
+    "match": "3",
+    "side": "credit",
+    "amount": "450000",
+    "label": {
+     "fr": "Provisions pour garanties",
+     "en": "Warranty provisions"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M5-011",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel principe impose de provisionner un litige probable ?",
+   "en": "Which principle requires providing for a probable dispute?"
+  },
+  "explanation": {
+   "fr": "La prudence.",
+   "en": "Prudence."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "La prudence",
+     "en": "Prudence"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "La continuité d'exploitation",
+     "en": "Going concern"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M5-012",
+  "type": "matching",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Associez chaque risque à son traitement.",
+   "en": "Match each risk with its treatment."
+  },
+  "explanation": {
+   "fr": "Probable : provision ; possible : note annexe ; réalisé : charge.",
+   "en": "Probable: provision; possible: note; incurred: expense."
+  },
+  "pairs": [
+   {
+    "left": {
+     "fr": "Perte probable",
+     "en": "Probable loss"
+    },
+    "right": {
+     "fr": "Provision (19)",
+     "en": "Provision (19)"
+    }
+   },
+   {
+    "left": {
+     "fr": "Perte seulement possible",
+     "en": "Merely possible loss"
+    },
+    "right": {
+     "fr": "Mention en annexe",
+     "en": "Disclosure in the notes"
+    }
+   },
+   {
+    "left": {
+     "fr": "Amende déjà notifiée et payée",
+     "en": "Fine already notified and paid"
+    },
+    "right": {
+     "fr": "Charge de l'exercice",
+     "en": "Expense of the year"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M5-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La dotation à une provision d'exploitation va en…",
+   "en": "An operating provision charge goes to…"
+  },
+  "explanation": {
+   "fr": "691.",
+   "en": "691."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "691",
+     "en": "691"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "191",
+     "en": "191"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M5-102",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une provision se réajuste à chaque clôture.",
+   "en": "True or false: a provision is adjusted at each year end."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M5-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Provision de 900 000 FCFA ; le litige se termine sans perte. Quelle reprise ?",
+   "en": "2026 financial year. A 900,000 CFA franc provision; the dispute ends with no loss. What reversal?"
+  },
+  "explanation": {
+   "fr": "Toute la provision : 900 000 FCFA.",
+   "en": "The whole provision: 900,000 CFA francs."
+  },
+  "numeric": {
+   "value": "900000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M5-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les provisions pour litiges vont en…",
+   "en": "Litigation provisions go to…"
+  },
+  "explanation": {
+   "fr": "191.",
+   "en": "191."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "191",
+     "en": "191"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "491",
+     "en": "491"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M5-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Le litige se termine sans perte : reprise de la provision de 900 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. The dispute ends with no loss: reversal of the 900,000 CFA franc provision. Record the entry."
+  },
+  "explanation": {
+   "fr": "191 / 791.",
+   "en": "191 / 791."
+  },
+  "journal": [
+   {
+    "account": "191",
+    "match": "3",
+    "side": "debit",
+    "amount": "900000",
+    "label": {
+     "fr": "Provisions pour litiges",
+     "en": "Litigation provisions"
+    }
+   },
+   {
+    "account": "791",
+    "match": "3",
+    "side": "credit",
+    "amount": "900000",
+    "label": {
+     "fr": "Reprises de provisions",
+     "en": "Provision reversals"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M5-106",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une provision pour risques diminue le résultat de l'exercice où elle est dotée.",
+   "en": "True or false: a provision for risks reduces the result of the year it is charged."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M5-107",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un risque possible mais non probable…",
+   "en": "A possible but not probable risk…"
+  },
+  "explanation": {
+   "fr": "Est mentionné dans les notes annexes.",
+   "en": "Is disclosed in the notes."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "est mentionné en annexe",
+     "en": "is disclosed in the notes"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "est provisionné",
+     "en": "is provided for"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M5-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une provision pour pertes de change va en…",
+   "en": "A provision for exchange losses goes to…"
+  },
+  "explanation": {
+   "fr": "194.",
+   "en": "194."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "194",
+     "en": "194"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "191",
+     "en": "191"
+    }
+   }
+  ]
+ }
+]

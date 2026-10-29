@@ -1,0 +1,722 @@
+[
+ {
+  "id": "C-P3-M2-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achat de 100 actions cotées à 10 000 FCFA, à titre de placement, payé par virement. Passez l'écriture.",
+   "en": "2026 financial year. 100 listed shares bought at 10,000 CFA francs as a short-term investment, paid by transfer. Record the entry."
+  },
+  "explanation": {
+   "fr": "Titres de placement 502, banque 521.",
+   "en": "Short-term securities 502, bank 521."
+  },
+  "journal": [
+   {
+    "account": "502",
+    "match": "3",
+    "side": "debit",
+    "amount": "1000000",
+    "label": {
+     "fr": "Actions",
+     "en": "Shares"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "1000000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-002",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Les 100 actions achetées 1 000 000 FCFA sont revendues 1 200 000 FCFA, encaissés en banque. Passez l'écriture.",
+   "en": "2026 financial year. The 100 shares bought for 1,000,000 CFA francs are sold for 1,200,000, received in the bank. Record the entry."
+  },
+  "explanation": {
+   "fr": "Banque 1 200 000 ; sortie des titres 1 000 000 ; gain 200 000 en 777.",
+   "en": "Bank 1,200,000; securities out 1,000,000; gain 200,000 in 777."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "1200000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "502",
+    "match": "3",
+    "side": "credit",
+    "amount": "1000000",
+    "label": {
+     "fr": "Actions",
+     "en": "Shares"
+    }
+   },
+   {
+    "account": "777",
+    "match": "3",
+    "side": "credit",
+    "amount": "200000",
+    "label": {
+     "fr": "Gains sur cessions",
+     "en": "Gains on disposals"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-003",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Des titres de placement achetés 1 000 000 FCFA sont revendus 800 000 FCFA, encaissés en banque. Passez l'écriture.",
+   "en": "2026 financial year. Short-term securities bought for 1,000,000 CFA francs are sold for 800,000, received in the bank. Record the entry."
+  },
+  "explanation": {
+   "fr": "Banque 800 000 ; perte 200 000 en 677 ; titres sortis 1 000 000.",
+   "en": "Bank 800,000; loss 200,000 in 677; securities out 1,000,000."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "800000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "677",
+    "match": "3",
+    "side": "debit",
+    "amount": "200000",
+    "label": {
+     "fr": "Pertes sur titres",
+     "en": "Losses on securities"
+    }
+   },
+   {
+    "account": "502",
+    "match": "3",
+    "side": "credit",
+    "amount": "1000000",
+    "label": {
+     "fr": "Actions",
+     "en": "Shares"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-004",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Mbarga Distribution acquiert 30 % du capital d'une société de transport pour en influencer la gestion : 5 000 000 FCFA par virement. Passez l'écriture.",
+   "en": "2026 financial year. Mbarga Distribution buys 30% of a transport company's capital to influence its management: 5,000,000 CFA francs by transfer. Record the entry."
+  },
+  "explanation": {
+   "fr": "Titres de participation (26), banque.",
+   "en": "Equity investments (26), bank."
+  },
+  "journal": [
+   {
+    "account": "263",
+    "match": "2",
+    "side": "debit",
+    "amount": "5000000",
+    "label": {
+     "fr": "Titres de participation",
+     "en": "Equity investments"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "5000000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-005",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. La filiale verse un dividende net de 300 000 FCFA, encaissé en banque. Passez l'écriture.",
+   "en": "2026 financial year. The investee pays a net dividend of 300,000 CFA francs, received in the bank. Record the entry."
+  },
+  "explanation": {
+   "fr": "Banque 521 ; revenus des titres de participation 772.",
+   "en": "Bank 521; income from equity investments 772."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "300000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "772",
+    "match": "3",
+    "side": "credit",
+    "amount": "300000",
+    "label": {
+     "fr": "Revenus de participations",
+     "en": "Income from investments"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-006",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Titres achetés 1 000 000 FCFA, revendus 1 200 000 FCFA. Quel est le gain de cession ?",
+   "en": "2026 financial year. Securities bought for 1,000,000 CFA francs, sold for 1,200,000. What is the gain?"
+  },
+  "explanation": {
+   "fr": "1 200 000 − 1 000 000 = 200 000 FCFA.",
+   "en": "1,200,000 − 1,000,000 = 200,000 CFA francs."
+  },
+  "numeric": {
+   "value": "200000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P3-M2-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Des actions achetées pour placer une trésorerie quelques mois sont…",
+   "en": "Shares bought to place cash for a few months are…"
+  },
+  "explanation": {
+   "fr": "Des titres de placement (50).",
+   "en": "Short-term investment securities (50)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "des titres de placement",
+     "en": "short-term investment securities"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "des titres de participation",
+     "en": "equity investments"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-008",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Des titres achetés pour contrôler une autre société sont…",
+   "en": "Securities bought to control another company are…"
+  },
+  "explanation": {
+   "fr": "Des titres de participation (26).",
+   "en": "Equity investments (26)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "des titres de participation",
+     "en": "equity investments"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "des titres de placement",
+     "en": "short-term investment securities"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une perte sur cession de titres de placement s'enregistre en…",
+   "en": "A loss on selling short-term securities is recorded in…"
+  },
+  "explanation": {
+   "fr": "677.",
+   "en": "677."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "677",
+     "en": "677"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "777",
+     "en": "777"
+    }
+   },
+   {
+    "text": {
+     "fr": "676",
+     "en": "676"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-010",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les titres de placement sont des immobilisations financières.",
+   "en": "True or false: short-term investment securities are financial assets in class 2."
+  },
+  "explanation": {
+   "fr": "Faux : ils relèvent de la trésorerie (classe 5).",
+   "en": "False: they belong to cash (class 5)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-011",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les dividendes reçus de titres de participation s'enregistrent en…",
+   "en": "Dividends received on equity investments are recorded in…"
+  },
+  "explanation": {
+   "fr": "772 Revenus de participations.",
+   "en": "772 Income from investments."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "772",
+     "en": "772"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "774",
+     "en": "774"
+    }
+   },
+   {
+    "text": {
+     "fr": "701",
+     "en": "701"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-012",
+  "type": "matching",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Associez chaque titre à son compte.",
+   "en": "Match each security with its account."
+  },
+  "explanation": {
+   "fr": "Participation 26, titres immobilisés 274, placement 50.",
+   "en": "Equity investments 26, long-term securities 274, short-term 50."
+  },
+  "pairs": [
+   {
+    "left": {
+     "fr": "Contrôle d'une filiale",
+     "en": "Control of a subsidiary"
+    },
+    "right": {
+     "fr": "26",
+     "en": "26"
+    }
+   },
+   {
+    "left": {
+     "fr": "Placement durable sans contrôle",
+     "en": "Long-term investment without control"
+    },
+    "right": {
+     "fr": "274",
+     "en": "274"
+    }
+   },
+   {
+    "left": {
+     "fr": "Placement de trésorerie à court terme",
+     "en": "Short-term cash investment"
+    },
+    "right": {
+     "fr": "50",
+     "en": "50"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un gain sur cession de titres de placement s'enregistre en…",
+   "en": "A gain on selling short-term securities is recorded in…"
+  },
+  "explanation": {
+   "fr": "777.",
+   "en": "777."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "777",
+     "en": "777"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "677",
+     "en": "677"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-102",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : on sort les titres cédés à leur coût d'achat.",
+   "en": "True or false: securities sold leave at their purchase cost."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Titres achetés 1 000 000 FCFA, revendus 800 000 FCFA. Quelle est la perte ?",
+   "en": "2026 financial year. Securities bought for 1,000,000 CFA francs, sold for 800,000. What is the loss?"
+  },
+  "explanation": {
+   "fr": "1 000 000 − 800 000 = 200 000 FCFA.",
+   "en": "1,000,000 − 800,000 = 200,000 CFA francs."
+  },
+  "numeric": {
+   "value": "200000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P3-M2-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les revenus des titres de placement s'enregistrent en…",
+   "en": "Income from short-term securities is recorded in…"
+  },
+  "explanation": {
+   "fr": "774 Revenus de placement.",
+   "en": "774 Investment income."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "774",
+     "en": "774"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "772",
+     "en": "772"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achat d'obligations cotées comme placement à court terme : 500 000 FCFA par virement. Passez l'écriture.",
+   "en": "2026 financial year. Listed bonds bought as a short-term investment: 500,000 CFA francs by transfer. Record the entry."
+  },
+  "explanation": {
+   "fr": "Obligations 503, banque 521.",
+   "en": "Bonds 503, bank 521."
+  },
+  "journal": [
+   {
+    "account": "503",
+    "match": "3",
+    "side": "debit",
+    "amount": "500000",
+    "label": {
+     "fr": "Obligations",
+     "en": "Bonds"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "500000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les titres de participation figurent…",
+   "en": "Equity investments appear in…"
+  },
+  "explanation": {
+   "fr": "À l'actif immobilisé.",
+   "en": "Fixed assets."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "à l'actif immobilisé",
+     "en": "fixed assets"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "à la trésorerie",
+     "en": "cash"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un dividende reçu est un produit financier.",
+   "en": "True or false: a dividend received is financial income."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M2-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Des actions cotées achetées comme placement vont en…",
+   "en": "Listed shares bought as a short-term investment go to…"
+  },
+  "explanation": {
+   "fr": "502 Actions.",
+   "en": "502 Shares."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "502",
+     "en": "502"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "261",
+     "en": "261"
+    }
+   }
+  ]
+ }
+]

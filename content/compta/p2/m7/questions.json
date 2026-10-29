@@ -1,0 +1,677 @@
+[
+ {
+  "id": "C-P2-M7-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Salaire brut 500 000 FCFA ; CNPS salariale 21 000 ; retenues fiscales (IRPP, CFC, RAV, TDL) 55 450 ; net 423 550. Passez l'écriture de paie.",
+   "en": "2026 financial year. Gross pay 500,000 CFA francs; employee CNPS 21,000; tax withholdings (income tax, Land Credit, audiovisual fee, local tax) 55,450; net 423,550. Record the payroll entry."
+  },
+  "explanation": {
+   "fr": "Débit 661 du brut ; crédit 431, 447 et 422.",
+   "en": "Debit 661 with gross pay; credit 431, 447 and 422."
+  },
+  "journal": [
+   {
+    "account": "661",
+    "match": "3",
+    "side": "debit",
+    "amount": "500000",
+    "label": {
+     "fr": "Rémunérations",
+     "en": "Pay"
+    }
+   },
+   {
+    "account": "431",
+    "match": "3",
+    "side": "credit",
+    "amount": "21000",
+    "label": {
+     "fr": "CNPS",
+     "en": "CNPS"
+    }
+   },
+   {
+    "account": "447",
+    "match": "3",
+    "side": "credit",
+    "amount": "55450",
+    "label": {
+     "fr": "Impôts retenus à la source",
+     "en": "Taxes withheld"
+    }
+   },
+   {
+    "account": "422",
+    "match": "3",
+    "side": "credit",
+    "amount": "423550",
+    "label": {
+     "fr": "Rémunérations dues",
+     "en": "Wages payable"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M7-002",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Le net de 423 550 FCFA est viré au salarié. Passez l'écriture.",
+   "en": "2026 financial year. Net pay of 423,550 CFA francs is transferred to the employee. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 422, crédit 521.",
+   "en": "Debit 422, credit 521."
+  },
+  "journal": [
+   {
+    "account": "422",
+    "match": "3",
+    "side": "debit",
+    "amount": "423550",
+    "label": {
+     "fr": "Rémunérations dues",
+     "en": "Wages payable"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "423550",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M7-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Brut mensuel 500 000 FCFA, CNPS salariale 21 000 par mois. Quel est l'IRPP mensuel, centimes compris (frais 30 %, abattement 500 000 par an, barème 10/15/25/35 %, CAC 10 %) ?",
+   "en": "2026 financial year. Monthly gross 500,000 CFA francs, employee CNPS 21,000 a month. What is the monthly income tax, council cents included (30% expenses, 500,000 yearly allowance, 10/15/25/35% scale, 10% council cents)?"
+  },
+  "explanation": {
+   "fr": "Annuel : brut 6 000 000 − frais 1 800 000 − CNPS 252 000 − abattement 500 000 = 3 448 000 ; IRPP 462 000 ; + CAC 508 200 ; par mois 42 350.",
+   "en": "Yearly: gross 6,000,000 − expenses 1,800,000 − CNPS 252,000 − allowance 500,000 = 3,448,000; tax 462,000; + council cents 508,200; per month 42,350."
+  },
+  "numeric": {
+   "value": "42350",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P2-M7-004",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel est le taux des frais professionnels déduits du salaire pour l'IRPP ?",
+   "en": "What rate of professional expenses is deducted from salary for income tax?"
+  },
+  "explanation": {
+   "fr": "30 %, plafonnés à 4 800 000 FCFA par an (CGI art. 34).",
+   "en": "30%, capped at 4,800,000 CFA francs a year (GTC s. 34)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "30 %",
+     "en": "30%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "20 %",
+     "en": "20%"
+    }
+   },
+   {
+    "text": {
+     "fr": "10 %",
+     "en": "10%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M7-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les retenues d'IRPP sur salaires s'enregistrent en…",
+   "en": "Income tax withheld from salaries is recorded in…"
+  },
+  "explanation": {
+   "fr": "447 État, impôts retenus à la source.",
+   "en": "447 State, taxes withheld at source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "447",
+     "en": "447"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "431",
+     "en": "431"
+    }
+   },
+   {
+    "text": {
+     "fr": "641",
+     "en": "641"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M7-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La cotisation CNPS retenue sur le salaire est due à…",
+   "en": "The CNPS contribution withheld from salary is owed to…"
+  },
+  "explanation": {
+   "fr": "La sécurité sociale, compte 431.",
+   "en": "Social security, account 431."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "la sécurité sociale (431)",
+     "en": "social security (431)"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "l'État (447)",
+     "en": "the State (447)"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M7-007",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Brut 500 000 FCFA. Quelle est la contribution au crédit foncier, part salariale (1 % sur la base arrondie au millier inférieur) ?",
+   "en": "2026 financial year. Gross 500,000 CFA francs. What is the employee Land Credit contribution (1% on the base rounded down to the thousand)?"
+  },
+  "explanation": {
+   "fr": "500 000 × 1 % = 5 000 FCFA.",
+   "en": "500,000 × 1% = 5,000 CFA francs."
+  },
+  "numeric": {
+   "value": "5000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P2-M7-008",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Cotisations patronales CNPS du mois : 60 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. The month's employer CNPS contributions: 60,000 CFA francs. Record the entry."
+  },
+  "explanation": {
+   "fr": "Charge sociale 664, dette envers la CNPS 431.",
+   "en": "Social charge 664, debt to CNPS 431."
+  },
+  "journal": [
+   {
+    "account": "664",
+    "match": "3",
+    "side": "debit",
+    "amount": "60000",
+    "label": {
+     "fr": "Charges sociales",
+     "en": "Social charges"
+    }
+   },
+   {
+    "account": "431",
+    "match": "3",
+    "side": "credit",
+    "amount": "60000",
+    "label": {
+     "fr": "CNPS",
+     "en": "CNPS"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M7-009",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Part patronale du crédit foncier : 2,5 % de 500 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. Employer Land Credit contribution: 2.5% of 500,000 CFA francs. Record the entry."
+  },
+  "explanation": {
+   "fr": "12 500 : taxe sur salaires 641, dette fiscale 447.",
+   "en": "12,500: payroll tax 641, tax debt 447."
+  },
+  "journal": [
+   {
+    "account": "641",
+    "match": "3",
+    "side": "debit",
+    "amount": "12500",
+    "label": {
+     "fr": "Taxes sur salaires",
+     "en": "Payroll taxes"
+    }
+   },
+   {
+    "account": "447",
+    "match": "3",
+    "side": "credit",
+    "amount": "12500",
+    "label": {
+     "fr": "Impôts retenus",
+     "en": "Taxes withheld"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M7-010",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le salaire net est une charge de l'entreprise, le brut ne l'est pas.",
+   "en": "True or false: net pay is the business's expense, gross pay is not."
+  },
+  "explanation": {
+   "fr": "Faux : la charge est le brut (661) ; le net est la dette envers le salarié.",
+   "en": "False: the expense is gross pay (661); net pay is the debt to the employee."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M7-011",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel abattement annuel s'applique aux traitements et salaires pour l'IRPP ?",
+   "en": "What yearly allowance applies to salaries for income tax?"
+  },
+  "explanation": {
+   "fr": "500 000 FCFA (CGI art. 29).",
+   "en": "500,000 CFA francs (GTC s. 29)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "500 000 FCFA",
+     "en": "500,000 CFA francs"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "1 000 000 FCFA",
+     "en": "1,000,000 CFA francs"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M7-012",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Brut 500 000 FCFA ; retenues totales 76 450 FCFA. Quel est le net à payer ?",
+   "en": "2026 financial year. Gross 500,000 CFA francs; total withholdings 76,450. What is the net pay?"
+  },
+  "explanation": {
+   "fr": "500 000 − 76 450 = 423 550 FCFA.",
+   "en": "500,000 − 76,450 = 423,550 CFA francs."
+  },
+  "numeric": {
+   "value": "423550",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P2-M7-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le salaire brut s'enregistre au débit de…",
+   "en": "Gross pay is debited to…"
+  },
+  "explanation": {
+   "fr": "661.",
+   "en": "661."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "661",
+     "en": "661"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "422",
+     "en": "422"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M7-102",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le net à payer s'enregistre au crédit de…",
+   "en": "Net pay is credited to…"
+  },
+  "explanation": {
+   "fr": "422 Personnel, rémunérations dues.",
+   "en": "422 Staff, wages payable."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "422",
+     "en": "422"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "421",
+     "en": "421"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M7-103",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : l'IRPP sur salaires est majoré de 10 % de centimes additionnels.",
+   "en": "True or false: income tax on salaries carries 10% council cents."
+  },
+  "explanation": {
+   "fr": "Vrai (CGI art. 71).",
+   "en": "True (GTC s. 71)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M7-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les cotisations patronales CNPS s'enregistrent au débit de…",
+   "en": "Employer CNPS contributions are debited to…"
+  },
+  "explanation": {
+   "fr": "664 Charges sociales.",
+   "en": "664 Social charges."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "664",
+     "en": "664"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "661",
+     "en": "661"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M7-105",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Brut 800 000 FCFA. Quelle est la part salariale du crédit foncier (1 %) ?",
+   "en": "2026 financial year. Gross 800,000 CFA francs. What is the employee Land Credit contribution (1%)?"
+  },
+  "explanation": {
+   "fr": "800 000 × 1 % = 8 000 FCFA.",
+   "en": "800,000 × 1% = 8,000 CFA francs."
+  },
+  "numeric": {
+   "value": "8000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P2-M7-106",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. La CNPS (21 000 salariale + 60 000 patronale) est payée par virement. Passez l'écriture.",
+   "en": "2026 financial year. CNPS (21,000 employee + 60,000 employer) is paid by transfer. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 431 de 81 000, crédit 521.",
+   "en": "Debit 431 with 81,000, credit 521."
+  },
+  "journal": [
+   {
+    "account": "431",
+    "match": "3",
+    "side": "debit",
+    "amount": "81000",
+    "label": {
+     "fr": "CNPS",
+     "en": "CNPS"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "81000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M7-107",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel est le taux de la tranche supérieure du barème de l'IRPP ?",
+   "en": "What is the top income tax bracket rate?"
+  },
+  "explanation": {
+   "fr": "35 % au-delà de 5 000 000 FCFA (CGI art. 69).",
+   "en": "35% above 5,000,000 CFA francs (GTC s. 69)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "35 %",
+     "en": "35%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "25 %",
+     "en": "25%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M7-108",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la taxe de développement local est retenue sur le salaire par l'employeur.",
+   "en": "True or false: the local development tax is withheld from salary by the employer."
+  },
+  "explanation": {
+   "fr": "Vrai : elle est retenue puis reversée, comme l'IRPP.",
+   "en": "True: it is withheld and paid over, like income tax."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ }
+]

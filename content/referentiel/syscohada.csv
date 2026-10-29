@@ -1,0 +1,1341 @@
+code;label_fr;label_en
+1;Comptes de ressources durables;Long-term funding accounts
+10;Capital;Capital
+101;Capital social;Share capital
+1011;Capital souscrit, non appelé;Subscribed capital, uncalled
+1012;Capital souscrit, appelé, non versé;Subscribed capital, called, unpaid
+1013;Capital souscrit, appelé, versé, non amorti;Subscribed capital, called, paid, not redeemed
+1014;Capital souscrit, appelé, versé, amorti;Subscribed capital, called, paid, redeemed
+1018;Capital souscrit, soumis à des conditions particulières;Subscribed capital subject to special conditions
+102;Capital par dotation;Endowment capital
+1021;Dotation initiale;Initial endowment
+1022;Dotations complémentaires;Additional endowments
+1028;Autres dotations;Other endowments
+103;Capital personnel;Sole proprietor's capital
+104;Compte de l'exploitant;Owner's account
+1041;Apports temporaires;Temporary contributions
+1042;Opérations courantes;Current transactions
+1043;Rémunérations, impôts, et autres charges personnelles;Owner's pay, taxes and other personal expenses
+1047;Prélèvements d'autoconsommation;Withdrawals for own consumption
+1048;Autres prélèvements;Other withdrawals
+105;Primes liées au capital social;Share premiums
+1051;Primes d'émission;Share issue premiums
+1052;Primes d'apport;Contribution premiums
+1053;Primes de fusion;Merger premiums
+1054;Primes de conversion;Conversion premiums
+1058;Autres primes;Other premiums
+106;Ecarts de réévaluation;Revaluation surplus
+1061;Ecarts de réévaluation légale;Legal revaluation surplus
+1062;Ecarts de réévaluation libre;Voluntary revaluation surplus
+109;Apporteurs, capital souscrit, non appelé;Subscribed capital, uncalled
+11;Réserves;Reserves
+111;RESERVE LEGALE;Legal reserve
+112;RESERVES STATUTAIRES OU CONTRACTUELLES;Statutory or contractual reserves
+113;RESERVES REGLEMENTEES;Regulated reserves
+1131;Réserves de plus-values nettes à long terme;Reserves for net long-term capital gains
+1132;Réserves d'attribution gratuite d'actions au personnel salarié et aux dirigeants;Reserves for free shares granted to employees and executives
+1133;Réserves consécutives à l'octroi de subventions d'investissement;Reserves arising from investment grants
+1134;Réserves de valeurs mobilières donnant accès au capital;Reserves for securities giving access to capital
+1138;Autres réserves réglementées;Other regulated reserves
+118;AUTRES RESERVES;Other reserves
+1181;Réserves facultatives;Optional reserves
+1188;Réserves diverses;Sundry reserves
+12;Report à nouveau;Retained earnings
+121;REPORT A NOUVEAU CREDITEUR;Retained earnings (credit balance)
+129;REPORT A NOUVEAU DEBITEUR;Retained earnings (debit balance)
+1291;Perte nette à reporter;Net loss carried forward
+1292;Perte-Amortissements réputés différés;Loss from deferred depreciation
+13;Résultat net de l'exercice;Net profit or loss for the year
+130;RESULTAT EN INSTANCE D'AFFECTATION;Profit or loss awaiting appropriation
+1301;Résultat en instance d'affectation : Bénéfice;Result awaiting appropriation: profit
+1309;Résultat en instance d'affectation : Perte;Result awaiting appropriation: loss
+131;RESULTAT NET : BENEFICE;Net profit
+132;MARGE COMMERCIALE (M.C.);Gross trading margin
+133;VALEUR AJOUTEE (V.A.);Value added
+134;EXCEDENT BRUT D'EXPLOITATION (E.B.E.);Gross operating surplus
+135;RESULTAT D'EXPLOITATION (R.E.);Operating profit
+136;RESULTAT FINANCIER (R.F.);Financial result
+137;RESULTAT DES ACTIVITES ORDINAIRES (R.A.O.);Result from ordinary activities
+138;RESULTAT HORS ACTIVITES ORDINAIRES (R.H.A.O.);Result from non-ordinary activities
+1381;Résultat de fusion;Merger result
+1382;Résultat d'apport partiel d'actif;Partial asset contribution result
+1383;Résultat de scission;Demerger result
+1384;Résultat de liquidation;Liquidation result
+139;RESULTAT NET : PERTE;Net loss
+14;Subventions d'investissement;Investment grants
+141;SUBVENTIONS D'EQUIPEMENT;Equipment grants
+1411;Etat;State
+1412;Régions;Regions
+1413;Départements;Departments
+1414;Communes et collectivités publiques décentralisées;Municipalities and decentralised public authorities
+1415;Entités publiques ou mixtes;Public or mixed entities
+1416;Entreprises et organismes privés;Private businesses and bodies
+1417;Organismes internationaux;International bodies
+1418;Autres;Other
+148;AUTRES SUBVENTIONS D'INVESTISSEMENT;Other investment grants
+15;Provisions réglementées et fonds assimilés;Regulated provisions and similar funds
+151;AMORTISSEMENTS DEROGATOIRES;Accelerated tax depreciation
+152;PLUS-VALUES DE CESSION A REINVESTIR;Capital gains on disposal to be reinvested
+153;FONDS REGLEMENTES;Regulated funds
+1531;Fonds national;National fund
+1532;Prélèvement pour le Budget;Levy for the budget
+154;PROVISION SPECIALE DE REEVALUATION;Special revaluation provision
+155;PROVISIONS REGLEMENTEES RELATIVES AUX IMMOBILISATIONS;Regulated provisions on fixed assets
+1551;Reconstitution des gisements miniers et pétroliers;Restoration of mining and oil deposits
+156;PROVISIONS REGLEMENTEES RELATIVES AUX STOCKS;Regulated provisions on inventories
+1561;Hausse de prix;Price increases
+1562;Fluctuation des cours;Price fluctuations
+157;PROVISIONS POUR INVESTISSEMENT;Provisions for investment
+158;AUTRES PROVISIONS ET FONDS REGLEMENTES;Other regulated provisions and funds
+16;Emprunts et dettes assimilées;Borrowings and similar debts
+161;EMPRUNTS OBLIGATAIRES;Bond issues
+1611;Emprunts obligataires ordinaires;Ordinary bonds
+1612;Emprunts obligataires convertibles en actions;Bonds convertible into shares
+1613;Emprunts obligataires remboursables en actions;Bonds redeemable in shares
+1618;Autres emprunts obligataires;Other bonds
+162;EMPRUNTS ET DETTES AUPRES DES ETABLISSEMENTS DE CREDIT;Borrowings from credit institutions
+163;AVANCES REÇUES DE L'ETAT;Advances received from the State
+164;AVANCES REÇUES ET COMPTES COURANTS BLOQUES;Advances received and blocked current accounts
+165;DEPÔTS ET CAUTIONNEMENTS REÇUS;Deposits and guarantees received
+1651;Dépôts;Deposits
+1652;Cautionnements;Guarantees
+166;INTERÊTS COURUS;Accrued interest
+1661;Intérêts courus sur emprunts obligataires;Accrued interest on bonds
+1662;Intérêts courus sur emprunts et dettes auprès des établissements de crédit;Accrued interest on borrowings from credit institutions
+1663;Intérêts courus sur avances reçues de l'Etat;Accrued interest on advances from the State
+1664;Intérêts courus sur avances reçues et comptes courants bloqués;Accrued interest on advances and blocked current accounts
+1665;Intérêts courus sur dépôts et cautionnements reçus;Accrued interest on deposits and guarantees received
+1667;Intérêts courus sur avances assorties de conditions particulières;Accrued interest on advances with special terms
+1668;Intérêts courus sur autres emprunts et dettes;Accrued interest on other borrowings and debts
+167;AVANCES ASSORTIES DE CONDITIONS PARTICULIERES;Advances with special terms
+1671;Avances bloquées pour augmentation du capital;Blocked advances for capital increase
+1672;Avances conditionnées par l'Etat;Conditional advances from the State
+1673;Avances conditionnées par les autres organismes africains;Conditional advances from other African bodies
+1674;Avances conditionnées par les organismes internationaux;Conditional advances from international bodies
+1676;Droits du concédant exigibles en nature;Grantor's rights payable in kind
+168;AUTRES EMPRUNTS ET DETTES;Other borrowings and debts
+1681;Rentes viagères capitalisées;Capitalised life annuities
+1682;Billets de fonds;Business transfer notes
+1683;Dettes consécutives à des titres empruntés;Debts arising from borrowed securities
+1685;Emprunts participatifs;Participating loans
+1686;Participation des travailleurs aux bénéfices;Employee profit sharing
+17;Dettes de location acquisition;Lease-purchase liabilities
+172;DETTES DE LOCATION ACQUISITION/CREDIT- BAIL IMMOBILIER;Lease-purchase liabilities: real estate leasing
+173;DETTES DE LOCATION ACQUISITION/ CREDIT- BAIL MOBILIER;Lease-purchase liabilities: equipment leasing
+174;DETTES DE LOCATION ACQUISITION /LOCATION VENTE;Lease-purchase liabilities: hire purchase
+176;INTERÊTS COURUS;Accrued interest
+1762;Intérêts courus sur dettes de location acquisition/crédit-bail immobilier;Accrued interest on real estate leasing liabilities
+1763;Intérêts courus sur dettes de location acquisition/crédit-bail mobilier;Accrued interest on equipment leasing liabilities
+1764;Intérêts courus sur dettes de location acquisition/location vente;Accrued interest on hire purchase liabilities
+1768;Intérêts courus sur autres dettes de location acquisition;Accrued interest on other lease-purchase liabilities
+178;DETTES D'AUTRES CONTRATS DE LOCATION ACQUISITION;Liabilities under other lease-purchase contracts
+18;Dettes liées à des participations et comptes de liaison des établissements et sociétés en participation;Debts related to investments and liaison accounts of branches and joint ventures
+181;DETTES LIEES A DES PARTICIPATIONS;Debts related to investments
+1811;Dettes liées à des participations (groupe);Debts related to investments (group)
+1812;Dettes liées à des participations (hors groupe);Debts related to investments (outside the group)
+182;DETTES LIEES A DES SOCIETES EN PARTICIPATION;Debts related to joint ventures
+183;INTERÊTS COURUS SUR DETTES LIEES A DES PARTICIPATIONS;Accrued interest on debts related to investments
+184;COMPTES PERMANENTS BLOQUES DES ETABLISSEMENTS ET SUCCURSALES;Blocked permanent accounts of branches
+185;COMPTES PERMANENTS NON BLOQUES DES ETABLISSEMENTS ET SUCCURSALES;Unblocked permanent accounts of branches
+186;COMPTES DE LIAISON CHARGES;Liaison accounts: expenses
+187;COMPTES DE LIAISON PRODUITS;Liaison accounts: income
+188;COMPTES DE LIAISON DES SOCIETES EN PARTICIPATION;Liaison accounts of joint ventures
+19;Provisions pour risques et charges;Provisions for risks and charges
+191;PROVISIONS POUR LITIGES;Provisions for litigation
+192;PROVISIONS POUR GARANTIES DONNEES AUX CLIENTS;Provisions for customer warranties
+193;PROVISIONS POUR PERTES SUR MARCHES A ACHEVEMENT FUTUR;Provisions for losses on contracts in progress
+194;PROVISIONS POUR PERTES DE CHANGE;Provisions for foreign exchange losses
+195;PROVISIONS POUR IMPÔTS;Provisions for taxes
+196;PROVISIONS POUR PENSIONS ET OBLIGATIONS SIMILAIRES;Provisions for pensions and similar obligations
+1961;Provisions pour pensions et obligations similaires – engagement de retraite;Provisions for pensions and similar obligations, retirement commitment
+1962;Actif du régime de retraite;Pension plan assets
+197;PROVISIONS POUR RESTRUCTURATION;Provisions for restructuring
+198;AUTRES PROVISIONS POUR RISQUES ET CHARGES;Other provisions for risks and charges
+1981;Provisions pour amendes et pénalités;Provisions for fines and penalties
+1983;Provisions de propre assureur;Self-insurance provisions
+1984;Provisions pour démantèlement et remise en état;Provisions for dismantling and site restoration
+1985;Provisions de droits à déduction (Chèques cadeau, cartes de fidélité…);Provisions for deduction rights (gift vouchers, loyalty cards…)
+1988;Autres provisions pour risques et charges;Other provisions for risks and charges
+2;Comptes d’actif immobilisé;Fixed asset accounts
+21;Immobilisations incorporelles;Intangible assets
+211;FRAIS DE DEVELOPPEMENT;Development costs
+212;BREVETS, LICENCES, CONCESSIONS ET DROITS SIMILAIRES;Patents, licences, concessions and similar rights
+2121;Brevets;Patents
+2122;Licences;Licences
+2123;Concessions de service public;Public service concessions
+2128;Autres concessions et droits similaires;Other concessions and similar rights
+213;LOGICIELS ET SITES INTERNET;Software and websites
+2131;Logiciels;Software
+2132;Sites internet;Websites
+214;MARQUES;Trademarks
+215;FONDS COMMERCIAL;Goodwill
+216;DROIT AU BAIL;Leasehold rights
+217;INVESTISSEMENTS DE CREATION;Start-up investments
+218;AUTRES DROITS ET VALEURS INCORPORELS;Other intangible rights and assets
+2181;Frais de prospection et d'évaluation de ressources minérales;Mineral resource exploration and evaluation costs
+2182;Coûts d'obtention du contrat;Costs of obtaining a contract
+2183;Fichiers clients, notices, titres de journaux et magazines;Customer files, notices, newspaper and magazine titles
+2188;Divers droits et valeurs incorporelles;Sundry intangible rights and assets
+219;IMMOBILISATIONS INCORPORELLES EN COURS;Intangible assets in progress
+2191;Frais de développement;Development costs
+2193;Logiciels;Software
+2198;Autres droits et valeurs incorporels;Other intangible rights and assets
+22;Terrains;Land
+221;TERRAINS AGRICOLES ET FORESTIERS;Agricultural and forest land
+2211;Terrains d'exploitation agricole;Agricultural land
+2212;Terrains d'exploitation forestière;Forest land
+2218;Autres terrains;Other land
+222;TERRAINS NUS;Bare land
+2221;Terrains à bâtir;Building land
+2228;Autres terrains nus;Other bare land
+223;TERRAINS BÂTIS;Built land
+2231;Terrains bâtis pour bâtiments industriels et agricoles;Built land for industrial and agricultural buildings
+2232;Terrains bâtis pour bâtiments administratifs et commerciaux;Built land for administrative and commercial buildings
+2234;Terrains bâtis pour bâtiments affectés aux autres opérations professionnelles;Built land for buildings used in other business activities
+2235;Terrains bâtis pour bâtiments affectés aux autres opérations non professionnelles;Built land for buildings used in other non-business activities
+2238;Autres terrains bâtis;Other built land
+224;TRAVAUX DE MISE EN VALEUR DES TERRAINS;Land development works
+2241;Plantations d'arbres et d'arbustes;Tree and shrub plantations
+2245;Améliorations du fonds;Land improvements
+2248;Autres travaux;Other works
+225;TERRAINS CARRIERES TREFONDS;Quarry land and subsoil
+2251;Carrières;Quarries
+226;TERRAINS AMENAGES;Developed land
+2261;Parkings;Car parks
+227;TERRAINS MIS EN CONCESSION;Land under concession
+228;AUTRES TERRAINS;Other land
+2281;Terrains des immeubles de placement;Land of investment properties
+2285;Terrains des logements affectés au personnel;Land of staff housing
+2286;Terrain location-acquisition;Lease-purchase land
+2288;Autres;Other
+229;AMENAGEMENTS DE TERRAINS EN COURS;Land development in progress
+2291;Terrains agricoles et forestiers;Agricultural and forest land
+2292;Terrains nus;Bare land
+2295;Terrains de carrières – tréfonds;Quarry land and subsoil
+2298;Autres terrains;Other land
+23;Bâtiments, installations techniques et agencements;Buildings, technical installations and fittings
+231;BÂTIMENTS INDUSTRIELS, AGRICOLES, ADMINISTRATIFS ET COMMERCIAUX SUR SOL PROPRE;Industrial, agricultural, administrative and commercial buildings on own land
+2311;Bâtiments industriels;Industrial buildings
+2312;Bâtiments agricoles;Agricultural buildings
+2313;Bâtiments administratifs et commerciaux;Administrative and commercial buildings
+2314;Bâtiments affectés au logement du personnel;Staff housing buildings
+2315;Immeubles de placement;Investment properties
+2316;Bâtiments de location acquisition;Lease-purchase buildings
+232;BÂTIMENTS INDUSTRIELS AGRICOLES, ADMINISTRATIFS ET COMMERCIAUX SUR SOL D'AUTRUI;Industrial, agricultural, administrative and commercial buildings on third-party land
+2321;Bâtiments industriels;Industrial buildings
+2322;Bâtiments agricoles;Agricultural buildings
+2323;Bâtiments administratifs et commerciaux;Administrative and commercial buildings
+2324;Bâtiments affectés au logement du personnel;Staff housing buildings
+2325;Immeubles de placement;Investment properties
+2326;Bâtiment de location-acquisition;Lease-purchase buildings
+233;OUVRAGES D'INFRASTRUCTURE;Infrastructure works
+2331;Voies de terre;Roads
+2332;Voies de fer;Railways
+2333;Voies d'eau;Waterways
+2334;Barrages, Digues;Dams and dykes
+2335;Pistes d'aérodrome;Airfield runways
+2338;Autres;Other
+234;INSTALLATIONS TECHNIQUES;Technical installations
+2341;Installations complexes spécialisées sur sol propre;Specialised complex installations on own land
+2342;Installations complexes spécialisées sur sol d'autrui;Specialised complex installations on third-party land
+2343;Installations à caractère spécifique sur sol propre;Special-purpose installations on own land
+2344;Installations à caractère spécifique sur sol d'autrui;Special-purpose installations on third-party land
+2345;Aménagements et agencements des bâtiments;Building fittings and improvements
+235;AMENAGEMENTS DE BUREAUX;Office fittings
+2351;Installations générales;General installations
+2358;Autres;Other
+237;BÂTIMENTS INDUSTRIELS, AGRICOLES ET COMMERCIAUX MIS EN CONCESSION;Industrial, agricultural and commercial buildings under concession
+238;AUTRES INSTALLATIONS ET AGENCEMENTS;Other installations and fittings
+239;BÂTIMENTS ET INSTALLATIONS EN COURS;Buildings and installations in progress
+2391;Bâtiments en cours;Buildings in progress
+2392;Installations en cours;Installations in progress
+2393;Aménagements et agencements;Fittings and improvements in progress
+24;Matériel, Mobilier et Actifs biologiques;Equipment, furniture and biological assets
+241;MATERIEL ET OUTILLAGE INDUSTRIEL ET COMMERCIAL;Industrial and commercial equipment and tools
+2411;Matériel industriel;Industrial equipment
+2412;Outillage industriel;Industrial tools
+2413;Matériel commercial;Commercial equipment
+2414;Outillage commercial;Commercial tools
+2416;Matériel et outillage de location acquisition;Lease-purchase equipment and tools
+242;MATERIEL ET OUTILLAGE AGRICOLE;Agricultural equipment and tools
+2421;Matériel agricole;Agricultural equipment
+2422;Outillage agricole;Agricultural tools
+2426;Matériel et outillage agricole de location – acquisition;Lease-purchase agricultural equipment and tools
+243;MATERIEL D'EMBALLAGE RECUPERABLE ET IDENTIFIABLE;Returnable and identifiable packaging equipment
+244;MATERIEL ET MOBILIER;Equipment and furniture
+2441;Matériel de bureau;Office equipment
+2442;Matériel informatique;Computer equipment
+2443;Matériel bureautique;Office automation equipment
+2444;Mobilier de bureau;Office furniture
+2446;Matériel et mobilier de location- acquisition;Lease-purchase equipment and furniture
+2447;Matériel et mobilier des logements affectés au personnel;Equipment and furniture of staff housing
+245;MATERIEL DE TRANSPORT;Transport equipment
+2451;Matériel automobile;Motor vehicles
+2452;Matériel ferroviaire;Railway equipment
+2453;Matériel fluvial, lagunaire;River and lagoon craft
+2454;Matériel naval;Ships
+2455;Matériel aérien;Aircraft
+2456;Matériel de transport de location-acquisition;Lease-purchase transport equipment
+2457;Matériel hippomobile;Animal-drawn vehicles
+2458;Autres (vélo, mobylette, moto);Other (bicycles, mopeds, motorcycles)
+246;ACTIFS BIOLOGIQUES;Biological assets
+2461;Cheptel, animaux de trait;Livestock, draught animals
+2462;Cheptel, animaux reproducteurs;Livestock, breeding animals
+2463;Animaux de garde;Guard animals
+2465;Plantations agricoles;Agricultural plantations
+2468;Autres;Other
+247;AGENCEMENTS, AMENAGEMENTS DU MATERIEL ET ACTIFS BIOLOGIQUES;Fittings of equipment and biological assets
+2471;Agencements et aménagements du matériel;Fittings and improvements of equipment
+2472;Agencements et aménagements des actifs biologiques;Fittings and improvements of biological assets
+248;AUTRES MATERIELS ET MOBILIERS;Other equipment and furniture
+2481;Collections et œuvres d'art;Collections and works of art
+249;MATERIEL ET ACTIFS BIOLOGIQUES EN COURS;Equipment and biological assets in progress
+2491;Matériel et outillage industriel et commercial;Industrial and commercial equipment and tools
+2492;Matériel et outillage agricole;Agricultural equipment and tools
+2493;Matériel d'emballage récupérable et identifiable;Returnable and identifiable packaging equipment
+2494;Matériel et mobilier de bureau;Office equipment and furniture
+2495;Matériel de transport;Transport equipment
+2496;Actifs biologiques;Biological assets
+2497;Agencements et aménagements du matériel et des actifs biologiques;Fittings of equipment and biological assets
+2498;Autres matériels;Other equipment
+25;Avances et acomptes versés sur immobilisations;Advances and down payments on fixed assets
+251;AVANCES ET ACOMPTES VERSÉS SUR IMMOBILISATIONS INCORPORELLES;Advances and down payments on intangible assets
+252;AVANCES ET ACOMPTES VERSÉS SUR IMMOBILISATIONS CORPORELLES;Advances and down payments on tangible assets
+26;Titres de participation;Equity investments
+261;TITRES DE PARTICIPATION DANS DES SOCIETES SOUS CONTRÔLE EXCLUSIF;Investments in exclusively controlled companies
+262;TITRES DE PARTICIPATION DANS DES SOCIETES SOUS CONTRÔLE CONJOINT;Investments in jointly controlled companies
+263;TITRES DE PARTICIPATION DANS DES SOCIETES CONFERANT UNE INFLUENCE NOTABLE;Investments in companies under significant influence
+265;PARTICIPATIONS DANS DES ORGANISMES PROFESSIONNELS;Holdings in professional bodies
+266;PARTS DANS DES GROUPEMENTS D'INTERÊT ECONOMIQUE (G.I.E.);Shares in economic interest groupings (EIG)
+268;AUTRES TITRES DE PARTICIPATION;Other equity investments
+27;Autres immobilisations financières;Other financial assets
+271;PRÊTS ET CREANCES;Loans and receivables
+2711;Prêts participatifs;Participating loans
+2712;Prêts aux associés;Loans to partners
+2713;Billets de fonds;Business transfer notes
+2714;Créances de location financement;Finance lease receivables
+2715;Titres prêtés;Securities lent
+272;PRÊTS AU PERSONNEL;Loans to staff
+2721;Prêts immobiliers;Housing loans
+2722;Prêts mobiliers et d'installation;Furniture and settling-in loans
+2728;Autres prêts (frais d'études);Other loans (study costs)
+273;CREANCES SUR L'ETAT;Receivables from the State
+2731;Retenues de garantie;Retention money
+2733;Fonds réglementé;Regulated fund
+2734;Créances sur le concédant;Receivables from the grantor
+2738;Autres;Other
+274;TITRES IMMOBILISES;Long-term securities
+2741;Titres immobilisés de l'activité de portefeuille (T.I.A.P.);Portfolio investment securities
+2742;Titres participatifs;Participating securities
+2743;Certificats d'investissement;Investment certificates
+2744;Parts de fonds commun de placement (F.C.P.);Units in mutual funds
+2745;Obligations;Bonds
+2746;Actions ou parts propres;Own shares
+2748;Autres titres immobilisés;Other long-term securities
+275;DEPÔTS ET CAUTIONNEMENTS VERSES;Deposits and guarantees paid
+2751;Dépôts pour loyers d'avance;Rent deposits
+2752;Dépôts pour l'électricité;Electricity deposits
+2753;Dépôts pour l'eau;Water deposits
+2754;Dépôts pour le gaz;Gas deposits
+2755;Dépôts pour le téléphone, le télex, la télécopie;Telephone, telex and fax deposits
+2756;Cautionnements sur marchés publics;Guarantees on public contracts
+2757;Cautionnements sur autres opérations;Guarantees on other transactions
+2758;Autres dépôts et cautionnements;Other deposits and guarantees
+276;INTERÊTS COURUS;Accrued interest
+2761;Prêts et créances non commerciales;Non-trade loans and receivables
+2762;Prêts au personnel;Loans to staff
+2763;Créances sur l'Etat;Receivables from the State
+2764;Titres immobilisés;Long-term securities
+2765;Dépôts et cautionnements versés;Deposits and guarantees paid
+2766;Créances de location financement;Finance lease receivables
+2767;Créances rattachées à des participations;Receivables related to investments
+2768;Immobilisations financières diverses;Sundry financial assets
+277;CREANCES RATTACHEES A DES PARTICIPATIONS ET AVANCES A DES G.I.E.;Receivables related to investments and advances to EIGs
+2771;Créances rattachées à des participations (groupe);Receivables related to investments (group)
+2772;Créances rattachées à des participations (hors groupe);Receivables related to investments (outside the group)
+2773;Créances rattachées à des sociétés en participation;Receivables related to joint ventures
+2774;Avances à des groupements d'intérêt économique (G.I.E.);Advances to economic interest groupings (EIG)
+278;IMMOBILISATIONS FINANCIERES DIVERSES;Sundry financial assets
+2781;Créances diverses groupe;Sundry group receivables
+2782;Créances diverses hors groupe;Sundry non-group receivables
+2784;Banques dépôt à terme;Banks, term deposits
+2785;Or et métaux précieux;Gold and precious metals
+28;Amortissements;Depreciation and amortisation
+281;AMORTISSEMENTS DES IMMOBILISATIONS INCORPORELLES;Amortisation of intangible assets
+2811;Amortissements des frais de développement;Amortisation of development costs
+2812;Amortissements des brevets, licences, concessions et droits similaires;Amortisation of patents, licences, concessions and similar rights
+2813;Amortissements des logiciels et sites internet;Amortisation of software and websites
+2814;Amortissements des marques;Amortisation of trademarks
+2815;Amortissements du fonds commercial;Amortisation of goodwill
+2816;Amortissements du droit au bail;Amortisation of leasehold rights
+2817;Amortissements des investissements de création;Amortisation of start-up investments
+2818;Amortissements des autres droits et valeurs incorporels;Amortisation of other intangible rights and assets
+282;AMORTISSEMENTS DES TERRAINS;Depreciation of land
+2821;Amortissements des terrains agricoles et forestiers;Depreciation of agricultural and forest land
+2824;Amortissements des travaux de mise en valeur des terrains;Depreciation of land development works
+2825;Amortissements des terrains de gisement;Depreciation of deposit land
+283;AMORTISSEMENTS DES BÂTIMENTS, INSTALLATIONS TECHNIQUES ET AGENCEMENTS;Depreciation of buildings, technical installations and fittings
+2831;Amortissements des bâtiments industriels, agricoles, administratifs et commerciaux sur sol propre;Depreciation of industrial, agricultural, administrative and commercial buildings on own land
+2832;Amortissements des bâtiments industriels, agricoles, administratifs et commerciaux sur sol d'autrui;Depreciation of industrial, agricultural, administrative and commercial buildings on third-party land
+2833;Amortissements des ouvrages d'infrastructure;Depreciation of infrastructure works
+2834;Amortissements des aménagements, agencements et installations techniques;Depreciation of fittings, improvements and technical installations
+2835;Amortissements des aménagements de bureaux;Depreciation of office fittings
+2837;Amortissements de bâtiments industriels, agricoles et commerciaux mis en concession;Depreciation of industrial, agricultural and commercial buildings under concession
+2838;Amortissements des autres installations et agencements;Depreciation of other installations and fittings
+284;AMORTISSEMENTS DU MATERIEL;Depreciation of equipment
+2841;Amortissements du matériel et outillage industriel et commercial;Depreciation of industrial and commercial equipment and tools
+2842;Amortissements du matériel et outillage agricole;Depreciation of agricultural equipment and tools
+2843;Amortissements du matériel d'emballage récupérable et identifiable;Depreciation of returnable and identifiable packaging equipment
+2844;Amortissements du matériel et mobilier;Depreciation of equipment and furniture
+2845;Amortissements du matériel de transport;Depreciation of transport equipment
+2846;Amortissements des actifs biologiques;Depreciation of biological assets
+2847;Amortissements des agencements et aménagements du matériel et des actifs biologiques;Depreciation of fittings of equipment and biological assets
+2848;Amortissements des autres matériels;Depreciation of other equipment
+29;Dépréciations;Impairment
+291;DEPRECIATIONS DES IMMOBILISATIONS INCORPORELLES;Impairment of intangible assets
+2911;Dépréciations des frais de développement;Impairment of development costs
+2912;Dépréciations des brevets, licences, marques concessions et droits similaires;Impairment of patents, licences, trademarks, concessions and similar rights
+2913;Dépréciations des logiciels et sites internet;Impairment of software and websites
+2914;Dépréciations des marques;Impairment of trademarks
+2915;Dépréciations du fonds commercial;Impairment of goodwill
+2916;Dépréciations du droit au bail;Impairment of leasehold rights
+2917;Dépréciations des investissements de création;Impairment of start-up investments
+2918;Dépréciations des autres droits et valeurs incorporels;Impairment of other intangible rights and assets
+2919;Dépréciations des immobilisations incorporelles en cours;Impairment of intangible assets in progress
+292;DEPRECIATIONS DES TERRAINS;Impairment of land
+2921;Dépréciations des terrains agricoles et forestiers;Impairment of agricultural and forest land
+2922;Dépréciations des terrains nus;Impairment of bare land
+2923;Dépréciations des terrains bâtis;Impairment of built land
+2924;Dépréciations des travaux de mise en valeur des terrains;Impairment of land development works
+2925;Dépréciations des terrains de gisement;Impairment of deposit land
+2926;Dépréciations des terrains aménagés;Impairment of developed land
+2927;Dépréciations des terrains mis en concession;Impairment of land under concession
+2928;Dépréciations des autres terrains;Impairment of other land
+2929;Dépréciations des aménagements de terrains en cours;Impairment of land development in progress
+293;DEPRECIATIONS DES BÂTIMENTS, INSTALLATIONS TECHNIQUES ET AGENCEMENTS;Impairment of buildings, technical installations and fittings
+2931;Dépréciations des bâtiments industriels, agricoles, administratifs et commerciaux sur sol propre;Impairment of industrial, agricultural, administrative and commercial buildings on own land
+2932;Dépréciations des bâtiments industriels, agricoles, administratifs et commerciaux sur sol d'autrui;Impairment of industrial, agricultural, administrative and commercial buildings on third-party land
+2933;Dépréciations des ouvrages d'infrastructures;Impairment of infrastructure works
+2934;Dépréciations des aménagements, agencements et installations techniques;Impairment of fittings, improvements and technical installations
+2935;Dépréciations des aménagements de bureaux;Impairment of office fittings
+2937;Dépréciations des bâtiments industriels, agricoles et commerciaux mis en concession;Impairment of industrial, agricultural and commercial buildings under concession
+2938;Dépréciations des autres installations et agencements;Impairment of other installations and fittings
+2939;Dépréciations des bâtiments et installations en cours;Impairment of buildings and installations in progress
+294;DEPRECIATIONS DU MATERIEL, DU MOBILIER ET DE L'ACTIF BIOLOGIQUE;Impairment of equipment, furniture and biological assets
+2941;Dépréciations du matériel et outillage industriel et commercial;Impairment of industrial and commercial equipment and tools
+2942;Dépréciations du matériel et outillage agricole;Impairment of agricultural equipment and tools
+2943;Dépréciations du matériel d'emballage récupérable et identifiable;Impairment of returnable and identifiable packaging equipment
+2944;Dépréciations du matériel et mobilier;Impairment of equipment and furniture
+2945;Dépréciations du matériel de transport;Impairment of transport equipment
+2946;Dépréciations des actifs biologiques;Impairment of biological assets
+2947;Dépréciations des agencements et aménagements du matériel et des actifs biologiques;Impairment of fittings of equipment and biological assets
+2948;Dépréciations des autres matériels;Impairment of other equipment
+2949;Dépréciations du matériel en cours;Impairment of equipment in progress
+295;DEPRECIATIONS DES AVANCES ET ACOMPTES VERSES SUR IMMOBILISATIONS;Impairment of advances and down payments on fixed assets
+2951;Dépréciations des avances et acomptes versés sur immobilisations incorporelles;Impairment of advances and down payments on intangible assets
+2952;Dépréciations des avances et acomptes versés sur immobilisations corporelles;Impairment of advances and down payments on tangible assets
+296;DEPRECIATIONS DES TITRES DE PARTICIPATION;Impairment of equity investments
+2961;Dépréciations des titres de participation dans des sociétés sous contrôle exclusif;Impairment of investments in exclusively controlled companies
+2962;Dépréciations des titres de participation dans les sociétés sous contrôle conjoint;Impairment of investments in jointly controlled companies
+2963;Dépréciations des titres de participation dans les sociétés conférant une influence notable;Impairment of investments in companies under significant influence
+2965;Dépréciations des participations dans des organismes professionnels;Impairment of holdings in professional bodies
+2966;Dépréciations des parts dans des G.I.E.;Impairment of shares in EIGs
+2968;Dépréciations des autres titres de participation;Impairment of other equity investments
+297;DEPRECIATIONS DES AUTRES IMMOBILISATIONS FINANCIERES;Impairment of other financial assets
+2971;Dépréciations des prêts et créances;Impairment of loans and receivables
+2972;Dépréciations des prêts au personnel;Impairment of loans to staff
+2973;Dépréciations des créances sur l'Etat;Impairment of receivables from the State
+2974;Dépréciations des titres immobilisés;Impairment of long-term securities
+2975;Dépréciations des dépôts et cautionnements versés;Impairment of deposits and guarantees paid
+2977;Dépréciations des créances rattachées à des participations et avances à des G.I.E.;Impairment of receivables related to investments and advances to EIGs
+2978;Dépréciations des créances financières diverses;Impairment of sundry financial receivables
+3;Comptes de stocks;Inventory accounts
+31;Marchandises;Goods for resale
+311;MARCHANDISES A;Goods A
+3111;Marchandises A1;Goods A1
+3112;Marchandises A2;Goods A2
+312;MARCHANDISES B;Goods B
+3121;Marchandises B1;Goods B1
+3122;Marchandises B2;Goods B2
+318;MARCHANDISES HORS ACTIVITES ORDINAIRES (H.A.O.);Goods outside ordinary activities
+32;Matières premières et fournitures liées;Raw materials and related supplies
+321;MATIERES A;Materials A
+322;MATIERES B;Materials B
+323;FOURNITURES (A, B);Supplies (A, B)
+33;Autres approvisionnements;Other supplies
+331;MATIERES CONSOMMABLES;Consumable materials
+333;FOURNITURES DE MAGASIN;Store supplies
+334;FOURNITURES DE BUREAU;Office supplies
+335;EMBALLAGES;Packaging
+3351;Emballages perdus;Non-returnable packaging
+3352;Emballages récupérables non identifiables;Returnable non-identifiable packaging
+3353;Emballages à usage mixte;Dual-use packaging
+3358;Autres emballages;Other packaging
+338;AUTRES MATIERES;Other materials
+34;Produits en cours;Work in progress (goods)
+341;PRODUITS EN COURS;Products in progress
+3411;Produits en cours P1;Products in progress P1
+3412;Produits en cours P2;Products in progress P2
+342;TRAVAUX EN COURS;Works in progress
+3421;Travaux en cours T1;Works in progress T1
+3422;Travaux en cours T2;Works in progress T2
+343;PRODUITS INTERMEDIAIRES EN COURS;Intermediate products in progress
+3431;Produits intermédiaires A;Intermediate products A
+3432;Produits intermédiaires B;Intermediate products B
+344;PRODUITS RESIDUELS EN COURS;Residual products in progress
+3441;Produits résiduels A;Residual products A
+3442;Produits résiduels B;Residual products B
+35;Services en cours;Services in progress
+351;ETUDES EN COURS;Studies in progress
+3511;Etudes en cours E1;Studies in progress E1
+3512;Etudes en cours E2;Studies in progress E2
+352;PRESTATIONS DE SERVICES EN COURS;Services in progress
+3521;Prestations de services S1;Services in progress S1
+3522;Prestations de services S2;Services in progress S2
+36;Produits finis;Finished goods
+361;PRODUITS FINIS A;Finished goods A
+362;PRODUITS FINIS B;Finished goods B
+37;Produits intermédiaires et résiduels;Intermediate and residual products
+371;PRODUITS INTERMEDIAIRES;Intermediate products
+3711;Produits intermédiaires A;Intermediate products A
+3712;Produits intermédiaires B;Intermediate products B
+372;PRODUITS RESIDUELS;Residual products
+3721;Déchets;Waste
+3722;Rebuts;Rejects
+3723;Matières de récupération;Recovered materials
+38;Stocks en cours de route, en consignation ou en dépôt;Inventory in transit, on consignment or in deposit
+381;MARCHANDISES EN COURS DE ROUTE;Goods in transit
+382;MATIERES PREMIERES ET FOURNITURES LIEES EN COURS DE ROUTE;Raw materials and related supplies in transit
+383;AUTRES APPROVISIONNEMENTS EN COURS DE ROUTE;Other supplies in transit
+386;PRODUITS FINIS EN COURS DE ROUTE;Finished goods in transit
+387;STOCK EN CONSIGNATION OU EN DEPÔT;Inventory on consignment or in deposit
+3871;Stock en consignation;Inventory on consignment
+3872;Stock en dépôt;Inventory in deposit
+388;STOCK PROVENANT D'IMMOBILISATIONS MISES HORS SERVICE OU AU REBUT;Inventory from fixed assets taken out of service or scrapped
+39;Dépréciations des stocks et encours de production;Impairment of inventories and work in progress
+391;DEPRECIATIONS DES STOCKS DE MARCHANDISES;Impairment of goods for resale
+392;DEPRECIATIONS DES STOCKS DE MATIERES PREMIERES ET FOURNITURES LIEES;Impairment of raw materials and related supplies
+393;DEPRECIATIONS DES STOCKS D'AUTRES APPROVISIONNEMENTS;Impairment of other supplies
+394;DEPRECIATIONS DES PRODUITS EN COURS;Impairment of products in progress
+395;DEPRECIATIONS DES SERVICES EN COURS;Impairment of services in progress
+396;DEPRECIATIONS DES STOCKS DE PRODUITS FINIS;Impairment of finished goods
+397;DEPRECIATIONS DES STOCKS DE PRODUITS INTERMEDIAIRES ET RESIDUELS;Impairment of intermediate and residual products
+398;DEPRECIATIONS DES STOCKS EN COURS DE ROUTE, EN CONSIGNATION OU EN DEPÔT;Impairment of inventory in transit, on consignment or in deposit
+4;Comptes de tiers;Third-party accounts
+40;Fournisseurs et comptes rattachés;Suppliers and related accounts
+401;FOURNISSEURS, DETTES EN COMPTE;Suppliers, trade payables
+4011;Fournisseurs;Suppliers
+4012;Fournisseurs-Groupe;Suppliers, group
+4013;Fournisseurs sous-traitants;Subcontractor suppliers
+4017;Fournisseurs, retenues de garantie;Suppliers, retention money
+402;FOURNISSEURS, EFFETS A PAYER;Suppliers, bills payable
+4021;Fournisseurs, Effets à payer;Suppliers, bills payable
+4022;Fournisseurs-Groupe, Effets à payer;Suppliers, group, bills payable
+4023;Fournisseurs sous-traitants, Effets à payer;Subcontractor suppliers, bills payable
+404;Fournisseurs, acquisitions courantes d'immobilisations;Suppliers of current fixed asset acquisitions
+4041;Fournisseurs dettes en compte, immobilisations incorporelles;Suppliers, trade payables, intangible assets
+4042;Fournisseurs dettes en compte, immobilisations corporelles;Suppliers, trade payables, tangible assets
+4046;Fournisseurs effets à payer, immobilisations incorporelles;Suppliers, bills payable, intangible assets
+4047;Fournisseurs effets à payer, immobilisations corporelles;Suppliers, bills payable, tangible assets
+408;FOURNISSEURS, FACTURES NON PARVENUES;Suppliers, invoices not yet received
+4081;Fournisseurs;Suppliers
+4082;Fournisseurs-Groupe;Suppliers, group
+4083;Fournisseurs sous-traitants;Subcontractor suppliers
+4086;Fournisseurs, intérêts courus;Suppliers, accrued interest
+409;FOURNISSEURS DEBITEURS;Suppliers with debit balances
+4091;Fournisseurs, avances et acomptes versés;Suppliers, advances and down payments made
+4092;Fournisseurs-Groupe, avances et acomptes versés;Suppliers, group, advances and down payments made
+4093;Fournisseurs sous-traitants, avances et acomptes versés;Subcontractor suppliers, advances and down payments made
+4094;Fournisseurs, créances pour emballages et matériels à rendre;Suppliers, receivables for packaging and equipment to be returned
+4098;Rabais, Remises, Ristournes et autres avoirs à obtenir;Discounts, allowances, rebates and other credits receivable
+41;Clients et comptes rattachés;Customers and related accounts
+411;CLIENTS;Customers
+4111;Clients;Customers
+4112;Clients-Groupe;Customers, group
+4114;Clients, Etat et collectivités publiques;Customers, State and public authorities
+4115;Clients, organismes internationaux;Customers, international bodies
+4116;Clients ventes avec réserves de propriété;Customers, sales with retention of title
+4117;Clients, retenues de garantie;Customers, retention money
+4118;Clients, dégrèvements de Taxes sur la Valeur Ajoutée (T.V.A.);Customers, value added tax (VAT) relief
+412;CLIENTS, EFFETS A RECEVOIR EN PORTEFEUILLE;Customers, bills receivable in portfolio
+4121;Clients, Effets à recevoir;Customers, bills receivable
+4122;Clients-Groupe, Effets à recevoir;Customers, group, bills receivable
+4124;Etat et collectivités publiques, Effets à recevoir;State and public authorities, bills receivable
+4125;Organismes internationaux, Effets à recevoir;International bodies, bills receivable
+4126;Clients, ventes avec réserve de propriété, effets à recevoir;Customers, sales with retention of title, bills receivable
+414;CREANCES SUR CESSIONS COURANTES D'IMMOBILISATIONS;Receivables on current disposals of fixed assets
+4141;Créances en compte;Receivables on account
+4142;Effets à recevoir;Bills receivable
+4146;Effets à recevoir, immobilisations incorporelles;Bills receivable, intangible assets
+4147;Effets à recevoir, immobilisations corporelles;Bills receivable, tangible assets
+415;CLIENTS, EFFETS ESCOMPTES NON ECHUS;Customers, discounted bills not yet due
+416;CREANCES CLIENTS LITIGIEUSES OU DOUTEUSES;Disputed or doubtful customer receivables
+4161;Créances litigieuses;Disputed receivables
+4162;Créances douteuses;Doubtful receivables
+418;CLIENTS, PRODUITS A RECEVOIR;Customers, accrued income
+4181;Clients, factures à établir;Customers, invoices to be issued
+4186;Clients, intérêts courus;Customers, accrued interest
+419;CLIENTS CREDITEURS;Customers with credit balances
+4191;Clients, avances et acomptes reçus;Customers, advances and down payments received
+4192;Clients-Groupe, avances et acomptes reçus;Customers, group, advances and down payments received
+4194;Clients, dettes pour emballages et matériels consignés;Customers, debts for deposited packaging and equipment
+4198;Rabais, Remises, Ristournes et autres avoirs à accorder;Discounts, allowances, rebates and other credits to be granted
+42;Personnel;Staff
+421;PERSONNEL, AVANCES ET ACOMPTES;Staff, advances and down payments
+4211;Personnel, avances;Staff, advances
+4212;Personnel, acomptes;Staff, down payments
+4213;Frais avancés et fournitures au personnel;Expenses advanced and supplies to staff
+422;PERSONNEL, REMUNERATIONS DUES;Staff, wages payable
+423;PERSONNEL, OPPOSITIONS, SAISIES-ARRÊTS;Staff, attachments and garnishments
+4231;Personnel, oppositions;Staff, attachments
+4232;Personnel, saisies-arrêts;Staff, garnishments
+4233;Personnel, avis à tiers détenteur;Staff, third-party holder notices
+424;PERSONNEL,ŒUVRES SOCIALES INTERNES;Staff, internal social welfare
+4241;Assistance médicale;Medical assistance
+4242;Allocations familiales;Family allowances
+4245;Organismes sociaux rattachés à l'entité;Social bodies attached to the entity
+4248;Autres œuvres sociales internes;Other internal social welfare
+425;REPRESENTANTS DU PERSONNEL;Staff representatives
+4251;Délégués du personnel;Staff delegates
+4252;Syndicats et Comités d'entreprise, d'établissement;Trade unions and works councils
+4258;Autres représentants du personnel;Other staff representatives
+426;PERSONNEL, PARTICIPATION AUX BENEFICES ET AU CAPITAL;Staff, profit sharing and employee shareholding
+4261;Participation aux bénéfices;Profit sharing
+4264;Participation au capital;Employee shareholding
+427;PERSONNEL-DEPÔTS;Staff deposits
+428;PERSONNEL, CHARGES A PAYER ET PRODUITS A RECEVOIR;Staff, accrued expenses and accrued income
+4281;Dettes provisionnées pour congés à payer;Accrued liabilities for paid leave
+4286;Autres charges à payer;Other accrued expenses
+4287;Produits à recevoir;Accrued income
+43;Organismes sociaux;Social security bodies
+431;SECURITE SOCIALE;Social security
+4311;Prestations familiales;Family benefits
+4312;Accidents du travail;Industrial accidents
+4313;Caisse de retraite obligatoire;Compulsory pension fund
+4314;Caisse de retraite facultative;Voluntary pension fund
+4318;Autres cotisations sociales;Other social contributions
+432;CAISSES DE RETRAITE COMPLEMENTAIRE;Supplementary pension funds
+433;AUTRES ORGANISMES SOCIAUX;Other social bodies
+4331;Mutuelle;Mutual insurance
+4332;Assurances retraite;Pension insurance
+4333;Assurances et organismes de santé;Health insurance and bodies
+438;ORGANISMES SOCIAUX, CHARGES A PAYER ET PRODUITS A RECEVOIR;Social bodies, accrued expenses and accrued income
+4381;Charges sociales sur gratifications à payer;Social charges on bonuses payable
+4382;Charges sociales sur congés à payer;Social charges on paid leave payable
+4386;Autres charges à payer;Other accrued expenses
+4387;Produits à recevoir;Accrued income
+44;Etat et Collectivités publiques;State and public authorities
+441;ETAT, IMPÔT SUR LES BENEFICES;State, income tax
+442;ETAT, AUTRES IMPÔTS ET TAXES;State, other taxes and duties
+4421;Impôts et taxes d'Etat;State taxes and duties
+4422;Impôts et taxes pour les collectivités publiques;Taxes and duties for public authorities
+4423;Impôts et taxes recouvrables sur des obligataires;Taxes and duties recoverable from bondholders
+4424;Impôts et taxes recouvrables sur des associés;Taxes and duties recoverable from partners
+4426;Droits de douane;Customs duties
+4428;Autres impôts et taxes;Other taxes and duties
+443;ETAT, T.V.A. FACTUREE;State, VAT charged
+4431;T.V.A. facturée sur ventes;VAT charged on sales
+4432;T.V.A. facturée sur prestations de services;VAT charged on services
+4433;T.V.A. facturée sur travaux;VAT charged on works
+4434;T.V.A. facturée sur production livrée à soi-même;VAT charged on self-supply
+4435;T.V.A. sur factures à établir;VAT on invoices to be issued
+444;ETAT, T.V.A. DUE OU CREDIT DE T.V.A.;State, VAT due or VAT credit
+4441;Etat, T.V.A. due;State, VAT due
+4449;Etat, crédit de T.V.A. à reporter;State, VAT credit carried forward
+445;ETAT, T.V.A. RECUPERABLE;State, recoverable VAT
+4451;T.V.A. récupérable sur immobilisations;Recoverable VAT on fixed assets
+4452;T.V.A. récupérable sur achats;Recoverable VAT on purchases
+4453;T.V.A. récupérable sur transport;Recoverable VAT on transport
+4454;T.V.A. récupérable sur services extérieurs et autres charges;Recoverable VAT on external services and other expenses
+4455;T.V.A. récupérable sur factures non parvenues;Recoverable VAT on invoices not yet received
+4456;T.V.A. transférée par d'autres entités;VAT transferred by other entities
+446;ETAT, AUTRES TAXES SUR LE CHIFFRE D'AFFAIRES;State, other turnover taxes
+447;ETAT, IMPÔTS RETENUS A LA SOURCE;State, taxes withheld at source
+4471;Impôt général sur le revenu;General income tax
+4472;Impôts sur salaires;Taxes on salaries
+4473;Contribution nationale;National contribution
+4474;Contribution nationale de solidarité;National solidarity contribution
+4478;Autres impôts et contributions;Other taxes and contributions
+448;ETAT, CHARGES A PAYER ET PRODUITS A RECEVOIR;State, accrued expenses and accrued income
+4486;Charges à payer;Accrued expenses
+4487;Produits à recevoir;Accrued income
+449;ETAT, CREANCES ET DETTES DIVERSES;State, sundry receivables and payables
+4491;Etat, obligations cautionnées;State, guaranteed bonds
+4492;Etat, avances et acomptes versés sur impôts;State, advances and instalments paid on taxes
+4493;Etat, fonds de dotation à recevoir;State, endowment funds receivable
+4494;Etat, subventions d'équipement à recevoir;State, equipment grants receivable
+4495;Etat, subventions d'exploitation à recevoir;State, operating grants receivable
+4496;Etat, subventions d'équilibre à recevoir;State, balancing grants receivable
+4497;Etat avances sur subventions;State, advances on grants
+4499;Etat, fonds réglementé provisionné;State, provisioned regulated fund
+45;Organismes internationaux;International bodies
+451;OPERATIONS AVEC LES ORGANISMES AFRICAINS;Transactions with African bodies
+452;OPERATIONS AVEC LES AUTRES ORGANISMES INTERNATIONAUX;Transactions with other international bodies
+458;ORGANISMES INTERNATIONAUX, FONDS DE DOTATION ET SUBVENTIONS A RECEVOIR;International bodies, endowment funds and grants receivable
+4581;Organismes internationaux, fonds de dotation à recevoir;International bodies, endowment funds receivable
+4582;Organismes internationaux, subventions à recevoir;International bodies, grants receivable
+46;Apporteurs, Associés et Groupe;Contributors, partners and group
+461;APPORTEURS, OPERATIONS SUR LE CAPITAL;Contributors, capital transactions
+4611;Apporteurs, apports en nature;Contributors, contributions in kind
+4612;Apporteurs, apports en numéraire;Contributors, cash contributions
+4613;Apporteurs, capital souscrit appelé non versé;Contributors, subscribed capital called, unpaid
+4614;Apporteurs, capital appelé non versé;Contributors, called capital unpaid
+4615;Apporteurs, versements reçus sur augmentation de capital;Contributors, payments received on capital increase
+4616;Apporteurs, versements anticipés;Contributors, advance payments
+4617;Apporteurs défaillants;Defaulting contributors
+4618;Apporteurs, autres apports;Contributors, other contributions
+4619;Apporteurs, capital à rembourser;Contributors, capital to be repaid
+462;ASSOCIES, COMPTES COURANTS;Partners, current accounts
+4621;Principal;Principal
+4626;Intérêts courus;Accrued interest
+463;ASSOCIES, OPERATIONS FAITES EN COMMUN;Partners, joint operations
+465;ASSOCIES, DIVIDENDES A PAYER;Partners, dividends payable
+466;GROUPE, COMPTES COURANTS;Group, current accounts
+467;APPORTEURS, RESTANT DÛ SUR CAPITAL APPELE;Contributors, unpaid called-up capital
+47;Débiteurs et créditeurs divers;Sundry debtors and creditors
+471;DEBITEURS ET CREDITEURS DIVERS;Sundry debtors and creditors
+4711;Débiteurs divers;Sundry debtors
+4712;Créditeurs divers;Sundry creditors
+4713;Obligataires;Bondholders
+4714;Créances sur cessions de titres de placement;Receivables on disposals of short-term securities
+4715;Rémunérations d'administrateurs;Directors' remuneration
+4716;Compte du factor;Factor account
+4717;Débiteurs divers- retenues de garantie;Sundry debtors, retention money
+4718;Apport, compte de restructuration;Contribution, restructuring account
+4719;Bons de souscription d'actions et d'obligations;Share and bond subscription warrants
+472;VERSEMENTS RESTANT A EFFECTUER SUR TITRES DE PLACEMENT NON LIBERES;Amounts outstanding on partly paid short-term securities
+473;INTERMEDIAIRES – OPERATIONS FAITES POUR LE COMPTE DE TIERS;Intermediaries, transactions on behalf of third parties
+4731;Mandants;Principals
+4732;Mandataires;Agents
+4733;Commettants;Consignors
+4734;Commissionnaires;Commission agents
+474;REPARTITION PERIODIQUE DES CHARGES ET DES PRODUITS;Periodic allocation of expenses and income
+4746;Charges;Expenses
+4747;Produits;Income
+475;COMPTE TRANSITOIRE, AJUSTEMENT SPECIAL LIE A LA REVISION SYSCOHADA;Transitional account, special adjustment for the SYSCOHADA revision
+4751;Compte actif;Asset account
+4752;Compte passif;Liability account
+476;CHARGES CONSTATEES D'AVANCE;Prepaid expenses
+477;PRODUITS CONSTATES D'AVANCE;Deferred income
+478;ECARTS DE CONVERSION-ACTIF;Translation differences, assets
+4781;Diminution des créances;Decrease in receivables
+4782;Augmentation des dettes;Increase in debts
+4788;Différences compensées par couverture de change;Differences offset by currency hedging
+479;ECARTS DE CONVERSION- PASSIF;Translation differences, liabilities
+4791;Augmentation des créances;Increase in receivables
+4792;Diminution des dettes;Decrease in debts
+4798;Différences compensées par couverture de change;Differences offset by currency hedging
+48;Créances et dettes hors activités ordinaires;Receivables and payables outside ordinary activities
+481;FOURNISSEURS D'INVESTISSEMENTS;Suppliers of fixed assets
+4811;Immobilisations incorporelles;Intangible assets
+4812;Immobilisations corporelles;Tangible assets
+4813;Versements restant à effectuer sur titres de participation et titres immobilisés non libérés;Amounts outstanding on partly paid investments and long-term securities
+4817;Retenues de garantie;Retention money
+4818;Factures non parvenues;Invoices not yet received
+482;FOURNISSEURS D'INVESTISSEMENTS EFFETS A PAYER;Suppliers of fixed assets, bills payable
+484;AUTRES DETTES HORS ACTIVITES ORDINAIRES (H.A.O.);Other payables outside ordinary activities
+485;CREANCES SUR CESSIONS D'IMMOBILISATIONS;Receivables on disposals of fixed assets
+4851;Creances sur cessions d’immobilisations en compte;Receivables on disposals of fixed assets on account
+4852;Effets à recevoir;Bills receivable
+4857;Retenues de garantie;Retention money
+4858;Factures à établir;Invoices to be issued
+488;AUTRES CREANCES HORS ACTIVITES ORDINAIRES (H.A.O.);Other receivables outside ordinary activities
+49;Dépréciations et provisions pour risques à court terme (Tiers);Impairment and short-term risk provisions (third parties)
+490;DÉPRÉCIATIONS DES COMPTES FOURNISSEURS;Impairment of supplier accounts
+491;DEPRECIATIONS DES COMPTES CLIENTS;Impairment of customer accounts
+4911;Créances litigieuses;Disputed receivables
+4912;Créances douteuses;Doubtful receivables
+492;DEPRECIATIONS DES COMPTES PERSONNEL;Impairment of staff accounts
+493;DEPRECIATIONS DES COMPTES ORGANISMES SOCIAUX;Impairment of social body accounts
+494;DÉPRÉCIATIONS DES COMPTES ÉTAT ET COLLECTIVITÉS PUBLIQUES;Impairment of State and public authority accounts
+495;DEPRECIATIONS DES COMPTES ORGANISMES INTERNATIONAUX;Impairment of international body accounts
+496;DEPRECIATIONS DES COMPTES APPORTEURS ASSOCIES ET GROUPE;Impairment of contributor, partner and group accounts
+4962;Associés, comptes courants;Partners, current accounts
+4963;Associés, opérations faites en commun;Partners, joint operations
+4966;Groupe, comptes courants;Group, current accounts
+497;DEPRECIATIONS DES COMPTES DEBITEURS DIVERS;Impairment of sundry debtor accounts
+498;DEPRECIATIONS DES COMPTES DE CREANCES H.A.O.;Impairment of receivables outside ordinary activities
+4981;Créances sur cessions d'immobilisations;Receivables on disposals of fixed assets
+4982;Créances sur cessions de titres de placement;Receivables on disposals of short-term securities
+4983;Autres créances H.A.O.;Other receivables outside ordinary activities
+499;PROVISIONS POUR RISQUES A COURT TERME;Provisions for short-term risks
+4991;Provisions pour risques a court terme sur opérations d'exploitation;Provisions for short-term operating risks
+4998;Provisions pour risques a court terme sur opérations H.A.O.;Provisions for short-term non-ordinary risks
+5;Comptes de trésorerie;Cash accounts
+50;Titres de placement;Short-term investment securities
+501;TITRES DU TRESOR ET BONS DE CAISSE A COURT TERME;Treasury bills and short-term notes
+5011;Titres du Trésor à court terme;Short-term Treasury securities
+5012;Titres d'organismes financiers;Securities of financial bodies
+5013;Bons de caisse à court terme;Short-term notes
+5016;Frais d'acquisition des titres du trésor et bons de caisse;Acquisition costs of Treasury securities and notes
+502;ACTIONS;Shares
+5021;Actions ou parts propres;Own shares
+5022;Actions cotées;Listed shares
+5023;Actions non cotées;Unlisted shares
+5024;Actions démembrées (certificats d'investissement, certificats de droit de vote);Split shares (investment certificates, voting rights certificates)
+5025;Autres actions;Other shares
+5026;Frais d'acquisition des actions;Acquisition costs of shares
+503;OBLIGATIONS;Bonds
+5031;Obligations émises par la société et rachetées par elle;Bonds issued and bought back by the company
+5032;Obligations cotées;Listed bonds
+5033;Obligations non cotées;Unlisted bonds
+5035;Autres obligations;Other bonds
+5036;Frais d'acquisition des obligations;Acquisition costs of bonds
+504;BONS DE SOUSCRIPTION;Subscription warrants
+5042;Bons de souscription d'actions;Share subscription warrants
+5043;Bons de souscription d'obligations;Bond subscription warrants
+505;TITRES NEGOCIABLES HORS REGION;Negotiable securities outside the region
+506;INTERÊTS COURUS;Accrued interest
+5061;Titres du Trésor et bons de caisse à court terme;Treasury securities and short-term notes
+5062;Actions;Shares
+5063;Obligations;Bonds
+508;AUTRES VALEURS ASSIMILEES;Other similar securities
+51;Valeurs à encaisser;Items for collection
+511;EFFETS A ENCAISSER;Bills for collection
+512;EFFETS A L'ENCAISSEMENT;Bills being collected
+513;CHEQUES A ENCAISSER;Cheques for collection
+514;CHEQUES A L'ENCAISSEMENT;Cheques being collected
+515;CARTES DE CREDIT A ENCAISSER;Credit cards for collection
+518;AUTRES VALEURS A L'ENCAISSEMENT;Other items being collected
+5181;Warrants;Warrants
+5182;Billets de fonds;Business transfer notes
+5185;Chèques de voyage;Traveller's cheques
+5186;Coupons échus;Matured coupons
+5187;Intérêts échus des obligations;Matured bond interest
+52;Banques;Banks
+521;BANQUES LOCALES;Local banks
+5211;Banque X;Bank X
+5212;Banque Y;Bank Y
+522;BANQUES AUTRES ETATS REGION;Banks in other States of the region
+523;BANQUES AUTRES ETATS ZONE MONETAIRE;Banks in other States of the monetary zone
+524;BANQUES HORS ZONE MONETAIRE;Banks outside the monetary zone
+525;BANQUES DEPOT A TERME;Banks, term deposits
+526;BANQUES, INTERET COURUS;Banks, accrued interest
+53;Etablissements financiers et assimilés;Financial institutions and similar
+531;CHEQUES POSTAUX;Postal cheque accounts
+532;TRESOR;Treasury
+533;SOCIETES DE GESTION ET D'INTERMEDIATION (S.G.I.);Asset management and brokerage companies
+536;ETABLISSEMENTS FINANCIERS, INTERETS COURUS;Financial institutions, accrued interest
+5361;Etablissements financiers, intérêts courus, charges à payer;Financial institutions, accrued interest, accrued expenses
+5367;Etablissements financiers, intérêts courus produits à recevoir;Financial institutions, accrued interest, accrued income
+538;AUTRES ORGANISMES FINANCIERS;Other financial bodies
+54;Instruments de trésorerie;Cash instruments
+541;OPTIONS DE TAUX D'INTERÊT;Interest rate options
+542;OPTIONS DE TAUX DE CHANGE;Exchange rate options
+543;OPTIONS DE TAUX BOURSIERS;Stock market options
+544;INSTRUMENTS DE MARCHES A TERME;Forward market instruments
+545;AVOIRS D'OR ET AUTRES METAUX PRECIEUX;Gold and other precious metals
+55;Instruments de monnaie électronique;Electronic money instruments
+551;MONNAIE ELECTRONIQUE- CARTE CARBURANT;Electronic money, fuel card
+552;MONNAIE ELECTRONIQUE- TELEPHONE PORTABLE;Electronic money, mobile phone
+553;MONNAIE ELECTRONIQUE- CARTE PEAGE;Electronic money, toll card
+554;PORTE-MONNAIE ELECTRONIQUE;Electronic wallet
+5561;Banques, intérêts courus, charges à payer;Banks, accrued interest, accrued expenses
+558;AUTRES INSTRUMENTS DE MONNAIE ELECTRONIQUE;Other electronic money instruments
+56;Banques, crédits de trésorerie et d'escompte;Banks, cash and discount credit
+561;CREDITS DE TRESORERIE;Cash credit
+564;ESCOMPTE DE CREDITS DE CAMPAGNE;Discounting of seasonal credit
+565;ESCOMPTE DE CREDITS ORDINAIRES;Discounting of ordinary credit
+566;CREDITS DE TRESORERIE, INTERETS COURUS;Cash credit, accrued interest
+5667;Banques, intérêts courus, produits à recevoir;Banks, accrued interest, accrued income
+57;Caisse;Cash on hand
+571;CAISSE SIEGE SOCIAL;Cash, head office
+5711;Caisse en monnaie nationale;Cash in national currency
+5712;Caisse siege social en devises;Head office cash in foreign currency
+572;CAISSE SUCCURSALE A;Cash, branch A
+5721;Caisse succursale a en monnaie nationale;Branch A cash in national currency
+5722;Caisse succursale a en devises;Branch A cash in foreign currency
+573;CAISSE SUCCURSALE B;Cash, branch B
+5731;Caisse succursale b en monnaie nationale;Branch B cash in national currency
+5732;Caisse succursale b en devises;Branch B cash in foreign currency
+58;Régies d'avances, accréditifs et virements internes;Imprest funds, letters of credit and internal transfers
+581;REGIES D'AVANCE;Imprest funds
+582;ACCREDITIFS;Letters of credit
+585;VIREMENTS DE FONDS;Fund transfers
+588;AUTRES VIREMENTS INTERNES;Other internal transfers
+59;Dépréciations et provisions pour risques à court terme (Trésorerie);Impairment and short-term risk provisions (cash)
+590;DÉPRÉCIATIONS DES TITRES DE PLACEMENT;Impairment of short-term investment securities
+591;DEPRECIATIONS DES TITRES ET VALEURS A ENCAISSER;Impairment of securities and items for collection
+592;DEPRECIATIONS DES COMPTES BANQUES;Impairment of bank accounts
+593;DEPRECIATIONS DES COMPTES ETABLISSEMENTS FINANCIERS ET ASSIMILES;Impairment of financial institution accounts
+594;DEPRECIATIONS DES COMPTES D'INSTRUMENTS DE TRESORERIE;Impairment of cash instrument accounts
+599;PROVISIONS POUR RISQUES A COURT TERME A CARACTERE FINANCIER;Provisions for short-term financial risks
+6;Comptes de charges des activités ordinaires;Expenses from ordinary activities
+60;Achats et variations de stocks;Purchases and inventory changes
+601;ACHATS DE MARCHANDISES;Purchases of goods
+6011;Achats de marchandises dans la Région;Purchases of goods within the Region
+6012;Achats de marchandises hors Région;Purchases of goods outside the Region
+6013;Achats de marchandises aux entités du groupe dans la Région;Purchases of goods from group entities within the Region
+6014;Achats de marchandises aux entités du groupe hors Région;Purchases of goods from group entities outside the Region
+6015;Frais sur achats;Purchase costs
+6019;Rabais, Remises et Ristournes obtenus (non ventilés);Discounts, allowances and rebates received (not allocated)
+602;ACHATS DE MATIERES PREMIERES ET FOURNITURES LIEES;Purchases of raw materials and related supplies
+6021;Achats de matieres premieres et fournitures liees dans la Région;Purchases of raw materials and related supplies within the Region
+6022;Achats de matieres premieres et fournitures liees hors Région;Purchases of raw materials and related supplies outside the Region
+6023;Achats de matieres premieres et fournitures liees aux entités du groupe dans la Région;Purchases of raw materials and related supplies from group entities within the Region
+6024;Achats de matieres premieres et fournitures liees aux entités du groupe hors Région;Purchases of raw materials and related supplies from group entities outside the Region
+6025;Frais sur Achats;Purchase costs
+6029;Rabais, Remises et Ristournes obtenus (non ventilés);Discounts, allowances and rebates received (not allocated)
+603;Variations des stocks de biens achetés;Changes in inventories of purchased goods
+6031;Variations des stocks de marchandises;Changes in inventories of goods
+6032;Variations des stocks de matières premières et fournitures liées;Changes in inventories of raw materials and related supplies
+6033;Variations des stocks d'autres approvisionnements;Changes in inventories of other supplies
+604;ACHATS STOCKES DE MATIERES ET FOURNITURES CONSOMMABLES;Purchases of stored consumable materials and supplies
+6041;Matières consommables;Consumable materials
+6042;Matières combustibles;Fuel materials
+6043;Produits d'entretien;Cleaning products
+6044;Fournitures d'atelier et d'usine;Workshop and factory supplies
+6045;Frais sur Achats;Purchase costs
+6046;Fournitures de magasin;Store supplies
+6047;Fournitures de bureau;Office supplies
+6049;Rabais, Remises et Ristournes obtenus (non ventilés);Discounts, allowances and rebates received (not allocated)
+605;AUTRES ACHATS;Other purchases
+6051;Fournitures non stockables-Eau;Non-stockable supplies, water
+6052;Fournitures non stockables- Electricité;Non-stockable supplies, electricity
+6053;Fournitures non stockables- Autres énergies;Non-stockable supplies, other energy
+6054;Fournitures d'entretien non stockables;Non-stockable maintenance supplies
+6055;Fournitures de bureau non stockables;Non-stockable office supplies
+6056;Achats de petit matériel et outillage;Purchases of small equipment and tools
+6057;Achats d'études et prestations de service;Purchases of studies and services
+6058;Achats de travaux, matériels et équipements;Purchases of works, equipment and fittings
+6059;Rabais, Remises et Ristournes obtenus (non ventilés);Discounts, allowances and rebates received (not allocated)
+608;ACHATS D'EMBALLAGES;Purchases of packaging
+6081;Emballages perdus;Non-returnable packaging
+6082;Emballages récupérables non identifiables;Returnable non-identifiable packaging
+6083;Emballages à usage mixte;Dual-use packaging
+6085;Frais sur achats;Purchase costs
+6089;Rabais, Remises et Ristournes obtenus (non ventilés);Discounts, allowances and rebates received (not allocated)
+61;Transports;Transport
+612;TRANSPORTS SUR VENTES;Transport on sales
+613;TRANSPORTS POUR LE COMPTE DE TIERS;Transport on behalf of third parties
+614;TRANSPORTS DU PERSONNEL;Staff transport
+616;TRANSPORT DE PLIS;Mail transport
+618;AUTRES FRAIS DE TRANSPORT;Other transport costs
+6181;Voyages et déplacements;Travel
+6182;Transports entre établissements ou chantiers;Transport between establishments or sites
+6183;Transports entre établissements ou chantiers;Transport between establishments or sites
+62;SERVICES EXTÉRIEURS;External services
+621;SOUS-TRAITANCE GENERALE;General subcontracting
+622;LOCATIONS ET CHARGES LOCATIVES;Rents and rental charges
+6221;Locations de terrains;Land rental
+6222;Locations de bâtiments;Building rental
+6223;Locations de matériels et outillages;Equipment and tool rental
+6224;Malis sur emballages;Losses on packaging
+6225;Locations d'emballages;Packaging rental
+6226;Fermages et loyers du foncier;Farm rents and land rents
+6228;Locations et charges locatives diverses;Sundry rentals and rental charges
+623;REDEVANCES DE LOCATION ACQUISITION;Lease-purchase payments
+6232;Crédit-bail immobilier;Real estate leasing
+6233;Crédit-bail mobilier;Equipment leasing
+6234;Redevances de location acquisition location vente;Lease-purchase payments, hire purchase
+6235;Autres contrats de location acquisition;Other lease-purchase contracts
+624;ENTRETIEN, REPARATIONS ET MAINTENANCE;Maintenance and repairs
+6241;Entretien et réparations des biens immobiliers;Maintenance and repairs of real estate
+6242;Entretien et réparations des biens mobiliers;Maintenance and repairs of movable assets
+6243;Maintenance;Maintenance
+6248;Autres entretiens et réparations;Other maintenance and repairs
+625;PRIMES D'ASSURANCE;Insurance premiums
+6251;Assurances multirisques;Multi-risk insurance
+6252;Assurances matériel de transport;Transport equipment insurance
+6253;Assurances risques d'exploitation;Operating risk insurance
+6254;Assurances responsabilité du producteur;Product liability insurance
+6255;Assurances insolvabilité clients;Customer insolvency insurance
+6257;Assurances transports sur ventes;Insurance on transport of sales
+6258;Autres primes d'assurances;Other insurance premiums
+626;ETUDES, RECHERCHES ET DOCUMENTATION;Studies, research and documentation
+6261;Etudes et recherches;Studies and research
+6265;Documentation générale;General documentation
+6266;Documentation technique;Technical documentation
+627;PUBLICITE, PUBLICATIONS, RELATIONS PUBLIQUES;Advertising, publications and public relations
+6271;Annonces, insertions;Advertisements and insertions
+6272;Catalogues, imprimés publicitaires;Catalogues and advertising printed matter
+6273;Echantillons;Samples
+6274;Foires et expositions;Fairs and exhibitions
+6275;Publications;Publications
+6276;Cadeaux à la clientèle;Gifts to customers
+6277;Frais de colloques, séminaires, conférences;Conference, seminar and symposium costs
+6278;Autres charges de publicité et relations publiques;Other advertising and public relations expenses
+628;FRAIS DE TELECOMMUNICATIONS;Telecommunications
+6281;Frais de téléphone;Telephone costs
+6282;Frais de télex;Telex costs
+6283;Frais de télécopie;Fax costs
+6288;Autres frais de télécommunications;Other telecommunication costs
+63;AUTRES SERVICES EXTÉRIEURS;Other external services
+631;FRAIS BANCAIRES;Bank charges
+6311;Frais sur titres (achat, vente, garde);Charges on securities (purchase, sale, custody)
+6312;Frais sur effets;Charges on bills
+6313;Location de coffres;Safe deposit box rental
+6314;Commissions d' affacturage;Factoring commissions
+6315;Commissions sur cartes de crédit;Credit card commissions
+6316;Frais d'émission d'emprunts;Loan issue costs
+6317;Frais sur instruments monétaires électroniques.;Charges on electronic money instruments
+6318;Autres frais bancaires;Other bank charges
+632;REMUNERATIONS D'INTERMEDIAIRES ET DE CONSEILS;Fees of intermediaries and advisers
+6322;Commissions et courtages sur ventes;Commissions and brokerage on sales
+6324;Honoraires des professions règlementées;Fees of regulated professions
+6325;Frais d'actes et de contentieux;Deeds and litigation costs
+6327;Rémunérations des autres prestataires de services;Remuneration of other service providers
+6328;Divers frais;Sundry costs
+633;FRAIS DE FORMATION DU PERSONNEL;Staff training
+634;REDEVANCES POUR BREVETS, LICENCES, MARQUES, LOGICIELS, SITES, CONCESSIONS ET DROITS ET VALEURS SIMILAIRES;Royalties for patents, licences, trademarks, software, websites and similar rights
+6342;Redevances pour brevets, licences;Royalties for patents and licences
+6343;Redevances pour logiciels;Royalties for software
+6344;Redevances pour marques;Royalties for trademarks
+6345;Redevances pour sites;Royalties for websites
+6346;Redevances pour concessions, droits et valeurs similaires;Royalties for concessions, rights and similar assets
+635;COTISATIONS;Subscriptions and dues
+6351;Cotisations;Subscriptions and dues
+6358;Concours divers;Sundry contributions
+637;REMUNERATIONS DE PERSONNEL EXTERIEUR A L'ENTITE;Remuneration of external staff
+6371;Personnel intérimaire;Temporary staff
+6372;Personnel détaché ou prêté à l'entité;Staff seconded or lent to the entity
+638;AUTRES CHARGES EXTERNES;Other external expenses
+6381;Frais de recrutement du personnel;Staff recruitment costs
+6382;Frais de déménagement;Relocation costs
+6383;Réceptions;Receptions
+6384;Missions;Business trips
+64;Impôts et taxes;Taxes and duties
+641;IMPÔTS ET TAXES DIRECTS;Direct taxes and duties
+6411;Impôts fonciers et taxes annexes;Property taxes and related levies
+6412;Patentes, licences et taxes annexes;Business licence tax, licences and related levies
+6413;Taxes sur appointements et salaires;Taxes on salaries and wages
+6414;Taxes d'apprentissage;Apprenticeship taxes
+6415;Formation professionnelle continue;Continuing vocational training
+6418;Autres impôts et taxes directs;Other direct taxes and duties
+645;IMPÔTS ET TAXES INDIRECTS;Indirect taxes and duties
+646;DROITS D'ENREGISTREMENT;Registration duties
+6461;Droits de mutation;Transfer duties
+6462;Droits de timbre;Stamp duties
+6463;Taxes sur les véhicules de société;Company vehicle taxes
+6464;Vignettes;Vehicle tax stickers
+6468;Autres droits;Other duties
+647;PENALITES ET AMENDES FISCALES;Tax penalties and fines
+6471;Pénalités d'assiette, impôts directs;Assessment penalties, direct taxes
+6472;Pénalités d'assiette, impôts indirects;Assessment penalties, indirect taxes
+6473;Pénalités de recouvrement, impôts directs;Collection penalties, direct taxes
+6474;Pénalités de recouvrement, impôts indirects;Collection penalties, indirect taxes
+6478;Autres amendes pénales et fiscales;Other criminal and tax fines
+648;AUTRES IMPÔTS ET TAXES;Other taxes and duties
+65;Autres charges;Other expenses
+651;PERTES SUR CREANCES CLIENTS ET AUTRES DEBITEURS;Losses on customer and other receivables
+6511;Clients;Customers
+6515;Autres débiteurs;Other debtors
+652;QUOTE-PART DE RESULTAT SUR OPERATIONS FAITES EN COMMUN;Share of result on joint operations
+6521;Quote-part transférée de bénéfices (comptabilité du gérant);Share of profit transferred (manager's accounts)
+6525;Pertes imputées par transfert (comptabilité des associés non gérants);Losses charged by transfer (non-managing partners' accounts)
+654;VALEURS COMPTABLES DES CESSIONS COURANTES D'IMMOBILISATIONS;Carrying amount of current disposals of fixed assets
+658;CHARGES DIVERSES;Sundry expenses
+6581;Indemnités de fonction et autres rémunérations d'administrateurs;Directors' allowances and other remuneration
+6582;Dons;Donations
+6583;Mécénat;Sponsorship
+6588;Autres charges diverses;Other sundry expenses
+659;CHARGES POUR DÉPRÉCIATIONS ET PROVISIONS POUR RISQUES A COURT TERME D'EXPLOITATION;Operating impairment and short-term risk provision expenses
+6591;Charges pour dépréciations et provisions pour risques a court terme d’exploitation sur risques à court terme;Operating impairment and short-term provision expenses on short-term risks
+6593;Charges pour dépréciations et provisions pour risques a court terme d’exploitation sur stocks;Operating impairment and short-term provision expenses on inventories
+6594;Charges pour dépréciations et provisions pour risques a court terme d’exploitation sur créances;Operating impairment and short-term provision expenses on receivables
+6598;Autres charges pour dépréciations et provisions pour risques à court terme;Other impairment and short-term risk provision expenses
+66;Charges de personnel;Staff costs
+661;REMUNERATIONS DIRECTES VERSEES AU PERSONNEL NATIONAL;Direct pay to national staff
+6611;Appointements, salaires et commissions;Salaries, wages and commissions
+6612;Primes et gratifications;Bonuses
+6613;Congés payés;Paid leave
+6614;Indemnités de préavis, de licenciement et de recherche d'embauche;Notice, dismissal and job-search allowances
+6615;Indemnités de maladie versées aux travailleurs;Sickness allowances paid to workers
+6616;Supplément familial;Family supplement
+6617;Avantages en nature;Benefits in kind
+6618;Autres rémunérations directes;Other direct pay
+662;REMUNERATIONS DIRECTES VERSEES AU PERSONNEL NON NATIONAL;Direct pay to non-national staff
+6621;Appointements, salaires et commissions;Salaries, wages and commissions
+6622;Primes et gratifications;Bonuses
+6623;Congés payés;Paid leave
+6624;Indemnités de préavis, de licenciement et de recherche d'embauche;Notice, dismissal and job-search allowances
+6625;Indemnités de maladie versées aux travailleurs;Sickness allowances paid to workers
+6626;Supplément familial;Family supplement
+6627;Avantages en nature;Benefits in kind
+6628;Autres rémunérations directes;Other direct pay
+663;INDEMNITES FORFAITAIRES VERSEES AU PERSONNEL;Flat-rate allowances paid to staff
+6631;Indemnités de logement;Housing allowances
+6632;Indemnités de représentation;Representation allowances
+6633;Indemnités d'expatriation;Expatriation allowances
+6638;Autres indemnités et avantages divers;Other allowances and sundry benefits
+664;CHARGES SOCIALES;Social charges
+6641;Charges sociales sur rémunération du personnel national;Social charges on pay of national staff
+6642;Charges sociales sur rémunération du personnel non national;Social charges on pay of non-national staff
+666;RÉMUNÉRATION ET CHARGES SOCIALES DE L'EXPLOITANT INDIVIDUEL;Pay and social charges of the sole proprietor
+6661;Rémunération du travail de l'exploitant;Pay for the owner's work
+6662;Charges sociales;Social charges
+667;Rémunération transférée de personnel extérieur;Transferred pay of external staff
+6671;Personnel intérimaire;Temporary staff
+6672;Personnel détaché ou prêté à l'entité;Staff seconded or lent to the entity
+668;AUTRES CHARGES SOCIALES;Other social charges
+6681;Versements aux Syndicats et Comités d'entreprise, d'établissement;Payments to trade unions and works councils
+6682;Versements aux Comités d'hygiène et de sécurité;Payments to health and safety committees
+6683;Versements aux autres œuvres sociales;Payments to other social welfare
+6684;Médecine du travail et pharmacie;Occupational medicine and pharmacy
+6685;Assurances et organismes de santé;Health insurance and bodies
+6686;Assurances retraite et fonds de pension;Pension insurance and pension funds
+67;Frais financiers et charges assimilées;Financial expenses
+671;INTERÊTS DES EMPRUNTS;Interest on borrowings
+6711;Emprunts obligataires;Bonds
+6712;Emprunts auprès des établissements de crédit;Borrowings from credit institutions
+6713;Dettes liées à des participations;Debts related to investments
+6714;Primes de remboursement des obligations;Bond redemption premiums
+672;INTERÊTS DANS LOYERS DE LOCATION ACQUISITION;Interest in lease-purchase payments
+6721;Intérêts dans loyers de location acquisition / crédit-bail immobilier;Interest in real estate leasing payments
+6722;Intérêts dans loyers de location acquisition / crédit-bail mobilier;Interest in equipment leasing payments
+6723;Intérêts dans loyers de location acquisition / location vente;Interest in hire purchase payments
+6724;Intérêts dans loyers des autres contrats;Interest in payments under other contracts
+673;ESCOMPTES ACCORDES;Cash discounts granted
+674;AUTRES INTERÊTS;Other interest
+6741;Avances reçues et dépôts créditeurs;Advances received and credit deposits
+6742;Comptes courants bloqués;Blocked current accounts
+6743;Intérêts sur obligations cautionnées;Interest on guaranteed bonds
+6744;Intérêts sur dettes commerciales;Interest on trade payables
+6745;Intérêts bancaires et sur opérations de trésorerie et d'escompte;Bank interest and interest on cash and discount transactions
+6748;Intérêts sur dettes diverses;Interest on sundry debts
+675;ESCOMPTES DES EFFETS DE COMMERCE;Discount on bills of exchange
+676;PERTES DE CHANGE;Foreign exchange losses
+677;PERTES SUR TITRES DE PLACEMENT;Losses on short-term investment securities
+6771;Pertes sur cessions de titres de placement;Losses on disposals of short-term securities
+6772;Malis provenant d'attribution gratuite d'actions au personnel salarié et aux dirigeants;Losses from free shares granted to employees and executives
+678;PERTES SUR RISQUES FINANCIERS;Losses on financial risks
+6781;Pertes sur risques financiers sur rentes viagères;Losses on financial risks on life annuities
+6782;Pertes sur risques financiers sur opérations financières;Losses on financial risks on financial transactions
+6784;Pertes sur risques financiers sur instruments de trésorerie;Losses on financial risks on cash instruments
+679;CHARGES POUR DEPRECIATIONS ET PROVISIONS POUR RISQUES A COURT TERME FINANCIERES;Financial impairment and short-term risk provision expenses
+6791;Charges pour dépréciations et provisions pour risques à court terme financières sur risques financiers;Financial impairment and short-term provision expenses on financial risks
+6795;Charges pour depreciations et provisions pour risques a court terme financieres sur titres de placement;Financial impairment and short-term provision expenses on short-term securities
+6798;Autres charges pour dépréciations et provisions pour risques à court terme financières;Other financial impairment and short-term risk provision expenses
+68;Dotations aux amortissements;Depreciation and amortisation expense
+681;DOTATIONS AUX AMORTISSEMENTS D'EXPLOITATION;Operating depreciation and amortisation
+6812;Dotations aux amortissements des immobilisations incorporelles;Amortisation of intangible assets
+6813;Dotations aux amortissements des immobilisations corporelles;Depreciation of tangible assets
+687;DOTATIONS AUX AMORTISSEMENTS A CARACTERE FINANCIER;Financial amortisation
+69;Dotations aux provisions et aux dépréciations;Provision and impairment expense
+691;DOTATIONS AUX PROVISIONS ET AUX DEPRECIATIONS D'EXPLOITATION;Operating provisions and impairment
+6911;Dotations aux provisions et aux depreciations d’exploitation pour risques et charges;Operating provisions for risks and charges
+6913;Dotations aux provisions et aux depreciations d’exploitation des immobilisations incorporelles;Operating impairment of intangible assets
+6914;Dotations aux provisions et aux depreciations d’exploitation des immobilisations corporelles;Operating impairment of tangible assets
+697;DOTATIONS AUX PROVISIONS ET AUX DEPRECIATIONS FINANCIERES;Financial provisions and impairment
+6971;Dotations aux provisions et aux depreciations financieres pour risques et charges;Financial provisions for risks and charges
+6972;Dotations aux provisions et aux depreciations financieres des immobilisations financières;Financial impairment of financial assets
+7;Comptes de produits des activités ordinaires;Income from ordinary activities
+70;Ventes;Sales
+701;VENTES DE MARCHANDISES;Sales of goods
+7011;Ventes de marchandises dans la Région;Sales of goods within the Region
+7012;Ventes de marchandises hors Région;Sales of goods outside the Region
+7013;Ventes de marchandises aux entités du groupe dans la Région;Sales of goods to group entities within the Region
+7014;Ventes de marchandises aux entités du groupe hors Région;Sales of goods to group entities outside the Region
+7015;Ventes de marchandises sur internet;Sales of goods online
+702;VENTES DE PRODUITS FINIS;Sales of finished goods
+7021;Ventes de produits finis dans la Région;Sales of finished goods within the Region
+7022;Ventes de produits finis hors Région;Sales of finished goods outside the Region
+7023;Ventes de produits finis aux entités du groupe dans la Région;Sales of finished goods to group entities within the Region
+7024;Ventes de produits finis aux entités du groupe hors Région;Sales of finished goods to group entities outside the Region
+7025;Ventes de produits finis sur internet;Sales of finished goods online
+703;VENTES DE PRODUITS INTERMEDIAIRES;Sales of intermediate products
+7031;Ventes de produits intermediaires dans la Région;Sales of intermediate products within the Region
+7032;Ventes de produits intermediaires hors Région;Sales of intermediate products outside the Region
+7033;Ventes de produits intermediaires aux entités du groupe dans la Région;Sales of intermediate products to group entities within the Region
+7034;Ventes de produits intermediaires aux entités du groupe hors Région;Sales of intermediate products to group entities outside the Region
+7035;Ventes de produits intermediaires sur internet;Sales of intermediate products online
+704;VENTES DE PRODUITS RESIDUELS;Sales of residual products
+7041;Ventes de produits residuels dans la Région;Sales of residual products within the Region
+7042;Ventes de produits residuels hors Région;Sales of residual products outside the Region
+7043;Ventes de produits residuels aux entités du groupe dans la Région;Sales of residual products to group entities within the Region
+7044;Ventes de produits residuels aux entités du groupe hors Région;Sales of residual products to group entities outside the Region
+7045;Ventes de produits residuels sur internet;Sales of residual products online
+705;TRAVAUX FACTURES;Works invoiced
+7051;Travaux factures dans la Région;Works invoiced within the Region
+7052;Travaux factures hors Région;Works invoiced outside the Region
+7053;Travaux factures aux entités du groupe dans la Région;Works invoiced to group entities within the Region
+7054;Travaux factures aux entités du groupe hors Région;Works invoiced to group entities outside the Region
+7055;Travaux factures sur internet;Works invoiced online
+706;SERVICES VENDUS;Services sold
+7061;Services vendus dans la Région;Services sold within the Region
+7062;Services vendus hors Région;Services sold outside the Region
+7063;Services vendus aux entités du groupe dans la Région;Services sold to group entities within the Region
+7064;Services vendus aux entités du groupe hors Région;Services sold to group entities outside the Region
+7065;Services vendus sur internet;Services sold online
+707;PRODUITS ACCESSOIRES;Ancillary income
+7071;Ports, emballages perdus et autres frais facturés;Carriage, non-returnable packaging and other costs invoiced
+7072;Commissions et courtages;Commissions and brokerage
+7073;Locations;Rentals
+7074;Bonis sur reprises et cessions d'emballage;Gains on returned and sold packaging
+7075;Mise à disposition de personnel;Provision of staff
+7076;Redevances pour brevets, logiciels, marques et droits similaires;Royalties for patents, software, trademarks and similar rights
+7077;Services exploités dans l'intérêt du personnel;Services operated for staff
+7078;Autres produits accessoires;Other ancillary income
+71;Subventions d'exploitation;Operating grants
+711;SUR PRODUITS A L'EXPORTATION;On export products
+712;SUR PRODUITS A L'IMPORTATION;On import products
+713;SUR PRODUITS DE PEREQUATION;On equalisation products
+718;AUTRES SUBVENTIONS D'EXPLOITATION;Other operating grants
+7181;Versées par l'Etat et les collectivités publiques;Paid by the State and public authorities
+7182;Versées par les organismes internationaux;Paid by international bodies
+7183;Versées par des tiers;Paid by third parties
+72;Production immobilisée;Own work capitalised
+721;Immobilisations incorporelles;Intangible assets
+722;Immobilisations corporelles;Tangible assets
+724;Production auto-consommée;Own consumption
+726;Immobilisations financières;Financial assets
+73;Variations des stocks de biens et services produits;Changes in inventories of goods and services produced
+734;VARIATIONS DES STOCKS DE PRODUITS EN COURS;Changes in products in progress
+7341;Produits en cours;Products in progress
+7342;Travaux en cours;Works in progress
+735;VARIATIONS DES EN-COURS DE SERVICES;Changes in services in progress
+7351;Etudes en cours;Studies in progress
+7352;Prestations de services en cours;Services in progress
+736;VARIATIONS DES STOCKS DE PRODUITS FINIS;Changes in finished goods
+737;VARIATIONS DES STOCKS DE PRODUITS INTERMEDIAIRES ET RESIDUELS;Changes in intermediate and residual products
+7371;Produits intermédiaires;Intermediate products
+7372;Produits résiduels;Residual products
+75;Autres produits;Other income
+752;QUOTE-PART DE RESULTAT SUR OPERATIONS FAITES EN COMMUN;Share of result on joint operations
+7521;Quote-part transférée de pertes (comptabilité du gérant);Share of losses transferred (manager's accounts)
+7525;Bénéfices attribués par transfert (comptabilité des associés non gérants);Profits allocated by transfer (non-managing partners' accounts)
+754;PRODUITS DES CESSIONS COURANTES D'IMMOBILISATIONS;Proceeds from current disposals of fixed assets
+758;PRODUITS DIVERS;Sundry income
+7581;Indemnités de fonction et autres rémunérations;Allowances and other remuneration received
+7582;Indemnités d'assurances reçues;Insurance indemnities received
+7588;Autres produits divers;Other sundry income
+759;REPRISES DE CHARGES POUR DEPRECIATIONS ET PROVISIONS A COURT TERME D'EXPLOITATION;Reversal of operating impairment and short-term provisions
+7591;Reprises de charges pour depreciations et provisions a court terme d’exploitation sur risques à court terme;Reversal of operating impairment and short-term provisions on short-term risks
+7593;Reprises de charges pour depreciations et provisions a court terme d’exploitation sur les stocks;Reversal of operating impairment and short-term provisions on inventories
+7594;Reprises de charges pour depreciations et provisions a court terme d’exploitation sur les créances;Reversal of operating impairment and short-term provisions on receivables
+7598;Reprises de charges pour depreciations et provisions a court terme d’exploitation sur autres charges pour dépréciations et provisions pour risques à court terme;Reversal of other operating impairment and short-term risk provisions
+77;Revenus financiers et produits assimilés;Financial income
+771;INTERETS DE PRÊTS ET CREANCES DIVERSES;Interest on loans and sundry receivables
+7712;Intérêts de prêts;Interest on loans
+7713;Intérêts sur créances diverses;Interest on sundry receivables
+772;REVENUS DE PARTICIPATIONS ET AUTRES CREANCES IMMOBILISES;Income from investments and other long-term receivables
+7721;Revenus des titres de participation;Income from equity investments
+7722;Revenus des autres titres immobilisés;Income from other long-term securities
+773;ESCOMPTES OBTENUS;Cash discounts received
+774;REVENUS DE PLACEMENT;Investment income
+7745;Revenus des obligations;Bond income
+7746;Revenus des titres de placement;Income from short-term securities
+775;INTERETS DANS LOYERS DE LOCATION ACQUISITION;Interest in lease-purchase payments
+776;GAINS DE CHANGE;Foreign exchange gains
+777;GAINS SUR CESSIONS DE TITRES DE PLACEMENT;Gains on disposals of short-term investment securities
+778;GAINS SUR RISQUES FINANCIERS;Gains on financial risks
+7781;Gains sur risques financiers sur rentes viagères;Gains on financial risks on life annuities
+7782;Gains sur risques financiers sur opérations financières;Gains on financial risks on financial transactions
+7784;Gains sur risques financiers sur instruments de trésorerie;Gains on financial risks on cash instruments
+779;REPRISES DE CHARGES POUR DÉPRÉCIATIONS ET PROVISIONS POUR RISQUES À COURT TERME FINANCIERES;Reversal of financial impairment and short-term risk provisions
+7791;Reprises de charges pour dépréciations et provisions pour risques à court terme financieres sur risques financiers;Reversal of financial impairment and short-term provisions on financial risks
+7795;Reprises de charges pour dépréciations et provisions pour risques à court terme financieres sur titres de placement;Reversal of financial impairment and short-term provisions on short-term securities
+7798;Reprises de charges pour dépréciations et provisions pour risques à court terme financieres sur Autres charges pour dépréciations et provisions pour risques à court terme financières;Reversal of other financial impairment and short-term risk provisions
+78;Transferts de charges;Expense transfers
+781;TRANSFERTS DE CHARGES D'EXPLOITATION;Operating expense transfers
+787;TRANSFERTS DE CHARGES FINANCIERES;Financial expense transfers
+79;Reprises de provisions, dépréciations et autres;Reversals of provisions, impairment and other
+791;REPRISES DE PROVISIONS ET DE DEPRECIATIONS D'EXPLOITATION;Reversals of operating provisions and impairment
+7911;Reprises de provisions et de depreciations d’exploitation pour risques et charges;Reversal of operating provisions for risks and charges
+7913;Reprises de provisions et de depreciations d’exploitation des immobilisations incorporelles;Reversal of operating impairment of intangible assets
+7914;Reprises de provisions et de depreciations d’exploitation des immobilisations corporelles;Reversal of operating impairment of tangible assets
+797;Reprises de provisions et de dépréciations financières;Reversals of financial provisions and impairment
+7971;Reprises de provisions et de dépréciations financières pour risques et charges;Reversal of financial provisions for risks and charges
+7972;Reprises de provisions et de dépréciations financières des immobilisations financières;Reversal of financial impairment of financial assets
+798;REPRISES D'AMORTISSEMENTS;Reversals of depreciation
+799;REPRISES DE SUBVENTIONS D'INVESTISSEMENT;Reversals of investment grants
+8;Comptes des autres charges et des autres produits;Other expenses and other income
+81;Valeurs comptables des cessions d'immobilisations;Carrying amount of fixed asset disposals
+811;IMMOBILISATIONS INCORPORELLES;Intangible assets
+812;IMMOBILISATIONS CORPORELLES;Tangible assets
+816;IMMOBILISATIONS FINANCIERES;Financial assets
+82;Produits des cessions d'immobilisations;Proceeds from fixed asset disposals
+821;IMMOBILISATIONS INCORPORELLES;Intangible assets
+822;IMMOBILISATIONS CORPORELLES;Tangible assets
+826;IMMOBILISATIONS FINANCIERES;Financial assets
+83;Charges hors activités ordinaires;Expenses outside ordinary activities
+831;CHARGES H.A.O. CONSTATEES;Recognised non-ordinary expenses
+833;CHARGES LIEES AUX OPERATIONS DE RESTRUCTURATION;Restructuring expenses
+834;PERTES SUR CRÉANCES H.A.O.;Losses on non-ordinary receivables
+835;DONS ET LIBÉRALITÉS ACCORDÉS;Donations and gifts made
+836;Abandons de créances consentis;Debt waivers granted
+837;CHARGES LIEES AUX OPERATIONS DE LIQUIDATION;Liquidation expenses
+839;CHARGES POUR DEPRECIATIONS ET PROVISIONS POUR RISQUES A COURT TERME H.A.O.;Non-ordinary impairment and short-term risk provision expenses
+84;Produits hors activités ordinaires;Income outside ordinary activities
+841;PRODUITS H.A.O. CONSTATES;Recognised non-ordinary income
+843;PRODUITS LIES AUX OPERATIONS DE RESTRUCTURATION;Restructuring income
+845;DONS ET LIBÉRALITÉS OBTENUS;Donations and gifts received
+846;ABANDONS DE CREANCES OBTENUS;Debt waivers obtained
+847;PRODUITS LIES AUX OPERATIONS DE LIQUIDATION;Liquidation income
+848;TRANSFERTS DE CHARGES H.A.O.;Non-ordinary expense transfers
+849;REPRISES DE CHARGES POUR DEPRECIATIONS ET PROVISIONS POUR RISQUES A COURT TERME H.A.O.;Reversal of non-ordinary impairment and short-term risk provisions
+85;Dotations hors activités ordinaires;Non-ordinary allowances
+851;DOTATIONS AUX PROVISIONS REGLEMENTEES;Allowances to regulated provisions
+852;DOTATIONS AUX AMORTISSEMENTS H.A.O.;Non-ordinary depreciation
+853;DOTATIONS AUX DEPRECIATIONS H.A.O.;Non-ordinary impairment
+854;DOTATIONS AUX PROVISIONS POUR RISQUES ET CHARGES H.A.O.;Non-ordinary provisions for risks and charges
+858;AUTRES DOTATIONS H.A.O.;Other non-ordinary allowances
+86;Reprises de charges, provisions et dépréciations HAO;Non-ordinary reversals of expenses, provisions and impairment
+861;REPRISES DE PROVISIONS REGLEMENTEES;Reversals of regulated provisions
+862;REPRISES D'AMORTISSEMENTS H.A.O.;Reversals of non-ordinary depreciation
+863;REPRISES DE DEPRECIATIONS H.A.O.;Reversals of non-ordinary impairment
+864;REPRISES DE PROVISIONS POUR RISQUES ET CHARGES H.A.O.;Reversals of non-ordinary provisions for risks and charges
+868;AUTRES REPRISES H.A.O.;Other non-ordinary reversals
+87;Participation des travailleurs;Employee profit sharing
+871;PARTICIPATION LÉGALE AUX BÉNÉFICES;Statutory profit sharing
+872;PARTICIPATION CONTRACTUELLE AUX BÉNÉFICES;Contractual profit sharing
+878;AUTRES PARTICIPATIONS;Other profit sharing
+88;Subventions d'équilibre;Balancing grants
+881;ETAT;State
+884;COLLECTIVITÉS PUBLIQUES;Public authorities
+886;GROUPE;Group
+888;AUTRES;Other
+89;Impôts sur le résultat;Income taxes
+891;IMPÔTS SUR LES BENEFICES DE L'EXERCICE;Income tax for the year
+8911;Activités exercées dans l'Etat;Activities carried out in the State
+8912;Activités exercées dans les autres Etats de la Région;Activities carried out in other States of the Region
+8913;Activités exercées hors Région;Activities carried out outside the Region
+892;RAPPELS D'IMPÔTS SUR RESULTATS ANTERIEURS;Back taxes on prior years' results
+895;IMPÔT MINIMUM FORFAITAIRE (I.M.F.);Minimum flat-rate tax
+899;DÉGREVEMENTS ET ANNULATIONS D'IMPÔTS SUR RÉSULTATS ANTÉRIEURS;Tax relief and cancellations on prior years' results
+8991;Dégrèvements;Tax relief
+8994;Annulations pour pertes rétroactives;Cancellations for retroactive losses
+9;Comptes des engagements hors bilan et comptes de la comptabilité analytique de gestion;Off-balance-sheet commitments and management accounting
+9011;Crédits confirmés obtenus;Confirmed credit facilities obtained
+9012;Emprunts restant à encaisser;Borrowings still to be received
+9013;Facilités de financement renouvelables;Revolving financing facilities
+9014;Facilités d'émission;Issuance facilities
+9018;Autres engagements de financement obtenus;Other financing commitments obtained
+9021;Avals obtenus;Endorsements obtained
+9022;Cautions, garanties obtenues;Sureties and guarantees obtained
+9023;Hypothèques obtenues;Mortgages obtained
+9024;Effets endossés par des tiers;Bills endorsed by third parties
+9028;Autres garanties obtenues;Other guarantees obtained
+9031;Achats de marchandises à terme;Forward purchases of goods
+9032;Achats à terme de devises;Forward purchases of foreign currency
+9033;Commandes fermes des clients;Firm customer orders
+9038;Autres engagements réciproques;Other reciprocal commitments
+9041;Abandons de créances conditionnels;Conditional debt waivers
+9043;Ventes avec clause de réserve de propriété;Sales with retention of title clause
+9048;Divers engagements obtenus;Sundry commitments obtained
+9051;Crédits accordés non décaissés;Credit granted not yet disbursed
+9058;Autres engagements de financement accordés;Other financing commitments granted
+9061;Avals accordés;Endorsements granted
+9062;Cautions, garanties accordées;Sureties and guarantees granted
+9063;Hypothèques accordées;Mortgages granted
+9064;Effets endossés par l'entité;Bills endorsed by the entity
+9068;Autres garanties accordées;Other guarantees granted
+9071;Ventes de marchandises à terme;Forward sales of goods
+9072;Ventes à terme de devises;Forward sales of foreign currency
+9073;Commandes fermes aux fournisseurs;Firm orders to suppliers
+9078;Autres engagements réciproques;Other reciprocal commitments
+9081;Annulations conditionnelles de dettes;Conditional debt cancellations
+9083;Achats avec clause de réserve de propriété;Purchases with retention of title clause
+9088;Divers engagements accordés;Sundry commitments granted
+914;Contreparties des comptes 901 à 904;Counterparts of accounts 901 to 904
+915;Contreparties des comptes 905 à 908;Counterparts of accounts 905 to 908
+9151;Contrepartie du compte 9051 (crédits accordés non décaissés);Counterpart of account 9051 (credit granted not yet disbursed)
+9183;Contrepartie du compte 9083 (achats avec clause de réserve de propriété);Counterpart of account 9083 (purchases with retention of title clause)
+92;COMPTES REFLECHIS;Reflected accounts
+93;COMPTES DE RECLASSEMENTS;Reclassification accounts
+94;COMPTES DE COÛTS;Cost accounts
+95;COMPTES DE STOCKS;Inventory accounts
+96;COMPTES D'ECARTS SUR COÛTS PREETABLIS;Standard cost variance accounts
+97;COMPTES DE DIFFERENCES DE TRAITEMENT COMPTABLE;Accounting treatment difference accounts
+98;COMPTES DE RESULTATS;Result accounts
+99;COMPTES DE LIAISONS INTERNES;Internal liaison accounts

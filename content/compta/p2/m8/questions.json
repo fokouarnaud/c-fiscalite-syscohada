@@ -1,0 +1,714 @@
+[
+ {
+  "id": "C-P2-M8-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Un client accepte un effet de 1 192 500 FCFA pour régler sa facture. Passez l'écriture chez Mbarga Distribution.",
+   "en": "2026 financial year. A customer accepts a bill of 1,192,500 CFA francs to settle an invoice. Record it at Mbarga Distribution."
+  },
+  "explanation": {
+   "fr": "La créance devient un effet à recevoir : débit 412, crédit 411.",
+   "en": "The receivable becomes a bill receivable: debit 412, credit 411."
+  },
+  "journal": [
+   {
+    "account": "412",
+    "match": "3",
+    "side": "debit",
+    "amount": "1192500",
+    "label": {
+     "fr": "Effets à recevoir",
+     "en": "Bills receivable"
+    }
+   },
+   {
+    "account": "411",
+    "match": "3",
+    "side": "credit",
+    "amount": "1192500",
+    "label": {
+     "fr": "Clients",
+     "en": "Customers"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-002",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. À l'échéance, l'effet de 1 192 500 FCFA est encaissé sur le compte bancaire. Passez l'écriture.",
+   "en": "2026 financial year. At maturity, the 1,192,500 CFA franc bill is collected into the bank account. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 521, crédit 412.",
+   "en": "Debit 521, credit 412."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "1192500",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "412",
+    "match": "3",
+    "side": "credit",
+    "amount": "1192500",
+    "label": {
+     "fr": "Effets à recevoir",
+     "en": "Bills receivable"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-003",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Mbarga Distribution accepte un effet de 900 000 FCFA tiré par son fournisseur. Passez l'écriture.",
+   "en": "2026 financial year. Mbarga Distribution accepts a 900,000 CFA franc bill drawn by its supplier. Record the entry."
+  },
+  "explanation": {
+   "fr": "La dette devient un effet à payer : débit 401, crédit 402.",
+   "en": "The debt becomes a bill payable: debit 401, credit 402."
+  },
+  "journal": [
+   {
+    "account": "401",
+    "match": "3",
+    "side": "debit",
+    "amount": "900000",
+    "label": {
+     "fr": "Fournisseurs",
+     "en": "Suppliers"
+    }
+   },
+   {
+    "account": "402",
+    "match": "3",
+    "side": "credit",
+    "amount": "900000",
+    "label": {
+     "fr": "Effets à payer",
+     "en": "Bills payable"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-004",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. 200 000 FCFA sont retirés de la banque pour alimenter la caisse, en passant par le compte de virements de fonds. Passez les écritures.",
+   "en": "2026 financial year. 200,000 CFA francs are drawn from the bank to fill the cash box, through the fund transfer account. Record the entries."
+  },
+  "explanation": {
+   "fr": "Banque : 585 au débit, 521 au crédit ; caisse : 571 au débit, 585 au crédit.",
+   "en": "Bank: 585 debited, 521 credited; cash: 571 debited, 585 credited."
+  },
+  "journal": [
+   {
+    "account": "585",
+    "match": "3",
+    "side": "debit",
+    "amount": "200000",
+    "label": {
+     "fr": "Virements de fonds",
+     "en": "Fund transfers"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "200000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "571",
+    "match": "3",
+    "side": "debit",
+    "amount": "200000",
+    "label": {
+     "fr": "Caisse",
+     "en": "Cash"
+    }
+   },
+   {
+    "account": "585",
+    "match": "3",
+    "side": "credit",
+    "amount": "200000",
+    "label": {
+     "fr": "Virements de fonds",
+     "en": "Fund transfers"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un effet accepté par un client s'enregistre chez le vendeur en…",
+   "en": "A bill accepted by a customer is recorded by the seller in…"
+  },
+  "explanation": {
+   "fr": "412 Effets à recevoir.",
+   "en": "412 Bills receivable."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "412",
+     "en": "412"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "402",
+     "en": "402"
+    }
+   },
+   {
+    "text": {
+     "fr": "411",
+     "en": "411"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "À quoi sert le compte 585 ?",
+   "en": "What is account 585 for?"
+  },
+  "explanation": {
+   "fr": "Aux virements de fonds entre comptes de trésorerie de l'entreprise.",
+   "en": "Fund transfers between the business's own cash accounts."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "aux virements internes de fonds",
+     "en": "internal fund transfers"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "aux ventes au comptant",
+     "en": "cash sales"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-007",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un encaissement par téléphone portable s'enregistre en monnaie électronique.",
+   "en": "True or false: a receipt by mobile phone is recorded as electronic money."
+  },
+  "explanation": {
+   "fr": "Vrai : 552 Monnaie électronique – téléphone portable.",
+   "en": "True: 552 Electronic money – mobile phone."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-008",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Un client règle 300 000 FCFA par virement. Passez l'écriture.",
+   "en": "2026 financial year. A customer pays 300,000 CFA francs by transfer. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 521, crédit 411.",
+   "en": "Debit 521, credit 411."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "300000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "411",
+    "match": "3",
+    "side": "credit",
+    "amount": "300000",
+    "label": {
+     "fr": "Clients",
+     "en": "Customers"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un chèque reçu d'un client, pas encore remis à la banque, s'enregistre en…",
+   "en": "A cheque received from a customer, not yet deposited, is recorded in…"
+  },
+  "explanation": {
+   "fr": "513 Chèques à encaisser.",
+   "en": "513 Cheques for collection."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "513",
+     "en": "513"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "521",
+     "en": "521"
+    }
+   },
+   {
+    "text": {
+     "fr": "571",
+     "en": "571"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-010",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. À l'échéance, Mbarga Distribution paie l'effet de 900 000 FCFA par la banque. Passez l'écriture.",
+   "en": "2026 financial year. At maturity, Mbarga Distribution pays the 900,000 CFA franc bill through the bank. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 402, crédit 521.",
+   "en": "Debit 402, credit 521."
+  },
+  "journal": [
+   {
+    "account": "402",
+    "match": "3",
+    "side": "debit",
+    "amount": "900000",
+    "label": {
+     "fr": "Effets à payer",
+     "en": "Bills payable"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "900000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-011",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un effet à payer est une dette du passif circulant.",
+   "en": "True or false: a bill payable is a current liability."
+  },
+  "explanation": {
+   "fr": "Vrai : 402, classe 4.",
+   "en": "True: 402, class 4."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-012",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Solde client 1 500 000 FCFA ; il remet un effet de 1 000 000 FCFA et paie 300 000 FCFA par virement. Que doit-il encore ?",
+   "en": "2026 financial year. Customer balance 1,500,000 CFA francs; the customer gives a 1,000,000 bill and pays 300,000 by transfer. What is still owed on account?"
+  },
+  "explanation": {
+   "fr": "1 500 000 − 1 000 000 − 300 000 = 200 000 FCFA.",
+   "en": "1,500,000 − 1,000,000 − 300,000 = 200,000 CFA francs."
+  },
+  "numeric": {
+   "value": "200000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P2-M8-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Payer un fournisseur par virement : on crédite…",
+   "en": "Paying a supplier by transfer: credit…"
+  },
+  "explanation": {
+   "fr": "521 Banque.",
+   "en": "521 Bank."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "521",
+     "en": "521"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "401",
+     "en": "401"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-102",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un effet à payer s'enregistre en…",
+   "en": "A bill payable is recorded in…"
+  },
+  "explanation": {
+   "fr": "402.",
+   "en": "402."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "402",
+     "en": "402"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "412",
+     "en": "412"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-103",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : encaisser une créance client diminue le compte 411.",
+   "en": "True or false: collecting a customer receivable decreases account 411."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-104",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Un client règle 85 000 FCFA par monnaie électronique (téléphone portable). Passez l'écriture.",
+   "en": "2026 financial year. A customer pays 85,000 CFA francs by electronic money (mobile phone). Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 552, crédit 411.",
+   "en": "Debit 552, credit 411."
+  },
+  "journal": [
+   {
+    "account": "552",
+    "match": "3",
+    "side": "debit",
+    "amount": "85000",
+    "label": {
+     "fr": "Monnaie électronique",
+     "en": "Electronic money"
+    }
+   },
+   {
+    "account": "411",
+    "match": "3",
+    "side": "credit",
+    "amount": "85000",
+    "label": {
+     "fr": "Clients",
+     "en": "Customers"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-105",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un effet de commerce constate…",
+   "en": "A bill of exchange records…"
+  },
+  "explanation": {
+   "fr": "Une dette payable à une date fixée.",
+   "en": "A debt payable on a set date."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "une dette payable à une date fixée",
+     "en": "a debt payable on a set date"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "un produit",
+     "en": "income"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-106",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Caisse au début : 150 000 FCFA ; virement interne reçu de la banque : 200 000 ; dépenses : 90 000. Quel est le solde de caisse ?",
+   "en": "2026 financial year. Opening cash: 150,000 CFA francs; internal transfer from the bank: 200,000; spending: 90,000. What is the cash balance?"
+  },
+  "explanation": {
+   "fr": "150 000 + 200 000 − 90 000 = 260 000 FCFA.",
+   "en": "150,000 + 200,000 − 90,000 = 260,000 CFA francs."
+  },
+  "numeric": {
+   "value": "260000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P2-M8-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un virement de la banque vers la caisse modifie le total de la trésorerie.",
+   "en": "True or false: a transfer from bank to cash changes total cash."
+  },
+  "explanation": {
+   "fr": "Faux : l'argent change seulement de compte.",
+   "en": "False: the money only moves between accounts."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M8-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Encaisser l'effet à l'échéance : on crédite…",
+   "en": "Collecting the bill at maturity: credit…"
+  },
+  "explanation": {
+   "fr": "412.",
+   "en": "412."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "412",
+     "en": "412"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "411",
+     "en": "411"
+    }
+   }
+  ]
+ }
+]

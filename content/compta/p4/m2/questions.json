@@ -1,0 +1,655 @@
+[
+ {
+  "id": "C-P4-M2-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. VNC du chariot 6 500 000 FCFA ; valeur actuelle 5 000 000. Passez l'écriture de dépréciation.",
+   "en": "2026 financial year. Forklift NBV 6,500,000 CFA francs; recoverable value 5,000,000. Record the impairment."
+  },
+  "explanation": {
+   "fr": "1 500 000 : débit 691, crédit 294.",
+   "en": "1,500,000: debit 691, credit 294."
+  },
+  "journal": [
+   {
+    "account": "691",
+    "match": "3",
+    "side": "debit",
+    "amount": "1500000",
+    "label": {
+     "fr": "Dotations aux dépréciations",
+     "en": "Impairment charge"
+    }
+   },
+   {
+    "account": "294",
+    "match": "3",
+    "side": "credit",
+    "amount": "1500000",
+    "label": {
+     "fr": "Dépréciations du matériel",
+     "en": "Impairment of equipment"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M2-002",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. La valeur remonte : reprise de 500 000 FCFA sur la dépréciation du chariot. Passez l'écriture.",
+   "en": "2026 financial year. Value recovers: 500,000 CFA francs of the forklift's impairment is reversed. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 294, crédit 791.",
+   "en": "Debit 294, credit 791."
+  },
+  "journal": [
+   {
+    "account": "294",
+    "match": "3",
+    "side": "debit",
+    "amount": "500000",
+    "label": {
+     "fr": "Dépréciations du matériel",
+     "en": "Impairment of equipment"
+    }
+   },
+   {
+    "account": "791",
+    "match": "3",
+    "side": "credit",
+    "amount": "500000",
+    "label": {
+     "fr": "Reprises de dépréciations",
+     "en": "Impairment reversals"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M2-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. VNC 6 500 000 FCFA ; valeur actuelle 5 000 000. Quelle est la dépréciation ?",
+   "en": "2026 financial year. NBV 6,500,000 CFA francs; recoverable value 5,000,000. What is the impairment?"
+  },
+  "explanation": {
+   "fr": "6 500 000 − 5 000 000 = 1 500 000 FCFA.",
+   "en": "6,500,000 − 5,000,000 = 1,500,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1500000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M2-004",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une dépréciation d'immobilisation peut être reprise.",
+   "en": "True or false: a fixed asset impairment can be reversed."
+  },
+  "explanation": {
+   "fr": "Vrai : 791.",
+   "en": "True: 791."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M2-005",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : on déprécie un bien dont la valeur actuelle dépasse la VNC.",
+   "en": "True or false: an asset whose recoverable value exceeds NBV is impaired."
+  },
+  "explanation": {
+   "fr": "Faux : seulement si la valeur actuelle est inférieure à la VNC (prudence).",
+   "en": "False: only if recoverable value is below NBV (prudence)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M2-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La dotation pour dépréciation d'une immobilisation va en…",
+   "en": "The impairment charge on a fixed asset goes to…"
+  },
+  "explanation": {
+   "fr": "691.",
+   "en": "691."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "691",
+     "en": "691"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "681",
+     "en": "681"
+    }
+   },
+   {
+    "text": {
+     "fr": "791",
+     "en": "791"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M2-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une reprise de dépréciation est…",
+   "en": "An impairment reversal is…"
+  },
+  "explanation": {
+   "fr": "Un produit (791).",
+   "en": "Income (791)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "un produit",
+     "en": "income"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "une charge",
+     "en": "an expense"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M2-008",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel principe justifie la dépréciation ?",
+   "en": "Which principle justifies impairment?"
+  },
+  "explanation": {
+   "fr": "La prudence.",
+   "en": "Prudence."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "La prudence",
+     "en": "Prudence"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "La permanence des méthodes",
+     "en": "Consistency"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M2-009",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Coût 9 000 000 FCFA, amortissements 3 000 000, valeur actuelle 4 800 000. Quelle dépréciation constater ?",
+   "en": "2026 financial year. Cost 9,000,000 CFA francs, accumulated depreciation 3,000,000, recoverable value 4,800,000. What impairment is recorded?"
+  },
+  "explanation": {
+   "fr": "VNC 6 000 000 − 4 800 000 = 1 200 000 FCFA.",
+   "en": "NBV 6,000,000 − 4,800,000 = 1,200,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1200000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M2-010",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les dépréciations des immobilisations figurent…",
+   "en": "Fixed asset impairments appear…"
+  },
+  "explanation": {
+   "fr": "En déduction de l'actif (29).",
+   "en": "As a deduction from assets (29)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "en déduction de l'actif",
+     "en": "as a deduction from assets"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "en capitaux propres",
+     "en": "in equity"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M2-011",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un amortissement se reprend comme une dépréciation.",
+   "en": "True or false: depreciation is reversed like an impairment."
+  },
+  "explanation": {
+   "fr": "Faux : l'amortissement constate une usure définitive.",
+   "en": "False: depreciation records permanent wear."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M2-012",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Un logiciel est déprécié de 400 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. Software is impaired by 400,000 CFA francs. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 691, crédit 291.",
+   "en": "Debit 691, credit 291."
+  },
+  "journal": [
+   {
+    "account": "691",
+    "match": "3",
+    "side": "debit",
+    "amount": "400000",
+    "label": {
+     "fr": "Dotations aux dépréciations",
+     "en": "Impairment charge"
+    }
+   },
+   {
+    "account": "291",
+    "match": "3",
+    "side": "credit",
+    "amount": "400000",
+    "label": {
+     "fr": "Dépréciations des immobilisations incorporelles",
+     "en": "Impairment of intangible assets"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M2-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "On constate une dépréciation quand…",
+   "en": "An impairment is recorded when…"
+  },
+  "explanation": {
+   "fr": "La valeur actuelle est inférieure à la VNC.",
+   "en": "Recoverable value is below NBV."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "valeur actuelle < VNC",
+     "en": "recoverable value < NBV"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "valeur actuelle > VNC",
+     "en": "recoverable value > NBV"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M2-102",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La reprise de dépréciation se crédite à…",
+   "en": "An impairment reversal is credited to…"
+  },
+  "explanation": {
+   "fr": "791.",
+   "en": "791."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "791",
+     "en": "791"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "691",
+     "en": "691"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M2-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. VNC 2 000 000 FCFA ; valeur actuelle 1 700 000. Quelle est la dépréciation ?",
+   "en": "2026 financial year. NBV 2,000,000 CFA francs; recoverable value 1,700,000. What is the impairment?"
+  },
+  "explanation": {
+   "fr": "300 000 FCFA.",
+   "en": "300,000 CFA francs."
+  },
+  "numeric": {
+   "value": "300000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M2-104",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une dépréciation diminue le résultat.",
+   "en": "True or false: an impairment reduces the result."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M2-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Dépréciation de 300 000 FCFA sur du matériel. Passez l'écriture.",
+   "en": "2026 financial year. A 300,000 CFA franc impairment on equipment. Record the entry."
+  },
+  "explanation": {
+   "fr": "691 / 294.",
+   "en": "691 / 294."
+  },
+  "journal": [
+   {
+    "account": "691",
+    "match": "3",
+    "side": "debit",
+    "amount": "300000",
+    "label": {
+     "fr": "Dotations aux dépréciations",
+     "en": "Impairment charge"
+    }
+   },
+   {
+    "account": "294",
+    "match": "3",
+    "side": "credit",
+    "amount": "300000",
+    "label": {
+     "fr": "Dépréciations du matériel",
+     "en": "Impairment of equipment"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M2-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le compte 294 enregistre…",
+   "en": "Account 294 records…"
+  },
+  "explanation": {
+   "fr": "Les dépréciations du matériel.",
+   "en": "Impairment of equipment."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "les dépréciations du matériel",
+     "en": "impairment of equipment"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "les amortissements du matériel",
+     "en": "depreciation of equipment"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M2-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : après une dépréciation, les amortissements futurs se calculent sur la valeur dépréciée.",
+   "en": "True or false: after an impairment, future depreciation is based on the impaired value."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M2-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La dépréciation d'une immobilisation est…",
+   "en": "A fixed asset impairment is…"
+  },
+  "explanation": {
+   "fr": "Réversible.",
+   "en": "Reversible."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "réversible",
+     "en": "reversible"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "définitive",
+     "en": "permanent"
+    }
+   }
+  ]
+ }
+]

@@ -1,0 +1,616 @@
+[
+ {
+  "id": "C-P4-M1-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Dotation aux amortissements de l'exercice pour le camion : 1 500 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. The lorry's depreciation charge for the year is 1,500,000 CFA francs. Record the entry."
+  },
+  "explanation": {
+   "fr": "Charge 681, amortissements du matériel 284.",
+   "en": "Expense 681, depreciation of equipment 284."
+  },
+  "journal": [
+   {
+    "account": "681",
+    "match": "3",
+    "side": "debit",
+    "amount": "1500000",
+    "label": {
+     "fr": "Dotations aux amortissements",
+     "en": "Depreciation charge"
+    }
+   },
+   {
+    "account": "284",
+    "match": "3",
+    "side": "credit",
+    "amount": "1500000",
+    "label": {
+     "fr": "Amortissements du matériel",
+     "en": "Depreciation of equipment"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M1-002",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Camion de 10 000 000 FCFA, 5 ans, linéaire, mis en service le 1er avril. Quelle est la dotation de la première année ?",
+   "en": "2026 financial year. Lorry of 10,000,000 CFA francs, 5 years, straight-line, in service from 1 April. What is the first year's charge?"
+  },
+  "explanation": {
+   "fr": "10 000 000 / 5 × 9/12 = 1 500 000 FCFA.",
+   "en": "10,000,000 / 5 × 9/12 = 1,500,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1500000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M1-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Même camion. Quelle est la VNC à la fin de la deuxième année (dotations 1 500 000 puis 2 000 000) ?",
+   "en": "2026 financial year. Same lorry. What is the NBV at the end of year two (charges 1,500,000 then 2,000,000)?"
+  },
+  "explanation": {
+   "fr": "10 000 000 − 3 500 000 = 6 500 000 FCFA.",
+   "en": "10,000,000 − 3,500,000 = 6,500,000 CFA francs."
+  },
+  "numeric": {
+   "value": "6500000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M1-004",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Matériel de 10 000 000 FCFA, 5 ans, dégressif coefficient 2, mis en service le 1er janvier. Quelle est la dotation de la première année ?",
+   "en": "2026 financial year. Equipment of 10,000,000 CFA francs, 5 years, declining balance coefficient 2, in service from 1 January. What is the first year's charge?"
+  },
+  "explanation": {
+   "fr": "Taux 20 % × 2 = 40 % ; 10 000 000 × 40 % = 4 000 000 FCFA.",
+   "en": "Rate 20% × 2 = 40%; 10,000,000 × 40% = 4,000,000 CFA francs."
+  },
+  "numeric": {
+   "value": "4000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M1-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La dotation aux amortissements est…",
+   "en": "The depreciation charge is…"
+  },
+  "explanation": {
+   "fr": "Une charge calculée, sans sortie de trésorerie.",
+   "en": "A calculated expense, with no cash outflow."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "une charge calculée",
+     "en": "a calculated expense"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "un décaissement",
+     "en": "a cash payment"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M1-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les amortissements cumulés figurent…",
+   "en": "Accumulated depreciation appears…"
+  },
+  "explanation": {
+   "fr": "En déduction de l'actif immobilisé (28).",
+   "en": "As a deduction from fixed assets (28)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "en déduction de l'actif",
+     "en": "as a deduction from assets"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "au passif",
+     "en": "in liabilities"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M1-007",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : en linéaire, la première dotation est calculée prorata temporis.",
+   "en": "True or false: under straight-line, the first charge is prorated."
+  },
+  "explanation": {
+   "fr": "Vrai : à partir de la date de mise en service.",
+   "en": "True: from the date in service."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M1-008",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Bien de 6 000 000 FCFA amorti en linéaire sur 4 ans, année pleine. Quelle est la dotation annuelle ?",
+   "en": "2026 financial year. Asset of 6,000,000 CFA francs, straight-line over 4 years, full year. What is the annual charge?"
+  },
+  "explanation": {
+   "fr": "6 000 000 / 4 = 1 500 000 FCFA.",
+   "en": "6,000,000 / 4 = 1,500,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1500000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M1-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un bien amorti sur 5 ans en linéaire a un taux de…",
+   "en": "An asset depreciated over 5 years straight-line has a rate of…"
+  },
+  "explanation": {
+   "fr": "100 / 5 = 20 %.",
+   "en": "100 / 5 = 20%."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "20 %",
+     "en": "20%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "5 %",
+     "en": "5%"
+    }
+   },
+   {
+    "text": {
+     "fr": "40 %",
+     "en": "40%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M1-010",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : en dégressif, on passe au linéaire dès que celui-ci donne une dotation au moins égale.",
+   "en": "True or false: under declining balance, you switch to straight-line once it gives an equal or higher charge."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M1-011",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Dotation de 2 000 000 FCFA sur des bâtiments. Passez l'écriture.",
+   "en": "2026 financial year. A 2,000,000 CFA franc depreciation charge on buildings. Record the entry."
+  },
+  "explanation": {
+   "fr": "Charge 681, amortissements des bâtiments 283.",
+   "en": "Expense 681, depreciation of buildings 283."
+  },
+  "journal": [
+   {
+    "account": "681",
+    "match": "3",
+    "side": "debit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Dotations aux amortissements",
+     "en": "Depreciation charge"
+    }
+   },
+   {
+    "account": "283",
+    "match": "3",
+    "side": "credit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Amortissements des bâtiments",
+     "en": "Depreciation of buildings"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M1-012",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "VNC = …",
+   "en": "NBV = …"
+  },
+  "explanation": {
+   "fr": "Coût d'acquisition − amortissements cumulés.",
+   "en": "Cost − accumulated depreciation."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "coût − amortissements cumulés",
+     "en": "cost − accumulated depreciation"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "prix de vente − coût",
+     "en": "sale price − cost"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M1-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La dotation aux amortissements s'enregistre au débit de…",
+   "en": "The depreciation charge is debited to…"
+  },
+  "explanation": {
+   "fr": "681.",
+   "en": "681."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "681",
+     "en": "681"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "284",
+     "en": "284"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M1-102",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : l'amortissement diminue la trésorerie.",
+   "en": "True or false: depreciation reduces cash."
+  },
+  "explanation": {
+   "fr": "Faux.",
+   "en": "False."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M1-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Matériel de 3 000 000 FCFA, linéaire sur 5 ans, mis en service le 1er juillet. Quelle est la dotation de la première année ?",
+   "en": "2026 financial year. Equipment of 3,000,000 CFA francs, straight-line over 5 years, in service from 1 July. What is the first year's charge?"
+  },
+  "explanation": {
+   "fr": "3 000 000 / 5 × 6/12 = 300 000 FCFA.",
+   "en": "3,000,000 / 5 × 6/12 = 300,000 CFA francs."
+  },
+  "numeric": {
+   "value": "300000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M1-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les amortissements du matériel de transport vont en…",
+   "en": "Depreciation of transport equipment goes to…"
+  },
+  "explanation": {
+   "fr": "284 (2845).",
+   "en": "284 (2845)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "284",
+     "en": "284"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "681",
+     "en": "681"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M1-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Dotation de 300 000 FCFA sur du matériel. Passez l'écriture.",
+   "en": "2026 financial year. A 300,000 CFA franc depreciation charge on equipment. Record the entry."
+  },
+  "explanation": {
+   "fr": "681 au débit, 284 au crédit.",
+   "en": "681 debited, 284 credited."
+  },
+  "journal": [
+   {
+    "account": "681",
+    "match": "3",
+    "side": "debit",
+    "amount": "300000",
+    "label": {
+     "fr": "Dotations aux amortissements",
+     "en": "Depreciation charge"
+    }
+   },
+   {
+    "account": "284",
+    "match": "3",
+    "side": "credit",
+    "amount": "300000",
+    "label": {
+     "fr": "Amortissements du matériel",
+     "en": "Depreciation of equipment"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M1-106",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le taux dégressif est égal au taux linéaire multiplié par un coefficient.",
+   "en": "True or false: the declining rate equals the straight-line rate times a coefficient."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M1-107",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Coût 4 000 000 FCFA ; amortissements cumulés 2 500 000. Quelle est la VNC ?",
+   "en": "2026 financial year. Cost 4,000,000 CFA francs; accumulated depreciation 2,500,000. What is the NBV?"
+  },
+  "explanation": {
+   "fr": "4 000 000 − 2 500 000 = 1 500 000 FCFA.",
+   "en": "4,000,000 − 2,500,000 = 1,500,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1500000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M1-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "L'amortissement répartit…",
+   "en": "Depreciation spreads…"
+  },
+  "explanation": {
+   "fr": "Le coût d'un bien sur sa durée d'utilisation.",
+   "en": "An asset's cost over its useful life."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "le coût sur la durée d'utilisation",
+     "en": "cost over useful life"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "le prix de vente sur l'année",
+     "en": "the sale price over the year"
+    }
+   }
+  ]
+ }
+]

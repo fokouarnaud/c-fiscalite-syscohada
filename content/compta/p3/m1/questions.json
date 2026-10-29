@@ -1,0 +1,744 @@
+[
+ {
+  "id": "C-P3-M1-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achat d'un camion : 15 000 000 FCFA HT, TVA 19,25 %, payé par virement. Passez l'écriture.",
+   "en": "2026 financial year. A lorry is bought for 15,000,000 CFA francs excl. tax, VAT 19.25%, paid by transfer. Record the entry."
+  },
+  "explanation": {
+   "fr": "245 (15 000 000), 4451 (2 887 500), banque (17 887 500).",
+   "en": "245 (15,000,000), 4451 (2,887,500), bank (17,887,500)."
+  },
+  "journal": [
+   {
+    "account": "245",
+    "match": "3",
+    "side": "debit",
+    "amount": "15000000",
+    "label": {
+     "fr": "Matériel de transport",
+     "en": "Transport equipment"
+    }
+   },
+   {
+    "account": "4451",
+    "match": "4",
+    "side": "debit",
+    "amount": "2887500",
+    "label": {
+     "fr": "TVA sur immobilisations",
+     "en": "VAT on fixed assets"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "17887500",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P3-M1-002",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achat à crédit d'ordinateurs : 1 200 000 FCFA HT plus 100 000 FCFA HT d'installation ; TVA 19,25 %. Passez l'écriture.",
+   "en": "2026 financial year. Computers bought on credit: 1,200,000 CFA francs excl. tax plus 100,000 excl. tax of installation; VAT 19.25%. Record the entry."
+  },
+  "explanation": {
+   "fr": "L'installation entre dans le coût : 244 (1 300 000), 4451 (250 250), 481 (1 550 250).",
+   "en": "Installation is part of cost: 244 (1,300,000), 4451 (250,250), 481 (1,550,250)."
+  },
+  "journal": [
+   {
+    "account": "244",
+    "match": "3",
+    "side": "debit",
+    "amount": "1300000",
+    "label": {
+     "fr": "Matériel informatique",
+     "en": "Computer equipment"
+    }
+   },
+   {
+    "account": "4451",
+    "match": "4",
+    "side": "debit",
+    "amount": "250250",
+    "label": {
+     "fr": "TVA sur immobilisations",
+     "en": "VAT on fixed assets"
+    }
+   },
+   {
+    "account": "481",
+    "match": "3",
+    "side": "credit",
+    "amount": "1550250",
+    "label": {
+     "fr": "Fournisseurs d'investissements",
+     "en": "Suppliers of fixed assets"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P3-M1-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Machine : prix 8 000 000 FCFA, transport 300 000, installation 200 000 (montants HT). Quel est son coût d'acquisition ?",
+   "en": "2026 financial year. Machine: price 8,000,000 CFA francs, transport 300,000, installation 200,000 (excl. tax). What is its cost?"
+  },
+  "explanation": {
+   "fr": "8 000 000 + 300 000 + 200 000 = 8 500 000 FCFA.",
+   "en": "8,000,000 + 300,000 + 200,000 = 8,500,000 CFA francs."
+  },
+  "numeric": {
+   "value": "8500000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P3-M1-004",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Mbarga Distribution a construit elle-même un entrepôt pour un coût de 6 000 000 FCFA. Passez l'écriture d'achèvement.",
+   "en": "2026 financial year. Mbarga Distribution built its own warehouse at a cost of 6,000,000 CFA francs. Record the completion entry."
+  },
+  "explanation": {
+   "fr": "Bâtiment 231 au débit, production immobilisée 722 au crédit.",
+   "en": "Building 231 debited, own work capitalised 722 credited."
+  },
+  "journal": [
+   {
+    "account": "231",
+    "match": "3",
+    "side": "debit",
+    "amount": "6000000",
+    "label": {
+     "fr": "Bâtiments",
+     "en": "Buildings"
+    }
+   },
+   {
+    "account": "722",
+    "match": "3",
+    "side": "credit",
+    "amount": "6000000",
+    "label": {
+     "fr": "Production immobilisée",
+     "en": "Own work capitalised"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M1-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Où enregistre-t-on la TVA payée sur l'achat d'une machine ?",
+   "en": "Where is VAT paid on buying a machine recorded?"
+  },
+  "explanation": {
+   "fr": "4451 TVA récupérable sur immobilisations.",
+   "en": "4451 Recoverable VAT on fixed assets."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "4451",
+     "en": "4451"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "4452",
+     "en": "4452"
+    }
+   },
+   {
+    "text": {
+     "fr": "245",
+     "en": "245"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M1-006",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les frais d'installation d'une machine font partie de son coût d'acquisition.",
+   "en": "True or false: installation costs of a machine are part of its cost."
+  },
+  "explanation": {
+   "fr": "Vrai : ils sont nécessaires pour mettre le bien en état de marche.",
+   "en": "True: they are needed to bring the asset into working condition."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M1-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un logiciel acheté pour plusieurs années s'enregistre en…",
+   "en": "Software bought for several years is recorded in…"
+  },
+  "explanation": {
+   "fr": "213 Logiciels et sites internet.",
+   "en": "213 Software and websites."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "213",
+     "en": "213"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "605",
+     "en": "605"
+    }
+   },
+   {
+    "text": {
+     "fr": "244",
+     "en": "244"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M1-008",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La dette envers le vendeur d'une immobilisation s'enregistre en…",
+   "en": "The debt to the seller of a fixed asset is recorded in…"
+  },
+  "explanation": {
+   "fr": "481 Fournisseurs d'investissements.",
+   "en": "481 Suppliers of fixed assets."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "481",
+     "en": "481"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "401",
+     "en": "401"
+    }
+   },
+   {
+    "text": {
+     "fr": "162",
+     "en": "162"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M1-009",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achat d'un logiciel de gestion : 2 000 000 FCFA HT, TVA 19,25 %, payé par virement. Passez l'écriture.",
+   "en": "2026 financial year. Management software bought for 2,000,000 CFA francs excl. tax, VAT 19.25%, paid by transfer. Record the entry."
+  },
+  "explanation": {
+   "fr": "213 (2 000 000), 4451 (385 000), banque (2 385 000).",
+   "en": "213 (2,000,000), 4451 (385,000), bank (2,385,000)."
+  },
+  "journal": [
+   {
+    "account": "213",
+    "match": "3",
+    "side": "debit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Logiciels",
+     "en": "Software"
+    }
+   },
+   {
+    "account": "4451",
+    "match": "4",
+    "side": "debit",
+    "amount": "385000",
+    "label": {
+     "fr": "TVA sur immobilisations",
+     "en": "VAT on fixed assets"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "2385000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P3-M1-010",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la production immobilisée augmente le résultat de l'exercice.",
+   "en": "True or false: own work capitalised increases the year's result."
+  },
+  "explanation": {
+   "fr": "Faux : le produit en 722 compense les charges engagées pour construire ; le résultat n'est pas gonflé.",
+   "en": "False: the income in 722 offsets the construction costs; the result is not inflated."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M1-011",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achat d'un véhicule utilitaire de 15 000 000 FCFA HT ; TVA 19,25 %. Quelle TVA est récupérable ?",
+   "en": "2026 financial year. A van bought for 15,000,000 CFA francs excl. tax; VAT 19.25%. What VAT is recoverable?"
+  },
+  "explanation": {
+   "fr": "15 000 000 × 19,25 % = 2 887 500 FCFA.",
+   "en": "15,000,000 × 19.25% = 2,887,500 CFA francs."
+  },
+  "numeric": {
+   "value": "2887500",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P3-M1-012",
+  "type": "multiple",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Lesquels sont des immobilisations ?",
+   "en": "Which of these are fixed assets?"
+  },
+  "explanation": {
+   "fr": "Camion, logiciel et entrepôt servent durablement ; les marchandises sont des stocks.",
+   "en": "Lorry, software and warehouse are used over time; goods are inventory."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Un camion",
+     "en": "A lorry"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Un logiciel",
+     "en": "Software"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Un entrepôt",
+     "en": "A warehouse"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Des marchandises à revendre",
+     "en": "Goods for resale"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M1-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un bien gardé plusieurs années pour être utilisé est…",
+   "en": "An item kept for several years to be used is…"
+  },
+  "explanation": {
+   "fr": "Une immobilisation.",
+   "en": "A fixed asset."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "une immobilisation",
+     "en": "a fixed asset"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "un stock",
+     "en": "inventory"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M1-102",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le matériel de transport s'enregistre en…",
+   "en": "Transport equipment is recorded in…"
+  },
+  "explanation": {
+   "fr": "245.",
+   "en": "245."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "245",
+     "en": "245"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "612",
+     "en": "612"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M1-103",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la TVA récupérable fait partie du coût d'une immobilisation.",
+   "en": "True or false: recoverable VAT is part of a fixed asset's cost."
+  },
+  "explanation": {
+   "fr": "Faux : elle va en 4451.",
+   "en": "False: it goes to 4451."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M1-104",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Ordinateurs 1 200 000 FCFA HT et installation 100 000 FCFA HT. Quel est le coût d'acquisition ?",
+   "en": "2026 financial year. Computers 1,200,000 CFA francs excl. tax and installation 100,000 excl. tax. What is the cost?"
+  },
+  "explanation": {
+   "fr": "1 200 000 + 100 000 = 1 300 000 FCFA.",
+   "en": "1,200,000 + 100,000 = 1,300,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1300000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P3-M1-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achat de mobilier de bureau : 900 000 FCFA HT, TVA 19,25 %, payé par virement. Passez l'écriture.",
+   "en": "2026 financial year. Office furniture bought for 900,000 CFA francs excl. tax, VAT 19.25%, paid by transfer. Record the entry."
+  },
+  "explanation": {
+   "fr": "244 (900 000), 4451 (173 250), banque (1 073 250).",
+   "en": "244 (900,000), 4451 (173,250), bank (1,073,250)."
+  },
+  "journal": [
+   {
+    "account": "244",
+    "match": "3",
+    "side": "debit",
+    "amount": "900000",
+    "label": {
+     "fr": "Mobilier de bureau",
+     "en": "Office furniture"
+    }
+   },
+   {
+    "account": "4451",
+    "match": "4",
+    "side": "debit",
+    "amount": "173250",
+    "label": {
+     "fr": "TVA sur immobilisations",
+     "en": "VAT on fixed assets"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "1073250",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P3-M1-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un bâtiment construit par l'entreprise pour elle-même donne lieu à un produit en…",
+   "en": "A building constructed by the business for itself gives income in…"
+  },
+  "explanation": {
+   "fr": "722 Production immobilisée.",
+   "en": "722 Own work capitalised."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "722",
+     "en": "722"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "701",
+     "en": "701"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M1-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le transport payé pour livrer une machine achetée s'ajoute à son coût.",
+   "en": "True or false: transport paid to deliver a purchased machine adds to its cost."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P3-M1-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Dans quelle classe sont les immobilisations ?",
+   "en": "Which class holds fixed assets?"
+  },
+  "explanation": {
+   "fr": "La classe 2.",
+   "en": "Class 2."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Classe 2",
+     "en": "Class 2"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Classe 6",
+     "en": "Class 6"
+    }
+   }
+  ]
+ }
+]

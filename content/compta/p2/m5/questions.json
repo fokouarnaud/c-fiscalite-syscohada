@@ -1,0 +1,741 @@
+[
+ {
+  "id": "C-P2-M5-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Un transitaire facture à crédit 120 000 FCFA HT pour dédouaner des marchandises ; TVA 19,25 %. Passez l'écriture.",
+   "en": "2026 financial year. A forwarding agent invoices 120,000 CFA francs excl. tax on credit to clear goods; VAT 19.25%. Record the entry."
+  },
+  "explanation": {
+   "fr": "Frais sur achats 6015 (120 000), TVA 4452 (23 100), fournisseur 401 (143 100).",
+   "en": "Purchase costs 6015 (120,000), VAT 4452 (23,100), supplier 401 (143,100)."
+  },
+  "journal": [
+   {
+    "account": "6015",
+    "match": "4",
+    "side": "debit",
+    "amount": "120000",
+    "label": {
+     "fr": "Frais sur achats",
+     "en": "Purchase costs"
+    }
+   },
+   {
+    "account": "4452",
+    "match": "4",
+    "side": "debit",
+    "amount": "23100",
+    "label": {
+     "fr": "TVA récupérable",
+     "en": "Recoverable VAT"
+    }
+   },
+   {
+    "account": "401",
+    "match": "3",
+    "side": "credit",
+    "amount": "143100",
+    "label": {
+     "fr": "Fournisseurs",
+     "en": "Suppliers"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M5-002",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Un transporteur facture 80 000 FCFA HT pour une livraison client, payé par virement ; TVA 19,25 %. Passez l'écriture.",
+   "en": "2026 financial year. A carrier invoices 80,000 CFA francs excl. tax for a customer delivery, paid by transfer; VAT 19.25%. Record the entry."
+  },
+  "explanation": {
+   "fr": "Transport sur ventes 612 (80 000), TVA sur services 4454 (15 400), banque 521 (95 400).",
+   "en": "Transport on sales 612 (80,000), VAT on services 4454 (15,400), bank 521 (95,400)."
+  },
+  "journal": [
+   {
+    "account": "612",
+    "match": "3",
+    "side": "debit",
+    "amount": "80000",
+    "label": {
+     "fr": "Transports sur ventes",
+     "en": "Transport on sales"
+    }
+   },
+   {
+    "account": "4454",
+    "match": "4",
+    "side": "debit",
+    "amount": "15400",
+    "label": {
+     "fr": "TVA sur services",
+     "en": "VAT on services"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "95400",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M5-003",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le transport payé pour livrer un client s'enregistre en…",
+   "en": "Transport paid to deliver a customer is recorded in…"
+  },
+  "explanation": {
+   "fr": "612 Transports sur ventes.",
+   "en": "612 Transport on sales."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "612",
+     "en": "612"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "6015",
+     "en": "6015"
+    }
+   },
+   {
+    "text": {
+     "fr": "7071",
+     "en": "7071"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M5-004",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les frais de transit liés à un achat de marchandises s'enregistrent en…",
+   "en": "Forwarding costs tied to a purchase of goods are recorded in…"
+  },
+  "explanation": {
+   "fr": "6015 Frais sur achats.",
+   "en": "6015 Purchase costs."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "6015",
+     "en": "6015"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "612",
+     "en": "612"
+    }
+   },
+   {
+    "text": {
+     "fr": "618",
+     "en": "618"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M5-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La TVA payée à un transporteur pour une livraison client se récupère en…",
+   "en": "VAT paid to a carrier for a customer delivery is recovered in…"
+  },
+  "explanation": {
+   "fr": "4454 TVA récupérable sur services extérieurs.",
+   "en": "4454 Recoverable VAT on external services."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "4454",
+     "en": "4454"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "443",
+     "en": "443"
+    }
+   },
+   {
+    "text": {
+     "fr": "4441",
+     "en": "4441"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M5-006",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : refacturer un transport au client supprime la charge de transport.",
+   "en": "True or false: re-invoicing transport to the customer removes the transport expense."
+  },
+  "explanation": {
+   "fr": "Faux : la charge reste en 612 et le produit s'enregistre en 7071.",
+   "en": "False: the expense stays in 612 and the income is recorded in 7071."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M5-007",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Transport sur ventes : 80 000 FCFA HT ; TVA 19,25 %. Quel montant TTC paie-t-on ?",
+   "en": "2026 financial year. Transport on sales: 80,000 CFA francs excl. tax; VAT 19.25%. What total is paid?"
+  },
+  "explanation": {
+   "fr": "80 000 + 15 400 = 95 400 FCFA.",
+   "en": "80,000 + 15,400 = 95,400 CFA francs."
+  },
+  "numeric": {
+   "value": "95400",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M5-008",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les déplacements d'un commercial s'enregistrent en…",
+   "en": "A salesperson's travel is recorded in…"
+  },
+  "explanation": {
+   "fr": "618 Autres frais de transport (voyages et déplacements).",
+   "en": "618 Other transport costs (travel)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "618",
+     "en": "618"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "612",
+     "en": "612"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M5-009",
+  "type": "matching",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Associez chaque frais à son compte.",
+   "en": "Match each cost with its account."
+  },
+  "explanation": {
+   "fr": "Transit sur achat 6015, livraison client 612, port refacturé 7071, déplacement 618.",
+   "en": "Forwarding on purchase 6015, customer delivery 612, carriage re-invoiced 7071, travel 618."
+  },
+  "pairs": [
+   {
+    "left": {
+     "fr": "Transit d'un achat",
+     "en": "Forwarding on a purchase"
+    },
+    "right": {
+     "fr": "6015",
+     "en": "6015"
+    }
+   },
+   {
+    "left": {
+     "fr": "Livraison d'un client",
+     "en": "Customer delivery"
+    },
+    "right": {
+     "fr": "612",
+     "en": "612"
+    }
+   },
+   {
+    "left": {
+     "fr": "Port refacturé",
+     "en": "Carriage re-invoiced"
+    },
+    "right": {
+     "fr": "7071",
+     "en": "7071"
+    }
+   },
+   {
+    "left": {
+     "fr": "Déplacement d'un commercial",
+     "en": "Salesperson's travel"
+    },
+    "right": {
+     "fr": "618",
+     "en": "618"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M5-010",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Frais de transit de 120 000 FCFA HT ; TVA 19,25 %. Quel est le montant de la dette ?",
+   "en": "2026 financial year. Forwarding costs of 120,000 CFA francs excl. tax; VAT 19.25%. What is the debt?"
+  },
+  "explanation": {
+   "fr": "120 000 + 23 100 = 143 100 FCFA.",
+   "en": "120,000 + 23,100 = 143,100 CFA francs."
+  },
+  "numeric": {
+   "value": "143100",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M5-011",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les frais sur achats de marchandises s'ajoutent au coût d'achat.",
+   "en": "True or false: purchase costs on goods add to the purchase cost."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M5-012",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Mbarga Distribution refacture 50 000 FCFA HT de transport à un client ; TVA 19,25 %. Passez l'écriture.",
+   "en": "2026 financial year. Mbarga Distribution re-invoices 50,000 CFA francs excl. tax of transport to a customer; VAT 19.25%. Record the entry."
+  },
+  "explanation": {
+   "fr": "Client 411 (59 625), produit 7071 (50 000), TVA 443 (9 625).",
+   "en": "Customer 411 (59,625), income 7071 (50,000), VAT 443 (9,625)."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "match": "3",
+    "side": "debit",
+    "amount": "59625",
+    "label": {
+     "fr": "Clients",
+     "en": "Customers"
+    }
+   },
+   {
+    "account": "7071",
+    "match": "4",
+    "side": "credit",
+    "amount": "50000",
+    "label": {
+     "fr": "Ports refacturés",
+     "en": "Carriage invoiced"
+    }
+   },
+   {
+    "account": "443",
+    "match": "3",
+    "side": "credit",
+    "amount": "9625",
+    "label": {
+     "fr": "TVA facturée",
+     "en": "VAT charged"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M5-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le port refacturé au client est…",
+   "en": "Carriage re-invoiced to the customer is…"
+  },
+  "explanation": {
+   "fr": "Un produit (7071).",
+   "en": "Income (7071)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "un produit",
+     "en": "income"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "une charge",
+     "en": "an expense"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M5-102",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les frais sur achats de marchandises vont en…",
+   "en": "Purchase costs on goods go to…"
+  },
+  "explanation": {
+   "fr": "6015.",
+   "en": "6015."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "6015",
+     "en": "6015"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "612",
+     "en": "612"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M5-103",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le transport sur ventes est une charge.",
+   "en": "True or false: transport on sales is an expense."
+  },
+  "explanation": {
+   "fr": "Vrai : 612.",
+   "en": "True: 612."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M5-104",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Transport de 200 000 FCFA HT ; TVA 19,25 %. Quelle TVA est récupérable ?",
+   "en": "2026 financial year. Transport of 200,000 CFA francs excl. tax; VAT 19.25%. What VAT is recoverable?"
+  },
+  "explanation": {
+   "fr": "200 000 × 19,25 % = 38 500 FCFA.",
+   "en": "200,000 × 19.25% = 38,500 CFA francs."
+  },
+  "numeric": {
+   "value": "38500",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M5-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Billets de voyage d'un commercial payés en espèces : 45 000 FCFA (hors TVA dans cet exercice). Passez l'écriture.",
+   "en": "2026 financial year. A salesperson's travel tickets paid in cash: 45,000 CFA francs (no VAT in this exercise). Record the entry."
+  },
+  "explanation": {
+   "fr": "Charge 618, caisse 571.",
+   "en": "Expense 618, cash 571."
+  },
+  "journal": [
+   {
+    "account": "618",
+    "match": "3",
+    "side": "debit",
+    "amount": "45000",
+    "label": {
+     "fr": "Voyages et déplacements",
+     "en": "Travel"
+    }
+   },
+   {
+    "account": "571",
+    "match": "3",
+    "side": "credit",
+    "amount": "45000",
+    "label": {
+     "fr": "Caisse",
+     "en": "Cash"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M5-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La TVA payée à un transitaire pour un achat de marchandises se récupère en…",
+   "en": "VAT paid to a forwarding agent for a purchase of goods is recovered in…"
+  },
+  "explanation": {
+   "fr": "4452, comme l'achat.",
+   "en": "4452, like the purchase."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "4452",
+     "en": "4452"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "443",
+     "en": "443"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M5-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un transport refacturé au client est soumis à la TVA.",
+   "en": "True or false: transport re-invoiced to the customer is subject to VAT."
+  },
+  "explanation": {
+   "fr": "Vrai : il entre dans le prix facturé.",
+   "en": "True: it is part of the price invoiced."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M5-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un frais engagé pour livrer les clients est une charge de…",
+   "en": "A cost incurred to deliver customers is a…"
+  },
+  "explanation": {
+   "fr": "Distribution.",
+   "en": "Distribution expense."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "distribution",
+     "en": "distribution expense"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "production",
+     "en": "production cost"
+    }
+   }
+  ]
+ }
+]

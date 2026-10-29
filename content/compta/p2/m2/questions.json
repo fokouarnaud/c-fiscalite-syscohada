@@ -1,0 +1,744 @@
+[
+ {
+  "id": "C-P2-M2-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achat à crédit de marchandises : 2 000 000 FCFA HT, plus 100 000 FCFA HT de transport facturé par le fournisseur ; TVA 19,25 %. Passez l'écriture.",
+   "en": "2026 financial year. Goods bought on credit: 2,000,000 CFA francs excl. tax, plus 100,000 excl. tax of transport invoiced by the supplier; VAT 19.25%. Record the entry."
+  },
+  "explanation": {
+   "fr": "Base TVA 2 100 000 ; TVA 404 250 ; TTC 2 504 250.",
+   "en": "VAT base 2,100,000; VAT 404,250; total 2,504,250."
+  },
+  "journal": [
+   {
+    "account": "601",
+    "match": "3",
+    "side": "debit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Achats de marchandises",
+     "en": "Purchases of goods"
+    }
+   },
+   {
+    "account": "6015",
+    "match": "4",
+    "side": "debit",
+    "amount": "100000",
+    "label": {
+     "fr": "Frais sur achats",
+     "en": "Purchase costs"
+    }
+   },
+   {
+    "account": "4452",
+    "match": "4",
+    "side": "debit",
+    "amount": "404250",
+    "label": {
+     "fr": "TVA récupérable",
+     "en": "Recoverable VAT"
+    }
+   },
+   {
+    "account": "401",
+    "match": "3",
+    "side": "credit",
+    "amount": "2504250",
+    "label": {
+     "fr": "Fournisseurs",
+     "en": "Suppliers"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M2-002",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Marchandises 2 000 000 FCFA HT et transport 100 000 FCFA HT sur la même facture ; TVA 19,25 %. Quel est le montant TTC ?",
+   "en": "2026 financial year. Goods 2,000,000 CFA francs excl. tax and transport 100,000 excl. tax on the same invoice; VAT 19.25%. What is the total including tax?"
+  },
+  "explanation": {
+   "fr": "2 100 000 + 404 250 = 2 504 250 FCFA.",
+   "en": "2,100,000 + 404,250 = 2,504,250 CFA francs."
+  },
+  "numeric": {
+   "value": "2504250",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M2-003",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Où enregistre-t-on le transport facturé sur un achat de marchandises ?",
+   "en": "Where is transport invoiced on a purchase of goods recorded?"
+  },
+  "explanation": {
+   "fr": "6015 Frais sur achats.",
+   "en": "6015 Purchase costs."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "6015",
+     "en": "6015"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "612",
+     "en": "612"
+    }
+   },
+   {
+    "text": {
+     "fr": "701",
+     "en": "701"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M2-004",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achat au comptant, en espèces, de fournitures de bureau non stockées : 50 000 FCFA HT, TVA 19,25 %. Passez l'écriture.",
+   "en": "2026 financial year. Non-stocked office supplies bought for cash: 50,000 CFA francs excl. tax, VAT 19.25%. Record the entry."
+  },
+  "explanation": {
+   "fr": "Charge 605 (50 000), TVA récupérable 4452 (9 625), caisse créditée du TTC 59 625.",
+   "en": "Expense 605 (50,000), recoverable VAT 4452 (9,625), cash credited with 59,625."
+  },
+  "journal": [
+   {
+    "account": "605",
+    "match": "3",
+    "side": "debit",
+    "amount": "50000",
+    "label": {
+     "fr": "Autres achats",
+     "en": "Other purchases"
+    }
+   },
+   {
+    "account": "4452",
+    "match": "4",
+    "side": "debit",
+    "amount": "9625",
+    "label": {
+     "fr": "TVA récupérable",
+     "en": "Recoverable VAT"
+    }
+   },
+   {
+    "account": "571",
+    "match": "3",
+    "side": "credit",
+    "amount": "59625",
+    "label": {
+     "fr": "Caisse",
+     "en": "Cash"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M2-005",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Le fournisseur facture une consigne de 30 000 FCFA sur des palettes récupérables. Passez l'écriture.",
+   "en": "2026 financial year. The supplier invoices a deposit of 30,000 CFA francs on returnable pallets. Record the entry."
+  },
+  "explanation": {
+   "fr": "La consigne est une créance sur le fournisseur : débit 4094, crédit 401.",
+   "en": "The deposit is a receivable from the supplier: debit 4094, credit 401."
+  },
+  "journal": [
+   {
+    "account": "4094",
+    "match": "4",
+    "side": "debit",
+    "amount": "30000",
+    "label": {
+     "fr": "Emballages à rendre",
+     "en": "Packaging to return"
+    }
+   },
+   {
+    "account": "401",
+    "match": "3",
+    "side": "credit",
+    "amount": "30000",
+    "label": {
+     "fr": "Fournisseurs",
+     "en": "Suppliers"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M2-006",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Les palettes consignées (30 000 FCFA) sont rendues au fournisseur. Passez l'écriture.",
+   "en": "2026 financial year. The pallets on deposit (30,000 CFA francs) are returned to the supplier. Record the entry."
+  },
+  "explanation": {
+   "fr": "On annule la créance de consigne : débit 401, crédit 4094.",
+   "en": "The deposit receivable is cancelled: debit 401, credit 4094."
+  },
+  "journal": [
+   {
+    "account": "401",
+    "match": "3",
+    "side": "debit",
+    "amount": "30000",
+    "label": {
+     "fr": "Fournisseurs",
+     "en": "Suppliers"
+    }
+   },
+   {
+    "account": "4094",
+    "match": "4",
+    "side": "credit",
+    "amount": "30000",
+    "label": {
+     "fr": "Emballages à rendre",
+     "en": "Packaging to return"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M2-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Des cartons perdus livrés avec la marchandise s'enregistrent en…",
+   "en": "Non-returnable cartons delivered with the goods are recorded in…"
+  },
+  "explanation": {
+   "fr": "608 Achats d'emballages.",
+   "en": "608 Purchases of packaging."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "608",
+     "en": "608"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "4094",
+     "en": "4094"
+    }
+   },
+   {
+    "text": {
+     "fr": "245",
+     "en": "245"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M2-008",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les frais de transport facturés sur un achat entrent dans la base de la TVA.",
+   "en": "True or false: transport invoiced on a purchase is part of the VAT base."
+  },
+  "explanation": {
+   "fr": "Vrai : la base comprend le prix et les frais accessoires facturés.",
+   "en": "True: the base includes the price and invoiced incidental costs."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M2-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un achat de matières premières s'enregistre en…",
+   "en": "A purchase of raw materials is recorded in…"
+  },
+  "explanation": {
+   "fr": "602.",
+   "en": "602."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "602",
+     "en": "602"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "601",
+     "en": "601"
+    }
+   },
+   {
+    "text": {
+     "fr": "604",
+     "en": "604"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M2-010",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achat de 1 600 000 FCFA HT de marchandises ; TVA 19,25 %. Quelle TVA est récupérable ?",
+   "en": "2026 financial year. Goods bought for 1,600,000 CFA francs excl. tax; VAT 19.25%. How much VAT is recoverable?"
+  },
+  "explanation": {
+   "fr": "1 600 000 × 19,25 % = 308 000 FCFA.",
+   "en": "1,600,000 × 19.25% = 308,000 CFA francs."
+  },
+  "numeric": {
+   "value": "308000",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M2-011",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une consigne d'emballages est une charge de l'exercice.",
+   "en": "True or false: a packaging deposit is an expense of the year."
+  },
+  "explanation": {
+   "fr": "Faux : c'est une créance sur le fournisseur (4094), remboursée au retour.",
+   "en": "False: it is a receivable from the supplier (4094), refunded on return."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M2-012",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "L'eau et l'électricité consommées s'enregistrent en…",
+   "en": "Water and electricity used are recorded in…"
+  },
+  "explanation": {
+   "fr": "605 Autres achats (fournitures non stockables).",
+   "en": "605 Other purchases (non-stockable supplies)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "605",
+     "en": "605"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "604",
+     "en": "604"
+    }
+   },
+   {
+    "text": {
+     "fr": "622",
+     "en": "622"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M2-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quand comptabilise-t-on un achat ?",
+   "en": "When is a purchase recorded?"
+  },
+  "explanation": {
+   "fr": "À la réception de la facture.",
+   "en": "On receipt of the invoice."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "À la réception de la facture",
+     "en": "On receipt of the invoice"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "À la commande",
+     "en": "On ordering"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M2-102",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une dette fournisseur née d'un achat s'enregistre au…",
+   "en": "A supplier debt from a purchase is recorded…"
+  },
+  "explanation": {
+   "fr": "Crédit de 401.",
+   "en": "As a credit to 401."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "crédit de 401",
+     "en": "credit of 401"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "débit de 401",
+     "en": "debit of 401"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M2-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achat de 400 000 FCFA HT ; TVA 19,25 %. Quel est le montant TTC ?",
+   "en": "2026 financial year. Purchase of 400,000 CFA francs excl. tax; VAT 19.25%. What is the total including tax?"
+  },
+  "explanation": {
+   "fr": "400 000 + 77 000 = 477 000 FCFA.",
+   "en": "400,000 + 77,000 = 477,000 CFA francs."
+  },
+  "numeric": {
+   "value": "477000",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M2-104",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Achat à crédit de matières premières : 800 000 FCFA HT, TVA 19,25 %. Passez l'écriture.",
+   "en": "2026 financial year. Raw materials bought on credit: 800,000 CFA francs excl. tax, VAT 19.25%. Record the entry."
+  },
+  "explanation": {
+   "fr": "602 (800 000), 4452 (154 000), 401 (954 000).",
+   "en": "602 (800,000), 4452 (154,000), 401 (954,000)."
+  },
+  "journal": [
+   {
+    "account": "602",
+    "match": "3",
+    "side": "debit",
+    "amount": "800000",
+    "label": {
+     "fr": "Achats de matières premières",
+     "en": "Purchases of raw materials"
+    }
+   },
+   {
+    "account": "4452",
+    "match": "4",
+    "side": "debit",
+    "amount": "154000",
+    "label": {
+     "fr": "TVA récupérable",
+     "en": "Recoverable VAT"
+    }
+   },
+   {
+    "account": "401",
+    "match": "3",
+    "side": "credit",
+    "amount": "954000",
+    "label": {
+     "fr": "Fournisseurs",
+     "en": "Suppliers"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M2-105",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les frais de dédouanement d'un achat de marchandises sont des frais sur achats.",
+   "en": "True or false: customs clearance costs on a purchase of goods are purchase costs."
+  },
+  "explanation": {
+   "fr": "Vrai : 6015.",
+   "en": "True: 6015."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M2-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une consigne d'emballages facturée par le fournisseur s'enregistre au débit de…",
+   "en": "A packaging deposit invoiced by the supplier is debited to…"
+  },
+  "explanation": {
+   "fr": "4094.",
+   "en": "4094."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "4094",
+     "en": "4094"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "608",
+     "en": "608"
+    }
+   },
+   {
+    "text": {
+     "fr": "4194",
+     "en": "4194"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M2-107",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Des fournitures de bureau stockées s'enregistrent en…",
+   "en": "Stored office supplies are recorded in…"
+  },
+  "explanation": {
+   "fr": "604, achats stockés de matières et fournitures.",
+   "en": "604, stored materials and supplies."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "604",
+     "en": "604"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "601",
+     "en": "601"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M2-108",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un achat de marchandises augmente un compte de charge.",
+   "en": "True or false: a purchase of goods increases an expense account."
+  },
+  "explanation": {
+   "fr": "Vrai : 601 au débit.",
+   "en": "True: 601 is debited."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ }
+]

@@ -1,0 +1,703 @@
+[
+ {
+  "id": "C-P4-M6-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Camion acheté 15 000 000 FCFA, amorti de 9 000 000, revendu 7 000 000 encaissés en banque (hors TVA). Passez les écritures de cession.",
+   "en": "2026 financial year. A lorry bought for 15,000,000 CFA francs, depreciated by 9,000,000, is sold for 7,000,000 into the bank (no VAT). Record the disposal."
+  },
+  "explanation": {
+   "fr": "Prix en 822 ; sortie : 284 et 812 au débit, 245 au crédit.",
+   "en": "Price in 822; removal: 284 and 812 debited, 245 credited."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "7000000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "822",
+    "match": "3",
+    "side": "credit",
+    "amount": "7000000",
+    "label": {
+     "fr": "Produits des cessions",
+     "en": "Disposal proceeds"
+    }
+   },
+   {
+    "account": "284",
+    "match": "3",
+    "side": "debit",
+    "amount": "9000000",
+    "label": {
+     "fr": "Amortissements du matériel",
+     "en": "Depreciation of equipment"
+    }
+   },
+   {
+    "account": "812",
+    "match": "3",
+    "side": "debit",
+    "amount": "6000000",
+    "label": {
+     "fr": "Valeurs comptables des cessions",
+     "en": "Carrying amount of disposals"
+    }
+   },
+   {
+    "account": "245",
+    "match": "3",
+    "side": "credit",
+    "amount": "15000000",
+    "label": {
+     "fr": "Matériel de transport",
+     "en": "Transport equipment"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M6-002",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Coût 15 000 000 FCFA ; amortissements 9 000 000 ; prix de cession 7 000 000. Quelle est la plus-value ?",
+   "en": "2026 financial year. Cost 15,000,000 CFA francs; depreciation 9,000,000; sale price 7,000,000. What is the gain?"
+  },
+  "explanation": {
+   "fr": "VNC 6 000 000 ; 7 000 000 − 6 000 000 = 1 000 000 FCFA.",
+   "en": "NBV 6,000,000; 7,000,000 − 6,000,000 = 1,000,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M6-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Coût 8 000 000 FCFA ; amortissements 5 000 000 ; prix de cession 2 200 000. Quelle est la moins-value ?",
+   "en": "2026 financial year. Cost 8,000,000 CFA francs; depreciation 5,000,000; sale price 2,200,000. What is the loss?"
+  },
+  "explanation": {
+   "fr": "VNC 3 000 000 − 2 200 000 = 800 000 FCFA.",
+   "en": "NBV 3,000,000 − 2,200,000 = 800,000 CFA francs."
+  },
+  "numeric": {
+   "value": "800000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M6-004",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le prix de cession d'une immobilisation corporelle s'enregistre en…",
+   "en": "The sale price of a tangible asset is recorded in…"
+  },
+  "explanation": {
+   "fr": "822.",
+   "en": "822."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "822",
+     "en": "822"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "701",
+     "en": "701"
+    }
+   },
+   {
+    "text": {
+     "fr": "812",
+     "en": "812"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M6-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La VNC du bien cédé s'enregistre en…",
+   "en": "The NBV of the asset sold is recorded in…"
+  },
+  "explanation": {
+   "fr": "812.",
+   "en": "812."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "812",
+     "en": "812"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "822",
+     "en": "822"
+    }
+   },
+   {
+    "text": {
+     "fr": "681",
+     "en": "681"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M6-006",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une cession d'immobilisation est une opération hors activités ordinaires.",
+   "en": "True or false: a fixed asset disposal is a non-ordinary transaction."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M6-007",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : avant de céder un bien, on enregistre l'amortissement de l'exercice jusqu'à la date de cession.",
+   "en": "True or false: before disposal, depreciation up to the disposal date is recorded."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M6-008",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Bien cédé avant 4 ans, TVA déduite à l'achat, cession sans TVA : que dit le CGI ?",
+   "en": "Asset sold within 4 years, VAT deducted on purchase, sale without VAT: what does the Tax Code say?"
+  },
+  "explanation": {
+   "fr": "Une fraction de la TVA déduite est reversée (CGI art. 145).",
+   "en": "Part of the deducted VAT is repaid (GTC s. 145)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "reverser une fraction de la TVA",
+     "en": "repay part of the VAT"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "rien",
+     "en": "nothing"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M6-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Plus-value de cession = …",
+   "en": "Gain on disposal = …"
+  },
+  "explanation": {
+   "fr": "Prix de cession − VNC.",
+   "en": "Sale price − NBV."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "prix − VNC",
+     "en": "price − NBV"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "prix − coût d'origine",
+     "en": "price − original cost"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M6-010",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Matériel acheté 8 000 000 FCFA, amorti de 5 000 000, cédé 2 200 000 à crédit (hors TVA). Passez les écritures.",
+   "en": "2026 financial year. Equipment bought for 8,000,000 CFA francs, depreciated by 5,000,000, sold on credit for 2,200,000 (no VAT). Record the entries."
+  },
+  "explanation": {
+   "fr": "Créance de cession 485 ; produit 822 ; sortie 284, 812, 244.",
+   "en": "Disposal receivable 485; income 822; removal 284, 812, 244."
+  },
+  "journal": [
+   {
+    "account": "485",
+    "match": "3",
+    "side": "debit",
+    "amount": "2200000",
+    "label": {
+     "fr": "Créances sur cessions",
+     "en": "Disposal receivables"
+    }
+   },
+   {
+    "account": "822",
+    "match": "3",
+    "side": "credit",
+    "amount": "2200000",
+    "label": {
+     "fr": "Produits des cessions",
+     "en": "Disposal proceeds"
+    }
+   },
+   {
+    "account": "284",
+    "match": "3",
+    "side": "debit",
+    "amount": "5000000",
+    "label": {
+     "fr": "Amortissements du matériel",
+     "en": "Depreciation of equipment"
+    }
+   },
+   {
+    "account": "812",
+    "match": "3",
+    "side": "debit",
+    "amount": "3000000",
+    "label": {
+     "fr": "Valeurs comptables des cessions",
+     "en": "Carrying amount of disposals"
+    }
+   },
+   {
+    "account": "244",
+    "match": "3",
+    "side": "credit",
+    "amount": "8000000",
+    "label": {
+     "fr": "Matériel et mobilier",
+     "en": "Equipment and furniture"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M6-011",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le prix de cession d'un camion s'enregistre en ventes de marchandises.",
+   "en": "True or false: a lorry's sale price is recorded as sales of goods."
+  },
+  "explanation": {
+   "fr": "Faux : 822, produit HAO.",
+   "en": "False: 822, non-ordinary income."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M6-012",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "À la sortie du bien, ses amortissements cumulés sont…",
+   "en": "On removal, the asset's accumulated depreciation is…"
+  },
+  "explanation": {
+   "fr": "Débités (annulés).",
+   "en": "Debited (cancelled)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "débités",
+     "en": "debited"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "crédités",
+     "en": "credited"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M6-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une créance née de la cession d'une immobilisation va en…",
+   "en": "A receivable from disposing of a fixed asset goes to…"
+  },
+  "explanation": {
+   "fr": "485.",
+   "en": "485."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "485",
+     "en": "485"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "411",
+     "en": "411"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M6-102",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. VNC 1 500 000 FCFA ; prix de cession 2 000 000. Quelle est la plus-value ?",
+   "en": "2026 financial year. NBV 1,500,000 CFA francs; sale price 2,000,000. What is the gain?"
+  },
+  "explanation": {
+   "fr": "500 000 FCFA.",
+   "en": "500,000 CFA francs."
+  },
+  "numeric": {
+   "value": "500000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M6-103",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la VNC d'un bien cédé devient une charge HAO.",
+   "en": "True or false: the NBV of an asset sold becomes a non-ordinary expense."
+  },
+  "explanation": {
+   "fr": "Vrai : 812.",
+   "en": "True: 812."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M6-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "À la sortie, le compte d'immobilisation est…",
+   "en": "On removal, the fixed asset account is…"
+  },
+  "explanation": {
+   "fr": "Crédité de la valeur d'origine.",
+   "en": "Credited with the original cost."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "crédité de la valeur d'origine",
+     "en": "credited with original cost"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "débité de la VNC",
+     "en": "debited with NBV"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M6-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Prix de cession de 2 000 000 FCFA encaissé en banque (hors TVA). Passez l'écriture du prix.",
+   "en": "2026 financial year. A 2,000,000 CFA franc sale price received in the bank (no VAT). Record the price."
+  },
+  "explanation": {
+   "fr": "521 / 822.",
+   "en": "521 / 822."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "822",
+    "match": "3",
+    "side": "credit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Produits des cessions",
+     "en": "Disposal proceeds"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M6-106",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Coût 4 000 000 FCFA ; amortissements 2 500 000. Quelle est la VNC ?",
+   "en": "2026 financial year. Cost 4,000,000 CFA francs; depreciation 2,500,000. What is the NBV?"
+  },
+  "explanation": {
+   "fr": "1 500 000 FCFA.",
+   "en": "1,500,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1500000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P4-M6-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une moins-value diminue le résultat.",
+   "en": "True or false: a loss on disposal reduces the result."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P4-M6-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les produits des cessions d'immobilisations sont en classe…",
+   "en": "Disposal proceeds are in class…"
+  },
+  "explanation": {
+   "fr": "8.",
+   "en": "8."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "8",
+     "en": "8"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "7",
+     "en": "7"
+    }
+   }
+  ]
+ }
+]

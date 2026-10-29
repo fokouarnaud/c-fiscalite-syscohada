@@ -1,0 +1,698 @@
+[
+ {
+  "id": "C-P5-M1-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Bénéfice 4 500 000 FCFA : réserve légale 450 000, dividendes 2 000 000, solde en report à nouveau. Passez l'écriture d'affectation.",
+   "en": "2026 financial year. Profit 4,500,000 CFA francs: legal reserve 450,000, dividends 2,000,000, the rest as retained earnings. Record the appropriation."
+  },
+  "explanation": {
+   "fr": "131 débité ; 111 (450 000), 465 (2 000 000), 121 (2 050 000) crédités.",
+   "en": "131 debited; 111 (450,000), 465 (2,000,000), 121 (2,050,000) credited."
+  },
+  "journal": [
+   {
+    "account": "131",
+    "match": "3",
+    "side": "debit",
+    "amount": "4500000",
+    "label": {
+     "fr": "Bénéfice",
+     "en": "Profit"
+    }
+   },
+   {
+    "account": "111",
+    "match": "3",
+    "side": "credit",
+    "amount": "450000",
+    "label": {
+     "fr": "Réserve légale",
+     "en": "Legal reserve"
+    }
+   },
+   {
+    "account": "465",
+    "match": "3",
+    "side": "credit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Dividendes à payer",
+     "en": "Dividends payable"
+    }
+   },
+   {
+    "account": "121",
+    "match": "3",
+    "side": "credit",
+    "amount": "2050000",
+    "label": {
+     "fr": "Report à nouveau",
+     "en": "Retained earnings"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M1-002",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Bénéfice 4 500 000 FCFA ; réserve légale 10 % ; dividendes 2 000 000. Quel montant en report à nouveau ?",
+   "en": "2026 financial year. Profit 4,500,000 CFA francs; legal reserve 10%; dividends 2,000,000. What goes to retained earnings?"
+  },
+  "explanation": {
+   "fr": "4 500 000 − 450 000 − 2 000 000 = 2 050 000 FCFA.",
+   "en": "4,500,000 − 450,000 − 2,000,000 = 2,050,000 CFA francs."
+  },
+  "numeric": {
+   "value": "2050000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M1-003",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Les dividendes de 2 000 000 FCFA sont payés par virement (montant net pour l'exercice). Passez l'écriture.",
+   "en": "2026 financial year. Dividends of 2,000,000 CFA francs are paid by transfer (net amount for the exercise). Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 465, crédit 521.",
+   "en": "Debit 465, credit 521."
+  },
+  "journal": [
+   {
+    "account": "465",
+    "match": "3",
+    "side": "debit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Dividendes à payer",
+     "en": "Dividends payable"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M1-004",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2027. À la réouverture, contrepassez la charge constatée d'avance d'assurance de 900 000 FCFA.",
+   "en": "2027 financial year. On reopening, reverse the 900,000 CFA franc prepaid insurance expense."
+  },
+  "explanation": {
+   "fr": "Débit 625, crédit 476.",
+   "en": "Debit 625, credit 476."
+  },
+  "journal": [
+   {
+    "account": "625",
+    "match": "3",
+    "side": "debit",
+    "amount": "900000",
+    "label": {
+     "fr": "Primes d'assurance",
+     "en": "Insurance premiums"
+    }
+   },
+   {
+    "account": "476",
+    "match": "3",
+    "side": "credit",
+    "amount": "900000",
+    "label": {
+     "fr": "Charges constatées d'avance",
+     "en": "Prepaid expenses"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M1-005",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Les associés décident de reporter à nouveau la perte de 1 200 000 FCFA. Passez l'écriture.",
+   "en": "2026 financial year. The partners decide to carry forward the loss of 1,200,000 CFA francs. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 129, crédit 139.",
+   "en": "Debit 129, credit 139."
+  },
+  "journal": [
+   {
+    "account": "129",
+    "match": "3",
+    "side": "debit",
+    "amount": "1200000",
+    "label": {
+     "fr": "Report à nouveau débiteur",
+     "en": "Retained earnings (debit)"
+    }
+   },
+   {
+    "account": "139",
+    "match": "3",
+    "side": "credit",
+    "amount": "1200000",
+    "label": {
+     "fr": "Perte",
+     "en": "Loss"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M1-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Qui décide de l'affectation du résultat ?",
+   "en": "Who decides how the result is appropriated?"
+  },
+  "explanation": {
+   "fr": "L'assemblée des associés.",
+   "en": "The partners' meeting."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "L'assemblée des associés",
+     "en": "The partners' meeting"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Le comptable",
+     "en": "The accountant"
+    }
+   },
+   {
+    "text": {
+     "fr": "L'administration fiscale",
+     "en": "The tax authority"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M1-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La réserve légale est dotée d'au moins…",
+   "en": "The legal reserve receives at least…"
+  },
+  "explanation": {
+   "fr": "Un dixième du bénéfice, jusqu'au cinquième du capital.",
+   "en": "One tenth of the profit, up to one fifth of the capital."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "un dixième du bénéfice",
+     "en": "one tenth of the profit"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "la moitié du bénéfice",
+     "en": "half the profit"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M1-008",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : à la réouverture, les charges constatées d'avance sont contrepassées.",
+   "en": "True or false: on reopening, prepaid expenses are reversed."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M1-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les dividendes décidés mais pas encore payés vont en…",
+   "en": "Dividends declared but not yet paid go to…"
+  },
+  "explanation": {
+   "fr": "465.",
+   "en": "465."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "465",
+     "en": "465"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "121",
+     "en": "121"
+    }
+   },
+   {
+    "text": {
+     "fr": "462",
+     "en": "462"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M1-010",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Capital 10 000 000 FCFA ; réserve légale existante 1 900 000 ; bénéfice 3 000 000. Quelle dotation minimale à la réserve légale ?",
+   "en": "2026 financial year. Capital 10,000,000 CFA francs; existing legal reserve 1,900,000; profit 3,000,000. What is the minimum legal reserve allocation?"
+  },
+  "explanation": {
+   "fr": "Un dixième donnerait 300 000, mais la réserve plafonne au cinquième du capital (2 000 000) : 100 000 FCFA.",
+   "en": "One tenth would be 300,000, but the reserve stops at one fifth of capital (2,000,000): 100,000 CFA francs."
+  },
+  "numeric": {
+   "value": "100000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M1-011",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le report à nouveau créditeur fait partie des capitaux propres.",
+   "en": "True or false: retained earnings with a credit balance are part of equity."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M1-012",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "À la clôture, les comptes de charges et de produits sont…",
+   "en": "At year end, expense and income accounts are…"
+  },
+  "explanation": {
+   "fr": "Soldés pour déterminer le résultat.",
+   "en": "Cleared to determine the result."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "soldés",
+     "en": "cleared"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "reportés à l'exercice suivant",
+     "en": "carried forward"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M1-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La réserve légale va en…",
+   "en": "The legal reserve goes to…"
+  },
+  "explanation": {
+   "fr": "111.",
+   "en": "111."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "111",
+     "en": "111"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "118",
+     "en": "118"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M1-102",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Bénéfice 2 000 000 FCFA. Quelle dotation à la réserve légale (10 %) ?",
+   "en": "2026 financial year. Profit 2,000,000 CFA francs. What legal reserve allocation (10%)?"
+  },
+  "explanation": {
+   "fr": "200 000 FCFA.",
+   "en": "200,000 CFA francs."
+  },
+  "numeric": {
+   "value": "200000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M1-103",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une perte peut être portée en report à nouveau débiteur.",
+   "en": "True or false: a loss can be carried as retained earnings with a debit balance."
+  },
+  "explanation": {
+   "fr": "Vrai : 129.",
+   "en": "True: 129."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M1-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le bilan d'ouverture est…",
+   "en": "The opening balance sheet is…"
+  },
+  "explanation": {
+   "fr": "Le bilan de clôture de l'exercice précédent.",
+   "en": "The previous year's closing balance sheet."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "le bilan de clôture précédent",
+     "en": "the previous closing balance sheet"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "un bilan nouveau",
+     "en": "a new balance sheet"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M1-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Bénéfice de 2 000 000 FCFA : réserve légale 200 000, le reste en report à nouveau. Passez l'écriture.",
+   "en": "2026 financial year. Profit of 2,000,000 CFA francs: legal reserve 200,000, the rest as retained earnings. Record the entry."
+  },
+  "explanation": {
+   "fr": "131 (2 000 000) ; 111 (200 000) ; 121 (1 800 000).",
+   "en": "131 (2,000,000); 111 (200,000); 121 (1,800,000)."
+  },
+  "journal": [
+   {
+    "account": "131",
+    "match": "3",
+    "side": "debit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Bénéfice",
+     "en": "Profit"
+    }
+   },
+   {
+    "account": "111",
+    "match": "3",
+    "side": "credit",
+    "amount": "200000",
+    "label": {
+     "fr": "Réserve légale",
+     "en": "Legal reserve"
+    }
+   },
+   {
+    "account": "121",
+    "match": "3",
+    "side": "credit",
+    "amount": "1800000",
+    "label": {
+     "fr": "Report à nouveau",
+     "en": "Retained earnings"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M1-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le report à nouveau créditeur va en…",
+   "en": "Retained earnings (credit) go to…"
+  },
+  "explanation": {
+   "fr": "121.",
+   "en": "121."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "121",
+     "en": "121"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "129",
+     "en": "129"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M1-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les dividendes sont une charge de l'exercice.",
+   "en": "True or false: dividends are an expense of the year."
+  },
+  "explanation": {
+   "fr": "Faux : c'est une affectation du bénéfice.",
+   "en": "False: they are an appropriation of profit."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M1-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un bénéfice s'inscrit en…",
+   "en": "A profit is recorded in…"
+  },
+  "explanation": {
+   "fr": "131.",
+   "en": "131."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "131",
+     "en": "131"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "139",
+     "en": "139"
+    }
+   }
+  ]
+ }
+]

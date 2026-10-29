@@ -1,0 +1,681 @@
+[
+ {
+  "id": "F-P1-M1-001",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Dans quel délai faut-il s'immatriculer après le début de l'activité ?",
+   "en": "Within what time must a business register after starting?"
+  },
+  "explanation": {
+   "fr": "15 jours ouvrables (CGI art. L 1).",
+   "en": "15 working days (GTC s. L 1)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "15 jours ouvrables",
+     "en": "15 working days"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "3 mois",
+     "en": "3 months"
+    }
+   },
+   {
+    "text": {
+     "fr": "1 an",
+     "en": "1 year"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-002",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Sous quel seuil de chiffre d'affaires une activité commerciale relève-t-elle de l'IGS ?",
+   "en": "Below what turnover does a commercial activity fall under the IGS?"
+  },
+  "explanation": {
+   "fr": "50 000 000 FCFA (CGI art. 93 quater).",
+   "en": "50,000,000 CFA francs (GTC s. 93 quater)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "50 000 000 FCFA",
+     "en": "50,000,000 CFA francs"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "10 000 000 FCFA",
+     "en": "10,000,000 CFA francs"
+    }
+   },
+   {
+    "text": {
+     "fr": "3 milliards",
+     "en": "3 billion"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-003",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Sous quel seuil une profession libérale relève-t-elle de l'IGS ?",
+   "en": "Below what turnover does a liberal profession fall under the IGS?"
+  },
+  "explanation": {
+   "fr": "30 000 000 FCFA.",
+   "en": "30,000,000 CFA francs."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "30 000 000 FCFA",
+     "en": "30,000,000 CFA francs"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "50 000 000 FCFA",
+     "en": "50,000,000 CFA francs"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-004",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une entreprise de téléphonie mobile relève du réel quel que soit son chiffre d'affaires.",
+   "en": "True or false: a mobile telephony business is under the actual regime whatever its turnover."
+  },
+  "explanation": {
+   "fr": "Vrai (CGI art. 93 quater).",
+   "en": "True (GTC s. 93 quater)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-005",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une entreprise dont le chiffre d'affaires passe sous le seuil change de régime dès l'année suivante.",
+   "en": "True or false: a business whose turnover falls below the threshold changes regime the next year."
+  },
+  "explanation": {
+   "fr": "Faux : elle reste deux ans dans son régime initial (art. 93 quinquies).",
+   "en": "False: it stays two years in its original regime (s. 93 quinquies)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel livre du CGI traite du contrôle et du contentieux ?",
+   "en": "Which book of the Tax Code covers audits and disputes?"
+  },
+  "explanation": {
+   "fr": "Le Livre deuxième, Livre des procédures fiscales.",
+   "en": "Book Two, the Tax Procedures Book."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "le Livre des procédures fiscales",
+     "en": "the Tax Procedures Book"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "le Livre premier",
+     "en": "Book One"
+    }
+   },
+   {
+    "text": {
+     "fr": "le Livre troisième",
+     "en": "Book Three"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel livre du CGI traite de la fiscalité locale ?",
+   "en": "Which book covers local taxation?"
+  },
+  "explanation": {
+   "fr": "Le Livre troisième.",
+   "en": "Book Three."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "le Livre troisième",
+     "en": "Book Three"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "le Livre premier",
+     "en": "Book One"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-008",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un commerçant réalise 42 000 000 FCFA de chiffre d'affaires. Son régime ?",
+   "en": "A trader has 42,000,000 CFA francs of turnover. Its regime?"
+  },
+  "explanation": {
+   "fr": "L'IGS, sous le seuil de 50 000 000.",
+   "en": "The IGS, below the 50,000,000 threshold."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "IGS",
+     "en": "IGS"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Régime du réel",
+     "en": "Actual regime"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un consultant (profession libérale) réalise 35 000 000 FCFA. Son régime ?",
+   "en": "A consultant (liberal profession) has 35,000,000 CFA francs of turnover. Its regime?"
+  },
+  "explanation": {
+   "fr": "Le réel : seuil de 30 000 000 pour les libéraux.",
+   "en": "Actual regime: 30,000,000 threshold for liberal professions."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Régime du réel",
+     "en": "Actual regime"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "IGS",
+     "en": "IGS"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-010",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le numéro identifiant unique doit figurer sur les documents des transactions.",
+   "en": "True or false: the unique identification number must appear on transaction documents."
+  },
+  "explanation": {
+   "fr": "Vrai (CGI art. L 1 bis).",
+   "en": "True (GTC s. L 1 bis)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-011",
+  "type": "multiple",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quels secteurs relèvent du réel quel que soit le chiffre d'affaires ?",
+   "en": "Which sectors are under the actual regime whatever their turnover?"
+  },
+  "explanation": {
+   "fr": "Pétrole, mines, assurance… (art. 93 quater) ; pas le commerce de détail en tant que tel.",
+   "en": "Oil, mining, insurance… (s. 93 quater); not retail as such."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Assurance",
+     "en": "Insurance"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Mines",
+     "en": "Mining"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Microfinance",
+     "en": "Microfinance"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Coiffure",
+     "en": "Hairdressing"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-012",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quelle édition du CGI sert de référence à cette formation ?",
+   "en": "Which edition of the Tax Code is this course based on?"
+  },
+  "explanation": {
+   "fr": "L'édition 2026, à jour de la loi de finances 2026.",
+   "en": "The 2026 edition, updated for the 2026 finance law."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "2026",
+     "en": "2026"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "2017",
+     "en": "2017"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "L'IS et l'IRPP figurent dans…",
+   "en": "Corporate and personal income tax are in…"
+  },
+  "explanation": {
+   "fr": "Le Livre premier du CGI.",
+   "en": "Book One of the Tax Code."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "le Livre premier",
+     "en": "Book One"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "le Livre deuxième",
+     "en": "Book Two"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-102",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le seuil de l'IGS pour les activités commerciales est de 50 000 000 FCFA.",
+   "en": "True or false: the IGS threshold for commercial activities is 50,000,000 CFA francs."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-103",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une entreprise à 60 000 000 FCFA de chiffre d'affaires commercial relève…",
+   "en": "A business with 60,000,000 CFA francs of commercial turnover falls under…"
+  },
+  "explanation": {
+   "fr": "Du régime du réel.",
+   "en": "The actual regime."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "du réel",
+     "en": "the actual regime"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "de l'IGS",
+     "en": "the IGS"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Que reçoit l'entreprise lors de son immatriculation ?",
+   "en": "What does a business receive on registration?"
+  },
+  "explanation": {
+   "fr": "Un numéro identifiant unique.",
+   "en": "A unique identification number."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "un numéro identifiant unique",
+     "en": "a unique identification number"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "une patente gratuite",
+     "en": "a free licence"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-105",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le Livre des procédures fiscales fait partie du CGI.",
+   "en": "True or false: the Tax Procedures Book is part of the Tax Code."
+  },
+  "explanation": {
+   "fr": "Vrai : c'est le Livre deuxième.",
+   "en": "True: it is Book Two."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Combien de temps une entreprise reste-t-elle dans son régime si son chiffre d'affaires baisse ?",
+   "en": "How long does a business stay in its regime if turnover falls?"
+  },
+  "explanation": {
+   "fr": "Deux ans.",
+   "en": "Two years."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Deux ans",
+     "en": "Two years"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Six mois",
+     "en": "Six months"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-107",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une profession libérale à 25 000 000 FCFA de chiffre d'affaires relève…",
+   "en": "A liberal profession with 25,000,000 CFA francs of turnover falls under…"
+  },
+  "explanation": {
+   "fr": "De l'IGS.",
+   "en": "The IGS."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "de l'IGS",
+     "en": "the IGS"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "du réel",
+     "en": "the actual regime"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M1-108",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une entreprise peut commencer son activité et s'immatriculer six mois plus tard.",
+   "en": "True or false: a business may start and register six months later."
+  },
+  "explanation": {
+   "fr": "Faux : 15 jours ouvrables.",
+   "en": "False: 15 working days."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ }
+]

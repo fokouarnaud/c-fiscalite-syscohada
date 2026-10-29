@@ -1,0 +1,616 @@
+[
+ {
+  "id": "F-P1-M2-001",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Bénéfice imposable 12 345 678 FCFA ; chiffre d'affaires sous 3 milliards (taux 25 %). Quel est l'IS, centimes compris ?",
+   "en": "2026 financial year. Taxable profit 12,345,678 CFA francs; turnover below 3 billion (25% rate). What is corporate tax, council cents included?"
+  },
+  "explanation": {
+   "fr": "Base 12 345 000 × 25 % = 3 086 250 ; + 10 % de CAC = 3 394 875 FCFA.",
+   "en": "Base 12,345,000 × 25% = 3,086,250; + 10% council cents = 3,394,875 CFA francs."
+  },
+  "numeric": {
+   "value": "3394875",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P1-M2-002",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Chiffre d'affaires de référence 400 000 999 FCFA. Quel est le minimum de perception, centimes compris (2 % + 10 %) ?",
+   "en": "2026 financial year. Reference turnover 400,000,999 CFA francs. What is the minimum tax, council cents included (2% + 10%)?"
+  },
+  "explanation": {
+   "fr": "Base 400 000 000 × 2 % = 8 000 000 ; + 800 000 = 8 800 000 FCFA.",
+   "en": "Base 400,000,000 × 2% = 8,000,000; + 800,000 = 8,800,000 CFA francs."
+  },
+  "numeric": {
+   "value": "8800000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P1-M2-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Bénéfice 50 000 000 FCFA ; chiffre d'affaires 4 milliards (taux 30 %). Quel est l'IS, centimes compris ?",
+   "en": "2026 financial year. Profit 50,000,000 CFA francs; turnover 4 billion (30% rate). What is corporate tax, council cents included?"
+  },
+  "explanation": {
+   "fr": "15 000 000 + 1 500 000 = 16 500 000 FCFA.",
+   "en": "15,000,000 + 1,500,000 = 16,500,000 CFA francs."
+  },
+  "numeric": {
+   "value": "16500000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P1-M2-004",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel est le taux normal de l'IS ?",
+   "en": "What is the standard corporate tax rate?"
+  },
+  "explanation": {
+   "fr": "30 % (CGI art. 17).",
+   "en": "30% (GTC s. 17)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "30 %",
+     "en": "30%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "25 %",
+     "en": "25%"
+    }
+   },
+   {
+    "text": {
+     "fr": "19,25 %",
+     "en": "19.25%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M2-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Jusqu'à quel chiffre d'affaires s'applique le taux réduit de 25 % ?",
+   "en": "Up to what turnover does the 25% reduced rate apply?"
+  },
+  "explanation": {
+   "fr": "3 milliards de FCFA inclus (CGI art. 17 bis).",
+   "en": "3 billion CFA francs inclusive (GTC s. 17 bis)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "3 milliards",
+     "en": "3 billion"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "50 millions",
+     "en": "50 million"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M2-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une charge est déductible si elle est…",
+   "en": "An expense is deductible if it is…"
+  },
+  "explanation": {
+   "fr": "Nécessitée directement par l'exercice de l'activité (CGI art. 7).",
+   "en": "Directly required by the business (GTC s. 7)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "nécessitée par l'activité",
+     "en": "required by the business"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "payée en espèces",
+     "en": "paid in cash"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M2-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une grande entreprise dépose sa déclaration des résultats au plus tard le…",
+   "en": "A large company files its tax return by…"
+  },
+  "explanation": {
+   "fr": "15 mars (CGI art. 18).",
+   "en": "15 March (GTC s. 18)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "15 mars",
+     "en": "15 March"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "15 avril",
+     "en": "15 April"
+    }
+   },
+   {
+    "text": {
+     "fr": "15 mai",
+     "en": "15 May"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M2-008",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : si l'IS calculé est inférieur au minimum de perception, c'est le minimum qui est dû.",
+   "en": "True or false: if computed corporate tax is below the minimum tax, the minimum is due."
+  },
+  "explanation": {
+   "fr": "Vrai (art. 21).",
+   "en": "True (s. 21)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M2-009",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une SARL unipersonnelle est soumise à l'IS.",
+   "en": "True or false: a single-member limited company is subject to corporate tax."
+  },
+  "explanation": {
+   "fr": "Vrai (art. 3).",
+   "en": "True (s. 3)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M2-010",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La base du minimum de perception est…",
+   "en": "The minimum tax base is…"
+  },
+  "explanation": {
+   "fr": "Le chiffre d'affaires de référence, arrondi au millier inférieur (art. 23).",
+   "en": "Reference turnover, rounded down to the thousand (s. 23)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "le chiffre d'affaires",
+     "en": "turnover"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "le bénéfice",
+     "en": "profit"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M2-011",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Bénéfice 8 400 999 FCFA. Quelle est la base de calcul de l'IS ?",
+   "en": "2026 financial year. Profit 8,400,999 CFA francs. What is the corporate tax base?"
+  },
+  "explanation": {
+   "fr": "Fraction inférieure à 1 000 négligée : 8 400 000 FCFA.",
+   "en": "Fraction below 1,000 disregarded: 8,400,000 CFA francs."
+  },
+  "numeric": {
+   "value": "8400000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P1-M2-012",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le résultat fiscal part du résultat comptable, corrigé…",
+   "en": "Taxable profit starts from the accounting result, adjusted for…"
+  },
+  "explanation": {
+   "fr": "Des réintégrations et des déductions.",
+   "en": "Add-backs and deductions."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "des réintégrations et déductions",
+     "en": "add-backs and deductions"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "de la TVA",
+     "en": "VAT"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M2-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel taux de centimes additionnels s'ajoute à l'IS ?",
+   "en": "What rate of council cents is added to corporate tax?"
+  },
+  "explanation": {
+   "fr": "10 % (art. C 83).",
+   "en": "10% (s. C 83)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "10 %",
+     "en": "10%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "5 %",
+     "en": "5%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M2-102",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Bénéfice 4 000 000 FCFA, taux 25 %. Quel est l'IS hors centimes ?",
+   "en": "2026 financial year. Profit 4,000,000 CFA francs, 25% rate. What is corporate tax excluding council cents?"
+  },
+  "explanation": {
+   "fr": "1 000 000 FCFA.",
+   "en": "1,000,000 CFA francs."
+  },
+  "numeric": {
+   "value": "1000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P1-M2-103",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le minimum de perception est versé par acomptes mensuels.",
+   "en": "True or false: the minimum tax is paid in monthly instalments."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M2-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel est le taux du minimum de perception au régime du réel ?",
+   "en": "What is the minimum tax rate under the actual regime?"
+  },
+  "explanation": {
+   "fr": "2 % (art. 21).",
+   "en": "2% (s. 21)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "2 %",
+     "en": "2%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "5 %",
+     "en": "5%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M2-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. L'IS de l'exercice, 3 394 875 FCFA, reste dû à la clôture. Passez l'écriture.",
+   "en": "2026 financial year. The year's corporate tax, 3,394,875 CFA francs, is still owed at year end. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 891, crédit 441.",
+   "en": "Debit 891, credit 441."
+  },
+  "journal": [
+   {
+    "account": "891",
+    "match": "3",
+    "side": "debit",
+    "amount": "3394875",
+    "label": {
+     "fr": "Impôt sur les bénéfices",
+     "en": "Income tax"
+    }
+   },
+   {
+    "account": "441",
+    "match": "3",
+    "side": "credit",
+    "amount": "3394875",
+    "label": {
+     "fr": "État, impôt sur les bénéfices",
+     "en": "State, income tax"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M2-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une moyenne entreprise dépose sa déclaration des résultats au plus tard le…",
+   "en": "A medium-sized company files its tax return by…"
+  },
+  "explanation": {
+   "fr": "15 avril.",
+   "en": "15 April."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "15 avril",
+     "en": "15 April"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "15 mars",
+     "en": "15 March"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M2-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une charge sans lien avec l'activité est déductible si elle est payée.",
+   "en": "True or false: an expense unrelated to the business is deductible if paid."
+  },
+  "explanation": {
+   "fr": "Faux.",
+   "en": "False."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M2-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "L'IS frappe…",
+   "en": "Corporate tax is charged on…"
+  },
+  "explanation": {
+   "fr": "Les bénéfices des sociétés et personnes morales.",
+   "en": "Profits of companies and legal entities."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "les bénéfices des sociétés",
+     "en": "company profits"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "les salaires",
+     "en": "salaries"
+    }
+   }
+  ]
+ }
+]

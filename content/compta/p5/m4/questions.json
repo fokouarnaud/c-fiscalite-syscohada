@@ -1,0 +1,655 @@
+[
+ {
+  "id": "C-P5-M4-001",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Flux opérationnels +3 000 000 FCFA ; investissement −15 000 000 ; financement +10 000 000. Quelle est la variation de la trésorerie nette ?",
+   "en": "2026 financial year. Operating flows +3,000,000 CFA francs; investing −15,000,000; financing +10,000,000. What is the change in net cash?"
+  },
+  "explanation": {
+   "fr": "3 000 000 − 15 000 000 + 10 000 000 = −2 000 000 FCFA.",
+   "en": "3,000,000 − 15,000,000 + 10,000,000 = −2,000,000 CFA francs."
+  },
+  "numeric": {
+   "value": "-2000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M4-002",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "L'achat d'un camion est un flux…",
+   "en": "Buying a lorry is a…"
+  },
+  "explanation": {
+   "fr": "D'investissement.",
+   "en": "Investing flow."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "d'investissement",
+     "en": "investing flow"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "opérationnel",
+     "en": "operating flow"
+    }
+   },
+   {
+    "text": {
+     "fr": "de financement",
+     "en": "financing flow"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M4-003",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Un emprunt reçu est un flux…",
+   "en": "A loan received is a…"
+  },
+  "explanation": {
+   "fr": "De financement.",
+   "en": "Financing flow."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "de financement",
+     "en": "financing flow"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "d'investissement",
+     "en": "investing flow"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M4-004",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le paiement des fournisseurs de marchandises est un flux…",
+   "en": "Paying suppliers of goods is a…"
+  },
+  "explanation": {
+   "fr": "Opérationnel.",
+   "en": "Operating flow."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "opérationnel",
+     "en": "operating flow"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "de financement",
+     "en": "financing flow"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M4-005",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Les dividendes de 2 000 000 FCFA sont versés par virement. Passez l'écriture (flux de financement).",
+   "en": "2026 financial year. Dividends of 2,000,000 CFA francs are paid by transfer. Record the entry (financing flow)."
+  },
+  "explanation": {
+   "fr": "Débit 465, crédit 521.",
+   "en": "Debit 465, credit 521."
+  },
+  "journal": [
+   {
+    "account": "465",
+    "match": "3",
+    "side": "debit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Dividendes à payer",
+     "en": "Dividends payable"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "2000000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M4-006",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les dotations aux amortissements diminuent la trésorerie.",
+   "en": "True or false: depreciation reduces cash."
+  },
+  "explanation": {
+   "fr": "Faux : ce ne sont pas des décaissements.",
+   "en": "False: they are not cash payments."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M4-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le TFT explique…",
+   "en": "The cash flow statement explains…"
+  },
+  "explanation": {
+   "fr": "La variation de la trésorerie nette entre deux bilans.",
+   "en": "The change in net cash between two balance sheets."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "la variation de la trésorerie",
+     "en": "the change in cash"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "la variation du résultat",
+     "en": "the change in result"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M4-008",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le versement de dividendes est un flux…",
+   "en": "Paying dividends is a…"
+  },
+  "explanation": {
+   "fr": "De financement.",
+   "en": "Financing flow."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "de financement",
+     "en": "financing flow"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "opérationnel",
+     "en": "operating flow"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M4-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La cession d'un entrepôt est un flux…",
+   "en": "Selling a warehouse is a…"
+  },
+  "explanation": {
+   "fr": "D'investissement.",
+   "en": "Investing flow."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "d'investissement",
+     "en": "investing flow"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "de financement",
+     "en": "financing flow"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M4-010",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Trésorerie nette d'ouverture 4 000 000 FCFA ; variation de l'exercice −2 000 000. Quelle est la trésorerie nette de clôture ?",
+   "en": "2026 financial year. Opening net cash 4,000,000 CFA francs; change for the year −2,000,000. What is closing net cash?"
+  },
+  "explanation": {
+   "fr": "4 000 000 − 2 000 000 = 2 000 000 FCFA.",
+   "en": "4,000,000 − 2,000,000 = 2,000,000 CFA francs."
+  },
+  "numeric": {
+   "value": "2000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M4-011",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : un remboursement d'emprunt est un flux d'investissement.",
+   "en": "True or false: a loan repayment is an investing flow."
+  },
+  "explanation": {
+   "fr": "Faux : c'est un flux de financement.",
+   "en": "False: it is a financing flow."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M4-012",
+  "type": "matching",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Associez chaque opération à sa famille de flux.",
+   "en": "Match each transaction with its flow group."
+  },
+  "explanation": {
+   "fr": "Salaires : opérationnel ; achat de matériel : investissement ; emprunt : financement.",
+   "en": "Wages: operating; equipment purchase: investing; loan: financing."
+  },
+  "pairs": [
+   {
+    "left": {
+     "fr": "Paiement des salaires",
+     "en": "Paying wages"
+    },
+    "right": {
+     "fr": "Opérationnel",
+     "en": "Operating"
+    }
+   },
+   {
+    "left": {
+     "fr": "Achat de matériel",
+     "en": "Buying equipment"
+    },
+    "right": {
+     "fr": "Investissement",
+     "en": "Investing"
+    }
+   },
+   {
+    "left": {
+     "fr": "Emprunt reçu",
+     "en": "Loan received"
+    },
+    "right": {
+     "fr": "Financement",
+     "en": "Financing"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M4-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Combien de familles de flux compte le TFT ?",
+   "en": "How many flow groups does the cash flow statement have?"
+  },
+  "explanation": {
+   "fr": "Trois.",
+   "en": "Three."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Trois",
+     "en": "Three"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Deux",
+     "en": "Two"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M4-102",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : l'encaissement d'une créance client est un flux opérationnel.",
+   "en": "True or false: collecting a customer receivable is an operating flow."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M4-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Flux opérationnels +5 000 000 ; investissement −2 000 000 ; financement −1 000 000. Quelle variation de trésorerie ?",
+   "en": "2026 financial year. Operating +5,000,000; investing −2,000,000; financing −1,000,000. What change in cash?"
+  },
+  "explanation": {
+   "fr": "+2 000 000 FCFA.",
+   "en": "+2,000,000 CFA francs."
+  },
+  "numeric": {
+   "value": "2000000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "C-P5-M4-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une augmentation de capital en numéraire est un flux…",
+   "en": "A cash capital increase is a…"
+  },
+  "explanation": {
+   "fr": "De financement.",
+   "en": "Financing flow."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "de financement",
+     "en": "financing flow"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "opérationnel",
+     "en": "operating flow"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M4-105",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Remboursement de 1 637 975 FCFA de capital d'emprunt par virement. Passez l'écriture.",
+   "en": "2026 financial year. Repayment of 1,637,975 CFA francs of loan capital by transfer. Record the entry."
+  },
+  "explanation": {
+   "fr": "Débit 162, crédit 521.",
+   "en": "Debit 162, credit 521."
+  },
+  "journal": [
+   {
+    "account": "162",
+    "match": "3",
+    "side": "debit",
+    "amount": "1637975",
+    "label": {
+     "fr": "Emprunts",
+     "en": "Loans"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "1637975",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M4-106",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la trésorerie peut baisser alors que l'entreprise fait un bénéfice.",
+   "en": "True or false: cash can fall while the business makes a profit."
+  },
+  "explanation": {
+   "fr": "Vrai : par exemple à cause d'un gros investissement.",
+   "en": "True: for example because of a large investment."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M4-107",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La CAFG part…",
+   "en": "Overall self-financing capacity starts from…"
+  },
+  "explanation": {
+   "fr": "De l'EBE.",
+   "en": "The GOS."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "de l'EBE",
+     "en": "the GOS"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "du chiffre d'affaires",
+     "en": "turnover"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P5-M4-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "L'impôt payé est un flux…",
+   "en": "Tax paid is a…"
+  },
+  "explanation": {
+   "fr": "Opérationnel.",
+   "en": "Operating flow."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "opérationnel",
+     "en": "operating flow"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "de financement",
+     "en": "financing flow"
+    }
+   }
+  ]
+ }
+]

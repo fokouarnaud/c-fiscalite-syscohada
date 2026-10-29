@@ -1,0 +1,607 @@
+[
+ {
+  "id": "F-P2-M3-001",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Entrepôt d'une valeur de 80 000 000 FCFA. Quelle taxe foncière au taux de 0,1 % ?",
+   "en": "2026 financial year. A warehouse worth 80,000,000 CFA francs. What property tax at 0.1%?"
+  },
+  "explanation": {
+   "fr": "80 000 FCFA (art. C 53).",
+   "en": "80,000 CFA francs (s. C 53)."
+  },
+  "numeric": {
+   "value": "80000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P2-M3-002",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Salaire de base mensuel de 250 000 FCFA. Quelle TDL annuelle ?",
+   "en": "2026 financial year. Monthly base salary of 250,000 CFA francs. What yearly local development tax?"
+  },
+  "explanation": {
+   "fr": "Tranche 200 001 à 250 000 : 18 000 FCFA par an (art. C 86).",
+   "en": "Bracket 200,001 to 250,000: 18,000 CFA francs a year (s. C 86)."
+  },
+  "numeric": {
+   "value": "18000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P2-M3-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Salaire de base mensuel de 600 000 FCFA. Quelle TDL annuelle ?",
+   "en": "2026 financial year. Monthly base salary of 600,000 CFA francs. What yearly local development tax?"
+  },
+  "explanation": {
+   "fr": "Au-delà de 500 000 : 30 000 FCFA par an.",
+   "en": "Above 500,000: 30,000 CFA francs a year."
+  },
+  "numeric": {
+   "value": "30000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P2-M3-004",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quelle part les services de l'État retiennent-ils sur les impôts locaux qu'ils collectent ?",
+   "en": "What share do State services keep on the local taxes they collect?"
+  },
+  "explanation": {
+   "fr": "10 % de frais d'assiette et de recouvrement (art. C 4).",
+   "en": "10% for assessment and collection (s. C 4)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "10 %",
+     "en": "10%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "50 %",
+     "en": "50%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M3-005",
+  "type": "multiple",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Lesquels sont des impôts communaux ?",
+   "en": "Which of these are municipal taxes?"
+  },
+  "explanation": {
+   "fr": "Patente, IGS et taxe foncière (art. C 7) ; l'IS est un impôt d'État.",
+   "en": "Business licence, IGS and property tax (s. C 7); corporate tax is a State tax."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Contribution des patentes",
+     "en": "Business licence contribution"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Impôt général synthétique",
+     "en": "General Synthetic Tax"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Taxe sur la propriété foncière",
+     "en": "Property tax"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Impôt sur les sociétés",
+     "en": "Corporate income tax"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M3-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La contribution des patentes est assise sur…",
+   "en": "The business licence contribution is based on…"
+  },
+  "explanation": {
+   "fr": "Le chiffre d'affaires.",
+   "en": "Turnover."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "le chiffre d'affaires",
+     "en": "turnover"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "le bénéfice",
+     "en": "profit"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M3-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel est le taux de base de la taxe sur la propriété foncière ?",
+   "en": "What is the base property tax rate?"
+  },
+  "explanation": {
+   "fr": "0,1 % (art. C 53).",
+   "en": "0.1% (s. C 53)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "0,1 %",
+     "en": "0.1%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "1 %",
+     "en": "1%"
+    }
+   },
+   {
+    "text": {
+     "fr": "10 %",
+     "en": "10%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M3-008",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le droit communal de mutation d'immeubles urbains bâtis est de…",
+   "en": "The municipal transfer duty on developed urban property is…"
+  },
+  "explanation": {
+   "fr": "10 % (art. C 57).",
+   "en": "10% (s. C 57)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "10 %",
+     "en": "10%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "0,1 %",
+     "en": "0.1%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M3-009",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les centimes additionnels communaux sur la TVA sont de 10 %.",
+   "en": "True or false: council cents on VAT are 10%."
+  },
+  "explanation": {
+   "fr": "Vrai (art. C 83).",
+   "en": "True (s. C 83)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M3-010",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la TDL est retenue sur le salaire par l'employeur.",
+   "en": "True or false: the local development tax is withheld from salary by the employer."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M3-011",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Salaire de base mensuel de 70 000 FCFA. Quelle TDL annuelle ?",
+   "en": "2026 financial year. Monthly base salary of 70,000 CFA francs. What yearly local development tax?"
+  },
+  "explanation": {
+   "fr": "Tranche 62 000 à 75 000 : 3 000 FCFA par an.",
+   "en": "Bracket 62,000 to 75,000: 3,000 CFA francs a year."
+  },
+  "numeric": {
+   "value": "3000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P2-M3-012",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La TDL finance notamment…",
+   "en": "The local development tax funds in particular…"
+  },
+  "explanation": {
+   "fr": "L'éclairage public, l'assainissement et l'enlèvement des ordures.",
+   "en": "Street lighting, sanitation and refuse collection."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "les services de base communaux",
+     "en": "basic municipal services"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "les routes nationales",
+     "en": "national roads"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M3-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La taxe foncière est due…",
+   "en": "Property tax is due…"
+  },
+  "explanation": {
+   "fr": "Chaque année (art. C 49).",
+   "en": "Every year (s. C 49)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "chaque année",
+     "en": "every year"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "à chaque vente",
+     "en": "on each sale"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M3-102",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Immeuble de 30 000 000 FCFA. Quelle taxe foncière (0,1 %) ?",
+   "en": "2026 financial year. A building worth 30,000,000 CFA francs. What property tax (0.1%)?"
+  },
+  "explanation": {
+   "fr": "30 000 FCFA.",
+   "en": "30,000 CFA francs."
+  },
+  "numeric": {
+   "value": "30000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P2-M3-103",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : l'IGS est un impôt communal.",
+   "en": "True or false: the IGS is a municipal tax."
+  },
+  "explanation": {
+   "fr": "Vrai (art. C 7).",
+   "en": "True (s. C 7)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M3-104",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les centimes additionnels sur les droits d'accises sont de…",
+   "en": "Council cents on excise duties are…"
+  },
+  "explanation": {
+   "fr": "5 %.",
+   "en": "5%."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "5 %",
+     "en": "5%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "10 %",
+     "en": "10%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M3-105",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Qui administre les impôts locaux ?",
+   "en": "Who administers local taxes?"
+  },
+  "explanation": {
+   "fr": "Les services fiscaux de l'État.",
+   "en": "State tax services."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "les services fiscaux de l'État",
+     "en": "State tax services"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "chaque entreprise",
+     "en": "each business"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M3-106",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. TDL annuelle de 18 000 FCFA. Quel montant retenir chaque mois ?",
+   "en": "2026 financial year. Yearly local development tax of 18,000 CFA francs. How much is withheld each month?"
+  },
+  "explanation": {
+   "fr": "1 500 FCFA.",
+   "en": "1,500 CFA francs."
+  },
+  "numeric": {
+   "value": "1500",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P2-M3-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la taxe foncière s'applique à 0,1 % quelle que soit la valeur de la propriété.",
+   "en": "True or false: property tax is 0.1% whatever the property's value."
+  },
+  "explanation": {
+   "fr": "Faux : un barème progressif s'applique au-delà de 500 000 000 FCFA.",
+   "en": "False: a progressive scale applies above 500,000,000 CFA francs."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "F-P2-M3-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le droit de timbre automobile est un impôt…",
+   "en": "The vehicle stamp duty is a…"
+  },
+  "explanation": {
+   "fr": "Communal (art. C 7).",
+   "en": "Municipal tax (s. C 7)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "communal",
+     "en": "municipal tax"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "douanier",
+     "en": "customs duty"
+    }
+   }
+  ]
+ }
+]

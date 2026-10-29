@@ -1,0 +1,578 @@
+[
+ {
+  "id": "F-P1-M3-001",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Salaire brut annuel 6 000 000 FCFA ; CNPS retraite 252 000. Quel est l'IRPP annuel, centimes compris ?",
+   "en": "2026 financial year. Gross annual salary 6,000,000 CFA francs; CNPS pension 252,000. What is the annual income tax, council cents included?"
+  },
+  "explanation": {
+   "fr": "Imposable 3 448 000 ; barème 462 000 ; + 10 % = 508 200 FCFA.",
+   "en": "Taxable 3,448,000; scale 462,000; + 10% = 508,200 CFA francs."
+  },
+  "numeric": {
+   "value": "508200",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P1-M3-002",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Salaire brut annuel 24 000 000 FCFA. Quel montant de frais professionnels est déductible ?",
+   "en": "2026 financial year. Gross annual salary 24,000,000 CFA francs. How much professional expense is deductible?"
+  },
+  "explanation": {
+   "fr": "30 % = 7 200 000, plafonnés à 4 800 000 FCFA.",
+   "en": "30% = 7,200,000, capped at 4,800,000 CFA francs."
+  },
+  "numeric": {
+   "value": "4800000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P1-M3-003",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Revenu imposable de 3 448 000 FCFA. Quel est l'IRPP du barème, hors centimes ?",
+   "en": "2026 financial year. Taxable income of 3,448,000 CFA francs. What is the scale tax, excluding council cents?"
+  },
+  "explanation": {
+   "fr": "200 000 + 150 000 + 25 % × 448 000 = 462 000 FCFA.",
+   "en": "200,000 + 150,000 + 25% × 448,000 = 462,000 CFA francs."
+  },
+  "numeric": {
+   "value": "462000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P1-M3-004",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Dividendes de 1 000 000 FCFA versés par une société dont le chiffre d'affaires dépasse 3 milliards. Quel impôt retenir, centimes compris ?",
+   "en": "2026 financial year. Dividends of 1,000,000 CFA francs paid by a company with turnover above 3 billion. What tax is withheld, council cents included?"
+  },
+  "explanation": {
+   "fr": "15 % = 150 000 ; + 10 % = 165 000 FCFA.",
+   "en": "15% = 150,000; + 10% = 165,000 CFA francs."
+  },
+  "numeric": {
+   "value": "165000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P1-M3-005",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Dividendes de 1 000 000 FCFA versés par une société dont le chiffre d'affaires est inférieur à 3 milliards. Quel impôt retenir, centimes compris ?",
+   "en": "2026 financial year. Dividends of 1,000,000 CFA francs paid by a company with turnover below 3 billion. What tax is withheld, council cents included?"
+  },
+  "explanation": {
+   "fr": "10 % = 100 000 ; + 10 % = 110 000 FCFA.",
+   "en": "10% = 100,000; + 10% = 110,000 CFA francs."
+  },
+  "numeric": {
+   "value": "110000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P1-M3-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quel abattement annuel s'applique aux salaires ?",
+   "en": "What yearly allowance applies to salaries?"
+  },
+  "explanation": {
+   "fr": "500 000 FCFA (art. 29).",
+   "en": "500,000 CFA francs (s. 29)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "500 000 FCFA",
+     "en": "500,000 CFA francs"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "1 000 000 FCFA",
+     "en": "1,000,000 CFA francs"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M3-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le taux de la tranche de 3 000 001 à 5 000 000 FCFA est de…",
+   "en": "The rate of the 3,000,001 to 5,000,000 bracket is…"
+  },
+  "explanation": {
+   "fr": "25 % (art. 69).",
+   "en": "25% (s. 69)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "25 %",
+     "en": "25%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "15 %",
+     "en": "15%"
+    }
+   },
+   {
+    "text": {
+     "fr": "35 %",
+     "en": "35%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M3-008",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les cotisations de retraite obligatoire versées à la CNPS se déduisent du salaire imposable.",
+   "en": "True or false: compulsory pension contributions paid to CNPS are deducted from taxable salary."
+  },
+  "explanation": {
+   "fr": "Vrai (art. 34).",
+   "en": "True (s. 34)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M3-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le taux libératoire général des revenus de capitaux mobiliers est de…",
+   "en": "The general final rate on investment income is…"
+  },
+  "explanation": {
+   "fr": "15 % (art. 70).",
+   "en": "15% (s. 70)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "15 %",
+     "en": "15%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "30 %",
+     "en": "30%"
+    }
+   },
+   {
+    "text": {
+     "fr": "10 %",
+     "en": "10%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M3-010",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les revenus versés à une personne établie dans un paradis fiscal sont imposés à…",
+   "en": "Income paid to a person in a tax haven is taxed at…"
+  },
+  "explanation": {
+   "fr": "30 % (art. 70).",
+   "en": "30% (s. 70)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "30 %",
+     "en": "30%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "15 %",
+     "en": "15%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M3-011",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : l'IRPP sur salaires est calculé sur une base annuelle.",
+   "en": "True or false: income tax on salaries is computed on a yearly basis."
+  },
+  "explanation": {
+   "fr": "Vrai ; il est retenu chaque mois.",
+   "en": "True; it is withheld monthly."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M3-012",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Salaire brut annuel 600 000 FCFA, sans CNPS. Quel est l'IRPP ?",
+   "en": "2026 financial year. Gross annual salary 600,000 CFA francs, no CNPS. What is the income tax?"
+  },
+  "explanation": {
+   "fr": "Net 420 000 < abattement de 500 000 : 0 FCFA.",
+   "en": "Net 420,000 < 500,000 allowance: 0 CFA francs."
+  },
+  "numeric": {
+   "value": "0",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P1-M3-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le taux de la première tranche du barème est de…",
+   "en": "The first bracket rate is…"
+  },
+  "explanation": {
+   "fr": "10 %.",
+   "en": "10%."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "10 %",
+     "en": "10%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "15 %",
+     "en": "15%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M3-102",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les frais professionnels forfaitaires sur salaires sont de…",
+   "en": "Flat-rate professional expenses on salaries are…"
+  },
+  "explanation": {
+   "fr": "30 %.",
+   "en": "30%."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "30 %",
+     "en": "30%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "20 %",
+     "en": "20%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M3-103",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les centimes additionnels s'appliquent aussi à l'impôt sur les revenus de capitaux mobiliers.",
+   "en": "True or false: council cents also apply to tax on investment income."
+  },
+  "explanation": {
+   "fr": "Vrai (art. 71).",
+   "en": "True (s. 71)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M3-104",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Revenu imposable de 2 000 000 FCFA. Quel est l'IRPP du barème, hors centimes ?",
+   "en": "2026 financial year. Taxable income of 2,000,000 CFA francs. What is the scale tax, excluding council cents?"
+  },
+  "explanation": {
+   "fr": "2 000 000 × 10 % = 200 000 FCFA.",
+   "en": "2,000,000 × 10% = 200,000 CFA francs."
+  },
+  "numeric": {
+   "value": "200000",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P1-M3-105",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Au-delà de 5 000 000 FCFA, le taux du barème est de…",
+   "en": "Above 5,000,000 CFA francs, the scale rate is…"
+  },
+  "explanation": {
+   "fr": "35 %.",
+   "en": "35%."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "35 %",
+     "en": "35%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "25 %",
+     "en": "25%"
+    }
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M3-106",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Intérêts de 500 000 FCFA, taux libératoire 15 % + 10 % de centimes. Quel impôt ?",
+   "en": "2026 financial year. Interest of 500,000 CFA francs, 15% final rate + 10% council cents. What tax?"
+  },
+  "explanation": {
+   "fr": "75 000 + 7 500 = 82 500 FCFA.",
+   "en": "75,000 + 7,500 = 82,500 CFA francs."
+  },
+  "numeric": {
+   "value": "82500",
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "F-P1-M3-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les frais professionnels déductibles sont plafonnés à 4 800 000 FCFA par an.",
+   "en": "True or false: deductible professional expenses are capped at 4,800,000 CFA francs a year."
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "F-P1-M3-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Qui retient l'IRPP sur salaires ?",
+   "en": "Who withholds income tax on salaries?"
+  },
+  "explanation": {
+   "fr": "L'employeur, à la source.",
+   "en": "The employer, at source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "l'employeur",
+     "en": "the employer"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "le salarié",
+     "en": "the employee"
+    }
+   }
+  ]
+ }
+]

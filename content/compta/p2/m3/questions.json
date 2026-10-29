@@ -1,0 +1,740 @@
+[
+ {
+  "id": "C-P2-M3-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Vente à crédit : marchandises 1 500 000 FCFA HT et port refacturé 50 000 FCFA HT ; TVA 19,25 %. Passez l'écriture.",
+   "en": "2026 financial year. Credit sale: goods 1,500,000 CFA francs excl. tax and carriage re-invoiced 50,000 excl. tax; VAT 19.25%. Record the entry."
+  },
+  "explanation": {
+   "fr": "Base 1 550 000 ; TVA 298 375 ; client débité de 1 848 375.",
+   "en": "Base 1,550,000; VAT 298,375; customer debited with 1,848,375."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "match": "3",
+    "side": "debit",
+    "amount": "1848375",
+    "label": {
+     "fr": "Clients",
+     "en": "Customers"
+    }
+   },
+   {
+    "account": "701",
+    "match": "3",
+    "side": "credit",
+    "amount": "1500000",
+    "label": {
+     "fr": "Ventes de marchandises",
+     "en": "Sales of goods"
+    }
+   },
+   {
+    "account": "7071",
+    "match": "4",
+    "side": "credit",
+    "amount": "50000",
+    "label": {
+     "fr": "Ports refacturés",
+     "en": "Carriage invoiced"
+    }
+   },
+   {
+    "account": "443",
+    "match": "3",
+    "side": "credit",
+    "amount": "298375",
+    "label": {
+     "fr": "TVA facturée",
+     "en": "VAT charged"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M3-002",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Vente au comptant, en espèces : 400 000 FCFA HT de marchandises ; TVA 19,25 %. Passez l'écriture.",
+   "en": "2026 financial year. Cash sale: 400,000 CFA francs excl. tax of goods; VAT 19.25%. Record the entry."
+  },
+  "explanation": {
+   "fr": "Caisse 477 000 ; ventes 400 000 ; TVA facturée 77 000.",
+   "en": "Cash 477,000; sales 400,000; VAT charged 77,000."
+  },
+  "journal": [
+   {
+    "account": "571",
+    "match": "3",
+    "side": "debit",
+    "amount": "477000",
+    "label": {
+     "fr": "Caisse",
+     "en": "Cash"
+    }
+   },
+   {
+    "account": "701",
+    "match": "3",
+    "side": "credit",
+    "amount": "400000",
+    "label": {
+     "fr": "Ventes de marchandises",
+     "en": "Sales of goods"
+    }
+   },
+   {
+    "account": "443",
+    "match": "3",
+    "side": "credit",
+    "amount": "77000",
+    "label": {
+     "fr": "TVA facturée",
+     "en": "VAT charged"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M3-003",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Mbarga Distribution facture au client une consigne de 20 000 FCFA sur des casiers. Passez l'écriture.",
+   "en": "2026 financial year. Mbarga Distribution charges the customer a 20,000 CFA franc deposit on crates. Record the entry."
+  },
+  "explanation": {
+   "fr": "Créance sur le client (411) et dette de consigne (4194).",
+   "en": "Receivable from the customer (411) and deposit liability (4194)."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "match": "3",
+    "side": "debit",
+    "amount": "20000",
+    "label": {
+     "fr": "Clients",
+     "en": "Customers"
+    }
+   },
+   {
+    "account": "4194",
+    "match": "4",
+    "side": "credit",
+    "amount": "20000",
+    "label": {
+     "fr": "Emballages consignés",
+     "en": "Packaging deposits"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M3-004",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Vente de 1 500 000 FCFA HT avec 50 000 FCFA HT de port refacturé ; TVA 19,25 %. Quelle est la TVA facturée ?",
+   "en": "2026 financial year. Sale of 1,500,000 CFA francs excl. tax with 50,000 excl. tax of carriage re-invoiced; VAT 19.25%. What VAT is charged?"
+  },
+  "explanation": {
+   "fr": "1 550 000 × 19,25 % = 298 375 FCFA.",
+   "en": "1,550,000 × 19.25% = 298,375 CFA francs."
+  },
+  "numeric": {
+   "value": "298375",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M3-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le port refacturé au client s'enregistre en…",
+   "en": "Carriage re-invoiced to the customer is recorded in…"
+  },
+  "explanation": {
+   "fr": "7071 Ports, emballages perdus et autres frais facturés.",
+   "en": "7071 Carriage, non-returnable packaging and other costs invoiced."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "7071",
+     "en": "7071"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "612",
+     "en": "612"
+    }
+   },
+   {
+    "text": {
+     "fr": "6015",
+     "en": "6015"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M3-006",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une prestation de services vendue s'enregistre en…",
+   "en": "A service sold is recorded in…"
+  },
+  "explanation": {
+   "fr": "706 Services vendus.",
+   "en": "706 Services sold."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "706",
+     "en": "706"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "701",
+     "en": "701"
+    }
+   },
+   {
+    "text": {
+     "fr": "702",
+     "en": "702"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M3-007",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une consigne facturée au client est un produit.",
+   "en": "True or false: a deposit charged to a customer is income."
+  },
+  "explanation": {
+   "fr": "Faux : c'est une dette envers le client (4194).",
+   "en": "False: it is a debt to the customer (4194)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M3-008",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Le client rend les casiers consignés (20 000 FCFA). Passez l'écriture.",
+   "en": "2026 financial year. The customer returns the crates on deposit (20,000 CFA francs). Record the entry."
+  },
+  "explanation": {
+   "fr": "La dette de consigne s'éteint : débit 4194, crédit 411.",
+   "en": "The deposit liability is cleared: debit 4194, credit 411."
+  },
+  "journal": [
+   {
+    "account": "4194",
+    "match": "4",
+    "side": "debit",
+    "amount": "20000",
+    "label": {
+     "fr": "Emballages consignés",
+     "en": "Packaging deposits"
+    }
+   },
+   {
+    "account": "411",
+    "match": "3",
+    "side": "credit",
+    "amount": "20000",
+    "label": {
+     "fr": "Clients",
+     "en": "Customers"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M3-009",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Quand une vente est-elle comptabilisée ?",
+   "en": "When is a sale recorded?"
+  },
+  "explanation": {
+   "fr": "À la livraison, fait générateur de la TVA (CGI art. 133).",
+   "en": "On delivery, the VAT taxable event (GTC s. 133)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "À la livraison",
+     "en": "On delivery"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "À l'encaissement",
+     "en": "On payment"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M3-010",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Vente de 3 000 000 FCFA HT ; TVA 19,25 %. Quel montant le client doit-il ?",
+   "en": "2026 financial year. Sale of 3,000,000 CFA francs excl. tax; VAT 19.25%. How much does the customer owe?"
+  },
+  "explanation": {
+   "fr": "3 000 000 + 577 500 = 3 577 500 FCFA.",
+   "en": "3,000,000 + 577,500 = 3,577,500 CFA francs."
+  },
+  "numeric": {
+   "value": "3577500",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M3-011",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La vente de produits fabriqués par l'entreprise s'enregistre en…",
+   "en": "The sale of goods made by the business is recorded in…"
+  },
+  "explanation": {
+   "fr": "702 Ventes de produits finis.",
+   "en": "702 Sales of finished goods."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "702",
+     "en": "702"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "701",
+     "en": "701"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M3-012",
+  "type": "multiple",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Lesquels sont des produits de classe 7 ?",
+   "en": "Which of these are class 7 income?"
+  },
+  "explanation": {
+   "fr": "Ventes de marchandises et services vendus ; la TVA facturée est une dette (443), la consigne aussi (4194).",
+   "en": "Sales of goods and services sold; VAT charged is a debt (443), so is the deposit (4194)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Ventes de marchandises",
+     "en": "Sales of goods"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Services vendus",
+     "en": "Services sold"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "TVA facturée",
+     "en": "VAT charged"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Consigne facturée",
+     "en": "Deposit charged"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M3-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La créance née d'une vente à crédit s'enregistre au débit de…",
+   "en": "The receivable from a credit sale is debited to…"
+  },
+  "explanation": {
+   "fr": "411 Clients.",
+   "en": "411 Customers."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "411",
+     "en": "411"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "401",
+     "en": "401"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M3-102",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La TVA d'une vente s'enregistre au crédit de…",
+   "en": "VAT on a sale is credited to…"
+  },
+  "explanation": {
+   "fr": "443 TVA facturée.",
+   "en": "443 VAT charged."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "443",
+     "en": "443"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "445",
+     "en": "445"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M3-103",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Vente de 800 000 FCFA HT ; TVA 19,25 %. Quelle est la TVA facturée ?",
+   "en": "2026 financial year. Sale of 800,000 CFA francs excl. tax; VAT 19.25%. What VAT is charged?"
+  },
+  "explanation": {
+   "fr": "800 000 × 19,25 % = 154 000 FCFA.",
+   "en": "800,000 × 19.25% = 154,000 CFA francs."
+  },
+  "numeric": {
+   "value": "154000",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M3-104",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Vente à crédit de services : 1 000 000 FCFA HT ; TVA 19,25 %. Passez l'écriture.",
+   "en": "2026 financial year. Services sold on credit: 1,000,000 CFA francs excl. tax; VAT 19.25%. Record the entry."
+  },
+  "explanation": {
+   "fr": "411 (1 192 500), 706 (1 000 000), 443 (192 500).",
+   "en": "411 (1,192,500), 706 (1,000,000), 443 (192,500)."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "match": "3",
+    "side": "debit",
+    "amount": "1192500",
+    "label": {
+     "fr": "Clients",
+     "en": "Customers"
+    }
+   },
+   {
+    "account": "706",
+    "match": "3",
+    "side": "credit",
+    "amount": "1000000",
+    "label": {
+     "fr": "Services vendus",
+     "en": "Services sold"
+    }
+   },
+   {
+    "account": "443",
+    "match": "3",
+    "side": "credit",
+    "amount": "192500",
+    "label": {
+     "fr": "TVA facturée",
+     "en": "VAT charged"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M3-105",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : une vente au comptant ne passe pas par le compte client.",
+   "en": "True or false: a cash sale does not go through the customer account."
+  },
+  "explanation": {
+   "fr": "Vrai : la caisse ou la banque est débitée directement.",
+   "en": "True: cash or bank is debited directly."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M3-106",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une consigne facturée au client se crédite à…",
+   "en": "A deposit charged to a customer is credited to…"
+  },
+  "explanation": {
+   "fr": "4194.",
+   "en": "4194."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "4194",
+     "en": "4194"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "4094",
+     "en": "4094"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M3-107",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : le port refacturé au client entre dans la base de la TVA.",
+   "en": "True or false: carriage re-invoiced to the customer is part of the VAT base."
+  },
+  "explanation": {
+   "fr": "Vrai : il fait partie du prix facturé.",
+   "en": "True: it is part of the price invoiced."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M3-108",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une vente de marchandises s'enregistre au crédit de…",
+   "en": "A sale of goods is credited to…"
+  },
+  "explanation": {
+   "fr": "701.",
+   "en": "701."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "701",
+     "en": "701"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "601",
+     "en": "601"
+    }
+   }
+  ]
+ }
+]

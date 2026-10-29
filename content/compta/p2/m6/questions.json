@@ -1,0 +1,724 @@
+[
+ {
+  "id": "C-P2-M6-001",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. La facture d'électricité de 150 000 FCFA HT est payée par virement ; TVA 19,25 %. Passez l'écriture.",
+   "en": "2026 financial year. The electricity bill of 150,000 CFA francs excl. tax is paid by transfer; VAT 19.25%. Record the entry."
+  },
+  "explanation": {
+   "fr": "605 (150 000), 4454 (28 875), banque 521 (178 875).",
+   "en": "605 (150,000), 4454 (28,875), bank 521 (178,875)."
+  },
+  "journal": [
+   {
+    "account": "605",
+    "match": "3",
+    "side": "debit",
+    "amount": "150000",
+    "label": {
+     "fr": "Électricité",
+     "en": "Electricity"
+    }
+   },
+   {
+    "account": "4454",
+    "match": "4",
+    "side": "debit",
+    "amount": "28875",
+    "label": {
+     "fr": "TVA sur services",
+     "en": "VAT on services"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "178875",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ],
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M6-002",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. La prime d'assurance annuelle de 300 000 FCFA est payée par virement (hors TVA). Passez l'écriture.",
+   "en": "2026 financial year. The annual insurance premium of 300,000 CFA francs is paid by transfer (no VAT). Record the entry."
+  },
+  "explanation": {
+   "fr": "Charge 625, banque 521.",
+   "en": "Expense 625, bank 521."
+  },
+  "journal": [
+   {
+    "account": "625",
+    "match": "3",
+    "side": "debit",
+    "amount": "300000",
+    "label": {
+     "fr": "Primes d'assurance",
+     "en": "Insurance premiums"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "300000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M6-003",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Mbarga Distribution encaisse par virement 250 000 FCFA de loyer d'un local sous-loué (hors TVA dans cet exercice). Passez l'écriture.",
+   "en": "2026 financial year. Mbarga Distribution receives 250,000 CFA francs by transfer as rent for a sublet unit (no VAT in this exercise). Record the entry."
+  },
+  "explanation": {
+   "fr": "Banque 521 au débit, produit 7073 au crédit.",
+   "en": "Bank 521 debited, income 7073 credited."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "match": "3",
+    "side": "debit",
+    "amount": "250000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   },
+   {
+    "account": "7073",
+    "match": "4",
+    "side": "credit",
+    "amount": "250000",
+    "label": {
+     "fr": "Locations",
+     "en": "Rentals"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M6-004",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les honoraires de l'expert-comptable s'enregistrent en…",
+   "en": "The accountant's fees are recorded in…"
+  },
+  "explanation": {
+   "fr": "632.",
+   "en": "632."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "632",
+     "en": "632"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "622",
+     "en": "622"
+    }
+   },
+   {
+    "text": {
+     "fr": "661",
+     "en": "661"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M6-005",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "La patente payée par l'entreprise s'enregistre en…",
+   "en": "The business licence tax paid is recorded in…"
+  },
+  "explanation": {
+   "fr": "641 Impôts et taxes directs.",
+   "en": "641 Direct taxes and duties."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "641",
+     "en": "641"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "891",
+     "en": "891"
+    }
+   },
+   {
+    "text": {
+     "fr": "447",
+     "en": "447"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M6-006",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : l'impôt sur les sociétés est une charge de classe 6.",
+   "en": "True or false: corporate income tax is a class 6 expense."
+  },
+  "explanation": {
+   "fr": "Faux : il s'enregistre en 891, classe 8.",
+   "en": "False: it is recorded in 891, class 8."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M6-007",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Les frais de tenue de compte prélevés par la banque s'enregistrent en…",
+   "en": "Account fees charged by the bank are recorded in…"
+  },
+  "explanation": {
+   "fr": "631 Frais bancaires.",
+   "en": "631 Bank charges."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "631",
+     "en": "631"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "671",
+     "en": "671"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M6-008",
+  "type": "numeric",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Facture d'électricité de 150 000 FCFA HT ; TVA 19,25 %. Quel est le TTC ?",
+   "en": "2026 financial year. Electricity bill of 150,000 CFA francs excl. tax; VAT 19.25%. What is the total?"
+  },
+  "explanation": {
+   "fr": "150 000 + 28 875 = 178 875 FCFA.",
+   "en": "150,000 + 28,875 = 178,875 CFA francs."
+  },
+  "numeric": {
+   "value": "178875",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M6-009",
+  "type": "matching",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Associez chaque charge à son compte.",
+   "en": "Match each expense with its account."
+  },
+  "explanation": {
+   "fr": "Loyer 622, assurance 625, publicité 627, téléphone 628.",
+   "en": "Rent 622, insurance 625, advertising 627, telephone 628."
+  },
+  "pairs": [
+   {
+    "left": {
+     "fr": "Loyer",
+     "en": "Rent"
+    },
+    "right": {
+     "fr": "622",
+     "en": "622"
+    }
+   },
+   {
+    "left": {
+     "fr": "Assurance",
+     "en": "Insurance"
+    },
+    "right": {
+     "fr": "625",
+     "en": "625"
+    }
+   },
+   {
+    "left": {
+     "fr": "Publicité",
+     "en": "Advertising"
+    },
+    "right": {
+     "fr": "627",
+     "en": "627"
+    }
+   },
+   {
+    "left": {
+     "fr": "Téléphone",
+     "en": "Telephone"
+    },
+    "right": {
+     "fr": "628",
+     "en": "628"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M6-010",
+  "type": "single",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une indemnité reçue de l'assureur après un sinistre est…",
+   "en": "An indemnity received from the insurer after a loss is…"
+  },
+  "explanation": {
+   "fr": "Un produit, 7582.",
+   "en": "Income, 7582."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "un produit (7582)",
+     "en": "income (7582)"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "une charge (625)",
+     "en": "an expense (625)"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M6-011",
+  "type": "truefalse",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la réparation courante d'un véhicule est une charge d'entretien.",
+   "en": "True or false: routine repair of a vehicle is a maintenance expense."
+  },
+  "explanation": {
+   "fr": "Vrai : 624.",
+   "en": "True: 624."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M6-012",
+  "type": "journal",
+  "usage": "exam",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. La patente de 600 000 FCFA est payée par virement. Passez l'écriture.",
+   "en": "2026 financial year. The 600,000 CFA franc business licence tax is paid by transfer. Record the entry."
+  },
+  "explanation": {
+   "fr": "Impôt direct 641, banque 521.",
+   "en": "Direct tax 641, bank 521."
+  },
+  "journal": [
+   {
+    "account": "641",
+    "match": "3",
+    "side": "debit",
+    "amount": "600000",
+    "label": {
+     "fr": "Impôts et taxes directs",
+     "en": "Direct taxes"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "600000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M6-101",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le loyer payé pour l'entrepôt s'enregistre en…",
+   "en": "Warehouse rent paid is recorded in…"
+  },
+  "explanation": {
+   "fr": "622.",
+   "en": "622."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "622",
+     "en": "622"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "7073",
+     "en": "7073"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M6-102",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Le loyer encaissé pour un local sous-loué s'enregistre en…",
+   "en": "Rent received for a sublet unit is recorded in…"
+  },
+  "explanation": {
+   "fr": "7073.",
+   "en": "7073."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "7073",
+     "en": "7073"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "622",
+     "en": "622"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M6-103",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : les frais bancaires sont une charge.",
+   "en": "True or false: bank charges are an expense."
+  },
+  "explanation": {
+   "fr": "Vrai : 631.",
+   "en": "True: 631."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M6-104",
+  "type": "numeric",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Abonnement téléphonique de 40 000 FCFA HT ; TVA 19,25 %. Quelle TVA est récupérable ?",
+   "en": "2026 financial year. Telephone subscription of 40,000 CFA francs excl. tax; VAT 19.25%. What VAT is recoverable?"
+  },
+  "explanation": {
+   "fr": "40 000 × 19,25 % = 7 700 FCFA.",
+   "en": "40,000 × 19.25% = 7,700 CFA francs."
+  },
+  "numeric": {
+   "value": "7700",
+   "unit": "FCFA"
+  },
+  "params": [
+   "tva.taux_global"
+  ]
+ },
+ {
+  "id": "C-P2-M6-105",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "L'impôt sur les bénéfices s'enregistre en…",
+   "en": "Income tax is recorded in…"
+  },
+  "explanation": {
+   "fr": "891.",
+   "en": "891."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "891",
+     "en": "891"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "641",
+     "en": "641"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M6-106",
+  "type": "journal",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Exercice 2026. Frais bancaires de 12 000 FCFA prélevés sur le compte. Passez l'écriture.",
+   "en": "2026 financial year. Bank charges of 12,000 CFA francs deducted from the account. Record the entry."
+  },
+  "explanation": {
+   "fr": "Charge 631, banque 521.",
+   "en": "Expense 631, bank 521."
+  },
+  "journal": [
+   {
+    "account": "631",
+    "match": "3",
+    "side": "debit",
+    "amount": "12000",
+    "label": {
+     "fr": "Frais bancaires",
+     "en": "Bank charges"
+    }
+   },
+   {
+    "account": "521",
+    "match": "3",
+    "side": "credit",
+    "amount": "12000",
+    "label": {
+     "fr": "Banque",
+     "en": "Bank"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M6-107",
+  "type": "single",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Une commission reçue pour avoir apporté un client à un partenaire est…",
+   "en": "A commission received for referring a customer to a partner is…"
+  },
+  "explanation": {
+   "fr": "Un produit accessoire, 7072.",
+   "en": "Ancillary income, 7072."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "un produit accessoire",
+     "en": "ancillary income"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "une vente de marchandises",
+     "en": "a sale of goods"
+    }
+   }
+  ]
+ },
+ {
+  "id": "C-P2-M6-108",
+  "type": "truefalse",
+  "usage": "quiz",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "prompt": {
+   "fr": "Vrai ou faux : la publicité est un service extérieur.",
+   "en": "True or false: advertising is an external service."
+  },
+  "explanation": {
+   "fr": "Vrai : 627.",
+   "en": "True: 627."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ }
+]
