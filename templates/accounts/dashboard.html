@@ -1,0 +1,94 @@
+{% extends "base.html" %}{% load i18n acad_i18n static %}
+{% block title %}{% translate "Mes cours" %}{% endblock %}
+{% block head %}<link rel="stylesheet" href="{% static 'acad/css/dashboard.css' %}">{% endblock %}
+{% block content %}
+<div class="page-head">
+  <h1>{% if user.first_name %}{% blocktranslate with name=user.first_name %}Bonjour, {{ name }}{% endblocktranslate %}{% else %}{% translate "Mes cours" %}{% endif %}</h1>
+</div>
+{% if announcements %}
+  <section class="announce" aria-labelledby="annonces">
+    <h2 id="annonces" class="visually-hidden">{% translate "Annonces" %}</h2>
+    {% for a in announcements %}
+      <article class="announce-item">
+        <span class="announce-icon" aria-hidden="true">{% include "icons/speakerphone.svg" %}</span>
+        <div><h3>{{ a.title }}</h3><p>{{ a.body|linebreaksbr }}</p><p class="muted small">{{ a.promotion.name }} · {{ a.published_at|date:"DATE_FORMAT" }}</p></div>
+      </article>
+    {% endfor %}
+  </section>
+{% endif %}
+{% if formations|length > 1 %}
+  {# Une formation à la fois : deux « Partie 1 » sur la même page prêtaient à confusion. #}
+  <nav class="formation-tabs" aria-label="{% translate 'Mes formations' %}">
+    {% for block in formations %}
+      <a class="formation-tab" href="?formation={{ block.formation.public_id }}"{% if block is current %} aria-current="page"{% endif %}>{% include "icons/"|add:block.formation.icon|add:".svg" %}<span{{ block.formation|lang_attr:"title" }}>{{ block.formation.title }}</span><strong>{{ block.progress }} %</strong></a>
+    {% endfor %}
+  </nav>
+{% endif %}
+{% with block=current %}
+{% if block %}
+  <div class="dash">
+    <section class="dash-side panel" aria-labelledby="formation-titre">
+      {# Avec le sélecteur, le nom est déjà dans l'onglet courant : le titre ne sert plus qu'aux lecteurs d'écran. #}
+      <h2 id="formation-titre" class="course-formation{% if formations|length > 1 %} visually-hidden{% endif %}">{% include "icons/"|add:block.formation.icon|add:".svg" %}<span{{ block.formation|lang_attr:"title" }}>{{ block.formation.title }}</span></h2>
+      <div class="course-meter">
+        <div class="meter" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ block.progress }}" aria-label="{% translate 'Progression' %}"><span style="width: {{ block.progress }}%"></span></div>
+        <strong>{{ block.progress }} %</strong>
+      </div>
+      {% if block.resume %}
+        <div class="resume">
+          <p class="muted small resume-where">{% blocktranslate with n=block.resume_part.order m=block.resume_row.number %}Partie {{ n }}, module M{{ m }} :{% endblocktranslate %} <span{{ block.resume|lang_attr:"title" }}>{{ block.resume.title }}</span></p>
+          {% if block.resume_section %}
+            <p class="resume-what"><span{{ block.resume_section|lang_attr:"title" }}>{{ block.resume_section.title }}</span></p>
+            <a class="btn resume-go" href="{% url 'section_detail' block.resume_section.public_id %}">{% include "icons/player-play.svg" %}<span>{% translate "Reprendre" %}</span></a>
+          {% else %}
+            <p class="resume-what">{% translate "Sections lues : il reste le quiz du module." %}</p>
+            <form class="inline-form" method="post" action="{% url 'start_quiz' block.resume.public_id %}">{% csrf_token %}<button class="btn resume-go" type="submit">{% include "icons/player-play.svg" %}<span>{% translate "Faire le quiz" %}</span></button></form>
+          {% endif %}
+        </div>
+      {% else %}
+        <p class="muted small">{% translate "Tous les modules sont terminés. Il reste les examens des parties." %}</p>
+      {% endif %}
+      {% if block.parts|length > 1 %}
+        <nav class="part-jump" aria-label="{% translate 'Parties de la formation' %}">
+          {% for row in block.parts %}<a href="#plan-{{ row.partie.public_id }}">{% blocktranslate with n=row.partie.order %}Partie {{ n }}{% endblocktranslate %}<strong>{{ row.progress }} %</strong></a>{% endfor %}
+        </nav>
+      {% endif %}
+    </section>
+    <div class="plan">
+      {% for row in block.parts %}
+        <section class="plan-part panel" id="plan-{{ row.partie.public_id }}" aria-labelledby="partie-{{ row.partie.public_id }}">
+          <div class="plan-head">
+            {% include "includes/partie_heading.html" with partie=row.partie tag="h3" %}
+            <span class="muted small">{{ row.progress }} %</span>
+          </div>
+          {% if row.partie.description %}<p class="muted small partie-desc"{{ row.partie|lang_attr:"description" }}>{{ row.partie.description }}</p>{% endif %}
+          <ol class="plan-modules">
+            {% for item in row.modules %}
+              <li>
+                <a class="plan-row{% if item.done %} done{% endif %}{% if item.module == block.resume %} current{% endif %}" href="{% url 'module_detail' item.module.public_id %}"{% if item.module == block.resume %} aria-current="step"{% endif %}>
+                  <span class="num">M{{ item.number }}</span>
+                  <span class="plan-title"><span{{ item.module|lang_attr:"title" }}>{{ item.module.title }}</span></span>
+                  <span class="plan-state">{% if item.done %}{% include "icons/circle-check.svg" %}<span class="visually-hidden">{% translate "Terminé" %}</span>{% elif item.steps_done %}{{ item.steps_done }}/{{ item.steps_total }}<span class="visually-hidden"> {% translate "étapes faites" %}</span>{% else %}{% blocktranslate with h=item.module.duration_hours %}{{ h }} h{% endblocktranslate %}{% endif %}</span>
+                </a>
+              </li>
+            {% endfor %}
+          </ol>
+          <a class="plan-exam{% if row.exam_unlocked %} open{% endif %}" href="{% url 'exam' row.partie.public_id %}">
+            <span class="exam-icon">{% if row.exam_unlocked %}{% include "icons/player-play.svg" %}{% else %}{% include "icons/lock.svg" %}{% endif %}</span>
+            <span class="plan-title">{% blocktranslate with n=row.partie.order %}Examen de la Partie {{ n }}{% endblocktranslate %}</span>
+            <span class="plan-state">{% if row.exam_unlocked %}{% translate "Ouvert" %}{% else %}{% translate "Ce qu'il reste à faire" %}{% endif %}</span>
+          </a>
+        </section>
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+{% endwith %}
+{% if not formations %}
+  <section class="panel empty">
+    <h2>{% translate "Aucune formation pour le moment" %}</h2>
+    <p class="muted">{% translate "Vous n'êtes inscrit à aucune formation. Choisissez-en une dans le catalogue ou saisissez le code de votre promotion." %}</p>
+    <div class="cta-row"><a class="btn" href="{% url 'catalogue' %}">{% translate "Voir le catalogue" %}</a> <a class="btn btn-ghost" href="{% url 'join_promotion' %}">{% translate "J'ai un code" %}</a></div>
+  </section>
+{% endif %}
+{% endblock %}

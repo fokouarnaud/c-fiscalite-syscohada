@@ -1,0 +1,9 @@
+{% extends "accounts/_single_panel.html" %}{% load i18n %}
+{% block title %}{% translate "Vérifiez vos e-mails" %}{% endblock %}
+{% block icon %}<span class="panel-icon">{% include "icons/mail.svg" %}</span>{% endblock %}
+{% block panel %}
+  <h1 id="titre-page">{% translate "Vérifiez vos e-mails" %}</h1>
+  <p>{% translate "Si les informations sont valides, un lien de confirmation vient de vous être envoyé. Ouvrez-le pour activer votre compte." %}</p>
+  <p class="muted small">{% translate "Sans confirmation, le compte est supprimé au bout de 7 jours. Pensez à regarder dans les courriers indésirables." %}</p>
+  <a class="btn btn-ghost" href="{% url 'login' %}">{% translate "Aller à la connexion" %}</a>
+{% endblock %}

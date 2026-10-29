@@ -1,0 +1,16 @@
+{% extends "accounts/_single_panel.html" %}{% load i18n %}
+{% block title %}{% translate "Vérification de certificat" %}{% endblock %}
+{% block icon %}<span class="panel-icon panel-icon-ok">{% include "icons/circle-check.svg" %}</span>{% endblock %}
+{% block panel %}
+  <h1 id="titre-page">{% translate "Certificat valide" %}</h1>
+  <p class="muted">{% translate "Ce certificat a bien été délivré par ComptaFisca Acad Ventisax." %}</p>
+  <dl class="verify-list">
+    <div><dt>{% translate "Titulaire" %}</dt><dd>{{ certificate.holder_name }}</dd></div>
+    <div><dt>{% translate "Formation" %}</dt><dd>{{ certificate.partie.formation.title }}</dd></div>
+    <div><dt>{% translate "Partie" %}</dt><dd>{{ certificate.partie.title }}</dd></div>
+    <div><dt>{% translate "Score" %}</dt><dd>{{ score }}</dd></div>
+    <div><dt>{% translate "Délivré le" %}</dt><dd>{{ certificate.issued_at|date:"DATE_FORMAT" }}</dd></div>
+    <div><dt>{% translate "Statut" %}</dt><dd><span class="badge badge-done">{% include "icons/check.svg" %}{% translate "valide" %}</span></dd></div>
+  </dl>
+  <p class="muted small mono">{% blocktranslate with n=certificate.public_id %}Numéro {{ n }}{% endblocktranslate %}</p>
+{% endblock %}

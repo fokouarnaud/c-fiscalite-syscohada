@@ -1,0 +1,18 @@
+{% extends "admin/base_site.html" %}{% load i18n %}
+{% block content %}
+<h1>{% blocktranslate with p=promotion.name %}Importer des apprenants dans {{ p }}{% endblocktranslate %}</h1>
+{% if error %}<p class="errornote">{{ error }}</p>{% endif %}
+{% if report %}
+  <p>{% blocktranslate count n=report.created|length %}{{ n }} apprenant créé.{% plural %}{{ n }} apprenants créés.{% endblocktranslate %}
+     {% translate "Notez ces mots de passe maintenant : ils ne seront plus affichés." %}</p>
+  <table>
+    <tr><th>{% translate "Identifiant" %}</th><th>{% translate "Mot de passe initial" %}</th></tr>
+    {% for row in report.created %}<tr><td>{{ row.username }}</td><td><code>{{ row.password }}</code></td></tr>{% endfor %}
+  </table>
+  {% if report.skipped %}<p>{% translate "Identifiants déjà utilisés, ignorés :" %} {{ report.skipped|join:", " }}</p>{% endif %}
+{% endif %}
+<form method="post" enctype="multipart/form-data">{% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit" class="bg-primary-600 text-white rounded-default px-3 py-2">{% translate "Importer" %}</button>
+</form>
+{% endblock %}

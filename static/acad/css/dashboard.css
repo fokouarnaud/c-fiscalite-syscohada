@@ -1,0 +1,60 @@
+/* « Mes cours » (2026-10-26) : une formation à la fois, reprise à la section, plan complet numéroté M1, M2…
+   Chargé seulement par templates/accounts/dashboard.html (budget CSS + JS des pages de section). */
+.formation-tabs { display: flex; gap: .35rem; margin: 0 0 1.25rem; padding: .3rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); }
+.formation-tab {
+  flex: 1 1 0; min-width: 0; display: flex; align-items: center; gap: .5rem; min-height: 44px; padding: .35rem .9rem;
+  border-radius: 999px; color: var(--ink); text-decoration: none; font-weight: 600;
+}
+.formation-tab span { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.formation-tab .icon { flex: none; width: 1.15rem; height: 1.15rem; color: var(--teal-ink); }
+.formation-tab strong { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.formation-tab[aria-current="page"] { background: var(--btn-bg); color: var(--btn-fg); }
+.formation-tab[aria-current="page"] .icon { color: var(--btn-fg); }
+@media (max-width: 479px) {
+  .formation-tabs { border-radius: var(--radius-sm); flex-direction: column; }
+  .formation-tab { border-radius: 10px; }
+  .formation-tab span { white-space: normal; }
+}
+.dash { display: grid; gap: 1rem; align-items: start; }
+@media (min-width: 1024px) {
+  .dash { grid-template-columns: 300px 1fr; gap: 1.5rem; }
+  .dash-side { position: sticky; top: 5.5rem; }
+}
+.dash-side { display: grid; gap: .9rem; }
+.dash-side h2.course-formation { gap: .55rem; margin: 0; font-size: 1.25rem; color: var(--heading); }
+.resume { display: grid; gap: .35rem; padding-top: .9rem; border-top: 1px solid var(--line); }
+.resume p { margin: 0; }
+.resume-what { font-weight: 600; color: var(--heading); }
+.resume .btn, .resume form { margin-top: .5rem; }
+.resume .btn { width: 100%; }
+.part-jump { display: flex; flex-wrap: wrap; gap: .4rem; padding-top: .9rem; border-top: 1px solid var(--line); }
+.part-jump a {
+  flex: 1 1 auto; display: flex; justify-content: space-between; align-items: center; gap: .5rem; min-height: 44px; padding: .3rem .85rem;
+  border-radius: 999px; border: 1px solid var(--line); color: var(--ink); text-decoration: none; font-weight: 600; font-size: .92rem;
+}
+.part-jump a, .plan-head .muted { white-space: nowrap; }
+.part-jump strong { color: var(--muted); font-weight: 500; font-variant-numeric: tabular-nums; }
+.plan { display: grid; gap: 1rem; }
+.plan-part { scroll-margin-top: 5.5rem; }
+.plan-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.plan-head h3 { margin: 0; font-size: 1.05rem; }
+.plan-modules { list-style: none; margin: .75rem 0 0; padding: 0; display: grid; gap: .35rem; }
+.plan-row, .plan-exam {
+  display: grid; grid-template-columns: 2.75rem 1fr auto; gap: .6rem; align-items: center; min-height: 48px; padding: .45rem .75rem;
+  border-radius: var(--radius-sm); color: var(--ink); text-decoration: none; background: var(--paper);
+}
+.plan-row:hover, .plan-exam:hover, .part-jump a:hover, .formation-tab:hover { background: var(--mist); }
+.plan-row .num { font-size: .85rem; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+.plan-row.done .num, .plan-row.current .num { color: var(--teal-ink); }
+.plan-row.current { background: var(--teal-wash); box-shadow: inset 3px 0 0 var(--teal-ink); }
+.plan-state { font-size: .85rem; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.plan-state .icon { width: 1.25rem; height: 1.25rem; color: var(--teal-ink); vertical-align: middle; }
+.plan-exam { margin-top: .5rem; background: transparent; border: 1px dashed var(--line); }
+.plan-exam .exam-icon { width: 2rem; height: 2rem; }
+.plan-exam .exam-icon .icon { width: 1rem; height: 1rem; }
+.plan-exam.open { border-style: solid; border-color: var(--teal-ink); }
+.plan-exam.open .plan-state { color: var(--teal-ink); font-weight: 600; }
+@media (max-width: 479px) {
+  .plan-exam { grid-template-columns: 2.75rem 1fr; }
+  .plan-exam .plan-state { grid-column: 2; margin-top: -.35rem; }
+}

@@ -1,0 +1,2 @@
+{% load i18n acad_i18n %}{# Titre d'une partie, numéroté : les descriptions renvoient aux « Parties 1 et 2 ». Usage : {% include "includes/partie_heading.html" with partie=… tag="h3" %} (h2 par défaut) #}
+<{{ tag|default:"h2" }} id="partie-{{ partie.public_id }}"><span class="partie-num">{% blocktranslate with n=partie.order %}Partie {{ n }} :{% endblocktranslate %}</span> <span{{ partie|lang_attr:"title" }}>{{ partie.title }}</span></{{ tag|default:"h2" }}>

@@ -1,0 +1,39 @@
+{% extends "base.html" %}{% load i18n static acad_i18n %}
+{% block title %}{{ section.title }}{% endblock %}
+{% block content %}
+<div class="reader">
+  {% include "courses/_outline.html" with partie=section.module.partie %}
+  <article>
+    {% include "courses/_crumbs.html" with partie=section.module.partie module=section.module %}
+    <h1{{ section|lang_attr:"title" }}>{{ section.title }}</h1>
+    <div class="facts">
+      <span class="badge">{% blocktranslate with n=position t=total %}Section {{ n }} sur {{ t }}{% endblocktranslate %}</span>
+      {% if section.kind == "practical" %}<span class="badge badge-warn">{% translate "Activité pratique" %}</span>{% endif %}
+      {% with reference=section.module.partie.formation.legal_reference %}{% if reference %}<span class="badge">{% blocktranslate %}Référence : {{ reference }}{% endblocktranslate %}</span>{% endif %}{% endwith %}
+      {% if fallback_fr %}<span class="badge" lang="fr" title="{% translate 'Contenu disponible en français uniquement' %}">FR</span>{% endif %}
+    </div>
+    <div class="prose"{% if fallback_fr %} lang="fr"{% endif %}>{{ body_html|safe }}</div>
+    {% if calc_params is not None %}
+      {{ calc_params|json_script:"calc-params" }}
+      {% include "courses/_calc_labels.html" %}
+    {% endif %}
+    {% if section.annexes.exists %}
+      <section class="panel" aria-labelledby="annexes" style="margin-top:1.5rem">
+        <h2 id="annexes">{% translate "Annexes à télécharger" %}</h2>
+        <ul class="annexes">
+          {% for annexe in section.annexes.all %}<li><a href="{{ annexe.file.url }}" download>{% include "icons/download.svg" %}{{ annexe.title }}</a></li>{% endfor %}
+        </ul>
+      </section>
+    {% endif %}
+    <nav class="pager" aria-label="{% translate 'Sections' %}">
+      {% if previous %}<a class="btn btn-ghost" href="{% url 'section_detail' previous.public_id %}">{% include "icons/chevron-left.svg" %}{% translate "Précédent" %}</a>{% else %}<span></span>{% endif %}
+      {% if next %}
+        <a class="btn" href="{% url 'section_detail' next.public_id %}">{% translate "Suivant" %}{% include "icons/chevron-right.svg" %}</a>
+      {% else %}
+        <a class="btn" href="{% url 'module_detail' section.module.public_id %}">{% translate "Fin du module" %}{% include "icons/chevron-right.svg" %}</a>
+      {% endif %}
+    </nav>
+  </article>
+</div>
+{% endblock %}
+{% block scripts %}{% if 'data-calc' in body_html %}<script src="{% static 'acad/js/calc-core.js' %}" defer></script><script src="{% static 'acad/js/calculators.js' %}" defer></script>{% endif %}{% endblock %}

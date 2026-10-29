@@ -1,0 +1,68 @@
+{% load i18n static %}{% get_current_language as LANGUAGE_CODE %}{% url 'dashboard' as dashboard_url %}{% url 'catalogue' as catalogue_url %}{% url 'my_certificates' as certificates_url %}{% url 'trainer_table' as trainer_url %}<!doctype html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>{% block title %}{% translate "Formation" %}{% endblock %} | ComptaFisca Acad Ventisax</title>
+  <link rel="icon" type="image/svg+xml" href="{% static 'acad/img/ventisax-mark.svg' %}">
+  <link rel="stylesheet" href="{% static 'acad/css/app.css' %}">
+  {% block head %}{% endblock %}
+</head>
+<body hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
+  <a class="skip" href="#contenu">{% translate "Aller au contenu" %}</a>
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="{% if user.is_authenticated %}{{ dashboard_url }}{% else %}{{ catalogue_url }}{% endif %}">
+        <img src="{% static 'acad/img/ventisax-mark.svg' %}" alt="" width="34" height="34">
+        <span>ComptaFisca Acad <span class="brand-accent">Ventisax</span><small>{% translate "Comptabilité SYSCOHADA et fiscalité camerounaise, formation et évaluation" %}</small></span>
+      </a>
+      <nav class="topnav" aria-label="{% translate 'Navigation principale' %}">
+        {% if user.is_authenticated %}
+          {% if user.is_trainer or user.is_platform_admin %}
+            <a href="{{ trainer_url }}"{% if trainer_url in request.path %} aria-current="page"{% endif %}>{% include "icons/users.svg" %}<span class="label">{% translate "Suivi" %}</span></a>
+          {% else %}
+            <a href="{{ dashboard_url }}"{% if request.path == dashboard_url %} aria-current="page"{% endif %}>{% include "icons/list-details.svg" %}<span class="label">{% translate "Mes cours" %}</span></a>
+            <a href="{{ certificates_url }}"{% if request.path == certificates_url %} aria-current="page"{% endif %}>{% include "icons/award.svg" %}<span class="label">{% translate "Certificats" %}</span></a>
+          {% endif %}
+          <a href="{{ catalogue_url }}"{% if request.path == catalogue_url %} aria-current="page"{% endif %}>{% include "icons/books.svg" %}<span class="label">{% translate "Catalogue" %}</span></a>
+          {% if user.is_staff %}
+            <a href="{% url 'admin:index' %}">{% include "icons/key.svg" %}<span class="label">{% translate "Gestion" %}</span></a>
+          {% endif %}
+        {% else %}
+          <a href="{{ catalogue_url }}"{% if request.path == catalogue_url %} aria-current="page"{% endif %}>{% include "icons/books.svg" %}<span class="label">{% translate "Catalogue" %}</span></a>
+          <a href="{% url 'login' %}">{% include "icons/login.svg" %}<span class="label">{% translate "Connexion" %}</span></a>
+        {% endif %}
+        <form class="lang" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+          <input type="hidden" name="next" value="{{ request.get_full_path }}">
+          {% get_available_languages as languages %}
+          {% for code, name in languages %}
+            <button name="language" value="{{ code }}" lang="{{ code }}" title="{{ name }}"{% if code == LANGUAGE_CODE %} aria-current="true"{% endif %}>{{ code|upper }}</button>
+          {% endfor %}
+        </form>
+        {% if user.is_authenticated %}
+          <form action="{% url 'logout' %}" method="post">{% csrf_token %}
+            <button type="submit" title="{% translate 'Déconnexion' %}">{% include "icons/logout.svg" %}<span class="visually-hidden">{% translate "Déconnexion" %}</span></button>
+          </form>
+        {% elif request.resolver_match.url_name != "signup" %}
+          <a class="btn btn-sm" href="{% url 'signup' %}">{% translate "Créer un compte" %}</a>
+        {% endif %}
+      </nav>
+    </div>
+  </header>
+  <main id="contenu">
+    <div class="wrap">
+      {% if messages %}
+        <div class="messages" role="status">
+          {% for message in messages %}<div class="notice{% if message.level_tag == 'error' %} notice-error{% elif message.level_tag == 'success' %} notice-success{% endif %}">{% include "icons/circle-check.svg" %}<div>{{ message }}</div></div>{% endfor %}
+        </div>
+      {% endif %}
+      {% block content %}{% endblock %}
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="wrap">{% translate "Ventisax, centre de formation à Yaoundé." %} <a href="https://ventisax.pythonanywhere.com/{{ LANGUAGE_CODE }}/">ventisax.pythonanywhere.com</a></div>
+  </footer>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

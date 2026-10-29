@@ -1,0 +1,38 @@
+{% extends "base.html" %}{% load i18n acad_i18n %}
+{% block title %}{{ row.formation.title }}{% endblock %}
+{% block content %}
+<a class="crumb" href="{% url 'catalogue' %}">{% include "icons/chevron-left.svg" %}{% translate "Catalogue" %}</a>
+<div class="detail">
+  <div class="detail-main">
+    <div class="page-head">
+      <h1{{ row.formation|lang_attr:"title" }}>{{ row.formation.title }}</h1>
+      {% if row.formation.description %}<p class="lead"{{ row.formation|lang_attr:"description" }}>{{ row.formation.description }}</p>{% endif %}
+      {% if row.formation.prerequisite_note %}<p class="muted"{{ row.formation|lang_attr:"prerequisite_note" }}>{{ row.formation.prerequisite_note }}</p>{% endif %}
+    </div>
+    {% for partie in row.parties %}
+      <section class="panel programme" aria-labelledby="partie-{{ partie.public_id }}">
+        {% include "includes/partie_heading.html" %}
+        {% if partie.description %}<p class="muted partie-desc"{{ partie|lang_attr:"description" }}>{{ partie.description }}</p>{% endif %}
+        <ol class="modules">
+          {% for module in partie.modules.all %}
+            <li><span class="module-row"><span class="num">{{ forloop.counter }}</span><span{{ module|lang_attr:"title" }}>{{ module.title }}</span><span class="badge">{% blocktranslate with h=module.duration_hours %}{{ h }} h{% endblocktranslate %}</span></span></li>
+          {% endfor %}
+        </ol>
+        <p class="muted programme-exam">{% include "icons/certificate.svg" %}{% translate "Examen chronométré en fin de partie ; certificat vérifiable si vous le réussissez." %}</p>
+      </section>
+    {% endfor %}
+  </div>
+  <aside class="panel detail-aside" aria-label="{% translate 'Inscription' %}">
+    <dl class="key-facts">
+      <div><dt>{% translate "Durée" %}</dt><dd>{% blocktranslate with h=row.hours %}{{ h }} h{% endblocktranslate %}</dd></div>
+      <div><dt>{% translate "Modules" %}</dt><dd>{{ row.module_count }}</dd></div>
+      <div><dt>{% translate "Langues" %}</dt><dd>FR, EN</dd></div>
+    </dl>
+    <div class="cta-stack">
+      {% include "catalog/_enroll_action.html" %}
+      {% if not user.is_authenticated %}<a class="btn btn-ghost" href="{% url 'login' %}?next={{ request.path|urlencode }}">{% translate "J'ai déjà un compte" %}</a>{% endif %}
+    </div>
+    <p class="muted small">{% translate "Inscription gratuite. Les quiz sont illimités ; l'examen accepte trois tentatives." %}</p>
+  </aside>
+</div>
+{% endblock %}

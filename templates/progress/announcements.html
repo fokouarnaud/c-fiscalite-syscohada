@@ -1,0 +1,32 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% translate "Annonces" %}{% endblock %}
+{% block content %}
+{% include "progress/_trainer_nav.html" %}
+<div class="page-head"><h1>{% translate "Annonces" %}</h1></div>
+<div class="split">
+  <form class="panel" method="post" novalidate>{% csrf_token %}
+    <h2>{% translate "Nouvelle annonce" %}</h2>
+    <p class="muted small">{% translate "Elle s'affiche sur le tableau de bord des apprenants de la promotion choisie." %}</p>
+    <div class="form">
+      {% include "includes/field.html" with field=form.promotion %}
+      {% include "includes/field.html" with field=form.title %}
+      {% include "includes/field.html" with field=form.body %}
+      <button class="btn" type="submit">{% include "icons/speakerphone.svg" %}{% translate "Publier" %}</button>
+    </div>
+  </form>
+  <section aria-labelledby="titre-publiees">
+    <h2 id="titre-publiees">{% translate "Publiées" %}</h2>
+    <div class="feed">
+      {% for announcement in announcements %}
+        <article class="feed-item">
+          <h3>{{ announcement.title }}</h3>
+          <p class="muted small">{{ announcement.promotion.name }} · {{ announcement.published_at|date:"DATETIME_FORMAT" }}</p>
+          <p>{{ announcement.body|linebreaksbr }}</p>
+        </article>
+      {% empty %}
+        <p class="muted">{% translate "Aucune annonce pour le moment." %}</p>
+      {% endfor %}
+    </div>
+  </section>
+</div>
+{% endblock %}

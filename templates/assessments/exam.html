@@ -1,0 +1,38 @@
+{% extends "base.html" %}{% load i18n acad_i18n %}
+{% block title %}{% translate "Examen" %}{% endblock %}
+{% block content %}
+{% include "courses/_crumbs.html" with partie=partie module=None %}
+<div class="course">
+  <section class="panel" aria-labelledby="titre-examen">
+    <h1 id="titre-examen">{% blocktranslate with p=partie.title %}Examen : {{ p }}{% endblocktranslate %}</h1>
+    <div class="facts">
+      <span class="badge">{% include "icons/clock.svg" %}{% blocktranslate with d=assessment.duration_minutes %}{{ d }} minutes{% endblocktranslate %}</span>
+      <span class="badge">{% blocktranslate with t=assessment.pass_threshold %}{{ t }} % pour réussir{% endblocktranslate %}</span>
+      {% if attempts_left is not None %}<span class="badge">{% blocktranslate count n=attempts_left %}{{ n }} tentative restante{% plural %}{{ n }} tentatives restantes{% endblocktranslate %}</span>{% endif %}
+    </div>
+    {% if not unlocked %}
+      <div class="notice" role="status">{% include "icons/lock.svg" %}<div>{% translate "L'examen s'ouvre quand ces modules sont terminés :" %}</div></div>
+      <ol class="section-list todo-list">
+        {% for m in missing_modules %}<li><a href="{% url 'module_detail' m.module.public_id %}"><span class="num" aria-hidden="true">M{{ m.number }}</span><span><span class="visually-hidden">M{{ m.number }}. </span><span{{ m.module|lang_attr:"title" }}>{{ m.module.title }}</span></span><span class="badge badge-warn">{% translate "À terminer" %}</span>{% include "icons/chevron-right.svg" %}</a></li>{% endfor %}
+      </ol>
+    {% elif open_attempt %}
+      <div class="notice" role="status">{% include "icons/clock.svg" %}<div>{% translate "Un examen est en cours. Le chrono continue de tourner." %}</div></div>
+      <p style="margin-top:1rem"><a class="btn" href="{% url 'attempt_detail' open_attempt.public_id %}">{% include "icons/player-play.svg" %}{% translate "Reprendre l'examen" %}</a></p>
+    {% elif attempts_left == 0 %}
+      <div class="notice" role="status">{% include "icons/alert-triangle.svg" %}<div>{% translate "Vous avez utilisé toutes vos tentatives. Parlez-en à votre formateur." %}</div></div>
+    {% else %}
+      <p>{% translate "Le chrono démarre dès que vous commencez. Chaque réponse est enregistrée immédiatement : si la connexion coupe, revenez sur cette page pour reprendre." %}</p>
+      <form method="post">{% csrf_token %}<button class="btn" type="submit">{% include "icons/player-play.svg" %}{% translate "Commencer l'examen" %}</button></form>
+    {% endif %}
+  </section>
+  <aside class="panel">
+    <h2>{% translate "Meilleur score" %}</h2>
+    {% if best %}
+      <p class="score-value">{{ best.score_pct|floatformat:0 }}<small> %</small></p>
+      <p>{% if best.passed %}<span class="badge badge-done">{% include "icons/check.svg" %}{% translate "Réussi" %}</span>{% else %}<span class="badge">{% translate "Pas encore réussi" %}</span>{% endif %}</p>
+    {% else %}
+      <p class="muted">{% translate "Aucune tentative pour le moment." %}</p>
+    {% endif %}
+  </aside>
+</div>
+{% endblock %}

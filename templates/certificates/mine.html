@@ -1,0 +1,60 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% translate "Certificats et badges" %}{% endblock %}
+{% block content %}
+<div class="page-head">
+  <h1>{% translate "Certificats et badges" %}</h1>
+  <p class="muted lead">{% translate "Chaque partie réussie à l'examen donne un certificat vérifiable en ligne." %}</p>
+</div>
+
+{% if not user.first_name or not user.last_name %}
+  <form class="panel name-form" method="post" novalidate>{% csrf_token %}
+    <h2>{% translate "Votre nom sur le certificat" %}</h2>
+    <p class="muted">{% translate "Renseignez votre prénom et votre nom tels qu'ils doivent figurer sur vos certificats. Ils ne changeront plus une fois le certificat délivré." %}</p>
+    <div class="field-row">
+      {% include "includes/field.html" with field=form.first_name %}
+      {% include "includes/field.html" with field=form.last_name %}
+    </div>
+    <button class="btn" type="submit">{% translate "Enregistrer mon nom" %}</button>
+  </form>
+{% endif %}
+
+<section class="certs" aria-labelledby="titre-certificats">
+  <h2 id="titre-certificats" class="visually-hidden">{% translate "Certificats" %}</h2>
+  {% for certificate in certificates %}
+    <article class="cert">
+      <span class="cert-seal" aria-hidden="true">{% include "icons/certificate.svg" %}</span>
+      <div class="cert-body">
+        <h3>{{ certificate.partie.title }}</h3>
+        <p class="muted">{{ certificate.partie.formation.title }} · {% blocktranslate with d=certificate.issued_at|date:"DATE_FORMAT" %}délivré le {{ d }}{% endblocktranslate %}</p>
+      </div>
+      <p class="cert-score"><strong>{{ certificate.score_pct|floatformat:0 }}</strong><small> %</small></p>
+      <div class="cert-actions">
+        <a class="btn" href="{% url 'certificate_pdf' certificate.public_id %}">{% include "icons/download.svg" %}PDF</a>
+        <a class="btn btn-ghost" href="{% url 'verify_certificate' certificate.public_id %}">{% include "icons/external-link.svg" %}{% translate "Vérification" %}</a>
+      </div>
+    </article>
+  {% empty %}
+    <div class="panel empty">
+      <h2>{% translate "Pas encore de certificat" %}</h2>
+      <p class="muted">{% translate "Terminez les modules d'une partie, puis réussissez son examen avec au moins 70 % pour obtenir votre certificat." %}</p>
+      <a class="btn btn-ghost" href="{% url 'dashboard' %}">{% translate "Mes cours" %}</a>
+    </div>
+  {% endfor %}
+</section>
+
+<section class="panel" aria-labelledby="titre-badges">
+  <h2 id="titre-badges">{% translate "Badges" %}</h2>
+  {% if badges %}
+    <ul class="badge-grid">
+      {% for badge in badges %}
+        <li class="earned{% if badge.kind == 'partie' %} earned-major{% endif %}">
+          <span class="earned-icon" aria-hidden="true">{% if badge.kind == 'partie' %}{% include "icons/award.svg" %}{% else %}{% include "icons/bolt.svg" %}{% endif %}</span>
+          <span><strong>{% if badge.module %}{{ badge.module.title }}{% else %}{{ badge.partie.title }}{% endif %}</strong><small>{{ badge.get_kind_display }}</small></span>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p class="muted">{% translate "Terminez un module (sections lues et quiz envoyé) pour gagner votre premier badge." %}</p>
+  {% endif %}
+</section>
+{% endblock %}

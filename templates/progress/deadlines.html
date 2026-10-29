@@ -1,0 +1,49 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% translate "Dates limites" %}{% endblock %}
+{% block content %}
+{% include "progress/_trainer_nav.html" %}
+<div class="page-head">
+  <h1>{% translate "Dates limites" %}</h1>
+  <p class="muted lead">{% translate "Indicatives : rien n'est bloqué, mais un apprenant qui n'a pas fini à temps est marqué en retard." %}</p>
+</div>
+<div class="split">
+  <form class="panel" method="post" novalidate>{% csrf_token %}
+    <h2>{% translate "Fixer une date limite" %}</h2>
+    <div class="form">
+      {% include "includes/field.html" with field=form.promotion %}
+      <div class="field{% if form.target.errors %} has-error{% endif %}">
+        <label for="id_target">{% translate "Quiz ou examen" %}</label>
+        <select name="target" id="id_target" required>
+          {% for t in targets %}
+            <optgroup label="{{ t.promotion.name }}">
+              {% for m in t.modules %}<option value="quiz:{{ m.public_id }}">{% blocktranslate with m=m.title %}Quiz : {{ m }}{% endblocktranslate %}</option>{% endfor %}
+              {% for p in t.parties %}<option value="exam:{{ p.public_id }}">{% blocktranslate with p=p.title %}Examen : {{ p }}{% endblocktranslate %}</option>{% endfor %}
+            </optgroup>
+          {% endfor %}
+        </select>
+        {% for error in form.target.errors %}<span class="error" role="alert">{{ error }}</span>{% endfor %}
+      </div>
+      <div class="field{% if form.due_at.errors %} has-error{% endif %}">
+        <label for="id_due_at">{% translate "Date limite" %}</label>
+        <input type="datetime-local" name="due_at" id="id_due_at" required>
+        <span class="help">{% translate "Une seule date par quiz ou examen et par promotion : la saisir à nouveau la déplace." %}</span>
+        {% for error in form.due_at.errors %}<span class="error" role="alert">{{ error }}</span>{% endfor %}
+      </div>
+      <button class="btn" type="submit">{% include "icons/calendar-due.svg" %}{% translate "Enregistrer" %}</button>
+    </div>
+  </form>
+  <section aria-labelledby="titre-echeances">
+    <h2 id="titre-echeances">{% translate "Échéances" %}</h2>
+    <ul class="deadline-list">
+      {% for deadline in deadlines %}
+        <li>
+          <span class="date-chip"><strong>{{ deadline.due_at|date:"d" }}</strong>{{ deadline.due_at|date:"M" }}</span>
+          <span><strong>{{ deadline.assessment }}</strong><small class="muted">{{ deadline.promotion.name }} · {{ deadline.due_at|date:"H:i" }}</small></span>
+        </li>
+      {% empty %}
+        <li class="muted">{% translate "Aucune date limite." %}</li>
+      {% endfor %}
+    </ul>
+  </section>
+</div>
+{% endblock %}

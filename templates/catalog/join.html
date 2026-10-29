@@ -1,0 +1,15 @@
+{% extends "accounts/_single_panel.html" %}{% load i18n %}
+{% block title %}{% translate "Rejoindre ma promotion" %}{% endblock %}
+{% block icon %}<span class="panel-icon">{% include "icons/key.svg" %}</span>{% endblock %}
+{% block panel %}
+  <h1 id="titre-page">{% translate "Rejoindre ma promotion" %}</h1>
+  <p class="muted">{% translate "Saisissez le code à 8 caractères donné par votre formateur. Majuscules et espaces n'ont pas d'importance." %}</p>
+  <form method="post" class="form" novalidate>{% csrf_token %}
+    <div class="field{% if form.code.errors %} has-error{% endif %}">
+      <label for="id_code">{% translate "Code de promotion" %}</label>
+      <input class="code-input" type="text" name="code" id="id_code" value="{{ form.code.value|default:'' }}" maxlength="20" autocomplete="off" autocapitalize="characters" spellcheck="false" required>
+      {% for error in form.code.errors %}<span class="error" role="alert">{{ error }}</span>{% endfor %}
+    </div>
+    <button class="btn" type="submit">{% translate "Rejoindre" %}</button>
+  </form>
+{% endblock %}

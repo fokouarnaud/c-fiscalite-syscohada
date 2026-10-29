@@ -1,0 +1,111 @@
+{% extends "base.html" %}{% load i18n acad_i18n %}
+{% block title %}{% translate "Résultat" %}{% endblock %}
+{% block content %}
+{% with a=attempt.assessment %}
+<a class="crumb" href="{% if a.is_exam %}{% url 'exam' a.partie.public_id %}{% else %}{% url 'module_detail' a.module.public_id %}{% endif %}">{% include "icons/chevron-left.svg" %}{% if a.is_exam %}{{ a.partie.title }}{% else %}{{ a.module.title }}{% endif %}</a>
+<section class="panel score" aria-labelledby="titre-resultat">
+  <p class="score-value">{{ attempt.score_pct|floatformat:0 }}<small> %</small></p>
+  <div>
+    <h1 id="titre-resultat">{% if a.is_exam %}{% if attempt.passed %}{% translate "Examen réussi" %}{% else %}{% translate "Examen non réussi" %}{% endif %}{% else %}{% translate "Correction du quiz" %}{% endif %}</h1>
+    {% if a.is_exam %}
+      <p class="muted">{% blocktranslate with t=a.pass_threshold %}Seuil de réussite : {{ t }} %.{% endblocktranslate %}
+      {% if attempts_left is not None %}{% blocktranslate count n=attempts_left %}{{ n }} tentative restante.{% plural %}{{ n }} tentatives restantes.{% endblocktranslate %}{% endif %}</p>
+    {% else %}
+      <p class="muted">{% translate "Ce quiz ne compte pas dans la note. Refaites-le autant que vous voulez." %}</p>
+      {% if module_done %}<div class="notice notice-success" role="status">{% include "icons/circle-check.svg" %}<div>{% if next_module %}{% blocktranslate with n=next_number t=next_module.title %}Module terminé. Suivant : M{{ n }}. {{ t }}{% endblocktranslate %}{% else %}{% translate "Module terminé : c'était le dernier de la partie." %}{% endif %}</div></div>{% endif %}
+    {% endif %}
+    {% if attempt.auto_submitted %}<div class="notice" role="status">{% include "icons/clock.svg" %}<div>{% translate "Temps écoulé : vos réponses ont été envoyées automatiquement." %}</div></div>{% endif %}
+    <div class="cta-row" style="margin-top:1rem">
+      {% if a.is_exam %}
+        <a class="btn" href="{% url 'dashboard' %}">{% translate "Retour à mes cours" %}</a>
+      {% else %}
+        {% if next_module %}
+          <a class="btn" href="{% url 'module_detail' next_module.public_id %}">{% blocktranslate with n=next_number %}Module suivant : M{{ n }}{% endblocktranslate %}{% include "icons/chevron-right.svg" %}</a>
+          <a class="btn btn-ghost" href="{% url 'module_detail' a.module.public_id %}">{% translate "Retour au module" %}</a>
+        {% elif module_done %}
+          <a class="btn" href="{% url 'exam' a.module.partie.public_id %}">{% blocktranslate with n=a.module.partie.order %}Examen de la Partie {{ n }}{% endblocktranslate %}{% include "icons/chevron-right.svg" %}</a>
+          <a class="btn btn-ghost" href="{% url 'module_detail' a.module.public_id %}">{% translate "Retour au module" %}</a>
+        {% else %}
+          <a class="btn" href="{% url 'module_detail' a.module.public_id %}">{% translate "Retour au module" %}</a>
+        {% endif %}
+        <form class="inline-form" method="post" action="{% url 'start_quiz' a.module.public_id %}">{% csrf_token %}<button class="btn btn-ghost" type="submit">{% translate "Refaire le quiz" %}</button></form>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% if module_scores %}
+  <section class="panel" aria-labelledby="par-module" style="margin-top:1rem">
+    <h2 id="par-module">{% translate "Score par module" %}</h2>
+    <table class="breakdown">
+      {% for module, score in module_scores.items %}<tr><th scope="row">{{ module.title }}</th><td>{{ score|floatformat:0 }} %</td></tr>{% endfor %}
+    </table>
+  </section>
+{% endif %}
+
+{% if show_correction %}
+  {% if mistake_count and mistake_count < total_count %}
+    <nav class="review-filter" aria-label="{% translate 'Filtrer la correction' %}">
+      <a href="?"{% if not mistakes_only %} aria-current="page"{% endif %}>{% blocktranslate with n=total_count %}Toutes ({{ n }}){% endblocktranslate %}</a>
+      <a href="?erreurs=1"{% if mistakes_only %} aria-current="page"{% endif %}>{% blocktranslate with n=mistake_count %}Seulement les erreurs ({{ n }}){% endblocktranslate %}</a>
+    </nav>
+  {% endif %}
+  <div class="review">
+    {% for item in feedback %}
+      <section class="panel" aria-labelledby="rq-{{ forloop.counter }}">
+        <div class="review-head">
+          <h2 id="rq-{{ forloop.counter }}">{{ forloop.counter }}. {{ item.question.prompt }}</h2>
+          {% if item.score == 1 %}<span class="badge badge-done">{% include "icons/check.svg" %}{% translate "Correct" %}</span>{% elif item.score > 0 %}<span class="badge badge-warn">{% translate "Partiel" %}</span>{% else %}<span class="badge">{% translate "Incorrect" %}</span>{% endif %}
+        </div>
+        {% if item.question.qtype == "numeric" %}
+          <p>{% translate "Votre réponse :" %} <strong>{% if item.answer_text %}{{ item.answer_text }}{% else %}{% translate "Sans réponse" %}{% endif %}</strong> · {% translate "Valeur attendue :" %} <strong>{{ item.expected_value }}</strong>{% if item.question.tolerance_pct %} (± {{ item.question.tolerance_pct|floatformat:"-2" }} %){% endif %}</p>
+        {% elif item.question.qtype == "journal" %}
+          <h3>{% translate "Votre écriture" %}</h3>
+          <ul>
+            {% for line in item.journal_given %}
+              <li class="journal-line {% if line.ok %}is-correct{% else %}is-wrong{% endif %}">
+                {% if line.ok %}{% include "icons/check.svg" %}{% else %}{% include "icons/alert-triangle.svg" %}{% endif %}
+                <span>{{ line.account }} · {% if line.side == "debit" %}{% translate "Débit" %}{% elif line.side == "credit" %}{% translate "Crédit" %}{% endif %} · {{ line.amount }}</span>
+              </li>
+            {% empty %}
+              <li class="muted">{% translate "Sans réponse" %}</li>
+            {% endfor %}
+          </ul>
+          <h3>{% translate "Écriture attendue" %}</h3>
+          <table class="journal">
+            <thead><tr><th scope="col">{% translate "Compte" %}</th><th scope="col">{% translate "Libellé" %}</th><th scope="col">{% translate "Débit" %}</th><th scope="col">{% translate "Crédit" %}</th></tr></thead>
+            <tbody>
+              {% for line in item.journal_expected %}
+                <tr><td>{{ line.account }}</td><td>{{ line.label }}</td><td>{% if line.side == "debit" %}{{ line.amount|floatformat:"-2g" }}{% endif %}</td><td>{% if line.side == "credit" %}{{ line.amount|floatformat:"-2g" }}{% endif %}</td></tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        {% elif item.question.qtype == "matching" %}
+          <ul>
+            {% for row in item.pair_rows %}
+              <li class="{% if row.ok %}is-correct{% else %}is-wrong{% endif %}">
+                {% if row.ok %}{% include "icons/check.svg" %}{% else %}{% include "icons/alert-triangle.svg" %}{% endif %}
+                <span>{{ row.left }} → {{ row.expected }}</span>
+                {% if not row.ok %}<span class="your-answer">{% if row.given %}{% blocktranslate with g=row.given %}Vous : {{ g }}{% endblocktranslate %}{% else %}{% translate "Sans réponse" %}{% endif %}</span>{% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        {% else %}
+        <ul>
+          {% for choice in item.question.choices.all %}
+            <li class="{% if choice.pk in item.correct_choice_ids %}is-correct{% elif choice.pk in item.selected_choice_ids %}is-wrong{% endif %}">
+              {% if choice.pk in item.correct_choice_ids %}{% include "icons/check.svg" %}{% elif choice.pk in item.selected_choice_ids %}{% include "icons/alert-triangle.svg" %}{% endif %}
+              <span>{{ choice.text }}</span>
+              {% if choice.pk in item.selected_choice_ids %}<span class="your-answer">{% translate "Votre réponse" %}</span>{% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+        {% if not item.selected_choice_ids %}<p class="muted">{% translate "Sans réponse." %}</p>{% endif %}
+        {% endif %}
+        {% if item.explanation %}<p class="explain">{{ item.explanation }}</p>{% endif %}
+      </section>
+    {% endfor %}
+  </div>
+{% endif %}
+{% endwith %}
+{% endblock %}

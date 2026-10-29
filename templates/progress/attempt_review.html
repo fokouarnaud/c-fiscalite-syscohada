@@ -1,0 +1,30 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% translate "Détail de la tentative" %}{% endblock %}
+{% block content %}
+{% include "progress/_trainer_nav.html" %}
+<a class="crumb" href="{% url 'trainer_table' %}">{% include "icons/chevron-left.svg" %}{% translate "Apprenants" %}</a>
+<section class="panel score">
+  <p class="score-value">{{ attempt.score_pct|floatformat:0 }}<small> %</small></p>
+  <div>
+    <h1>{{ attempt.user.get_full_name|default:attempt.user.username }}</h1>
+    <p class="muted">{% if attempt.assessment.is_exam %}{% blocktranslate with p=attempt.assessment.partie.title %}Examen : {{ p }}{% endblocktranslate %}{% else %}{% blocktranslate with m=attempt.assessment.module.title %}Quiz : {{ m }}{% endblocktranslate %}{% endif %}
+      · {% blocktranslate with n=attempt.number %}tentative {{ n }}{% endblocktranslate %} · {{ attempt.submitted_at|date:"DATETIME_FORMAT" }}
+      {% if attempt.auto_submitted %}· {% translate "envoyée automatiquement" %}{% endif %}</p>
+  </div>
+</section>
+<div class="table-scroll review-table" tabindex="0" role="region" aria-label="{% translate 'Réponses' %}">
+  <table class="grid-table wrap-cells">
+    <thead><tr><th scope="col">{% translate "Question" %}</th><th scope="col">{% translate "Réponse donnée" %}</th><th scope="col">{% translate "Résultat" %}</th><th scope="col">{% translate "Temps" %}</th></tr></thead>
+    <tbody>
+      {% for row in rows %}
+        <tr>
+          <th scope="row">{{ forloop.counter }}. {{ row.question.prompt }}</th>
+          <td>{{ row.answer|default:"-" }}</td>
+          <td>{% if row.score == 1 %}<span class="badge badge-done">{% translate "Juste" %}</span>{% elif row.score > 0 %}<span class="badge badge-warn">{% translate "Partiel" %}</span>{% else %}<span class="badge badge-wrong">{% translate "Faux" %}</span>{% endif %}</td>
+          <td class="num">{% blocktranslate with s=row.time_spent_s %}{{ s }} s{% endblocktranslate %}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

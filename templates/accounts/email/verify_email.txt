@@ -1,0 +1,7 @@
+{% load i18n %}{% blocktranslate with name=user.first_name %}Bonjour {{ name }},{% endblocktranslate %}
+
+{% translate "Pour activer votre compte ComptaFisca Acad Ventisax, ouvrez ce lien :" %}
+
+{{ link }}
+
+{% translate "Sans confirmation, le compte est supprimé au bout de 7 jours. Si vous n'êtes pas à l'origine de cette inscription, ignorez ce message." %}

@@ -1,0 +1,8 @@
+{% load i18n acad_i18n %}{# Fil d'Ariane Formation › Partie › Module. Usage : {% include "courses/_crumbs.html" with partie=… module=… number=… %} (module facultatif) #}
+<nav class="crumbs" aria-label="{% translate "Fil d'Ariane" %}">
+  <ol>
+    <li><a href="{% url 'dashboard' %}?formation={{ partie.formation.public_id }}"{{ partie.formation|lang_attr:"title" }}>{{ partie.formation.title }}</a></li>
+    <li><a href="{% url 'dashboard' %}?formation={{ partie.formation.public_id }}#plan-{{ partie.public_id }}">{% blocktranslate with n=partie.order %}Partie {{ n }}{% endblocktranslate %}</a></li>
+    {% if module %}<li><a href="{% url 'module_detail' module.public_id %}"{{ module|lang_attr:"title" }}>M{{ number }}. {{ module.title }}</a></li>{% endif %}
+  </ol>
+</nav>

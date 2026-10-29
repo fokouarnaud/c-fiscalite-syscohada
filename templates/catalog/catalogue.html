@@ -1,0 +1,38 @@
+{% extends "base.html" %}{% load i18n acad_i18n %}
+{% block title %}{% translate "Catalogue" %}{% endblock %}
+{% block content %}
+<div class="page-head">
+  <h1>{% translate "Catalogue des formations" %}</h1>
+  <p class="muted lead">{% translate "Des cours en ligne avec quiz et examen, en français et en anglais. Commencez quand vous voulez." %}</p>
+</div>
+<div class="catalogue">
+  {% for row in rows %}
+    <article class="course-card" aria-labelledby="formation-{{ row.formation.public_id }}">
+      <div class="course-card-mark" aria-hidden="true">{% include "icons/"|add:row.formation.icon|add:".svg" %}</div>
+      <div class="course-card-body">
+        <h2 id="formation-{{ row.formation.public_id }}"{{ row.formation|lang_attr:"title" }}>
+          <a href="{% url 'formation_detail' row.formation.public_id %}">{{ row.formation.title }}</a>
+        </h2>
+        {% if row.formation.description %}<p class="muted"{{ row.formation|lang_attr:"description" }}>{{ row.formation.description }}</p>{% endif %}
+        <ul class="meta-list">
+          <li>{% include "icons/list-details.svg" %}{% blocktranslate count n=row.module_count %}{{ n }} module{% plural %}{{ n }} modules{% endblocktranslate %}</li>
+          <li>{% include "icons/clock.svg" %}{% blocktranslate with h=row.hours %}{{ h }} h{% endblocktranslate %}</li>
+          <li>{% include "icons/certificate.svg" %}{% translate "Certificat par partie" %}</li>
+        </ul>
+      </div>
+      <div class="course-card-actions">
+        {% include "catalog/_enroll_action.html" %}
+        <a class="btn btn-ghost" href="{% url 'formation_detail' row.formation.public_id %}">{% translate "Programme" %}</a>
+      </div>
+    </article>
+  {% empty %}
+    <section class="panel empty">
+      <h2>{% translate "Aucune formation ouverte pour le moment" %}</h2>
+      <p class="muted">{% translate "Votre centre vous a donné un code de promotion ? Connectez-vous puis saisissez-le." %}</p>
+    </section>
+  {% endfor %}
+</div>
+{% if user.is_authenticated and user.is_learner %}
+  <p class="code-hint">{% include "icons/key.svg" %}<span>{% translate "Vous avez un code de promotion ?" %} <a href="{% url 'join_promotion' %}">{% translate "Rejoindre ma promotion" %}</a></span></p>
+{% endif %}
+{% endblock %}

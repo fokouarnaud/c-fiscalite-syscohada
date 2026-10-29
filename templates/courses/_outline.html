@@ -1,0 +1,36 @@
+{% load i18n acad_i18n static %}
+<details class="outline" id="sommaire">
+  <summary>{% include "icons/list-details.svg" %}{% translate "Sommaire" %}</summary>
+  <nav class="outline-body" aria-label="{% translate 'Sommaire de la partie' %}">
+    <h2><span class="partie-num">{% blocktranslate with n=partie.order %}Partie {{ n }} :{% endblocktranslate %}</span> <span{{ partie|lang_attr:"title" }}>{{ partie.title }}</span></h2>
+    <ol>
+      {% for row in outline %}
+        <li class="outline-module">
+          <a href="{% url 'module_detail' row.module.public_id %}"{% if row.current %} aria-current="true"{% endif %}>
+            {% if row.done %}{% include "icons/circle-check.svg" %}<span class="visually-hidden">{% translate "terminé" %}</span>{% else %}<span class="dot-todo" aria-hidden="true"></span>{% endif %}
+            <span{{ row.module|lang_attr:"title" }}>M{{ row.number }}. {{ row.module.title }}</span>
+          </a>
+          {% if row.current %}
+            <ol class="outline-sections">
+              {% for item in row.sections %}
+                <li>
+                  <a href="{% url 'section_detail' item.section.public_id %}"{% if item.current %} aria-current="page"{% endif %}>
+                    {% if item.viewed %}{% include "icons/check.svg" %}<span class="visually-hidden">{% translate "lu" %}</span>{% else %}<span class="dot-todo" aria-hidden="true"></span>{% endif %}
+                    <span{{ item.section|lang_attr:"title" }}>{{ item.section.title }}</span>
+                  </a>
+                </li>
+              {% endfor %}
+              {% if row.has_quiz %}
+                <li><form method="post" action="{% url 'start_quiz' row.module.public_id %}">{% csrf_token %}<button class="outline-quiz" type="submit">{% include "icons/player-play.svg" %}<span>{% translate "Quiz du module" %}</span></button></form></li>
+              {% endif %}
+            </ol>
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ol>
+    <a class="outline-exam" href="{% url 'exam' partie.public_id %}">{% include "icons/award.svg" %}<span>{% blocktranslate with n=partie.order %}Examen de la Partie {{ n }}{% endblocktranslate %}</span></a>
+    <a class="outline-all" href="{% url 'dashboard' %}?formation={{ partie.formation.public_id }}">{% include "icons/list-details.svg" %}<span>{% translate "Toutes les parties" %}</span></a>
+  </nav>
+</details>
+{# Script synchrone et externe (CSP sans script en ligne) : le sommaire s'ouvre avant le premier affichage. #}
+<script src="{% static 'acad/js/outline.js' %}"></script>

@@ -1,0 +1,62 @@
+# ==============================================================================
+# 📦 ENVIRONNEMENT & DÉPENDANCES (Empêche les dossiers lourds)
+# ==============================================================================
+node_modules/
+/dist/
+/build/
+.npm/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==============================================================================
+# 🔑 SÉCURITÉ & SECRETS (Clés API, configurations sensibles)
+# ==============================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+
+# ==============================================================================
+# 🤖 AGENTS IA & LOGS (Bloque les journaux de rea-agents pour Codex)
+# ==============================================================================
+# On ignore les fichiers de logs générés par l'utilisation de l'agent
+*.log
+rea-agents.log
+.rea-agents/
+
+# Note : Le fichier AGENTS.md n'est PAS ici, car Codex doit pouvoir le lire.
+
+# ==============================================================================
+# 💻 FICHIERS SYSTÈMES ET ÉDITEURS (Inutiles pour le code)
+# ==============================================================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Python et données privées locales
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+db.sqlite3*
+media/
+staticfiles/
+backups/
+.coverage
+
+# Programme  et cours: contient cours groupe en partie et module 
+
+reference/
+
+# Captures Playwright MCP (validation visuelle locale)
+.playwright-mcp/

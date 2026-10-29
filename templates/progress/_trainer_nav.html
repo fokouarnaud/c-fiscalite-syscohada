@@ -1,0 +1,7 @@
+{% load i18n %}{% url 'trainer_table' as t1 %}{% url 'trainer_questions' as t2 %}{% url 'trainer_announcements' as t3 %}{% url 'trainer_deadlines' as t4 %}
+<nav class="subnav" aria-label="{% translate 'Espace formateur' %}">
+  <a href="{{ t1 }}"{% if request.path == t1 %} aria-current="page"{% endif %}>{% include "icons/users.svg" %}{% translate "Apprenants" %}</a>
+  <a href="{{ t2 }}"{% if request.path == t2 %} aria-current="page"{% endif %}>{% include "icons/chart-bar.svg" %}{% translate "Questions" %}</a>
+  <a href="{{ t3 }}"{% if request.path == t3 %} aria-current="page"{% endif %}>{% include "icons/speakerphone.svg" %}{% translate "Annonces" %}</a>
+  <a href="{{ t4 }}"{% if request.path == t4 %} aria-current="page"{% endif %}>{% include "icons/calendar-due.svg" %}{% translate "Dates limites" %}</a>
+</nav>

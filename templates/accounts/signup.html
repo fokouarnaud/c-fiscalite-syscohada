@@ -1,0 +1,36 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% translate "Créer un compte" %}{% endblock %}
+{% block content %}
+<div class="auth">
+  <section class="auth-intro">
+    <h1>{% translate "Apprenez l'électronique à votre rythme." %}</h1>
+    <p>{% translate "Un compte gratuit vous donne accès aux cours ouverts, aux quiz et à l'examen de chaque partie." %}</p>
+    <ul class="auth-points">
+      <li>{% include "icons/circle-check.svg" %}{% translate "Des quiz illimités, corrigés et expliqués" %}</li>
+      <li>{% include "icons/certificate.svg" %}{% translate "Un certificat vérifiable pour chaque partie réussie" %}</li>
+      <li>{% include "icons/key.svg" %}{% translate "Un code de promotion ? Vous le saisirez après l'inscription" %}</li>
+    </ul>
+  </section>
+  <section class="panel" aria-labelledby="titre-inscription">
+    <h2 id="titre-inscription">{% translate "Créer un compte" %}</h2>
+    <p class="muted">{% translate "Un lien de confirmation vous sera envoyé par e-mail." %}</p>
+    {% if form.non_field_errors %}<div class="notice notice-error" role="alert">{% include "icons/alert-triangle.svg" %}<div>{{ form.non_field_errors.0 }}</div></div>{% endif %}
+    <form method="post" class="form" novalidate>{% csrf_token %}
+      <div class="field-row">
+        {% include "includes/field.html" with field=form.first_name %}
+        {% include "includes/field.html" with field=form.last_name %}
+      </div>
+      {% include "includes/field.html" with field=form.username %}
+      {% include "includes/field.html" with field=form.email %}
+      {% include "includes/field.html" with field=form.password1 %}
+      {% include "includes/field.html" with field=form.password2 %}
+      <div class="trap" aria-hidden="true">
+        <label for="id_website">{% translate "Site web" %}</label>
+        <input type="text" name="website" id="id_website" tabindex="-1" autocomplete="off">
+      </div>
+      <button class="btn" type="submit">{% translate "Créer mon compte" %}</button>
+    </form>
+    <p class="muted small form-foot">{% translate "Déjà inscrit ?" %} <a href="{% url 'login' %}">{% translate "Se connecter" %}</a></p>
+  </section>
+</div>
+{% endblock %}

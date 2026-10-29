@@ -1,0 +1,27 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% translate "Réussite par question" %}{% endblock %}
+{% block content %}
+{% include "progress/_trainer_nav.html" %}
+<div class="page-head">
+  <h1>{% translate "Réussite par question" %}</h1>
+  <p class="muted lead">{% translate "Calculée sur les tentatives envoyées de vos apprenants. Un taux très bas signale souvent une question ambiguë." %}</p>
+</div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="{% translate 'Réussite par question' %}">
+  <table class="grid-table wrap-cells">
+    <thead><tr><th scope="col">{% translate "Question" %}</th><th scope="col">{% translate "Module" %}</th><th scope="col">{% translate "Type" %}</th><th scope="col">{% translate "Réponses" %}</th><th scope="col">{% translate "Réussite" %}</th></tr></thead>
+    <tbody>
+      {% for stat in stats %}
+        <tr>
+          <th scope="row">{{ stat.question.prompt }}</th>
+          <td>{{ stat.question.module.title }}</td>
+          <td><span class="badge">{{ stat.question.get_qtype_display }}</span></td>
+          <td class="num">{{ stat.answers }}</td>
+          <td class="num">{% if stat.success_pct is None %}<span class="muted">-</span>{% else %}<span class="rate{% if stat.success_pct < 40 %} rate-low{% endif %}">{{ stat.success_pct }} %</span>{% endif %}</td>
+        </tr>
+      {% empty %}
+        <tr><td colspan="5" class="muted">{% translate "Aucune question publiée pour vos formations." %}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

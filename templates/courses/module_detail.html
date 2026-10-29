@@ -1,0 +1,52 @@
+{% extends "base.html" %}{% load i18n acad_i18n %}
+{% block title %}{{ module.title }}{% endblock %}
+{% block content %}
+<div class="reader">
+  {% include "courses/_outline.html" with partie=module.partie %}
+  <article>
+    {% include "courses/_crumbs.html" with partie=module.partie module=None %}
+    <h1{{ module|lang_attr:"title" }}><span class="mod-num">M{{ number }}</span> {{ module.title }}</h1>
+    <div class="facts">
+      <span class="badge">{% include "icons/clock.svg" %}{% blocktranslate with h=module.duration_hours %}{{ h }} heures{% endblocktranslate %}</span>
+    </div>
+    {# Une seule action principale : l'étape suivante (section à lire, quiz à envoyer, puis module suivant ou examen). #}
+    <div class="cta-row module-next">
+      {% if step.section %}
+        <a class="btn" href="{% url 'section_detail' step.section.public_id %}">{% include "icons/player-play.svg" %}{% if step.started %}{% translate "Reprendre la lecture" %}{% else %}{% translate "Commencer la lecture" %}{% endif %}</a>
+        {% if has_quiz %}<form class="inline-form" method="post" action="{% url 'start_quiz' module.public_id %}">{% csrf_token %}<button class="btn btn-ghost" type="submit">{% translate "Faire le quiz" %}</button></form>{% endif %}
+      {% elif step.quiz %}
+        <form class="inline-form" method="post" action="{% url 'start_quiz' module.public_id %}">{% csrf_token %}<button class="btn" type="submit">{% include "icons/player-play.svg" %}{% translate "Faire le quiz" %}</button></form>
+        {% if sections %}<a class="btn btn-ghost" href="{% url 'section_detail' sections.0.section.public_id %}">{% translate "Relire depuis le début" %}</a>{% endif %}
+      {% else %}
+        {% if next_module %}
+          <a class="btn" href="{% url 'module_detail' next_module.public_id %}">{% blocktranslate with n=next_number %}Module suivant : M{{ n }}{% endblocktranslate %}{% include "icons/chevron-right.svg" %}</a>
+        {% else %}
+          <a class="btn" href="{% url 'exam' module.partie.public_id %}">{% blocktranslate with n=module.partie.order %}Examen de la Partie {{ n }}{% endblocktranslate %}{% include "icons/chevron-right.svg" %}</a>
+        {% endif %}
+        {% if has_quiz %}<form class="inline-form" method="post" action="{% url 'start_quiz' module.public_id %}">{% csrf_token %}<button class="btn btn-ghost" type="submit">{% translate "Refaire le quiz" %}</button></form>{% endif %}
+      {% endif %}
+    </div>
+    {% if module.competence %}
+      <section class="panel" aria-labelledby="competence">
+        <h2 id="competence">{% translate "Compétence visée" %}</h2>
+        <p>{{ module.competence }}</p>
+        {% if module.evaluation_note %}<p class="muted">{{ module.evaluation_note }}</p>{% endif %}
+      </section>
+    {% endif %}
+    <h2 style="margin-top:1.75rem">{% translate "Sections" %}</h2>
+    <ol class="section-list">
+      {% for row in sections %}
+        <li>
+          <a href="{% url 'section_detail' row.section.public_id %}">
+            {% if row.viewed %}{% include "icons/circle-check.svg" %}<span class="visually-hidden">{% translate "lu" %}</span>{% else %}<span class="dot-todo" aria-hidden="true"></span>{% endif %}
+            <span{{ row.section|lang_attr:"title" }}>{{ row.section.title }}</span>
+            {% if row.section.kind == "practical" %}<span class="badge badge-warn">{% translate "Pratique" %}</span>{% endif %}
+          </a>
+        </li>
+      {% empty %}
+        <li class="muted">{% translate "Le contenu de ce module arrive bientôt." %}</li>
+      {% endfor %}
+    </ol>
+  </article>
+</div>
+{% endblock %}

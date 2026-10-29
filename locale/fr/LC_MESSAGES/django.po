@@ -1,0 +1,2167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-29 03:30+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: .\accounts\admin.py:37 .\accounts\admin.py:38
+msgid "ComptaFisca Acad Ventisax"
+msgstr ""
+
+#: .\accounts\admin.py:42
+msgid "Fichier CSV (username;first_name;last_name;email)"
+msgstr ""
+
+#: .\accounts\admin.py:54
+msgid "Régénérer le code d'accès"
+msgstr ""
+
+#: .\accounts\admin.py:59
+#, python-format
+msgid "%(n)d code régénéré : l'ancien ne fonctionne plus."
+msgid_plural "%(n)d codes régénérés : les anciens ne fonctionnent plus."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\accounts\admin.py:62
+msgid "Désactiver le code d'accès"
+msgstr ""
+
+#: .\accounts\admin.py:66
+msgid "Activer le code d'accès"
+msgstr ""
+
+#: .\accounts\admin.py:75 .\templates\progress\_trainer_nav.html:3
+#: .\templates\progress\attempt_review.html:5
+msgid "Apprenants"
+msgstr ""
+
+#: .\accounts\admin.py:77
+msgid "Importer un CSV"
+msgstr ""
+
+#: .\accounts\admin.py:97
+msgid "Importer des apprenants"
+msgstr ""
+
+#: .\accounts\models.py:18 .\templates\progress\trainer_table.html:16
+msgid "Apprenant"
+msgstr ""
+
+#: .\accounts\models.py:19
+msgid "Formateur"
+msgstr ""
+
+#: .\accounts\models.py:20 .\catalog\models.py:13
+msgid "Administrateur"
+msgstr ""
+
+#: .\accounts\models.py:22
+msgid "rôle"
+msgstr ""
+
+#: .\accounts\models.py:23
+msgid "e-mail vérifié"
+msgstr ""
+
+#: .\accounts\models.py:56
+msgid "nom"
+msgstr ""
+
+#: .\accounts\models.py:58
+msgid "date de début"
+msgstr ""
+
+#: .\accounts\models.py:64
+msgid "formateurs"
+msgstr ""
+
+#: .\accounts\models.py:66
+msgid "code d'accès"
+msgstr ""
+
+#: .\accounts\models.py:67
+msgid "code d'accès actif"
+msgstr ""
+
+#: .\accounts\signup.py:39 .\templates\accounts\signup.html:28
+msgid "Site web"
+msgstr ""
+
+#: .\accounts\signup.py:53
+msgid "Un compte utilise déjà cette adresse e-mail."
+msgstr ""
+
+#: .\accounts\signup.py:87
+msgid "Confirmez votre inscription à ComptaFisca Acad Ventisax"
+msgstr ""
+
+#: .\accounts\throttling.py:38
+msgid "Trop de tentatives de connexion. Réessayez dans quelques minutes."
+msgstr ""
+
+#: .\accounts\views.py:82
+msgid "Trop d'inscriptions depuis cette connexion. Réessayez dans une heure."
+msgstr ""
+
+#: .\accounts\views.py:101
+msgid "Ce lien de confirmation est invalide ou a déjà servi."
+msgstr ""
+
+#: .\accounts\views.py:105
+msgid "Adresse confirmée. Vous pouvez vous connecter."
+msgstr ""
+
+#: .\assessments\admin.py:41
+msgid "Marquer comme relues (FR et EN)"
+msgstr ""
+
+#: .\assessments\admin.py:46
+#, python-format
+msgid "%(n)d question marquée relue."
+msgid_plural "%(n)d questions marquées relues."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\assessments\admin.py:50
+msgid "Publier les questions sélectionnées"
+msgstr ""
+
+#: .\assessments\admin.py:62
+#, python-format
+msgid "%(n)d question publiée."
+msgid_plural "%(n)d questions publiées."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\assessments\admin.py:66
+#, python-format
+msgid "Refusée %(reason)s"
+msgstr ""
+
+#: .\assessments\models.py:19
+msgid "QCM une réponse"
+msgstr ""
+
+#: .\assessments\models.py:20
+msgid "QCM plusieurs réponses"
+msgstr ""
+
+#: .\assessments\models.py:21
+msgid "Vrai / Faux"
+msgstr ""
+
+#: .\assessments\models.py:22
+msgid "Réponse numérique"
+msgstr ""
+
+#: .\assessments\models.py:23
+msgid "Appariement"
+msgstr ""
+
+#: .\assessments\models.py:24
+msgid "Zone cliquable sur schéma"
+msgstr ""
+
+#: .\assessments\models.py:25
+msgid "Écriture au journal"
+msgstr ""
+
+#: .\assessments\models.py:28 .\assessments\models.py:210
+msgid "Quiz de module"
+msgstr ""
+
+#: .\assessments\models.py:29 .\assessments\models.py:211
+msgid "Examen de partie"
+msgstr ""
+
+#: .\assessments\models.py:32
+msgid "Brouillon"
+msgstr ""
+
+#: .\assessments\models.py:33
+msgid "Publiée"
+msgstr ""
+
+#: .\assessments\models.py:37
+msgid "type"
+msgstr ""
+
+#: .\assessments\models.py:38
+msgid "usage"
+msgstr ""
+
+#: .\assessments\models.py:39
+msgid "statut"
+msgstr ""
+
+#: .\assessments\models.py:40
+msgid "énoncé"
+msgstr ""
+
+#: .\assessments\models.py:41
+msgid "explication"
+msgstr ""
+
+#: .\assessments\models.py:44
+msgid "image"
+msgstr ""
+
+#: .\assessments\models.py:49
+msgid "valeur attendue"
+msgstr ""
+
+#: .\assessments\models.py:50 .\referentiel\models.py:60
+#: .\templates\assessments\attempt.html:33
+msgid "unité"
+msgstr ""
+
+#: .\assessments\models.py:51
+msgid "tolérance absolue"
+msgstr ""
+
+#: .\assessments\models.py:52
+msgid "tolérance (%)"
+msgstr ""
+
+#: .\assessments\models.py:55 .\referentiel\models.py:58
+msgid "exercice"
+msgstr ""
+
+#: .\assessments\models.py:56
+msgid "paramètres utilisés"
+msgstr ""
+
+#: .\assessments\models.py:57
+msgid "Clés séparées par des espaces, par exemple « tva.taux_global is.taux »."
+msgstr ""
+
+#: .\assessments\models.py:59
+msgid "schéma SVG"
+msgstr ""
+
+#: .\assessments\models.py:60
+msgid "relue en français"
+msgstr ""
+
+#: .\assessments\models.py:61
+msgid "relue en anglais"
+msgstr ""
+
+#: .\assessments\models.py:75
+msgid "La question doit être relue en français et en anglais."
+msgstr ""
+
+#: .\assessments\models.py:79
+msgid "Un QCM à une réponse doit avoir exactement une bonne réponse."
+msgstr ""
+
+#: .\assessments\models.py:81
+msgid "Un QCM à plusieurs réponses doit avoir au moins deux bonnes réponses."
+msgstr ""
+
+#: .\assessments\models.py:83
+msgid "Une question Vrai/Faux doit avoir deux choix dont un seul correct."
+msgstr ""
+
+#: .\assessments\models.py:86
+msgid "Une question numérique doit avoir une valeur attendue."
+msgstr ""
+
+#: .\assessments\models.py:88
+msgid "Une question chiffrée en FCFA ou en % doit indiquer son exercice."
+msgstr ""
+
+#: .\assessments\models.py:90
+msgid "Une question numérique n'a pas de choix."
+msgstr ""
+
+#: .\assessments\models.py:92
+msgid "Une question d'appariement doit avoir au moins deux paires."
+msgstr ""
+
+#: .\assessments\models.py:95
+msgid "Une question sur schéma doit avoir un schéma SVG."
+msgstr ""
+
+#: .\assessments\models.py:97 .\config\uploads.py:47
+msgid "Ce SVG contient du script ou un lien actif : il est refusé."
+msgstr ""
+
+#: .\assessments\models.py:99
+msgid "Une question sur schéma doit avoir exactement une bonne zone."
+msgstr ""
+
+#: .\assessments\models.py:101
+msgid "Chaque zone d'une question sur schéma doit avoir une forme."
+msgstr ""
+
+#: .\assessments\models.py:114
+msgid "Une écriture au journal doit avoir au moins deux lignes."
+msgstr ""
+
+#: .\assessments\models.py:118
+#, python-format
+msgid "L'écriture n'est pas équilibrée : débit %(debit)s, crédit %(credit)s."
+msgstr ""
+
+#: .\assessments\models.py:123
+#, python-format
+msgid "Le compte %(code)s n'existe pas dans le plan SYSCOHADA."
+msgstr ""
+
+#: .\assessments\models.py:148
+msgid "texte"
+msgstr ""
+
+#: .\assessments\models.py:149
+msgid "bonne réponse"
+msgstr ""
+
+#: .\assessments\models.py:152
+msgid "zone"
+msgstr ""
+
+#: .\assessments\models.py:166 .\templates\assessments\attempt.html:62
+#: .\templates\assessments\result.html:68
+#: .\templates\assessments\result.html:76
+msgid "Débit"
+msgstr ""
+
+#: .\assessments\models.py:167 .\templates\assessments\attempt.html:63
+#: .\templates\assessments\result.html:68
+#: .\templates\assessments\result.html:76
+msgid "Crédit"
+msgstr ""
+
+#: .\assessments\models.py:170
+msgid "Classe"
+msgstr ""
+
+#: .\assessments\models.py:171
+msgid "2 chiffres"
+msgstr ""
+
+#: .\assessments\models.py:172
+msgid "3 chiffres"
+msgstr ""
+
+#: .\assessments\models.py:173
+msgid "4 chiffres"
+msgstr ""
+
+#: .\assessments\models.py:174
+msgid "Compte exact"
+msgstr ""
+
+#: .\assessments\models.py:178
+msgid "compte"
+msgstr ""
+
+#: .\assessments\models.py:179
+msgid "précision du compte"
+msgstr ""
+
+#: .\assessments\models.py:180
+msgid "sens"
+msgstr ""
+
+#: .\assessments\models.py:181
+msgid "montant (FCFA)"
+msgstr ""
+
+#: .\assessments\models.py:183 .\referentiel\models.py:10
+#: .\referentiel\models.py:61
+msgid "libellé"
+msgstr ""
+
+#: .\assessments\models.py:197
+msgid "élément"
+msgstr ""
+
+#: .\assessments\models.py:198
+msgid "correspondance"
+msgstr ""
+
+#: .\assessments\models.py:220
+msgid "seuil de réussite (%)"
+msgstr ""
+
+#: .\assessments\models.py:221
+msgid "tentatives maximum"
+msgstr ""
+
+#: .\assessments\models.py:222
+msgid "durée (minutes)"
+msgstr ""
+
+#: .\assessments\models.py:223
+msgid "questions par module"
+msgstr ""
+
+#: .\assessments\models.py:224
+msgid "mélanger questions et choix"
+msgstr ""
+
+#: .\assessments\scoring.py:91 .\certificates\views.py:79
+#, python-format
+msgctxt "pourcentage"
+msgid "%(number)s %%"
+msgstr ""
+
+#: .\assessments\scoring.py:92
+msgid "jours"
+msgstr ""
+
+#: .\assessments\scoring.py:92
+msgid "mois"
+msgstr ""
+
+#: .\assessments\scoring.py:92
+msgid "années"
+msgstr ""
+
+#: .\catalog\admin.py:11
+msgid "groupe"
+msgstr ""
+
+#: .\catalog\admin.py:15
+msgid "Groupe ouvert (sans promotion)"
+msgstr ""
+
+#: .\catalog\admin.py:15
+msgid "En promotion"
+msgstr ""
+
+#: .\catalog\models.py:10 .\templates\base.html:28 .\templates\base.html:33
+#: .\templates\catalog\catalogue.html:2
+#: .\templates\catalog\formation_detail.html:4
+msgid "Catalogue"
+msgstr ""
+
+#: .\catalog\models.py:11 .\catalog\views.py:53 .\templates\catalog\join.html:9
+msgid "Code de promotion"
+msgstr ""
+
+#: .\catalog\models.py:12
+msgid "Import CSV"
+msgstr ""
+
+#: .\catalog\models.py:19
+msgid "promotion"
+msgstr ""
+
+#: .\catalog\models.py:21
+msgid "origine"
+msgstr ""
+
+#: .\catalog\models.py:22
+msgid "inscrit le"
+msgstr ""
+
+#: .\catalog\models.py:37
+msgid "La promotion doit appartenir à la formation choisie."
+msgstr ""
+
+#: .\catalog\views.py:65
+msgid "Ce code est inconnu ou n'est plus actif."
+msgstr ""
+
+#: .\certificates\models.py:12
+msgid "Module terminé"
+msgstr ""
+
+#: .\certificates\models.py:13
+msgid "Partie réussie"
+msgstr ""
+
+#: .\certificates\models.py:40 .\referentiel\models.py:9
+msgid "numéro"
+msgstr ""
+
+#: .\certificates\models.py:44
+msgid "titulaire"
+msgstr ""
+
+#: .\certificates\models.py:45
+msgid "score (%)"
+msgstr ""
+
+#: .\certificates\models.py:46
+msgid "délivré le"
+msgstr ""
+
+#: .\certificates\views.py:58
+msgid "Certificat de réussite"
+msgstr ""
+
+#: .\certificates\views.py:60
+msgid "a réussi l'examen de la partie"
+msgstr ""
+
+#: .\certificates\views.py:62
+#, python-format
+msgid "Score : %(score)s %%"
+msgstr ""
+
+#: .\certificates\views.py:63
+#, python-format
+msgid "Délivré le %(date)s par ComptaFisca Acad Ventisax"
+msgstr ""
+
+#: .\certificates\views.py:66
+#, python-format
+msgid "Vérification : %(url)s"
+msgstr ""
+
+#: .\config\settings.py:130
+msgid "Français"
+msgstr ""
+
+#: .\config\settings.py:130
+msgid "English"
+msgstr ""
+
+#: .\courses\models.py:12
+msgid "Comptabilité (registre)"
+msgstr ""
+
+#: .\courses\models.py:13
+msgid "Fiscalité (reçu)"
+msgstr ""
+
+#: .\courses\models.py:16 .\courses\models.py:40 .\courses\models.py:58
+#: .\courses\models.py:87 .\courses\models.py:103 .\progress\models.py:19
+msgid "titre"
+msgstr ""
+
+#: .\courses\models.py:18 .\courses\models.py:41
+msgid "description"
+msgstr ""
+
+#: .\courses\models.py:21
+msgid "ouverte au catalogue"
+msgstr ""
+
+#: .\courses\models.py:22
+msgid "Visible dans le catalogue public et ouverte à l’inscription libre."
+msgstr ""
+
+#: .\courses\models.py:24
+msgid "icône"
+msgstr ""
+
+#: .\courses\models.py:26
+msgid "référence juridique"
+msgstr ""
+
+#: .\courses\models.py:28
+msgid "prérequis indicatif"
+msgstr ""
+
+#: .\courses\models.py:60
+msgid "durée (heures)"
+msgstr ""
+
+#: .\courses\models.py:61
+msgid "compétence visée"
+msgstr ""
+
+#: .\courses\models.py:62
+msgid "modalités d'évaluation"
+msgstr ""
+
+#: .\courses\models.py:82
+msgid "Contenu"
+msgstr ""
+
+#: .\courses\models.py:83
+msgid "Activités pratiques"
+msgstr ""
+
+#: .\courses\models.py:90
+msgid "contenu (Markdown)"
+msgstr ""
+
+#: .\courses\rendering.py:49
+#, python-format
+msgid "art. %(number)s"
+msgstr ""
+
+#: .\courses\rendering.py:51
+#, python-format
+msgid "Code général des impôts du Cameroun, édition %(year)s"
+msgstr ""
+
+#: .\courses\rendering.py:52
+#, python-format
+msgid "CGI %(year)s, %(ref)s"
+msgstr ""
+
+#: .\courses\rendering.py:62
+msgid "Plan comptable SYSCOHADA révisé"
+msgstr ""
+
+#: .\courses\rendering.py:67
+msgid "Guide d'application du SYSCOHADA révisé (OHADA)"
+msgstr ""
+
+#: .\courses\rendering.py:68
+#, python-format
+msgid "Guide SYSCOHADA, %(ref)s"
+msgstr ""
+
+#: .\progress\models.py:20
+msgid "message"
+msgstr ""
+
+#: .\progress\models.py:21
+msgid "publiée le"
+msgstr ""
+
+#: .\progress\models.py:35
+msgid "date limite"
+msgstr ""
+
+#: .\progress\views.py:95 .\progress\views.py:199 .\progress\views.py:224
+#: .\templates\progress\trainer_table.html:17
+msgid "Promotion"
+msgstr ""
+
+#: .\progress\views.py:95 .\templates\accounts\login.html:23
+#: .\templates\admin\accounts\promotion\import.html:9
+msgid "Identifiant"
+msgstr ""
+
+#: .\progress\views.py:95
+msgid "Nom"
+msgstr ""
+
+#: .\progress\views.py:97
+#, python-format
+msgid "Examen %(partie)s (%%)"
+msgstr ""
+
+#: .\progress\views.py:97
+#, python-format
+msgid "Tentatives %(partie)s"
+msgstr ""
+
+#: .\progress\views.py:102
+msgid "oui"
+msgstr ""
+
+#: .\progress\views.py:102
+msgid "non"
+msgstr ""
+
+#: .\progress\views.py:194
+msgid "Titre"
+msgstr ""
+
+#: .\progress\views.py:195
+msgid "Message"
+msgstr ""
+
+#: .\progress\views.py:219 .\templates\progress\deadlines.html:15
+msgid "Quiz ou examen"
+msgstr ""
+
+#: .\progress\views.py:220 .\templates\progress\deadlines.html:27
+msgid "Date limite"
+msgstr ""
+
+#: .\progress\views.py:243
+msgid "Choisissez un quiz ou un examen de la formation de cette promotion."
+msgstr ""
+
+#: .\referentiel\admin.py:20
+msgid "Questions à revoir"
+msgstr ""
+
+#: .\referentiel\admin.py:26
+msgid "Aucune question n'utilise ce paramètre."
+msgstr ""
+
+#: .\referentiel\apps.py:8
+msgid "Référentiels"
+msgstr ""
+
+#: .\referentiel\models.py:11
+msgid "classe"
+msgstr ""
+
+#: .\referentiel\models.py:12
+msgid "niveau"
+msgstr ""
+
+#: .\referentiel\models.py:18
+msgid "compte SYSCOHADA"
+msgstr ""
+
+#: .\referentiel\models.py:19
+msgid "comptes SYSCOHADA"
+msgstr ""
+
+#: .\referentiel\models.py:55
+msgid "coefficient"
+msgstr ""
+
+#: .\referentiel\models.py:57
+msgid "clé"
+msgstr ""
+
+#: .\referentiel\models.py:57
+msgid "Par exemple tva.taux_global ; utilisée par [[param:clé]]."
+msgstr ""
+
+#: .\referentiel\models.py:59
+msgid "valeur"
+msgstr ""
+
+#: .\referentiel\models.py:62
+msgid "article source"
+msgstr ""
+
+#: .\referentiel\models.py:68
+msgid "paramètre fiscal"
+msgstr ""
+
+#: .\referentiel\models.py:69
+msgid "paramètres fiscaux"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:2 .\templates\accounts\dashboard.html:6
+#: .\templates\base.html:25 .\templates\certificates\mine.html:40
+msgid "Mes cours"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:6
+#, python-format
+msgid "Bonjour, %(name)s"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:10
+#: .\templates\progress\_trainer_nav.html:5
+#: .\templates\progress\announcements.html:2
+#: .\templates\progress\announcements.html:5
+msgid "Annonces"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:21
+msgid "Mes formations"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:34
+msgid "Progression"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:39
+#, python-format
+msgid "Partie %(n)s, module M%(m)s :"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:42
+msgid "Reprendre"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:44
+msgid "Sections lues : il reste le quiz du module."
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:45
+#: .\templates\courses\module_detail.html:16
+#: .\templates\courses\module_detail.html:18
+msgid "Faire le quiz"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:49
+msgid "Tous les modules sont terminés. Il reste les examens des parties."
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:52
+msgid "Parties de la formation"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:53 .\templates\courses\_crumbs.html:5
+#, python-format
+msgid "Partie %(n)s"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:71
+msgid "Terminé"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:71
+msgid "étapes faites"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:71 .\templates\catalog\catalogue.html:19
+#: .\templates\catalog\formation_detail.html:18
+#: .\templates\catalog\formation_detail.html:27
+#, python-format
+msgid "%(h)s h"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:78
+#: .\templates\assessments\result.html:26 .\templates\courses\_outline.html:31
+#: .\templates\courses\module_detail.html:24
+#, python-format
+msgid "Examen de la Partie %(n)s"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:79
+msgid "Ouvert"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:79
+msgid "Ce qu'il reste à faire"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:89
+msgid "Aucune formation pour le moment"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:90
+msgid ""
+"Vous n'êtes inscrit à aucune formation. Choisissez-en une dans le catalogue "
+"ou saisissez le code de votre promotion."
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:91
+msgid "Voir le catalogue"
+msgstr ""
+
+#: .\templates\accounts\dashboard.html:91
+msgid "J'ai un code"
+msgstr ""
+
+#: .\templates\accounts\email\password_reset.txt:1
+msgid ""
+"Vous avez demandé à changer votre mot de passe ComptaFisca Acad Ventisax. "
+"Ouvrez ce lien :"
+msgstr ""
+
+#: .\templates\accounts\email\password_reset.txt:5
+#, python-format
+msgid "Votre identifiant : %(username)s"
+msgstr ""
+
+#: .\templates\accounts\email\password_reset.txt:7
+msgid "Si vous n'êtes pas à l'origine de cette demande, ignorez ce message."
+msgstr ""
+
+#: .\templates\accounts\email\password_reset_subject.txt:1
+msgid "Changement de mot de passe"
+msgstr ""
+
+#: .\templates\accounts\email\verify_email.txt:1
+#, python-format
+msgid "Bonjour %(name)s,"
+msgstr ""
+
+#: .\templates\accounts\email\verify_email.txt:3
+msgid "Pour activer votre compte ComptaFisca Acad Ventisax, ouvrez ce lien :"
+msgstr ""
+
+#: .\templates\accounts\email\verify_email.txt:7
+msgid ""
+"Sans confirmation, le compte est supprimé au bout de 7 jours. Si vous n'êtes "
+"pas à l'origine de cette inscription, ignorez ce message."
+msgstr ""
+
+#: .\templates\accounts\login.html:2 .\templates\accounts\login.html:15
+#: .\templates\base.html:34
+msgid "Connexion"
+msgstr ""
+
+#: .\templates\accounts\login.html:6
+msgid "Votre formation, module après module."
+msgstr ""
+
+#: .\templates\accounts\login.html:7
+msgid ""
+"Cours, quiz d'entraînement et examens du centre, lisibles sur téléphone."
+msgstr ""
+
+#: .\templates\accounts\login.html:9
+msgid "Reprenez là où vous vous êtes arrêté"
+msgstr ""
+
+#: .\templates\accounts\login.html:10
+msgid "Vos réponses d'examen sont enregistrées à chaque clic"
+msgstr ""
+
+#: .\templates\accounts\login.html:11
+msgid "En français et en anglais"
+msgstr ""
+
+#: .\templates\accounts\login.html:16
+msgid "Utilisez votre identifiant, ou celui remis par le centre."
+msgstr ""
+
+#: .\templates\accounts\login.html:18
+msgid "Identifiant ou mot de passe incorrect."
+msgstr ""
+
+#: .\templates\accounts\login.html:27
+msgid "Mot de passe"
+msgstr ""
+
+#: .\templates\accounts\login.html:30
+#: .\templates\accounts\password_reset_complete.html:7
+#: .\templates\accounts\signup.html:33
+msgid "Se connecter"
+msgstr ""
+
+#: .\templates\accounts\login.html:32
+msgid "Aide à la connexion"
+msgstr ""
+
+#: .\templates\accounts\login.html:33
+msgid "Mot de passe oublié ?"
+msgstr ""
+
+#: .\templates\accounts\login.html:34 .\templates\accounts\signup.html:2
+#: .\templates\accounts\signup.html:15 .\templates\base.html:48
+msgid "Créer un compte"
+msgstr ""
+
+#: .\templates\accounts\password_reset_complete.html:2
+#: .\templates\accounts\password_reset_complete.html:5
+msgid "Mot de passe changé"
+msgstr ""
+
+#: .\templates\accounts\password_reset_complete.html:6
+msgid "Vous pouvez vous connecter avec votre nouveau mot de passe."
+msgstr ""
+
+#: .\templates\accounts\password_reset_confirm.html:2
+#: .\templates\accounts\password_reset_confirm.html:5
+msgid "Nouveau mot de passe"
+msgstr ""
+
+#: .\templates\accounts\password_reset_confirm.html:10
+#: .\templates\progress\deadlines.html:32
+msgid "Enregistrer"
+msgstr ""
+
+#: .\templates\accounts\password_reset_confirm.html:13
+msgid "Ce lien est invalide ou a déjà servi. Demandez-en un nouveau."
+msgstr ""
+
+#: .\templates\accounts\password_reset_confirm.html:14
+msgid "Demander un nouveau lien"
+msgstr ""
+
+#: .\templates\accounts\password_reset_done.html:2
+#: .\templates\accounts\password_reset_done.html:5
+#: .\templates\accounts\signup_done.html:2
+#: .\templates\accounts\signup_done.html:5
+msgid "Vérifiez vos e-mails"
+msgstr ""
+
+#: .\templates\accounts\password_reset_done.html:6
+msgid ""
+"Si un compte correspond à cette adresse, un lien vient de lui être envoyé. "
+"Il reste valable 24 heures."
+msgstr ""
+
+#: .\templates\accounts\password_reset_done.html:7
+#: .\templates\accounts\signup_done.html:8
+msgid "Aller à la connexion"
+msgstr ""
+
+#: .\templates\accounts\password_reset_form.html:2
+#: .\templates\accounts\password_reset_form.html:5
+msgid "Mot de passe oublié"
+msgstr ""
+
+#: .\templates\accounts\password_reset_form.html:6
+msgid ""
+"Saisissez l'adresse e-mail de votre compte : nous vous enverrons un lien "
+"pour choisir un nouveau mot de passe."
+msgstr ""
+
+#: .\templates\accounts\password_reset_form.html:9
+msgid "Envoyer le lien"
+msgstr ""
+
+#: .\templates\accounts\password_reset_form.html:11
+msgid ""
+"Pas d'adresse e-mail sur votre compte ? Demandez un nouveau mot de passe à "
+"votre formateur."
+msgstr ""
+
+#: .\templates\accounts\signup.html:6
+msgid "Apprenez l'électronique à votre rythme."
+msgstr ""
+
+#: .\templates\accounts\signup.html:7
+msgid ""
+"Un compte gratuit vous donne accès aux cours ouverts, aux quiz et à l'examen "
+"de chaque partie."
+msgstr ""
+
+#: .\templates\accounts\signup.html:9
+msgid "Des quiz illimités, corrigés et expliqués"
+msgstr ""
+
+#: .\templates\accounts\signup.html:10
+msgid "Un certificat vérifiable pour chaque partie réussie"
+msgstr ""
+
+#: .\templates\accounts\signup.html:11
+msgid "Un code de promotion ? Vous le saisirez après l'inscription"
+msgstr ""
+
+#: .\templates\accounts\signup.html:16
+msgid "Un lien de confirmation vous sera envoyé par e-mail."
+msgstr ""
+
+#: .\templates\accounts\signup.html:31
+msgid "Créer mon compte"
+msgstr ""
+
+#: .\templates\accounts\signup.html:33
+msgid "Déjà inscrit ?"
+msgstr ""
+
+#: .\templates\accounts\signup_done.html:6
+msgid ""
+"Si les informations sont valides, un lien de confirmation vient de vous être "
+"envoyé. Ouvrez-le pour activer votre compte."
+msgstr ""
+
+#: .\templates\accounts\signup_done.html:7
+msgid ""
+"Sans confirmation, le compte est supprimé au bout de 7 jours. Pensez à "
+"regarder dans les courriers indésirables."
+msgstr ""
+
+#: .\templates\admin\accounts\promotion\import.html:3
+#, python-format
+msgid "Importer des apprenants dans %(p)s"
+msgstr ""
+
+#: .\templates\admin\accounts\promotion\import.html:6
+#, python-format
+msgid "%(n)s apprenant créé."
+msgid_plural "%(n)s apprenants créés."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\templates\admin\accounts\promotion\import.html:7
+msgid "Notez ces mots de passe maintenant : ils ne seront plus affichés."
+msgstr ""
+
+#: .\templates\admin\accounts\promotion\import.html:9
+msgid "Mot de passe initial"
+msgstr ""
+
+#: .\templates\admin\accounts\promotion\import.html:12
+msgid "Identifiants déjà utilisés, ignorés :"
+msgstr ""
+
+#: .\templates\admin\accounts\promotion\import.html:16
+msgid "Importer"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:2 .\templates\assessments\exam.html:2
+#: .\templates\progress\trainer_table.html:39
+msgid "Examen"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:2
+msgid "Quiz"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:5
+msgid "Enregistrement…"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:6
+msgid "Réponse enregistrée"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:7
+msgid "Échec de l’enregistrement. Vérifiez la connexion puis recochez."
+msgstr ""
+
+#: .\templates\assessments\attempt.html:8
+msgid "Temps écoulé : la tentative est envoyée."
+msgstr ""
+
+#: .\templates\assessments\attempt.html:9
+#, python-format
+msgid "%%(done)s / %%(total)s répondues"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:11 .\templates\assessments\exam.html:7
+#: .\templates\progress\attempt_review.html:10
+#: .\templates\progress\deadlines.html:20
+#, python-format
+msgid "Examen : %(p)s"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:11
+#: .\templates\progress\attempt_review.html:10
+#: .\templates\progress\deadlines.html:19
+#, python-format
+msgid "Quiz : %(m)s"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:14
+msgid "Temps restant"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:28
+msgid ""
+"Saisissez un nombre : espaces ou points pour les milliers, virgule pour les "
+"décimales (ex. 1 250 000 ou 19,25)."
+msgstr ""
+
+#: .\templates\assessments\attempt.html:30
+#: .\templates\assessments\result.html:99
+msgid "Votre réponse"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:37
+msgid "Associez chaque élément à sa correspondance."
+msgstr ""
+
+#: .\templates\assessments\attempt.html:44
+msgid "Choisir"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:51
+msgid ""
+"Passez l'écriture : un compte SYSCOHADA, un sens et un montant en FCFA par "
+"ligne ; l'ordre des lignes est libre."
+msgstr ""
+
+#: .\templates\assessments\attempt.html:54
+#: .\templates\assessments\result.html:76
+msgid "Compte"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:54
+#: .\templates\assessments\result.html:76
+msgid "Libellé"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:54
+msgid "Sens"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:54
+#: .\templates\courses\_calc_labels.html:5
+msgid "Montant (FCFA)"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:58
+#, python-format
+msgid "Compte, ligne %(n)s"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:59
+#, python-format
+msgid "Libellé, ligne %(n)s"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:60
+#, python-format
+msgid "Sens, ligne %(n)s"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:65
+#, python-format
+msgid "Montant, ligne %(n)s"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:72
+msgid "Cliquez la bonne zone du schéma, ou choisissez-la dans la liste."
+msgstr ""
+
+#: .\templates\assessments\attempt.html:83
+msgid "Plusieurs réponses possibles."
+msgstr ""
+
+#: .\templates\assessments\attempt.html:83
+msgid "Une seule réponse."
+msgstr ""
+
+#: .\templates\assessments\attempt.html:94
+msgid "Enregistrer cette réponse"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:98
+msgid "Aucune question publiée pour le moment."
+msgstr ""
+
+#: .\templates\assessments\attempt.html:105
+#, python-format
+msgid "%(n)s question sans réponse"
+msgid_plural "%(n)s questions sans réponse"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\templates\assessments\attempt.html:109
+msgid "Envoyer quand même"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:111
+msgid "Une fois envoyé, l'examen ne peut plus être modifié."
+msgstr ""
+
+#: .\templates\assessments\attempt.html:111
+msgid "Vous verrez la correction juste après l'envoi."
+msgstr ""
+
+#: .\templates\assessments\attempt.html:112
+msgid "Envoyer l'examen"
+msgstr ""
+
+#: .\templates\assessments\attempt.html:112
+msgid "Voir la correction"
+msgstr ""
+
+#: .\templates\assessments\exam.html:9
+#, python-format
+msgid "%(d)s minutes"
+msgstr ""
+
+#: .\templates\assessments\exam.html:10
+#, python-format
+msgid "%(t)s %% pour réussir"
+msgstr ""
+
+#: .\templates\assessments\exam.html:11
+#, python-format
+msgid "%(n)s tentative restante"
+msgid_plural "%(n)s tentatives restantes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\templates\assessments\exam.html:14
+msgid "L'examen s'ouvre quand ces modules sont terminés :"
+msgstr ""
+
+#: .\templates\assessments\exam.html:16
+msgid "À terminer"
+msgstr ""
+
+#: .\templates\assessments\exam.html:19
+msgid "Un examen est en cours. Le chrono continue de tourner."
+msgstr ""
+
+#: .\templates\assessments\exam.html:20
+msgid "Reprendre l'examen"
+msgstr ""
+
+#: .\templates\assessments\exam.html:22
+msgid "Vous avez utilisé toutes vos tentatives. Parlez-en à votre formateur."
+msgstr ""
+
+#: .\templates\assessments\exam.html:24
+msgid ""
+"Le chrono démarre dès que vous commencez. Chaque réponse est enregistrée "
+"immédiatement : si la connexion coupe, revenez sur cette page pour reprendre."
+msgstr ""
+
+#: .\templates\assessments\exam.html:25
+msgid "Commencer l'examen"
+msgstr ""
+
+#: .\templates\assessments\exam.html:29
+msgid "Meilleur score"
+msgstr ""
+
+#: .\templates\assessments\exam.html:32
+msgid "Réussi"
+msgstr ""
+
+#: .\templates\assessments\exam.html:32
+msgid "Pas encore réussi"
+msgstr ""
+
+#: .\templates\assessments\exam.html:34
+msgid "Aucune tentative pour le moment."
+msgstr ""
+
+#: .\templates\assessments\result.html:2
+#: .\templates\progress\attempt_review.html:17
+msgid "Résultat"
+msgstr ""
+
+#: .\templates\assessments\result.html:9
+msgid "Examen réussi"
+msgstr ""
+
+#: .\templates\assessments\result.html:9
+msgid "Examen non réussi"
+msgstr ""
+
+#: .\templates\assessments\result.html:9
+msgid "Correction du quiz"
+msgstr ""
+
+#: .\templates\assessments\result.html:11
+#, python-format
+msgid "Seuil de réussite : %(t)s %%."
+msgstr ""
+
+#: .\templates\assessments\result.html:12
+#, python-format
+msgid "%(n)s tentative restante."
+msgid_plural "%(n)s tentatives restantes."
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\templates\assessments\result.html:14
+msgid "Ce quiz ne compte pas dans la note. Refaites-le autant que vous voulez."
+msgstr ""
+
+#: .\templates\assessments\result.html:15
+#, python-format
+msgid "Module terminé. Suivant : M%(n)s. %(t)s"
+msgstr ""
+
+#: .\templates\assessments\result.html:15
+msgid "Module terminé : c'était le dernier de la partie."
+msgstr ""
+
+#: .\templates\assessments\result.html:17
+msgid "Temps écoulé : vos réponses ont été envoyées automatiquement."
+msgstr ""
+
+#: .\templates\assessments\result.html:20
+msgid "Retour à mes cours"
+msgstr ""
+
+#: .\templates\assessments\result.html:23
+#: .\templates\courses\module_detail.html:22
+#, python-format
+msgid "Module suivant : M%(n)s"
+msgstr ""
+
+#: .\templates\assessments\result.html:24
+#: .\templates\assessments\result.html:27
+#: .\templates\assessments\result.html:29
+msgid "Retour au module"
+msgstr ""
+
+#: .\templates\assessments\result.html:31
+#: .\templates\courses\module_detail.html:26
+msgid "Refaire le quiz"
+msgstr ""
+
+#: .\templates\assessments\result.html:39
+msgid "Score par module"
+msgstr ""
+
+#: .\templates\assessments\result.html:48
+msgid "Filtrer la correction"
+msgstr ""
+
+#: .\templates\assessments\result.html:49
+#, python-format
+msgid "Toutes (%(n)s)"
+msgstr ""
+
+#: .\templates\assessments\result.html:50
+#, python-format
+msgid "Seulement les erreurs (%(n)s)"
+msgstr ""
+
+#: .\templates\assessments\result.html:58
+msgid "Correct"
+msgstr ""
+
+#: .\templates\assessments\result.html:58
+#: .\templates\progress\attempt_review.html:23
+msgid "Partiel"
+msgstr ""
+
+#: .\templates\assessments\result.html:58
+msgid "Incorrect"
+msgstr ""
+
+#: .\templates\assessments\result.html:61
+msgid "Votre réponse :"
+msgstr ""
+
+#: .\templates\assessments\result.html:61
+#: .\templates\assessments\result.html:71
+#: .\templates\assessments\result.html:89
+msgid "Sans réponse"
+msgstr ""
+
+#: .\templates\assessments\result.html:61
+msgid "Valeur attendue :"
+msgstr ""
+
+#: .\templates\assessments\result.html:63
+msgid "Votre écriture"
+msgstr ""
+
+#: .\templates\assessments\result.html:74
+msgid "Écriture attendue"
+msgstr ""
+
+#: .\templates\assessments\result.html:89
+#, python-format
+msgid "Vous : %(g)s"
+msgstr ""
+
+#: .\templates\assessments\result.html:103
+msgid "Sans réponse."
+msgstr ""
+
+#: .\templates\base.html:7 .\templates\certificates\verify.html:9
+msgid "Formation"
+msgstr ""
+
+#: .\templates\base.html:13
+msgid "Aller au contenu"
+msgstr ""
+
+#: .\templates\base.html:18
+msgid ""
+"Comptabilité SYSCOHADA et fiscalité camerounaise, formation et évaluation"
+msgstr ""
+
+#: .\templates\base.html:20
+msgid "Navigation principale"
+msgstr ""
+
+#: .\templates\base.html:23
+msgid "Suivi"
+msgstr ""
+
+#: .\templates\base.html:26 .\templates\certificates\mine.html:22
+msgid "Certificats"
+msgstr ""
+
+#: .\templates\base.html:30
+msgid "Gestion"
+msgstr ""
+
+#: .\templates\base.html:45
+msgid "Déconnexion"
+msgstr ""
+
+#: .\templates\base.html:64
+msgid "Ventisax, centre de formation à Yaoundé."
+msgstr ""
+
+#: .\templates\catalog\_enroll_action.html:3
+msgid "Continuer"
+msgstr ""
+
+#: .\templates\catalog\_enroll_action.html:6
+#: .\templates\catalog\_enroll_action.html:9
+msgid "S'inscrire"
+msgstr ""
+
+#: .\templates\catalog\catalogue.html:5
+msgid "Catalogue des formations"
+msgstr ""
+
+#: .\templates\catalog\catalogue.html:6
+msgid ""
+"Des cours en ligne avec quiz et examen, en français et en anglais. Commencez "
+"quand vous voulez."
+msgstr ""
+
+#: .\templates\catalog\catalogue.html:18
+#, python-format
+msgid "%(n)s module"
+msgid_plural "%(n)s modules"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\templates\catalog\catalogue.html:20
+msgid "Certificat par partie"
+msgstr ""
+
+#: .\templates\catalog\catalogue.html:25
+msgid "Programme"
+msgstr ""
+
+#: .\templates\catalog\catalogue.html:30
+msgid "Aucune formation ouverte pour le moment"
+msgstr ""
+
+#: .\templates\catalog\catalogue.html:31
+msgid ""
+"Votre centre vous a donné un code de promotion ? Connectez-vous puis "
+"saisissez-le."
+msgstr ""
+
+#: .\templates\catalog\catalogue.html:36
+msgid "Vous avez un code de promotion ?"
+msgstr ""
+
+#: .\templates\catalog\catalogue.html:36 .\templates\catalog\join.html:2
+#: .\templates\catalog\join.html:5
+msgid "Rejoindre ma promotion"
+msgstr ""
+
+#: .\templates\catalog\formation_detail.html:21
+msgid ""
+"Examen chronométré en fin de partie ; certificat vérifiable si vous le "
+"réussissez."
+msgstr ""
+
+#: .\templates\catalog\formation_detail.html:25
+msgid "Inscription"
+msgstr ""
+
+#: .\templates\catalog\formation_detail.html:27
+msgid "Durée"
+msgstr ""
+
+#: .\templates\catalog\formation_detail.html:28
+msgid "Modules"
+msgstr ""
+
+#: .\templates\catalog\formation_detail.html:29
+msgid "Langues"
+msgstr ""
+
+#: .\templates\catalog\formation_detail.html:33
+msgid "J'ai déjà un compte"
+msgstr ""
+
+#: .\templates\catalog\formation_detail.html:35
+msgid ""
+"Inscription gratuite. Les quiz sont illimités ; l'examen accepte trois "
+"tentatives."
+msgstr ""
+
+#: .\templates\catalog\join.html:6
+msgid ""
+"Saisissez le code à 8 caractères donné par votre formateur. Majuscules et "
+"espaces n'ont pas d'importance."
+msgstr ""
+
+#: .\templates\catalog\join.html:13
+msgid "Rejoindre"
+msgstr ""
+
+#: .\templates\certificates\mine.html:2 .\templates\certificates\mine.html:5
+msgid "Certificats et badges"
+msgstr ""
+
+#: .\templates\certificates\mine.html:6
+msgid ""
+"Chaque partie réussie à l'examen donne un certificat vérifiable en ligne."
+msgstr ""
+
+#: .\templates\certificates\mine.html:11
+msgid "Votre nom sur le certificat"
+msgstr ""
+
+#: .\templates\certificates\mine.html:12
+msgid ""
+"Renseignez votre prénom et votre nom tels qu'ils doivent figurer sur vos "
+"certificats. Ils ne changeront plus une fois le certificat délivré."
+msgstr ""
+
+#: .\templates\certificates\mine.html:17
+msgid "Enregistrer mon nom"
+msgstr ""
+
+#: .\templates\certificates\mine.html:28
+#, python-format
+msgid "délivré le %(d)s"
+msgstr ""
+
+#: .\templates\certificates\mine.html:33
+msgid "Vérification"
+msgstr ""
+
+#: .\templates\certificates\mine.html:38
+msgid "Pas encore de certificat"
+msgstr ""
+
+#: .\templates\certificates\mine.html:39
+#, python-format
+msgid ""
+"Terminez les modules d'une partie, puis réussissez son examen avec au moins "
+"70 %% pour obtenir votre certificat."
+msgstr ""
+
+#: .\templates\certificates\mine.html:46
+msgid "Badges"
+msgstr ""
+
+#: .\templates\certificates\mine.html:57
+msgid ""
+"Terminez un module (sections lues et quiz envoyé) pour gagner votre premier "
+"badge."
+msgstr ""
+
+#: .\templates\certificates\verify.html:2
+msgid "Vérification de certificat"
+msgstr ""
+
+#: .\templates\certificates\verify.html:5
+msgid "Certificat valide"
+msgstr ""
+
+#: .\templates\certificates\verify.html:6
+msgid "Ce certificat a bien été délivré par ComptaFisca Acad Ventisax."
+msgstr ""
+
+#: .\templates\certificates\verify.html:8
+msgid "Titulaire"
+msgstr ""
+
+#: .\templates\certificates\verify.html:10
+msgid "Partie"
+msgstr ""
+
+#: .\templates\certificates\verify.html:11
+msgid "Score"
+msgstr ""
+
+#: .\templates\certificates\verify.html:12
+msgid "Délivré le"
+msgstr ""
+
+#: .\templates\certificates\verify.html:13
+msgid "Statut"
+msgstr ""
+
+#: .\templates\certificates\verify.html:13
+msgid "valide"
+msgstr ""
+
+#: .\templates\certificates\verify.html:15
+#, python-format
+msgid "Numéro %(n)s"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:3
+msgid "Remplissez toutes les valeurs."
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:4
+msgid "Calculateur : TVA"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:4
+msgid "Saisissez un montant hors taxes ou toutes taxes comprises."
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:5
+msgid "Montant HT,Montant TTC"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:6
+msgid "Hors taxes"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:6
+msgid "TVA au taux principal"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:7
+msgid "Centimes additionnels communaux"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:7
+msgid "Total des taxes"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:8
+msgid "Toutes taxes comprises"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:9
+msgid "Calculateur : impôt sur les sociétés"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:10
+msgid ""
+"Le plus élevé de l’IS et du minimum de perception est dû, centimes "
+"additionnels compris."
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:11
+msgid "Bénéfice fiscal (FCFA)"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:11
+msgid "Chiffre d’affaires (FCFA)"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:12
+msgid "Taux appliqué"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:12
+msgid "IS, centimes compris"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:13
+msgid "Minimum de perception, centimes compris"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:13
+msgid "Impôt dû"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:14
+msgid "Calculateur : plan d’amortissement"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:15
+msgid "Valeur d’origine (FCFA)"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:15
+msgid "Durée (années)"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:16
+msgid "Mois de mise en service (1 à 12)"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:16
+msgid "Linéaire,Dégressif"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:17
+msgid "Coefficient dégressif"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:17
+msgid "Année"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:18
+msgid "Dotation"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:18
+msgid "Cumul"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:18
+msgid "Valeur nette comptable"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:19
+msgid "Calculateur : facture et réductions"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:20
+msgid "Montant brut (FCFA)"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:20
+#, python-format
+msgid "Remise (%%)"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:20
+#, python-format
+msgid "Rabais (%%)"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:21
+#, python-format
+msgid "Ristourne (%%)"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:21
+#, python-format
+msgid "Escompte (%%)"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:22
+msgid "Net commercial"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:22
+msgid "Net financier"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:22
+msgid "TVA"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:23
+msgid "Calculateur : valorisation des sorties de stock"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:24
+msgid "Un lot par ligne : quantité et coût unitaire, par exemple « 100 1000 »."
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:25
+msgid "Lots en stock"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:25
+msgid "Quantité sortie"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:25
+msgid "CMUP,PEPS"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:26
+msgid "Coût unitaire moyen"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:26
+msgid "Valeur de la sortie"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:27
+msgid "Valeur du stock restant"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:28
+msgid "Calculateur : retenues sur salaire"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:29
+msgid ""
+"Montants mensuels. La cotisation CNPS salariale se saisit : son taux relève "
+"du droit social."
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:30
+msgid "Salaire brut mensuel (FCFA)"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:30
+msgid "Salaire de base mensuel (FCFA)"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:31
+msgid "Cotisation CNPS salariale mensuelle (FCFA)"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:32
+msgid "IRPP, centimes compris"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:32
+msgid "Crédit foncier (part salariale)"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:33
+msgid "Redevance audiovisuelle"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:33
+msgid "Taxe de développement local (mois)"
+msgstr ""
+
+#: .\templates\courses\_calc_labels.html:34
+msgid "Total retenu"
+msgstr ""
+
+#: .\templates\courses\_crumbs.html:2
+msgid "Fil d'Ariane"
+msgstr ""
+
+#: .\templates\courses\_outline.html:3
+msgid "Sommaire"
+msgstr ""
+
+#: .\templates\courses\_outline.html:4
+msgid "Sommaire de la partie"
+msgstr ""
+
+#: .\templates\courses\_outline.html:5
+#: .\templates\includes\partie_heading.html:2
+#, python-format
+msgid "Partie %(n)s :"
+msgstr ""
+
+#: .\templates\courses\_outline.html:10
+#: .\templates\progress\trainer_table.html:31
+msgid "terminé"
+msgstr ""
+
+#: .\templates\courses\_outline.html:18
+#: .\templates\courses\module_detail.html:41
+msgid "lu"
+msgstr ""
+
+#: .\templates\courses\_outline.html:24
+msgid "Quiz du module"
+msgstr ""
+
+#: .\templates\courses\_outline.html:32
+msgid "Toutes les parties"
+msgstr ""
+
+#: .\templates\courses\module_detail.html:10
+#, python-format
+msgid "%(h)s heures"
+msgstr ""
+
+#: .\templates\courses\module_detail.html:15
+msgid "Reprendre la lecture"
+msgstr ""
+
+#: .\templates\courses\module_detail.html:15
+msgid "Commencer la lecture"
+msgstr ""
+
+#: .\templates\courses\module_detail.html:19
+msgid "Relire depuis le début"
+msgstr ""
+
+#: .\templates\courses\module_detail.html:31
+msgid "Compétence visée"
+msgstr ""
+
+#: .\templates\courses\module_detail.html:36
+#: .\templates\courses\section_detail.html:28
+msgid "Sections"
+msgstr ""
+
+#: .\templates\courses\module_detail.html:43
+msgid "Pratique"
+msgstr ""
+
+#: .\templates\courses\module_detail.html:47
+msgid "Le contenu de ce module arrive bientôt."
+msgstr ""
+
+#: .\templates\courses\section_detail.html:10
+#, python-format
+msgid "Section %(n)s sur %(t)s"
+msgstr ""
+
+#: .\templates\courses\section_detail.html:11
+msgid "Activité pratique"
+msgstr ""
+
+#: .\templates\courses\section_detail.html:12
+#, python-format
+msgid "Référence : %(reference)s"
+msgstr ""
+
+#: .\templates\courses\section_detail.html:13
+msgid "Contenu disponible en français uniquement"
+msgstr ""
+
+#: .\templates\courses\section_detail.html:22
+msgid "Annexes à télécharger"
+msgstr ""
+
+#: .\templates\courses\section_detail.html:29
+msgid "Précédent"
+msgstr ""
+
+#: .\templates\courses\section_detail.html:31
+msgid "Suivant"
+msgstr ""
+
+#: .\templates\courses\section_detail.html:33
+msgid "Fin du module"
+msgstr ""
+
+#: .\templates\progress\_trainer_nav.html:2
+msgid "Espace formateur"
+msgstr ""
+
+#: .\templates\progress\_trainer_nav.html:4
+msgid "Questions"
+msgstr ""
+
+#: .\templates\progress\_trainer_nav.html:6
+#: .\templates\progress\deadlines.html:2 .\templates\progress\deadlines.html:6
+msgid "Dates limites"
+msgstr ""
+
+#: .\templates\progress\announcements.html:8
+msgid "Nouvelle annonce"
+msgstr ""
+
+#: .\templates\progress\announcements.html:9
+msgid ""
+"Elle s'affiche sur le tableau de bord des apprenants de la promotion choisie."
+msgstr ""
+
+#: .\templates\progress\announcements.html:14
+msgid "Publier"
+msgstr ""
+
+#: .\templates\progress\announcements.html:18
+msgid "Publiées"
+msgstr ""
+
+#: .\templates\progress\announcements.html:27
+msgid "Aucune annonce pour le moment."
+msgstr ""
+
+#: .\templates\progress\attempt_review.html:2
+msgid "Détail de la tentative"
+msgstr ""
+
+#: .\templates\progress\attempt_review.html:11
+#, python-format
+msgid "tentative %(n)s"
+msgstr ""
+
+#: .\templates\progress\attempt_review.html:12
+msgid "envoyée automatiquement"
+msgstr ""
+
+#: .\templates\progress\attempt_review.html:15
+#: .\templates\progress\question_stats.html:11
+msgid "Réponses"
+msgstr ""
+
+#: .\templates\progress\attempt_review.html:17
+#: .\templates\progress\question_stats.html:11
+msgid "Question"
+msgstr ""
+
+#: .\templates\progress\attempt_review.html:17
+msgid "Réponse donnée"
+msgstr ""
+
+#: .\templates\progress\attempt_review.html:17
+msgid "Temps"
+msgstr ""
+
+#: .\templates\progress\attempt_review.html:23
+msgid "Juste"
+msgstr ""
+
+#: .\templates\progress\attempt_review.html:23
+msgid "Faux"
+msgstr ""
+
+#: .\templates\progress\attempt_review.html:24
+#, python-format
+msgid "%(s)s s"
+msgstr ""
+
+#: .\templates\progress\deadlines.html:7
+msgid ""
+"Indicatives : rien n'est bloqué, mais un apprenant qui n'a pas fini à temps "
+"est marqué en retard."
+msgstr ""
+
+#: .\templates\progress\deadlines.html:11
+msgid "Fixer une date limite"
+msgstr ""
+
+#: .\templates\progress\deadlines.html:29
+msgid ""
+"Une seule date par quiz ou examen et par promotion : la saisir à nouveau la "
+"déplace."
+msgstr ""
+
+#: .\templates\progress\deadlines.html:36
+msgid "Échéances"
+msgstr ""
+
+#: .\templates\progress\deadlines.html:44
+msgid "Aucune date limite."
+msgstr ""
+
+#: .\templates\progress\question_stats.html:2
+#: .\templates\progress\question_stats.html:6
+#: .\templates\progress\question_stats.html:9
+msgid "Réussite par question"
+msgstr ""
+
+#: .\templates\progress\question_stats.html:7
+msgid ""
+"Calculée sur les tentatives envoyées de vos apprenants. Un taux très bas "
+"signale souvent une question ambiguë."
+msgstr ""
+
+#: .\templates\progress\question_stats.html:11
+msgid "Module"
+msgstr ""
+
+#: .\templates\progress\question_stats.html:11
+msgid "Type"
+msgstr ""
+
+#: .\templates\progress\question_stats.html:11
+msgid "Réussite"
+msgstr ""
+
+#: .\templates\progress\question_stats.html:22
+msgid "Aucune question publiée pour vos formations."
+msgstr ""
+
+#: .\templates\progress\trainer_table.html:2
+#: .\templates\progress\trainer_table.html:6
+msgid "Suivi des apprenants"
+msgstr ""
+
+#: .\templates\progress\trainer_table.html:7
+msgid "Exporter en CSV"
+msgstr ""
+
+#: .\templates\progress\trainer_table.html:19
+#, python-format
+msgid "Examen P%(n)s"
+msgstr ""
+
+#: .\templates\progress\trainer_table.html:20
+msgid "Tentatives"
+msgstr ""
+
+#: .\templates\progress\trainer_table.html:28
+#, python-format
+msgid "En retard (%(n)s)"
+msgid_plural "En retard (%(n)s)"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\templates\progress\trainer_table.html:31
+msgid "non terminé"
+msgstr ""
+
+#: .\templates\progress\trainer_table.html:38
+#, python-format
+msgid "%(n)s envoyée"
+msgid_plural "%(n)s envoyées"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\templates\progress\trainer_table.html:45
+msgid "Aucun apprenant dans ces promotions."
+msgstr ""
+
+#: .\templates\progress\trainer_table.html:54
+msgid "Aucune promotion"
+msgstr ""
+
+#: .\templates\progress\trainer_table.html:54
+msgid ""
+"Aucune promotion ne vous est rattachée. Demandez à l'administrateur de vous "
+"ajouter."
+msgstr ""

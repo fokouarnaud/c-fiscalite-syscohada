@@ -1,0 +1,8 @@
+{% extends "base.html" %}{% load i18n %}
+{# Page d'un seul panneau centré (confirmation d'e-mail, mot de passe oublié, code de promotion). #}
+{% block content %}
+<section class="panel narrow" aria-labelledby="titre-page">
+  {% block icon %}{% endblock %}
+  {% block panel %}{% endblock %}
+</section>
+{% endblock %}

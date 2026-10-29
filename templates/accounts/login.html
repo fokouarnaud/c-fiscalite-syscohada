@@ -1,0 +1,38 @@
+{% extends "base.html" %}{% load i18n %}
+{% block title %}{% translate "Connexion" %}{% endblock %}
+{% block content %}
+<div class="auth">
+  <section class="auth-intro">
+    <h1>{% translate "Votre formation, module après module." %}</h1>
+    <p>{% translate "Cours, quiz d'entraînement et examens du centre, lisibles sur téléphone." %}</p>
+    <ul class="auth-points">
+      <li>{% include "icons/circle-check.svg" %}{% translate "Reprenez là où vous vous êtes arrêté" %}</li>
+      <li>{% include "icons/circle-check.svg" %}{% translate "Vos réponses d'examen sont enregistrées à chaque clic" %}</li>
+      <li>{% include "icons/circle-check.svg" %}{% translate "En français et en anglais" %}</li>
+    </ul>
+  </section>
+  <section class="panel" aria-labelledby="titre-connexion">
+    <h2 id="titre-connexion">{% translate "Connexion" %}</h2>
+    <p class="muted">{% translate "Utilisez votre identifiant, ou celui remis par le centre." %}</p>
+    {% if form.non_field_errors %}
+      <div class="notice notice-error" role="alert">{% include "icons/alert-triangle.svg" %}<div>{% if form.locked_out %}{{ form.non_field_errors.0 }}{% else %}{% translate "Identifiant ou mot de passe incorrect." %}{% endif %}</div></div>
+    {% endif %}
+    <form method="post" class="form" novalidate>{% csrf_token %}
+      <input type="hidden" name="next" value="{{ next }}">
+      <div class="field">
+        <label for="{{ form.username.id_for_label }}">{% translate "Identifiant" %}</label>
+        <input type="text" name="username" id="{{ form.username.id_for_label }}" value="{{ form.username.value|default:'' }}" autocomplete="username" autocapitalize="none" required>
+      </div>
+      <div class="field">
+        <label for="{{ form.password.id_for_label }}">{% translate "Mot de passe" %}</label>
+        <input type="password" name="password" id="{{ form.password.id_for_label }}" autocomplete="current-password" required>
+      </div>
+      <button class="btn" type="submit">{% translate "Se connecter" %}</button>
+    </form>
+    <nav class="auth-links" aria-label="{% translate 'Aide à la connexion' %}">
+      <a href="{% url 'password_reset' %}">{% translate "Mot de passe oublié ?" %}</a>
+      <a href="{% url 'signup' %}">{% translate "Créer un compte" %}</a>
+    </nav>
+  </section>
+</div>
+{% endblock %}
