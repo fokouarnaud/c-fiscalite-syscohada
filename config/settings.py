@@ -105,9 +105,10 @@ EMAIL_PORT = int(os.environ.get("EMAIL_PORT", "587"))
 EMAIL_USE_TLS = os.environ.get("EMAIL_USE_TLS", "1") == "1"
 EMAIL_HOST_USER = os.environ.get("EMAIL_HOST_USER", "")
 EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_HOST_PASSWORD", "")
+# Repli console seulement en développement : en production, un e-mail non envoyé doit échouer (US-01, accounts.E001).
 EMAIL_BACKEND = (
-    "django.core.mail.backends.smtp.EmailBackend" if EMAIL_HOST_PASSWORD
-    else "django.core.mail.backends.console.EmailBackend"
+    "django.core.mail.backends.console.EmailBackend" if DEBUG and not EMAIL_HOST_PASSWORD
+    else "django.core.mail.backends.smtp.EmailBackend"
 )
 DEFAULT_FROM_EMAIL = f"ComptaFisca Acad Ventisax <{EMAIL_HOST_USER}>" if EMAIL_HOST_USER else "webmaster@localhost"
 

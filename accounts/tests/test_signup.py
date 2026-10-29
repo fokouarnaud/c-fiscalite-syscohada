@@ -235,3 +235,31 @@ def test_us03_password_reset_page_sends_accounts_without_email_to_their_trainer(
     body = client.get("/fr/mot-de-passe/").content.decode()
 
     assert "Demandez un nouveau mot de passe à votre formateur." in body
+
+
+class BrokenMailBackend:
+    """Serveur SMTP qui refuse l'authentification, comme Gmail sans mot de passe d'application valide."""
+
+    def __init__(self, *args, **kwargs):
+        pass
+
+    def send_messages(self, messages):
+        import smtplib
+
+        raise smtplib.SMTPAuthenticationError(535, b"Username and Password not accepted")
+
+
+@pytest.mark.django_db
+def test_us01_signup_says_when_the_verification_email_could_not_be_sent(client, settings, caplog):
+    """US-01 : un envoi refusé n'annonce pas « Vérifiez vos e-mails » ; le compte en attente est retiré pour réessayer,
+    et l'erreur est journalisée pour l'administrateur."""
+    settings.EMAIL_BACKEND = "accounts.tests.test_signup.BrokenMailBackend"
+
+    response = signup(client)
+
+    assert response.status_code == 200
+    import html
+
+    assert "L'e-mail de confirmation n'a pas pu être envoyé" in html.unescape(response.content.decode())
+    assert not User.objects.filter(username="nadia").exists()
+    assert any(r.levelname == "ERROR" and "nadia@example.cm" in r.getMessage() for r in caplog.records)

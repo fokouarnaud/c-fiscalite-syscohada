@@ -1,3 +1,5 @@
+import logging
+
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.http import HttpResponse, HttpResponseBadRequest
@@ -16,6 +18,8 @@ from .signup import (
     SignupForm, client_ip_hash, create_pending_learner, email_verification_token, is_signup_throttled,
     send_verification_email,
 )
+
+logger = logging.getLogger(__name__)
 
 
 @login_required
@@ -83,8 +87,15 @@ def signup(request):
         if form.is_valid():
             SignupThrottle.objects.create(ip_hash=ip_hash)
             user = create_pending_learner(form)
-            send_verification_email(request, user)
-            return redirect("signup_done")
+            try:
+                send_verification_email(request, user)
+            except OSError:  # smtplib.SMTPException en hérite : refus d'authentification, serveur injoignable
+                logger.exception("E-mail de vérification non envoyé à %s", user.email)
+                user.delete()  # libère l'identifiant et l'adresse pour un nouvel essai
+                form.add_error(None, _("L'e-mail de confirmation n'a pas pu être envoyé. Votre compte n'a pas été créé : "
+                                       "réessayez dans quelques minutes."))
+            else:
+                return redirect("signup_done")
     return render(request, "accounts/signup.html", {"form": form})
 
 

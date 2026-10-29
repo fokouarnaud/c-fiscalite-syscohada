@@ -402,10 +402,38 @@ def test_production_refuses_to_start_without_a_strong_secret_key():
         assert "DJANGO_SECRET_KEY" in result.stderr
 
 
+def _without_mail(env):
+    return {k: v for k, v in env.items() if not k.startswith("EMAIL_")}
+
+
+MAIL = {"EMAIL_HOST_USER": "acad@example.cm", "EMAIL_HOST_PASSWORD": "mot-de-passe-factice"}
+
+
+def test_us01_production_deploy_check_refuses_missing_smtp_credentials():
+    """US-01 : sans identifiants SMTP, aucun lien de vérification ne partirait ; check --deploy (deploy.sh) échoue."""
+    result = subprocess.run(
+        [sys.executable, "manage.py", "check", "--deploy", "--fail-level", "ERROR"], cwd=settings.BASE_DIR,
+        env=_without_mail(_production_env(DJANGO_SECRET_KEY=STRONG_KEY)), capture_output=True, text=True,
+    )
+    assert result.returncode != 0
+    assert "EMAIL_HOST_PASSWORD" in result.stdout + result.stderr
+
+
+def test_us01_production_never_falls_back_to_the_console_mail_backend():
+    """US-01 : en production, un e-mail non envoyé est une erreur, jamais un message écrit dans le journal du serveur."""
+    code = "from django.conf import settings as s;print(s.EMAIL_BACKEND)"
+    result = subprocess.run(
+        [sys.executable, "-c", f"import django,os;os.environ.setdefault('DJANGO_SETTINGS_MODULE','config.settings');django.setup();{code}"],
+        cwd=settings.BASE_DIR, env=_without_mail(_production_env(DJANGO_SECRET_KEY=STRONG_KEY)),
+        capture_output=True, text=True, check=True,
+    )
+    assert result.stdout.strip() == "django.core.mail.backends.smtp.EmailBackend"
+
+
 def test_production_settings_pass_the_deploy_check_without_warnings():
     result = subprocess.run(
         [sys.executable, "manage.py", "check", "--deploy", "--fail-level", "WARNING"], cwd=settings.BASE_DIR,
-        env=_production_env(DJANGO_SECRET_KEY=STRONG_KEY),
+        env={**_without_mail(_production_env(DJANGO_SECRET_KEY=STRONG_KEY)), **MAIL},
         capture_output=True, text=True,
     )
     assert result.returncode == 0, result.stdout + result.stderr

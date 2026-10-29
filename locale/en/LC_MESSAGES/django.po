@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Acad Ventisax\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-29 03:30+0100\n"
+"POT-Creation-Date: 2026-10-29 04:07+0100\n"
 "PO-Revision-Date: 2026-10-17 12:00+0100\n"
 "Last-Translator: Acad Ventisax\n"
 "Language-Team: English\n"
@@ -110,15 +110,21 @@ msgstr "Confirm your ComptaFisca Acad Ventisax registration"
 msgid "Trop de tentatives de connexion. Réessayez dans quelques minutes."
 msgstr "Too many sign-in attempts. Try again in a few minutes."
 
-#: .\accounts\views.py:82
+#: .\accounts\views.py:86
 msgid "Trop d'inscriptions depuis cette connexion. Réessayez dans une heure."
 msgstr "Too many sign-ups from this connection. Try again in an hour."
 
-#: .\accounts\views.py:101
+#: .\accounts\views.py:95
+msgid ""
+"L'e-mail de confirmation n'a pas pu être envoyé. Votre compte n'a pas été "
+"créé : réessayez dans quelques minutes."
+msgstr "The confirmation email could not be sent. Your account was not created: please try again in a few minutes."
+
+#: .\accounts\views.py:112
 msgid "Ce lien de confirmation est invalide ou a déjà servi."
 msgstr "This confirmation link is invalid or has already been used."
 
-#: .\accounts\views.py:105
+#: .\accounts\views.py:116
 msgid "Adresse confirmée. Vous pouvez vous connecter."
 msgstr "Address confirmed. You can now sign in."
 
@@ -524,11 +530,11 @@ msgstr "Issued on %(date)s by ComptaFisca Acad Ventisax"
 msgid "Vérification : %(url)s"
 msgstr "Verification: %(url)s"
 
-#: .\config\settings.py:130
+#: .\config\settings.py:131
 msgid "Français"
 msgstr "French"
 
-#: .\config\settings.py:130
+#: .\config\settings.py:131
 msgid "English"
 msgstr "English"
 
