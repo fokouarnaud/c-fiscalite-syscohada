@@ -102,6 +102,14 @@ MUTATIONS = [
      'response.write("﻿")', "pass", "progress/tests"),
     ("US-15 prérequis indicatif affiché sur le programme", "templates/catalog/formation_detail.html",
      "{{ row.formation.prerequisite_note }}</p>", "</p>", "catalog/tests"),
+    ("US-01 inscription : échec d'envoi signalé, compte retiré", "accounts/views.py",
+     "            except OSError:", "            except ZeroDivisionError:", "accounts/tests/test_signup.py"),
+    ("US-01 déploiement : identifiants SMTP exigés", "accounts/checks.py",
+     "    if settings.EMAIL_HOST_USER and settings.EMAIL_HOST_PASSWORD:", "    if True:", "config/tests/test_intrusion.py"),
+    ("US-01 production : jamais de repli console pour l'e-mail", "config/settings.py",
+     "if DEBUG and not EMAIL_HOST_PASSWORD", "if not EMAIL_HOST_PASSWORD", "config/tests/test_intrusion.py"),
+    ("US-34 grille d'écriture à 390 px", "static/acad/css/app.css",
+     "width: 100%; table-layout: fixed;", "table-layout: auto;", "assessments/tests/test_question_type_views.py"),
 ]
 
 

@@ -456,4 +456,9 @@ Une US, un lot ou un déploiement n'est **terminé** que si **tous** les points 
 - Volume total : 2 formations, 8 parties, 37 modules, 740 questions bilingues ; `content/` 1,4 Mo.
 - Audit des CA backend (2026-10-29), en TDD : US-15 implémentée (`Formation.prerequisite_note`, traduit, importé du manifeste, affiché sur le programme, jamais bloquant ; Fiscalité « Recommandé après les Parties 1 et 2 de Comptabilité ») ; trois CA existantes sans test couvertes, RED démontré par mutation : US-21 (non-inscrit renvoyé vers le programme), US-03 (compte sans e-mail renvoyé au formateur), US-53 (BOM de l'export CSV) ; quatre mutations ajoutées à `tools/mutation_sweep.py`.
 - Tests : 712 verts ; `makemigrations --check` sans remarque.
+- Premier déploiement (2026-10-29) : web app, venv `~/.virtualenvs/comptafisca` (73 Mo), WSGI, `/static/`, HTTPS forcé ; `deploy.sh` EXIT=0 sur `3cdf2a8`, 1 340 comptes, 64 paramètres, 75 sections et 740 questions publiées, disque 87 Mo. Fumée (compte jetable supprimé, LEFT 0) : section FR/EN, quiz jusqu'au résultat ; deux défauts trouvés et corrigés en TDD :
+  - US-34 : la grille `journal` n'avait aucun style et imposait ~640 px à 360 px ; table à largeur fixe, champs de 44 px ;
+  - US-01 : sans mot de passe Gmail, la production basculait en silence sur le backend `console` et l'inscription annonçait « Vérifiez vos e-mails » pour un message jamais parti. Désormais : repli console réservé au développement, contrôle `accounts.E001` qui fait échouer `check --deploy` sans identifiants SMTP, échec d'envoi affiché à l'inscription (compte retiré, erreur journalisée).
+- Écart : `http://` est redirigé en 302 (Force HTTPS de PythonAnywhere), pas en 301.
+- Tests : 716 verts ; 40 mutations, toutes détectées.
 - Reste : le premier déploiement (skill `deploy`) ; il exige que l'utilisateur se connecte lui-même à PythonAnywhere et renseigne le `.env` du serveur (clé secrète, mot de passe d'application Gmail).
