@@ -126,3 +126,16 @@ def test_schematic_edited_after_publication_is_never_rendered_if_active(client, 
     html = client.get(f"/fr/tentatives/{attempt.public_id}/").content.decode()
 
     assert "onload" not in html
+
+
+def test_us34_journal_grid_fits_a_390px_phone():
+    """US-34 et NFR-03 : la grille d'écriture tient dans l'écran (table à largeur fixe, champs élastiques)
+    au lieu d'imposer ~640 px, la largeur par défaut de ses quatre champs, constatée en production à 360 px."""
+    import re
+    from pathlib import Path
+
+    css = (Path(__file__).resolve().parents[2] / "static/acad/css/app.css").read_text(encoding="utf-8")
+    table = re.search(r"\n\.journal \{([^}]*)\}", css)
+    fields = re.search(r"\n\.journal input, \.journal select \{([^}]*)\}", css)
+    assert table and "table-layout: fixed" in table.group(1) and "width: 100%" in table.group(1)
+    assert fields and "width: 100%" in fields.group(1) and "min-width: 0" in fields.group(1)
