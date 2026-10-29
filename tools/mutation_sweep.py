@@ -173,16 +173,16 @@ def pytest(targets):
 failures = 0
 for story, path, old, new, targets in MUTATIONS:
     file = pathlib.Path(path)
-    original = file.read_text(encoding="utf-8")
+    original = file.read_bytes().decode("utf-8")  # octets d'origine : aucune fin de ligne réécrite en CRLF
     if original.count(old) != 1:
         print(f"!! {story} : motif introuvable ou ambigu dans {path}")
         failures += 1
         continue
     try:
-        file.write_text(original.replace(old, new), encoding="utf-8")
+        file.write_bytes(original.replace(old, new).encode("utf-8"))
         red, red_summary = pytest(targets)
     finally:
-        file.write_text(original, encoding="utf-8")
+        file.write_bytes(original.encode("utf-8"))
     green, green_summary = pytest(targets)
     ok = red != 0 and green == 0
     failures += not ok
