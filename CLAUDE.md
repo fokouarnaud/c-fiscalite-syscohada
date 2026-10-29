@@ -469,5 +469,7 @@ Une US, un lot ou un déploiement n'est **terminé** que si **tous** les points 
   - US-34 : la grille `journal` n'avait aucun style et imposait ~640 px à 360 px ; table à largeur fixe, champs de 44 px ;
   - US-01 : sans mot de passe Gmail, la production basculait en silence sur le backend `console` et l'inscription annonçait « Vérifiez vos e-mails » pour un message jamais parti. Désormais : repli console réservé au développement, contrôle `accounts.E001` qui fait échouer `check --deploy` sans identifiants SMTP, échec d'envoi affiché à l'inscription (compte retiré, erreur journalisée).
 - Écart : `http://` est redirigé en 302 (Force HTTPS de PythonAnywhere), pas en 301.
-- Tests : 716 verts ; 40 mutations, toutes détectées.
+- Réinscription (US-01, 2026-10-29) : un compte jamais confirmé (inactif, adresse non vérifiée) ne bloque plus son adresse ni son identifiant ; se réinscrire le remplace et envoie un nouveau lien ; un compte confirmé reste protégé ; connexion et « Vérifiez vos e-mails » l'indiquent. Après la saisie du `.env`, le site envoyait encore sans authentification (530) : le `touch` du WSGI n'a pas suffi, le bouton « Reload » a réglé le problème (skill `deploy`).
+- Balayage de mutations étendu aux stories backend restantes (US-14, 20, 23 à 25, 32, 34 à 36, 61, 62, 70 à 74) ; il a révélé un test manquant, la carte « Reprendre » du tableau de bord (US-20), ajouté. L'outil restaure désormais les octets d'origine (plus de CRLF réécrit sous Windows).
+- Tests : 721 verts ; 65 mutations, toutes détectées sur l'état final (`6de9d69`).
 - Reste : le premier déploiement (skill `deploy`) ; il exige que l'utilisateur se connecte lui-même à PythonAnywhere et renseigne le `.env` du serveur (clé secrète, mot de passe d'application Gmail).
