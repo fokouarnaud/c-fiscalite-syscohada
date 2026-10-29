@@ -121,3 +121,32 @@ def test_trainer_table_links_each_submitted_attempt_of_a_learner(client, trainer
     [row] = client.get("/fr/formateur/").context["rows"]
 
     assert [a.public_id for a in row["submitted"]] == [done.public_id]
+
+
+@pytest.mark.django_db
+def test_us51_trainer_reads_the_entry_a_learner_wrote_for_a_journal_question(client, trainer, enrolled, module):
+    """US-51 : le détail d'une tentative montre aussi l'écriture saisie pour une question `journal`."""
+    from decimal import Decimal
+
+    from assessments.models import Question
+    from referentiel.models import SyscohadaAccount
+
+    for code in ("601", "401"):
+        SyscohadaAccount.objects.create(code=code, label_fr=f"Compte {code}")
+    q = Question.objects.create(module=module, qtype="journal", usage="quiz", prompt_fr="Passez l'écriture.",
+                                prompt_en="Record it.", reviewed_fr=True, reviewed_en=True, exercice=2026)
+    q.journal_lines.create(order=0, account="601", account_match="3", side="debit", amount=Decimal("100000"))
+    q.journal_lines.create(order=1, account="401", account_match="3", side="credit", amount=Decimal("100000"))
+    q.publish()
+    attempt = start_attempt(enrolled, Assessment.quiz_for(module))
+    save_answer(attempt, q.public_id, [], lines=[
+        {"account": "601", "side": "debit", "amount": "100 000", "label": "Achat"},
+        {"account": "401", "side": "credit", "amount": "100 000", "label": "Fournisseur"},
+    ])
+    submit_attempt(attempt)
+    client.force_login(trainer)
+
+    [row] = client.get(detail_url(attempt)).context["rows"]
+
+    assert row["answer"].split(" ; ") == ["601 Débit 100 000", "401 Crédit 100 000"]
+    assert row["score"] == 1

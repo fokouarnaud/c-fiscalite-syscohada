@@ -11,7 +11,7 @@ from django.utils.translation import gettext as _
 from django.utils.translation import gettext_lazy
 
 from accounts.models import Promotion, User
-from assessments.models import Assessment, Attempt, AttemptQuestion, Question
+from assessments.models import Assessment, Attempt, AttemptQuestion, JournalLine, Question
 from catalog.models import Enrollment
 from courses.models import Module, Partie
 
@@ -123,6 +123,11 @@ def _answer_display(aq):
         return " ; ".join(
             f"{pairs[left].left} → {pairs[right].right}" for left, right in aq.answer_json.items()
             if left in pairs and right in pairs
+        )
+    if question.qtype == Question.Type.JOURNAL:  # US-51 : l'écriture saisie, une ligne par compte
+        sides = dict(JournalLine.Side.choices)
+        return " ; ".join(
+            f"{line['account']} {sides.get(line['side'], '?')} {str(line['amount']).strip()}" for line in aq.journal_given()
         )
     return ", ".join(c.text for c in aq.selected_choices.all())
 
