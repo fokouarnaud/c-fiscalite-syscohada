@@ -1,0 +1,1217 @@
+[
+ {
+  "id": "S-A-M6-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chemises : coût moyen unitaire pondéré ?\n\n[[piece:S-A-12-010]]",
+   "en": "Chemises: weighted average unit cost?\n\n[[piece:S-A-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice (inventaire intermittent, S18), arrondi au franc ; calculateur stock.",
+   "en": "Period weighted average cost, rounded to the franc."
+  },
+  "numeric": {
+   "value": 9375,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      120,
+      9000
+     ],
+     [
+      120,
+      9250
+     ],
+     [
+      120,
+      9500
+     ],
+     [
+      120,
+      9750
+     ],
+     [
+      120,
+      9000
+     ],
+     [
+      120,
+      9250
+     ],
+     [
+      120,
+      9500
+     ],
+     [
+      120,
+      9750
+     ],
+     [
+      120,
+      9000
+     ],
+     [
+      120,
+      9250
+     ],
+     [
+      120,
+      9500
+     ],
+     [
+      120,
+      9750
+     ]
+    ],
+    1370
+   ],
+   "resultat": [
+    "cout_unitaire"
+   ]
+  }
+ },
+ {
+  "id": "S-A-M6-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chemises : coût des sorties au CMUP ?\n\n[[piece:S-A-12-010]]",
+   "en": "Chemises: cost of goods sold at WAC?\n\n[[piece:S-A-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice (inventaire intermittent, S18), arrondi au franc ; calculateur stock.",
+   "en": "Period weighted average cost, rounded to the franc."
+  },
+  "numeric": {
+   "value": 12843750,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      120,
+      9000
+     ],
+     [
+      120,
+      9250
+     ],
+     [
+      120,
+      9500
+     ],
+     [
+      120,
+      9750
+     ],
+     [
+      120,
+      9000
+     ],
+     [
+      120,
+      9250
+     ],
+     [
+      120,
+      9500
+     ],
+     [
+      120,
+      9750
+     ],
+     [
+      120,
+      9000
+     ],
+     [
+      120,
+      9250
+     ],
+     [
+      120,
+      9500
+     ],
+     [
+      120,
+      9750
+     ]
+    ],
+    1370
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-A-M6-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chemises : valeur du stock final au CMUP ?\n\n[[piece:S-A-12-010]]",
+   "en": "Chemises: closing stock at WAC?\n\n[[piece:S-A-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice (inventaire intermittent, S18), arrondi au franc ; calculateur stock.",
+   "en": "Period weighted average cost, rounded to the franc."
+  },
+  "numeric": {
+   "value": 656250,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      120,
+      9000
+     ],
+     [
+      120,
+      9250
+     ],
+     [
+      120,
+      9500
+     ],
+     [
+      120,
+      9750
+     ],
+     [
+      120,
+      9000
+     ],
+     [
+      120,
+      9250
+     ],
+     [
+      120,
+      9500
+     ],
+     [
+      120,
+      9750
+     ],
+     [
+      120,
+      9000
+     ],
+     [
+      120,
+      9250
+     ],
+     [
+      120,
+      9500
+     ],
+     [
+      120,
+      9750
+     ]
+    ],
+    1370
+   ],
+   "resultat": [
+    "valeur_stock"
+   ]
+  }
+ },
+ {
+  "id": "S-A-M6-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chemises : coût des sorties en PEPS (contraste) ?\n\n[[piece:S-A-12-010]]",
+   "en": "Chemises: cost of goods sold under FIFO (contrast)?\n\n[[piece:S-A-12-010]]"
+  },
+  "explanation": {
+   "fr": "En PEPS, les lots les plus anciens sortent d'abord : l'écart avec le CMUP change la marge.",
+   "en": "Under FIFO the oldest lots go first; the gap with WAC changes the margin."
+  },
+  "numeric": {
+   "value": 12817500,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_peps",
+   "args": [
+    [
+     [
+      120,
+      9000
+     ],
+     [
+      120,
+      9250
+     ],
+     [
+      120,
+      9500
+     ],
+     [
+      120,
+      9750
+     ],
+     [
+      120,
+      9000
+     ],
+     [
+      120,
+      9250
+     ],
+     [
+      120,
+      9500
+     ],
+     [
+      120,
+      9750
+     ],
+     [
+      120,
+      9000
+     ],
+     [
+      120,
+      9250
+     ],
+     [
+      120,
+      9500
+     ],
+     [
+      120,
+      9750
+     ]
+    ],
+    1370
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-A-M6-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Pantalons : coût moyen unitaire pondéré ?\n\n[[piece:S-A-12-010]]",
+   "en": "Pantalons: weighted average unit cost?\n\n[[piece:S-A-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice (inventaire intermittent, S18), arrondi au franc ; calculateur stock.",
+   "en": "Period weighted average cost, rounded to the franc."
+  },
+  "numeric": {
+   "value": 14375,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      80,
+      14000
+     ],
+     [
+      80,
+      14250
+     ],
+     [
+      80,
+      14500
+     ],
+     [
+      80,
+      14750
+     ],
+     [
+      80,
+      14000
+     ],
+     [
+      80,
+      14250
+     ],
+     [
+      80,
+      14500
+     ],
+     [
+      80,
+      14750
+     ],
+     [
+      80,
+      14000
+     ],
+     [
+      80,
+      14250
+     ],
+     [
+      80,
+      14500
+     ],
+     [
+      80,
+      14750
+     ]
+    ],
+    915
+   ],
+   "resultat": [
+    "cout_unitaire"
+   ]
+  }
+ },
+ {
+  "id": "S-A-M6-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Pantalons : coût des sorties au CMUP ?\n\n[[piece:S-A-12-010]]",
+   "en": "Pantalons: cost of goods sold at WAC?\n\n[[piece:S-A-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice (inventaire intermittent, S18), arrondi au franc ; calculateur stock.",
+   "en": "Period weighted average cost, rounded to the franc."
+  },
+  "numeric": {
+   "value": 13153125,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      80,
+      14000
+     ],
+     [
+      80,
+      14250
+     ],
+     [
+      80,
+      14500
+     ],
+     [
+      80,
+      14750
+     ],
+     [
+      80,
+      14000
+     ],
+     [
+      80,
+      14250
+     ],
+     [
+      80,
+      14500
+     ],
+     [
+      80,
+      14750
+     ],
+     [
+      80,
+      14000
+     ],
+     [
+      80,
+      14250
+     ],
+     [
+      80,
+      14500
+     ],
+     [
+      80,
+      14750
+     ]
+    ],
+    915
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-A-M6-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Pantalons : valeur du stock final au CMUP ?\n\n[[piece:S-A-12-010]]",
+   "en": "Pantalons: closing stock at WAC?\n\n[[piece:S-A-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice (inventaire intermittent, S18), arrondi au franc ; calculateur stock.",
+   "en": "Period weighted average cost, rounded to the franc."
+  },
+  "numeric": {
+   "value": 646875,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      80,
+      14000
+     ],
+     [
+      80,
+      14250
+     ],
+     [
+      80,
+      14500
+     ],
+     [
+      80,
+      14750
+     ],
+     [
+      80,
+      14000
+     ],
+     [
+      80,
+      14250
+     ],
+     [
+      80,
+      14500
+     ],
+     [
+      80,
+      14750
+     ],
+     [
+      80,
+      14000
+     ],
+     [
+      80,
+      14250
+     ],
+     [
+      80,
+      14500
+     ],
+     [
+      80,
+      14750
+     ]
+    ],
+    915
+   ],
+   "resultat": [
+    "valeur_stock"
+   ]
+  }
+ },
+ {
+  "id": "S-A-M6-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Pantalons : coût des sorties en PEPS (contraste) ?\n\n[[piece:S-A-12-010]]",
+   "en": "Pantalons: cost of goods sold under FIFO (contrast)?\n\n[[piece:S-A-12-010]]"
+  },
+  "explanation": {
+   "fr": "En PEPS, les lots les plus anciens sortent d'abord : l'écart avec le CMUP change la marge.",
+   "en": "Under FIFO the oldest lots go first; the gap with WAC changes the margin."
+  },
+  "numeric": {
+   "value": 13136250,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_peps",
+   "args": [
+    [
+     [
+      80,
+      14000
+     ],
+     [
+      80,
+      14250
+     ],
+     [
+      80,
+      14500
+     ],
+     [
+      80,
+      14750
+     ],
+     [
+      80,
+      14000
+     ],
+     [
+      80,
+      14250
+     ],
+     [
+      80,
+      14500
+     ],
+     [
+      80,
+      14750
+     ],
+     [
+      80,
+      14000
+     ],
+     [
+      80,
+      14250
+     ],
+     [
+      80,
+      14500
+     ],
+     [
+      80,
+      14750
+     ]
+    ],
+    915
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-A-M6-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Robes : coût moyen unitaire pondéré ?\n\n[[piece:S-A-12-010]]",
+   "en": "Robes: weighted average unit cost?\n\n[[piece:S-A-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice (inventaire intermittent, S18), arrondi au franc ; calculateur stock.",
+   "en": "Period weighted average cost, rounded to the franc."
+  },
+  "numeric": {
+   "value": 18375,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      60,
+      18000
+     ],
+     [
+      60,
+      18250
+     ],
+     [
+      60,
+      18500
+     ],
+     [
+      60,
+      18750
+     ],
+     [
+      60,
+      18000
+     ],
+     [
+      60,
+      18250
+     ],
+     [
+      60,
+      18500
+     ],
+     [
+      60,
+      18750
+     ],
+     [
+      60,
+      18000
+     ],
+     [
+      60,
+      18250
+     ],
+     [
+      60,
+      18500
+     ],
+     [
+      60,
+      18750
+     ]
+    ],
+    690
+   ],
+   "resultat": [
+    "cout_unitaire"
+   ]
+  }
+ },
+ {
+  "id": "S-A-M6-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Robes : coût des sorties au CMUP ?\n\n[[piece:S-A-12-010]]",
+   "en": "Robes: cost of goods sold at WAC?\n\n[[piece:S-A-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice (inventaire intermittent, S18), arrondi au franc ; calculateur stock.",
+   "en": "Period weighted average cost, rounded to the franc."
+  },
+  "numeric": {
+   "value": 12678750,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      60,
+      18000
+     ],
+     [
+      60,
+      18250
+     ],
+     [
+      60,
+      18500
+     ],
+     [
+      60,
+      18750
+     ],
+     [
+      60,
+      18000
+     ],
+     [
+      60,
+      18250
+     ],
+     [
+      60,
+      18500
+     ],
+     [
+      60,
+      18750
+     ],
+     [
+      60,
+      18000
+     ],
+     [
+      60,
+      18250
+     ],
+     [
+      60,
+      18500
+     ],
+     [
+      60,
+      18750
+     ]
+    ],
+    690
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-A-M6-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Robes : valeur du stock final au CMUP ?\n\n[[piece:S-A-12-010]]",
+   "en": "Robes: closing stock at WAC?\n\n[[piece:S-A-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice (inventaire intermittent, S18), arrondi au franc ; calculateur stock.",
+   "en": "Period weighted average cost, rounded to the franc."
+  },
+  "numeric": {
+   "value": 551250,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      60,
+      18000
+     ],
+     [
+      60,
+      18250
+     ],
+     [
+      60,
+      18500
+     ],
+     [
+      60,
+      18750
+     ],
+     [
+      60,
+      18000
+     ],
+     [
+      60,
+      18250
+     ],
+     [
+      60,
+      18500
+     ],
+     [
+      60,
+      18750
+     ],
+     [
+      60,
+      18000
+     ],
+     [
+      60,
+      18250
+     ],
+     [
+      60,
+      18500
+     ],
+     [
+      60,
+      18750
+     ]
+    ],
+    690
+   ],
+   "resultat": [
+    "valeur_stock"
+   ]
+  }
+ },
+ {
+  "id": "S-A-M6-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Robes : coût des sorties en PEPS (contraste) ?\n\n[[piece:S-A-12-010]]",
+   "en": "Robes: cost of goods sold under FIFO (contrast)?\n\n[[piece:S-A-12-010]]"
+  },
+  "explanation": {
+   "fr": "En PEPS, les lots les plus anciens sortent d'abord : l'écart avec le CMUP change la marge.",
+   "en": "Under FIFO the oldest lots go first; the gap with WAC changes the margin."
+  },
+  "numeric": {
+   "value": 12667500,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_peps",
+   "args": [
+    [
+     [
+      60,
+      18000
+     ],
+     [
+      60,
+      18250
+     ],
+     [
+      60,
+      18500
+     ],
+     [
+      60,
+      18750
+     ],
+     [
+      60,
+      18000
+     ],
+     [
+      60,
+      18250
+     ],
+     [
+      60,
+      18500
+     ],
+     [
+      60,
+      18750
+     ],
+     [
+      60,
+      18000
+     ],
+     [
+      60,
+      18250
+     ],
+     [
+      60,
+      18500
+     ],
+     [
+      60,
+      18750
+     ]
+    ],
+    690
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-A-M6-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du stock final des trois familles.\n\n[[piece:S-A-12-010]]",
+   "en": "Record the closing stock of the three families.\n\n[[piece:S-A-12-010]]"
+  },
+  "explanation": {
+   "fr": "Stocks 3111, 3112 et 3121 au débit, variation des stocks 6031 au crédit (inventaire intermittent).",
+   "en": "Stock accounts debited, change in inventories 6031 credited."
+  },
+  "journal": [
+   {
+    "account": "3111",
+    "side": "debit",
+    "amount": 656250
+   },
+   {
+    "account": "3112",
+    "side": "debit",
+    "amount": 646875
+   },
+   {
+    "account": "3121",
+    "side": "debit",
+    "amount": 551250
+   },
+   {
+    "account": "6031",
+    "side": "credit",
+    "amount": 1854375
+   }
+  ]
+ },
+ {
+  "id": "S-A-M6-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Dotation 2026 de la voiture (12 000 000 HT, 3 ans, mise en service en avril) ?\n\n[[piece:S-A-12-011]]",
+   "en": "2026 depreciation of the car (12,000,000, 3 years, in use from April)?\n\n[[piece:S-A-12-011]]"
+  },
+  "explanation": {
+   "fr": "Linéaire au prorata : 12 000 000 / 36 × 9 mois ; calculateur amortissement.",
+   "en": "Straight-line pro rata: 12,000,000 / 36 × 9 months."
+  },
+  "numeric": {
+   "value": 3000000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "amortissement_lineaire",
+   "args": [
+    12000000,
+    3,
+    4
+   ],
+   "resultat": [
+    0,
+    "dotation"
+   ]
+  }
+ },
+ {
+  "id": "S-A-M6-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la dotation aux amortissements.\n\n[[piece:S-A-12-011]]",
+   "en": "Record the depreciation charge.\n\n[[piece:S-A-12-011]]"
+  },
+  "explanation": {
+   "fr": "Dotations 6813, amortissements du matériel de transport 2845.",
+   "en": "Charge 6813, accumulated depreciation 2845."
+  },
+  "journal": [
+   {
+    "account": "6813",
+    "side": "debit",
+    "amount": 3000000
+   },
+   {
+    "account": "2845",
+    "side": "credit",
+    "amount": 3000000
+   }
+  ]
+ },
+ {
+  "id": "S-A-M6-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Montant total de la variation des stocks de marchandises (6031) au 31 décembre ?\n\n[[piece:S-A-12-010]]",
+   "en": "Total change in goods inventory (6031) at 31 December?\n\n[[piece:S-A-12-010]]"
+  },
+  "explanation": {
+   "fr": "Premier exercice : pas de stock initial, la variation égale le stock final des trois familles.",
+   "en": "First year: no opening stock, so the change equals the closing stock."
+  },
+  "numeric": {
+   "value": 1854375,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-A-M6-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Valeur nette comptable de la voiture au 31 décembre ?\n\n[[piece:S-A-12-011]]",
+   "en": "Net book value of the car at 31 December?\n\n[[piece:S-A-12-011]]"
+  },
+  "explanation": {
+   "fr": "Coût d'acquisition HT moins amortissements cumulés.",
+   "en": "Cost excluding tax less accumulated depreciation."
+  },
+  "numeric": {
+   "value": 9000000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-A-M6-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chemises : écart entre le coût des sorties au CMUP et en PEPS ?\n\n[[piece:S-A-12-010]]",
+   "en": "Shirts: gap between cost of goods sold at WAC and FIFO?\n\n[[piece:S-A-12-010]]"
+  },
+  "explanation": {
+   "fr": "Différence des deux coûts des sorties : autant d'écart sur la marge brute.",
+   "en": "Difference between both costs of goods sold: same gap on gross margin."
+  },
+  "numeric": {
+   "value": 26250,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-A-M6-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Taux d'amortissement fiscal maximal d'une voiture légère utilisée en ville ?\n\n[[piece:S-A-12-011]]",
+   "en": "Maximum tax depreciation rate of a light car used in town?\n\n[[piece:S-A-12-011]]"
+  },
+  "explanation": {
+   "fr": "25 % (CGI art. 7) : au-delà, la dotation comptable est réintégrée.",
+   "en": "25% (CGI art. 7): any excess is added back."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "25 %",
+     "en": "25%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "33,33 %",
+     "en": "33.33%"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "20 %",
+     "en": "20%"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-A-M6-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "En période de hausse des prix, le PEPS donne un stock final plus élevé que le CMUP.\n\n[[piece:S-A-12-010]]",
+   "en": "When prices rise, FIFO gives a higher closing stock than WAC.\n\n[[piece:S-A-12-010]]"
+  },
+  "explanation": {
+   "fr": "Vrai : le stock final est valorisé aux derniers prix, plus élevés.",
+   "en": "True: closing stock is valued at the latest, higher prices."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ }
+]

@@ -1,0 +1,9002 @@
+[
+ {
+  "ref": "S-A-01-001",
+  "kind": "demarche",
+  "date": "2026-01-02",
+  "title": {
+   "fr": "Démarche : Création de la SARL au CFCE de Douala",
+   "en": "Procedure: Creating the LLC at the Douala business centre"
+  },
+  "payload": {
+   "organisme": {
+    "fr": "Centre de formalités de création d'entreprises (CFCE) de Douala",
+    "en": "Douala business formalities centre"
+   },
+   "objet": {
+    "fr": "Créer la SARL et obtenir registre de commerce, carte de contribuable et attestation de création",
+    "en": "Create the LLC and obtain trade register, taxpayer card and creation certificate"
+   },
+   "documents_a_fournir": [
+    {
+     "fr": "5 + N exemplaires des statuts sous seing privé (N associés)",
+     "en": "5 + N copies of the articles"
+    },
+    {
+     "fr": "5 + N déclarations de régularité et de conformité",
+     "en": "5 + N declarations of regularity and conformity"
+    },
+    {
+     "fr": "Extraits de casier judiciaire des associés et du gérant, ou déclaration sur l'honneur",
+     "en": "Criminal records of partners and manager, or sworn statement"
+    },
+    {
+     "fr": "Photocopie de la CNI de chaque associé, 2 pour le gérant associé",
+     "en": "ID copies of partners and manager"
+    },
+    {
+     "fr": "Plan de localisation, boîte postale, contact téléphonique",
+     "en": "Location map, PO box, phone number"
+    },
+    {
+     "fr": "Frais de création 41 500 FCFA et annonce légale 13 125 FCFA (à vérifier au CFCE)",
+     "en": "Creation fee 41,500 and legal notice 13,125 FCFA (check at the CFCE)"
+    }
+   ],
+   "document_obtenu": {
+    "fr": "Registre de commerce, carte de contribuable (NIU), attestation de création, sous 72 heures",
+    "en": "Trade register, taxpayer card (NIU), creation certificate, within 72 hours"
+   },
+   "source": "[[source:minfi-cfce]]"
+  }
+ },
+ {
+  "ref": "S-A-01-002",
+  "kind": "demarche",
+  "date": "2026-01-02",
+  "title": {
+   "fr": "Démarche : Rattachement fiscal au CIME",
+   "en": "Procedure: Tax office attachment (medium-sized taxpayers)"
+  },
+  "payload": {
+   "organisme": {
+    "fr": "Direction générale des impôts, CIME de Douala",
+    "en": "Directorate General of Taxation, Douala MTO"
+   },
+   "objet": {
+    "fr": "Suivi fiscal d'une entreprise dont le CA visé (90 millions) est compris entre 50 millions et 3 milliards",
+    "en": "Tax follow-up of a company with a target turnover between 50 million and 3 billion"
+   },
+   "documents_a_fournir": [
+    {
+     "fr": "Carte de contribuable délivrée au CFCE",
+     "en": "Taxpayer card issued by the CFCE"
+    },
+    {
+     "fr": "Statuts et registre de commerce",
+     "en": "Articles and trade register"
+    }
+   ],
+   "document_obtenu": {
+    "fr": "Rattachement au CIME et accès à la télédéclaration",
+    "en": "Attachment to the MTO and e-filing access"
+   },
+   "source": "[[cgi:art. L 1]] [[source:dgi-cime]]"
+  }
+ },
+ {
+  "ref": "S-A-01-003",
+  "kind": "demarche",
+  "date": "2026-01-02",
+  "title": {
+   "fr": "Démarche : Immatriculation à la CNPS",
+   "en": "Procedure: Registration with the CNPS"
+  },
+  "payload": {
+   "organisme": {
+    "fr": "Agence régionale de la CNPS",
+    "en": "Regional CNPS office"
+   },
+   "objet": {
+    "fr": "Immatriculer l'employeur, puis chaque salarié dans les 8 jours de l'embauche",
+    "en": "Register the employer, then each employee within 8 days of hiring"
+   },
+   "documents_a_fournir": [
+    {
+     "fr": "Demande d'immatriculation sur imprimé CNPS",
+     "en": "Registration form (CNPS)"
+    },
+    {
+     "fr": "Copie du registre de commerce ou des statuts, patente, carte de contribuable",
+     "en": "Copy of trade register or articles, business licence, taxpayer card"
+    },
+    {
+     "fr": "Plan de localisation et liste du personnel",
+     "en": "Location map and staff list"
+    },
+    {
+     "fr": "Pour chaque salarié : avis d'embauche et copie certifiée de l'acte de naissance ou de la CNI",
+     "en": "For each employee: hiring notice and certified birth certificate or ID"
+    }
+   ],
+   "document_obtenu": {
+    "fr": "Numéro d'employeur et numéros d'assurés",
+    "en": "Employer number and employee numbers"
+   },
+   "source": "[[source:cnps-faq]]"
+  }
+ },
+ {
+  "ref": "S-A-01-004",
+  "kind": "demarche",
+  "date": "2026-01-02",
+  "title": {
+   "fr": "Démarche : Ouverture du compte bancaire de l'entreprise",
+   "en": "Procedure: Opening the company bank account"
+  },
+  "payload": {
+   "organisme": {
+    "fr": "Banque commerciale (Banque X, fictive)",
+    "en": "Commercial bank (Bank X, fictitious)"
+   },
+   "objet": {
+    "fr": "Ouvrir le compte de l'entreprise",
+    "en": "Open the company account"
+   },
+   "documents_a_fournir": [
+    {
+     "fr": "Demande d'ouverture de compte",
+     "en": "Account opening request"
+    },
+    {
+     "fr": "Registre de commerce, carte de contribuable, plan de localisation",
+     "en": "Trade register, taxpayer card, map"
+    },
+    {
+     "fr": "Pièces d'identité du gérant, statuts, procès-verbal de nomination du gérant",
+     "en": "Manager's ID, articles, minutes appointing the manager"
+    },
+    {
+     "fr": "Extrait du journal d'annonces légales",
+     "en": "Legal notice extract"
+    }
+   ],
+   "document_obtenu": {
+    "fr": "Relevé d'identité bancaire (RIB)",
+    "en": "Bank details (RIB)"
+   },
+   "source": "[[source:sg-cm-compte-entreprise]]"
+  }
+ },
+ {
+  "ref": "S-A-01-005",
+  "kind": "demarche",
+  "date": "2026-01-02",
+  "title": {
+   "fr": "Démarche : Compte marchand Orange Money",
+   "en": "Procedure: Orange Money merchant account"
+  },
+  "payload": {
+   "organisme": {
+    "fr": "Orange Cameroun, partenaires Orange Money",
+    "en": "Orange Cameroon, Orange Money partners"
+   },
+   "objet": {
+    "fr": "Encaisser les ventes par Orange Money",
+    "en": "Collect sales through Orange Money"
+   },
+   "documents_a_fournir": [
+    {
+     "fr": "Registre de commerce, carte de contribuable, patente",
+     "en": "Trade register, taxpayer card, licence"
+    },
+    {
+     "fr": "Statuts, CNI du gérant ou d'un mandataire",
+     "en": "Articles, ID of the manager or proxy"
+    },
+    {
+     "fr": "Relevé d'identité bancaire (RIB)",
+     "en": "Bank details (RIB)"
+    }
+   ],
+   "document_obtenu": {
+    "fr": "Code marchand Orange Money",
+    "en": "Orange Money merchant code"
+   },
+   "source": "[[source:orange-om-partenaire]]"
+  }
+ },
+ {
+  "ref": "S-A-01-006",
+  "kind": "releve_bancaire",
+  "date": "2026-01-02",
+  "title": {
+   "fr": "Attestation de dépôt du capital (Banque X)",
+   "en": "Capital deposit certificate (Bank X)"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Déposant",
+      "en": "Depositor"
+     },
+     "value": "Ngono Mode SARL"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Capital libéré",
+      "en": "Paid-up capital"
+     },
+     "amount": 5000000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-01-009",
+  "kind": "recu_caisse",
+  "date": "2026-01-02",
+  "title": {
+   "fr": "Quittance de loyer de janvier",
+   "en": "January rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Tchoua (fictif)"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer brut",
+      "en": "Gross rent"
+     },
+     "amount": 300000
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer 10 % retenu",
+      "en": "10% rent withholding"
+     },
+     "amount": 30000
+    },
+    {
+     "label": {
+      "fr": "Net versé par virement",
+      "en": "Net paid by transfer"
+     },
+     "amount": 270000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-01-007",
+  "kind": "facture_achat",
+  "date": "2026-01-03",
+  "title": {
+   "fr": "Facture du notaire (statuts)",
+   "en": "Notary's invoice (articles)"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Étude de Maître Ekambi, notaire",
+    "niu": "P011500002203M",
+    "rccm": "Office notarial n° 12",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Rue Joss, Bonanjo, Douala"
+   },
+   "customer": {
+    "name": "Ngono Mode SARL",
+    "niu": "M012600008421K"
+   },
+   "number": "N-2026-0004",
+   "einvoice": "DGI-SFE-2026-000214",
+   "lines": [
+    {
+     "label": {
+      "fr": "Honoraires de rédaction des statuts",
+      "en": "Drafting fees"
+     },
+     "amount": 200000
+    },
+    {
+     "label": {
+      "fr": "Débours : droits d'enregistrement",
+      "en": "Registration duties"
+     },
+     "amount": 25000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 225000
+    },
+    {
+     "label": {
+      "fr": "TVA 17,5 %",
+      "en": "VAT 17.5%"
+     },
+     "role": "tax",
+     "amount": 35000
+    },
+    {
+     "label": {
+      "fr": "CAC 10 % de la TVA",
+      "en": "Council cents 10% of VAT"
+     },
+     "role": "tax",
+     "amount": 3500
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 263500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-01-010",
+  "kind": "facture_achat",
+  "date": "2026-01-05",
+  "title": {
+   "fr": "Facture Sawa Textiles de janvier",
+   "en": "Sawa Textiles January invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Sawa Textiles SARL",
+    "niu": "M011900004517T",
+    "rccm": "RC/DLA/2019/B/0458",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Zone portuaire, Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Ngono Mode SARL",
+    "niu": "M012600008421K"
+   },
+   "number": "FA-2026-0001",
+   "einvoice": "DGI-SFE-2026-001001",
+   "lines": [
+    {
+     "label": {
+      "fr": "Chemises",
+      "en": "Shirts"
+     },
+     "qty": 120,
+     "unit_price": 9000,
+     "amount": 1080000
+    },
+    {
+     "label": {
+      "fr": "Pantalons",
+      "en": "Trousers"
+     },
+     "qty": 80,
+     "unit_price": 14000,
+     "amount": 1120000
+    },
+    {
+     "label": {
+      "fr": "Robes",
+      "en": "Dresses"
+     },
+     "qty": 60,
+     "unit_price": 18000,
+     "amount": 1080000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 3280000
+    },
+    {
+     "label": {
+      "fr": "TVA 17,5 %",
+      "en": "VAT 17.5%"
+     },
+     "role": "tax",
+     "amount": 574000
+    },
+    {
+     "label": {
+      "fr": "CAC 10 % de la TVA",
+      "en": "Council cents 10% of VAT"
+     },
+     "role": "tax",
+     "amount": 57400
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 2 %",
+      "en": "2% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 65600
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 3977000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-01-008",
+  "kind": "releve_bancaire",
+  "date": "2026-01-31",
+  "title": {
+   "fr": "Relevé bancaire de janvier (Banque X)",
+   "en": "January bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Virement à Sawa Textiles",
+      "en": "Transfer to Sawa Textiles"
+     },
+     "amount": 3977000
+    },
+    {
+     "label": {
+      "fr": "Salaires nets virés",
+      "en": "Net pay transferred"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "Virements internes reçus (espèces et Mobile Money)",
+      "en": "Internal transfers received"
+     },
+     "amount": 4157050
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 3500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-01-011",
+  "kind": "recu_caisse",
+  "date": "2026-01-31",
+  "title": {
+   "fr": "Récapitulatif des ventes au comptant de janvier",
+   "en": "January cash sales summary"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes HT",
+      "en": "Sales excl. tax"
+     },
+     "role": "ht",
+     "amount": 4000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 770000
+    },
+    {
+     "label": {
+      "fr": "Ventes TTC encaissées",
+      "en": "Sales incl. tax collected"
+     },
+     "role": "ttc",
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-01-012",
+  "kind": "releve_momo",
+  "date": "2026-01-31",
+  "title": {
+   "fr": "Relevé Orange Money de janvier",
+   "en": "Orange Money statement, January"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 2000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 385000
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 2385000
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 9500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-01-013",
+  "kind": "releve_momo",
+  "date": "2026-01-31",
+  "title": {
+   "fr": "Relevé MTN MoMo de janvier",
+   "en": "MTN MoMo statement, January"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 1500000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 288750
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 1788750
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 7200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-01-014",
+  "kind": "bulletin_paie",
+  "date": "2026-01-31",
+  "title": {
+   "fr": "Journal de paie de janvier",
+   "en": "January payroll journal"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Gérant salarié",
+      "en": "Salaried manager"
+     },
+     "amount": 400000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 1",
+      "en": "Sales assistant 1"
+     },
+     "amount": 150000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 2",
+      "en": "Sales assistant 2"
+     },
+     "amount": 150000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Salaires bruts",
+      "en": "Gross pay"
+     },
+     "role": "ht",
+     "amount": 700000
+    },
+    {
+     "label": {
+      "fr": "IRPP et CAC",
+      "en": "PIT and council cents"
+     },
+     "amount": 39934
+    },
+    {
+     "label": {
+      "fr": "RAV",
+      "en": "Audiovisual fee"
+     },
+     "amount": 8450
+    },
+    {
+     "label": {
+      "fr": "TDL",
+      "en": "Local development tax"
+     },
+     "amount": 4250
+    },
+    {
+     "label": {
+      "fr": "CFC salariale",
+      "en": "Employee housing levy"
+     },
+     "amount": 7000
+    },
+    {
+     "label": {
+      "fr": "CNPS salariale (pension 4,2 %)",
+      "en": "Employee CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    },
+    {
+     "label": {
+      "fr": "Nets à payer",
+      "en": "Net pay"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "CFC patronale",
+      "en": "Employer housing levy"
+     },
+     "amount": 17500
+    },
+    {
+     "label": {
+      "fr": "CNPS patronale (pension 4,2 %)",
+      "en": "Employer CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-02-010",
+  "kind": "balance",
+  "date": "2026-02-01",
+  "title": {
+   "fr": "Balance au 31 janvier 2026",
+   "en": "Trial balance at January 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 5000000
+    },
+    {
+     "label": {
+      "fr": "431 SECURITE SOCIALE",
+      "en": "431 Social security"
+     },
+     "credit": 58800
+    },
+    {
+     "label": {
+      "fr": "4431 T.V.A. facturée sur ventes",
+      "en": "4431 VAT charged on sales"
+     },
+     "credit": 1443750
+    },
+    {
+     "label": {
+      "fr": "4452 T.V.A. récupérable sur achats",
+      "en": "4452 Recoverable VAT on purchases"
+     },
+     "debit": 631400
+    },
+    {
+     "label": {
+      "fr": "4454 T.V.A. récupérable sur services extérieurs et autres charges",
+      "en": "4454 Recoverable VAT on external services and other expenses"
+     },
+     "debit": 38500
+    },
+    {
+     "label": {
+      "fr": "4472 Impôts sur salaires",
+      "en": "4472 Taxes on salaries"
+     },
+     "credit": 77134
+    },
+    {
+     "label": {
+      "fr": "4478 Autres impôts et contributions",
+      "en": "4478 Other taxes and contributions"
+     },
+     "credit": 30000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 65600
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 4032084
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 4770000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 3280000
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 300000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 20200
+    },
+    {
+     "label": {
+      "fr": "6324 Honoraires des professions règlementées",
+      "en": "6324 Fees of regulated professions"
+     },
+     "debit": 200000
+    },
+    {
+     "label": {
+      "fr": "6413 Taxes sur appointements et salaires",
+      "en": "6413 Taxes on salaries and wages"
+     },
+     "debit": 17500
+    },
+    {
+     "label": {
+      "fr": "646 DROITS D'ENREGISTREMENT",
+      "en": "646 Registration duties"
+     },
+     "debit": 25000
+    },
+    {
+     "label": {
+      "fr": "6611 Appointements, salaires et commissions",
+      "en": "6611 Salaries, wages and commissions"
+     },
+     "debit": 700000
+    },
+    {
+     "label": {
+      "fr": "6641 Charges sociales sur rémunération du personnel national",
+      "en": "6641 Social charges on pay of national staff"
+     },
+     "debit": 29400
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 7500000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-02-002",
+  "kind": "recu_caisse",
+  "date": "2026-02-02",
+  "title": {
+   "fr": "Quittance de loyer de février",
+   "en": "February rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Tchoua (fictif)"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer brut",
+      "en": "Gross rent"
+     },
+     "amount": 300000
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer 10 % retenu",
+      "en": "10% rent withholding"
+     },
+     "amount": 30000
+    },
+    {
+     "label": {
+      "fr": "Net versé par virement",
+      "en": "Net paid by transfer"
+     },
+     "amount": 270000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-02-003",
+  "kind": "facture_achat",
+  "date": "2026-02-05",
+  "title": {
+   "fr": "Facture Sawa Textiles de février",
+   "en": "Sawa Textiles February invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Sawa Textiles SARL",
+    "niu": "M011900004517T",
+    "rccm": "RC/DLA/2019/B/0458",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Zone portuaire, Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Ngono Mode SARL",
+    "niu": "M012600008421K"
+   },
+   "number": "FA-2026-0002",
+   "einvoice": "DGI-SFE-2026-001002",
+   "lines": [
+    {
+     "label": {
+      "fr": "Chemises",
+      "en": "Shirts"
+     },
+     "qty": 120,
+     "unit_price": 9250,
+     "amount": 1110000
+    },
+    {
+     "label": {
+      "fr": "Pantalons",
+      "en": "Trousers"
+     },
+     "qty": 80,
+     "unit_price": 14250,
+     "amount": 1140000
+    },
+    {
+     "label": {
+      "fr": "Robes",
+      "en": "Dresses"
+     },
+     "qty": 60,
+     "unit_price": 18250,
+     "amount": 1095000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 3345000
+    },
+    {
+     "label": {
+      "fr": "TVA 17,5 %",
+      "en": "VAT 17.5%"
+     },
+     "role": "tax",
+     "amount": 585375
+    },
+    {
+     "label": {
+      "fr": "CAC 10 % de la TVA",
+      "en": "Council cents 10% of VAT"
+     },
+     "role": "tax",
+     "amount": 58538
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 2 %",
+      "en": "2% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 66900
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 4055813
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-02-004",
+  "kind": "declaration",
+  "date": "2026-02-15",
+  "title": {
+   "fr": "Déclaration du 15 : période de janvier 2026",
+   "en": "15th return: January 2026"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Chiffre d'affaires HT",
+      "en": "Turnover excl. tax"
+     },
+     "value": "7 500 000"
+    },
+    {
+     "label": {
+      "fr": "TVA collectée",
+      "en": "VAT charged"
+     },
+     "value": "1 443 750"
+    },
+    {
+     "label": {
+      "fr": "TVA déductible",
+      "en": "Recoverable VAT"
+     },
+     "value": "669 900"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA reporté",
+      "en": "VAT credit brought forward"
+     },
+     "value": "0"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA à reporter",
+      "en": "VAT credit carried forward"
+     },
+     "value": "0"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "TVA due",
+      "en": "VAT due"
+     },
+     "amount": 773850
+    },
+    {
+     "label": {
+      "fr": "Acompte d'IS (2 % + CAC)",
+      "en": "CIT instalment (2% + council cents)"
+     },
+     "amount": 165000
+    },
+    {
+     "label": {
+      "fr": "Précompte imputé",
+      "en": "Withholding credited"
+     },
+     "amount": 65600
+    },
+    {
+     "label": {
+      "fr": "Retenues et cotisations reversées",
+      "en": "Withholdings and contributions paid over"
+     },
+     "amount": 165934
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-02-005",
+  "kind": "recu_caisse",
+  "date": "2026-02-25",
+  "title": {
+   "fr": "Bordereau de sortie de caisse vers la banque",
+   "en": "Cash transfer slip to the bank"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-02-001",
+  "kind": "releve_bancaire",
+  "date": "2026-02-28",
+  "title": {
+   "fr": "Relevé bancaire de février (Banque X)",
+   "en": "February bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Virement à Sawa Textiles",
+      "en": "Transfer to Sawa Textiles"
+     },
+     "amount": 4055813
+    },
+    {
+     "label": {
+      "fr": "Salaires nets virés",
+      "en": "Net pay transferred"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "Virements internes reçus (espèces et Mobile Money)",
+      "en": "Internal transfers received"
+     },
+     "amount": 8927050
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 3500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-02-006",
+  "kind": "recu_caisse",
+  "date": "2026-02-28",
+  "title": {
+   "fr": "Récapitulatif des ventes au comptant de février",
+   "en": "February cash sales summary"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes HT",
+      "en": "Sales excl. tax"
+     },
+     "role": "ht",
+     "amount": 4000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 770000
+    },
+    {
+     "label": {
+      "fr": "Ventes TTC encaissées",
+      "en": "Sales incl. tax collected"
+     },
+     "role": "ttc",
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-02-007",
+  "kind": "releve_momo",
+  "date": "2026-02-28",
+  "title": {
+   "fr": "Relevé Orange Money de février",
+   "en": "Orange Money statement, February"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 2000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 385000
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 2385000
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 9500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-02-008",
+  "kind": "releve_momo",
+  "date": "2026-02-28",
+  "title": {
+   "fr": "Relevé MTN MoMo de février",
+   "en": "MTN MoMo statement, February"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 1500000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 288750
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 1788750
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 7200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-02-009",
+  "kind": "bulletin_paie",
+  "date": "2026-02-28",
+  "title": {
+   "fr": "Journal de paie de février",
+   "en": "February payroll journal"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Gérant salarié",
+      "en": "Salaried manager"
+     },
+     "amount": 400000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 1",
+      "en": "Sales assistant 1"
+     },
+     "amount": 150000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 2",
+      "en": "Sales assistant 2"
+     },
+     "amount": 150000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Salaires bruts",
+      "en": "Gross pay"
+     },
+     "role": "ht",
+     "amount": 700000
+    },
+    {
+     "label": {
+      "fr": "IRPP et CAC",
+      "en": "PIT and council cents"
+     },
+     "amount": 39934
+    },
+    {
+     "label": {
+      "fr": "RAV",
+      "en": "Audiovisual fee"
+     },
+     "amount": 8450
+    },
+    {
+     "label": {
+      "fr": "TDL",
+      "en": "Local development tax"
+     },
+     "amount": 4250
+    },
+    {
+     "label": {
+      "fr": "CFC salariale",
+      "en": "Employee housing levy"
+     },
+     "amount": 7000
+    },
+    {
+     "label": {
+      "fr": "CNPS salariale (pension 4,2 %)",
+      "en": "Employee CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    },
+    {
+     "label": {
+      "fr": "Nets à payer",
+      "en": "Net pay"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "CFC patronale",
+      "en": "Employer housing levy"
+     },
+     "amount": 17500
+    },
+    {
+     "label": {
+      "fr": "CNPS patronale (pension 4,2 %)",
+      "en": "Employer CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-03-011",
+  "kind": "balance",
+  "date": "2026-03-01",
+  "title": {
+   "fr": "Balance au 28 février 2026",
+   "en": "Trial balance at February 28, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 5000000
+    },
+    {
+     "label": {
+      "fr": "431 SECURITE SOCIALE",
+      "en": "431 Social security"
+     },
+     "credit": 58800
+    },
+    {
+     "label": {
+      "fr": "441 ETAT, IMPÔT SUR LES BENEFICES",
+      "en": "441 State, income tax"
+     },
+     "debit": 165000
+    },
+    {
+     "label": {
+      "fr": "4431 T.V.A. facturée sur ventes",
+      "en": "4431 VAT charged on sales"
+     },
+     "credit": 1443750
+    },
+    {
+     "label": {
+      "fr": "4452 T.V.A. récupérable sur achats",
+      "en": "4452 Recoverable VAT on purchases"
+     },
+     "debit": 643913
+    },
+    {
+     "label": {
+      "fr": "4472 Impôts sur salaires",
+      "en": "4472 Taxes on salaries"
+     },
+     "credit": 77134
+    },
+    {
+     "label": {
+      "fr": "4478 Autres impôts et contributions",
+      "en": "4478 Other taxes and contributions"
+     },
+     "credit": 30000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 66900
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 6979671
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 4770000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 6625000
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 600000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 40400
+    },
+    {
+     "label": {
+      "fr": "6324 Honoraires des professions règlementées",
+      "en": "6324 Fees of regulated professions"
+     },
+     "debit": 200000
+    },
+    {
+     "label": {
+      "fr": "6413 Taxes sur appointements et salaires",
+      "en": "6413 Taxes on salaries and wages"
+     },
+     "debit": 35000
+    },
+    {
+     "label": {
+      "fr": "646 DROITS D'ENREGISTREMENT",
+      "en": "646 Registration duties"
+     },
+     "debit": 25000
+    },
+    {
+     "label": {
+      "fr": "6611 Appointements, salaires et commissions",
+      "en": "6611 Salaries, wages and commissions"
+     },
+     "debit": 1400000
+    },
+    {
+     "label": {
+      "fr": "6641 Charges sociales sur rémunération du personnel national",
+      "en": "6641 Social charges on pay of national staff"
+     },
+     "debit": 58800
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 15000000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-03-002",
+  "kind": "recu_caisse",
+  "date": "2026-03-02",
+  "title": {
+   "fr": "Quittance de loyer de mars",
+   "en": "March rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Tchoua (fictif)"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer brut",
+      "en": "Gross rent"
+     },
+     "amount": 300000
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer 10 % retenu",
+      "en": "10% rent withholding"
+     },
+     "amount": 30000
+    },
+    {
+     "label": {
+      "fr": "Net versé par virement",
+      "en": "Net paid by transfer"
+     },
+     "amount": 270000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-03-003",
+  "kind": "facture_achat",
+  "date": "2026-03-05",
+  "title": {
+   "fr": "Facture Sawa Textiles de mars",
+   "en": "Sawa Textiles March invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Sawa Textiles SARL",
+    "niu": "M011900004517T",
+    "rccm": "RC/DLA/2019/B/0458",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Zone portuaire, Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Ngono Mode SARL",
+    "niu": "M012600008421K"
+   },
+   "number": "FA-2026-0003",
+   "einvoice": "DGI-SFE-2026-001003",
+   "lines": [
+    {
+     "label": {
+      "fr": "Chemises",
+      "en": "Shirts"
+     },
+     "qty": 120,
+     "unit_price": 9500,
+     "amount": 1140000
+    },
+    {
+     "label": {
+      "fr": "Pantalons",
+      "en": "Trousers"
+     },
+     "qty": 80,
+     "unit_price": 14500,
+     "amount": 1160000
+    },
+    {
+     "label": {
+      "fr": "Robes",
+      "en": "Dresses"
+     },
+     "qty": 60,
+     "unit_price": 18500,
+     "amount": 1110000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 3410000
+    },
+    {
+     "label": {
+      "fr": "TVA 17,5 %",
+      "en": "VAT 17.5%"
+     },
+     "role": "tax",
+     "amount": 596750
+    },
+    {
+     "label": {
+      "fr": "CAC 10 % de la TVA",
+      "en": "Council cents 10% of VAT"
+     },
+     "role": "tax",
+     "amount": 59675
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 2 %",
+      "en": "2% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 68200
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 4134625
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-03-010",
+  "kind": "recu_caisse",
+  "date": "2026-03-10",
+  "title": {
+   "fr": "Mise en demeure d'un ancien bailleur (litige)",
+   "en": "Formal notice from a former landlord (dispute)"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Réclamation",
+      "en": "Claim"
+     },
+     "value": {
+      "fr": "Remise en état des locaux",
+      "en": "Restoring the premises"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Montant réclamé",
+      "en": "Amount claimed"
+     },
+     "amount": 500000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-03-004",
+  "kind": "declaration",
+  "date": "2026-03-15",
+  "title": {
+   "fr": "Déclaration du 15 : période de février 2026",
+   "en": "15th return: February 2026"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Chiffre d'affaires HT",
+      "en": "Turnover excl. tax"
+     },
+     "value": "7 500 000"
+    },
+    {
+     "label": {
+      "fr": "TVA collectée",
+      "en": "VAT charged"
+     },
+     "value": "1 443 750"
+    },
+    {
+     "label": {
+      "fr": "TVA déductible",
+      "en": "Recoverable VAT"
+     },
+     "value": "643 913"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA reporté",
+      "en": "VAT credit brought forward"
+     },
+     "value": "0"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA à reporter",
+      "en": "VAT credit carried forward"
+     },
+     "value": "0"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "TVA due",
+      "en": "VAT due"
+     },
+     "amount": 799837
+    },
+    {
+     "label": {
+      "fr": "Acompte d'IS (2 % + CAC)",
+      "en": "CIT instalment (2% + council cents)"
+     },
+     "amount": 165000
+    },
+    {
+     "label": {
+      "fr": "Précompte imputé",
+      "en": "Withholding credited"
+     },
+     "amount": 66900
+    },
+    {
+     "label": {
+      "fr": "Retenues et cotisations reversées",
+      "en": "Withholdings and contributions paid over"
+     },
+     "amount": 165934
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-03-005",
+  "kind": "recu_caisse",
+  "date": "2026-03-25",
+  "title": {
+   "fr": "Bordereau de sortie de caisse vers la banque",
+   "en": "Cash transfer slip to the bank"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-03-001",
+  "kind": "releve_bancaire",
+  "date": "2026-03-31",
+  "title": {
+   "fr": "Relevé bancaire de mars (Banque X)",
+   "en": "March bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Virement à Sawa Textiles",
+      "en": "Transfer to Sawa Textiles"
+     },
+     "amount": 4134625
+    },
+    {
+     "label": {
+      "fr": "Salaires nets virés",
+      "en": "Net pay transferred"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "Virements internes reçus (espèces et Mobile Money)",
+      "en": "Internal transfers received"
+     },
+     "amount": 8927050
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 3500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-03-006",
+  "kind": "recu_caisse",
+  "date": "2026-03-31",
+  "title": {
+   "fr": "Récapitulatif des ventes au comptant de mars",
+   "en": "March cash sales summary"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes HT",
+      "en": "Sales excl. tax"
+     },
+     "role": "ht",
+     "amount": 4000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 770000
+    },
+    {
+     "label": {
+      "fr": "Ventes TTC encaissées",
+      "en": "Sales incl. tax collected"
+     },
+     "role": "ttc",
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-03-007",
+  "kind": "releve_momo",
+  "date": "2026-03-31",
+  "title": {
+   "fr": "Relevé Orange Money de mars",
+   "en": "Orange Money statement, March"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 2000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 385000
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 2385000
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 9500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-03-008",
+  "kind": "releve_momo",
+  "date": "2026-03-31",
+  "title": {
+   "fr": "Relevé MTN MoMo de mars",
+   "en": "MTN MoMo statement, March"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 1500000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 288750
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 1788750
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 7200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-03-009",
+  "kind": "bulletin_paie",
+  "date": "2026-03-31",
+  "title": {
+   "fr": "Journal de paie de mars",
+   "en": "March payroll journal"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Gérant salarié",
+      "en": "Salaried manager"
+     },
+     "amount": 400000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 1",
+      "en": "Sales assistant 1"
+     },
+     "amount": 150000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 2",
+      "en": "Sales assistant 2"
+     },
+     "amount": 150000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Salaires bruts",
+      "en": "Gross pay"
+     },
+     "role": "ht",
+     "amount": 700000
+    },
+    {
+     "label": {
+      "fr": "IRPP et CAC",
+      "en": "PIT and council cents"
+     },
+     "amount": 39934
+    },
+    {
+     "label": {
+      "fr": "RAV",
+      "en": "Audiovisual fee"
+     },
+     "amount": 8450
+    },
+    {
+     "label": {
+      "fr": "TDL",
+      "en": "Local development tax"
+     },
+     "amount": 4250
+    },
+    {
+     "label": {
+      "fr": "CFC salariale",
+      "en": "Employee housing levy"
+     },
+     "amount": 7000
+    },
+    {
+     "label": {
+      "fr": "CNPS salariale (pension 4,2 %)",
+      "en": "Employee CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    },
+    {
+     "label": {
+      "fr": "Nets à payer",
+      "en": "Net pay"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "CFC patronale",
+      "en": "Employer housing levy"
+     },
+     "amount": 17500
+    },
+    {
+     "label": {
+      "fr": "CNPS patronale (pension 4,2 %)",
+      "en": "Employer CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-04-010",
+  "kind": "facture_achat",
+  "date": "2026-04-01",
+  "title": {
+   "fr": "Facture Auto Wouri : voiture de livraison légère",
+   "en": "Auto Wouri invoice: light delivery car"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Auto Wouri SARL",
+    "niu": "M011700003391B",
+    "rccm": "RC/DLA/2017/B/0912",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Ndokoti, Douala"
+   },
+   "customer": {
+    "name": "Ngono Mode SARL",
+    "niu": "M012600008421K"
+   },
+   "number": "AW-2026-0331",
+   "einvoice": "DGI-SFE-2026-004417",
+   "lines": [
+    {
+     "label": {
+      "fr": "Voiture légère, usage en ville",
+      "en": "Light car, town use"
+     },
+     "qty": 1,
+     "unit_price": 12000000,
+     "amount": 12000000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 12000000
+    },
+    {
+     "label": {
+      "fr": "TVA 17,5 %",
+      "en": "VAT 17.5%"
+     },
+     "role": "tax",
+     "amount": 2100000
+    },
+    {
+     "label": {
+      "fr": "CAC 10 % de la TVA",
+      "en": "Council cents 10% of VAT"
+     },
+     "role": "tax",
+     "amount": 210000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 14310000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-04-011",
+  "kind": "balance",
+  "date": "2026-04-01",
+  "title": {
+   "fr": "Balance au 31 mars 2026",
+   "en": "Trial balance at March 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 5000000
+    },
+    {
+     "label": {
+      "fr": "191 PROVISIONS POUR LITIGES",
+      "en": "191 Provisions for litigation"
+     },
+     "credit": 500000
+    },
+    {
+     "label": {
+      "fr": "431 SECURITE SOCIALE",
+      "en": "431 Social security"
+     },
+     "credit": 58800
+    },
+    {
+     "label": {
+      "fr": "441 ETAT, IMPÔT SUR LES BENEFICES",
+      "en": "441 State, income tax"
+     },
+     "debit": 330000
+    },
+    {
+     "label": {
+      "fr": "4431 T.V.A. facturée sur ventes",
+      "en": "4431 VAT charged on sales"
+     },
+     "credit": 1443750
+    },
+    {
+     "label": {
+      "fr": "4452 T.V.A. récupérable sur achats",
+      "en": "4452 Recoverable VAT on purchases"
+     },
+     "debit": 656425
+    },
+    {
+     "label": {
+      "fr": "4472 Impôts sur salaires",
+      "en": "4472 Taxes on salaries"
+     },
+     "credit": 77134
+    },
+    {
+     "label": {
+      "fr": "4478 Autres impôts et contributions",
+      "en": "4478 Other taxes and contributions"
+     },
+     "credit": 30000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 68200
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 9823759
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 4770000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 10035000
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 900000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 60600
+    },
+    {
+     "label": {
+      "fr": "6324 Honoraires des professions règlementées",
+      "en": "6324 Fees of regulated professions"
+     },
+     "debit": 200000
+    },
+    {
+     "label": {
+      "fr": "6413 Taxes sur appointements et salaires",
+      "en": "6413 Taxes on salaries and wages"
+     },
+     "debit": 52500
+    },
+    {
+     "label": {
+      "fr": "646 DROITS D'ENREGISTREMENT",
+      "en": "646 Registration duties"
+     },
+     "debit": 25000
+    },
+    {
+     "label": {
+      "fr": "6611 Appointements, salaires et commissions",
+      "en": "6611 Salaries, wages and commissions"
+     },
+     "debit": 2100000
+    },
+    {
+     "label": {
+      "fr": "6641 Charges sociales sur rémunération du personnel national",
+      "en": "6641 Social charges on pay of national staff"
+     },
+     "debit": 88200
+    },
+    {
+     "label": {
+      "fr": "6911 Dotations aux provisions et aux depreciations d’exploitation pour risques et charges",
+      "en": "6911 Operating provisions for risks and charges"
+     },
+     "debit": 500000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 22500000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-04-002",
+  "kind": "recu_caisse",
+  "date": "2026-04-02",
+  "title": {
+   "fr": "Quittance de loyer de avril",
+   "en": "April rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Tchoua (fictif)"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer brut",
+      "en": "Gross rent"
+     },
+     "amount": 300000
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer 10 % retenu",
+      "en": "10% rent withholding"
+     },
+     "amount": 30000
+    },
+    {
+     "label": {
+      "fr": "Net versé par virement",
+      "en": "Net paid by transfer"
+     },
+     "amount": 270000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-04-003",
+  "kind": "facture_achat",
+  "date": "2026-04-05",
+  "title": {
+   "fr": "Facture Sawa Textiles de avril",
+   "en": "Sawa Textiles April invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Sawa Textiles SARL",
+    "niu": "M011900004517T",
+    "rccm": "RC/DLA/2019/B/0458",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Zone portuaire, Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Ngono Mode SARL",
+    "niu": "M012600008421K"
+   },
+   "number": "FA-2026-0004",
+   "einvoice": "DGI-SFE-2026-001004",
+   "lines": [
+    {
+     "label": {
+      "fr": "Chemises",
+      "en": "Shirts"
+     },
+     "qty": 120,
+     "unit_price": 9750,
+     "amount": 1170000
+    },
+    {
+     "label": {
+      "fr": "Pantalons",
+      "en": "Trousers"
+     },
+     "qty": 80,
+     "unit_price": 14750,
+     "amount": 1180000
+    },
+    {
+     "label": {
+      "fr": "Robes",
+      "en": "Dresses"
+     },
+     "qty": 60,
+     "unit_price": 18750,
+     "amount": 1125000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 3475000
+    },
+    {
+     "label": {
+      "fr": "TVA 17,5 %",
+      "en": "VAT 17.5%"
+     },
+     "role": "tax",
+     "amount": 608125
+    },
+    {
+     "label": {
+      "fr": "CAC 10 % de la TVA",
+      "en": "Council cents 10% of VAT"
+     },
+     "role": "tax",
+     "amount": 60813
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 2 %",
+      "en": "2% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 69500
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 4213438
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-04-004",
+  "kind": "declaration",
+  "date": "2026-04-15",
+  "title": {
+   "fr": "Déclaration du 15 : période de mars 2026",
+   "en": "15th return: March 2026"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Chiffre d'affaires HT",
+      "en": "Turnover excl. tax"
+     },
+     "value": "7 500 000"
+    },
+    {
+     "label": {
+      "fr": "TVA collectée",
+      "en": "VAT charged"
+     },
+     "value": "1 443 750"
+    },
+    {
+     "label": {
+      "fr": "TVA déductible",
+      "en": "Recoverable VAT"
+     },
+     "value": "656 425"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA reporté",
+      "en": "VAT credit brought forward"
+     },
+     "value": "0"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA à reporter",
+      "en": "VAT credit carried forward"
+     },
+     "value": "0"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "TVA due",
+      "en": "VAT due"
+     },
+     "amount": 787325
+    },
+    {
+     "label": {
+      "fr": "Acompte d'IS (2 % + CAC)",
+      "en": "CIT instalment (2% + council cents)"
+     },
+     "amount": 165000
+    },
+    {
+     "label": {
+      "fr": "Précompte imputé",
+      "en": "Withholding credited"
+     },
+     "amount": 68200
+    },
+    {
+     "label": {
+      "fr": "Retenues et cotisations reversées",
+      "en": "Withholdings and contributions paid over"
+     },
+     "amount": 165934
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-04-005",
+  "kind": "recu_caisse",
+  "date": "2026-04-25",
+  "title": {
+   "fr": "Bordereau de sortie de caisse vers la banque",
+   "en": "Cash transfer slip to the bank"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-04-001",
+  "kind": "releve_bancaire",
+  "date": "2026-04-30",
+  "title": {
+   "fr": "Relevé bancaire de avril (Banque X)",
+   "en": "April bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Virement à Sawa Textiles",
+      "en": "Transfer to Sawa Textiles"
+     },
+     "amount": 4213438
+    },
+    {
+     "label": {
+      "fr": "Salaires nets virés",
+      "en": "Net pay transferred"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "Virements internes reçus (espèces et Mobile Money)",
+      "en": "Internal transfers received"
+     },
+     "amount": 8927050
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 3500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-04-006",
+  "kind": "recu_caisse",
+  "date": "2026-04-30",
+  "title": {
+   "fr": "Récapitulatif des ventes au comptant de avril",
+   "en": "April cash sales summary"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes HT",
+      "en": "Sales excl. tax"
+     },
+     "role": "ht",
+     "amount": 4000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 770000
+    },
+    {
+     "label": {
+      "fr": "Ventes TTC encaissées",
+      "en": "Sales incl. tax collected"
+     },
+     "role": "ttc",
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-04-007",
+  "kind": "releve_momo",
+  "date": "2026-04-30",
+  "title": {
+   "fr": "Relevé Orange Money de avril",
+   "en": "Orange Money statement, April"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 2000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 385000
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 2385000
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 9500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-04-008",
+  "kind": "releve_momo",
+  "date": "2026-04-30",
+  "title": {
+   "fr": "Relevé MTN MoMo de avril",
+   "en": "MTN MoMo statement, April"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 1500000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 288750
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 1788750
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 7200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-04-009",
+  "kind": "bulletin_paie",
+  "date": "2026-04-30",
+  "title": {
+   "fr": "Journal de paie de avril",
+   "en": "April payroll journal"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Gérant salarié",
+      "en": "Salaried manager"
+     },
+     "amount": 400000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 1",
+      "en": "Sales assistant 1"
+     },
+     "amount": 150000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 2",
+      "en": "Sales assistant 2"
+     },
+     "amount": 150000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Salaires bruts",
+      "en": "Gross pay"
+     },
+     "role": "ht",
+     "amount": 700000
+    },
+    {
+     "label": {
+      "fr": "IRPP et CAC",
+      "en": "PIT and council cents"
+     },
+     "amount": 39934
+    },
+    {
+     "label": {
+      "fr": "RAV",
+      "en": "Audiovisual fee"
+     },
+     "amount": 8450
+    },
+    {
+     "label": {
+      "fr": "TDL",
+      "en": "Local development tax"
+     },
+     "amount": 4250
+    },
+    {
+     "label": {
+      "fr": "CFC salariale",
+      "en": "Employee housing levy"
+     },
+     "amount": 7000
+    },
+    {
+     "label": {
+      "fr": "CNPS salariale (pension 4,2 %)",
+      "en": "Employee CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    },
+    {
+     "label": {
+      "fr": "Nets à payer",
+      "en": "Net pay"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "CFC patronale",
+      "en": "Employer housing levy"
+     },
+     "amount": 17500
+    },
+    {
+     "label": {
+      "fr": "CNPS patronale (pension 4,2 %)",
+      "en": "Employer CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-05-010",
+  "kind": "balance",
+  "date": "2026-05-01",
+  "title": {
+   "fr": "Balance au 30 avril 2026",
+   "en": "Trial balance at April 30, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 5000000
+    },
+    {
+     "label": {
+      "fr": "191 PROVISIONS POUR LITIGES",
+      "en": "191 Provisions for litigation"
+     },
+     "credit": 500000
+    },
+    {
+     "label": {
+      "fr": "2451 Matériel automobile",
+      "en": "2451 Motor vehicles"
+     },
+     "debit": 12000000
+    },
+    {
+     "label": {
+      "fr": "431 SECURITE SOCIALE",
+      "en": "431 Social security"
+     },
+     "credit": 58800
+    },
+    {
+     "label": {
+      "fr": "441 ETAT, IMPÔT SUR LES BENEFICES",
+      "en": "441 State, income tax"
+     },
+     "debit": 495000
+    },
+    {
+     "label": {
+      "fr": "4431 T.V.A. facturée sur ventes",
+      "en": "4431 VAT charged on sales"
+     },
+     "credit": 1443750
+    },
+    {
+     "label": {
+      "fr": "4451 T.V.A. récupérable sur immobilisations",
+      "en": "4451 Recoverable VAT on fixed assets"
+     },
+     "debit": 2310000
+    },
+    {
+     "label": {
+      "fr": "4452 T.V.A. récupérable sur achats",
+      "en": "4452 Recoverable VAT on purchases"
+     },
+     "debit": 668938
+    },
+    {
+     "label": {
+      "fr": "4472 Impôts sur salaires",
+      "en": "4472 Taxes on salaries"
+     },
+     "credit": 77134
+    },
+    {
+     "label": {
+      "fr": "4478 Autres impôts et contributions",
+      "en": "4478 Other taxes and contributions"
+     },
+     "credit": 30000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 69500
+    },
+    {
+     "label": {
+      "fr": "4812 Immobilisations corporelles",
+      "en": "4812 Tangible assets"
+     },
+     "credit": 14310000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 12602846
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 4770000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 13510000
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 1200000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 80800
+    },
+    {
+     "label": {
+      "fr": "6324 Honoraires des professions règlementées",
+      "en": "6324 Fees of regulated professions"
+     },
+     "debit": 200000
+    },
+    {
+     "label": {
+      "fr": "6413 Taxes sur appointements et salaires",
+      "en": "6413 Taxes on salaries and wages"
+     },
+     "debit": 70000
+    },
+    {
+     "label": {
+      "fr": "646 DROITS D'ENREGISTREMENT",
+      "en": "646 Registration duties"
+     },
+     "debit": 25000
+    },
+    {
+     "label": {
+      "fr": "6611 Appointements, salaires et commissions",
+      "en": "6611 Salaries, wages and commissions"
+     },
+     "debit": 2800000
+    },
+    {
+     "label": {
+      "fr": "6641 Charges sociales sur rémunération du personnel national",
+      "en": "6641 Social charges on pay of national staff"
+     },
+     "debit": 117600
+    },
+    {
+     "label": {
+      "fr": "6911 Dotations aux provisions et aux depreciations d’exploitation pour risques et charges",
+      "en": "6911 Operating provisions for risks and charges"
+     },
+     "debit": 500000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 30000000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-05-002",
+  "kind": "recu_caisse",
+  "date": "2026-05-02",
+  "title": {
+   "fr": "Quittance de loyer de mai",
+   "en": "May rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Tchoua (fictif)"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer brut",
+      "en": "Gross rent"
+     },
+     "amount": 300000
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer 10 % retenu",
+      "en": "10% rent withholding"
+     },
+     "amount": 30000
+    },
+    {
+     "label": {
+      "fr": "Net versé par virement",
+      "en": "Net paid by transfer"
+     },
+     "amount": 270000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-05-003",
+  "kind": "facture_achat",
+  "date": "2026-05-05",
+  "title": {
+   "fr": "Facture Sawa Textiles de mai",
+   "en": "Sawa Textiles May invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Sawa Textiles SARL",
+    "niu": "M011900004517T",
+    "rccm": "RC/DLA/2019/B/0458",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Zone portuaire, Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Ngono Mode SARL",
+    "niu": "M012600008421K"
+   },
+   "number": "FA-2026-0005",
+   "einvoice": "DGI-SFE-2026-001005",
+   "lines": [
+    {
+     "label": {
+      "fr": "Chemises",
+      "en": "Shirts"
+     },
+     "qty": 120,
+     "unit_price": 9000,
+     "amount": 1080000
+    },
+    {
+     "label": {
+      "fr": "Pantalons",
+      "en": "Trousers"
+     },
+     "qty": 80,
+     "unit_price": 14000,
+     "amount": 1120000
+    },
+    {
+     "label": {
+      "fr": "Robes",
+      "en": "Dresses"
+     },
+     "qty": 60,
+     "unit_price": 18000,
+     "amount": 1080000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 3280000
+    },
+    {
+     "label": {
+      "fr": "TVA 17,5 %",
+      "en": "VAT 17.5%"
+     },
+     "role": "tax",
+     "amount": 574000
+    },
+    {
+     "label": {
+      "fr": "CAC 10 % de la TVA",
+      "en": "Council cents 10% of VAT"
+     },
+     "role": "tax",
+     "amount": 57400
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 2 %",
+      "en": "2% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 65600
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 3977000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-05-004",
+  "kind": "declaration",
+  "date": "2026-05-15",
+  "title": {
+   "fr": "Déclaration du 15 : période de avril 2026",
+   "en": "15th return: April 2026"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Chiffre d'affaires HT",
+      "en": "Turnover excl. tax"
+     },
+     "value": "7 500 000"
+    },
+    {
+     "label": {
+      "fr": "TVA collectée",
+      "en": "VAT charged"
+     },
+     "value": "1 443 750"
+    },
+    {
+     "label": {
+      "fr": "TVA déductible",
+      "en": "Recoverable VAT"
+     },
+     "value": "2 978 938"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA reporté",
+      "en": "VAT credit brought forward"
+     },
+     "value": "0"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA à reporter",
+      "en": "VAT credit carried forward"
+     },
+     "value": "1 535 188"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "TVA due",
+      "en": "VAT due"
+     },
+     "amount": 0
+    },
+    {
+     "label": {
+      "fr": "Acompte d'IS (2 % + CAC)",
+      "en": "CIT instalment (2% + council cents)"
+     },
+     "amount": 165000
+    },
+    {
+     "label": {
+      "fr": "Précompte imputé",
+      "en": "Withholding credited"
+     },
+     "amount": 69500
+    },
+    {
+     "label": {
+      "fr": "Retenues et cotisations reversées",
+      "en": "Withholdings and contributions paid over"
+     },
+     "amount": 165934
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-05-005",
+  "kind": "recu_caisse",
+  "date": "2026-05-25",
+  "title": {
+   "fr": "Bordereau de sortie de caisse vers la banque",
+   "en": "Cash transfer slip to the bank"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-05-001",
+  "kind": "releve_bancaire",
+  "date": "2026-05-31",
+  "title": {
+   "fr": "Relevé bancaire de mai (Banque X)",
+   "en": "May bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Échéance réglée à Auto Wouri",
+      "en": "Instalment paid to Auto Wouri"
+     },
+     "amount": 4770000
+    },
+    {
+     "label": {
+      "fr": "Virement à Sawa Textiles",
+      "en": "Transfer to Sawa Textiles"
+     },
+     "amount": 3977000
+    },
+    {
+     "label": {
+      "fr": "Salaires nets virés",
+      "en": "Net pay transferred"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "Virements internes reçus (espèces et Mobile Money)",
+      "en": "Internal transfers received"
+     },
+     "amount": 8927050
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 3500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-05-006",
+  "kind": "recu_caisse",
+  "date": "2026-05-31",
+  "title": {
+   "fr": "Récapitulatif des ventes au comptant de mai",
+   "en": "May cash sales summary"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes HT",
+      "en": "Sales excl. tax"
+     },
+     "role": "ht",
+     "amount": 4000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 770000
+    },
+    {
+     "label": {
+      "fr": "Ventes TTC encaissées",
+      "en": "Sales incl. tax collected"
+     },
+     "role": "ttc",
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-05-007",
+  "kind": "releve_momo",
+  "date": "2026-05-31",
+  "title": {
+   "fr": "Relevé Orange Money de mai",
+   "en": "Orange Money statement, May"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 2000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 385000
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 2385000
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 9500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-05-008",
+  "kind": "releve_momo",
+  "date": "2026-05-31",
+  "title": {
+   "fr": "Relevé MTN MoMo de mai",
+   "en": "MTN MoMo statement, May"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 1500000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 288750
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 1788750
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 7200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-05-009",
+  "kind": "bulletin_paie",
+  "date": "2026-05-31",
+  "title": {
+   "fr": "Journal de paie de mai",
+   "en": "May payroll journal"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Gérant salarié",
+      "en": "Salaried manager"
+     },
+     "amount": 400000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 1",
+      "en": "Sales assistant 1"
+     },
+     "amount": 150000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 2",
+      "en": "Sales assistant 2"
+     },
+     "amount": 150000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Salaires bruts",
+      "en": "Gross pay"
+     },
+     "role": "ht",
+     "amount": 700000
+    },
+    {
+     "label": {
+      "fr": "IRPP et CAC",
+      "en": "PIT and council cents"
+     },
+     "amount": 39934
+    },
+    {
+     "label": {
+      "fr": "RAV",
+      "en": "Audiovisual fee"
+     },
+     "amount": 8450
+    },
+    {
+     "label": {
+      "fr": "TDL",
+      "en": "Local development tax"
+     },
+     "amount": 4250
+    },
+    {
+     "label": {
+      "fr": "CFC salariale",
+      "en": "Employee housing levy"
+     },
+     "amount": 7000
+    },
+    {
+     "label": {
+      "fr": "CNPS salariale (pension 4,2 %)",
+      "en": "Employee CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    },
+    {
+     "label": {
+      "fr": "Nets à payer",
+      "en": "Net pay"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "CFC patronale",
+      "en": "Employer housing levy"
+     },
+     "amount": 17500
+    },
+    {
+     "label": {
+      "fr": "CNPS patronale (pension 4,2 %)",
+      "en": "Employer CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-06-010",
+  "kind": "balance",
+  "date": "2026-06-01",
+  "title": {
+   "fr": "Balance au 31 mai 2026",
+   "en": "Trial balance at May 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 5000000
+    },
+    {
+     "label": {
+      "fr": "191 PROVISIONS POUR LITIGES",
+      "en": "191 Provisions for litigation"
+     },
+     "credit": 500000
+    },
+    {
+     "label": {
+      "fr": "2451 Matériel automobile",
+      "en": "2451 Motor vehicles"
+     },
+     "debit": 12000000
+    },
+    {
+     "label": {
+      "fr": "431 SECURITE SOCIALE",
+      "en": "431 Social security"
+     },
+     "credit": 58800
+    },
+    {
+     "label": {
+      "fr": "441 ETAT, IMPÔT SUR LES BENEFICES",
+      "en": "441 State, income tax"
+     },
+     "debit": 660000
+    },
+    {
+     "label": {
+      "fr": "4431 T.V.A. facturée sur ventes",
+      "en": "4431 VAT charged on sales"
+     },
+     "credit": 1443750
+    },
+    {
+     "label": {
+      "fr": "4449 Etat, crédit de T.V.A. à reporter",
+      "en": "4449 State, VAT credit carried forward"
+     },
+     "debit": 1535188
+    },
+    {
+     "label": {
+      "fr": "4452 T.V.A. récupérable sur achats",
+      "en": "4452 Recoverable VAT on purchases"
+     },
+     "debit": 631400
+    },
+    {
+     "label": {
+      "fr": "4472 Impôts sur salaires",
+      "en": "4472 Taxes on salaries"
+     },
+     "credit": 77134
+    },
+    {
+     "label": {
+      "fr": "4478 Autres impôts et contributions",
+      "en": "4478 Other taxes and contributions"
+     },
+     "credit": 30000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 65600
+    },
+    {
+     "label": {
+      "fr": "4812 Immobilisations corporelles",
+      "en": "4812 Tangible assets"
+     },
+     "credit": 9540000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 11636996
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 4770000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 16790000
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 1500000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 101000
+    },
+    {
+     "label": {
+      "fr": "6324 Honoraires des professions règlementées",
+      "en": "6324 Fees of regulated professions"
+     },
+     "debit": 200000
+    },
+    {
+     "label": {
+      "fr": "6413 Taxes sur appointements et salaires",
+      "en": "6413 Taxes on salaries and wages"
+     },
+     "debit": 87500
+    },
+    {
+     "label": {
+      "fr": "646 DROITS D'ENREGISTREMENT",
+      "en": "646 Registration duties"
+     },
+     "debit": 25000
+    },
+    {
+     "label": {
+      "fr": "6611 Appointements, salaires et commissions",
+      "en": "6611 Salaries, wages and commissions"
+     },
+     "debit": 3500000
+    },
+    {
+     "label": {
+      "fr": "6641 Charges sociales sur rémunération du personnel national",
+      "en": "6641 Social charges on pay of national staff"
+     },
+     "debit": 147000
+    },
+    {
+     "label": {
+      "fr": "6911 Dotations aux provisions et aux depreciations d’exploitation pour risques et charges",
+      "en": "6911 Operating provisions for risks and charges"
+     },
+     "debit": 500000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 37500000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-06-002",
+  "kind": "recu_caisse",
+  "date": "2026-06-02",
+  "title": {
+   "fr": "Quittance de loyer de juin",
+   "en": "June rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Tchoua (fictif)"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer brut",
+      "en": "Gross rent"
+     },
+     "amount": 300000
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer 10 % retenu",
+      "en": "10% rent withholding"
+     },
+     "amount": 30000
+    },
+    {
+     "label": {
+      "fr": "Net versé par virement",
+      "en": "Net paid by transfer"
+     },
+     "amount": 270000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-06-003",
+  "kind": "facture_achat",
+  "date": "2026-06-05",
+  "title": {
+   "fr": "Facture Sawa Textiles de juin",
+   "en": "Sawa Textiles June invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Sawa Textiles SARL",
+    "niu": "M011900004517T",
+    "rccm": "RC/DLA/2019/B/0458",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Zone portuaire, Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Ngono Mode SARL",
+    "niu": "M012600008421K"
+   },
+   "number": "FA-2026-0006",
+   "einvoice": "DGI-SFE-2026-001006",
+   "lines": [
+    {
+     "label": {
+      "fr": "Chemises",
+      "en": "Shirts"
+     },
+     "qty": 120,
+     "unit_price": 9250,
+     "amount": 1110000
+    },
+    {
+     "label": {
+      "fr": "Pantalons",
+      "en": "Trousers"
+     },
+     "qty": 80,
+     "unit_price": 14250,
+     "amount": 1140000
+    },
+    {
+     "label": {
+      "fr": "Robes",
+      "en": "Dresses"
+     },
+     "qty": 60,
+     "unit_price": 18250,
+     "amount": 1095000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 3345000
+    },
+    {
+     "label": {
+      "fr": "TVA 17,5 %",
+      "en": "VAT 17.5%"
+     },
+     "role": "tax",
+     "amount": 585375
+    },
+    {
+     "label": {
+      "fr": "CAC 10 % de la TVA",
+      "en": "Council cents 10% of VAT"
+     },
+     "role": "tax",
+     "amount": 58538
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 2 %",
+      "en": "2% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 66900
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 4055813
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-06-004",
+  "kind": "declaration",
+  "date": "2026-06-15",
+  "title": {
+   "fr": "Déclaration du 15 : période de mai 2026",
+   "en": "15th return: May 2026"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Chiffre d'affaires HT",
+      "en": "Turnover excl. tax"
+     },
+     "value": "7 500 000"
+    },
+    {
+     "label": {
+      "fr": "TVA collectée",
+      "en": "VAT charged"
+     },
+     "value": "1 443 750"
+    },
+    {
+     "label": {
+      "fr": "TVA déductible",
+      "en": "Recoverable VAT"
+     },
+     "value": "631 400"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA reporté",
+      "en": "VAT credit brought forward"
+     },
+     "value": "1 535 188"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA à reporter",
+      "en": "VAT credit carried forward"
+     },
+     "value": "722 838"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "TVA due",
+      "en": "VAT due"
+     },
+     "amount": 0
+    },
+    {
+     "label": {
+      "fr": "Acompte d'IS (2 % + CAC)",
+      "en": "CIT instalment (2% + council cents)"
+     },
+     "amount": 165000
+    },
+    {
+     "label": {
+      "fr": "Précompte imputé",
+      "en": "Withholding credited"
+     },
+     "amount": 65600
+    },
+    {
+     "label": {
+      "fr": "Retenues et cotisations reversées",
+      "en": "Withholdings and contributions paid over"
+     },
+     "amount": 165934
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-06-005",
+  "kind": "recu_caisse",
+  "date": "2026-06-25",
+  "title": {
+   "fr": "Bordereau de sortie de caisse vers la banque",
+   "en": "Cash transfer slip to the bank"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-06-001",
+  "kind": "releve_bancaire",
+  "date": "2026-06-30",
+  "title": {
+   "fr": "Relevé bancaire de juin (Banque X)",
+   "en": "June bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Échéance réglée à Auto Wouri",
+      "en": "Instalment paid to Auto Wouri"
+     },
+     "amount": 4770000
+    },
+    {
+     "label": {
+      "fr": "Virement à Sawa Textiles",
+      "en": "Transfer to Sawa Textiles"
+     },
+     "amount": 4055813
+    },
+    {
+     "label": {
+      "fr": "Salaires nets virés",
+      "en": "Net pay transferred"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "Virements internes reçus (espèces et Mobile Money)",
+      "en": "Internal transfers received"
+     },
+     "amount": 8927050
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 3500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-06-006",
+  "kind": "recu_caisse",
+  "date": "2026-06-30",
+  "title": {
+   "fr": "Récapitulatif des ventes au comptant de juin",
+   "en": "June cash sales summary"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes HT",
+      "en": "Sales excl. tax"
+     },
+     "role": "ht",
+     "amount": 4000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 770000
+    },
+    {
+     "label": {
+      "fr": "Ventes TTC encaissées",
+      "en": "Sales incl. tax collected"
+     },
+     "role": "ttc",
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-06-007",
+  "kind": "releve_momo",
+  "date": "2026-06-30",
+  "title": {
+   "fr": "Relevé Orange Money de juin",
+   "en": "Orange Money statement, June"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 2000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 385000
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 2385000
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 9500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-06-008",
+  "kind": "releve_momo",
+  "date": "2026-06-30",
+  "title": {
+   "fr": "Relevé MTN MoMo de juin",
+   "en": "MTN MoMo statement, June"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 1500000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 288750
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 1788750
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 7200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-06-009",
+  "kind": "bulletin_paie",
+  "date": "2026-06-30",
+  "title": {
+   "fr": "Journal de paie de juin",
+   "en": "June payroll journal"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Gérant salarié",
+      "en": "Salaried manager"
+     },
+     "amount": 400000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 1",
+      "en": "Sales assistant 1"
+     },
+     "amount": 150000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 2",
+      "en": "Sales assistant 2"
+     },
+     "amount": 150000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Salaires bruts",
+      "en": "Gross pay"
+     },
+     "role": "ht",
+     "amount": 700000
+    },
+    {
+     "label": {
+      "fr": "IRPP et CAC",
+      "en": "PIT and council cents"
+     },
+     "amount": 39934
+    },
+    {
+     "label": {
+      "fr": "RAV",
+      "en": "Audiovisual fee"
+     },
+     "amount": 8450
+    },
+    {
+     "label": {
+      "fr": "TDL",
+      "en": "Local development tax"
+     },
+     "amount": 4250
+    },
+    {
+     "label": {
+      "fr": "CFC salariale",
+      "en": "Employee housing levy"
+     },
+     "amount": 7000
+    },
+    {
+     "label": {
+      "fr": "CNPS salariale (pension 4,2 %)",
+      "en": "Employee CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    },
+    {
+     "label": {
+      "fr": "Nets à payer",
+      "en": "Net pay"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "CFC patronale",
+      "en": "Employer housing levy"
+     },
+     "amount": 17500
+    },
+    {
+     "label": {
+      "fr": "CNPS patronale (pension 4,2 %)",
+      "en": "Employer CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-07-011",
+  "kind": "balance",
+  "date": "2026-07-01",
+  "title": {
+   "fr": "Balance au 30 juin 2026",
+   "en": "Trial balance at June 30, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 5000000
+    },
+    {
+     "label": {
+      "fr": "191 PROVISIONS POUR LITIGES",
+      "en": "191 Provisions for litigation"
+     },
+     "credit": 500000
+    },
+    {
+     "label": {
+      "fr": "2451 Matériel automobile",
+      "en": "2451 Motor vehicles"
+     },
+     "debit": 12000000
+    },
+    {
+     "label": {
+      "fr": "431 SECURITE SOCIALE",
+      "en": "431 Social security"
+     },
+     "credit": 58800
+    },
+    {
+     "label": {
+      "fr": "441 ETAT, IMPÔT SUR LES BENEFICES",
+      "en": "441 State, income tax"
+     },
+     "debit": 825000
+    },
+    {
+     "label": {
+      "fr": "4431 T.V.A. facturée sur ventes",
+      "en": "4431 VAT charged on sales"
+     },
+     "credit": 1443750
+    },
+    {
+     "label": {
+      "fr": "4449 Etat, crédit de T.V.A. à reporter",
+      "en": "4449 State, VAT credit carried forward"
+     },
+     "debit": 722838
+    },
+    {
+     "label": {
+      "fr": "4452 T.V.A. récupérable sur achats",
+      "en": "4452 Recoverable VAT on purchases"
+     },
+     "debit": 643913
+    },
+    {
+     "label": {
+      "fr": "4472 Impôts sur salaires",
+      "en": "4472 Taxes on salaries"
+     },
+     "credit": 77134
+    },
+    {
+     "label": {
+      "fr": "4478 Autres impôts et contributions",
+      "en": "4478 Other taxes and contributions"
+     },
+     "credit": 30000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 66900
+    },
+    {
+     "label": {
+      "fr": "4812 Immobilisations corporelles",
+      "en": "4812 Tangible assets"
+     },
+     "credit": 4770000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 10588433
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 4770000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 20135000
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 1800000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 121200
+    },
+    {
+     "label": {
+      "fr": "6324 Honoraires des professions règlementées",
+      "en": "6324 Fees of regulated professions"
+     },
+     "debit": 200000
+    },
+    {
+     "label": {
+      "fr": "6413 Taxes sur appointements et salaires",
+      "en": "6413 Taxes on salaries and wages"
+     },
+     "debit": 105000
+    },
+    {
+     "label": {
+      "fr": "646 DROITS D'ENREGISTREMENT",
+      "en": "646 Registration duties"
+     },
+     "debit": 25000
+    },
+    {
+     "label": {
+      "fr": "6611 Appointements, salaires et commissions",
+      "en": "6611 Salaries, wages and commissions"
+     },
+     "debit": 4200000
+    },
+    {
+     "label": {
+      "fr": "6641 Charges sociales sur rémunération du personnel national",
+      "en": "6641 Social charges on pay of national staff"
+     },
+     "debit": 176400
+    },
+    {
+     "label": {
+      "fr": "6911 Dotations aux provisions et aux depreciations d’exploitation pour risques et charges",
+      "en": "6911 Operating provisions for risks and charges"
+     },
+     "debit": 500000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 45000000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-07-002",
+  "kind": "recu_caisse",
+  "date": "2026-07-02",
+  "title": {
+   "fr": "Quittance de loyer de juillet",
+   "en": "July rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Tchoua (fictif)"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer brut",
+      "en": "Gross rent"
+     },
+     "amount": 300000
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer 10 % retenu",
+      "en": "10% rent withholding"
+     },
+     "amount": 30000
+    },
+    {
+     "label": {
+      "fr": "Net versé par virement",
+      "en": "Net paid by transfer"
+     },
+     "amount": 270000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-07-003",
+  "kind": "facture_achat",
+  "date": "2026-07-05",
+  "title": {
+   "fr": "Facture Sawa Textiles de juillet",
+   "en": "Sawa Textiles July invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Sawa Textiles SARL",
+    "niu": "M011900004517T",
+    "rccm": "RC/DLA/2019/B/0458",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Zone portuaire, Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Ngono Mode SARL",
+    "niu": "M012600008421K"
+   },
+   "number": "FA-2026-0007",
+   "einvoice": "DGI-SFE-2026-001007",
+   "lines": [
+    {
+     "label": {
+      "fr": "Chemises",
+      "en": "Shirts"
+     },
+     "qty": 120,
+     "unit_price": 9500,
+     "amount": 1140000
+    },
+    {
+     "label": {
+      "fr": "Pantalons",
+      "en": "Trousers"
+     },
+     "qty": 80,
+     "unit_price": 14500,
+     "amount": 1160000
+    },
+    {
+     "label": {
+      "fr": "Robes",
+      "en": "Dresses"
+     },
+     "qty": 60,
+     "unit_price": 18500,
+     "amount": 1110000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 3410000
+    },
+    {
+     "label": {
+      "fr": "TVA 17,5 %",
+      "en": "VAT 17.5%"
+     },
+     "role": "tax",
+     "amount": 596750
+    },
+    {
+     "label": {
+      "fr": "CAC 10 % de la TVA",
+      "en": "Council cents 10% of VAT"
+     },
+     "role": "tax",
+     "amount": 59675
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 2 %",
+      "en": "2% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 68200
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 4134625
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-07-004",
+  "kind": "declaration",
+  "date": "2026-07-15",
+  "title": {
+   "fr": "Déclaration du 15 : période de juin 2026",
+   "en": "15th return: June 2026"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Chiffre d'affaires HT",
+      "en": "Turnover excl. tax"
+     },
+     "value": "7 500 000"
+    },
+    {
+     "label": {
+      "fr": "TVA collectée",
+      "en": "VAT charged"
+     },
+     "value": "1 443 750"
+    },
+    {
+     "label": {
+      "fr": "TVA déductible",
+      "en": "Recoverable VAT"
+     },
+     "value": "643 913"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA reporté",
+      "en": "VAT credit brought forward"
+     },
+     "value": "722 838"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA à reporter",
+      "en": "VAT credit carried forward"
+     },
+     "value": "0"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "TVA due",
+      "en": "VAT due"
+     },
+     "amount": 76999
+    },
+    {
+     "label": {
+      "fr": "Acompte d'IS (2 % + CAC)",
+      "en": "CIT instalment (2% + council cents)"
+     },
+     "amount": 165000
+    },
+    {
+     "label": {
+      "fr": "Précompte imputé",
+      "en": "Withholding credited"
+     },
+     "amount": 66900
+    },
+    {
+     "label": {
+      "fr": "Retenues et cotisations reversées",
+      "en": "Withholdings and contributions paid over"
+     },
+     "amount": 165934
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-07-010",
+  "kind": "recu_caisse",
+  "date": "2026-07-22",
+  "title": {
+   "fr": "Quittance de pénalité de retard (recette des impôts, fictive)",
+   "en": "Late-filing penalty receipt (tax office, fictitious)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Pénalité payée",
+      "en": "Penalty paid"
+     },
+     "amount": 50000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-07-005",
+  "kind": "recu_caisse",
+  "date": "2026-07-25",
+  "title": {
+   "fr": "Bordereau de sortie de caisse vers la banque",
+   "en": "Cash transfer slip to the bank"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-07-001",
+  "kind": "releve_bancaire",
+  "date": "2026-07-31",
+  "title": {
+   "fr": "Relevé bancaire de juillet (Banque X)",
+   "en": "July bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Échéance réglée à Auto Wouri",
+      "en": "Instalment paid to Auto Wouri"
+     },
+     "amount": 4770000
+    },
+    {
+     "label": {
+      "fr": "Virement à Sawa Textiles",
+      "en": "Transfer to Sawa Textiles"
+     },
+     "amount": 4134625
+    },
+    {
+     "label": {
+      "fr": "Salaires nets virés",
+      "en": "Net pay transferred"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "Virements internes reçus (espèces et Mobile Money)",
+      "en": "Internal transfers received"
+     },
+     "amount": 8927050
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 3500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-07-006",
+  "kind": "recu_caisse",
+  "date": "2026-07-31",
+  "title": {
+   "fr": "Récapitulatif des ventes au comptant de juillet",
+   "en": "July cash sales summary"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes HT",
+      "en": "Sales excl. tax"
+     },
+     "role": "ht",
+     "amount": 4000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 770000
+    },
+    {
+     "label": {
+      "fr": "Ventes TTC encaissées",
+      "en": "Sales incl. tax collected"
+     },
+     "role": "ttc",
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-07-007",
+  "kind": "releve_momo",
+  "date": "2026-07-31",
+  "title": {
+   "fr": "Relevé Orange Money de juillet",
+   "en": "Orange Money statement, July"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 2000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 385000
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 2385000
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 9500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-07-008",
+  "kind": "releve_momo",
+  "date": "2026-07-31",
+  "title": {
+   "fr": "Relevé MTN MoMo de juillet",
+   "en": "MTN MoMo statement, July"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 1500000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 288750
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 1788750
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 7200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-07-009",
+  "kind": "bulletin_paie",
+  "date": "2026-07-31",
+  "title": {
+   "fr": "Journal de paie de juillet",
+   "en": "July payroll journal"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Gérant salarié",
+      "en": "Salaried manager"
+     },
+     "amount": 400000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 1",
+      "en": "Sales assistant 1"
+     },
+     "amount": 150000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 2",
+      "en": "Sales assistant 2"
+     },
+     "amount": 150000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Salaires bruts",
+      "en": "Gross pay"
+     },
+     "role": "ht",
+     "amount": 700000
+    },
+    {
+     "label": {
+      "fr": "IRPP et CAC",
+      "en": "PIT and council cents"
+     },
+     "amount": 39934
+    },
+    {
+     "label": {
+      "fr": "RAV",
+      "en": "Audiovisual fee"
+     },
+     "amount": 8450
+    },
+    {
+     "label": {
+      "fr": "TDL",
+      "en": "Local development tax"
+     },
+     "amount": 4250
+    },
+    {
+     "label": {
+      "fr": "CFC salariale",
+      "en": "Employee housing levy"
+     },
+     "amount": 7000
+    },
+    {
+     "label": {
+      "fr": "CNPS salariale (pension 4,2 %)",
+      "en": "Employee CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    },
+    {
+     "label": {
+      "fr": "Nets à payer",
+      "en": "Net pay"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "CFC patronale",
+      "en": "Employer housing levy"
+     },
+     "amount": 17500
+    },
+    {
+     "label": {
+      "fr": "CNPS patronale (pension 4,2 %)",
+      "en": "Employer CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-08-010",
+  "kind": "balance",
+  "date": "2026-08-01",
+  "title": {
+   "fr": "Balance au 31 juillet 2026",
+   "en": "Trial balance at July 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 5000000
+    },
+    {
+     "label": {
+      "fr": "191 PROVISIONS POUR LITIGES",
+      "en": "191 Provisions for litigation"
+     },
+     "credit": 500000
+    },
+    {
+     "label": {
+      "fr": "2451 Matériel automobile",
+      "en": "2451 Motor vehicles"
+     },
+     "debit": 12000000
+    },
+    {
+     "label": {
+      "fr": "431 SECURITE SOCIALE",
+      "en": "431 Social security"
+     },
+     "credit": 58800
+    },
+    {
+     "label": {
+      "fr": "441 ETAT, IMPÔT SUR LES BENEFICES",
+      "en": "441 State, income tax"
+     },
+     "debit": 990000
+    },
+    {
+     "label": {
+      "fr": "4431 T.V.A. facturée sur ventes",
+      "en": "4431 VAT charged on sales"
+     },
+     "credit": 1443750
+    },
+    {
+     "label": {
+      "fr": "4452 T.V.A. récupérable sur achats",
+      "en": "4452 Recoverable VAT on purchases"
+     },
+     "debit": 656425
+    },
+    {
+     "label": {
+      "fr": "4472 Impôts sur salaires",
+      "en": "4472 Taxes on salaries"
+     },
+     "credit": 77134
+    },
+    {
+     "label": {
+      "fr": "4478 Autres impôts et contributions",
+      "en": "4478 Other taxes and contributions"
+     },
+     "credit": 30000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 68200
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 9335359
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 4770000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 23545000
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 2100000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 141400
+    },
+    {
+     "label": {
+      "fr": "6324 Honoraires des professions règlementées",
+      "en": "6324 Fees of regulated professions"
+     },
+     "debit": 200000
+    },
+    {
+     "label": {
+      "fr": "6413 Taxes sur appointements et salaires",
+      "en": "6413 Taxes on salaries and wages"
+     },
+     "debit": 122500
+    },
+    {
+     "label": {
+      "fr": "646 DROITS D'ENREGISTREMENT",
+      "en": "646 Registration duties"
+     },
+     "debit": 25000
+    },
+    {
+     "label": {
+      "fr": "6471 Pénalités d'assiette, impôts directs",
+      "en": "6471 Assessment penalties, direct taxes"
+     },
+     "debit": 50000
+    },
+    {
+     "label": {
+      "fr": "6611 Appointements, salaires et commissions",
+      "en": "6611 Salaries, wages and commissions"
+     },
+     "debit": 4900000
+    },
+    {
+     "label": {
+      "fr": "6641 Charges sociales sur rémunération du personnel national",
+      "en": "6641 Social charges on pay of national staff"
+     },
+     "debit": 205800
+    },
+    {
+     "label": {
+      "fr": "6911 Dotations aux provisions et aux depreciations d’exploitation pour risques et charges",
+      "en": "6911 Operating provisions for risks and charges"
+     },
+     "debit": 500000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 52500000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-08-002",
+  "kind": "recu_caisse",
+  "date": "2026-08-02",
+  "title": {
+   "fr": "Quittance de loyer de août",
+   "en": "August rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Tchoua (fictif)"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer brut",
+      "en": "Gross rent"
+     },
+     "amount": 300000
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer 10 % retenu",
+      "en": "10% rent withholding"
+     },
+     "amount": 30000
+    },
+    {
+     "label": {
+      "fr": "Net versé par virement",
+      "en": "Net paid by transfer"
+     },
+     "amount": 270000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-08-003",
+  "kind": "facture_achat",
+  "date": "2026-08-05",
+  "title": {
+   "fr": "Facture Sawa Textiles de août",
+   "en": "Sawa Textiles August invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Sawa Textiles SARL",
+    "niu": "M011900004517T",
+    "rccm": "RC/DLA/2019/B/0458",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Zone portuaire, Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Ngono Mode SARL",
+    "niu": "M012600008421K"
+   },
+   "number": "FA-2026-0008",
+   "einvoice": "DGI-SFE-2026-001008",
+   "lines": [
+    {
+     "label": {
+      "fr": "Chemises",
+      "en": "Shirts"
+     },
+     "qty": 120,
+     "unit_price": 9750,
+     "amount": 1170000
+    },
+    {
+     "label": {
+      "fr": "Pantalons",
+      "en": "Trousers"
+     },
+     "qty": 80,
+     "unit_price": 14750,
+     "amount": 1180000
+    },
+    {
+     "label": {
+      "fr": "Robes",
+      "en": "Dresses"
+     },
+     "qty": 60,
+     "unit_price": 18750,
+     "amount": 1125000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 3475000
+    },
+    {
+     "label": {
+      "fr": "TVA 17,5 %",
+      "en": "VAT 17.5%"
+     },
+     "role": "tax",
+     "amount": 608125
+    },
+    {
+     "label": {
+      "fr": "CAC 10 % de la TVA",
+      "en": "Council cents 10% of VAT"
+     },
+     "role": "tax",
+     "amount": 60813
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 2 %",
+      "en": "2% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 69500
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 4213438
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-08-004",
+  "kind": "declaration",
+  "date": "2026-08-15",
+  "title": {
+   "fr": "Déclaration du 15 : période de juillet 2026",
+   "en": "15th return: July 2026"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Chiffre d'affaires HT",
+      "en": "Turnover excl. tax"
+     },
+     "value": "7 500 000"
+    },
+    {
+     "label": {
+      "fr": "TVA collectée",
+      "en": "VAT charged"
+     },
+     "value": "1 443 750"
+    },
+    {
+     "label": {
+      "fr": "TVA déductible",
+      "en": "Recoverable VAT"
+     },
+     "value": "656 425"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA reporté",
+      "en": "VAT credit brought forward"
+     },
+     "value": "0"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA à reporter",
+      "en": "VAT credit carried forward"
+     },
+     "value": "0"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "TVA due",
+      "en": "VAT due"
+     },
+     "amount": 787325
+    },
+    {
+     "label": {
+      "fr": "Acompte d'IS (2 % + CAC)",
+      "en": "CIT instalment (2% + council cents)"
+     },
+     "amount": 165000
+    },
+    {
+     "label": {
+      "fr": "Précompte imputé",
+      "en": "Withholding credited"
+     },
+     "amount": 68200
+    },
+    {
+     "label": {
+      "fr": "Retenues et cotisations reversées",
+      "en": "Withholdings and contributions paid over"
+     },
+     "amount": 165934
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-08-005",
+  "kind": "recu_caisse",
+  "date": "2026-08-25",
+  "title": {
+   "fr": "Bordereau de sortie de caisse vers la banque",
+   "en": "Cash transfer slip to the bank"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-08-001",
+  "kind": "releve_bancaire",
+  "date": "2026-08-31",
+  "title": {
+   "fr": "Relevé bancaire de août (Banque X)",
+   "en": "August bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Virement à Sawa Textiles",
+      "en": "Transfer to Sawa Textiles"
+     },
+     "amount": 4213438
+    },
+    {
+     "label": {
+      "fr": "Salaires nets virés",
+      "en": "Net pay transferred"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "Virements internes reçus (espèces et Mobile Money)",
+      "en": "Internal transfers received"
+     },
+     "amount": 8927050
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 3500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-08-006",
+  "kind": "recu_caisse",
+  "date": "2026-08-31",
+  "title": {
+   "fr": "Récapitulatif des ventes au comptant de août",
+   "en": "August cash sales summary"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes HT",
+      "en": "Sales excl. tax"
+     },
+     "role": "ht",
+     "amount": 4000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 770000
+    },
+    {
+     "label": {
+      "fr": "Ventes TTC encaissées",
+      "en": "Sales incl. tax collected"
+     },
+     "role": "ttc",
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-08-007",
+  "kind": "releve_momo",
+  "date": "2026-08-31",
+  "title": {
+   "fr": "Relevé Orange Money de août",
+   "en": "Orange Money statement, August"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 2000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 385000
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 2385000
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 9500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-08-008",
+  "kind": "releve_momo",
+  "date": "2026-08-31",
+  "title": {
+   "fr": "Relevé MTN MoMo de août",
+   "en": "MTN MoMo statement, August"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 1500000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 288750
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 1788750
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 7200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-08-009",
+  "kind": "bulletin_paie",
+  "date": "2026-08-31",
+  "title": {
+   "fr": "Journal de paie de août",
+   "en": "August payroll journal"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Gérant salarié",
+      "en": "Salaried manager"
+     },
+     "amount": 400000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 1",
+      "en": "Sales assistant 1"
+     },
+     "amount": 150000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 2",
+      "en": "Sales assistant 2"
+     },
+     "amount": 150000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Salaires bruts",
+      "en": "Gross pay"
+     },
+     "role": "ht",
+     "amount": 700000
+    },
+    {
+     "label": {
+      "fr": "IRPP et CAC",
+      "en": "PIT and council cents"
+     },
+     "amount": 39934
+    },
+    {
+     "label": {
+      "fr": "RAV",
+      "en": "Audiovisual fee"
+     },
+     "amount": 8450
+    },
+    {
+     "label": {
+      "fr": "TDL",
+      "en": "Local development tax"
+     },
+     "amount": 4250
+    },
+    {
+     "label": {
+      "fr": "CFC salariale",
+      "en": "Employee housing levy"
+     },
+     "amount": 7000
+    },
+    {
+     "label": {
+      "fr": "CNPS salariale (pension 4,2 %)",
+      "en": "Employee CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    },
+    {
+     "label": {
+      "fr": "Nets à payer",
+      "en": "Net pay"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "CFC patronale",
+      "en": "Employer housing levy"
+     },
+     "amount": 17500
+    },
+    {
+     "label": {
+      "fr": "CNPS patronale (pension 4,2 %)",
+      "en": "Employer CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-09-011",
+  "kind": "balance",
+  "date": "2026-09-01",
+  "title": {
+   "fr": "Balance au 31 août 2026",
+   "en": "Trial balance at August 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 5000000
+    },
+    {
+     "label": {
+      "fr": "191 PROVISIONS POUR LITIGES",
+      "en": "191 Provisions for litigation"
+     },
+     "credit": 500000
+    },
+    {
+     "label": {
+      "fr": "2451 Matériel automobile",
+      "en": "2451 Motor vehicles"
+     },
+     "debit": 12000000
+    },
+    {
+     "label": {
+      "fr": "431 SECURITE SOCIALE",
+      "en": "431 Social security"
+     },
+     "credit": 58800
+    },
+    {
+     "label": {
+      "fr": "441 ETAT, IMPÔT SUR LES BENEFICES",
+      "en": "441 State, income tax"
+     },
+     "debit": 1155000
+    },
+    {
+     "label": {
+      "fr": "4431 T.V.A. facturée sur ventes",
+      "en": "4431 VAT charged on sales"
+     },
+     "credit": 1443750
+    },
+    {
+     "label": {
+      "fr": "4452 T.V.A. récupérable sur achats",
+      "en": "4452 Recoverable VAT on purchases"
+     },
+     "debit": 668938
+    },
+    {
+     "label": {
+      "fr": "4472 Impôts sur salaires",
+      "en": "4472 Taxes on salaries"
+     },
+     "credit": 77134
+    },
+    {
+     "label": {
+      "fr": "4478 Autres impôts et contributions",
+      "en": "4478 Other taxes and contributions"
+     },
+     "credit": 30000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 69500
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 12114446
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 4770000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 27020000
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 2400000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 161600
+    },
+    {
+     "label": {
+      "fr": "6324 Honoraires des professions règlementées",
+      "en": "6324 Fees of regulated professions"
+     },
+     "debit": 200000
+    },
+    {
+     "label": {
+      "fr": "6413 Taxes sur appointements et salaires",
+      "en": "6413 Taxes on salaries and wages"
+     },
+     "debit": 140000
+    },
+    {
+     "label": {
+      "fr": "646 DROITS D'ENREGISTREMENT",
+      "en": "646 Registration duties"
+     },
+     "debit": 25000
+    },
+    {
+     "label": {
+      "fr": "6471 Pénalités d'assiette, impôts directs",
+      "en": "6471 Assessment penalties, direct taxes"
+     },
+     "debit": 50000
+    },
+    {
+     "label": {
+      "fr": "6611 Appointements, salaires et commissions",
+      "en": "6611 Salaries, wages and commissions"
+     },
+     "debit": 5600000
+    },
+    {
+     "label": {
+      "fr": "6641 Charges sociales sur rémunération du personnel national",
+      "en": "6641 Social charges on pay of national staff"
+     },
+     "debit": 235200
+    },
+    {
+     "label": {
+      "fr": "6911 Dotations aux provisions et aux depreciations d’exploitation pour risques et charges",
+      "en": "6911 Operating provisions for risks and charges"
+     },
+     "debit": 500000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 60000000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-09-002",
+  "kind": "recu_caisse",
+  "date": "2026-09-02",
+  "title": {
+   "fr": "Quittance de loyer de septembre",
+   "en": "September rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Tchoua (fictif)"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer brut",
+      "en": "Gross rent"
+     },
+     "amount": 300000
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer 10 % retenu",
+      "en": "10% rent withholding"
+     },
+     "amount": 30000
+    },
+    {
+     "label": {
+      "fr": "Net versé par virement",
+      "en": "Net paid by transfer"
+     },
+     "amount": 270000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-09-003",
+  "kind": "facture_achat",
+  "date": "2026-09-05",
+  "title": {
+   "fr": "Facture Sawa Textiles de septembre",
+   "en": "Sawa Textiles September invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Sawa Textiles SARL",
+    "niu": "M011900004517T",
+    "rccm": "RC/DLA/2019/B/0458",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Zone portuaire, Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Ngono Mode SARL",
+    "niu": "M012600008421K"
+   },
+   "number": "FA-2026-0009",
+   "einvoice": "DGI-SFE-2026-001009",
+   "lines": [
+    {
+     "label": {
+      "fr": "Chemises",
+      "en": "Shirts"
+     },
+     "qty": 120,
+     "unit_price": 9000,
+     "amount": 1080000
+    },
+    {
+     "label": {
+      "fr": "Pantalons",
+      "en": "Trousers"
+     },
+     "qty": 80,
+     "unit_price": 14000,
+     "amount": 1120000
+    },
+    {
+     "label": {
+      "fr": "Robes",
+      "en": "Dresses"
+     },
+     "qty": 60,
+     "unit_price": 18000,
+     "amount": 1080000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 3280000
+    },
+    {
+     "label": {
+      "fr": "TVA 17,5 %",
+      "en": "VAT 17.5%"
+     },
+     "role": "tax",
+     "amount": 574000
+    },
+    {
+     "label": {
+      "fr": "CAC 10 % de la TVA",
+      "en": "Council cents 10% of VAT"
+     },
+     "role": "tax",
+     "amount": 57400
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 2 %",
+      "en": "2% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 65600
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 3977000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-09-004",
+  "kind": "declaration",
+  "date": "2026-09-15",
+  "title": {
+   "fr": "Déclaration du 15 : période de août 2026",
+   "en": "15th return: August 2026"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Chiffre d'affaires HT",
+      "en": "Turnover excl. tax"
+     },
+     "value": "7 500 000"
+    },
+    {
+     "label": {
+      "fr": "TVA collectée",
+      "en": "VAT charged"
+     },
+     "value": "1 443 750"
+    },
+    {
+     "label": {
+      "fr": "TVA déductible",
+      "en": "Recoverable VAT"
+     },
+     "value": "668 938"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA reporté",
+      "en": "VAT credit brought forward"
+     },
+     "value": "0"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA à reporter",
+      "en": "VAT credit carried forward"
+     },
+     "value": "0"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "TVA due",
+      "en": "VAT due"
+     },
+     "amount": 774812
+    },
+    {
+     "label": {
+      "fr": "Acompte d'IS (2 % + CAC)",
+      "en": "CIT instalment (2% + council cents)"
+     },
+     "amount": 165000
+    },
+    {
+     "label": {
+      "fr": "Précompte imputé",
+      "en": "Withholding credited"
+     },
+     "amount": 69500
+    },
+    {
+     "label": {
+      "fr": "Retenues et cotisations reversées",
+      "en": "Withholdings and contributions paid over"
+     },
+     "amount": 165934
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-09-010",
+  "kind": "recu_caisse",
+  "date": "2026-09-18",
+  "title": {
+   "fr": "Bon de caisse interne sans justificatif externe",
+   "en": "Internal cash voucher without external receipt"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Dépense en espèces",
+      "en": "Cash expense"
+     },
+     "amount": 40000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-09-005",
+  "kind": "recu_caisse",
+  "date": "2026-09-25",
+  "title": {
+   "fr": "Bordereau de sortie de caisse vers la banque",
+   "en": "Cash transfer slip to the bank"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-09-001",
+  "kind": "releve_bancaire",
+  "date": "2026-09-30",
+  "title": {
+   "fr": "Relevé bancaire de septembre (Banque X)",
+   "en": "September bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Virement à Sawa Textiles",
+      "en": "Transfer to Sawa Textiles"
+     },
+     "amount": 3977000
+    },
+    {
+     "label": {
+      "fr": "Salaires nets virés",
+      "en": "Net pay transferred"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "Virements internes reçus (espèces et Mobile Money)",
+      "en": "Internal transfers received"
+     },
+     "amount": 8927050
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 3500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-09-006",
+  "kind": "recu_caisse",
+  "date": "2026-09-30",
+  "title": {
+   "fr": "Récapitulatif des ventes au comptant de septembre",
+   "en": "September cash sales summary"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes HT",
+      "en": "Sales excl. tax"
+     },
+     "role": "ht",
+     "amount": 4000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 770000
+    },
+    {
+     "label": {
+      "fr": "Ventes TTC encaissées",
+      "en": "Sales incl. tax collected"
+     },
+     "role": "ttc",
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-09-007",
+  "kind": "releve_momo",
+  "date": "2026-09-30",
+  "title": {
+   "fr": "Relevé Orange Money de septembre",
+   "en": "Orange Money statement, September"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 2000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 385000
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 2385000
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 9500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-09-008",
+  "kind": "releve_momo",
+  "date": "2026-09-30",
+  "title": {
+   "fr": "Relevé MTN MoMo de septembre",
+   "en": "MTN MoMo statement, September"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 1500000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 288750
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 1788750
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 7200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-09-009",
+  "kind": "bulletin_paie",
+  "date": "2026-09-30",
+  "title": {
+   "fr": "Journal de paie de septembre",
+   "en": "September payroll journal"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Gérant salarié",
+      "en": "Salaried manager"
+     },
+     "amount": 400000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 1",
+      "en": "Sales assistant 1"
+     },
+     "amount": 150000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 2",
+      "en": "Sales assistant 2"
+     },
+     "amount": 150000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Salaires bruts",
+      "en": "Gross pay"
+     },
+     "role": "ht",
+     "amount": 700000
+    },
+    {
+     "label": {
+      "fr": "IRPP et CAC",
+      "en": "PIT and council cents"
+     },
+     "amount": 39934
+    },
+    {
+     "label": {
+      "fr": "RAV",
+      "en": "Audiovisual fee"
+     },
+     "amount": 8450
+    },
+    {
+     "label": {
+      "fr": "TDL",
+      "en": "Local development tax"
+     },
+     "amount": 4250
+    },
+    {
+     "label": {
+      "fr": "CFC salariale",
+      "en": "Employee housing levy"
+     },
+     "amount": 7000
+    },
+    {
+     "label": {
+      "fr": "CNPS salariale (pension 4,2 %)",
+      "en": "Employee CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    },
+    {
+     "label": {
+      "fr": "Nets à payer",
+      "en": "Net pay"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "CFC patronale",
+      "en": "Employer housing levy"
+     },
+     "amount": 17500
+    },
+    {
+     "label": {
+      "fr": "CNPS patronale (pension 4,2 %)",
+      "en": "Employer CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-10-011",
+  "kind": "balance",
+  "date": "2026-10-01",
+  "title": {
+   "fr": "Balance au 30 septembre 2026",
+   "en": "Trial balance at September 30, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 5000000
+    },
+    {
+     "label": {
+      "fr": "191 PROVISIONS POUR LITIGES",
+      "en": "191 Provisions for litigation"
+     },
+     "credit": 500000
+    },
+    {
+     "label": {
+      "fr": "2451 Matériel automobile",
+      "en": "2451 Motor vehicles"
+     },
+     "debit": 12000000
+    },
+    {
+     "label": {
+      "fr": "431 SECURITE SOCIALE",
+      "en": "431 Social security"
+     },
+     "credit": 58800
+    },
+    {
+     "label": {
+      "fr": "441 ETAT, IMPÔT SUR LES BENEFICES",
+      "en": "441 State, income tax"
+     },
+     "debit": 1320000
+    },
+    {
+     "label": {
+      "fr": "4431 T.V.A. facturée sur ventes",
+      "en": "4431 VAT charged on sales"
+     },
+     "credit": 1443750
+    },
+    {
+     "label": {
+      "fr": "4452 T.V.A. récupérable sur achats",
+      "en": "4452 Recoverable VAT on purchases"
+     },
+     "debit": 631400
+    },
+    {
+     "label": {
+      "fr": "4472 Impôts sur salaires",
+      "en": "4472 Taxes on salaries"
+     },
+     "credit": 77134
+    },
+    {
+     "label": {
+      "fr": "4478 Autres impôts et contributions",
+      "en": "4478 Other taxes and contributions"
+     },
+     "credit": 30000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 65600
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 15143784
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 4730000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 30300000
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 2700000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 181800
+    },
+    {
+     "label": {
+      "fr": "6324 Honoraires des professions règlementées",
+      "en": "6324 Fees of regulated professions"
+     },
+     "debit": 200000
+    },
+    {
+     "label": {
+      "fr": "6413 Taxes sur appointements et salaires",
+      "en": "6413 Taxes on salaries and wages"
+     },
+     "debit": 157500
+    },
+    {
+     "label": {
+      "fr": "646 DROITS D'ENREGISTREMENT",
+      "en": "646 Registration duties"
+     },
+     "debit": 25000
+    },
+    {
+     "label": {
+      "fr": "6471 Pénalités d'assiette, impôts directs",
+      "en": "6471 Assessment penalties, direct taxes"
+     },
+     "debit": 50000
+    },
+    {
+     "label": {
+      "fr": "6588 Autres charges diverses",
+      "en": "6588 Other sundry expenses"
+     },
+     "debit": 40000
+    },
+    {
+     "label": {
+      "fr": "6611 Appointements, salaires et commissions",
+      "en": "6611 Salaries, wages and commissions"
+     },
+     "debit": 6300000
+    },
+    {
+     "label": {
+      "fr": "6641 Charges sociales sur rémunération du personnel national",
+      "en": "6641 Social charges on pay of national staff"
+     },
+     "debit": 264600
+    },
+    {
+     "label": {
+      "fr": "6911 Dotations aux provisions et aux depreciations d’exploitation pour risques et charges",
+      "en": "6911 Operating provisions for risks and charges"
+     },
+     "debit": 500000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 67500000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-10-002",
+  "kind": "recu_caisse",
+  "date": "2026-10-02",
+  "title": {
+   "fr": "Quittance de loyer de octobre",
+   "en": "October rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Tchoua (fictif)"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer brut",
+      "en": "Gross rent"
+     },
+     "amount": 300000
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer 10 % retenu",
+      "en": "10% rent withholding"
+     },
+     "amount": 30000
+    },
+    {
+     "label": {
+      "fr": "Net versé par virement",
+      "en": "Net paid by transfer"
+     },
+     "amount": 270000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-10-003",
+  "kind": "facture_achat",
+  "date": "2026-10-05",
+  "title": {
+   "fr": "Facture Sawa Textiles de octobre",
+   "en": "Sawa Textiles October invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Sawa Textiles SARL",
+    "niu": "M011900004517T",
+    "rccm": "RC/DLA/2019/B/0458",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Zone portuaire, Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Ngono Mode SARL",
+    "niu": "M012600008421K"
+   },
+   "number": "FA-2026-0010",
+   "einvoice": "DGI-SFE-2026-001010",
+   "lines": [
+    {
+     "label": {
+      "fr": "Chemises",
+      "en": "Shirts"
+     },
+     "qty": 120,
+     "unit_price": 9250,
+     "amount": 1110000
+    },
+    {
+     "label": {
+      "fr": "Pantalons",
+      "en": "Trousers"
+     },
+     "qty": 80,
+     "unit_price": 14250,
+     "amount": 1140000
+    },
+    {
+     "label": {
+      "fr": "Robes",
+      "en": "Dresses"
+     },
+     "qty": 60,
+     "unit_price": 18250,
+     "amount": 1095000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 3345000
+    },
+    {
+     "label": {
+      "fr": "TVA 17,5 %",
+      "en": "VAT 17.5%"
+     },
+     "role": "tax",
+     "amount": 585375
+    },
+    {
+     "label": {
+      "fr": "CAC 10 % de la TVA",
+      "en": "Council cents 10% of VAT"
+     },
+     "role": "tax",
+     "amount": 58538
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 2 %",
+      "en": "2% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 66900
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 4055813
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-10-010",
+  "kind": "recu_caisse",
+  "date": "2026-10-08",
+  "title": {
+   "fr": "Reçu de don d'une association d'intérêt général (fictive)",
+   "en": "Donation receipt from a public-interest association (fictitious)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Don versé",
+      "en": "Donation paid"
+     },
+     "amount": 600000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-10-004",
+  "kind": "declaration",
+  "date": "2026-10-15",
+  "title": {
+   "fr": "Déclaration du 15 : période de septembre 2026",
+   "en": "15th return: September 2026"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Chiffre d'affaires HT",
+      "en": "Turnover excl. tax"
+     },
+     "value": "7 500 000"
+    },
+    {
+     "label": {
+      "fr": "TVA collectée",
+      "en": "VAT charged"
+     },
+     "value": "1 443 750"
+    },
+    {
+     "label": {
+      "fr": "TVA déductible",
+      "en": "Recoverable VAT"
+     },
+     "value": "631 400"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA reporté",
+      "en": "VAT credit brought forward"
+     },
+     "value": "0"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA à reporter",
+      "en": "VAT credit carried forward"
+     },
+     "value": "0"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "TVA due",
+      "en": "VAT due"
+     },
+     "amount": 812350
+    },
+    {
+     "label": {
+      "fr": "Acompte d'IS (2 % + CAC)",
+      "en": "CIT instalment (2% + council cents)"
+     },
+     "amount": 165000
+    },
+    {
+     "label": {
+      "fr": "Précompte imputé",
+      "en": "Withholding credited"
+     },
+     "amount": 65600
+    },
+    {
+     "label": {
+      "fr": "Retenues et cotisations reversées",
+      "en": "Withholdings and contributions paid over"
+     },
+     "amount": 165934
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-10-005",
+  "kind": "recu_caisse",
+  "date": "2026-10-25",
+  "title": {
+   "fr": "Bordereau de sortie de caisse vers la banque",
+   "en": "Cash transfer slip to the bank"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-10-001",
+  "kind": "releve_bancaire",
+  "date": "2026-10-31",
+  "title": {
+   "fr": "Relevé bancaire de octobre (Banque X)",
+   "en": "October bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Virement à Sawa Textiles",
+      "en": "Transfer to Sawa Textiles"
+     },
+     "amount": 4055813
+    },
+    {
+     "label": {
+      "fr": "Salaires nets virés",
+      "en": "Net pay transferred"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "Virements internes reçus (espèces et Mobile Money)",
+      "en": "Internal transfers received"
+     },
+     "amount": 8927050
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 3500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-10-006",
+  "kind": "recu_caisse",
+  "date": "2026-10-31",
+  "title": {
+   "fr": "Récapitulatif des ventes au comptant de octobre",
+   "en": "October cash sales summary"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes HT",
+      "en": "Sales excl. tax"
+     },
+     "role": "ht",
+     "amount": 4000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 770000
+    },
+    {
+     "label": {
+      "fr": "Ventes TTC encaissées",
+      "en": "Sales incl. tax collected"
+     },
+     "role": "ttc",
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-10-007",
+  "kind": "releve_momo",
+  "date": "2026-10-31",
+  "title": {
+   "fr": "Relevé Orange Money de octobre",
+   "en": "Orange Money statement, October"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 2000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 385000
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 2385000
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 9500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-10-008",
+  "kind": "releve_momo",
+  "date": "2026-10-31",
+  "title": {
+   "fr": "Relevé MTN MoMo de octobre",
+   "en": "MTN MoMo statement, October"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 1500000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 288750
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 1788750
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 7200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-10-009",
+  "kind": "bulletin_paie",
+  "date": "2026-10-31",
+  "title": {
+   "fr": "Journal de paie de octobre",
+   "en": "October payroll journal"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Gérant salarié",
+      "en": "Salaried manager"
+     },
+     "amount": 400000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 1",
+      "en": "Sales assistant 1"
+     },
+     "amount": 150000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 2",
+      "en": "Sales assistant 2"
+     },
+     "amount": 150000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Salaires bruts",
+      "en": "Gross pay"
+     },
+     "role": "ht",
+     "amount": 700000
+    },
+    {
+     "label": {
+      "fr": "IRPP et CAC",
+      "en": "PIT and council cents"
+     },
+     "amount": 39934
+    },
+    {
+     "label": {
+      "fr": "RAV",
+      "en": "Audiovisual fee"
+     },
+     "amount": 8450
+    },
+    {
+     "label": {
+      "fr": "TDL",
+      "en": "Local development tax"
+     },
+     "amount": 4250
+    },
+    {
+     "label": {
+      "fr": "CFC salariale",
+      "en": "Employee housing levy"
+     },
+     "amount": 7000
+    },
+    {
+     "label": {
+      "fr": "CNPS salariale (pension 4,2 %)",
+      "en": "Employee CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    },
+    {
+     "label": {
+      "fr": "Nets à payer",
+      "en": "Net pay"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "CFC patronale",
+      "en": "Employer housing levy"
+     },
+     "amount": 17500
+    },
+    {
+     "label": {
+      "fr": "CNPS patronale (pension 4,2 %)",
+      "en": "Employer CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-11-011",
+  "kind": "balance",
+  "date": "2026-11-01",
+  "title": {
+   "fr": "Balance au 31 octobre 2026",
+   "en": "Trial balance at October 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 5000000
+    },
+    {
+     "label": {
+      "fr": "191 PROVISIONS POUR LITIGES",
+      "en": "191 Provisions for litigation"
+     },
+     "credit": 500000
+    },
+    {
+     "label": {
+      "fr": "2451 Matériel automobile",
+      "en": "2451 Motor vehicles"
+     },
+     "debit": 12000000
+    },
+    {
+     "label": {
+      "fr": "431 SECURITE SOCIALE",
+      "en": "431 Social security"
+     },
+     "credit": 58800
+    },
+    {
+     "label": {
+      "fr": "441 ETAT, IMPÔT SUR LES BENEFICES",
+      "en": "441 State, income tax"
+     },
+     "debit": 1485000
+    },
+    {
+     "label": {
+      "fr": "4431 T.V.A. facturée sur ventes",
+      "en": "4431 VAT charged on sales"
+     },
+     "credit": 1443750
+    },
+    {
+     "label": {
+      "fr": "4452 T.V.A. récupérable sur achats",
+      "en": "4452 Recoverable VAT on purchases"
+     },
+     "debit": 643913
+    },
+    {
+     "label": {
+      "fr": "4472 Impôts sur salaires",
+      "en": "4472 Taxes on salaries"
+     },
+     "credit": 77134
+    },
+    {
+     "label": {
+      "fr": "4478 Autres impôts et contributions",
+      "en": "4478 Other taxes and contributions"
+     },
+     "credit": 30000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 66900
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 17452871
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 4730000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 33645000
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 3000000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 202000
+    },
+    {
+     "label": {
+      "fr": "6324 Honoraires des professions règlementées",
+      "en": "6324 Fees of regulated professions"
+     },
+     "debit": 200000
+    },
+    {
+     "label": {
+      "fr": "6413 Taxes sur appointements et salaires",
+      "en": "6413 Taxes on salaries and wages"
+     },
+     "debit": 175000
+    },
+    {
+     "label": {
+      "fr": "646 DROITS D'ENREGISTREMENT",
+      "en": "646 Registration duties"
+     },
+     "debit": 25000
+    },
+    {
+     "label": {
+      "fr": "6471 Pénalités d'assiette, impôts directs",
+      "en": "6471 Assessment penalties, direct taxes"
+     },
+     "debit": 50000
+    },
+    {
+     "label": {
+      "fr": "6582 Dons",
+      "en": "6582 Donations"
+     },
+     "debit": 600000
+    },
+    {
+     "label": {
+      "fr": "6588 Autres charges diverses",
+      "en": "6588 Other sundry expenses"
+     },
+     "debit": 40000
+    },
+    {
+     "label": {
+      "fr": "6611 Appointements, salaires et commissions",
+      "en": "6611 Salaries, wages and commissions"
+     },
+     "debit": 7000000
+    },
+    {
+     "label": {
+      "fr": "6641 Charges sociales sur rémunération du personnel national",
+      "en": "6641 Social charges on pay of national staff"
+     },
+     "debit": 294000
+    },
+    {
+     "label": {
+      "fr": "6911 Dotations aux provisions et aux depreciations d’exploitation pour risques et charges",
+      "en": "6911 Operating provisions for risks and charges"
+     },
+     "debit": 500000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 75000000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-11-002",
+  "kind": "recu_caisse",
+  "date": "2026-11-02",
+  "title": {
+   "fr": "Quittance de loyer de novembre",
+   "en": "November rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Tchoua (fictif)"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer brut",
+      "en": "Gross rent"
+     },
+     "amount": 300000
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer 10 % retenu",
+      "en": "10% rent withholding"
+     },
+     "amount": 30000
+    },
+    {
+     "label": {
+      "fr": "Net versé par virement",
+      "en": "Net paid by transfer"
+     },
+     "amount": 270000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-11-003",
+  "kind": "facture_achat",
+  "date": "2026-11-05",
+  "title": {
+   "fr": "Facture Sawa Textiles de novembre",
+   "en": "Sawa Textiles November invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Sawa Textiles SARL",
+    "niu": "M011900004517T",
+    "rccm": "RC/DLA/2019/B/0458",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Zone portuaire, Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Ngono Mode SARL",
+    "niu": "M012600008421K"
+   },
+   "number": "FA-2026-0011",
+   "einvoice": "DGI-SFE-2026-001011",
+   "lines": [
+    {
+     "label": {
+      "fr": "Chemises",
+      "en": "Shirts"
+     },
+     "qty": 120,
+     "unit_price": 9500,
+     "amount": 1140000
+    },
+    {
+     "label": {
+      "fr": "Pantalons",
+      "en": "Trousers"
+     },
+     "qty": 80,
+     "unit_price": 14500,
+     "amount": 1160000
+    },
+    {
+     "label": {
+      "fr": "Robes",
+      "en": "Dresses"
+     },
+     "qty": 60,
+     "unit_price": 18500,
+     "amount": 1110000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 3410000
+    },
+    {
+     "label": {
+      "fr": "TVA 17,5 %",
+      "en": "VAT 17.5%"
+     },
+     "role": "tax",
+     "amount": 596750
+    },
+    {
+     "label": {
+      "fr": "CAC 10 % de la TVA",
+      "en": "Council cents 10% of VAT"
+     },
+     "role": "tax",
+     "amount": 59675
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 2 %",
+      "en": "2% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 68200
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 4134625
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-11-010",
+  "kind": "recu_caisse",
+  "date": "2026-11-10",
+  "title": {
+   "fr": "Accord transactionnel avec l'ancien bailleur",
+   "en": "Settlement agreement with the former landlord"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Litige clos sans paiement",
+      "en": "Dispute closed without payment"
+     },
+     "amount": 0
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-11-004",
+  "kind": "declaration",
+  "date": "2026-11-15",
+  "title": {
+   "fr": "Déclaration du 15 : période de octobre 2026",
+   "en": "15th return: October 2026"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Chiffre d'affaires HT",
+      "en": "Turnover excl. tax"
+     },
+     "value": "7 500 000"
+    },
+    {
+     "label": {
+      "fr": "TVA collectée",
+      "en": "VAT charged"
+     },
+     "value": "1 443 750"
+    },
+    {
+     "label": {
+      "fr": "TVA déductible",
+      "en": "Recoverable VAT"
+     },
+     "value": "643 913"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA reporté",
+      "en": "VAT credit brought forward"
+     },
+     "value": "0"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA à reporter",
+      "en": "VAT credit carried forward"
+     },
+     "value": "0"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "TVA due",
+      "en": "VAT due"
+     },
+     "amount": 799837
+    },
+    {
+     "label": {
+      "fr": "Acompte d'IS (2 % + CAC)",
+      "en": "CIT instalment (2% + council cents)"
+     },
+     "amount": 165000
+    },
+    {
+     "label": {
+      "fr": "Précompte imputé",
+      "en": "Withholding credited"
+     },
+     "amount": 66900
+    },
+    {
+     "label": {
+      "fr": "Retenues et cotisations reversées",
+      "en": "Withholdings and contributions paid over"
+     },
+     "amount": 165934
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-11-005",
+  "kind": "recu_caisse",
+  "date": "2026-11-25",
+  "title": {
+   "fr": "Bordereau de sortie de caisse vers la banque",
+   "en": "Cash transfer slip to the bank"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-11-001",
+  "kind": "releve_bancaire",
+  "date": "2026-11-30",
+  "title": {
+   "fr": "Relevé bancaire de novembre (Banque X)",
+   "en": "November bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Virement à Sawa Textiles",
+      "en": "Transfer to Sawa Textiles"
+     },
+     "amount": 4134625
+    },
+    {
+     "label": {
+      "fr": "Salaires nets virés",
+      "en": "Net pay transferred"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "Virements internes reçus (espèces et Mobile Money)",
+      "en": "Internal transfers received"
+     },
+     "amount": 8927050
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 3500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-11-006",
+  "kind": "recu_caisse",
+  "date": "2026-11-30",
+  "title": {
+   "fr": "Récapitulatif des ventes au comptant de novembre",
+   "en": "November cash sales summary"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes HT",
+      "en": "Sales excl. tax"
+     },
+     "role": "ht",
+     "amount": 4000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 770000
+    },
+    {
+     "label": {
+      "fr": "Ventes TTC encaissées",
+      "en": "Sales incl. tax collected"
+     },
+     "role": "ttc",
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-11-007",
+  "kind": "releve_momo",
+  "date": "2026-11-30",
+  "title": {
+   "fr": "Relevé Orange Money de novembre",
+   "en": "Orange Money statement, November"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 2000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 385000
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 2385000
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 9500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-11-008",
+  "kind": "releve_momo",
+  "date": "2026-11-30",
+  "title": {
+   "fr": "Relevé MTN MoMo de novembre",
+   "en": "MTN MoMo statement, November"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 1500000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 288750
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 1788750
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 7200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-11-009",
+  "kind": "bulletin_paie",
+  "date": "2026-11-30",
+  "title": {
+   "fr": "Journal de paie de novembre",
+   "en": "November payroll journal"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Gérant salarié",
+      "en": "Salaried manager"
+     },
+     "amount": 400000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 1",
+      "en": "Sales assistant 1"
+     },
+     "amount": 150000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 2",
+      "en": "Sales assistant 2"
+     },
+     "amount": 150000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Salaires bruts",
+      "en": "Gross pay"
+     },
+     "role": "ht",
+     "amount": 700000
+    },
+    {
+     "label": {
+      "fr": "IRPP et CAC",
+      "en": "PIT and council cents"
+     },
+     "amount": 39934
+    },
+    {
+     "label": {
+      "fr": "RAV",
+      "en": "Audiovisual fee"
+     },
+     "amount": 8450
+    },
+    {
+     "label": {
+      "fr": "TDL",
+      "en": "Local development tax"
+     },
+     "amount": 4250
+    },
+    {
+     "label": {
+      "fr": "CFC salariale",
+      "en": "Employee housing levy"
+     },
+     "amount": 7000
+    },
+    {
+     "label": {
+      "fr": "CNPS salariale (pension 4,2 %)",
+      "en": "Employee CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    },
+    {
+     "label": {
+      "fr": "Nets à payer",
+      "en": "Net pay"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "CFC patronale",
+      "en": "Employer housing levy"
+     },
+     "amount": 17500
+    },
+    {
+     "label": {
+      "fr": "CNPS patronale (pension 4,2 %)",
+      "en": "Employer CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-12-012",
+  "kind": "balance",
+  "date": "2026-12-01",
+  "title": {
+   "fr": "Balance au 30 novembre 2026",
+   "en": "Trial balance at November 30, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 5000000
+    },
+    {
+     "label": {
+      "fr": "2451 Matériel automobile",
+      "en": "2451 Motor vehicles"
+     },
+     "debit": 12000000
+    },
+    {
+     "label": {
+      "fr": "431 SECURITE SOCIALE",
+      "en": "431 Social security"
+     },
+     "credit": 58800
+    },
+    {
+     "label": {
+      "fr": "441 ETAT, IMPÔT SUR LES BENEFICES",
+      "en": "441 State, income tax"
+     },
+     "debit": 1650000
+    },
+    {
+     "label": {
+      "fr": "4431 T.V.A. facturée sur ventes",
+      "en": "4431 VAT charged on sales"
+     },
+     "credit": 1443750
+    },
+    {
+     "label": {
+      "fr": "4452 T.V.A. récupérable sur achats",
+      "en": "4452 Recoverable VAT on purchases"
+     },
+     "debit": 656425
+    },
+    {
+     "label": {
+      "fr": "4472 Impôts sur salaires",
+      "en": "4472 Taxes on salaries"
+     },
+     "credit": 77134
+    },
+    {
+     "label": {
+      "fr": "4478 Autres impôts et contributions",
+      "en": "4478 Other taxes and contributions"
+     },
+     "credit": 30000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 68200
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 20296959
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 4730000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 37055000
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 3300000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 222200
+    },
+    {
+     "label": {
+      "fr": "6324 Honoraires des professions règlementées",
+      "en": "6324 Fees of regulated professions"
+     },
+     "debit": 200000
+    },
+    {
+     "label": {
+      "fr": "6413 Taxes sur appointements et salaires",
+      "en": "6413 Taxes on salaries and wages"
+     },
+     "debit": 192500
+    },
+    {
+     "label": {
+      "fr": "646 DROITS D'ENREGISTREMENT",
+      "en": "646 Registration duties"
+     },
+     "debit": 25000
+    },
+    {
+     "label": {
+      "fr": "6471 Pénalités d'assiette, impôts directs",
+      "en": "6471 Assessment penalties, direct taxes"
+     },
+     "debit": 50000
+    },
+    {
+     "label": {
+      "fr": "6582 Dons",
+      "en": "6582 Donations"
+     },
+     "debit": 600000
+    },
+    {
+     "label": {
+      "fr": "6588 Autres charges diverses",
+      "en": "6588 Other sundry expenses"
+     },
+     "debit": 40000
+    },
+    {
+     "label": {
+      "fr": "6611 Appointements, salaires et commissions",
+      "en": "6611 Salaries, wages and commissions"
+     },
+     "debit": 7700000
+    },
+    {
+     "label": {
+      "fr": "6641 Charges sociales sur rémunération du personnel national",
+      "en": "6641 Social charges on pay of national staff"
+     },
+     "debit": 323400
+    },
+    {
+     "label": {
+      "fr": "6911 Dotations aux provisions et aux depreciations d’exploitation pour risques et charges",
+      "en": "6911 Operating provisions for risks and charges"
+     },
+     "debit": 500000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 82500000
+    },
+    {
+     "label": {
+      "fr": "7911 Reprises de provisions et de depreciations d’exploitation pour risques et charges",
+      "en": "7911 Reversal of operating provisions for risks and charges"
+     },
+     "credit": 500000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-12-002",
+  "kind": "recu_caisse",
+  "date": "2026-12-02",
+  "title": {
+   "fr": "Quittance de loyer de décembre",
+   "en": "December rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Tchoua (fictif)"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer brut",
+      "en": "Gross rent"
+     },
+     "amount": 300000
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer 10 % retenu",
+      "en": "10% rent withholding"
+     },
+     "amount": 30000
+    },
+    {
+     "label": {
+      "fr": "Net versé par virement",
+      "en": "Net paid by transfer"
+     },
+     "amount": 270000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-12-003",
+  "kind": "facture_achat",
+  "date": "2026-12-05",
+  "title": {
+   "fr": "Facture Sawa Textiles de décembre",
+   "en": "Sawa Textiles December invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Sawa Textiles SARL",
+    "niu": "M011900004517T",
+    "rccm": "RC/DLA/2019/B/0458",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Zone portuaire, Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Ngono Mode SARL",
+    "niu": "M012600008421K"
+   },
+   "number": "FA-2026-0012",
+   "einvoice": "DGI-SFE-2026-001012",
+   "lines": [
+    {
+     "label": {
+      "fr": "Chemises",
+      "en": "Shirts"
+     },
+     "qty": 120,
+     "unit_price": 9750,
+     "amount": 1170000
+    },
+    {
+     "label": {
+      "fr": "Pantalons",
+      "en": "Trousers"
+     },
+     "qty": 80,
+     "unit_price": 14750,
+     "amount": 1180000
+    },
+    {
+     "label": {
+      "fr": "Robes",
+      "en": "Dresses"
+     },
+     "qty": 60,
+     "unit_price": 18750,
+     "amount": 1125000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 3475000
+    },
+    {
+     "label": {
+      "fr": "TVA 17,5 %",
+      "en": "VAT 17.5%"
+     },
+     "role": "tax",
+     "amount": 608125
+    },
+    {
+     "label": {
+      "fr": "CAC 10 % de la TVA",
+      "en": "Council cents 10% of VAT"
+     },
+     "role": "tax",
+     "amount": 60813
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 2 %",
+      "en": "2% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 69500
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 4213438
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-12-004",
+  "kind": "declaration",
+  "date": "2026-12-15",
+  "title": {
+   "fr": "Déclaration du 15 : période de novembre 2026",
+   "en": "15th return: November 2026"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Chiffre d'affaires HT",
+      "en": "Turnover excl. tax"
+     },
+     "value": "7 500 000"
+    },
+    {
+     "label": {
+      "fr": "TVA collectée",
+      "en": "VAT charged"
+     },
+     "value": "1 443 750"
+    },
+    {
+     "label": {
+      "fr": "TVA déductible",
+      "en": "Recoverable VAT"
+     },
+     "value": "656 425"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA reporté",
+      "en": "VAT credit brought forward"
+     },
+     "value": "0"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA à reporter",
+      "en": "VAT credit carried forward"
+     },
+     "value": "0"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "TVA due",
+      "en": "VAT due"
+     },
+     "amount": 787325
+    },
+    {
+     "label": {
+      "fr": "Acompte d'IS (2 % + CAC)",
+      "en": "CIT instalment (2% + council cents)"
+     },
+     "amount": 165000
+    },
+    {
+     "label": {
+      "fr": "Précompte imputé",
+      "en": "Withholding credited"
+     },
+     "amount": 68200
+    },
+    {
+     "label": {
+      "fr": "Retenues et cotisations reversées",
+      "en": "Withholdings and contributions paid over"
+     },
+     "amount": 165934
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-12-005",
+  "kind": "recu_caisse",
+  "date": "2026-12-25",
+  "title": {
+   "fr": "Bordereau de sortie de caisse vers la banque",
+   "en": "Cash transfer slip to the bank"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-12-001",
+  "kind": "releve_bancaire",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Relevé bancaire de décembre (Banque X)",
+   "en": "December bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Virement à Sawa Textiles",
+      "en": "Transfer to Sawa Textiles"
+     },
+     "amount": 4213438
+    },
+    {
+     "label": {
+      "fr": "Salaires nets virés",
+      "en": "Net pay transferred"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "Virements internes reçus (espèces et Mobile Money)",
+      "en": "Internal transfers received"
+     },
+     "amount": 8927050
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 3500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-12-006",
+  "kind": "recu_caisse",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Récapitulatif des ventes au comptant de décembre",
+   "en": "December cash sales summary"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes HT",
+      "en": "Sales excl. tax"
+     },
+     "role": "ht",
+     "amount": 4000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 770000
+    },
+    {
+     "label": {
+      "fr": "Ventes TTC encaissées",
+      "en": "Sales incl. tax collected"
+     },
+     "role": "ttc",
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-12-007",
+  "kind": "releve_momo",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Relevé Orange Money de décembre",
+   "en": "Orange Money statement, December"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 2000000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 385000
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 2385000
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 9500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-12-008",
+  "kind": "releve_momo",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Relevé MTN MoMo de décembre",
+   "en": "MTN MoMo statement, December"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements HT",
+      "en": "Receipts excl. tax"
+     },
+     "role": "ht",
+     "amount": 1500000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 288750
+    },
+    {
+     "label": {
+      "fr": "Encaissements TTC",
+      "en": "Receipts incl. tax"
+     },
+     "role": "ttc",
+     "amount": 1788750
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 7200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-12-009",
+  "kind": "bulletin_paie",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Journal de paie de décembre",
+   "en": "December payroll journal"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Gérant salarié",
+      "en": "Salaried manager"
+     },
+     "amount": 400000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 1",
+      "en": "Sales assistant 1"
+     },
+     "amount": 150000
+    },
+    {
+     "label": {
+      "fr": "Vendeuse 2",
+      "en": "Sales assistant 2"
+     },
+     "amount": 150000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Salaires bruts",
+      "en": "Gross pay"
+     },
+     "role": "ht",
+     "amount": 700000
+    },
+    {
+     "label": {
+      "fr": "IRPP et CAC",
+      "en": "PIT and council cents"
+     },
+     "amount": 39934
+    },
+    {
+     "label": {
+      "fr": "RAV",
+      "en": "Audiovisual fee"
+     },
+     "amount": 8450
+    },
+    {
+     "label": {
+      "fr": "TDL",
+      "en": "Local development tax"
+     },
+     "amount": 4250
+    },
+    {
+     "label": {
+      "fr": "CFC salariale",
+      "en": "Employee housing levy"
+     },
+     "amount": 7000
+    },
+    {
+     "label": {
+      "fr": "CNPS salariale (pension 4,2 %)",
+      "en": "Employee CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    },
+    {
+     "label": {
+      "fr": "Nets à payer",
+      "en": "Net pay"
+     },
+     "amount": 610966
+    },
+    {
+     "label": {
+      "fr": "CFC patronale",
+      "en": "Employer housing levy"
+     },
+     "amount": 17500
+    },
+    {
+     "label": {
+      "fr": "CNPS patronale (pension 4,2 %)",
+      "en": "Employer CNPS (pension 4.2%)"
+     },
+     "amount": 29400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-12-010",
+  "kind": "fiche_stock",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Fiches de stock CMUP des trois familles",
+   "en": "WAC stock cards"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Chemises : achetées, inventaire physique",
+      "en": "Chemises: bought, physical count"
+     },
+     "value": "1440 / 70"
+    },
+    {
+     "label": {
+      "fr": "Pantalons : achetées, inventaire physique",
+      "en": "Pantalons: bought, physical count"
+     },
+     "value": "960 / 45"
+    },
+    {
+     "label": {
+      "fr": "Robes : achetées, inventaire physique",
+      "en": "Robes: bought, physical count"
+     },
+     "value": "720 / 30"
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Chemises, lot 1",
+      "en": "Chemises, lot 1"
+     },
+     "qty": 120,
+     "unit_price": 9000,
+     "amount": 1080000
+    },
+    {
+     "label": {
+      "fr": "Chemises, lot 2",
+      "en": "Chemises, lot 2"
+     },
+     "qty": 120,
+     "unit_price": 9250,
+     "amount": 1110000
+    },
+    {
+     "label": {
+      "fr": "Chemises, lot 3",
+      "en": "Chemises, lot 3"
+     },
+     "qty": 120,
+     "unit_price": 9500,
+     "amount": 1140000
+    },
+    {
+     "label": {
+      "fr": "Chemises, lot 4",
+      "en": "Chemises, lot 4"
+     },
+     "qty": 120,
+     "unit_price": 9750,
+     "amount": 1170000
+    },
+    {
+     "label": {
+      "fr": "Chemises, lot 5",
+      "en": "Chemises, lot 5"
+     },
+     "qty": 120,
+     "unit_price": 9000,
+     "amount": 1080000
+    },
+    {
+     "label": {
+      "fr": "Chemises, lot 6",
+      "en": "Chemises, lot 6"
+     },
+     "qty": 120,
+     "unit_price": 9250,
+     "amount": 1110000
+    },
+    {
+     "label": {
+      "fr": "Chemises, lot 7",
+      "en": "Chemises, lot 7"
+     },
+     "qty": 120,
+     "unit_price": 9500,
+     "amount": 1140000
+    },
+    {
+     "label": {
+      "fr": "Chemises, lot 8",
+      "en": "Chemises, lot 8"
+     },
+     "qty": 120,
+     "unit_price": 9750,
+     "amount": 1170000
+    },
+    {
+     "label": {
+      "fr": "Chemises, lot 9",
+      "en": "Chemises, lot 9"
+     },
+     "qty": 120,
+     "unit_price": 9000,
+     "amount": 1080000
+    },
+    {
+     "label": {
+      "fr": "Chemises, lot 10",
+      "en": "Chemises, lot 10"
+     },
+     "qty": 120,
+     "unit_price": 9250,
+     "amount": 1110000
+    },
+    {
+     "label": {
+      "fr": "Chemises, lot 11",
+      "en": "Chemises, lot 11"
+     },
+     "qty": 120,
+     "unit_price": 9500,
+     "amount": 1140000
+    },
+    {
+     "label": {
+      "fr": "Chemises, lot 12",
+      "en": "Chemises, lot 12"
+     },
+     "qty": 120,
+     "unit_price": 9750,
+     "amount": 1170000
+    },
+    {
+     "label": {
+      "fr": "Pantalons, lot 1",
+      "en": "Pantalons, lot 1"
+     },
+     "qty": 80,
+     "unit_price": 14000,
+     "amount": 1120000
+    },
+    {
+     "label": {
+      "fr": "Pantalons, lot 2",
+      "en": "Pantalons, lot 2"
+     },
+     "qty": 80,
+     "unit_price": 14250,
+     "amount": 1140000
+    },
+    {
+     "label": {
+      "fr": "Pantalons, lot 3",
+      "en": "Pantalons, lot 3"
+     },
+     "qty": 80,
+     "unit_price": 14500,
+     "amount": 1160000
+    },
+    {
+     "label": {
+      "fr": "Pantalons, lot 4",
+      "en": "Pantalons, lot 4"
+     },
+     "qty": 80,
+     "unit_price": 14750,
+     "amount": 1180000
+    },
+    {
+     "label": {
+      "fr": "Pantalons, lot 5",
+      "en": "Pantalons, lot 5"
+     },
+     "qty": 80,
+     "unit_price": 14000,
+     "amount": 1120000
+    },
+    {
+     "label": {
+      "fr": "Pantalons, lot 6",
+      "en": "Pantalons, lot 6"
+     },
+     "qty": 80,
+     "unit_price": 14250,
+     "amount": 1140000
+    },
+    {
+     "label": {
+      "fr": "Pantalons, lot 7",
+      "en": "Pantalons, lot 7"
+     },
+     "qty": 80,
+     "unit_price": 14500,
+     "amount": 1160000
+    },
+    {
+     "label": {
+      "fr": "Pantalons, lot 8",
+      "en": "Pantalons, lot 8"
+     },
+     "qty": 80,
+     "unit_price": 14750,
+     "amount": 1180000
+    },
+    {
+     "label": {
+      "fr": "Pantalons, lot 9",
+      "en": "Pantalons, lot 9"
+     },
+     "qty": 80,
+     "unit_price": 14000,
+     "amount": 1120000
+    },
+    {
+     "label": {
+      "fr": "Pantalons, lot 10",
+      "en": "Pantalons, lot 10"
+     },
+     "qty": 80,
+     "unit_price": 14250,
+     "amount": 1140000
+    },
+    {
+     "label": {
+      "fr": "Pantalons, lot 11",
+      "en": "Pantalons, lot 11"
+     },
+     "qty": 80,
+     "unit_price": 14500,
+     "amount": 1160000
+    },
+    {
+     "label": {
+      "fr": "Pantalons, lot 12",
+      "en": "Pantalons, lot 12"
+     },
+     "qty": 80,
+     "unit_price": 14750,
+     "amount": 1180000
+    },
+    {
+     "label": {
+      "fr": "Robes, lot 1",
+      "en": "Robes, lot 1"
+     },
+     "qty": 60,
+     "unit_price": 18000,
+     "amount": 1080000
+    },
+    {
+     "label": {
+      "fr": "Robes, lot 2",
+      "en": "Robes, lot 2"
+     },
+     "qty": 60,
+     "unit_price": 18250,
+     "amount": 1095000
+    },
+    {
+     "label": {
+      "fr": "Robes, lot 3",
+      "en": "Robes, lot 3"
+     },
+     "qty": 60,
+     "unit_price": 18500,
+     "amount": 1110000
+    },
+    {
+     "label": {
+      "fr": "Robes, lot 4",
+      "en": "Robes, lot 4"
+     },
+     "qty": 60,
+     "unit_price": 18750,
+     "amount": 1125000
+    },
+    {
+     "label": {
+      "fr": "Robes, lot 5",
+      "en": "Robes, lot 5"
+     },
+     "qty": 60,
+     "unit_price": 18000,
+     "amount": 1080000
+    },
+    {
+     "label": {
+      "fr": "Robes, lot 6",
+      "en": "Robes, lot 6"
+     },
+     "qty": 60,
+     "unit_price": 18250,
+     "amount": 1095000
+    },
+    {
+     "label": {
+      "fr": "Robes, lot 7",
+      "en": "Robes, lot 7"
+     },
+     "qty": 60,
+     "unit_price": 18500,
+     "amount": 1110000
+    },
+    {
+     "label": {
+      "fr": "Robes, lot 8",
+      "en": "Robes, lot 8"
+     },
+     "qty": 60,
+     "unit_price": 18750,
+     "amount": 1125000
+    },
+    {
+     "label": {
+      "fr": "Robes, lot 9",
+      "en": "Robes, lot 9"
+     },
+     "qty": 60,
+     "unit_price": 18000,
+     "amount": 1080000
+    },
+    {
+     "label": {
+      "fr": "Robes, lot 10",
+      "en": "Robes, lot 10"
+     },
+     "qty": 60,
+     "unit_price": 18250,
+     "amount": 1095000
+    },
+    {
+     "label": {
+      "fr": "Robes, lot 11",
+      "en": "Robes, lot 11"
+     },
+     "qty": 60,
+     "unit_price": 18500,
+     "amount": 1110000
+    },
+    {
+     "label": {
+      "fr": "Robes, lot 12",
+      "en": "Robes, lot 12"
+     },
+     "qty": 60,
+     "unit_price": 18750,
+     "amount": 1125000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-12-011",
+  "kind": "fiche_stock",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Tableau d'amortissement de la voiture (3 ans, depuis avril)",
+   "en": "Car depreciation schedule (3 years, from April)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Dotation 2026 (9 mois)",
+      "en": "2026 charge (9 months)"
+     },
+     "amount": 3000000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-13-001",
+  "kind": "declaration",
+  "date": "2027-01-15",
+  "title": {
+   "fr": "Déclaration du 15 : période de décembre 2026",
+   "en": "15th return: December 2026"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Chiffre d'affaires HT",
+      "en": "Turnover excl. tax"
+     },
+     "value": "7 500 000"
+    },
+    {
+     "label": {
+      "fr": "TVA collectée",
+      "en": "VAT charged"
+     },
+     "value": "1 443 750"
+    },
+    {
+     "label": {
+      "fr": "TVA déductible",
+      "en": "Recoverable VAT"
+     },
+     "value": "668 938"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA reporté",
+      "en": "VAT credit brought forward"
+     },
+     "value": "0"
+    },
+    {
+     "label": {
+      "fr": "Crédit de TVA à reporter",
+      "en": "VAT credit carried forward"
+     },
+     "value": "0"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "TVA due",
+      "en": "VAT due"
+     },
+     "amount": 774812
+    },
+    {
+     "label": {
+      "fr": "Acompte d'IS (2 % + CAC)",
+      "en": "CIT instalment (2% + council cents)"
+     },
+     "amount": 165000
+    },
+    {
+     "label": {
+      "fr": "Précompte imputé",
+      "en": "Withholding credited"
+     },
+     "amount": 69500
+    },
+    {
+     "label": {
+      "fr": "Retenues et cotisations reversées",
+      "en": "Withholdings and contributions paid over"
+     },
+     "amount": 165934
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-16-001",
+  "kind": "declaration",
+  "date": "2027-04-10",
+  "title": {
+   "fr": "DSF 2026 : liquidation de l'IS",
+   "en": "2026 return: CIT"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Résultat fiscal",
+      "en": "Taxable profit"
+     },
+     "value": "35 594 175"
+    },
+    {
+     "label": {
+      "fr": "Taux de l'IS",
+      "en": "CIT rate"
+     },
+     "value": "25 %"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "IS calculé (CAC compris)",
+      "en": "CIT computed"
+     },
+     "amount": 9788350
+    },
+    {
+     "label": {
+      "fr": "Minimum de perception",
+      "en": "Minimum tax"
+     },
+     "amount": 1980000
+    },
+    {
+     "label": {
+      "fr": "IS dû",
+      "en": "CIT due"
+     },
+     "amount": 9788350
+    },
+    {
+     "label": {
+      "fr": "Acomptes versés",
+      "en": "Instalments paid"
+     },
+     "amount": 1980000
+    },
+    {
+     "label": {
+      "fr": "Solde à payer",
+      "en": "Balance due"
+     },
+     "amount": 7808350
+    }
+   ]
+  },
+  "dsf": "liquidation_is"
+ },
+ {
+  "ref": "S-A-16-002",
+  "kind": "declaration",
+  "date": "2027-04-10",
+  "title": {
+   "fr": "DSF 2026 : tableau de passage",
+   "en": "2026 return: reconciliation"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Résultat comptable avant impôt",
+      "en": "Accounting profit before tax"
+     },
+     "amount": 34604175
+    },
+    {
+     "label": {
+      "fr": "Réintégrations",
+      "en": "Add-backs"
+     },
+     "amount": 1490000
+    },
+    {
+     "label": {
+      "fr": "Déductions",
+      "en": "Deductions"
+     },
+     "amount": 500000
+    },
+    {
+     "label": {
+      "fr": "Résultat fiscal",
+      "en": "Taxable profit"
+     },
+     "amount": 35594175
+    }
+   ]
+  },
+  "dsf": "passage"
+ },
+ {
+  "ref": "S-A-16-003",
+  "kind": "declaration",
+  "date": "2027-04-10",
+  "title": {
+   "fr": "DSF 2026 : compte de résultat",
+   "en": "2026 return: income statement"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Chiffre d'affaires",
+      "en": "Turnover"
+     },
+     "amount": 90000000
+    },
+    {
+     "label": {
+      "fr": "Résultat avant impôt",
+      "en": "Profit before tax"
+     },
+     "amount": 34604175
+    },
+    {
+     "label": {
+      "fr": "Impôt sur le résultat",
+      "en": "Income tax"
+     },
+     "amount": 9788350
+    },
+    {
+     "label": {
+      "fr": "Résultat net",
+      "en": "Net profit"
+     },
+     "amount": 24815825
+    }
+   ]
+  },
+  "dsf": "compte_resultat"
+ },
+ {
+  "ref": "S-A-16-004",
+  "kind": "declaration",
+  "date": "2027-04-10",
+  "title": {
+   "fr": "DSF 2026 : bilan (extrait)",
+   "en": "2026 return: balance sheet (extract)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Capital",
+      "en": "Share capital"
+     },
+     "amount": 5000000
+    },
+    {
+     "label": {
+      "fr": "Résultat net de l'exercice",
+      "en": "Net profit for the year"
+     },
+     "amount": 24815825
+    },
+    {
+     "label": {
+      "fr": "Stocks de marchandises",
+      "en": "Goods inventory"
+     },
+     "amount": 1854375
+    },
+    {
+     "label": {
+      "fr": "Voiture, valeur nette",
+      "en": "Car, net book value"
+     },
+     "amount": 9000000
+    }
+   ]
+  },
+  "dsf": "bilan"
+ }
+]

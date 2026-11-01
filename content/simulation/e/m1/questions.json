@@ -1,0 +1,490 @@
+[
+ {
+  "id": "S-E-M1-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Capital minimum d'une SARL au Cameroun ?\n\n[[piece:S-E-01-001]]",
+   "en": "Minimum capital of a Cameroonian LLC?\n\n[[piece:S-E-01-001]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "100 000 FCFA (loi n° 2016/014)",
+     "en": "100,000 FCFA"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "1 000 000 FCFA",
+     "en": "1,000,000 FCFA"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-E-M1-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Pourquoi la SARL relève-t-elle de l'IGS ?\n\n[[piece:S-E-01-002]]",
+   "en": "Why is the LLC under the IGS?\n\n[[piece:S-E-01-002]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Chiffre d'affaires visé sous 50 millions",
+     "en": "Target turnover below 50 million"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Parce que c'est une SARL",
+     "en": "Because it is an LLC"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-E-M1-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Que remet la banque à l'ouverture du compte ?\n\n[[piece:S-E-01-003]]",
+   "en": "What does the bank give?\n\n[[piece:S-E-01-003]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Un RIB",
+     "en": "Bank details (RIB)"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Une patente",
+     "en": "A licence"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-E-M1-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Quelle pièce Orange exige-t-il en plus des documents légaux ?\n\n[[piece:S-E-01-004]]",
+   "en": "Which extra document does Orange require?\n\n[[piece:S-E-01-004]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le RIB",
+     "en": "Bank details (RIB)"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Un bilan certifié",
+     "en": "A certified balance sheet"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-E-M1-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Capital libéré de la SARL ?\n\n[[piece:S-E-01-005]]",
+   "en": "Paid-up capital?\n\n[[piece:S-E-01-005]]"
+  },
+  "explanation": {
+   "fr": "Capital minimal de 100 000 FCFA : 20 parts de 5 000 (loi n° 2016/014 art. 2).",
+   "en": "Capital minimal de 100 000 FCFA : 20 parts de 5 000 (loi n° 2016/014 art. 2)."
+  },
+  "numeric": {
+   "value": 100000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M1-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Apport du fonctionnaire au capital (80 %) ?\n\n[[piece:S-E-01-005]]",
+   "en": "Civil servant's share (80%)?\n\n[[piece:S-E-01-005]]"
+  },
+  "explanation": {
+   "fr": "16 parts de 5 000 FCFA.",
+   "en": "16 parts de 5 000 FCFA."
+  },
+  "numeric": {
+   "value": 80000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M1-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Apport du gérant au capital (20 %) ?\n\n[[piece:S-E-01-005]]",
+   "en": "Manager's share (20%)?\n\n[[piece:S-E-01-005]]"
+  },
+  "explanation": {
+   "fr": "4 parts de 5 000 FCFA.",
+   "en": "4 parts de 5 000 FCFA."
+  },
+  "numeric": {
+   "value": 20000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M1-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Avance du fonctionnaire en compte courant d'associé ?\n\n[[piece:S-E-01-006]]",
+   "en": "Partner's advance?\n\n[[piece:S-E-01-006]]"
+  },
+  "explanation": {
+   "fr": "Compte 4621 : dette de la SARL envers l'associé, remboursable (S31).",
+   "en": "Compte 4621 : dette de la SARL envers l'associé, remboursable (S31)."
+  },
+  "numeric": {
+   "value": 1400000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M1-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Coût de l'outillage, TVA comprise ?\n\n[[piece:S-E-01-007]]",
+   "en": "Tools cost, VAT included?\n\n[[piece:S-E-01-007]]"
+  },
+  "explanation": {
+   "fr": "Petit outillage (6056) sous le seuil de 500 000 HT (CGI art. 7) ; TVA non déductible à l'IGS.",
+   "en": "Petit outillage (6056) sous le seuil de 500 000 HT (CGI art. 7) ; TVA non déductible à l'IGS."
+  },
+  "numeric": {
+   "value": 477000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M1-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "TVA et CAC payées sur l'outillage, non récupérables ?\n\n[[piece:S-E-01-007]]",
+   "en": "Non-recoverable VAT on the tools?\n\n[[piece:S-E-01-007]]"
+  },
+  "explanation": {
+   "fr": "À l'IGS, la TVA facturée par le fournisseur au réel s'ajoute au coût.",
+   "en": "À l'IGS, la TVA facturée par le fournisseur au réel s'ajoute au coût."
+  },
+  "numeric": {
+   "value": 77000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M1-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Fonds apportés au démarrage (capital et avance) ?\n\n[[piece:S-E-01-006]]",
+   "en": "Start-up funds (capital and advance)?\n\n[[piece:S-E-01-006]]"
+  },
+  "explanation": {
+   "fr": "100 000 de capital et 1 400 000 d'avance : environ 1 500 000 (S31).",
+   "en": "100 000 de capital et 1 400 000 d'avance : environ 1 500 000 (S31)."
+  },
+  "numeric": {
+   "value": 1500000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M1-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précompte de 5 % subi sur l'achat de janvier ?\n\n[[piece:S-E-01-008]]",
+   "en": "5% withholding suffered on the January purchase?\n\n[[piece:S-E-01-008]]"
+  },
+  "explanation": {
+   "fr": "Contribuable à l'IGS : 5 % du HT (CGI art. 21 (3)).",
+   "en": "Contribuable à l'IGS : 5 % du HT (CGI art. 21 (3))."
+  },
+  "numeric": {
+   "value": 26000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M1-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Dépense de trésorerie de l'achat de janvier ?\n\n[[piece:S-E-01-008]]",
+   "en": "Cash outflow for the January purchase?\n\n[[piece:S-E-01-008]]"
+  },
+  "explanation": {
+   "fr": "À l'IGS, la TVA payée n'est pas déductible : elle s'ajoute au coût, avec le précompte.",
+   "en": "À l'IGS, la TVA payée n'est pas déductible : elle s'ajoute au coût, avec le précompte."
+  },
+  "numeric": {
+   "value": 646100,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M1-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recette de la première intervention de janvier ?\n\n[[piece:S-E-01-009]]",
+   "en": "Receipt of January's first job?\n\n[[piece:S-E-01-009]]"
+  },
+  "explanation": {
+   "fr": "Facture sans TVA : un contribuable à l'IGS ne la facture pas.",
+   "en": "Facture sans TVA : un contribuable à l'IGS ne la facture pas."
+  },
+  "numeric": {
+   "value": 450000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M1-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recette encaissée par Orange Money en janvier ?\n\n[[piece:S-E-01-010]]",
+   "en": "Receipt collected by Orange Money in January?\n\n[[piece:S-E-01-010]]"
+  },
+  "explanation": {
+   "fr": "Encaissement porté au sous-compte 5522 (S19).",
+   "en": "Encaissement porté au sous-compte 5522 (S19)."
+  },
+  "numeric": {
+   "value": 380000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M1-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Ventes de matériel au comptant de janvier ?\n\n[[piece:S-E-01-011]]",
+   "en": "January cash equipment sales?\n\n[[piece:S-E-01-011]]"
+  },
+  "explanation": {
+   "fr": "Recette de caisse 5711, ventes de marchandises 7011.",
+   "en": "Recette de caisse 5711, ventes de marchandises 7011."
+  },
+  "numeric": {
+   "value": 750000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M1-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Honoraires du vacataire en janvier ?\n\n[[piece:S-E-01-012]]",
+   "en": "Part-time trainer's fees in January?\n\n[[piece:S-E-01-012]]"
+  },
+  "explanation": {
+   "fr": "Honoraires 632 : le fonctionnaire n'est pas salarié de la SARL (S30).",
+   "en": "Honoraires 632 : le fonctionnaire n'est pas salarié de la SARL (S30)."
+  },
+  "numeric": {
+   "value": 60000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M1-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des recettes de janvier (SMT) ?\n\n[[piece:S-E-01-011]]",
+   "en": "Total January receipts (cash basis)?\n\n[[piece:S-E-01-011]]"
+  },
+  "explanation": {
+   "fr": "Le SMT enregistre les recettes encaissées : deux interventions et les ventes au comptant.",
+   "en": "Cash-basis receipts: two jobs and cash sales."
+  },
+  "numeric": {
+   "value": 1580000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M1-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde de trésorerie en banque au 31 janvier ?\n\n[[piece:S-E-01-014]]",
+   "en": "Bank balance at January 31?\n\n[[piece:S-E-01-014]]"
+  },
+  "explanation": {
+   "fr": "Recettes moins dépenses passées par la banque à cette date.",
+   "en": "Bank receipts less payments at that date."
+  },
+  "numeric": {
+   "value": 1201400,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-01-31"
+  }
+ },
+ {
+  "id": "S-E-M1-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Frais Orange Money de janvier ?\n\n[[piece:S-E-01-013]]",
+   "en": "January Orange Money fees?\n\n[[piece:S-E-01-013]]"
+  },
+  "explanation": {
+   "fr": "Frais de l'opérateur en services bancaires (631).",
+   "en": "Operator fees in account 631."
+  },
+  "numeric": {
+   "value": 3000,
+   "unit": "FCFA"
+  }
+ }
+]

@@ -1,0 +1,5199 @@
+[
+ {
+  "ref": "S-E-01-001",
+  "kind": "demarche",
+  "date": "2026-01-02",
+  "title": {
+   "fr": "Démarche : Création de la SARL au CFCE de Douala",
+   "en": "Procedure: Creating the LLC at the Douala business centre"
+  },
+  "payload": {
+   "organisme": {
+    "fr": "Centre de formalités de création d'entreprises (CFCE) de Douala",
+    "en": "Douala business formalities centre"
+   },
+   "objet": {
+    "fr": "Créer une SARL au capital minimal de 100 000 FCFA (20 parts de 5 000), notaire facultatif",
+    "en": "Create an LLC with the 100,000 FCFA minimum capital, notary optional"
+   },
+   "documents_a_fournir": [
+    {
+     "fr": "5 + N exemplaires des statuts sous seing privé, authentifiés par le CFCE",
+     "en": "5 + N copies of the articles"
+    },
+    {
+     "fr": "Déclarations de régularité et de conformité",
+     "en": "Declarations of regularity and conformity"
+    },
+    {
+     "fr": "Casiers judiciaires ou déclarations sur l'honneur, CNI des associés et du gérant",
+     "en": "Criminal records or sworn statements, IDs"
+    },
+    {
+     "fr": "Plan de localisation, boîte postale, contact téléphonique",
+     "en": "Location map, PO box, phone"
+    },
+    {
+     "fr": "Frais de création et d'annonce légale (à vérifier au CFCE)",
+     "en": "Creation and legal notice fees (check)"
+    }
+   ],
+   "document_obtenu": {
+    "fr": "Registre de commerce, carte de contribuable (NIU), attestation de création",
+    "en": "Trade register, taxpayer card, creation certificate"
+   },
+   "source": "[[source:loi-2016-014]] [[source:minfi-cfce]]"
+  }
+ },
+ {
+  "ref": "S-E-01-002",
+  "kind": "demarche",
+  "date": "2026-01-02",
+  "title": {
+   "fr": "Démarche : Rattachement fiscal à l'IGS",
+   "en": "Procedure: IGS tax attachment"
+  },
+  "payload": {
+   "organisme": {
+    "fr": "Centre de fiscalité locale du lieu d'activité",
+    "en": "Local tax office"
+   },
+   "objet": {
+    "fr": "Suivi à l'impôt général synthétique : chiffre d'affaires visé sous 50 millions",
+    "en": "Follow-up under the IGS: target turnover below 50 million"
+   },
+   "documents_a_fournir": [
+    {
+     "fr": "Carte de contribuable délivrée au CFCE",
+     "en": "Taxpayer card from the CFCE"
+    },
+    {
+     "fr": "Statuts et registre de commerce",
+     "en": "Articles and trade register"
+    }
+   ],
+   "document_obtenu": {
+    "fr": "Suivi au régime de l'IGS et déclaration annuelle avant le 15 mars",
+    "en": "IGS follow-up, yearly return by 15 March"
+   },
+   "source": "[[cgi:art. 93 quater]] [[cgi:art. C 41]]"
+  }
+ },
+ {
+  "ref": "S-E-01-003",
+  "kind": "demarche",
+  "date": "2026-01-02",
+  "title": {
+   "fr": "Démarche : Ouverture du compte bancaire",
+   "en": "Procedure: Opening the bank account"
+  },
+  "payload": {
+   "organisme": {
+    "fr": "Banque commerciale (Banque X, fictive)",
+    "en": "Commercial bank (Bank X, fictitious)"
+   },
+   "objet": {
+    "fr": "Ouvrir le compte de la SARL",
+    "en": "Open the company account"
+   },
+   "documents_a_fournir": [
+    {
+     "fr": "Demande d'ouverture, registre de commerce, carte de contribuable",
+     "en": "Request, trade register, taxpayer card"
+    },
+    {
+     "fr": "Statuts, pièces d'identité du gérant",
+     "en": "Articles, manager's ID"
+    }
+   ],
+   "document_obtenu": {
+    "fr": "Relevé d'identité bancaire (RIB)",
+    "en": "Bank details (RIB)"
+   },
+   "source": "[[source:sg-cm-compte-entreprise]]"
+  }
+ },
+ {
+  "ref": "S-E-01-004",
+  "kind": "demarche",
+  "date": "2026-01-02",
+  "title": {
+   "fr": "Démarche : Compte marchand Orange Money",
+   "en": "Procedure: Orange Money merchant account"
+  },
+  "payload": {
+   "organisme": {
+    "fr": "Orange Cameroun, partenaires Orange Money",
+    "en": "Orange Cameroon, Orange Money partners"
+   },
+   "objet": {
+    "fr": "Encaisser les interventions par Orange Money",
+    "en": "Collect payments through Orange Money"
+   },
+   "documents_a_fournir": [
+    {
+     "fr": "Registre de commerce, carte de contribuable, patente, statuts",
+     "en": "Trade register, taxpayer card, licence"
+    },
+    {
+     "fr": "CNI du gérant, RIB",
+     "en": "Manager's ID, bank details"
+    }
+   ],
+   "document_obtenu": {
+    "fr": "Code marchand Orange Money",
+    "en": "Orange Money merchant code"
+   },
+   "source": "[[source:orange-om-partenaire]]"
+  }
+ },
+ {
+  "ref": "S-E-01-005",
+  "kind": "releve_bancaire",
+  "date": "2026-01-03",
+  "title": {
+   "fr": "Attestation de dépôt du capital (Banque X)",
+   "en": "Capital deposit certificate (Bank X)"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Parts",
+      "en": "Shares"
+     },
+     "value": {
+      "fr": "16 parts au fonctionnaire, 4 au gérant",
+      "en": "16 shares to the civil servant, 4 to the manager"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Capital libéré",
+      "en": "Paid-up capital"
+     },
+     "amount": 100000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-01-006",
+  "kind": "releve_bancaire",
+  "date": "2026-01-04",
+  "title": {
+   "fr": "Avis de crédit : avance en compte courant d'associé",
+   "en": "Credit notice: partner's current-account advance"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Associé",
+      "en": "Partner"
+     },
+     "value": {
+      "fr": "Fonctionnaire associé à 80 %",
+      "en": "Civil servant, 80% partner"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Avance reçue",
+      "en": "Advance received"
+     },
+     "amount": 1400000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-01-008",
+  "kind": "facture_achat",
+  "date": "2026-01-05",
+  "title": {
+   "fr": "Facture de matériel de janvier",
+   "en": "January equipment invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Clim Distribution Wouri SARL",
+    "niu": "M011800006620P",
+    "rccm": "RC/DLA/2018/B/0377",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D"
+   },
+   "number": "CDW-2026-0101",
+   "einvoice": "DGI-SFE-2026-002101",
+   "lines": [
+    {
+     "label": {
+      "fr": "Climatiseurs split 1,5 CV",
+      "en": "1.5 HP split air conditioners"
+     },
+     "qty": 4,
+     "unit_price": 130000,
+     "amount": 520000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 520000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 100100
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 26000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 646100
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-01-007",
+  "kind": "facture_achat",
+  "date": "2026-01-06",
+  "title": {
+   "fr": "Facture d'outillage de climatisation",
+   "en": "Air-conditioning tools invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Clim Distribution Wouri SARL",
+    "niu": "M011800006620P",
+    "rccm": "RC/DLA/2018/B/0377",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D"
+   },
+   "number": "CDW-2026-0012",
+   "einvoice": "DGI-SFE-2026-002012",
+   "lines": [
+    {
+     "label": {
+      "fr": "Pompe à vide, manifold, détecteur de fuites",
+      "en": "Vacuum pump, manifold, leak detector"
+     },
+     "qty": 1,
+     "unit_price": 400000,
+     "amount": 400000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 400000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 77000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 477000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-01-009",
+  "kind": "facture_vente",
+  "date": "2026-01-10",
+  "title": {
+   "fr": "Facture d'intervention n° 1-1",
+   "en": "Service invoice no. 1-1"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "Hôtel Akwa Palace (fictif)",
+    "niu": "M010900001150Q"
+   },
+   "number": "FES-2026-011",
+   "einvoice": "DGI-SFE-2026-003010",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 450000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 450000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 450000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-01-010",
+  "kind": "facture_vente",
+  "date": "2026-01-18",
+  "title": {
+   "fr": "Facture d'intervention n° 1-2",
+   "en": "Service invoice no. 1-2"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "École privée Les Palmiers",
+    "niu": "M011200004473C"
+   },
+   "number": "FES-2026-012",
+   "einvoice": "DGI-SFE-2026-003011",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 380000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 380000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-01-012",
+  "kind": "recu_caisse",
+  "date": "2026-01-25",
+  "title": {
+   "fr": "Note d'honoraires du vacataire, janvier",
+   "en": "Part-time instructor's fee note, January"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Intervenant",
+      "en": "Provider"
+     },
+     "value": {
+      "fr": "Fonctionnaire associé, vacataire (formation des clients)",
+      "en": "Civil servant partner, part-time trainer"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Honoraires payés en espèces",
+      "en": "Fees paid in cash"
+     },
+     "amount": 60000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-01-011",
+  "kind": "recu_caisse",
+  "date": "2026-01-31",
+  "title": {
+   "fr": "Ventes de matériel au comptant de janvier",
+   "en": "January cash equipment sales"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes encaissées",
+      "en": "Sales collected"
+     },
+     "amount": 750000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-01-013",
+  "kind": "releve_momo",
+  "date": "2026-01-31",
+  "title": {
+   "fr": "Relevé Orange Money de janvier",
+   "en": "January Orange Money statement"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissement reçu",
+      "en": "Payment received"
+     },
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 377000
+    },
+    {
+     "label": {
+      "fr": "Frais de retrait",
+      "en": "Withdrawal fees"
+     },
+     "amount": 3000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-01-014",
+  "kind": "releve_bancaire",
+  "date": "2026-01-31",
+  "title": {
+   "fr": "Relevé bancaire de janvier (Banque X)",
+   "en": "January bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Transfert Orange Money et versement d'espèces",
+      "en": "Orange Money transfer and cash deposit"
+     },
+     "amount": 377000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-02-008",
+  "kind": "balance",
+  "date": "2026-02-01",
+  "title": {
+   "fr": "Balance au 31 janvier 2026",
+   "en": "Trial balance at January 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 100000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 26000
+    },
+    {
+     "label": {
+      "fr": "4621 Principal",
+      "en": "4621 Principal"
+     },
+     "credit": 1400000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 1201400
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 690000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 620100
+    },
+    {
+     "label": {
+      "fr": "6056 Achats de petit matériel et outillage",
+      "en": "6056 Purchases of small equipment and tools"
+     },
+     "debit": 477000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 5500
+    },
+    {
+     "label": {
+      "fr": "632 REMUNERATIONS D'INTERMEDIAIRES ET DE CONSEILS",
+      "en": "632 Fees of intermediaries and advisers"
+     },
+     "debit": 60000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 750000
+    },
+    {
+     "label": {
+      "fr": "7061 Services vendus dans la Région",
+      "en": "7061 Services sold within the Region"
+     },
+     "credit": 830000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-02-001",
+  "kind": "facture_achat",
+  "date": "2026-02-05",
+  "title": {
+   "fr": "Facture de matériel de février",
+   "en": "February equipment invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Clim Distribution Wouri SARL",
+    "niu": "M011800006620P",
+    "rccm": "RC/DLA/2018/B/0377",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D"
+   },
+   "number": "CDW-2026-0102",
+   "einvoice": "DGI-SFE-2026-002102",
+   "lines": [
+    {
+     "label": {
+      "fr": "Climatiseurs split 1,5 CV",
+      "en": "1.5 HP split air conditioners"
+     },
+     "qty": 4,
+     "unit_price": 131000,
+     "amount": 524000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 524000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 100870
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 26200
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 651070
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-02-002",
+  "kind": "facture_vente",
+  "date": "2026-02-10",
+  "title": {
+   "fr": "Facture d'intervention n° 2-1",
+   "en": "Service invoice no. 2-1"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "École privée Les Palmiers",
+    "niu": "M011200004473C"
+   },
+   "number": "FES-2026-021",
+   "einvoice": "DGI-SFE-2026-003020",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 450000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 450000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 450000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-02-003",
+  "kind": "facture_vente",
+  "date": "2026-02-18",
+  "title": {
+   "fr": "Facture d'intervention n° 2-2",
+   "en": "Service invoice no. 2-2"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "Pharmacie du Littoral SARL",
+    "niu": "M011600002281F"
+   },
+   "number": "FES-2026-022",
+   "einvoice": "DGI-SFE-2026-003021",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 380000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 380000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-02-005",
+  "kind": "recu_caisse",
+  "date": "2026-02-25",
+  "title": {
+   "fr": "Note d'honoraires du vacataire, février",
+   "en": "Part-time instructor's fee note, February"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Intervenant",
+      "en": "Provider"
+     },
+     "value": {
+      "fr": "Fonctionnaire associé, vacataire (formation des clients)",
+      "en": "Civil servant partner, part-time trainer"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Honoraires payés en espèces",
+      "en": "Fees paid in cash"
+     },
+     "amount": 60000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-02-004",
+  "kind": "recu_caisse",
+  "date": "2026-02-28",
+  "title": {
+   "fr": "Ventes de matériel au comptant de février",
+   "en": "February cash equipment sales"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes encaissées",
+      "en": "Sales collected"
+     },
+     "amount": 750000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-02-006",
+  "kind": "releve_momo",
+  "date": "2026-02-28",
+  "title": {
+   "fr": "Relevé Orange Money de février",
+   "en": "February Orange Money statement"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissement reçu",
+      "en": "Payment received"
+     },
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 377000
+    },
+    {
+     "label": {
+      "fr": "Frais de retrait",
+      "en": "Withdrawal fees"
+     },
+     "amount": 3000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-02-007",
+  "kind": "releve_bancaire",
+  "date": "2026-02-28",
+  "title": {
+   "fr": "Relevé bancaire de février (Banque X)",
+   "en": "February bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Transfert Orange Money et versement d'espèces",
+      "en": "Orange Money transfer and cash deposit"
+     },
+     "amount": 1067000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-03-008",
+  "kind": "balance",
+  "date": "2026-03-01",
+  "title": {
+   "fr": "Balance au 28 février 2026",
+   "en": "Trial balance at February 28, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 100000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 52200
+    },
+    {
+     "label": {
+      "fr": "4621 Principal",
+      "en": "4621 Principal"
+     },
+     "credit": 1400000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 2064830
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 690000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 1244970
+    },
+    {
+     "label": {
+      "fr": "6056 Achats de petit matériel et outillage",
+      "en": "6056 Purchases of small equipment and tools"
+     },
+     "debit": 477000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 11000
+    },
+    {
+     "label": {
+      "fr": "632 REMUNERATIONS D'INTERMEDIAIRES ET DE CONSEILS",
+      "en": "632 Fees of intermediaries and advisers"
+     },
+     "debit": 120000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 1500000
+    },
+    {
+     "label": {
+      "fr": "7061 Services vendus dans la Région",
+      "en": "7061 Services sold within the Region"
+     },
+     "credit": 1660000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-03-001",
+  "kind": "facture_achat",
+  "date": "2026-03-05",
+  "title": {
+   "fr": "Facture de matériel de mars",
+   "en": "March equipment invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Clim Distribution Wouri SARL",
+    "niu": "M011800006620P",
+    "rccm": "RC/DLA/2018/B/0377",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D"
+   },
+   "number": "CDW-2026-0103",
+   "einvoice": "DGI-SFE-2026-002103",
+   "lines": [
+    {
+     "label": {
+      "fr": "Climatiseurs split 1,5 CV",
+      "en": "1.5 HP split air conditioners"
+     },
+     "qty": 4,
+     "unit_price": 132000,
+     "amount": 528000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 528000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 101640
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 26400
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 656040
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-03-002",
+  "kind": "facture_vente",
+  "date": "2026-03-10",
+  "title": {
+   "fr": "Facture d'intervention n° 3-1",
+   "en": "Service invoice no. 3-1"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "Pharmacie du Littoral SARL",
+    "niu": "M011600002281F"
+   },
+   "number": "FES-2026-031",
+   "einvoice": "DGI-SFE-2026-003030",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 450000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 450000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 450000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-03-003",
+  "kind": "facture_vente",
+  "date": "2026-03-18",
+  "title": {
+   "fr": "Facture d'intervention n° 3-2",
+   "en": "Service invoice no. 3-2"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "Hôtel Akwa Palace (fictif)",
+    "niu": "M010900001150Q"
+   },
+   "number": "FES-2026-032",
+   "einvoice": "DGI-SFE-2026-003031",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 380000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 380000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-03-005",
+  "kind": "recu_caisse",
+  "date": "2026-03-25",
+  "title": {
+   "fr": "Note d'honoraires du vacataire, mars",
+   "en": "Part-time instructor's fee note, March"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Intervenant",
+      "en": "Provider"
+     },
+     "value": {
+      "fr": "Fonctionnaire associé, vacataire (formation des clients)",
+      "en": "Civil servant partner, part-time trainer"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Honoraires payés en espèces",
+      "en": "Fees paid in cash"
+     },
+     "amount": 60000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-03-004",
+  "kind": "recu_caisse",
+  "date": "2026-03-31",
+  "title": {
+   "fr": "Ventes de matériel au comptant de mars",
+   "en": "March cash equipment sales"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes encaissées",
+      "en": "Sales collected"
+     },
+     "amount": 750000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-03-006",
+  "kind": "releve_momo",
+  "date": "2026-03-31",
+  "title": {
+   "fr": "Relevé Orange Money de mars",
+   "en": "March Orange Money statement"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissement reçu",
+      "en": "Payment received"
+     },
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 377000
+    },
+    {
+     "label": {
+      "fr": "Frais de retrait",
+      "en": "Withdrawal fees"
+     },
+     "amount": 3000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-03-007",
+  "kind": "releve_bancaire",
+  "date": "2026-03-31",
+  "title": {
+   "fr": "Relevé bancaire de mars (Banque X)",
+   "en": "March bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Transfert Orange Money et versement d'espèces",
+      "en": "Orange Money transfer and cash deposit"
+     },
+     "amount": 1067000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-04-008",
+  "kind": "balance",
+  "date": "2026-04-01",
+  "title": {
+   "fr": "Balance au 31 mars 2026",
+   "en": "Trial balance at March 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 100000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 78600
+    },
+    {
+     "label": {
+      "fr": "4621 Principal",
+      "en": "4621 Principal"
+     },
+     "credit": 1400000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 2923290
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 690000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 1874610
+    },
+    {
+     "label": {
+      "fr": "6056 Achats de petit matériel et outillage",
+      "en": "6056 Purchases of small equipment and tools"
+     },
+     "debit": 477000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 16500
+    },
+    {
+     "label": {
+      "fr": "632 REMUNERATIONS D'INTERMEDIAIRES ET DE CONSEILS",
+      "en": "632 Fees of intermediaries and advisers"
+     },
+     "debit": 180000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 2250000
+    },
+    {
+     "label": {
+      "fr": "7061 Services vendus dans la Région",
+      "en": "7061 Services sold within the Region"
+     },
+     "credit": 2490000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-04-001",
+  "kind": "facture_achat",
+  "date": "2026-04-05",
+  "title": {
+   "fr": "Facture de matériel de avril",
+   "en": "April equipment invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Clim Distribution Wouri SARL",
+    "niu": "M011800006620P",
+    "rccm": "RC/DLA/2018/B/0377",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D"
+   },
+   "number": "CDW-2026-0104",
+   "einvoice": "DGI-SFE-2026-002104",
+   "lines": [
+    {
+     "label": {
+      "fr": "Climatiseurs split 1,5 CV",
+      "en": "1.5 HP split air conditioners"
+     },
+     "qty": 4,
+     "unit_price": 133000,
+     "amount": 532000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 532000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 102410
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 26600
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 661010
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-04-002",
+  "kind": "facture_vente",
+  "date": "2026-04-10",
+  "title": {
+   "fr": "Facture d'intervention n° 4-1",
+   "en": "Service invoice no. 4-1"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "Hôtel Akwa Palace (fictif)",
+    "niu": "M010900001150Q"
+   },
+   "number": "FES-2026-041",
+   "einvoice": "DGI-SFE-2026-003040",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 450000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 450000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 450000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-04-003",
+  "kind": "facture_vente",
+  "date": "2026-04-18",
+  "title": {
+   "fr": "Facture d'intervention n° 4-2",
+   "en": "Service invoice no. 4-2"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "École privée Les Palmiers",
+    "niu": "M011200004473C"
+   },
+   "number": "FES-2026-042",
+   "einvoice": "DGI-SFE-2026-003041",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 380000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 380000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-04-005",
+  "kind": "recu_caisse",
+  "date": "2026-04-25",
+  "title": {
+   "fr": "Note d'honoraires du vacataire, avril",
+   "en": "Part-time instructor's fee note, April"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Intervenant",
+      "en": "Provider"
+     },
+     "value": {
+      "fr": "Fonctionnaire associé, vacataire (formation des clients)",
+      "en": "Civil servant partner, part-time trainer"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Honoraires payés en espèces",
+      "en": "Fees paid in cash"
+     },
+     "amount": 60000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-04-004",
+  "kind": "recu_caisse",
+  "date": "2026-04-30",
+  "title": {
+   "fr": "Ventes de matériel au comptant de avril",
+   "en": "April cash equipment sales"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes encaissées",
+      "en": "Sales collected"
+     },
+     "amount": 750000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-04-006",
+  "kind": "releve_momo",
+  "date": "2026-04-30",
+  "title": {
+   "fr": "Relevé Orange Money de avril",
+   "en": "April Orange Money statement"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissement reçu",
+      "en": "Payment received"
+     },
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 377000
+    },
+    {
+     "label": {
+      "fr": "Frais de retrait",
+      "en": "Withdrawal fees"
+     },
+     "amount": 3000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-04-007",
+  "kind": "releve_bancaire",
+  "date": "2026-04-30",
+  "title": {
+   "fr": "Relevé bancaire de avril (Banque X)",
+   "en": "April bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Transfert Orange Money et versement d'espèces",
+      "en": "Orange Money transfer and cash deposit"
+     },
+     "amount": 1067000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-05-008",
+  "kind": "balance",
+  "date": "2026-05-01",
+  "title": {
+   "fr": "Balance au 30 avril 2026",
+   "en": "Trial balance at April 30, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 100000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 105200
+    },
+    {
+     "label": {
+      "fr": "4621 Principal",
+      "en": "4621 Principal"
+     },
+     "credit": 1400000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 3776780
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 690000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 2509020
+    },
+    {
+     "label": {
+      "fr": "6056 Achats de petit matériel et outillage",
+      "en": "6056 Purchases of small equipment and tools"
+     },
+     "debit": 477000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 22000
+    },
+    {
+     "label": {
+      "fr": "632 REMUNERATIONS D'INTERMEDIAIRES ET DE CONSEILS",
+      "en": "632 Fees of intermediaries and advisers"
+     },
+     "debit": 240000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 3000000
+    },
+    {
+     "label": {
+      "fr": "7061 Services vendus dans la Région",
+      "en": "7061 Services sold within the Region"
+     },
+     "credit": 3320000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-05-001",
+  "kind": "facture_achat",
+  "date": "2026-05-05",
+  "title": {
+   "fr": "Facture de matériel de mai",
+   "en": "May equipment invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Clim Distribution Wouri SARL",
+    "niu": "M011800006620P",
+    "rccm": "RC/DLA/2018/B/0377",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D"
+   },
+   "number": "CDW-2026-0105",
+   "einvoice": "DGI-SFE-2026-002105",
+   "lines": [
+    {
+     "label": {
+      "fr": "Climatiseurs split 1,5 CV",
+      "en": "1.5 HP split air conditioners"
+     },
+     "qty": 4,
+     "unit_price": 134000,
+     "amount": 536000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 536000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 103180
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 26800
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 665980
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-05-002",
+  "kind": "facture_vente",
+  "date": "2026-05-10",
+  "title": {
+   "fr": "Facture d'intervention n° 5-1",
+   "en": "Service invoice no. 5-1"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "École privée Les Palmiers",
+    "niu": "M011200004473C"
+   },
+   "number": "FES-2026-051",
+   "einvoice": "DGI-SFE-2026-003050",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 450000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 450000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 450000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-05-003",
+  "kind": "facture_vente",
+  "date": "2026-05-18",
+  "title": {
+   "fr": "Facture d'intervention n° 5-2",
+   "en": "Service invoice no. 5-2"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "Pharmacie du Littoral SARL",
+    "niu": "M011600002281F"
+   },
+   "number": "FES-2026-052",
+   "einvoice": "DGI-SFE-2026-003051",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 380000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 380000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-05-005",
+  "kind": "recu_caisse",
+  "date": "2026-05-25",
+  "title": {
+   "fr": "Note d'honoraires du vacataire, mai",
+   "en": "Part-time instructor's fee note, May"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Intervenant",
+      "en": "Provider"
+     },
+     "value": {
+      "fr": "Fonctionnaire associé, vacataire (formation des clients)",
+      "en": "Civil servant partner, part-time trainer"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Honoraires payés en espèces",
+      "en": "Fees paid in cash"
+     },
+     "amount": 60000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-05-004",
+  "kind": "recu_caisse",
+  "date": "2026-05-31",
+  "title": {
+   "fr": "Ventes de matériel au comptant de mai",
+   "en": "May cash equipment sales"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes encaissées",
+      "en": "Sales collected"
+     },
+     "amount": 750000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-05-006",
+  "kind": "releve_momo",
+  "date": "2026-05-31",
+  "title": {
+   "fr": "Relevé Orange Money de mai",
+   "en": "May Orange Money statement"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissement reçu",
+      "en": "Payment received"
+     },
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 377000
+    },
+    {
+     "label": {
+      "fr": "Frais de retrait",
+      "en": "Withdrawal fees"
+     },
+     "amount": 3000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-05-007",
+  "kind": "releve_bancaire",
+  "date": "2026-05-31",
+  "title": {
+   "fr": "Relevé bancaire de mai (Banque X)",
+   "en": "May bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Transfert Orange Money et versement d'espèces",
+      "en": "Orange Money transfer and cash deposit"
+     },
+     "amount": 1067000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-06-008",
+  "kind": "balance",
+  "date": "2026-06-01",
+  "title": {
+   "fr": "Balance au 31 mai 2026",
+   "en": "Trial balance at May 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 100000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 132000
+    },
+    {
+     "label": {
+      "fr": "4621 Principal",
+      "en": "4621 Principal"
+     },
+     "credit": 1400000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 4625300
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 690000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 3148200
+    },
+    {
+     "label": {
+      "fr": "6056 Achats de petit matériel et outillage",
+      "en": "6056 Purchases of small equipment and tools"
+     },
+     "debit": 477000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 27500
+    },
+    {
+     "label": {
+      "fr": "632 REMUNERATIONS D'INTERMEDIAIRES ET DE CONSEILS",
+      "en": "632 Fees of intermediaries and advisers"
+     },
+     "debit": 300000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 3750000
+    },
+    {
+     "label": {
+      "fr": "7061 Services vendus dans la Région",
+      "en": "7061 Services sold within the Region"
+     },
+     "credit": 4150000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-06-001",
+  "kind": "facture_achat",
+  "date": "2026-06-05",
+  "title": {
+   "fr": "Facture de matériel de juin",
+   "en": "June equipment invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Clim Distribution Wouri SARL",
+    "niu": "M011800006620P",
+    "rccm": "RC/DLA/2018/B/0377",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D"
+   },
+   "number": "CDW-2026-0106",
+   "einvoice": "DGI-SFE-2026-002106",
+   "lines": [
+    {
+     "label": {
+      "fr": "Climatiseurs split 1,5 CV",
+      "en": "1.5 HP split air conditioners"
+     },
+     "qty": 4,
+     "unit_price": 135000,
+     "amount": 540000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 540000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 103950
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 27000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 670950
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-06-002",
+  "kind": "facture_vente",
+  "date": "2026-06-10",
+  "title": {
+   "fr": "Facture d'intervention n° 6-1",
+   "en": "Service invoice no. 6-1"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "Pharmacie du Littoral SARL",
+    "niu": "M011600002281F"
+   },
+   "number": "FES-2026-061",
+   "einvoice": "DGI-SFE-2026-003060",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 450000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 450000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 450000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-06-003",
+  "kind": "facture_vente",
+  "date": "2026-06-18",
+  "title": {
+   "fr": "Facture d'intervention n° 6-2",
+   "en": "Service invoice no. 6-2"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "Hôtel Akwa Palace (fictif)",
+    "niu": "M010900001150Q"
+   },
+   "number": "FES-2026-062",
+   "einvoice": "DGI-SFE-2026-003061",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 380000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 380000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-06-005",
+  "kind": "recu_caisse",
+  "date": "2026-06-25",
+  "title": {
+   "fr": "Note d'honoraires du vacataire, juin",
+   "en": "Part-time instructor's fee note, June"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Intervenant",
+      "en": "Provider"
+     },
+     "value": {
+      "fr": "Fonctionnaire associé, vacataire (formation des clients)",
+      "en": "Civil servant partner, part-time trainer"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Honoraires payés en espèces",
+      "en": "Fees paid in cash"
+     },
+     "amount": 60000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-06-004",
+  "kind": "recu_caisse",
+  "date": "2026-06-30",
+  "title": {
+   "fr": "Ventes de matériel au comptant de juin",
+   "en": "June cash equipment sales"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes encaissées",
+      "en": "Sales collected"
+     },
+     "amount": 750000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-06-006",
+  "kind": "releve_momo",
+  "date": "2026-06-30",
+  "title": {
+   "fr": "Relevé Orange Money de juin",
+   "en": "June Orange Money statement"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissement reçu",
+      "en": "Payment received"
+     },
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 377000
+    },
+    {
+     "label": {
+      "fr": "Frais de retrait",
+      "en": "Withdrawal fees"
+     },
+     "amount": 3000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-06-007",
+  "kind": "releve_bancaire",
+  "date": "2026-06-30",
+  "title": {
+   "fr": "Relevé bancaire de juin (Banque X)",
+   "en": "June bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Transfert Orange Money et versement d'espèces",
+      "en": "Orange Money transfer and cash deposit"
+     },
+     "amount": 1067000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-07-008",
+  "kind": "balance",
+  "date": "2026-07-01",
+  "title": {
+   "fr": "Balance au 30 juin 2026",
+   "en": "Trial balance at June 30, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 100000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 159000
+    },
+    {
+     "label": {
+      "fr": "4621 Principal",
+      "en": "4621 Principal"
+     },
+     "credit": 1400000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 5468850
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 690000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 3792150
+    },
+    {
+     "label": {
+      "fr": "6056 Achats de petit matériel et outillage",
+      "en": "6056 Purchases of small equipment and tools"
+     },
+     "debit": 477000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 33000
+    },
+    {
+     "label": {
+      "fr": "632 REMUNERATIONS D'INTERMEDIAIRES ET DE CONSEILS",
+      "en": "632 Fees of intermediaries and advisers"
+     },
+     "debit": 360000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 4500000
+    },
+    {
+     "label": {
+      "fr": "7061 Services vendus dans la Région",
+      "en": "7061 Services sold within the Region"
+     },
+     "credit": 4980000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-07-001",
+  "kind": "facture_achat",
+  "date": "2026-07-05",
+  "title": {
+   "fr": "Facture de matériel de juillet",
+   "en": "July equipment invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Clim Distribution Wouri SARL",
+    "niu": "M011800006620P",
+    "rccm": "RC/DLA/2018/B/0377",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D"
+   },
+   "number": "CDW-2026-0107",
+   "einvoice": "DGI-SFE-2026-002107",
+   "lines": [
+    {
+     "label": {
+      "fr": "Climatiseurs split 1,5 CV",
+      "en": "1.5 HP split air conditioners"
+     },
+     "qty": 4,
+     "unit_price": 136000,
+     "amount": 544000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 544000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 104720
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 27200
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 675920
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-07-002",
+  "kind": "facture_vente",
+  "date": "2026-07-10",
+  "title": {
+   "fr": "Facture d'intervention n° 7-1",
+   "en": "Service invoice no. 7-1"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "Hôtel Akwa Palace (fictif)",
+    "niu": "M010900001150Q"
+   },
+   "number": "FES-2026-071",
+   "einvoice": "DGI-SFE-2026-003070",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 450000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 450000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 450000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-07-003",
+  "kind": "facture_vente",
+  "date": "2026-07-18",
+  "title": {
+   "fr": "Facture d'intervention n° 7-2",
+   "en": "Service invoice no. 7-2"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "École privée Les Palmiers",
+    "niu": "M011200004473C"
+   },
+   "number": "FES-2026-072",
+   "einvoice": "DGI-SFE-2026-003071",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 380000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 380000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-07-005",
+  "kind": "recu_caisse",
+  "date": "2026-07-25",
+  "title": {
+   "fr": "Note d'honoraires du vacataire, juillet",
+   "en": "Part-time instructor's fee note, July"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Intervenant",
+      "en": "Provider"
+     },
+     "value": {
+      "fr": "Fonctionnaire associé, vacataire (formation des clients)",
+      "en": "Civil servant partner, part-time trainer"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Honoraires payés en espèces",
+      "en": "Fees paid in cash"
+     },
+     "amount": 60000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-07-004",
+  "kind": "recu_caisse",
+  "date": "2026-07-31",
+  "title": {
+   "fr": "Ventes de matériel au comptant de juillet",
+   "en": "July cash equipment sales"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes encaissées",
+      "en": "Sales collected"
+     },
+     "amount": 750000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-07-006",
+  "kind": "releve_momo",
+  "date": "2026-07-31",
+  "title": {
+   "fr": "Relevé Orange Money de juillet",
+   "en": "July Orange Money statement"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissement reçu",
+      "en": "Payment received"
+     },
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 377000
+    },
+    {
+     "label": {
+      "fr": "Frais de retrait",
+      "en": "Withdrawal fees"
+     },
+     "amount": 3000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-07-007",
+  "kind": "releve_bancaire",
+  "date": "2026-07-31",
+  "title": {
+   "fr": "Relevé bancaire de juillet (Banque X)",
+   "en": "July bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Transfert Orange Money et versement d'espèces",
+      "en": "Orange Money transfer and cash deposit"
+     },
+     "amount": 1067000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    },
+    {
+     "label": {
+      "fr": "Remboursement du compte courant d'associé",
+      "en": "Partner account repayment"
+     },
+     "amount": 100000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-08-008",
+  "kind": "balance",
+  "date": "2026-08-01",
+  "title": {
+   "fr": "Balance au 31 juillet 2026",
+   "en": "Trial balance at July 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 100000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 186200
+    },
+    {
+     "label": {
+      "fr": "4621 Principal",
+      "en": "4621 Principal"
+     },
+     "credit": 1300000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 6207430
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 690000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 4440870
+    },
+    {
+     "label": {
+      "fr": "6056 Achats de petit matériel et outillage",
+      "en": "6056 Purchases of small equipment and tools"
+     },
+     "debit": 477000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 38500
+    },
+    {
+     "label": {
+      "fr": "632 REMUNERATIONS D'INTERMEDIAIRES ET DE CONSEILS",
+      "en": "632 Fees of intermediaries and advisers"
+     },
+     "debit": 420000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 5250000
+    },
+    {
+     "label": {
+      "fr": "7061 Services vendus dans la Région",
+      "en": "7061 Services sold within the Region"
+     },
+     "credit": 5810000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-08-001",
+  "kind": "facture_achat",
+  "date": "2026-08-05",
+  "title": {
+   "fr": "Facture de matériel de août",
+   "en": "August equipment invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Clim Distribution Wouri SARL",
+    "niu": "M011800006620P",
+    "rccm": "RC/DLA/2018/B/0377",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D"
+   },
+   "number": "CDW-2026-0108",
+   "einvoice": "DGI-SFE-2026-002108",
+   "lines": [
+    {
+     "label": {
+      "fr": "Climatiseurs split 1,5 CV",
+      "en": "1.5 HP split air conditioners"
+     },
+     "qty": 4,
+     "unit_price": 137000,
+     "amount": 548000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 548000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 105490
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 27400
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 680890
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-08-002",
+  "kind": "facture_vente",
+  "date": "2026-08-10",
+  "title": {
+   "fr": "Facture d'intervention n° 8-1",
+   "en": "Service invoice no. 8-1"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "École privée Les Palmiers",
+    "niu": "M011200004473C"
+   },
+   "number": "FES-2026-081",
+   "einvoice": "DGI-SFE-2026-003080",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 450000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 450000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 450000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-08-003",
+  "kind": "facture_vente",
+  "date": "2026-08-18",
+  "title": {
+   "fr": "Facture d'intervention n° 8-2",
+   "en": "Service invoice no. 8-2"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "Pharmacie du Littoral SARL",
+    "niu": "M011600002281F"
+   },
+   "number": "FES-2026-082",
+   "einvoice": "DGI-SFE-2026-003081",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 380000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 380000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-08-005",
+  "kind": "recu_caisse",
+  "date": "2026-08-25",
+  "title": {
+   "fr": "Note d'honoraires du vacataire, août",
+   "en": "Part-time instructor's fee note, August"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Intervenant",
+      "en": "Provider"
+     },
+     "value": {
+      "fr": "Fonctionnaire associé, vacataire (formation des clients)",
+      "en": "Civil servant partner, part-time trainer"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Honoraires payés en espèces",
+      "en": "Fees paid in cash"
+     },
+     "amount": 60000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-08-004",
+  "kind": "recu_caisse",
+  "date": "2026-08-31",
+  "title": {
+   "fr": "Ventes de matériel au comptant de août",
+   "en": "August cash equipment sales"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes encaissées",
+      "en": "Sales collected"
+     },
+     "amount": 750000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-08-006",
+  "kind": "releve_momo",
+  "date": "2026-08-31",
+  "title": {
+   "fr": "Relevé Orange Money de août",
+   "en": "August Orange Money statement"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissement reçu",
+      "en": "Payment received"
+     },
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 377000
+    },
+    {
+     "label": {
+      "fr": "Frais de retrait",
+      "en": "Withdrawal fees"
+     },
+     "amount": 3000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-08-007",
+  "kind": "releve_bancaire",
+  "date": "2026-08-31",
+  "title": {
+   "fr": "Relevé bancaire de août (Banque X)",
+   "en": "August bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Transfert Orange Money et versement d'espèces",
+      "en": "Orange Money transfer and cash deposit"
+     },
+     "amount": 1067000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    },
+    {
+     "label": {
+      "fr": "Remboursement du compte courant d'associé",
+      "en": "Partner account repayment"
+     },
+     "amount": 100000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-09-008",
+  "kind": "balance",
+  "date": "2026-09-01",
+  "title": {
+   "fr": "Balance au 31 août 2026",
+   "en": "Trial balance at August 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 100000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 213600
+    },
+    {
+     "label": {
+      "fr": "4621 Principal",
+      "en": "4621 Principal"
+     },
+     "credit": 1200000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 6941040
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 690000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 5094360
+    },
+    {
+     "label": {
+      "fr": "6056 Achats de petit matériel et outillage",
+      "en": "6056 Purchases of small equipment and tools"
+     },
+     "debit": 477000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 44000
+    },
+    {
+     "label": {
+      "fr": "632 REMUNERATIONS D'INTERMEDIAIRES ET DE CONSEILS",
+      "en": "632 Fees of intermediaries and advisers"
+     },
+     "debit": 480000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 6000000
+    },
+    {
+     "label": {
+      "fr": "7061 Services vendus dans la Région",
+      "en": "7061 Services sold within the Region"
+     },
+     "credit": 6640000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-09-001",
+  "kind": "facture_achat",
+  "date": "2026-09-05",
+  "title": {
+   "fr": "Facture de matériel de septembre",
+   "en": "September equipment invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Clim Distribution Wouri SARL",
+    "niu": "M011800006620P",
+    "rccm": "RC/DLA/2018/B/0377",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D"
+   },
+   "number": "CDW-2026-0109",
+   "einvoice": "DGI-SFE-2026-002109",
+   "lines": [
+    {
+     "label": {
+      "fr": "Climatiseurs split 1,5 CV",
+      "en": "1.5 HP split air conditioners"
+     },
+     "qty": 4,
+     "unit_price": 138000,
+     "amount": 552000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 552000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 106260
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 27600
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 685860
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-09-002",
+  "kind": "facture_vente",
+  "date": "2026-09-10",
+  "title": {
+   "fr": "Facture d'intervention n° 9-1",
+   "en": "Service invoice no. 9-1"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "Pharmacie du Littoral SARL",
+    "niu": "M011600002281F"
+   },
+   "number": "FES-2026-091",
+   "einvoice": "DGI-SFE-2026-003090",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 450000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 450000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 450000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-09-003",
+  "kind": "facture_vente",
+  "date": "2026-09-18",
+  "title": {
+   "fr": "Facture d'intervention n° 9-2",
+   "en": "Service invoice no. 9-2"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "Hôtel Akwa Palace (fictif)",
+    "niu": "M010900001150Q"
+   },
+   "number": "FES-2026-092",
+   "einvoice": "DGI-SFE-2026-003091",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 380000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 380000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-09-005",
+  "kind": "recu_caisse",
+  "date": "2026-09-25",
+  "title": {
+   "fr": "Note d'honoraires du vacataire, septembre",
+   "en": "Part-time instructor's fee note, September"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Intervenant",
+      "en": "Provider"
+     },
+     "value": {
+      "fr": "Fonctionnaire associé, vacataire (formation des clients)",
+      "en": "Civil servant partner, part-time trainer"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Honoraires payés en espèces",
+      "en": "Fees paid in cash"
+     },
+     "amount": 60000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-09-004",
+  "kind": "recu_caisse",
+  "date": "2026-09-30",
+  "title": {
+   "fr": "Ventes de matériel au comptant de septembre",
+   "en": "September cash equipment sales"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes encaissées",
+      "en": "Sales collected"
+     },
+     "amount": 750000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-09-006",
+  "kind": "releve_momo",
+  "date": "2026-09-30",
+  "title": {
+   "fr": "Relevé Orange Money de septembre",
+   "en": "September Orange Money statement"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissement reçu",
+      "en": "Payment received"
+     },
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 377000
+    },
+    {
+     "label": {
+      "fr": "Frais de retrait",
+      "en": "Withdrawal fees"
+     },
+     "amount": 3000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-09-007",
+  "kind": "releve_bancaire",
+  "date": "2026-09-30",
+  "title": {
+   "fr": "Relevé bancaire de septembre (Banque X)",
+   "en": "September bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Transfert Orange Money et versement d'espèces",
+      "en": "Orange Money transfer and cash deposit"
+     },
+     "amount": 1067000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    },
+    {
+     "label": {
+      "fr": "Remboursement du compte courant d'associé",
+      "en": "Partner account repayment"
+     },
+     "amount": 100000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-10-008",
+  "kind": "balance",
+  "date": "2026-10-01",
+  "title": {
+   "fr": "Balance au 30 septembre 2026",
+   "en": "Trial balance at September 30, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 100000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 241200
+    },
+    {
+     "label": {
+      "fr": "4621 Principal",
+      "en": "4621 Principal"
+     },
+     "credit": 1100000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 7669680
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 690000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 5752620
+    },
+    {
+     "label": {
+      "fr": "6056 Achats de petit matériel et outillage",
+      "en": "6056 Purchases of small equipment and tools"
+     },
+     "debit": 477000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 49500
+    },
+    {
+     "label": {
+      "fr": "632 REMUNERATIONS D'INTERMEDIAIRES ET DE CONSEILS",
+      "en": "632 Fees of intermediaries and advisers"
+     },
+     "debit": 540000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 6750000
+    },
+    {
+     "label": {
+      "fr": "7061 Services vendus dans la Région",
+      "en": "7061 Services sold within the Region"
+     },
+     "credit": 7470000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-10-001",
+  "kind": "facture_achat",
+  "date": "2026-10-05",
+  "title": {
+   "fr": "Facture de matériel de octobre",
+   "en": "October equipment invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Clim Distribution Wouri SARL",
+    "niu": "M011800006620P",
+    "rccm": "RC/DLA/2018/B/0377",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D"
+   },
+   "number": "CDW-2026-0110",
+   "einvoice": "DGI-SFE-2026-002110",
+   "lines": [
+    {
+     "label": {
+      "fr": "Climatiseurs split 1,5 CV",
+      "en": "1.5 HP split air conditioners"
+     },
+     "qty": 4,
+     "unit_price": 139000,
+     "amount": 556000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 556000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 107030
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 27800
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 690830
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-10-002",
+  "kind": "facture_vente",
+  "date": "2026-10-10",
+  "title": {
+   "fr": "Facture d'intervention n° 10-1",
+   "en": "Service invoice no. 10-1"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "Hôtel Akwa Palace (fictif)",
+    "niu": "M010900001150Q"
+   },
+   "number": "FES-2026-101",
+   "einvoice": "DGI-SFE-2026-003100",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 450000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 450000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 450000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-10-003",
+  "kind": "facture_vente",
+  "date": "2026-10-18",
+  "title": {
+   "fr": "Facture d'intervention n° 10-2",
+   "en": "Service invoice no. 10-2"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "École privée Les Palmiers",
+    "niu": "M011200004473C"
+   },
+   "number": "FES-2026-102",
+   "einvoice": "DGI-SFE-2026-003101",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 380000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 380000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-10-005",
+  "kind": "recu_caisse",
+  "date": "2026-10-25",
+  "title": {
+   "fr": "Note d'honoraires du vacataire, octobre",
+   "en": "Part-time instructor's fee note, October"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Intervenant",
+      "en": "Provider"
+     },
+     "value": {
+      "fr": "Fonctionnaire associé, vacataire (formation des clients)",
+      "en": "Civil servant partner, part-time trainer"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Honoraires payés en espèces",
+      "en": "Fees paid in cash"
+     },
+     "amount": 60000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-10-004",
+  "kind": "recu_caisse",
+  "date": "2026-10-31",
+  "title": {
+   "fr": "Ventes de matériel au comptant de octobre",
+   "en": "October cash equipment sales"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes encaissées",
+      "en": "Sales collected"
+     },
+     "amount": 750000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-10-006",
+  "kind": "releve_momo",
+  "date": "2026-10-31",
+  "title": {
+   "fr": "Relevé Orange Money de octobre",
+   "en": "October Orange Money statement"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissement reçu",
+      "en": "Payment received"
+     },
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 377000
+    },
+    {
+     "label": {
+      "fr": "Frais de retrait",
+      "en": "Withdrawal fees"
+     },
+     "amount": 3000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-10-007",
+  "kind": "releve_bancaire",
+  "date": "2026-10-31",
+  "title": {
+   "fr": "Relevé bancaire de octobre (Banque X)",
+   "en": "October bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Transfert Orange Money et versement d'espèces",
+      "en": "Orange Money transfer and cash deposit"
+     },
+     "amount": 1067000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    },
+    {
+     "label": {
+      "fr": "Remboursement du compte courant d'associé",
+      "en": "Partner account repayment"
+     },
+     "amount": 100000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-11-008",
+  "kind": "balance",
+  "date": "2026-11-01",
+  "title": {
+   "fr": "Balance au 31 octobre 2026",
+   "en": "Trial balance at October 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 100000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 269000
+    },
+    {
+     "label": {
+      "fr": "4621 Principal",
+      "en": "4621 Principal"
+     },
+     "credit": 1000000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 8393350
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 690000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 6415650
+    },
+    {
+     "label": {
+      "fr": "6056 Achats de petit matériel et outillage",
+      "en": "6056 Purchases of small equipment and tools"
+     },
+     "debit": 477000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 55000
+    },
+    {
+     "label": {
+      "fr": "632 REMUNERATIONS D'INTERMEDIAIRES ET DE CONSEILS",
+      "en": "632 Fees of intermediaries and advisers"
+     },
+     "debit": 600000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 7500000
+    },
+    {
+     "label": {
+      "fr": "7061 Services vendus dans la Région",
+      "en": "7061 Services sold within the Region"
+     },
+     "credit": 8300000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-11-001",
+  "kind": "facture_achat",
+  "date": "2026-11-05",
+  "title": {
+   "fr": "Facture de matériel de novembre",
+   "en": "November equipment invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Clim Distribution Wouri SARL",
+    "niu": "M011800006620P",
+    "rccm": "RC/DLA/2018/B/0377",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D"
+   },
+   "number": "CDW-2026-0111",
+   "einvoice": "DGI-SFE-2026-002111",
+   "lines": [
+    {
+     "label": {
+      "fr": "Climatiseurs split 1,5 CV",
+      "en": "1.5 HP split air conditioners"
+     },
+     "qty": 4,
+     "unit_price": 140000,
+     "amount": 560000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 560000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 107800
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 28000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 695800
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-11-002",
+  "kind": "facture_vente",
+  "date": "2026-11-10",
+  "title": {
+   "fr": "Facture d'intervention n° 11-1",
+   "en": "Service invoice no. 11-1"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "École privée Les Palmiers",
+    "niu": "M011200004473C"
+   },
+   "number": "FES-2026-111",
+   "einvoice": "DGI-SFE-2026-003110",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 450000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 450000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 450000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-11-003",
+  "kind": "facture_vente",
+  "date": "2026-11-18",
+  "title": {
+   "fr": "Facture d'intervention n° 11-2",
+   "en": "Service invoice no. 11-2"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "Pharmacie du Littoral SARL",
+    "niu": "M011600002281F"
+   },
+   "number": "FES-2026-112",
+   "einvoice": "DGI-SFE-2026-003111",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 380000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 380000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-11-005",
+  "kind": "recu_caisse",
+  "date": "2026-11-25",
+  "title": {
+   "fr": "Note d'honoraires du vacataire, novembre",
+   "en": "Part-time instructor's fee note, November"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Intervenant",
+      "en": "Provider"
+     },
+     "value": {
+      "fr": "Fonctionnaire associé, vacataire (formation des clients)",
+      "en": "Civil servant partner, part-time trainer"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Honoraires payés en espèces",
+      "en": "Fees paid in cash"
+     },
+     "amount": 60000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-11-004",
+  "kind": "recu_caisse",
+  "date": "2026-11-30",
+  "title": {
+   "fr": "Ventes de matériel au comptant de novembre",
+   "en": "November cash equipment sales"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes encaissées",
+      "en": "Sales collected"
+     },
+     "amount": 750000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-11-006",
+  "kind": "releve_momo",
+  "date": "2026-11-30",
+  "title": {
+   "fr": "Relevé Orange Money de novembre",
+   "en": "November Orange Money statement"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissement reçu",
+      "en": "Payment received"
+     },
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 377000
+    },
+    {
+     "label": {
+      "fr": "Frais de retrait",
+      "en": "Withdrawal fees"
+     },
+     "amount": 3000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-11-007",
+  "kind": "releve_bancaire",
+  "date": "2026-11-30",
+  "title": {
+   "fr": "Relevé bancaire de novembre (Banque X)",
+   "en": "November bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Transfert Orange Money et versement d'espèces",
+      "en": "Orange Money transfer and cash deposit"
+     },
+     "amount": 1067000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    },
+    {
+     "label": {
+      "fr": "Remboursement du compte courant d'associé",
+      "en": "Partner account repayment"
+     },
+     "amount": 100000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-12-009",
+  "kind": "balance",
+  "date": "2026-12-01",
+  "title": {
+   "fr": "Balance au 30 novembre 2026",
+   "en": "Trial balance at November 30, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "1013 Capital souscrit, appelé, versé, non amorti",
+      "en": "1013 Subscribed capital, called, paid, not redeemed"
+     },
+     "credit": 100000
+    },
+    {
+     "label": {
+      "fr": "4492 Etat, avances et acomptes versés sur impôts",
+      "en": "4492 State, advances and instalments paid on taxes"
+     },
+     "debit": 297000
+    },
+    {
+     "label": {
+      "fr": "4621 Principal",
+      "en": "4621 Principal"
+     },
+     "credit": 900000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 9112050
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 690000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 7083450
+    },
+    {
+     "label": {
+      "fr": "6056 Achats de petit matériel et outillage",
+      "en": "6056 Purchases of small equipment and tools"
+     },
+     "debit": 477000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 60500
+    },
+    {
+     "label": {
+      "fr": "632 REMUNERATIONS D'INTERMEDIAIRES ET DE CONSEILS",
+      "en": "632 Fees of intermediaries and advisers"
+     },
+     "debit": 660000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 8250000
+    },
+    {
+     "label": {
+      "fr": "7061 Services vendus dans la Région",
+      "en": "7061 Services sold within the Region"
+     },
+     "credit": 9130000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-12-001",
+  "kind": "facture_achat",
+  "date": "2026-12-05",
+  "title": {
+   "fr": "Facture de matériel de décembre",
+   "en": "December equipment invoice"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Clim Distribution Wouri SARL",
+    "niu": "M011800006620P",
+    "rccm": "RC/DLA/2018/B/0377",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Bonabéri, Douala"
+   },
+   "customer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D"
+   },
+   "number": "CDW-2026-0112",
+   "einvoice": "DGI-SFE-2026-002112",
+   "lines": [
+    {
+     "label": {
+      "fr": "Climatiseurs split 1,5 CV",
+      "en": "1.5 HP split air conditioners"
+     },
+     "qty": 4,
+     "unit_price": 141000,
+     "amount": 564000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 564000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC",
+      "en": "VAT and council cents"
+     },
+     "role": "tax",
+     "amount": 108570
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 28200
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 700770
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-12-002",
+  "kind": "facture_vente",
+  "date": "2026-12-10",
+  "title": {
+   "fr": "Facture d'intervention n° 12-1",
+   "en": "Service invoice no. 12-1"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "Pharmacie du Littoral SARL",
+    "niu": "M011600002281F"
+   },
+   "number": "FES-2026-121",
+   "einvoice": "DGI-SFE-2026-003120",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 450000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 450000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 450000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-12-003",
+  "kind": "facture_vente",
+  "date": "2026-12-18",
+  "title": {
+   "fr": "Facture d'intervention n° 12-2",
+   "en": "Service invoice no. 12-2"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Froid Équipe Services SARL",
+    "niu": "M012600009134D",
+    "rccm": "RC/DLA/2026/B/0233",
+    "regime": "IGS",
+    "centre": "Centre de fiscalité locale de Douala III",
+    "address": "Logbaba, Douala"
+   },
+   "customer": {
+    "name": "Hôtel Akwa Palace (fictif)",
+    "niu": "M010900001150Q"
+   },
+   "number": "FES-2026-122",
+   "einvoice": "DGI-SFE-2026-003121",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime",
+      "en": "Regime"
+     },
+     "value": {
+      "fr": "IGS : facture sans TVA",
+      "en": "IGS: invoice without VAT"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Entretien et dépannage de climatisation",
+      "en": "AC maintenance"
+     },
+     "amount": 380000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total",
+      "en": "Total"
+     },
+     "role": "ht",
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 380000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-12-005",
+  "kind": "recu_caisse",
+  "date": "2026-12-25",
+  "title": {
+   "fr": "Note d'honoraires du vacataire, décembre",
+   "en": "Part-time instructor's fee note, December"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Intervenant",
+      "en": "Provider"
+     },
+     "value": {
+      "fr": "Fonctionnaire associé, vacataire (formation des clients)",
+      "en": "Civil servant partner, part-time trainer"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Honoraires payés en espèces",
+      "en": "Fees paid in cash"
+     },
+     "amount": 60000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-12-004",
+  "kind": "recu_caisse",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Ventes de matériel au comptant de décembre",
+   "en": "December cash equipment sales"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Ventes encaissées",
+      "en": "Sales collected"
+     },
+     "amount": 750000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-12-006",
+  "kind": "releve_momo",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Relevé Orange Money de décembre",
+   "en": "December Orange Money statement"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissement reçu",
+      "en": "Payment received"
+     },
+     "amount": 380000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 377000
+    },
+    {
+     "label": {
+      "fr": "Frais de retrait",
+      "en": "Withdrawal fees"
+     },
+     "amount": 3000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-12-007",
+  "kind": "releve_bancaire",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Relevé bancaire de décembre (Banque X)",
+   "en": "December bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Transfert Orange Money et versement d'espèces",
+      "en": "Orange Money transfer and cash deposit"
+     },
+     "amount": 1067000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    },
+    {
+     "label": {
+      "fr": "Remboursement du compte courant d'associé",
+      "en": "Partner account repayment"
+     },
+     "amount": 100000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-12-008",
+  "kind": "fiche_stock",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Fiche de stock des climatiseurs (inventaire physique)",
+   "en": "Air conditioner stock card (physical count)"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Achetés / en stock au 31/12",
+      "en": "Bought / in stock at 31/12"
+     },
+     "value": "48 / 6"
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Lot 1",
+      "en": "Lot 1"
+     },
+     "qty": 4,
+     "unit_price": 130000,
+     "amount": 520000
+    },
+    {
+     "label": {
+      "fr": "Lot 2",
+      "en": "Lot 2"
+     },
+     "qty": 4,
+     "unit_price": 131000,
+     "amount": 524000
+    },
+    {
+     "label": {
+      "fr": "Lot 3",
+      "en": "Lot 3"
+     },
+     "qty": 4,
+     "unit_price": 132000,
+     "amount": 528000
+    },
+    {
+     "label": {
+      "fr": "Lot 4",
+      "en": "Lot 4"
+     },
+     "qty": 4,
+     "unit_price": 133000,
+     "amount": 532000
+    },
+    {
+     "label": {
+      "fr": "Lot 5",
+      "en": "Lot 5"
+     },
+     "qty": 4,
+     "unit_price": 134000,
+     "amount": 536000
+    },
+    {
+     "label": {
+      "fr": "Lot 6",
+      "en": "Lot 6"
+     },
+     "qty": 4,
+     "unit_price": 135000,
+     "amount": 540000
+    },
+    {
+     "label": {
+      "fr": "Lot 7",
+      "en": "Lot 7"
+     },
+     "qty": 4,
+     "unit_price": 136000,
+     "amount": 544000
+    },
+    {
+     "label": {
+      "fr": "Lot 8",
+      "en": "Lot 8"
+     },
+     "qty": 4,
+     "unit_price": 137000,
+     "amount": 548000
+    },
+    {
+     "label": {
+      "fr": "Lot 9",
+      "en": "Lot 9"
+     },
+     "qty": 4,
+     "unit_price": 138000,
+     "amount": 552000
+    },
+    {
+     "label": {
+      "fr": "Lot 10",
+      "en": "Lot 10"
+     },
+     "qty": 4,
+     "unit_price": 139000,
+     "amount": 556000
+    },
+    {
+     "label": {
+      "fr": "Lot 11",
+      "en": "Lot 11"
+     },
+     "qty": 4,
+     "unit_price": 140000,
+     "amount": 560000
+    },
+    {
+     "label": {
+      "fr": "Lot 12",
+      "en": "Lot 12"
+     },
+     "qty": 4,
+     "unit_price": 141000,
+     "amount": 564000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-E-15-001",
+  "kind": "declaration",
+  "date": "2027-03-15",
+  "title": {
+   "fr": "Déclaration annuelle de l'IGS 2026",
+   "en": "2026 yearly IGS return"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Chiffre d'affaires HT 2026",
+      "en": "2026 turnover"
+     },
+     "value": "18 960 000"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "IGS annuel (CGI art. C 40)",
+      "en": "Yearly IGS"
+     },
+     "amount": 500000
+    }
+   ]
+  }
+ }
+]

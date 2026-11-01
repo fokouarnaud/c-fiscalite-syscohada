@@ -1,0 +1,1610 @@
+[
+ {
+  "id": "S-A-M4-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture d'achat de juillet (précompte de 2 % compris).\n\n[[piece:S-A-07-003]]",
+   "en": "Record the July purchase invoice (2% withholding included).\n\n[[piece:S-A-07-003]]"
+  },
+  "explanation": {
+   "fr": "Achats en 6011, TVA et CAC récupérables en 4452, précompte en 4492, dette fournisseur en 401 (CGI art. 21 et 143).",
+   "en": "Purchases in 6011, recoverable VAT in 4452, withholding in 4492, supplier debt in 401."
+  },
+  "journal": [
+   {
+    "account": "6011",
+    "side": "debit",
+    "amount": 3410000
+   },
+   {
+    "account": "4452",
+    "side": "debit",
+    "amount": 656425
+   },
+   {
+    "account": "4492",
+    "side": "debit",
+    "amount": 68200
+   },
+   {
+    "account": "401",
+    "side": "credit",
+    "amount": 4134625
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture des ventes au comptant de juillet.\n\n[[piece:S-A-07-006]]",
+   "en": "Record the July cash sales.\n\n[[piece:S-A-07-006]]"
+  },
+  "explanation": {
+   "fr": "Caisse 5711 au TTC, ventes 7011 au HT, TVA facturée 4431.",
+   "en": "Cash 5711 incl. tax, sales 7011, VAT charged 4431."
+  },
+  "journal": [
+   {
+    "account": "5711",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 4000000
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 770000
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du relevé Orange Money de juillet.\n\n[[piece:S-A-07-007]]",
+   "en": "Record the July Orange Money statement.\n\n[[piece:S-A-07-007]]"
+  },
+  "explanation": {
+   "fr": "Sous-compte 5522, ventes et TVA ; frais de l'opérateur en 631 (S19).",
+   "en": "Sub-account 5522, sales and VAT; operator fees in 631."
+  },
+  "journal": [
+   {
+    "account": "5522",
+    "side": "debit",
+    "amount": 2385000
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 2000000
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 385000
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 9500
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 9500
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du journal de paie de juillet.\n\n[[piece:S-A-07-009]]",
+   "en": "Record the July payroll journal.\n\n[[piece:S-A-07-009]]"
+  },
+  "explanation": {
+   "fr": "Salaires 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues fiscales 4472, CNPS 431, nets 422.",
+   "en": "Gross pay 6611, employer levies 6413 and 6641; tax withholdings 4472, CNPS 431, net pay 422."
+  },
+  "journal": [
+   {
+    "account": "6611",
+    "side": "debit",
+    "amount": 700000
+   },
+   {
+    "account": "6413",
+    "side": "debit",
+    "amount": 17500
+   },
+   {
+    "account": "6641",
+    "side": "debit",
+    "amount": 29400
+   },
+   {
+    "account": "4472",
+    "side": "credit",
+    "amount": 77134
+   },
+   {
+    "account": "431",
+    "side": "credit",
+    "amount": 58800
+   },
+   {
+    "account": "422",
+    "side": "credit",
+    "amount": 610966
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez les écritures du relevé bancaire de juillet.\n\n[[piece:S-A-07-001]]",
+   "en": "Record the July bank statement entries.\n\n[[piece:S-A-07-001]]"
+  },
+  "explanation": {
+   "fr": "Virement au fournisseur (401), salaires nets (422), virements internes via 585 (S19), frais en 631.",
+   "en": "Supplier transfer (401), net pay (422), internal transfers through 585, fees in 631."
+  },
+  "journal": [
+   {
+    "account": "401",
+    "side": "debit",
+    "amount": 4134625
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 4134625
+   },
+   {
+    "account": "422",
+    "side": "debit",
+    "amount": 610966
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 610966
+   },
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 4157050
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 2375500
+   },
+   {
+    "account": "5521",
+    "side": "credit",
+    "amount": 1781550
+   },
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 8927050
+   },
+   {
+    "account": "585",
+    "side": "credit",
+    "amount": 8927050
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 3500
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 3500
+   },
+   {
+    "account": "4812",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 4770000
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du relevé MTN MoMo de juillet.\n\n[[piece:S-A-07-008]]",
+   "en": "Record the July MTN MoMo statement.\n\n[[piece:S-A-07-008]]"
+  },
+  "explanation": {
+   "fr": "Sous-compte 5521, ventes et TVA ; frais de l'opérateur en 631 (S19).",
+   "en": "Sub-account 5521, sales and VAT; operator fees in 631."
+  },
+  "journal": [
+   {
+    "account": "5521",
+    "side": "debit",
+    "amount": 1788750
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 1500000
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 288750
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 7200
+   },
+   {
+    "account": "5521",
+    "side": "credit",
+    "amount": 7200
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la quittance de loyer de juillet.\n\n[[piece:S-A-07-002]]",
+   "en": "Record the July rent receipt.\n\n[[piece:S-A-07-002]]"
+  },
+  "explanation": {
+   "fr": "Loyer brut en 6222 ; précompte de 10 % retenu en 4478 (CGI art. 87) ; net payé par la banque.",
+   "en": "Gross rent in 6222; 10% withholding in 4478; net paid by bank."
+  },
+  "journal": [
+   {
+    "account": "6222",
+    "side": "debit",
+    "amount": 300000
+   },
+   {
+    "account": "4478",
+    "side": "credit",
+    "amount": 30000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 270000
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du règlement de la déclaration du 15 juillet.\n\n[[piece:S-A-07-004]]",
+   "en": "Record the payment of the July 15th return.\n\n[[piece:S-A-07-004]]"
+  },
+  "explanation": {
+   "fr": "Solde de la TVA (4431, 445, 4449), acompte d'IS en 441 net du précompte imputé, retenues et CNPS reversées.",
+   "en": "VAT settled, CIT instalment in 441 net of withholding, withholdings and CNPS paid over."
+  },
+  "journal": [
+   {
+    "account": "4431",
+    "side": "debit",
+    "amount": 1443750
+   },
+   {
+    "account": "4452",
+    "side": "credit",
+    "amount": 643913
+   },
+   {
+    "account": "4449",
+    "side": "credit",
+    "amount": 722838
+   },
+   {
+    "account": "441",
+    "side": "debit",
+    "amount": 165000
+   },
+   {
+    "account": "4492",
+    "side": "credit",
+    "amount": 66900
+   },
+   {
+    "account": "4472",
+    "side": "debit",
+    "amount": 77134
+   },
+   {
+    "account": "4478",
+    "side": "debit",
+    "amount": 30000
+   },
+   {
+    "account": "431",
+    "side": "debit",
+    "amount": 58800
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 341033
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour juillet 2026 : TVA due (ou crédit à reporter) ?",
+   "en": "15th return for July 2026: VAT due (or credit carried forward)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 787325,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-07",
+   "field": "tva_due"
+  }
+ },
+ {
+  "id": "S-A-M4-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour juillet 2026 : Acompte d'IS net du précompte imputé ?",
+   "en": "15th return for July 2026: CIT instalment net of withholding?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 96800,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-07",
+   "field": "acompte_is_net"
+  }
+ },
+ {
+  "id": "S-A-M4-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour juillet 2026 : Retenues à la source du mois (salaires et loyer) ?",
+   "en": "15th return for July 2026: Withholdings of the month (pay and rent)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 107134,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-07",
+   "field": "retenues_salaires"
+  }
+ },
+ {
+  "id": "S-A-M4-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précompte sur achats subi en juillet (taux du réel) ?\n\n[[piece:S-A-07-003]]",
+   "en": "Purchase withholding suffered in July (actual regime rate)?\n\n[[piece:S-A-07-003]]"
+  },
+  "explanation": {
+   "fr": "2 % du montant HT de la facture, sans CAC, imputable sur l'acompte d'IS (CGI art. 21 (3)).",
+   "en": "2% of the invoice amount excluding tax, credited against the CIT instalment."
+  },
+  "numeric": {
+   "value": 68200,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-A-M4-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde comptable du compte 521 au 31 juillet 2026 ?\n\n[[piece:S-A-07-001]]",
+   "en": "Book balance of account 521 at July 31, 2026?\n\n[[piece:S-A-07-001]]"
+  },
+  "explanation": {
+   "fr": "Débits moins crédits de 521 jusqu'à cette date : c'est le solde à rapprocher du relevé bancaire.",
+   "en": "Debits less credits of 521 up to that date, to reconcile with the bank statement."
+  },
+  "numeric": {
+   "value": 9335359,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-07-31"
+  }
+ },
+ {
+  "id": "S-A-M4-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture d'achat de août (précompte de 2 % compris).\n\n[[piece:S-A-08-003]]",
+   "en": "Record the August purchase invoice (2% withholding included).\n\n[[piece:S-A-08-003]]"
+  },
+  "explanation": {
+   "fr": "Achats en 6011, TVA et CAC récupérables en 4452, précompte en 4492, dette fournisseur en 401 (CGI art. 21 et 143).",
+   "en": "Purchases in 6011, recoverable VAT in 4452, withholding in 4492, supplier debt in 401."
+  },
+  "journal": [
+   {
+    "account": "6011",
+    "side": "debit",
+    "amount": 3475000
+   },
+   {
+    "account": "4452",
+    "side": "debit",
+    "amount": 668938
+   },
+   {
+    "account": "4492",
+    "side": "debit",
+    "amount": 69500
+   },
+   {
+    "account": "401",
+    "side": "credit",
+    "amount": 4213438
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture des ventes au comptant de août.\n\n[[piece:S-A-08-006]]",
+   "en": "Record the August cash sales.\n\n[[piece:S-A-08-006]]"
+  },
+  "explanation": {
+   "fr": "Caisse 5711 au TTC, ventes 7011 au HT, TVA facturée 4431.",
+   "en": "Cash 5711 incl. tax, sales 7011, VAT charged 4431."
+  },
+  "journal": [
+   {
+    "account": "5711",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 4000000
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 770000
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du relevé Orange Money de août.\n\n[[piece:S-A-08-007]]",
+   "en": "Record the August Orange Money statement.\n\n[[piece:S-A-08-007]]"
+  },
+  "explanation": {
+   "fr": "Sous-compte 5522, ventes et TVA ; frais de l'opérateur en 631 (S19).",
+   "en": "Sub-account 5522, sales and VAT; operator fees in 631."
+  },
+  "journal": [
+   {
+    "account": "5522",
+    "side": "debit",
+    "amount": 2385000
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 2000000
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 385000
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 9500
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 9500
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du journal de paie de août.\n\n[[piece:S-A-08-009]]",
+   "en": "Record the August payroll journal.\n\n[[piece:S-A-08-009]]"
+  },
+  "explanation": {
+   "fr": "Salaires 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues fiscales 4472, CNPS 431, nets 422.",
+   "en": "Gross pay 6611, employer levies 6413 and 6641; tax withholdings 4472, CNPS 431, net pay 422."
+  },
+  "journal": [
+   {
+    "account": "6611",
+    "side": "debit",
+    "amount": 700000
+   },
+   {
+    "account": "6413",
+    "side": "debit",
+    "amount": 17500
+   },
+   {
+    "account": "6641",
+    "side": "debit",
+    "amount": 29400
+   },
+   {
+    "account": "4472",
+    "side": "credit",
+    "amount": 77134
+   },
+   {
+    "account": "431",
+    "side": "credit",
+    "amount": 58800
+   },
+   {
+    "account": "422",
+    "side": "credit",
+    "amount": 610966
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez les écritures du relevé bancaire de août.\n\n[[piece:S-A-08-001]]",
+   "en": "Record the August bank statement entries.\n\n[[piece:S-A-08-001]]"
+  },
+  "explanation": {
+   "fr": "Virement au fournisseur (401), salaires nets (422), virements internes via 585 (S19), frais en 631.",
+   "en": "Supplier transfer (401), net pay (422), internal transfers through 585, fees in 631."
+  },
+  "journal": [
+   {
+    "account": "401",
+    "side": "debit",
+    "amount": 4213438
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 4213438
+   },
+   {
+    "account": "422",
+    "side": "debit",
+    "amount": 610966
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 610966
+   },
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 4157050
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 2375500
+   },
+   {
+    "account": "5521",
+    "side": "credit",
+    "amount": 1781550
+   },
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 8927050
+   },
+   {
+    "account": "585",
+    "side": "credit",
+    "amount": 8927050
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 3500
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 3500
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du relevé MTN MoMo de août.\n\n[[piece:S-A-08-008]]",
+   "en": "Record the August MTN MoMo statement.\n\n[[piece:S-A-08-008]]"
+  },
+  "explanation": {
+   "fr": "Sous-compte 5521, ventes et TVA ; frais de l'opérateur en 631 (S19).",
+   "en": "Sub-account 5521, sales and VAT; operator fees in 631."
+  },
+  "journal": [
+   {
+    "account": "5521",
+    "side": "debit",
+    "amount": 1788750
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 1500000
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 288750
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 7200
+   },
+   {
+    "account": "5521",
+    "side": "credit",
+    "amount": 7200
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la quittance de loyer de août.\n\n[[piece:S-A-08-002]]",
+   "en": "Record the August rent receipt.\n\n[[piece:S-A-08-002]]"
+  },
+  "explanation": {
+   "fr": "Loyer brut en 6222 ; précompte de 10 % retenu en 4478 (CGI art. 87) ; net payé par la banque.",
+   "en": "Gross rent in 6222; 10% withholding in 4478; net paid by bank."
+  },
+  "journal": [
+   {
+    "account": "6222",
+    "side": "debit",
+    "amount": 300000
+   },
+   {
+    "account": "4478",
+    "side": "credit",
+    "amount": 30000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 270000
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du règlement de la déclaration du 15 août.\n\n[[piece:S-A-08-004]]",
+   "en": "Record the payment of the August 15th return.\n\n[[piece:S-A-08-004]]"
+  },
+  "explanation": {
+   "fr": "Solde de la TVA (4431, 445, 4449), acompte d'IS en 441 net du précompte imputé, retenues et CNPS reversées.",
+   "en": "VAT settled, CIT instalment in 441 net of withholding, withholdings and CNPS paid over."
+  },
+  "journal": [
+   {
+    "account": "4431",
+    "side": "debit",
+    "amount": 1443750
+   },
+   {
+    "account": "4452",
+    "side": "credit",
+    "amount": 656425
+   },
+   {
+    "account": "441",
+    "side": "debit",
+    "amount": 165000
+   },
+   {
+    "account": "4492",
+    "side": "credit",
+    "amount": 68200
+   },
+   {
+    "account": "4472",
+    "side": "debit",
+    "amount": 77134
+   },
+   {
+    "account": "4478",
+    "side": "debit",
+    "amount": 30000
+   },
+   {
+    "account": "431",
+    "side": "debit",
+    "amount": 58800
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 1050059
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-022",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour août 2026 : TVA due (ou crédit à reporter) ?",
+   "en": "15th return for August 2026: VAT due (or credit carried forward)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 774812,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-08",
+   "field": "tva_due"
+  }
+ },
+ {
+  "id": "S-A-M4-023",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour août 2026 : Acompte d'IS net du précompte imputé ?",
+   "en": "15th return for August 2026: CIT instalment net of withholding?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 95500,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-08",
+   "field": "acompte_is_net"
+  }
+ },
+ {
+  "id": "S-A-M4-024",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour août 2026 : Retenues à la source du mois (salaires et loyer) ?",
+   "en": "15th return for August 2026: Withholdings of the month (pay and rent)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 107134,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-08",
+   "field": "retenues_salaires"
+  }
+ },
+ {
+  "id": "S-A-M4-025",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précompte sur achats subi en août (taux du réel) ?\n\n[[piece:S-A-08-003]]",
+   "en": "Purchase withholding suffered in August (actual regime rate)?\n\n[[piece:S-A-08-003]]"
+  },
+  "explanation": {
+   "fr": "2 % du montant HT de la facture, sans CAC, imputable sur l'acompte d'IS (CGI art. 21 (3)).",
+   "en": "2% of the invoice amount excluding tax, credited against the CIT instalment."
+  },
+  "numeric": {
+   "value": 69500,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-A-M4-026",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde comptable du compte 521 au 31 août 2026 ?\n\n[[piece:S-A-08-001]]",
+   "en": "Book balance of account 521 at August 31, 2026?\n\n[[piece:S-A-08-001]]"
+  },
+  "explanation": {
+   "fr": "Débits moins crédits de 521 jusqu'à cette date : c'est le solde à rapprocher du relevé bancaire.",
+   "en": "Debits less credits of 521 up to that date, to reconcile with the bank statement."
+  },
+  "numeric": {
+   "value": 12114446,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-08-31"
+  }
+ },
+ {
+  "id": "S-A-M4-027",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture d'achat de septembre (précompte de 2 % compris).\n\n[[piece:S-A-09-003]]",
+   "en": "Record the September purchase invoice (2% withholding included).\n\n[[piece:S-A-09-003]]"
+  },
+  "explanation": {
+   "fr": "Achats en 6011, TVA et CAC récupérables en 4452, précompte en 4492, dette fournisseur en 401 (CGI art. 21 et 143).",
+   "en": "Purchases in 6011, recoverable VAT in 4452, withholding in 4492, supplier debt in 401."
+  },
+  "journal": [
+   {
+    "account": "6011",
+    "side": "debit",
+    "amount": 3280000
+   },
+   {
+    "account": "4452",
+    "side": "debit",
+    "amount": 631400
+   },
+   {
+    "account": "4492",
+    "side": "debit",
+    "amount": 65600
+   },
+   {
+    "account": "401",
+    "side": "credit",
+    "amount": 3977000
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-028",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture des ventes au comptant de septembre.\n\n[[piece:S-A-09-006]]",
+   "en": "Record the September cash sales.\n\n[[piece:S-A-09-006]]"
+  },
+  "explanation": {
+   "fr": "Caisse 5711 au TTC, ventes 7011 au HT, TVA facturée 4431.",
+   "en": "Cash 5711 incl. tax, sales 7011, VAT charged 4431."
+  },
+  "journal": [
+   {
+    "account": "5711",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 4000000
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 770000
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-029",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du relevé Orange Money de septembre.\n\n[[piece:S-A-09-007]]",
+   "en": "Record the September Orange Money statement.\n\n[[piece:S-A-09-007]]"
+  },
+  "explanation": {
+   "fr": "Sous-compte 5522, ventes et TVA ; frais de l'opérateur en 631 (S19).",
+   "en": "Sub-account 5522, sales and VAT; operator fees in 631."
+  },
+  "journal": [
+   {
+    "account": "5522",
+    "side": "debit",
+    "amount": 2385000
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 2000000
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 385000
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 9500
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 9500
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-030",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du journal de paie de septembre.\n\n[[piece:S-A-09-009]]",
+   "en": "Record the September payroll journal.\n\n[[piece:S-A-09-009]]"
+  },
+  "explanation": {
+   "fr": "Salaires 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues fiscales 4472, CNPS 431, nets 422.",
+   "en": "Gross pay 6611, employer levies 6413 and 6641; tax withholdings 4472, CNPS 431, net pay 422."
+  },
+  "journal": [
+   {
+    "account": "6611",
+    "side": "debit",
+    "amount": 700000
+   },
+   {
+    "account": "6413",
+    "side": "debit",
+    "amount": 17500
+   },
+   {
+    "account": "6641",
+    "side": "debit",
+    "amount": 29400
+   },
+   {
+    "account": "4472",
+    "side": "credit",
+    "amount": 77134
+   },
+   {
+    "account": "431",
+    "side": "credit",
+    "amount": 58800
+   },
+   {
+    "account": "422",
+    "side": "credit",
+    "amount": 610966
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-031",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez les écritures du relevé bancaire de septembre.\n\n[[piece:S-A-09-001]]",
+   "en": "Record the September bank statement entries.\n\n[[piece:S-A-09-001]]"
+  },
+  "explanation": {
+   "fr": "Virement au fournisseur (401), salaires nets (422), virements internes via 585 (S19), frais en 631.",
+   "en": "Supplier transfer (401), net pay (422), internal transfers through 585, fees in 631."
+  },
+  "journal": [
+   {
+    "account": "401",
+    "side": "debit",
+    "amount": 3977000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 3977000
+   },
+   {
+    "account": "422",
+    "side": "debit",
+    "amount": 610966
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 610966
+   },
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 4157050
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 2375500
+   },
+   {
+    "account": "5521",
+    "side": "credit",
+    "amount": 1781550
+   },
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 8927050
+   },
+   {
+    "account": "585",
+    "side": "credit",
+    "amount": 8927050
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 3500
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 3500
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-032",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du relevé MTN MoMo de septembre.\n\n[[piece:S-A-09-008]]",
+   "en": "Record the September MTN MoMo statement.\n\n[[piece:S-A-09-008]]"
+  },
+  "explanation": {
+   "fr": "Sous-compte 5521, ventes et TVA ; frais de l'opérateur en 631 (S19).",
+   "en": "Sub-account 5521, sales and VAT; operator fees in 631."
+  },
+  "journal": [
+   {
+    "account": "5521",
+    "side": "debit",
+    "amount": 1788750
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 1500000
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 288750
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 7200
+   },
+   {
+    "account": "5521",
+    "side": "credit",
+    "amount": 7200
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-033",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la quittance de loyer de septembre.\n\n[[piece:S-A-09-002]]",
+   "en": "Record the September rent receipt.\n\n[[piece:S-A-09-002]]"
+  },
+  "explanation": {
+   "fr": "Loyer brut en 6222 ; précompte de 10 % retenu en 4478 (CGI art. 87) ; net payé par la banque.",
+   "en": "Gross rent in 6222; 10% withholding in 4478; net paid by bank."
+  },
+  "journal": [
+   {
+    "account": "6222",
+    "side": "debit",
+    "amount": 300000
+   },
+   {
+    "account": "4478",
+    "side": "credit",
+    "amount": 30000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 270000
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-034",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du règlement de la déclaration du 15 septembre.\n\n[[piece:S-A-09-004]]",
+   "en": "Record the payment of the September 15th return.\n\n[[piece:S-A-09-004]]"
+  },
+  "explanation": {
+   "fr": "Solde de la TVA (4431, 445, 4449), acompte d'IS en 441 net du précompte imputé, retenues et CNPS reversées.",
+   "en": "VAT settled, CIT instalment in 441 net of withholding, withholdings and CNPS paid over."
+  },
+  "journal": [
+   {
+    "account": "4431",
+    "side": "debit",
+    "amount": 1443750
+   },
+   {
+    "account": "4452",
+    "side": "credit",
+    "amount": 668938
+   },
+   {
+    "account": "441",
+    "side": "debit",
+    "amount": 165000
+   },
+   {
+    "account": "4492",
+    "side": "credit",
+    "amount": 69500
+   },
+   {
+    "account": "4472",
+    "side": "debit",
+    "amount": 77134
+   },
+   {
+    "account": "4478",
+    "side": "debit",
+    "amount": 30000
+   },
+   {
+    "account": "431",
+    "side": "debit",
+    "amount": 58800
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 1036246
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-035",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour septembre 2026 : TVA due (ou crédit à reporter) ?",
+   "en": "15th return for September 2026: VAT due (or credit carried forward)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 812350,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-09",
+   "field": "tva_due"
+  }
+ },
+ {
+  "id": "S-A-M4-036",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour septembre 2026 : Acompte d'IS net du précompte imputé ?",
+   "en": "15th return for September 2026: CIT instalment net of withholding?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 99400,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-09",
+   "field": "acompte_is_net"
+  }
+ },
+ {
+  "id": "S-A-M4-037",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour septembre 2026 : Retenues à la source du mois (salaires et loyer) ?",
+   "en": "15th return for September 2026: Withholdings of the month (pay and rent)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 107134,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-09",
+   "field": "retenues_salaires"
+  }
+ },
+ {
+  "id": "S-A-M4-038",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précompte sur achats subi en septembre (taux du réel) ?\n\n[[piece:S-A-09-003]]",
+   "en": "Purchase withholding suffered in September (actual regime rate)?\n\n[[piece:S-A-09-003]]"
+  },
+  "explanation": {
+   "fr": "2 % du montant HT de la facture, sans CAC, imputable sur l'acompte d'IS (CGI art. 21 (3)).",
+   "en": "2% of the invoice amount excluding tax, credited against the CIT instalment."
+  },
+  "numeric": {
+   "value": 65600,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-A-M4-039",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde comptable du compte 521 au 30 septembre 2026 ?\n\n[[piece:S-A-09-001]]",
+   "en": "Book balance of account 521 at September 30, 2026?\n\n[[piece:S-A-09-001]]"
+  },
+  "explanation": {
+   "fr": "Débits moins crédits de 521 jusqu'à cette date : c'est le solde à rapprocher du relevé bancaire.",
+   "en": "Debits less credits of 521 up to that date, to reconcile with the bank statement."
+  },
+  "numeric": {
+   "value": 15143784,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-09-30"
+  }
+ },
+ {
+  "id": "S-A-M4-040",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la pénalité.\n\n[[piece:S-A-07-010]]",
+   "en": "Record the penalty.\n\n[[piece:S-A-07-010]]"
+  },
+  "explanation": {
+   "fr": "Pénalités d'assiette 6471 ; non déductibles (CGI art. 7).",
+   "en": "Assessment penalties 6471; not deductible."
+  },
+  "journal": [
+   {
+    "account": "6471",
+    "side": "debit",
+    "amount": 50000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 50000
+   }
+  ]
+ },
+ {
+  "id": "S-A-M4-041",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du bon de caisse.\n\n[[piece:S-A-09-010]]",
+   "en": "Record the cash voucher.\n\n[[piece:S-A-09-010]]"
+  },
+  "explanation": {
+   "fr": "Charge diverse 6588 sans justificatif externe : non déductible.",
+   "en": "Sundry expense 6588 without receipt."
+  },
+  "journal": [
+   {
+    "account": "6588",
+    "side": "debit",
+    "amount": 40000
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 40000
+   }
+  ]
+ }
+]

@@ -1,0 +1,707 @@
+[
+ {
+  "id": "S-E-M6-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Inventaire : coût moyen unitaire pondéré d'un climatiseur ?\n\n[[piece:S-E-12-008]]",
+   "en": "Inventory: weighted average unit cost?\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'année, arrondi au franc.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 135500,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      4,
+      130000
+     ],
+     [
+      4,
+      131000
+     ],
+     [
+      4,
+      132000
+     ],
+     [
+      4,
+      133000
+     ],
+     [
+      4,
+      134000
+     ],
+     [
+      4,
+      135000
+     ],
+     [
+      4,
+      136000
+     ],
+     [
+      4,
+      137000
+     ],
+     [
+      4,
+      138000
+     ],
+     [
+      4,
+      139000
+     ],
+     [
+      4,
+      140000
+     ],
+     [
+      4,
+      141000
+     ]
+    ],
+    42
+   ],
+   "resultat": [
+    "cout_unitaire"
+   ]
+  }
+ },
+ {
+  "id": "S-E-M6-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Inventaire : coût des climatiseurs vendus au CMUP ?\n\n[[piece:S-E-12-008]]",
+   "en": "Inventory: cost of units sold at WAC?\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'année, arrondi au franc.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 5691000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      4,
+      130000
+     ],
+     [
+      4,
+      131000
+     ],
+     [
+      4,
+      132000
+     ],
+     [
+      4,
+      133000
+     ],
+     [
+      4,
+      134000
+     ],
+     [
+      4,
+      135000
+     ],
+     [
+      4,
+      136000
+     ],
+     [
+      4,
+      137000
+     ],
+     [
+      4,
+      138000
+     ],
+     [
+      4,
+      139000
+     ],
+     [
+      4,
+      140000
+     ],
+     [
+      4,
+      141000
+     ]
+    ],
+    42
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-E-M6-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Inventaire : coût des ventes en PEPS (contraste) ?\n\n[[piece:S-E-12-008]]",
+   "en": "Inventory: cost of units sold under FIFO?\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Les plus anciens lots sortent d'abord.",
+   "en": "Oldest lots go first."
+  },
+  "numeric": {
+   "value": 5660000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_peps",
+   "args": [
+    [
+     [
+      4,
+      130000
+     ],
+     [
+      4,
+      131000
+     ],
+     [
+      4,
+      132000
+     ],
+     [
+      4,
+      133000
+     ],
+     [
+      4,
+      134000
+     ],
+     [
+      4,
+      135000
+     ],
+     [
+      4,
+      136000
+     ],
+     [
+      4,
+      137000
+     ],
+     [
+      4,
+      138000
+     ],
+     [
+      4,
+      139000
+     ],
+     [
+      4,
+      140000
+     ],
+     [
+      4,
+      141000
+     ]
+    ],
+    42
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-E-M6-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chiffre d'affaires HT 2026 (prestations et ventes) ?\n\n[[piece:S-E-12-008]]",
+   "en": "2026 turnover?\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Prestations 7061 et ventes de marchandises 7011.",
+   "en": "Prestations 7061 et ventes de marchandises 7011."
+  },
+  "numeric": {
+   "value": 18960000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M6-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des précomptes de 5 % subis en 2026 ?\n\n[[piece:S-E-12-008]]",
+   "en": "Total 2026 withholdings?\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Somme des précomptes portés en 4492.",
+   "en": "Somme des précomptes portés en 4492."
+  },
+  "numeric": {
+   "value": 325200,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M6-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde du compte courant d'associé au 31 décembre ?\n\n[[piece:S-E-12-008]]",
+   "en": "Partner account balance?\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Avance de 1 400 000 moins six remboursements de 100 000.",
+   "en": "Avance de 1 400 000 moins six remboursements de 100 000."
+  },
+  "numeric": {
+   "value": 800000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M6-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Excédent des recettes sur les dépenses de 2026 (classes 7 et 6) ?\n\n[[piece:S-E-12-008]]",
+   "en": "2026 surplus of receipts over expenses?\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Produits moins charges enregistrés en trésorerie.",
+   "en": "Produits moins charges enregistrés en trésorerie."
+  },
+  "numeric": {
+   "value": 9940980,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M6-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Climatiseurs en stock au 31 décembre ?\n\n[[piece:S-E-12-008]]",
+   "en": "Units in stock?\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Inventaire physique.",
+   "en": "Inventaire physique."
+  },
+  "numeric": {
+   "value": 6,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M6-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Achats de matériel de l'année, TVA comprise ?\n\n[[piece:S-E-12-008]]",
+   "en": "Year's equipment purchases?\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Douze factures du fournisseur, TVA non récupérable comprise.",
+   "en": "Douze factures du fournisseur, TVA non récupérable comprise."
+  },
+  "numeric": {
+   "value": 7756020,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M6-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recettes des interventions de l'année ?\n\n[[piece:S-E-12-008]]",
+   "en": "Year's service receipts?\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Compte 7061.",
+   "en": "Compte 7061."
+  },
+  "numeric": {
+   "value": 9960000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M6-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Ventes de matériel au comptant de l'année ?\n\n[[piece:S-E-12-008]]",
+   "en": "Year's cash sales?\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Compte 7011.",
+   "en": "Compte 7011."
+  },
+  "numeric": {
+   "value": 9000000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M6-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Frais bancaires et Orange Money de l'année ?\n\n[[piece:S-E-12-008]]",
+   "en": "Year's bank and Orange Money fees?\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Compte 631.",
+   "en": "Compte 631."
+  },
+  "numeric": {
+   "value": 66000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M6-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Le SMT est-il ouvert à cette SARL ?\n\n[[piece:S-E-12-008]]",
+   "en": "Is the cash-basis system open to this LLC?\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "AUDCIF art. 13.",
+   "en": "AUDCIF art. 13."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Oui : CA sous 30 millions (services) et sous 60 millions (négoce)",
+     "en": "Yes"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Non",
+     "en": "No"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-E-M6-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Une SARL à l'IGS facture-t-elle la TVA ?\n\n[[piece:S-E-12-008]]",
+   "en": "Does an IGS LLC charge VAT?\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Le régime de l'IGS est synthétique.",
+   "en": "Le régime de l'IGS est synthétique."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non",
+     "en": "No"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui, à 19,25 %",
+     "en": "Yes, at 19.25%"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-E-M6-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Le remboursement du compte courant est une charge.\n\n[[piece:S-E-12-008]]",
+   "en": "Repaying the partner account is an expense.\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Faux : c'est le remboursement d'une dette (4621).",
+   "en": "Faux : c'est le remboursement d'une dette (4621)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "S-E-M6-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Les honoraires du vacataire sont des salaires soumis à la CNPS.\n\n[[piece:S-E-12-008]]",
+   "en": "The trainer's fees are CNPS-liable wages.\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Faux : honoraires (632), pas de contrat de travail (S30).",
+   "en": "Faux : honoraires (632), pas de contrat de travail (S30)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "S-E-M6-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "La TVA payée aux fournisseurs est récupérable à l'IGS.\n\n[[piece:S-E-12-008]]",
+   "en": "VAT paid to suppliers is recoverable under IGS.\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Faux : elle entre dans le coût (CGI art. 143).",
+   "en": "Faux : elle entre dans le coût (CGI art. 143)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "S-E-M6-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Le PEPS donne un coût des ventes plus faible quand les prix montent.\n\n[[piece:S-E-12-008]]",
+   "en": "FIFO gives a lower cost of sales when prices rise.\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Vrai : les lots anciens, moins chers, sortent d'abord.",
+   "en": "Vrai : les lots anciens, moins chers, sortent d'abord."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-E-M6-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Les ventes au comptant sont-elles des recettes du SMT ?\n\n[[piece:S-E-12-008]]",
+   "en": "Are cash sales cash-basis receipts?\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Le SMT suit les recettes et les dépenses encaissées.",
+   "en": "Le SMT suit les recettes et les dépenses encaissées."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Oui",
+     "en": "Yes"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Non",
+     "en": "No"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-E-M6-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "L'inventaire physique compte-t-il les climatiseurs en stock ?\n\n[[piece:S-E-12-008]]",
+   "en": "Does the count include units in stock?\n\n[[piece:S-E-12-008]]"
+  },
+  "explanation": {
+   "fr": "Oui : six climatiseurs au 31 décembre.",
+   "en": "Oui : six climatiseurs au 31 décembre."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Oui",
+     "en": "Yes"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Non",
+     "en": "No"
+    },
+    "correct": false
+   }
+  ]
+ }
+]

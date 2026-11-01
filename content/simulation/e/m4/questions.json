@@ -1,0 +1,752 @@
+[
+ {
+  "id": "S-E-M4-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précompte de 5 % subi sur l'achat de juillet ?\n\n[[piece:S-E-07-001]]",
+   "en": "5% withholding suffered on the July purchase?\n\n[[piece:S-E-07-001]]"
+  },
+  "explanation": {
+   "fr": "Contribuable à l'IGS : 5 % du HT (CGI art. 21 (3)).",
+   "en": "Contribuable à l'IGS : 5 % du HT (CGI art. 21 (3))."
+  },
+  "numeric": {
+   "value": 27200,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Dépense de trésorerie de l'achat de juillet ?\n\n[[piece:S-E-07-001]]",
+   "en": "Cash outflow for the July purchase?\n\n[[piece:S-E-07-001]]"
+  },
+  "explanation": {
+   "fr": "À l'IGS, la TVA payée n'est pas déductible : elle s'ajoute au coût, avec le précompte.",
+   "en": "À l'IGS, la TVA payée n'est pas déductible : elle s'ajoute au coût, avec le précompte."
+  },
+  "numeric": {
+   "value": 675920,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recette de la première intervention de juillet ?\n\n[[piece:S-E-07-002]]",
+   "en": "Receipt of July's first job?\n\n[[piece:S-E-07-002]]"
+  },
+  "explanation": {
+   "fr": "Facture sans TVA : un contribuable à l'IGS ne la facture pas.",
+   "en": "Facture sans TVA : un contribuable à l'IGS ne la facture pas."
+  },
+  "numeric": {
+   "value": 450000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recette encaissée par Orange Money en juillet ?\n\n[[piece:S-E-07-003]]",
+   "en": "Receipt collected by Orange Money in July?\n\n[[piece:S-E-07-003]]"
+  },
+  "explanation": {
+   "fr": "Encaissement porté au sous-compte 5522 (S19).",
+   "en": "Encaissement porté au sous-compte 5522 (S19)."
+  },
+  "numeric": {
+   "value": 380000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Ventes de matériel au comptant de juillet ?\n\n[[piece:S-E-07-004]]",
+   "en": "July cash equipment sales?\n\n[[piece:S-E-07-004]]"
+  },
+  "explanation": {
+   "fr": "Recette de caisse 5711, ventes de marchandises 7011.",
+   "en": "Recette de caisse 5711, ventes de marchandises 7011."
+  },
+  "numeric": {
+   "value": 750000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Honoraires du vacataire en juillet ?\n\n[[piece:S-E-07-005]]",
+   "en": "Part-time trainer's fees in July?\n\n[[piece:S-E-07-005]]"
+  },
+  "explanation": {
+   "fr": "Honoraires 632 : le fonctionnaire n'est pas salarié de la SARL (S30).",
+   "en": "Honoraires 632 : le fonctionnaire n'est pas salarié de la SARL (S30)."
+  },
+  "numeric": {
+   "value": 60000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des recettes de juillet (SMT) ?\n\n[[piece:S-E-07-004]]",
+   "en": "Total July receipts (cash basis)?\n\n[[piece:S-E-07-004]]"
+  },
+  "explanation": {
+   "fr": "Le SMT enregistre les recettes encaissées : deux interventions et les ventes au comptant.",
+   "en": "Cash-basis receipts: two jobs and cash sales."
+  },
+  "numeric": {
+   "value": 1580000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde de trésorerie en banque au 31 juillet ?\n\n[[piece:S-E-07-007]]",
+   "en": "Bank balance at July 31?\n\n[[piece:S-E-07-007]]"
+  },
+  "explanation": {
+   "fr": "Recettes moins dépenses passées par la banque à cette date.",
+   "en": "Bank receipts less payments at that date."
+  },
+  "numeric": {
+   "value": 6207430,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-07-31"
+  }
+ },
+ {
+  "id": "S-E-M4-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Caisse au début de juillet, d'après la balance ?\n\n[[piece:S-E-07-008]]",
+   "en": "Cash in hand at the start of July?\n\n[[piece:S-E-07-008]]"
+  },
+  "explanation": {
+   "fr": "Solde débiteur du compte 5711 dans la balance officielle.",
+   "en": "Debit balance of account 5711."
+  },
+  "numeric": {
+   "value": 690000,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "5711",
+   "date": "2026-06-30"
+  }
+ },
+ {
+  "id": "S-E-M4-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Frais Orange Money de juillet ?\n\n[[piece:S-E-07-006]]",
+   "en": "July Orange Money fees?\n\n[[piece:S-E-07-006]]"
+  },
+  "explanation": {
+   "fr": "Frais de l'opérateur en services bancaires (631).",
+   "en": "Operator fees in account 631."
+  },
+  "numeric": {
+   "value": 3000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Remboursement du compte courant d'associé en juillet ?\n\n[[piece:S-E-07-007]]",
+   "en": "Partner current-account repayment in July?\n\n[[piece:S-E-07-007]]"
+  },
+  "explanation": {
+   "fr": "La SARL rembourse l'avance du fonctionnaire (4621) ; ce n'est pas une charge.",
+   "en": "Repaying the partner's advance is not an expense."
+  },
+  "numeric": {
+   "value": 100000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précompte de 5 % subi sur l'achat de août ?\n\n[[piece:S-E-08-001]]",
+   "en": "5% withholding suffered on the August purchase?\n\n[[piece:S-E-08-001]]"
+  },
+  "explanation": {
+   "fr": "Contribuable à l'IGS : 5 % du HT (CGI art. 21 (3)).",
+   "en": "Contribuable à l'IGS : 5 % du HT (CGI art. 21 (3))."
+  },
+  "numeric": {
+   "value": 27400,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Dépense de trésorerie de l'achat de août ?\n\n[[piece:S-E-08-001]]",
+   "en": "Cash outflow for the August purchase?\n\n[[piece:S-E-08-001]]"
+  },
+  "explanation": {
+   "fr": "À l'IGS, la TVA payée n'est pas déductible : elle s'ajoute au coût, avec le précompte.",
+   "en": "À l'IGS, la TVA payée n'est pas déductible : elle s'ajoute au coût, avec le précompte."
+  },
+  "numeric": {
+   "value": 680890,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recette de la première intervention de août ?\n\n[[piece:S-E-08-002]]",
+   "en": "Receipt of August's first job?\n\n[[piece:S-E-08-002]]"
+  },
+  "explanation": {
+   "fr": "Facture sans TVA : un contribuable à l'IGS ne la facture pas.",
+   "en": "Facture sans TVA : un contribuable à l'IGS ne la facture pas."
+  },
+  "numeric": {
+   "value": 450000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recette encaissée par Orange Money en août ?\n\n[[piece:S-E-08-003]]",
+   "en": "Receipt collected by Orange Money in August?\n\n[[piece:S-E-08-003]]"
+  },
+  "explanation": {
+   "fr": "Encaissement porté au sous-compte 5522 (S19).",
+   "en": "Encaissement porté au sous-compte 5522 (S19)."
+  },
+  "numeric": {
+   "value": 380000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Ventes de matériel au comptant de août ?\n\n[[piece:S-E-08-004]]",
+   "en": "August cash equipment sales?\n\n[[piece:S-E-08-004]]"
+  },
+  "explanation": {
+   "fr": "Recette de caisse 5711, ventes de marchandises 7011.",
+   "en": "Recette de caisse 5711, ventes de marchandises 7011."
+  },
+  "numeric": {
+   "value": 750000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Honoraires du vacataire en août ?\n\n[[piece:S-E-08-005]]",
+   "en": "Part-time trainer's fees in August?\n\n[[piece:S-E-08-005]]"
+  },
+  "explanation": {
+   "fr": "Honoraires 632 : le fonctionnaire n'est pas salarié de la SARL (S30).",
+   "en": "Honoraires 632 : le fonctionnaire n'est pas salarié de la SARL (S30)."
+  },
+  "numeric": {
+   "value": 60000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des recettes de août (SMT) ?\n\n[[piece:S-E-08-004]]",
+   "en": "Total August receipts (cash basis)?\n\n[[piece:S-E-08-004]]"
+  },
+  "explanation": {
+   "fr": "Le SMT enregistre les recettes encaissées : deux interventions et les ventes au comptant.",
+   "en": "Cash-basis receipts: two jobs and cash sales."
+  },
+  "numeric": {
+   "value": 1580000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde de trésorerie en banque au 31 août ?\n\n[[piece:S-E-08-007]]",
+   "en": "Bank balance at August 31?\n\n[[piece:S-E-08-007]]"
+  },
+  "explanation": {
+   "fr": "Recettes moins dépenses passées par la banque à cette date.",
+   "en": "Bank receipts less payments at that date."
+  },
+  "numeric": {
+   "value": 6941040,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-08-31"
+  }
+ },
+ {
+  "id": "S-E-M4-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Caisse au début de août, d'après la balance ?\n\n[[piece:S-E-08-008]]",
+   "en": "Cash in hand at the start of August?\n\n[[piece:S-E-08-008]]"
+  },
+  "explanation": {
+   "fr": "Solde débiteur du compte 5711 dans la balance officielle.",
+   "en": "Debit balance of account 5711."
+  },
+  "numeric": {
+   "value": 690000,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "5711",
+   "date": "2026-07-31"
+  }
+ },
+ {
+  "id": "S-E-M4-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Frais Orange Money de août ?\n\n[[piece:S-E-08-006]]",
+   "en": "August Orange Money fees?\n\n[[piece:S-E-08-006]]"
+  },
+  "explanation": {
+   "fr": "Frais de l'opérateur en services bancaires (631).",
+   "en": "Operator fees in account 631."
+  },
+  "numeric": {
+   "value": 3000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-022",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Remboursement du compte courant d'associé en août ?\n\n[[piece:S-E-08-007]]",
+   "en": "Partner current-account repayment in August?\n\n[[piece:S-E-08-007]]"
+  },
+  "explanation": {
+   "fr": "La SARL rembourse l'avance du fonctionnaire (4621) ; ce n'est pas une charge.",
+   "en": "Repaying the partner's advance is not an expense."
+  },
+  "numeric": {
+   "value": 100000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-023",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précompte de 5 % subi sur l'achat de septembre ?\n\n[[piece:S-E-09-001]]",
+   "en": "5% withholding suffered on the September purchase?\n\n[[piece:S-E-09-001]]"
+  },
+  "explanation": {
+   "fr": "Contribuable à l'IGS : 5 % du HT (CGI art. 21 (3)).",
+   "en": "Contribuable à l'IGS : 5 % du HT (CGI art. 21 (3))."
+  },
+  "numeric": {
+   "value": 27600,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-024",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Dépense de trésorerie de l'achat de septembre ?\n\n[[piece:S-E-09-001]]",
+   "en": "Cash outflow for the September purchase?\n\n[[piece:S-E-09-001]]"
+  },
+  "explanation": {
+   "fr": "À l'IGS, la TVA payée n'est pas déductible : elle s'ajoute au coût, avec le précompte.",
+   "en": "À l'IGS, la TVA payée n'est pas déductible : elle s'ajoute au coût, avec le précompte."
+  },
+  "numeric": {
+   "value": 685860,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-025",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recette de la première intervention de septembre ?\n\n[[piece:S-E-09-002]]",
+   "en": "Receipt of September's first job?\n\n[[piece:S-E-09-002]]"
+  },
+  "explanation": {
+   "fr": "Facture sans TVA : un contribuable à l'IGS ne la facture pas.",
+   "en": "Facture sans TVA : un contribuable à l'IGS ne la facture pas."
+  },
+  "numeric": {
+   "value": 450000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-026",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recette encaissée par Orange Money en septembre ?\n\n[[piece:S-E-09-003]]",
+   "en": "Receipt collected by Orange Money in September?\n\n[[piece:S-E-09-003]]"
+  },
+  "explanation": {
+   "fr": "Encaissement porté au sous-compte 5522 (S19).",
+   "en": "Encaissement porté au sous-compte 5522 (S19)."
+  },
+  "numeric": {
+   "value": 380000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-027",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Ventes de matériel au comptant de septembre ?\n\n[[piece:S-E-09-004]]",
+   "en": "September cash equipment sales?\n\n[[piece:S-E-09-004]]"
+  },
+  "explanation": {
+   "fr": "Recette de caisse 5711, ventes de marchandises 7011.",
+   "en": "Recette de caisse 5711, ventes de marchandises 7011."
+  },
+  "numeric": {
+   "value": 750000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-028",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Honoraires du vacataire en septembre ?\n\n[[piece:S-E-09-005]]",
+   "en": "Part-time trainer's fees in September?\n\n[[piece:S-E-09-005]]"
+  },
+  "explanation": {
+   "fr": "Honoraires 632 : le fonctionnaire n'est pas salarié de la SARL (S30).",
+   "en": "Honoraires 632 : le fonctionnaire n'est pas salarié de la SARL (S30)."
+  },
+  "numeric": {
+   "value": 60000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-029",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des recettes de septembre (SMT) ?\n\n[[piece:S-E-09-004]]",
+   "en": "Total September receipts (cash basis)?\n\n[[piece:S-E-09-004]]"
+  },
+  "explanation": {
+   "fr": "Le SMT enregistre les recettes encaissées : deux interventions et les ventes au comptant.",
+   "en": "Cash-basis receipts: two jobs and cash sales."
+  },
+  "numeric": {
+   "value": 1580000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-030",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde de trésorerie en banque au 30 septembre ?\n\n[[piece:S-E-09-007]]",
+   "en": "Bank balance at September 30?\n\n[[piece:S-E-09-007]]"
+  },
+  "explanation": {
+   "fr": "Recettes moins dépenses passées par la banque à cette date.",
+   "en": "Bank receipts less payments at that date."
+  },
+  "numeric": {
+   "value": 7669680,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-09-30"
+  }
+ },
+ {
+  "id": "S-E-M4-031",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Caisse au début de septembre, d'après la balance ?\n\n[[piece:S-E-09-008]]",
+   "en": "Cash in hand at the start of September?\n\n[[piece:S-E-09-008]]"
+  },
+  "explanation": {
+   "fr": "Solde débiteur du compte 5711 dans la balance officielle.",
+   "en": "Debit balance of account 5711."
+  },
+  "numeric": {
+   "value": 690000,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "5711",
+   "date": "2026-08-31"
+  }
+ },
+ {
+  "id": "S-E-M4-032",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Frais Orange Money de septembre ?\n\n[[piece:S-E-09-006]]",
+   "en": "September Orange Money fees?\n\n[[piece:S-E-09-006]]"
+  },
+  "explanation": {
+   "fr": "Frais de l'opérateur en services bancaires (631).",
+   "en": "Operator fees in account 631."
+  },
+  "numeric": {
+   "value": 3000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M4-033",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Remboursement du compte courant d'associé en septembre ?\n\n[[piece:S-E-09-007]]",
+   "en": "Partner current-account repayment in September?\n\n[[piece:S-E-09-007]]"
+  },
+  "explanation": {
+   "fr": "La SARL rembourse l'avance du fonctionnaire (4621) ; ce n'est pas une charge.",
+   "en": "Repaying the partner's advance is not an expense."
+  },
+  "numeric": {
+   "value": 100000,
+   "unit": "FCFA"
+  }
+ }
+]

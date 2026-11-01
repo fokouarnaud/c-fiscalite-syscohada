@@ -1,0 +1,458 @@
+[
+ {
+  "id": "S-E-M2-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précompte de 5 % subi sur l'achat de février ?\n\n[[piece:S-E-02-001]]",
+   "en": "5% withholding suffered on the February purchase?\n\n[[piece:S-E-02-001]]"
+  },
+  "explanation": {
+   "fr": "Contribuable à l'IGS : 5 % du HT (CGI art. 21 (3)).",
+   "en": "Contribuable à l'IGS : 5 % du HT (CGI art. 21 (3))."
+  },
+  "numeric": {
+   "value": 26200,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M2-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Dépense de trésorerie de l'achat de février ?\n\n[[piece:S-E-02-001]]",
+   "en": "Cash outflow for the February purchase?\n\n[[piece:S-E-02-001]]"
+  },
+  "explanation": {
+   "fr": "À l'IGS, la TVA payée n'est pas déductible : elle s'ajoute au coût, avec le précompte.",
+   "en": "À l'IGS, la TVA payée n'est pas déductible : elle s'ajoute au coût, avec le précompte."
+  },
+  "numeric": {
+   "value": 651070,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M2-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recette de la première intervention de février ?\n\n[[piece:S-E-02-002]]",
+   "en": "Receipt of February's first job?\n\n[[piece:S-E-02-002]]"
+  },
+  "explanation": {
+   "fr": "Facture sans TVA : un contribuable à l'IGS ne la facture pas.",
+   "en": "Facture sans TVA : un contribuable à l'IGS ne la facture pas."
+  },
+  "numeric": {
+   "value": 450000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M2-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recette encaissée par Orange Money en février ?\n\n[[piece:S-E-02-003]]",
+   "en": "Receipt collected by Orange Money in February?\n\n[[piece:S-E-02-003]]"
+  },
+  "explanation": {
+   "fr": "Encaissement porté au sous-compte 5522 (S19).",
+   "en": "Encaissement porté au sous-compte 5522 (S19)."
+  },
+  "numeric": {
+   "value": 380000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M2-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Ventes de matériel au comptant de février ?\n\n[[piece:S-E-02-004]]",
+   "en": "February cash equipment sales?\n\n[[piece:S-E-02-004]]"
+  },
+  "explanation": {
+   "fr": "Recette de caisse 5711, ventes de marchandises 7011.",
+   "en": "Recette de caisse 5711, ventes de marchandises 7011."
+  },
+  "numeric": {
+   "value": 750000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M2-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Honoraires du vacataire en février ?\n\n[[piece:S-E-02-005]]",
+   "en": "Part-time trainer's fees in February?\n\n[[piece:S-E-02-005]]"
+  },
+  "explanation": {
+   "fr": "Honoraires 632 : le fonctionnaire n'est pas salarié de la SARL (S30).",
+   "en": "Honoraires 632 : le fonctionnaire n'est pas salarié de la SARL (S30)."
+  },
+  "numeric": {
+   "value": 60000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M2-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des recettes de février (SMT) ?\n\n[[piece:S-E-02-004]]",
+   "en": "Total February receipts (cash basis)?\n\n[[piece:S-E-02-004]]"
+  },
+  "explanation": {
+   "fr": "Le SMT enregistre les recettes encaissées : deux interventions et les ventes au comptant.",
+   "en": "Cash-basis receipts: two jobs and cash sales."
+  },
+  "numeric": {
+   "value": 1580000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M2-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde de trésorerie en banque au 28 février ?\n\n[[piece:S-E-02-007]]",
+   "en": "Bank balance at February 28?\n\n[[piece:S-E-02-007]]"
+  },
+  "explanation": {
+   "fr": "Recettes moins dépenses passées par la banque à cette date.",
+   "en": "Bank receipts less payments at that date."
+  },
+  "numeric": {
+   "value": 2064830,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-02-28"
+  }
+ },
+ {
+  "id": "S-E-M2-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Caisse au début de février, d'après la balance ?\n\n[[piece:S-E-02-008]]",
+   "en": "Cash in hand at the start of February?\n\n[[piece:S-E-02-008]]"
+  },
+  "explanation": {
+   "fr": "Solde débiteur du compte 5711 dans la balance officielle.",
+   "en": "Debit balance of account 5711."
+  },
+  "numeric": {
+   "value": 690000,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "5711",
+   "date": "2026-01-31"
+  }
+ },
+ {
+  "id": "S-E-M2-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Frais Orange Money de février ?\n\n[[piece:S-E-02-006]]",
+   "en": "February Orange Money fees?\n\n[[piece:S-E-02-006]]"
+  },
+  "explanation": {
+   "fr": "Frais de l'opérateur en services bancaires (631).",
+   "en": "Operator fees in account 631."
+  },
+  "numeric": {
+   "value": 3000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M2-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précompte de 5 % subi sur l'achat de mars ?\n\n[[piece:S-E-03-001]]",
+   "en": "5% withholding suffered on the March purchase?\n\n[[piece:S-E-03-001]]"
+  },
+  "explanation": {
+   "fr": "Contribuable à l'IGS : 5 % du HT (CGI art. 21 (3)).",
+   "en": "Contribuable à l'IGS : 5 % du HT (CGI art. 21 (3))."
+  },
+  "numeric": {
+   "value": 26400,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M2-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Dépense de trésorerie de l'achat de mars ?\n\n[[piece:S-E-03-001]]",
+   "en": "Cash outflow for the March purchase?\n\n[[piece:S-E-03-001]]"
+  },
+  "explanation": {
+   "fr": "À l'IGS, la TVA payée n'est pas déductible : elle s'ajoute au coût, avec le précompte.",
+   "en": "À l'IGS, la TVA payée n'est pas déductible : elle s'ajoute au coût, avec le précompte."
+  },
+  "numeric": {
+   "value": 656040,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M2-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recette de la première intervention de mars ?\n\n[[piece:S-E-03-002]]",
+   "en": "Receipt of March's first job?\n\n[[piece:S-E-03-002]]"
+  },
+  "explanation": {
+   "fr": "Facture sans TVA : un contribuable à l'IGS ne la facture pas.",
+   "en": "Facture sans TVA : un contribuable à l'IGS ne la facture pas."
+  },
+  "numeric": {
+   "value": 450000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M2-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recette encaissée par Orange Money en mars ?\n\n[[piece:S-E-03-003]]",
+   "en": "Receipt collected by Orange Money in March?\n\n[[piece:S-E-03-003]]"
+  },
+  "explanation": {
+   "fr": "Encaissement porté au sous-compte 5522 (S19).",
+   "en": "Encaissement porté au sous-compte 5522 (S19)."
+  },
+  "numeric": {
+   "value": 380000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M2-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Ventes de matériel au comptant de mars ?\n\n[[piece:S-E-03-004]]",
+   "en": "March cash equipment sales?\n\n[[piece:S-E-03-004]]"
+  },
+  "explanation": {
+   "fr": "Recette de caisse 5711, ventes de marchandises 7011.",
+   "en": "Recette de caisse 5711, ventes de marchandises 7011."
+  },
+  "numeric": {
+   "value": 750000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M2-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Honoraires du vacataire en mars ?\n\n[[piece:S-E-03-005]]",
+   "en": "Part-time trainer's fees in March?\n\n[[piece:S-E-03-005]]"
+  },
+  "explanation": {
+   "fr": "Honoraires 632 : le fonctionnaire n'est pas salarié de la SARL (S30).",
+   "en": "Honoraires 632 : le fonctionnaire n'est pas salarié de la SARL (S30)."
+  },
+  "numeric": {
+   "value": 60000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M2-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des recettes de mars (SMT) ?\n\n[[piece:S-E-03-004]]",
+   "en": "Total March receipts (cash basis)?\n\n[[piece:S-E-03-004]]"
+  },
+  "explanation": {
+   "fr": "Le SMT enregistre les recettes encaissées : deux interventions et les ventes au comptant.",
+   "en": "Cash-basis receipts: two jobs and cash sales."
+  },
+  "numeric": {
+   "value": 1580000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M2-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde de trésorerie en banque au 31 mars ?\n\n[[piece:S-E-03-007]]",
+   "en": "Bank balance at March 31?\n\n[[piece:S-E-03-007]]"
+  },
+  "explanation": {
+   "fr": "Recettes moins dépenses passées par la banque à cette date.",
+   "en": "Bank receipts less payments at that date."
+  },
+  "numeric": {
+   "value": 2923290,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-03-31"
+  }
+ },
+ {
+  "id": "S-E-M2-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Caisse au début de mars, d'après la balance ?\n\n[[piece:S-E-03-008]]",
+   "en": "Cash in hand at the start of March?\n\n[[piece:S-E-03-008]]"
+  },
+  "explanation": {
+   "fr": "Solde débiteur du compte 5711 dans la balance officielle.",
+   "en": "Debit balance of account 5711."
+  },
+  "numeric": {
+   "value": 690000,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "5711",
+   "date": "2026-02-28"
+  }
+ },
+ {
+  "id": "S-E-M2-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Frais Orange Money de mars ?\n\n[[piece:S-E-03-006]]",
+   "en": "March Orange Money fees?\n\n[[piece:S-E-03-006]]"
+  },
+  "explanation": {
+   "fr": "Frais de l'opérateur en services bancaires (631).",
+   "en": "Operator fees in account 631."
+  },
+  "numeric": {
+   "value": 3000,
+   "unit": "FCFA"
+  }
+ }
+]

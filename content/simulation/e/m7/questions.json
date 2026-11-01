@@ -1,0 +1,673 @@
+[
+ {
+  "id": "S-E-M7-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "IGS annuel 2026 de la SARL ?\n\n[[piece:S-E-15-001]]",
+   "en": "2026 yearly IGS?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Tarif de la classe du chiffre d'affaires (CGI art. C 40 (1)).",
+   "en": "Tariff of the turnover class."
+  },
+  "numeric": {
+   "value": 500000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "igs_annuel",
+   "args": [
+    18960000,
+    [
+     [
+      500000,
+      20000
+     ],
+     [
+      1000000,
+      30000
+     ],
+     [
+      1500000,
+      40000
+     ],
+     [
+      2000000,
+      50000
+     ],
+     [
+      2500000,
+      60000
+     ],
+     [
+      5000000,
+      150000
+     ],
+     [
+      10000000,
+      300000
+     ],
+     [
+      20000000,
+      500000
+     ],
+     [
+      30000000,
+      1000000
+     ],
+     [
+      50000000,
+      2000000
+     ]
+    ]
+   ],
+   "resultat": []
+  }
+ },
+ {
+  "id": "S-E-M7-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "IGS 2026 si la SARL adhère à un Centre de Gestion Agréé ?\n\n[[piece:S-E-15-001]]",
+   "en": "2026 IGS with a registered management centre?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Tarif réduit de moitié (CGI art. C 40 (2)).",
+   "en": "Halved tariff."
+  },
+  "numeric": {
+   "value": 250000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "igs_annuel",
+   "args": [
+    18960000,
+    [
+     [
+      500000,
+      20000
+     ],
+     [
+      1000000,
+      30000
+     ],
+     [
+      1500000,
+      40000
+     ],
+     [
+      2000000,
+      50000
+     ],
+     [
+      2500000,
+      60000
+     ],
+     [
+      5000000,
+      150000
+     ],
+     [
+      10000000,
+      300000
+     ],
+     [
+      20000000,
+      500000
+     ],
+     [
+      30000000,
+      1000000
+     ],
+     [
+      50000000,
+      2000000
+     ]
+    ],
+    true
+   ],
+   "resultat": []
+  }
+ },
+ {
+  "id": "S-E-M7-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chiffre d'affaires déclaré pour l'IGS 2026 ?\n\n[[piece:S-E-15-001]]",
+   "en": "Turnover declared for the 2026 IGS?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Total des recettes HT de l'année.",
+   "en": "Total des recettes HT de l'année."
+  },
+  "numeric": {
+   "value": 18960000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M7-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Économie d'IGS procurée par un Centre de Gestion Agréé ?\n\n[[piece:S-E-15-001]]",
+   "en": "IGS saving with a management centre?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Moitié du tarif (CGI art. C 40 (2)).",
+   "en": "Moitié du tarif (CGI art. C 40 (2))."
+  },
+  "numeric": {
+   "value": 250000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M7-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précomptes de 5 % subis sur l'année ?\n\n[[piece:S-E-15-001]]",
+   "en": "Withholdings suffered over the year?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Somme des précomptes sur achats.",
+   "en": "Somme des précomptes sur achats."
+  },
+  "numeric": {
+   "value": 325200,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M7-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Dette restante envers le fonctionnaire au 31 décembre ?\n\n[[piece:S-E-15-001]]",
+   "en": "Remaining debt?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Solde du compte courant d'associé.",
+   "en": "Solde du compte courant d'associé."
+  },
+  "numeric": {
+   "value": 800000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M7-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Excédent de trésorerie de l'exercice ?\n\n[[piece:S-E-15-001]]",
+   "en": "Year's cash surplus?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Recettes moins dépenses.",
+   "en": "Recettes moins dépenses."
+  },
+  "numeric": {
+   "value": 9940980,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M7-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Capital social de la SARL ?\n\n[[piece:S-E-15-001]]",
+   "en": "Share capital?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Loi n° 2016/014 art. 2.",
+   "en": "Loi n° 2016/014 art. 2."
+  },
+  "numeric": {
+   "value": 100000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M7-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Part du capital détenue par le fonctionnaire, en FCFA ?\n\n[[piece:S-E-15-001]]",
+   "en": "Civil servant's capital, in FCFA?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "80 % de 100 000.",
+   "en": "80 % de 100 000."
+  },
+  "numeric": {
+   "value": 80000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M7-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Honoraires versés au vacataire sur l'année ?\n\n[[piece:S-E-15-001]]",
+   "en": "Fees paid to the trainer over the year?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Douze notes d'honoraires.",
+   "en": "Douze notes d'honoraires."
+  },
+  "numeric": {
+   "value": 720000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M7-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Remboursements du compte courant sur l'année ?\n\n[[piece:S-E-15-001]]",
+   "en": "Partner account repayments over the year?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Six remboursements, de juillet à décembre.",
+   "en": "Six remboursements, de juillet à décembre."
+  },
+  "numeric": {
+   "value": 600000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M7-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Montant à payer avec la déclaration annuelle de l'IGS ?\n\n[[piece:S-E-15-001]]",
+   "en": "Amount due with the IGS return?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Tarif annuel de la classe (CGI art. C 40).",
+   "en": "Tarif annuel de la classe (CGI art. C 40)."
+  },
+  "numeric": {
+   "value": 500000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M7-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Coût de l'outillage acheté en janvier ?\n\n[[piece:S-E-15-001]]",
+   "en": "Tools bought in January?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Petit outillage, TVA comprise.",
+   "en": "Petit outillage, TVA comprise."
+  },
+  "numeric": {
+   "value": 477000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M7-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recettes annuelles des premières interventions du mois ?\n\n[[piece:S-E-15-001]]",
+   "en": "Yearly receipts of first jobs?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Douze factures.",
+   "en": "Douze factures."
+  },
+  "numeric": {
+   "value": 5400000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-E-M7-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Date limite de la déclaration annuelle de l'IGS 2026 ?\n\n[[piece:S-E-15-001]]",
+   "en": "Deadline of the 2026 IGS return?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "CGI art. C 41.",
+   "en": "CGI art. C 41."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "15 mars 2027",
+     "en": "15 March 2027"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "15 avril 2027",
+     "en": "15 April 2027"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-E-M7-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "La SARL dépose-t-elle une DSF normale ?\n\n[[piece:S-E-15-001]]",
+   "en": "Does the LLC file a standard return?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "À l'IGS et au SMT, pas de DSF normale (S14).",
+   "en": "À l'IGS et au SMT, pas de DSF normale (S14)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non : déclaration annuelle de l'IGS",
+     "en": "No: yearly IGS return"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui",
+     "en": "Yes"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-E-M7-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Quel article fixe le tarif de l'IGS ?\n\n[[piece:S-E-15-001]]",
+   "en": "Which article sets the IGS tariff?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Article C 40 (1).",
+   "en": "Article C 40 (1)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "CGI art. C 40",
+     "en": "CGI art. C 40"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "CGI art. 17",
+     "en": "CGI art. 17"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-E-M7-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Le tarif de l'IGS dépend-il du bénéfice ?\n\n[[piece:S-E-15-001]]",
+   "en": "Does the IGS depend on profit?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Tarif forfaitaire par classe.",
+   "en": "Tarif forfaitaire par classe."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non, de la classe de chiffre d'affaires",
+     "en": "No, on the turnover class"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui",
+     "en": "Yes"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-E-M7-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "À 50 millions de CA, la SARL reste-t-elle à l'IGS ?\n\n[[piece:S-E-15-001]]",
+   "en": "At 50 million, does it stay under IGS?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "CGI art. C 39 et 93 quater.",
+   "en": "CGI art. C 39 et 93 quater."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non : régime du réel",
+     "en": "No: actual regime"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui",
+     "en": "Yes"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-E-M7-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Le gérant détient quelle part du capital ?\n\n[[piece:S-E-15-001]]",
+   "en": "What share does the manager hold?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Profil du parcours E (S29).",
+   "en": "Profil du parcours E (S29)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "20 %",
+     "en": "20%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "80 %",
+     "en": "80%"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-E-M7-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Le fonctionnaire peut-il être salarié de la SARL ?\n\n[[piece:S-E-15-001]]",
+   "en": "May the civil servant be an employee?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "S30.",
+   "en": "S30."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non : il intervient comme vacataire",
+     "en": "No: as a part-time trainer"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui",
+     "en": "Yes"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-E-M7-022",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Le recours au notaire est-il obligatoire pour cette SARL ?\n\n[[piece:S-E-15-001]]",
+   "en": "Is a notary required?\n\n[[piece:S-E-15-001]]"
+  },
+  "explanation": {
+   "fr": "Loi n° 2016/014 art. 4.",
+   "en": "Loi n° 2016/014 art. 4."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non : capital inférieur à 1 000 000",
+     "en": "No: capital below 1,000,000"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui",
+     "en": "Yes"
+    },
+    "correct": false
+   }
+  ]
+ }
+]
