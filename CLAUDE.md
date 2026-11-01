@@ -10,21 +10,22 @@ Règles opératoires pour Claude Code :
 # AGENTS.md — ComptaFisca Acad Ventisax
 
 > Source de vérité du projet. `CLAUDE.md` en est le miroir : toute modification se fait ici d'abord.
-> Décisions issues du grill du 2026-10-28 (C1 à C22). La grille complète et les incertitudes d'architecture seront ajoutées après validation de la section GOALS.
+> Décisions issues du grill du 2026-10-28 (C1 à C22) et du grill S du 2026-10-29 sur la formation Simulation (S1 à S21, en attente de validation des GOALS).
 
 ## GOALS
 
-Plateforme e-learning bilingue (FR/EN) qui reproduit **toutes les fonctionnalités** d'Electro Acad Ventisax (https://electroacadventisax.pythonanywhere.com/, source `..\electroschool2ventisax`). Le contenu électronique y est remplacé par deux formations :
+Plateforme e-learning bilingue (FR/EN) qui reproduit **toutes les fonctionnalités** d'Electro Acad Ventisax (https://electroacadventisax.pythonanywhere.com/, source `..\electroschool2ventisax`). Le contenu électronique y est remplacé par trois formations :
 
-- **Comptabilité**, adaptée au SYSCOHADA révisé (Cameroun) ;
-- **Fiscalité**, adaptée au Code général des impôts du Cameroun, édition 2026.
+- **Comptabilité** (Form 1), adaptée au SYSCOHADA révisé (Cameroun) ;
+- **Fiscalité** (Form 2), adaptée au Code général des impôts du Cameroun, édition 2026 ;
+- **Simulation Compta et Fisca** (Form 3, décisions S1 à S21) : une formation entièrement pratique, qui fait vivre à l'apprenant une année complète d'entreprises camerounaises fictives à partir de pièces justificatives.
 
 Le site est déployé sur le compte gratuit PythonAnywhere `comptafiscaventisax`.
 
 ### 1. Objectifs fonctionnels prioritaires
 
 **1.1 Plateforme clonée d'electroschool (parité fonctionnelle)** — C1, C8, C17
-- Un seul projet Django, une seule base SQLite, un seul login, un catalogue de 2 formations. Le code d'electroschool2ventisax est copié sans son historique git, et le contenu électronique est retiré.
+- Un seul projet Django, une seule base SQLite, un seul login, un catalogue de 3 formations (S1). Le code d'electroschool2ventisax est copié sans son historique git, et le contenu électronique est retiré.
 - Toutes les fonctionnalités d'electroschool sont conservées :
   - **Comptes et accès** : comptes (learner / trainer / admin), inscription vérifiée par e-mail, verrouillage anti force brute, réinitialisation du mot de passe, promotions et codes d'accès, import CSV d'apprenants.
   - **Parcours apprenant** : catalogue, programme par partie, inscription gratuite en un clic, lecteur avec sommaire et reprise, progression calculée et parcours guidé.
@@ -35,7 +36,7 @@ Le site est déployé sur le compte gratuit PythonAnywhere `comptafiscaventisax`
     - certificat PDF par partie réussie, avec vérification publique `/verify/<uuid>/`.
   - **Espace formateur** : carnet de notes, détail des tentatives, statistiques par question, export CSV, annonces, échéances.
   - **Exploitation** : back-office Unfold, i18n FR/EN (`/fr/`, `/en/`), import idempotent du contenu, `publish_reviewed`, sauvegarde quotidienne, sécurité et CSP, `deploy.sh`.
-- Identité : **« ComptaFisca Acad Ventisax »**, slogan « Comptabilité SYSCOHADA et fiscalité camerounaise, formation et évaluation ». Charte Ventisax inchangée (navy #0b2d46, teal, Lexend, logo V) et lien vers ventisax.pythonanywhere.com. Icônes Tabler : registre pour la compta, reçu pour la fisca. (C16)
+- Identité : **« ComptaFisca Acad Ventisax »**, slogan « Comptabilité SYSCOHADA et fiscalité camerounaise, formation et évaluation ». Charte Ventisax inchangée (navy #0b2d46, teal, Lexend, logo V) et lien vers ventisax.pythonanywhere.com. Icônes Tabler : registre pour la compta, reçu pour la fisca ; celle de la simulation sera fixée au démarrage du parcours A. (C16)
 
 **1.2 Formation Comptabilité SYSCOHADA (priorité 1)** — C7, C9, C18
 - Trame : les 30 chapitres du DCG 9, réécrits en SYSCOHADA révisé (comptes OHADA, FCFA, TVA 19,25 %, paie CNPS/IRPP, états financiers SYSCOHADA), plus un chapitre d'introduction OHADA/AUDCIF. Le ch. 18 (Emballages) est fusionné dans les achats et ventes.
@@ -92,7 +93,75 @@ Le site est déployé sur le compte gratuit PythonAnywhere `comptafiscaventisax`
 1. **Lot 0** : socle et rebranding, avec le pilote **Compta M1**, déployé en production pour valider `journal`, les citations, les paramètres et l'empreinte disque.
 2. **Comptabilité, une partie à la fois** (P1 → P5). Chaque déploiement concerne une partie complète, et son examen et son certificat ouvrent à ce moment-là.
 3. **Fiscalité** (P1 → P3). Elle reste **masquée du catalogue** jusqu'à ce qu'elle soit complète.
-- Volume cible : environ 40 modules, au moins 12 questions d'examen et 8 questions de quiz par module, soit environ 800 questions et 300 sections bilingues.
+4. **Simulation** (S4, S8, S20) :
+   - d'abord le document de conception `docs/form3-conception.md` (syllabus, scénario de janvier du parcours A, matrice du plan de comptes et des taux), validé par l'utilisateur avant tout code ou contenu ;
+   - puis un parcours par déploiement : A → E → B3 → C → D → B1 → B2 (S20, S29) ;
+   - la formation reste fermée jusqu'à ce que le parcours A soit complet.
+- Volume cible des formations 1 et 2 : environ 40 modules, au moins 12 questions d'examen et 8 questions de quiz par module, soit environ 800 questions et 300 sections bilingues.
+- Volume cible de la simulation : 6 parcours de 7 modules, 8 à 12 pièces datées par mois. Le volume de questions par module sera fixé dans le document de conception.
+
+**1.7 Formation Simulation Compta et Fisca (priorité 3, Form 3)** — S1 à S21
+- **Principe** : l'apprenant tient la comptabilité et les obligations fiscales d'une entreprise fictive sur l'exercice 2026, de la création à la DSF de l'exercice, déposée en 2027 à l'échéance de son centre des impôts (CGI art. 18 (1)), à partir de pièces justificatives virtuelles datées : factures, reçus Mobile Money, relevés bancaires, bulletins de paie.
+  - Chaque étape repart de l'**état officiel corrigé**, avec la balance officielle affichée en début de mois (S2).
+  - Il n'y a pas de grand livre par apprenant, et une erreur ne se reporte pas sur les mois suivants.
+- **Structure** (S11) :
+  - une formation `simulation`, préfixe `S` ;
+  - **une partie par parcours**, chacune avec son examen et son certificat ;
+  - **7 modules** par partie : Création, T1, T2, T3, T4, Inventaire, Passerelle + DSF. Les mois sont des sections ;
+  - l'examen tire 4 questions par module (`questions_per_module=4`).
+- **Phases** :
+  1. *Création (jour 1)* : apport du capital, dépôt en banque, frais de constitution passés en **charges par nature**. Le corrigé signale le piège de l'ancienne immobilisation en frais d'établissement (S6).
+  2. *Exploitation mensuelle* : achats, ventes, paie, encaissements et décaissements en espèces, banque et Mobile Money ; rapprochement mensuel de la banque et du Mobile Money (S19). L'échéance du **15 du mois suivant** porte les obligations sous leur nom CGI : TVA, acompte d'IS ou d'IRPP (minimum de perception), précompte sur achats, retenues sur salaires (S7).
+  3. *Inventaire (décembre)* : stocks finaux, amortissements au prorata temporis, dépréciations et provisions, régularisations.
+  4. *Post-clôture* : passerelle du résultat comptable au résultat fiscal, liquidation de l'IS, DSF au plus tard le 15 mars (DGE), le 15 avril (CIME) ou le 15 mai (centre de fiscalité locale), selon le `centre_impots` déclaré par le parcours (CGI art. 18 (1)) ; 15 mars pour la déclaration annuelle à l'IGS (art. C 41).
+- **Six parcours sectoriels** (S3, S9) :
+  - **A — Boutique de vêtements**, SARL au réel. Profil (S17) :
+    - « Ngono Mode SARL », Douala-Akwa, capital de 5 000 000 FCFA en numéraire, créée le 2 janvier 2026 ;
+    - chiffre d'affaires d'environ 90 M ; un gérant salarié et 2 vendeuses ; bail commercial ;
+    - achats auprès de grossistes et d'importateurs locaux (précompte de 2 %), une importation en T3 ;
+    - encaissements en espèces, MTN MoMo, Orange Money et carte ;
+    - stocks : inventaire intermittent (6011, variation 6031), fiches CMUP pour 3 familles d'articles, un exercice de contraste en PEPS (S18) ;
+    - focus : marges, TVA collectée et déductible ;
+    - passerelle (S21) : six éléments, chacun déclenché par une vraie pièce de l'année (amendes, amortissement d'une voiture légère au-delà du taux fiscal maximal de 25 %, dons au-delà de 0,5 % du chiffre d'affaires, charge sans pièce, IS et minimum de perception, reprise d'une provision déjà taxée) ; le minimum de perception est comparé à l'IS.
+  - **B1 — Dépôt de boissons à l'IGS**, établissement individuel. Version courte :
+    - **SMT** de l'AUDCIF (recettes et dépenses) ;
+    - IGS, précompte de 5 % subi ;
+    - questions numériques, sans `journal` ni DSF normale (S14).
+  - **B2 — Dépôt de boissons, de l'IGS à la SARL au réel** (S13) :
+    - année 2026 à l'IGS et au SMT ; le chiffre d'affaires dépasse 50 M en cours d'année ;
+    - après la clôture, l'établissement apporte son fonds à une SARL au réel au **1er janvier 2027**, avec un bilan d'ouverture ;
+    - aucune bascule de régime en cours d'année (CGI art. 93 quater).
+  - **B3 — Dépôt de boissons, SARL au réel** :
+    - consignes d'emballages (4094/4194) et emballages récupérables (2493) ;
+    - camions immobilisés et amortis ;
+    - précompte de 2 % sur les achats auprès des brasseries ;
+    - droits d'accises spécifiques sur la bière, payés par le brasseur et compris dans le prix d'achat ;
+    - DSF.
+  - **C — Commerce d'électronique et pose de climatiseurs**, SARL au réel (S16) :
+    - un fonctionnaire est **associé à 80 %** et la gérance est confiée à un tiers non fonctionnaire ;
+    - les vacations ponctuelles du fonctionnaire comme formateur sont des honoraires (632), avec la retenue de 5 % de l'art. 92 bis si la SARL figure sur la liste réglementaire ;
+    - dividendes et IRCM en fin d'année.
+  - **D — Prestataire en froid et climatisation**, établissement individuel au réel (S10) :
+    - prestations en 706, TVA exigible à l'encaissement ;
+    - retenue à la source de **5,5 %** (5 % + CAC) subie sur les clients publics (art. 21 (2)), imputée sur les acomptes ;
+    - une pièce de contraste montre le taux de **11 %** (10 % + CAC), applicable aux entreprises absentes du fichier des contribuables actifs.
+  - **E — Prestations de climatisation et froid, et vente de matériel**, SARL à l'IGS (S29 à S31, validé le 2026-11-01) :
+    - un gestionnaire, gérant, détient 20 % des parts et un fonctionnaire 80 % ; capital minimal de 100 000 FCFA (20 parts de 5 000 ; loi n° 2016/014 art. 2, qui déroge à l'AUSCGIE art. 311) ; notaire facultatif (art. 4) ;
+    - le fonctionnaire finance le démarrage, environ 1 500 000 FCFA au total, par une avance en compte courant d'associé (4621) que la SARL lui rembourse ;
+    - le fonctionnaire travaille aussi pour la SARL, mais comme vacataire payé en honoraires (632) : un emploi salarié privé lui est en principe interdit par le statut général de la fonction publique ;
+    - chiffre d'affaires visé sous 30 millions : IGS (art. 93 quater, C 39 et C 40) et SMT (AUDCIF art. 13, sous les seuils des services comme du négoce) ;
+  - Les profils de B1, B2, B3, C et D sont validés avec l'utilisateur au démarrage de chaque parcours (S20).
+- **Réalisme camerounais** (S27, S28, demande du 2026-10-30) :
+  - les factures ont le style camerounais réel : identité fiscale complète de l'émetteur (raison sociale, NIU au format de la DGI, RCCM, régime, centre des impôts), numéro, client et référence du système de facturation électronique de la DGI, sans laquelle la TVA n'est pas déductible (CGI art. 143 (1) b) ;
+  - toute décision d'un organisme extérieur (DGI, greffe, CNPS, banque, opérateur Mobile Money…) est une pièce « démarche » qui précise l'organisme, l'objet, les documents à fournir, le document obtenu et la source officielle, pour que l'apprenant puisse refaire la démarche en réalité et obtenir les vrais documents ;
+  - les entreprises restent fictives (C21) et chaque pièce affichée porte la mention « document pédagogique fictif » : elle ne peut pas passer pour un original.
+- **Paie** : les cotisations CNPS figurent en montants sur le bulletin de paie. L'apprenant calcule IRPP, CAC, CFC, RAV et TDL (S15, C28).
+- **Déclarations et DSF** (S12) :
+  - chaque case clé est une question numérique en FCFA : TVA due, précompte, acompte d'IS, résultat fiscal ;
+  - le formulaire s'affiche en lecture seule ;
+  - la DSF se limite au bilan, au compte de résultat, au tableau de passage et à la liquidation de l'IS.
+- **Accès** : prérequis indicatif « Recommandé après les formations Comptabilité et Fiscalité », sans aucun blocage (S21, C17).
+- **Autorité** : CGI Cameroun éd. 2026 (les taux du parcours sont vérifiés article par article avant la rédaction), AUDCIF et Guide SYSCOHADA (SMT, emballages), plan comptable SYSCOHADA révisé.
 
 ### 2. Contraintes techniques
 
@@ -112,7 +181,14 @@ Le site est déployé sur le compte gratuit PythonAnywhere `comptafiscaventisax`
   - Markdown nettoyé par bleach, et balises `[[…]]` substituées **après** le nettoyage ;
   - `check --deploy` vert.
 - **Référentiel juridique figé** : CGI Cameroun éd. 2026 (LF 2026) et SYSCOHADA révisé (AUDCIF). La date de référence est affichée sur les leçons de fiscalité.
-- **Contenu versionné** dans `content/<slug>/` : `formation.json`, sections `.fr.md` et `.en.md`, `questions.json`. Import idempotent par `import_content`. Les `external_id` sont préfixés `C-` (compta) ou `F-` (fisca).
+- **Contenu versionné** dans `content/<slug>/` : `formation.json`, sections `.fr.md` et `.en.md`, `questions.json`. Import idempotent par `import_content`. Les `external_id` sont préfixés `C-` (compta), `F-` (fisca) ou `S-` (simulation).
+- **Simulation** (S2, S5, S11, S12) :
+  - aucun nouveau type de question : `journal` et `numeric` couvrent les écritures, les déclarations et la DSF ;
+  - aucun état comptable stocké par apprenant ;
+  - les pièces justificatives sont décrites en JSON dans `content/simulation/` et rendues en HTML par une balise `[[piece:ID]]`, substituée après bleach comme les autres balises, en FR et en EN, sans image, PDF ni autre fichier binaire ;
+  - l'examen de chaque parcours règle `questions_per_module=4` ;
+  - les taux absents de `parametres.csv` (précompte de 2, 5 et 10 %, retenue de 5,5 %, retenue de l'art. 92 bis, accises sur la bière, IGS, IRCM) y sont ajoutés avec leur article avant usage ;
+  - les montants CNPS sont toujours donnés dans les pièces, jamais calculés à partir d'un taux.
 - **Sources** : `reference/` (97 Mo, livres protégés) est **gitignoré et n'est jamais déployé**. Seul le contenu dérivé et réécrit part en production.
 - **Déploiement** :
   - dépôt GitHub `fokouarnaud/c-fiscalite-syscohada` (public), code dans `~/comptafiscaventisax` ;
@@ -123,7 +199,7 @@ Le site est déployé sur le compte gratuit PythonAnywhere `comptafiscaventisax`
 
 ### 3. Périmètre strictement hors scope (v1)
 
-- Paiement, abonnement, mobile money, contenus payants.
+- Paiement, abonnement, paiement des formations par mobile money, contenus payants. La comptabilisation d'opérations Mobile Money dans la simulation est, elle, dans le périmètre.
 - Vidéo, cours en PDF téléchargeables, simulateurs ou figures isométriques interactives. Le pipeline Node des figures et `[[fig:]]` sont supprimés.
 - Comptes consolidés et combinés (partie 4 du Guide SYSCOHADA).
 - Fiscalités spécifiques non retenues dans le plan, et équivalents de notions françaises sans pendant camerounais : CET, intégration fiscale, ISF.
@@ -133,13 +209,22 @@ Le site est déployé sur le compte gratuit PythonAnywhere `comptafiscaventisax`
 - Fonctionnalités de finaia.co et lefisk.cm (calendrier fiscal, recherche dans le CGI, simulateurs tiers). Ces sites ne servent que d'inspiration ou de contrôle croisé des taux.
 - Prérequis bloquant entre formations, et certificat de formation entière (le certificat est délivré par partie uniquement).
 - Historique git d'electroschool, et grilles de décisions E, M et F d'electroschool.
-- Toute autre formation que Comptabilité et Fiscalité, et une 2e web app ou une autre base que SQLite.
+- Toute autre formation que Comptabilité, Fiscalité et Simulation (S1), et une 2e web app ou une autre base que SQLite.
+- Pour la simulation :
+  - grand livre ou balance propres à chaque apprenant, et report des erreurs d'un mois sur l'autre (S2) ;
+  - nouveau type de question « déclaration » ou formulaire DGI saisissable (S12) ;
+  - DSF complète au-delà du bilan, du compte de résultat, du tableau de passage et de la liquidation de l'IS (S12) ;
+  - régime simplifié, supprimé par la LF 2026, et bascule de régime en cours d'exercice (S9, S13) ;
+  - secteurs Banque et Assurance (plans PCB et CIMA) ;
+  - taux CNPS inventés ou calculés (S15, C28) ;
+  - le sigle « VSD » (S7) ;
+  - pièces justificatives en image, PDF ou autre fichier binaire (S5).
 
 ---
 
 ## PRD — Product Requirements Document
 
-> Dérivé des GOALS validés. Les identifiants `US-xx` sont stables : un commit ou un test cite l'US qu'il sert. Les US marquées **[H]** sont héritées d'electroschool : on vérifie leur parité, on ne les réécrit pas. Les US marquées **[N]** sont nouvelles ou modifiées.
+> Dérivé des GOALS validés (Form 1 et 2 ; Form 3 Simulation ajoutée le 2026-10-29 : E9, P3.4, NFR-09 à 11, DoD-Parcours, U14 à U19). Les identifiants `US-xx` sont stables : un commit ou un test cite l'US qu'il sert. Les US marquées **[H]** sont héritées d'electroschool : on vérifie leur parité, on ne les réécrit pas. Les US marquées **[N]** sont nouvelles ou modifiées.
 
 ### P1. Personas
 
@@ -151,6 +236,7 @@ Le site est déployé sur le compte gratuit PythonAnywhere `comptafiscaventisax`
 | **Administrateur Ventisax** | `admin` / superuser | Publier le contenu, mettre à jour les taux à chaque loi de finances, gérer comptes et promotions. |
 | **Recruteur / tiers** | anonyme | Vérifier l'authenticité d'un certificat. |
 | **Agent de rédaction (Claude)** | hors application | Produire le contenu FR/EN conforme : sources citées, comptes valides, taux paramétrés. |
+| **Brice, futur comptable en simulation** [N] | `learner` | Après Form 1 et 2, tenir sur pièces la comptabilité et les déclarations d'une entreprise réaliste pendant un an, jusqu'à la DSF, et obtenir un certificat par parcours. |
 
 ### P2. User stories et critères d'acceptation
 
@@ -285,6 +371,97 @@ Format : *En tant que … je veux … afin de …*, suivi des critères d'accept
   - CA : il échoue si un fichier de `reference/` est suivi par git.
 - **US-74 [N] Déploiement par partie.** `deploy.sh` déploie le contenu livré, et l'examen et le certificat de la nouvelle partie deviennent disponibles sans action manuelle.
 
+#### E9 — Formation Simulation Compta et Fisca (Form 3) [N]
+Décisions S1 à S21. Persona principal : Brice. Les CA s'ajoutent à ceux des US héritées réutilisées (US-12, 21, 30, 31, 34, 35, 41, 72, 74).
+
+- **US-80 [N] Programme de la simulation.** En tant qu'apprenant, je vois la formation Simulation et ses parcours afin de choisir l'entreprise que je vais tenir.
+  - CA : formation `simulation`, préfixe `S`, fermée (`is_open=False`) tant que le parcours A n'est pas complet (S1, S20) ;
+  - CA : une partie par parcours livré (A, B3, C, D, B1, B2), avec 7 modules chacune : Création, T1, T2, T3, T4, Inventaire, Passerelle + DSF (S11) ;
+  - CA : le programme affiche « Recommandé après les formations Comptabilité et Fiscalité », sans aucun blocage (S21) ;
+  - CA : la description de chaque partie résume le profil (forme juridique, régime, secteur, ville).
+- **US-81 [N] Dossier d'entreprise.** La première section de chaque parcours présente le profil de l'entreprise fictive, son plan de comptes personnalisé (sous-comptes de trésorerie compris, S19) et la table des taux utiles.
+  - CA : chaque compte du plan personnalisé existe dans `SyscohadaAccount` ;
+  - CA : chaque taux est affiché par `[[param:]]` avec son article ;
+  - CA : le profil du parcours A est Ngono Mode SARL (S17).
+- **US-82 [N] Pièce justificative.** Dans une section ou un énoncé, `[[piece:REF]]` affiche la pièce en HTML : facture, reçu de caisse ou Mobile Money, relevé bancaire ou Mobile Money, bulletin de paie, statuts, bail, avis de douane, fiche de stock, balance, formulaire de déclaration.
+  - CA : rendu FR ou EN selon la langue ; montants entiers en FCFA formatés selon la langue ;
+  - CA : remplacé après bleach, toutes les valeurs échappées ; une référence inconnue devient un `<mark>` signalé (C27) et fait échouer les tests ;
+  - CA : aucun fichier binaire (S5) ; tableau lisible au clavier et au lecteur d'écran (`<table>`, `<caption>`) ;
+  - CA : aucun débordement horizontal de la page à 390 px.
+  - CA (S27) : une facture d'achat ou de vente porte l'identité fiscale complète de l'émetteur (NIU au format de la DGI : M ou P, 12 chiffres, une lettre), son numéro, le client et la référence de facturation électronique de la DGI ; sinon l'import et les tests échouent ;
+  - CA (S27) : toute pièce affichée porte la mention « Document pédagogique fictif ».
+- **US-97 [N] Démarche auprès d'un organisme (S28).** Avant chaque décision d'un organisme extérieur, l'apprenant voit une pièce « démarche » : où aller, pour quoi, avec quels documents, ce qu'il obtient, et sur quel texte officiel.
+  - CA : organisme, objet, documents à fournir, document obtenu et source sont tous obligatoires ;
+  - CA : les documents à fournir s'affichent en liste, la source en badge cité (`[[cgi:]]`, etc.) ;
+  - CA : une démarche dont la source manque dans `reference/` n'est pas rédigée (U21).
+- **US-83 [N] Saisie d'une pièce.** Je passe l'écriture d'une pièce dans une question `journal`.
+  - CA : la clé de correction est l'écriture du livre officiel pour cette pièce (US-93) ;
+  - CA : en quiz, la correction affiche l'écriture officielle ; en examen, rien (US-31) ;
+  - CA : la pièce est visible dans l'énoncé, en quiz comme en examen.
+- **US-84 [N] Balance officielle du mois.** Chaque mois commence par la balance officielle arrêtée à la fin du mois précédent.
+  - CA : cette balance est générée par l'outil à partir du livre officiel, jamais saisie à la main ;
+  - CA : rien ne dépend des réponses de l'apprenant (S2).
+- **US-85 [N] Échéance du 15.** Je calcule les montants de la déclaration du mois précédent.
+  - CA : une question numérique par case clé : TVA collectée, TVA déductible, TVA due ou crédit, précompte sur achats subi, acompte d'IS (minimum de perception majoré des CAC), retenues sur salaires (IRPP, CAC, CFC, RAV, TDL), retenue subie imputée (S10, S12) ;
+  - CA : les obligations portent leur nom du CGI, jamais « VSD » (S7) ;
+  - CA : en quiz, la correction affiche le formulaire rempli en lecture seule (`[[piece:]]` de type déclaration) ;
+  - CA : chaque réponse est égale au calcul de l'outil sur le livre officiel (US-93).
+- **US-86 [N] Rapprochement mensuel.** À la fin du mois, je rapproche le relevé bancaire et le relevé Mobile Money du compte correspondant.
+  - CA : questions numériques sur les écarts, puis `journal` pour les régularisations (frais en 631, virements internes par 585) (S19).
+- **US-87 [N] Création au jour 1.** Je comptabilise l'apport du capital, son dépôt en banque et les frais de constitution.
+  - CA : les frais de constitution sont passés en charges par nature, et une question piège sur l'ancienne immobilisation en frais d'établissement est corrigée avec explication (S6).
+- **US-88 [N] Travaux d'inventaire.** En décembre, je valorise le stock final (fiches CMUP, contraste en PEPS pour A, S18), je calcule les amortissements au prorata temporis, les dépréciations, les provisions et les régularisations.
+  - CA : les calculateurs `stock` et `amortissement` sont proposés dans les sections, non notés (US-26) ;
+  - CA : les écritures d'inventaire figurent dans le livre officiel.
+- **US-89 [N] Passerelle et DSF.** Après la clôture, je passe du résultat comptable au résultat fiscal et je remplis les cases clés de la DSF.
+  - CA : pour A, six éléments, chacun déclenché par une pièce de l'année (S21) ;
+  - CA : l'IS est comparé au minimum de perception, sous déduction des acomptes et précomptes ;
+  - CA : la DSF se limite au bilan, au compte de résultat, au tableau de passage et à la liquidation de l'IS (S12), avec une échéance fixée par le centre de rattachement (CGI art. 18 (1) : 15 mars, 15 avril ou 15 mai 2027).
+- **US-90 [N] Parcours à l'IGS (B1, B2).** Je tiens le SMT (recettes et dépenses) d'un établissement à l'IGS.
+  - CA : uniquement des questions numériques, sans `journal` ni DSF normale (S14) ;
+  - CA : IGS et précompte de 5 % subi, avec leurs articles.
+- **US-91 [N] Bascule de B2.** Je constate le dépassement du seuil de 50 M sur l'année 2026, puis je prépare l'apport du fonds à une SARL au réel au 1er janvier 2027 et son bilan d'ouverture.
+  - CA : aucun changement de régime en cours d'année (S13, art. 93 quater).
+- **US-92 [N] Retenues subies par D.** Je comptabilise une prestation en 706, avec la TVA exigible à l'encaissement, et la retenue de 5,5 % subie sur un client public, imputée sur l'acompte.
+  - CA : une pièce de contraste à 11 % (entreprise hors fichier) est expliquée (S10).
+- **US-93 [N] Livre officiel et garde-fous (agent de rédaction).** Chaque parcours a un livre officiel `content/simulation/<parcours>/ledger.json` : écritures datées, chacune rattachée à une pièce.
+  - CA : `pytest` échoue si une écriture n'est pas équilibrée ou cite une pièce ou un compte inconnu ;
+  - CA : il échoue si une pièce n'est utilisée par aucune écriture ni aucune question ;
+  - CA : il échoue si une question `journal` diffère de l'écriture officielle de sa pièce ;
+  - CA : il échoue si une balance ou une déclaration diffère du calcul de l'outil ;
+  - CA : il échoue si le bilan de clôture n'est pas équilibré, ou si le résultat du compte de résultat diffère de celui du bilan.
+- **US-94 [N] Examen et certificat par parcours.** Chaque parcours a son examen : 70 %, 3 tentatives, 60 min, **4 questions tirées par module** (S11), soit 28 questions.
+  - CA : `questions_per_module` vient du manifeste ;
+  - CA : le certificat nomme le parcours (« Simulation, parcours A : boutique de vêtements »).
+- **US-95 [N] Taux de la simulation.** `parametres.csv` contient, avec leur article, les taux absents aujourd'hui : précompte sur achats (2, 5, 10 %), retenue de 5,5 % sur la commande publique, retenue de 5 % de l'art. 92 bis, droits d'accises spécifiques sur la bière, IGS, IRCM.
+  - CA : une clé sans article fait échouer l'import ;
+  - CA : les montants CNPS ne sont jamais calculés, ils figurent sur le bulletin (S15).
+- **US-96 [N] Garde-fous de vocabulaire.** `pytest` échoue si le contenu de la simulation contient « VSD », ou présente le « régime simplifié » ailleurs que pour expliquer sa suppression (S7, S9).
+
+#### Traçabilité E9 (vérifiée par `simulation/tests/test_prd_traceability.py`)
+Chaque story de E9 est citée par au moins un fichier de test, et chacun des 45 critères d'acceptation (« - CA ») est associé, dans l'ordre du PRD, à un test nommé (table `CRITERIA`) ; un critère ou une story ajouté sans test, ou un test renommé, fait échouer `pytest`. Chaque règle est aussi cassée par `tools/mutation_sweep.py`.
+
+| Story | Fichiers de test (`simulation/tests/`) |
+|---|---|
+| US-80 | `test_simulation_content_rules`, `test_simulation_manifest`, `test_simulation_prd_criteria` |
+| US-81 | `test_simulation_content_rules` |
+| US-82 | `test_import_simulation`, `test_piece_model`, `test_piece_rendering`, `test_real_world_pieces` |
+| US-83 | `test_piece_in_questions` |
+| US-84 | `test_ledger_tool`, `test_simulation_content_rules` |
+| US-85 | `test_import_simulation`, `test_ledger_tool`, `test_piece_in_questions`, `test_simulation_content_rules` |
+| US-86 | `test_ledger_tool`, `test_simulation_content_rules` |
+| US-87 | `test_simulation_content_rules` |
+| US-88 | `test_simulation_content_rules`, `test_simulation_prd_criteria` |
+| US-89 | `test_ledger_tool`, `test_simulation_calculations`, `test_simulation_content_rules`, `test_simulation_prd_criteria` |
+| US-90 | `test_simulation_calculations`, `test_simulation_content_rules`, `test_simulation_parameters` |
+| US-91 | `test_simulation_content_rules` |
+| US-92 | `test_simulation_calculations`, `test_simulation_content_rules` |
+| US-93 | `test_import_simulation`, `test_ledger_tool`, `test_simulation_content_rules` |
+| US-94 | `test_certificate_parcours`, `test_import_simulation` |
+| US-95 | `test_simulation_content_rules`, `test_simulation_parameters` |
+| US-96 | `test_simulation_content_rules` |
+| US-97 | `test_real_world_pieces` |
+
 ### P3. Modèle logique des données
 
 Légende : `*` = champ traduit (modeltranslation, FR/EN) ; `PK` = clé ; `FK` = clé étrangère ; `U` = contrainte d'unicité. Toutes les entités exposées par URL portent un `public_id` UUID.
@@ -332,6 +509,26 @@ Les citations `[[cgi:]]`, `[[syscohada:]]` et `[[guide:]]` ne sont **pas** stock
 - **Numérotation M1…Mn** : continue sur toute la formation.
 - **Score `journal`** : `max(0, (justes − pénalité × en_trop) / attendues)`, avec pénalité par défaut de 0,5 (à confirmer, U1).
 
+#### P3.4 Formation Simulation [N] (S1 à S21)
+
+| App | Entité | Champs | Relations / contraintes / règles |
+|---|---|---|---|
+| simulation | **Piece** (pièce justificative) | `public_id`, `ref` U (ex. `S-A-01-004`), `kind` ∈ {facture_achat, facture_vente, recu_caisse, recu_momo, releve_bancaire, releve_momo, bulletin_paie, statuts, bail, avis_douane, fiche_stock, balance, declaration}, `issued_on` (date), `title*`, `payload` (un seul JSON, textes bilingues `{fr, en}` et montants communs : `fields` [{label, value}], `lines` [{label, qty, unit_price, amount} ou {label, debit, credit}], `totals` [{label, role ∈ {ht, tax, ttc}, amount}]) | FK Partie (le parcours). Importée de `content/simulation/<parcours>/pieces.json`, de façon idempotente. Validation : la somme des lignes donne le HT, HT + taxes = TTC, montants entiers en FCFA, quantité × prix unitaire = montant, débit = crédit pour une balance, `ref` préfixée `S-` (`Piece.clean`). La date dans l'exercice reste à contrôler (U19) |
+| assessments | **Question** (modifiée) | + M2M **`pieces`** | Les pièces citées par `[[piece:]]` dans l'énoncé ; permet de lister les questions touchées quand une pièce change |
+| courses | **Formation** (modifiée) | `icon` + une 3e valeur (U14) | `prefix` du manifeste = `S` (C25) |
+| assessments | **Assessment** (inchangée) | `questions_per_module` = 4 pour la simulation | Valeur lue dans le manifeste (`exam.questions_per_module`, U15) |
+| referentiel | **FiscalParameter** (données) | nouvelles clés `precompte.*`, `retenue.*`, `accises.biere_*`, `igs.*`, `ircm.*` | Chaque clé a son `source_article` (US-95) |
+
+**Non stockés en base, contrôlés par les tests** :
+- **Livre officiel** `content/simulation/<parcours>/ledger.json` : écritures `{date, piece, journal, lignes [{account, side, amount, label_fr, label_en}]}`, plus le bilan d'ouverture de B2 en 2027. C'est l'unique source de vérité comptable du parcours.
+- **Outil** `tools/simulation/ledger.py` (Python pur, sans dépendance) : il calcule les balances mensuelles, les déclarations du 15 (avec `referentiel.calculs`), le tableau de passage, l'IS et les cases clés de la DSF. Il génère les pièces `balance` et `declaration`, et les tests vérifient qu'elles sont à jour.
+
+**Règles dérivées (Simulation)** :
+- **Balance officielle au début du mois M** : écritures du livre officiel datées avant le 1er du mois M.
+- **Déclaration du 15 du mois M+1** : fonction des écritures du mois M et des paramètres 2026.
+- **Résultat fiscal** : résultat comptable + réintégrations − déductions ; IS dû = max(IS calculé, minimum de perception) − acomptes − précomptes et retenues imputables.
+- **Aucune donnée comptable par apprenant** (S2) : les réponses vivent uniquement dans `AttemptQuestion`, comme pour les autres formations.
+
 ### P4. Exigences non fonctionnelles
 
 | ID | Exigence | Seuil |
@@ -344,6 +541,9 @@ Les citations `[[cgi:]]`, `[[syscohada:]]` et `[[guide:]]` ne sont **pas** stock
 | NFR-06 | Robustesse examen | aucune réponse perdue après coupure réseau (sauvegarde par clic, reprise) |
 | NFR-07 | Dépendances de production | exactement 5, toute nouvelle dépendance exige une décision consignée |
 | NFR-08 | Performance de page | page de section < 300 ms côté serveur sur PythonAnywhere gratuit (hors démarrage à froid) |
+| NFR-09 | Pièces à 390 px | aucun débordement horizontal de la page ; un tableau large défile dans son propre conteneur, accessible au clavier |
+| NFR-10 | Outils de la simulation | `tools/simulation/` en Python standard, sans nouvelle dépendance (NFR-07), déterministe (même livre, mêmes sorties) |
+| NFR-11 | Volume de la simulation | `content/simulation/` < 5 Mo par parcours ; disque total toujours < 150 Mo (NFR-01) |
 
 ### P5. Definition of Done (critères stricts)
 
@@ -372,6 +572,18 @@ Une US, un lot ou un déploiement n'est **terminé** que si **tous** les points 
 2. Un parcours complet réussi en local avec un compte de test : sections, quiz, examen d'au moins 70 %, badge, certificat PDF, puis `/verify/<uuid>/`. À faire en FR, puis en EN.
 3. Rendu vérifié à 390 px et à 1280 px, en mode clair et en mode sombre, avec capture Playwright des écrans section, quiz `journal` et résultat.
 
+**DoD-Parcours** (avant de publier un parcours de la simulation, en plus de DoD-Contenu et de DoD-Partie)
+0. Le profil de l'entreprise a été validé par l'utilisateur avant la rédaction, et la validation est consignée dans le journal (S20). Le parcours A est déjà validé (S17).
+1. Les 7 modules sont présents ; chaque mois contient 8 à 12 pièces datées (S4).
+2. Le livre officiel est équilibré écriture par écriture ; chaque écriture cite une pièce existante ; chaque pièce sert au moins une fois (US-93).
+3. Chaque question `journal` est identique à l'écriture officielle de sa pièce.
+4. Les balances, les déclarations du 15, le tableau de passage et les cases de la DSF sont générés par `tools/simulation/ledger.py`, à jour et vérifiés par les tests.
+5. Le bilan de clôture est équilibré ; le résultat du compte de résultat est égal à celui du bilan ; pour B2, le bilan d'ouverture du 1er janvier 2027 est équilibré.
+6. Chaque taux utilisé est une clé de `parametres.csv` avec son article (US-95) ; aucun montant CNPS n'est calculé (S15).
+7. Les garde-fous de vocabulaire (US-96) et de droits d'auteur (US-73) sont verts.
+8. Parcours complet réussi en local, en FR puis en EN : sections, pièces, quiz, examen de 28 questions ≥ 70 %, certificat qui nomme le parcours, `/verify/<uuid>/`.
+9. Capture Playwright à 390 px et à 1280 px, en mode clair et en mode sombre, d'une facture, d'un relevé Mobile Money, d'une balance et d'un formulaire de déclaration.
+
 **DoD-Déploiement** (chaque mise en production)
 1. Fusion `develop` → `main` ; `deploy.sh` s'exécute sans erreur sur `~/comptafiscaventisax`.
 2. Test de fumée en production avec un compte de test jetable : connexion, section, quiz, langue EN.
@@ -382,7 +594,7 @@ Une US, un lot ou un déploiement n'est **terminé** que si **tous** les points 
 
 **DoD-Documentation**
 1. AGENTS.md est mis à jour (décisions, écarts, US) ; CLAUDE.md est régénéré comme miroir dans le même commit.
-2. Chaque nouvelle décision d'architecture est ajoutée à la grille C avec sa justification.
+2. Chaque nouvelle décision d'architecture est ajoutée à la grille C (plateforme, Form 1 et 2) ou à la grille S (simulation), avec sa justification.
 
 ### P6. Questions ouvertes (incertitudes d'architecture)
 
@@ -404,6 +616,27 @@ Une US, un lot ou un déploiement n'est **terminé** que si **tous** les points 
 - **U11 PCG vers SYSCOHADA** : traitements sans équivalent 1-1 (emballages, frais d'établissement, provisions réglementées, TFT), à arbitrer chapitre par chapitre en suivant le Guide.
 - **U12 OCR bruité** de `fiscalite.pdf` : les exemples doivent être reconstruits, sans impact sur le plan.
 - **U13 Tests hérités spécifiques à l'électronique** : figures, unités électriques, `content_rules.py`, `test_two_formations.py`. Il faut les supprimer ou les réécrire sans perdre la couverture plateforme.
+
+Questions ouvertes de la simulation, à trancher dans `docs/form3-conception.md` avant le premier code :
+- **U14 Icône** — *résolue, validée le 2026-10-30* : icône Tabler `briefcase` (mallette), 3e valeur de `Formation.icon` (migration `courses 0010`).
+- **U15 Manifeste** — *résolue* : une partie du manifeste peut déclarer `exam.questions_per_module`, `pieces` (chemin de `pieces.json`) et `ledger` (chemin de `ledger.json`).
+- **U16 Volume minimal** — *validé le 2026-10-30* : le minimum de US-72 (12 questions d'examen, 8 de quiz par module) vaut aussi pour la simulation, B1 compris, et un test le vérifie ; soit 140 questions par parcours et environ 840 au total. Un minimum réduit pour B1 serait une nouvelle décision, et le coût d'import reste à mesurer (U8).
+- **U17 Pièces dans les énoncés** — *résolue* : l'énoncé reste du texte échappé ; les filtres `prompt_text` et `prompt_pieces` (`simulation/templatetags/acad_pieces.py`) retirent la balise et affichent les pièces sous l'énoncé, en tentative comme dans la correction du quiz. L'espace formateur n'affiche que le texte.
+- **U18 Identifiants fictifs** : format des NIU, RCCM et numéros Mobile Money, visiblement fictifs, pour ne jamais coïncider avec un vrai contribuable ou abonné.
+- **U19 Articles à vérifier** — *résolue (S22 à S26 validées le 2026-10-30)* :
+  - TVA des services exigible à l'encaissement : art. 134 (1) b ;
+  - échéance de la DSF : art. 18 (1), 15 mars (DGE), 15 avril (CIME), 15 mai (centre de fiscalité locale) ; le « 15 mars » du brief ne vaut que pour la DGE (correction S22, validée) ;
+  - l'art. 7 ne plafonne pas la valeur d'un véhicule de tourisme : il fixe des taux maximaux (25 % pour le matériel automobile léger utilisé en ville) ; il ne prévoit pas de limite de « cadeaux », mais la déduction des dons aux organismes d'intérêt général dans la limite de 0,5 % du chiffre d'affaires (5 % pour le sport d'élite) (correction S23 de la passerelle S21, validée) ;
+  - IRCM : art. 70 ; IGS : art. C 39 et C 40 (10 classes, plafond exclu, moitié pour un Centre de Gestion Agréé) ;
+  - seuils du SMT : absents de `reference/` (le Guide nomme le SMT sans en donner les seuils, l'AUDCIF n'y est pas) ; ils ne sont ni codés ni inventés (S26, validée) ;
+  - seuils de rattachement au CIME : fixés par décision ministérielle (arrêté du 17 décembre 2013, art. 3), absente des sources ; chaque parcours déclare donc son `centre_impots`.
+- **U20 TVA en attente** (parcours D, TVA à l'encaissement) — *résolue (S24, compte 471, validé le 2026-10-30)* : ni le plan révisé ni le Guide de `reference/` ne prévoient de compte de TVA en attente. Le parcours déclare `compte_tva_attente`, et les tests vérifient qu'il est soldé à l'encaissement du montant crédité en 4432 ; le compte retenu est 471.
+- **U21 Sources des démarches hors fiscalité** (S28) — *close le 2026-10-30, recherche par Playwright sur les sites officiels ; la démarche MTN MoMo, sans liste publiée, n'est pas rédigée, conformément au 3e critère de US-97 ; décision validée par l'utilisateur le 2026-10-30* :
+  - trouvés et cités par `[[source:clé]]` (registre `content/referentiel/sources.csv`, copies hors git dans `reference/officiel/`) : pièces à fournir au CFCE pour une SARL ou un établissement, et documents délivrés (MINFI) ; administrations compétentes par formalité (MINFI) ; rattachement CIME et DGE (DGI) ; AUDCIF (OHADA) ;
+  - CNPS : FAQ officielle récupérée par sa copie archivée (web.archive.org, 10 juillet 2025), cnps.cm étant injoignable le 2026-10-30 : dossiers d'immatriculation employeur et travailleur (`[[source:cnps-faq]]`) ; elle cite le décret n° 2016/072 (pension : 8,4 %, dont 4,2 % salarial, plafond 750 000 FCFA). S15 reste appliquée : la plateforme ne calcule pas la CNPS, les montants viennent du bulletin ;
+  - banque et Orange Money : pièces publiées par Société Générale Cameroun (`[[source:sg-cm-compte-entreprise]]`) et Orange Cameroun (`[[source:orange-om-partenaire]]`) ; elles servent de référence aux démarches, mais les pièces de la simulation restent émises par des organismes fictifs (« Banque X ») avec la mention « document pédagogique fictif » ;
+  - MTN MoMo : aucune liste de pièces publiée pour le Cameroun (momo.mtn.cm injoignable, archives sans page marchand, page « MoMo Business » de momo.mtn.com générique) ; la démarche MTN n'est pas rédigée, seule celle d'Orange Money l'est ; les frais du CFCE (41 500 et 13 125 FCFA) datent d'une page de 2022 environ et seront marqués « à vérifier » ;
+  - état initial : `reference/` ne contient que le CGI, le Guide et le plan SYSCOHADA. Les démarches au greffe (RCCM : AUSCGIE, AUDCG), à la CNPS (code de sécurité sociale), au notaire ou auprès des banques et opérateurs Mobile Money exigent leurs textes officiels ou les listes publiées par ces organismes ; sans eux, la démarche n'est pas rédigée plutôt qu'inventée. Les démarches fiscales (immatriculation art. L 1, déclarations, attestations) s'appuient sur le CGI.
 
 ---
 
@@ -440,6 +673,77 @@ Une US, un lot ou un déploiement n'est **terminé** que si **tous** les points 
 | C27 | (U2) Balises remplacées après bleach, dans l'ordre param → cgi → syscohada → guide → calc ; une clé ou un compte inconnu devient un `<mark>` signalé, jamais le texte brut. |
 | C28 | (U4) La paie calcule l'IRPP (art. 29, 34, 69, 71), la CFC (loi 77-10), la RAV et la TDL (art. C 86) ; les cotisations CNPS relèvent du droit social, absent des sources : elles sont saisies, jamais déduites d'un taux inventé. |
 
+## Grill S — Form 3 « Simulation Compta et Fisca » (2026-10-29, clos)
+
+> Brief : simuler sur 12 mois (création, exploitation mensuelle avec échéance fiscale du 15, inventaire, passerelle fiscale et DSF avant le 15 mars) la vie de quatre entreprises camerounaises fictives, à partir de pièces justificatives virtuelles. Livrables demandés : syllabus par phase, scénario de janvier de la boutique de vêtements (pièces et corrigé), matrice plan de comptes et taux 2026.
+> Rien n'est implémenté tant que le grill n'est pas clos. Chaque réponse devient une décision S-xx.
+
+Faits établis avant le grill (vérifiés dans le dépôt et le CGI 2026) :
+- Le brief contredit le hors-scope v1 (« toute autre formation que Comptabilité et Fiscalité »).
+- Form 1 = formation `compta` (5 parties, 29 modules, 174 h) ; Form 2 = formation `fisca` (3 parties).
+- Le CGI 2026 traite le régime simplifié, le précompte sur achats, la retenue de 5,5 % (fait générateur : la facturation de la prestation) et la DSF ; « VSD » n'y figure pas, et aucun taux de 11 % n'y a été trouvé.
+- `parametres.csv` ne contient ni précompte, ni retenue à la source, ni droits d'accises par produit.
+- Le SYSCOHADA révisé n'immobilise plus les frais d'établissement ; le plan contient 4094, 4194 et 2493 (emballages récupérables).
+
+### Tour 1 (frontière)
+
+| # | Question | Recommandation | Réponse |
+|---|---|---|---|
+| S-Q1 | Form 3 devient-elle une 3e formation de la même plateforme (préfixe `S`), ce qui amende le hors-scope v1 ? | Oui, 3e formation `simulation`, préfixe `S`, masquée (`is_open=False`) jusqu'à complétude. | Oui (S1). |
+| S-Q2 | Modèle d'état : les écritures de l'apprenant se propagent-elles (grand livre personnel, erreurs reportées jusqu'à la DSF) ou chaque étape repart-elle de l'état officiel corrigé ? | État officiel à chaque étape : questions `journal` existantes, balance officielle affichée en début de mois ; pas de grand livre par apprenant. | Oui (S2). |
+| S-Q3 | Parcours sectoriels : le brief a deux « A » ; la ligne 3 mêle commerce d'électronique et prestations de clim, avec « 1 enseignant fonctionnaire ». Quelle est la liste exacte, et quel est le rôle du fonctionnaire ? | 4 parcours : A vêtements (SARL, réel) ; B boissons (simplifié) ; C commerce d'électronique et pose de clim (SARL, réel) ; D prestataire clim (Ets, personne physique). Le fonctionnaire est un salarié vacataire (formateur), pas un associé. | Corrigée : le fonctionnaire est associé à 80 %, la gérance est confiée à un tiers non fonctionnaire, et il est formateur vacataire ponctuel. B est revu au tour 2 (S3, S9). |
+| S-Q4 | Volume et ordre : 4 parcours × 12 mois × pièces quotidiennes dépassent les budgets disque et CPU. Quel ordre de livraison, et combien de pièces par mois ? | Parcours A complet d'abord (création → DSF), 8 à 12 pièces datées par mois ; B, C, D ensuite, un par déploiement. | Oui (S4). |
+| S-Q5 | Format des pièces : Markdown, SVG généré en Python ou image/PDF ? | Pièces décrites en JSON structuré et rendues en HTML par une balise `[[piece:ID]]` (facture, reçu Mobile Money, relevé), sans fichier binaire. | Oui (S5). |
+| S-Q6 | Jour 1 « frais d'établissement » : charges de l'exercice (SYSCOHADA révisé) et piège pédagogique explicite ? | Oui : charges par nature (frais d'acte, enregistrement, honoraires), et le piège de l'ancienne immobilisation est signalé dans le corrigé. | Oui (S6). |
+| S-Q7 | Que désigne « VSD » (absent du CGI 2026) ? | Le retirer et nommer les obligations du CGI : TVA, acompte d'IS (minimum de perception), retenues sur salaires, précompte. | Oui (S7). |
+| S-Q8 | Où vont les trois livrables demandés : document de conception (`docs/`) ou directement en contenu importable (`content/simulation/`) ? | Document de conception `docs/form3-conception.md` à valider d'abord, puis conversion en contenu. | Oui (S8). |
+
+### Tour 2
+
+| # | Question | Recommandation | Réponse |
+|---|---|---|---|
+| S-Q9 | Le régime simplifié a été supprimé par la LF 2026 et remplacé par l'IGS (art. 69, 91, 93 nonies). Quel régime pour le dépôt de boissons ? | SARL au réel. | Trois cas : B1 à l'IGS, B2 de l'IGS à la SARL au réel, B3 SARL au réel (S9). |
+| S-Q10 | Retenues subies par D : 5,5 % (5 % + CAC, clients publics, art. 21 (2)) ; 11 % (10 % + CAC) est réservé aux entreprises absentes du fichier. | 5,5 % au réel, avec une pièce de contraste à 11 %. | Oui (S10). |
+| S-Q11 | Découpage : avec 10 questions tirées par module, l'examen compterait 150 questions. | Une partie par parcours, 7 modules, les mois en sections, 4 questions tirées par module. | Oui (S11). |
+| S-Q12 | Déclarations et DSF : nouveau type de question ou questions numériques ? Quelle étendue pour la DSF ? | Questions numériques sur les cases clés, formulaire en lecture seule ; DSF limitée au bilan, au compte de résultat, au tableau de passage et à l'IS. | Oui (S12). |
+
+### Tour 3
+
+| # | Question | Recommandation | Réponse |
+|---|---|---|---|
+| S-Q13 | Le régime se fixe sur le chiffre d'affaires annuel, sans bascule en cours d'année (art. 93 quater). Comment construire B2 ? | Année 2026 à l'IGS, puis bascule après la clôture vers une SARL au réel au 1er janvier 2027 ; B1 est la même année sous le seuil. | Oui (S13). |
+| S-Q14 | Système comptable de B1 ? | SMT de l'AUDCIF, questions numériques. | Oui (S14). |
+| S-Q15 | Les taux CNPS n'ont pas de source officielle (C28). Comment les traiter ? | Montants CNPS sur le bulletin ; l'apprenant calcule les impôts du CGI. | Oui (S15). |
+| S-Q16 | Vacations du fonctionnaire de C ? | Honoraires (632), avec la retenue de 5 % de l'art. 92 bis si la SARL figure sur la liste ; dividendes et IRCM. | Oui (S16). |
+
+### Tour 4
+
+| # | Question | Recommandation | Réponse |
+|---|---|---|---|
+| S-Q17 | Profil de la SARL A ? | Ngono Mode SARL, Douala-Akwa, capital de 5 M, chiffre d'affaires d'environ 90 M, 3 salariés, une importation en T3. | Oui (S17). |
+| S-Q18 | Système d'inventaire de A ? | Intermittent, avec des fiches CMUP et un exercice de contraste en PEPS. | Oui (S18). |
+| S-Q19 | Trésorerie ? | Un sous-compte par moyen de paiement, frais en 631, virements internes en 585, rapprochement mensuel. | Oui (S19). |
+| S-Q20 | Ordre de livraison ? Quand fixer les profils de B, C et D ? | A → B3 → C → D → B1 → B2 ; chaque profil est validé au début de son parcours. | Oui (S20). |
+| S-Q21 | Passerelle de A ? Prérequis ? | Jeu standard de 6 éléments ; prérequis indicatif après Form 1 et 2. | Oui (S21). |
+
+Frontière vide : grill clos. Les décisions S1 à S21 sont reportées dans GOALS (1.6, 1.7, 2 et 3), en attente de validation.
+
+### Décisions après vérification des sources (2026-10-30)
+Ce sont des corrections imposées par le CGI et des choix par défaut, validés par l'utilisateur le 2026-10-30 (« garde les réponses par défaut »).
+
+| # | Décision | Statut |
+|---|---|---|
+| S22 | La DSF est datée selon le centre de rattachement (CGI art. 18 (1) : 15 mars DGE, 15 avril CIME, 15 mai centre de fiscalité locale) et non toujours au 15 mars. | Validée (2026-10-30) |
+| S23 | Passerelle de A : « amortissement d'une voiture légère au-delà du taux fiscal maximal de 25 % » et « dons au-delà de 0,5 % du CA » remplacent le plafond du véhicule et les cadeaux (CGI art. 7). | Validée (2026-10-30) |
+| S24 | TVA à l'encaissement de D : compte d'attente 471 « Débiteurs et créditeurs divers », soldé en 4432 à l'encaissement (U20). | Validée (2026-10-30) |
+| S25 | Ngono Mode SARL relève du CIME ; DSF 2026 au plus tard le 15 avril 2027. Confirmé par la DGI : CIME de 50 millions à 3 milliards de CA, DGE au-delà (impots.cm, 2026-10-30) ; chaque parcours déclare son `chiffre_affaires_vise`, et le centre déclaré doit lui correspondre. | Validée, confirmée par la source |
+| S26 | Un parcours à l'IGS déclare `systeme_comptable: "smt"` et reste sous le seuil du SMT de l'AUDCIF art. 13 (négoce sous 60 millions, artisanat 40, services 30), trouvé le 2026-10-30 au JO OHADA du 15 février 2017. | Validée, seuils codés |
+| S27 | Factures au style camerounais réel (identité fiscale complète, NIU au format DGI, référence de facturation électronique DGI, CGI art. 143 (1) b) ; entreprises fictives, mention « document pédagogique fictif » sur chaque pièce. | Demande de l'utilisateur, 2026-10-30 |
+| S28 | Décisions d'organismes extérieurs décrites en pièces « démarche » (organisme, objet, documents à fournir, document obtenu, source officielle) pour être refaites en réalité. | Demande de l'utilisateur, 2026-10-30 |
+| S29 | Nouveau parcours E, livré juste après A : SARL à l'IGS de prestations de climatisation et froid et de vente de matériel ; gérant 20 %, fonctionnaire 80 % ; CA visé sous 30 millions (IGS et SMT). | Validée (2026-11-01) |
+| S30 | Le fonctionnaire travaille pour la SARL comme vacataire payé en honoraires (632), jamais comme salarié (statut général de la fonction publique). | Validée (2026-11-01) |
+| S31 | Capital minimal de 100 000 FCFA (loi n° 2016/014 art. 2) ; le fonctionnaire finance le démarrage, environ 1 500 000 FCFA au total, en compte courant d'associé (4621). | Validée (2026-11-01) |
+
 ## Journal d'implémentation
 
 ### 2026-10-28 — Socle backend (Lot 0), en TDD, non commité
@@ -475,3 +779,91 @@ Une US, un lot ou un déploiement n'est **terminé** que si **tous** les points 
 - Couverture de toutes les stories du PRD par le balayage (47 sur 47) : US-51, vrai défaut, corrigé (le détail d'une tentative n'affichait rien pour une écriture `journal`) ; tests ajoutés pour US-11 (examen et langues du programme, mutation jusque-là non détectée) et US-60 (édition FR/EN dans le back-office) ; règle US-27 (format des montants des schémas). L'outil compare désormais en LF (copie de travail parfois en CRLF sous Windows) et restaure les octets d'origine.
 - Tests : 726 verts ; 70 mutations, toutes détectées sur l'état final (`f5c25ba`).
 - Reste : le premier déploiement (skill `deploy`) ; il exige que l'utilisateur se connecte lui-même à PythonAnywhere et renseigne le `.env` du serveur (clé secrète, mot de passe d'application Gmail).
+
+### 2026-10-29 — Socle backend de la formation Simulation (Form 3), en TDD, non commité
+Chaque règle a été écrite après un test rouge, puis vérifiée par mutation.
+- US-82, modèle `Piece` (app `simulation`, migration `0001_piece`) :
+  - validation arithmétique (`Piece.clean`, `payload_errors`) ;
+  - rendu `[[piece:REF]]` après bleach, valeurs échappées, langue courante, référence inconnue en `<mark class="piece-missing">` ;
+  - CSS NFR-09 (défilement dans le cadre).
+- Import :
+  - pièces de `pieces.json`, de façon idempotente, une pièce incohérente annulant tout l'import ;
+  - `Question.pieces` (migration `assessments 0010`) renseigné depuis l'énoncé, une pièce inconnue annulant l'import ;
+  - `exam.questions_per_module` lu dans le manifeste (US-94, U15).
+- US-83 (U17) : pièce affichée sous l'énoncé pendant la tentative et dans la correction du quiz ; balise retirée dans l'espace formateur.
+- US-95 :
+  - un taux sans article est refusé par `import_parameters` ;
+  - 8 taux ajoutés à `parametres.csv` et vérifiés dans le CGI 2026 : précompte de 2, 5 et 10 % (art. 21 (3)), retenue sur la commande publique (art. 21 (2)), retenue sur honoraires (art. 92 bis), accises sur la bière de 65 et 33 cl (art. 142 (9)), IRCM (art. 70).
+  - Les tarifs IGS ne sont pas encore ajoutés (U19).
+- US-93, US-84, US-85, US-89 : outil `tools/simulation/ledger.py`, en Python standard :
+  - contrôle des écritures, pièces inutilisées, balance avant une date et pièce `balance` générée ;
+  - déclaration du 15 (TVA avec crédit reporté, acompte d'IS au minimum de perception CAC compris, précompte 4492 imputé, retenues 447) ;
+  - résultat comptable, passerelle, cohérence des questions `journal` avec le livre officiel.
+- Garde-fous de contenu (`scan_content`, préfixe `S`) :
+  - livre officiel équilibré, pièces cohérentes et toutes utilisées ;
+  - clé `journal` égale à l'écriture officielle, balances publiées égales au calcul ;
+  - réponses de déclaration (`declaration: {period, field}` dans `questions.json`) égales au calcul de l'outil ;
+  - vocabulaire « VSD » et « régime simplifié » (US-96).
+- Écarts par rapport au PRD :
+  - un seul `payload` bilingue au lieu de `payload_fr` et `payload_en`, pour ne jamais dupliquer les montants ;
+  - la balise `[[piece:]]` est remplacée après `[[calc:]]`, en fin de pipeline (C27 étendu) ;
+  - US-94, le certificat affiche déjà « Formation : Partie », le parcours est donc nommé par le titre de sa partie, sans code nouveau ;
+  - US-80 : icône `briefcase` retenue pour régler U14, validée le 2026-10-30.
+- i18n : chaînes EN ajoutées, `makemessages` et `compilemessages` à jour.
+- Stories restantes, ajoutées après un contrôle de complétude, chacune en TDD :
+  - US-80 : `manifest_problems` exige pour le préfixe S l'icône `briefcase`, un prérequis FR et EN, 7 modules par parcours et `exam.questions_per_module` = 4 ;
+  - US-81 : la première section d'un parcours (dossier d'entreprise) affiche ses taux par `[[param:]]` et son plan par `[[syscohada:]]`, en FR et en EN ;
+  - US-86 : `ledger.account_balance` et `ledger.reconciliation_gap` ; une question `rapprochement: {account, date[, releve]}` attend le solde comptable ou l'écart avec le relevé ;
+  - US-87 : les frais portés par une pièce `statuts` ne sont jamais débités en classe 2 ;
+  - US-88 et US-92 : une question `calcul: {fonction, args, resultat}` attend le résultat d'une formule de `referentiel.calculs` (liste fermée) ; nouvelle formule `retenue_source` (5 % + CAC = 5,5 % ; 10 % + CAC = 11 %, CGI art. 21 (2)) ;
+  - US-92 : avec `tva_encaissement`, le compte 4432 n'est crédité que sur une pièce de règlement ;
+  - US-90 et US-91 : `regime` ∈ {reel, igs, igs_puis_reel} ; à l'IGS, ni question `journal` ni compte de TVA ; B2 n'a en 2027 que des écritures du 1er janvier (bilan d'ouverture).
+- Clés de manifeste ajoutées par partie : `pieces`, `ledger`, `exam`, `regime`, `tva_encaissement`. Clés de question ajoutées : `declaration`, `rapprochement`, `calcul`.
+- Critères d'acceptation restants, après un second contrôle de complétude, chacun en TDD :
+  - US-83 : en examen, ni écriture officielle ni formulaire corrigé ; pendant la tentative, seules les pièces de l'énoncé s'affichent ;
+  - US-85 : la correction du quiz affiche les pièces citées par l'explication (formulaire rempli, filtre `explanation_pieces`) ; l'import relie aussi ces pièces, et une pièce inconnue de l'explication annule l'import ;
+  - US-87 : un parcours qui a des frais de constitution porte une question `piege: "frais_etablissement"` ;
+  - US-88 : toute dotation calculée par une question figure au 31 décembre dans le livre officiel (débit 681) ;
+  - US-89 : `ledger.corporate_tax` retient le plus élevé de l'IS et du minimum de perception (`referentiel.calculs.impot_societes`), impute les acomptes et sépare l'excédent ;
+  - US-90 : le dossier d'un parcours à l'IGS cite `[[param:precompte.taux_igs]]` et `[[cgi:art. 93 quater]]` ; les tarifs de l'IGS restent à vérifier (U19) ;
+  - US-95 : aucune clé `cnps.*` n'est admise dans `parametres.csv` ;
+  - US-80 : la description FR et EN de chaque parcours cite son régime ;
+  - US-81 : le dossier du parcours A présente Ngono Mode SARL, en FR et en EN ;
+  - US-94 : la vérification publique et le PDF nomment « Formation : Parcours » ; ce comportement existait déjà et il est prouvé par mutation.
+- `tools/mutation_sweep.py` accepte un filtre par préfixe de story ; 51 mutations de la simulation, toutes détectées.
+- Troisième contrôle de complétude, en TDD :
+  - US-90 (U19) : `referentiel.calculs.igs_annuel` (art. C 40 : plafond de classe exclu, moitié pour un Centre de Gestion Agréé, réel à partir de 50 000 000) et 20 paramètres `igs.classeN_plafond` et `igs.classeN_montant`, chacun avec son article ; formule ouverte aux questions `calcul` ;
+  - US-88 : le stock final valorisé par une question (CMUP ou PEPS) figure au 31 décembre au débit d'un compte 3 ;
+  - US-89 : une question `calcul` sur `impot_societes` est contrôlée, minimum de perception compris ;
+  - U16 : un test vérifie que les modules de la simulation sont soumis au minimum de US-72 ;
+  - US-73 et US-96 revérifiés par mutation ; 15 mutations de ce passage, toutes détectées.
+- Balayage complet du 2026-10-30 : 121 mutations (plateforme et simulation), toutes détectées ; les stories plateforme [N] (US-14, 15, 23 à 28, 34 à 36, 61 à 63, 70 à 74) sont donc revérifiées.
+- Quatrième contrôle de complétude, en TDD, après vérification des sources (U19, U20) :
+  - 4 paramètres de l'art. 7 (taux maximal du véhicule léger en ville, limites des dons, seuil du petit matériel) ;
+  - `referentiel.calculs.reintegration_amortissement` et `reintegration_dons`, ouvertes aux questions `calcul` ;
+  - `ledger.tax_return_deadline` (art. 18 (1), art. C 41) ; chaque parcours déclare `centre_impots` et sa déclaration de l'exercice est datée au plus tard à l'échéance ;
+  - `compte_tva_attente` exigé avec la TVA à l'encaissement et soldé à chaque encaissement ;
+  - 7 mutations de ce passage, toutes détectées.
+- Décisions par défaut S24 à S26 codées en TDD : le compte d'attente doit exister au plan, A doit être rattaché au CIME, un parcours à l'IGS déclare le SMT ; 3 mutations, toutes détectées.
+- S27 et S28 (demande de l'utilisateur du 2026-10-30), en TDD : type de pièce `demarche` (migration `simulation 0002`), `realism_errors` (identité de l'émetteur, NIU au format DGI, numéro, client, référence de facturation électronique, champs d'une démarche), rendu de l'identité fiscale, de la liste des documents et de la mention « Document pédagogique fictif », contrôle de réalisme appliqué au contenu ; 6 mutations, toutes détectées. Critères restants du PRD (ordre et ouverture des parcours, calculateurs du module Inventaire, six éléments de la passerelle de A, tableaux de la DSF) : 5 mutations, toutes détectées.
+- Traçabilité E9 automatisée (`test_prd_traceability.py`) : elle a révélé que US-97 n'était citée par aucun test (seulement S28) ; corrigé.
+- Traçabilité au niveau des critères : elle a révélé trois critères sans test, codés en TDD : US-97 (la source d'une démarche cite un texte officiel), US-90 (pas de DSF normale à l'IGS), US-92 (contraste de la retenue à 11 % dans le parcours D) ; 5 mutations, toutes détectées.
+- Sources officielles (demande de l'utilisateur du 2026-10-30, Playwright) : paramètres `smt.*` (AUDCIF art. 13) et `dgi.seuil_cime`, `dgi.seuil_dge` ; `ledger.tax_office` ; balise `[[source:clé]]` et registre `sources.csv` ; contrôles du centre déclaré et du seuil du SMT selon `chiffre_affaires_vise` ; 8 mutations, toutes détectées.
+- Contrôle de contenu : toute balise `[[source:]]` doit figurer au registre `sources.csv` (US-97) ; 1 mutation, détectée.
+- Sources Orange Money et Société Générale Cameroun enregistrées (test d'abord en échec).
+- S19 : sous-comptes propres à l'entité (`sous_comptes` du manifeste, ex. 5521 MTN MoMo, 5522 Orange Money) admis s'ils subdivisent un compte du plan, créés dans `SyscohadaAccount` à l'import, utilisables par le livre officiel et les questions `journal` ; 3 mutations, toutes détectées.
+- Traçabilité renforcée : chaque test associé à un critère d'acceptation doit contenir des assertions et ne pas être ignoré (`test_every_criterion_test_makes_assertions`, mutation détectée). Document de conception : CNPS patronale de la branche pensions (4,2 %, décret n° 2016/072) ajoutée au bulletin et au corrigé ; prestations familiales et accidents du travail non simulés faute de source ; section 4 entièrement réglée.
+- Parcours A rédigé (validation du document de conception par l'utilisateur le 2026-10-30) : générateur déterministe `tools/simulation/build_parcours_a.py` → `content/simulation/` (178 pièces, 157 écritures, 209 questions bilingues, 7 modules, 492 Ko). Tous les montants viennent des outils testés ; les contrôles bloquants ne signalent rien ; `simulation/tests/test_parcours_a_content.py` importe les référentiels et le parcours, publie toutes les questions et vérifie qu'aucune section ne rend de balise inconnue. Chiffres 2026 : CA 90 000 000, résultat avant impôt 34 604 175, IS 9 788 350 (taux réduit de 25 %, art. 17 bis).
+  - correction de l'outil, en TDD : la déclaration du 15 compte la TVA facturée au crédit, la TVA déductible au débit et les retenues au crédit ; le règlement du mois précédent ne la fausse plus (mutation détectée) ;
+  - taux `precompte.taux_loyer` (10 %, CGI art. 87) ajouté en TDD pour le bail ;
+  - écarts au profil S17 : pas d'importation au T3 (droits de douane non sourcés) ; CNPS patronale limitée à la branche pensions (4,2 %, décret n° 2016/072) ; démarche MTN MoMo non rédigée (U21) ;
+  - DoD-Parcours, parcours sur une base jetable avec un compte de test local (2026-11-01) :
+    - point 8 fait : sections et quiz du module 1 en navigateur à 390 px (Playwright) ; six autres quiz et examen de 28 questions répondus par les services de l'application (100 %) ; certificat émis ; vérification publique et PDF servis en FR et en EN, parcours nommé, score affiché ; les 17 sections servies en FR et en EN sans balise inconnue ;
+    - trois défauts d'affichage trouvés à 390 px et corrigés en TDD (NFR-09, mutations détectées) : la grille des questions et celle de la correction s'élargissaient au tableau d'une pièce (débordement de la page) ; l'identité d'une facture écrasait la colonne des valeurs (une lettre par ligne) ;
+    - point 9 fait : 16 captures (facture, relevé Mobile Money, balance, déclaration ; 390 et 1280 px ; clair et sombre) prises avec Chrome sans interface sur les pages réelles, Playwright s'étant déconnecté ; elles ont révélé un en-tête « Libellé » vide sur les pièces sans lignes, retiré en TDD ;
+    - point 1 tenu, en TDD : `pieces_per_month_problems` exige 8 à 12 pièces comptables par mois sur un parcours complet (démarches exclues) ; le parcours A en avait 13 à 17 ; le relevé bancaire mensuel porte désormais le virement au fournisseur, les salaires, le transfert Mobile Money et les échéances de la voiture, et une seule fiche de stock couvre les trois familles (137 pièces, mêmes 157 écritures et mêmes chiffres) ;
+  - la DoD-Parcours du parcours A est remplie ; la formation reste fermée (`open: false`) jusqu'à la décision de l'ouvrir.
+- Parcours E (S29 à S31) : ordre de livraison A → E → B3 → C → D → B1 → B2 codé en TDD ; capital minimum de la SARL (100 000 FCFA, loi n° 2016/014 art. 2), part minimale (5 000) et seuil du notaire facultatif (1 000 000, art. 4) ajoutés en paramètres, en TDD, avec les sources `loi-2016-014` (Assemblée nationale, copie certifiée conforme) et `ohada-auscgie` (art. 311 et 311-1).
+- Parcours E rédigé (2026-11-01) : générateur déterministe `tools/simulation/build_parcours_e.py` (il réutilise `Book` du parcours A, désormais paramétré par la lettre du parcours, et `write_manifest`, qui fusionne la partie dans `formation.json` sans écraser les autres) → `content/simulation/e/` (104 pièces, 87 écritures, 178 questions bilingues, 7 modules, 303 Ko). Froid Équipe Services SARL, Douala-Logbaba, IGS et SMT, centre de fiscalité locale : capital de 100 000 (1013), avance de 1 400 000 en 4621 remboursée par 100 000 de juillet à décembre, outillage en 6056, achats au fournisseur au réel avec TVA non déductible et précompte de 5 % (4492), interventions sans TVA (7061) encaissées par banque et Orange Money (5522), ventes au comptant (7011), vacations du fonctionnaire en 632, rapprochements, fiche de stock (CMUP et contraste PEPS), déclaration annuelle de l'IGS au 15 mars 2027. Chiffres 2026 : CA 18 960 000, IGS 500 000 (art. C 40). Aucune question `journal` (S14) ; contrôles bloquants sans défaut ; `simulation/tests/test_parcours_e_content.py` importe et publie A et E.
+- Tests : 942 verts ; `makemigrations --check` et `check` sans remarque. `check --deploy` n'a pas été relancé (il exige les réglages de production).
+- Reste : DoD-Parcours en navigateur du parcours E (points 8 et 9) ; la formation reste fermée (`open: false`).
