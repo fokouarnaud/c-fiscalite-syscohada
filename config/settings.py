@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     "catalog",
     "certificates",
     "referentiel",
+    "simulation",
 ]
 
 MIDDLEWARE = [

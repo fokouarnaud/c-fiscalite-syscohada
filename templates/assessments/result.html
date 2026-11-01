@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% load i18n acad_i18n %}
+{% extends "base.html" %}{% load i18n acad_i18n acad_pieces %}
 {% block title %}{% translate "Résultat" %}{% endblock %}
 {% block content %}
 {% with a=attempt.assessment %}
@@ -54,9 +54,10 @@
     {% for item in feedback %}
       <section class="panel" aria-labelledby="rq-{{ forloop.counter }}">
         <div class="review-head">
-          <h2 id="rq-{{ forloop.counter }}">{{ forloop.counter }}. {{ item.question.prompt }}</h2>
+          <h2 id="rq-{{ forloop.counter }}">{{ forloop.counter }}. {{ item.question.prompt|prompt_text }}</h2>
           {% if item.score == 1 %}<span class="badge badge-done">{% include "icons/check.svg" %}{% translate "Correct" %}</span>{% elif item.score > 0 %}<span class="badge badge-warn">{% translate "Partiel" %}</span>{% else %}<span class="badge">{% translate "Incorrect" %}</span>{% endif %}
         </div>
+        {{ item.question|prompt_pieces }}
         {% if item.question.qtype == "numeric" %}
           <p>{% translate "Votre réponse :" %} <strong>{% if item.answer_text %}{{ item.answer_text }}{% else %}{% translate "Sans réponse" %}{% endif %}</strong> · {% translate "Valeur attendue :" %} <strong>{{ item.expected_value }}</strong>{% if item.question.tolerance_pct %} (± {{ item.question.tolerance_pct|floatformat:"-2" }} %){% endif %}</p>
         {% elif item.question.qtype == "journal" %}
@@ -102,7 +103,7 @@
         </ul>
         {% if not item.selected_choice_ids %}<p class="muted">{% translate "Sans réponse." %}</p>{% endif %}
         {% endif %}
-        {% if item.explanation %}<p class="explain">{{ item.explanation }}</p>{% endif %}
+        {% if item.explanation %}<p class="explain">{{ item.explanation|prompt_text }}</p>{{ item.question|explanation_pieces }}{% endif %}
       </section>
     {% endfor %}
   </div>

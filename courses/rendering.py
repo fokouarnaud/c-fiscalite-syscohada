@@ -27,6 +27,10 @@ PARAM_TAG = re.compile(r"\[\[param:([a-z0-9_.]{1,80})\]\]")
 CGI_TAG = re.compile(r"\[\[cgi:%s\]\]" % REF)
 ACCOUNT_TAG = re.compile(r"\[\[syscohada:(\d{1,12})\]\]")
 GUIDE_TAG = re.compile(r"\[\[guide:%s\]\]" % REF)
+# Pièces de la simulation (US-82, S5) : seule dans son paragraphe, la balise devient le document entier.
+PIECE_REF = r"(S-[A-Z0-9-]{1,38})"
+PIECE_BLOCK = re.compile(r"<p>\[\[piece:%s\]\]</p>" % PIECE_REF)
+PIECE_TAG = re.compile(r"\[\[piece:%s\]\]" % PIECE_REF)
 
 
 def _parameter(match):
@@ -68,12 +72,52 @@ def _guide(match):
                        gettext("Guide SYSCOHADA, %(ref)s") % {"ref": match.group(1).strip()})
 
 
+def _piece(match):
+    from simulation.models import Piece
+    from simulation.rendering import render_piece
+
+    piece = Piece.objects.filter(ref=match.group(1)).first()
+    if piece is None:
+        return format_html('<mark class="piece-missing">{}</mark>', match.group(1))
+    return render_piece(piece)
+
+
 def render_references(html):
     """Remplace les balises [[param:]], [[cgi:]], [[syscohada:]] et [[guide:]] d'un HTML déjà nettoyé."""
     html = PARAM_TAG.sub(_parameter, html)
     html = CGI_TAG.sub(_cgi, html)
     html = ACCOUNT_TAG.sub(_account, html)
-    return GUIDE_TAG.sub(_guide, html)
+    html = GUIDE_TAG.sub(_guide, html)
+    return WEB_SOURCE_TAG.sub(_web_source, html)
+
+
+# Sources officielles hors CGI et Guide (US-97) : pages publiques du MINFI, de la DGI, de l'OHADA…, enregistrées avec leur
+# adresse et leur date de consultation dans content/referentiel/sources.csv.
+WEB_SOURCE_TAG = re.compile(r"\[\[source:([a-z0-9-]{1,40})\]\]")
+
+
+def official_sources():
+    import csv
+
+    from django.conf import settings
+
+    path = settings.BASE_DIR / "content" / "referentiel" / "sources.csv"
+    if not path.exists():
+        return {}
+    with open(path, encoding="utf-8", newline="") as handle:
+        return {row["key"]: row for row in csv.DictReader(handle, delimiter=";")}
+
+
+def _web_source(match):
+    from django.utils.translation import get_language
+
+    source = official_sources().get(match.group(1))
+    if source is None:
+        return format_html('<mark class="source-missing">{}</mark>', match.group(1))
+    title = source["titre_en"] if (get_language() or "fr").startswith("en") and source["titre_en"] else source["titre_fr"]
+    return format_html('<cite class="source" tabindex="0" title="{} ({})">{} · {}</cite>',
+                       source["url"], gettext("consulté le %(date)s") % {"date": source["consulte_le"]},
+                       source["organisme"], title)
 
 
 def render_markdown(text):
@@ -81,4 +125,6 @@ def render_markdown(text):
     clean = bleach.clean(html, tags=ALLOWED_TAGS, attributes=ALLOWED_ATTRIBUTES, protocols={"http", "https"}, strip=True)
     clean = DIAGRAM.sub(r'<a class="figure-zoom" href="\2">\1</a>', clean)
     clean = render_references(clean)
-    return CALC_MARKER.sub(r'<div class="calc" data-calc="\1"></div>', clean)
+    clean = CALC_MARKER.sub(r'<div class="calc" data-calc="\1"></div>', clean)
+    clean = PIECE_BLOCK.sub(_piece, clean)
+    return PIECE_TAG.sub(_piece, clean)

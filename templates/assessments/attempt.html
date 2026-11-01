@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% load i18n static acad_svg %}
+{% extends "base.html" %}{% load i18n static acad_svg acad_pieces %}
 {% block title %}{% if attempt.assessment.is_exam %}{% translate "Examen" %}{% else %}{% translate "Quiz" %}{% endif %}{% endblock %}
 {% block content %}
 <div data-attempt
@@ -20,7 +20,8 @@
       <form class="panel" id="q-{{ row.question.public_id }}" method="post" action="{% url 'save_answer' attempt.public_id %}"
             hx-post="{% url 'save_answer' attempt.public_id %}" hx-trigger="change" hx-swap="none">{% csrf_token %}
         <fieldset class="question">
-          <legend>{{ forloop.counter }}. {{ row.question.prompt }}</legend>
+          <legend>{{ forloop.counter }}. {{ row.question.prompt|prompt_text }}</legend>
+          {{ row.question|prompt_pieces }}
           {% if row.question.image %}<img src="{{ row.question.image.url }}" alt="" loading="lazy">{% endif %}
           <input type="hidden" name="question" value="{{ row.question.public_id }}">
           <input type="hidden" name="time_spent" value="0" data-time-spent>

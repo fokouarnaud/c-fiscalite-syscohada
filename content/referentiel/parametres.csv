@@ -63,3 +63,44 @@ tdl.tranche8_montant;2026;24000;FCFA;Taxe de développement local annuelle de la
 tdl.tranche9_plafond;2026;500000;FCFA;Taxe de développement local : plafond de la tranche 9 (salaire de base mensuel);Local development tax: bracket 9 ceiling (monthly base salary);CGI art. C 86
 tdl.tranche9_montant;2026;27000;FCFA;Taxe de développement local annuelle de la tranche 9;Yearly local development tax, bracket 9;CGI art. C 86
 tdl.tranche10_montant;2026;30000;FCFA;Taxe de développement local annuelle de la tranche 10;Yearly local development tax, bracket 10;CGI art. C 86
+precompte.taux_reel;2026;2;%;Précompte sur achats des contribuables du régime du réel;Purchase withholding rate for actual-regime taxpayers;CGI art. 21 (3)
+precompte.taux_igs;2026;5;%;Précompte sur achats des contribuables de l'IGS;Purchase withholding rate for IGS taxpayers;CGI art. 21 (3)
+precompte.taux_hors_fichier;2026;10;%;Précompte sur achats des contribuables absents du fichier des contribuables actifs;Purchase withholding rate for taxpayers not on the active taxpayer file;CGI art. 21 (3)
+retenue.commande_publique;2026;5;%;Retenue de l'acompte d'IS sur la commande publique de moins de 5 000 000 FCFA (hors CAC);Withholding of the CIT instalment on public procurement under 5,000,000 FCFA (excluding council cents);CGI art. 21 (2)
+retenue.honoraires;2026;5;%;Retenue sur honoraires, commissions et prestations versés par les organismes habilités;Withholding on fees, commissions and services paid by designated bodies;CGI art. 92 bis
+accises.biere_65cl;2026;75;FCFA;Droit d'accises spécifique par bière de 65 cl;Specific excise duty per 65 cl beer;CGI art. 142 (9)
+accises.biere_33cl;2026;37.5;FCFA;Droit d'accises spécifique par bière de 33 cl;Specific excise duty per 33 cl beer;CGI art. 142 (9)
+ircm.taux;2026;15;%;Taux libératoire de l'IRCM (hors CAC);Final rate of the tax on income from movable capital (excluding council cents);CGI art. 70
+igs.classe1_plafond;2026;500000;FCFA;IGS : plafond exclu de la classe 1 (chiffre d'affaires HT inférieur à 500 000);IGS: excluded ceiling of class 1 (turnover excl. tax);CGI art. C 40 (1)
+igs.classe1_montant;2026;20000;FCFA;IGS annuel de la classe 1;Annual IGS for class 1;CGI art. C 40 (1)
+igs.classe2_plafond;2026;1000000;FCFA;IGS : plafond exclu de la classe 2 (chiffre d'affaires HT 500 000 à moins de 1 000 000);IGS: excluded ceiling of class 2 (turnover excl. tax);CGI art. C 40 (1)
+igs.classe2_montant;2026;30000;FCFA;IGS annuel de la classe 2;Annual IGS for class 2;CGI art. C 40 (1)
+igs.classe3_plafond;2026;1500000;FCFA;IGS : plafond exclu de la classe 3 (chiffre d'affaires HT 1 000 000 à moins de 1 500 000);IGS: excluded ceiling of class 3 (turnover excl. tax);CGI art. C 40 (1)
+igs.classe3_montant;2026;40000;FCFA;IGS annuel de la classe 3;Annual IGS for class 3;CGI art. C 40 (1)
+igs.classe4_plafond;2026;2000000;FCFA;IGS : plafond exclu de la classe 4 (chiffre d'affaires HT 1 500 000 à moins de 2 000 000);IGS: excluded ceiling of class 4 (turnover excl. tax);CGI art. C 40 (1)
+igs.classe4_montant;2026;50000;FCFA;IGS annuel de la classe 4;Annual IGS for class 4;CGI art. C 40 (1)
+igs.classe5_plafond;2026;2500000;FCFA;IGS : plafond exclu de la classe 5 (chiffre d'affaires HT 2 000 000 à moins de 2 500 000);IGS: excluded ceiling of class 5 (turnover excl. tax);CGI art. C 40 (1)
+igs.classe5_montant;2026;60000;FCFA;IGS annuel de la classe 5;Annual IGS for class 5;CGI art. C 40 (1)
+igs.classe6_plafond;2026;5000000;FCFA;IGS : plafond exclu de la classe 6 (chiffre d'affaires HT 2 500 000 à moins de 5 000 000);IGS: excluded ceiling of class 6 (turnover excl. tax);CGI art. C 40 (1)
+igs.classe6_montant;2026;150000;FCFA;IGS annuel de la classe 6;Annual IGS for class 6;CGI art. C 40 (1)
+igs.classe7_plafond;2026;10000000;FCFA;IGS : plafond exclu de la classe 7 (chiffre d'affaires HT 5 000 000 à moins de 10 000 000);IGS: excluded ceiling of class 7 (turnover excl. tax);CGI art. C 40 (1)
+igs.classe7_montant;2026;300000;FCFA;IGS annuel de la classe 7;Annual IGS for class 7;CGI art. C 40 (1)
+igs.classe8_plafond;2026;20000000;FCFA;IGS : plafond exclu de la classe 8 (chiffre d'affaires HT 10 000 000 à moins de 20 000 000);IGS: excluded ceiling of class 8 (turnover excl. tax);CGI art. C 40 (1)
+igs.classe8_montant;2026;500000;FCFA;IGS annuel de la classe 8;Annual IGS for class 8;CGI art. C 40 (1)
+igs.classe9_plafond;2026;30000000;FCFA;IGS : plafond exclu de la classe 9 (chiffre d'affaires HT 20 000 000 à moins de 30 000 000);IGS: excluded ceiling of class 9 (turnover excl. tax);CGI art. C 40 (1)
+igs.classe9_montant;2026;1000000;FCFA;IGS annuel de la classe 9;Annual IGS for class 9;CGI art. C 40 (1)
+igs.classe10_plafond;2026;50000000;FCFA;IGS : plafond exclu de la classe 10 (chiffre d'affaires HT 30 000 000 à moins de 50 000 000);IGS: excluded ceiling of class 10 (turnover excl. tax);CGI art. C 40 (1)
+igs.classe10_montant;2026;2000000;FCFA;IGS annuel de la classe 10;Annual IGS for class 10;CGI art. C 40 (1)
+amortissement.taux_max_auto_leger_ville;2026;25;%;Taux d'amortissement fiscal maximal du matériel automobile léger utilisé en ville;Maximum tax depreciation rate for light vehicles used in town;CGI art. 7
+dons.plafond_interet_general;2026;0.5;%;Limite de déduction des dons aux organismes d'intérêt général (part du chiffre d'affaires);Deduction limit for donations to public-interest bodies (share of turnover);CGI art. 7
+dons.plafond_sport_elite;2026;5;%;Limite de déduction des dons aux clubs d'élite et organismes sportifs agréés (part du chiffre d'affaires);Deduction limit for donations to elite clubs and approved sports bodies (share of turnover);CGI art. 7
+petit_materiel.seuil;2026;500000;FCFA;Seuil d'inscription à l'actif du petit matériel et outillage;Capitalisation threshold for small equipment and tools;CGI art. 7
+smt.seuil_negoce;2026;60000000;FCFA;Seuil d'éligibilité au système minimal de trésorerie (entités de négoce, CA HT inférieur à);Cash-basis system eligibility threshold (trading entities, turnover below);AUDCIF art. 13 (JO OHADA, 15 février 2017)
+smt.seuil_artisanat;2026;40000000;FCFA;Seuil d'éligibilité au système minimal de trésorerie (entités artisanales, CA HT inférieur à);Cash-basis system eligibility threshold (craft entities, turnover below);AUDCIF art. 13 (JO OHADA, 15 février 2017)
+smt.seuil_services;2026;30000000;FCFA;Seuil d'éligibilité au système minimal de trésorerie (entités de services, CA HT inférieur à);Cash-basis system eligibility threshold (service entities, turnover below);AUDCIF art. 13 (JO OHADA, 15 février 2017)
+dgi.seuil_cime;2026;50000000;FCFA;Chiffre d'affaires à partir duquel le contribuable relève d'un CIME;Turnover from which a taxpayer belongs to a medium-sized taxpayer office;DGI, rattachement aux CIME (impots.cm, consulté le 2026-10-30)
+dgi.seuil_dge;2026;3000000000;FCFA;Chiffre d'affaires à partir duquel le contribuable relève de la DGE;Turnover from which a taxpayer belongs to the large taxpayer office;DGI, rattachement aux CIME et à la DGE (impots.cm, consulté le 2026-10-30)
+precompte.taux_loyer;2026;10;%;Précompte sur loyers retenu par le locataire au réel (loyers bruts);Rent withholding by actual-regime tenants (gross rent);CGI art. 87
+sarl.capital_minimum;2026;100000;FCFA;Capital social minimum d'une SARL au Cameroun;Minimum share capital of a Cameroonian LLC;Loi n° 2016/014 art. 2 (déroge à l'AUSCGIE art. 311)
+sarl.part_minimum;2026;5000;FCFA;Valeur nominale minimale d'une part sociale de SARL;Minimum par value of an LLC share;Loi n° 2016/014 art. 2
+sarl.seuil_notaire_facultatif;2026;1000000;FCFA;Capital jusqu'auquel le recours au notaire est facultatif pour créer une SARL;Capital up to which a notary is optional;Loi n° 2016/014 art. 4

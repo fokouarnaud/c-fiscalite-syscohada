@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% load i18n %}
+{% extends "base.html" %}{% load i18n acad_pieces %}
 {% block title %}{% translate "Détail de la tentative" %}{% endblock %}
 {% block content %}
 {% include "progress/_trainer_nav.html" %}
@@ -18,7 +18,7 @@
     <tbody>
       {% for row in rows %}
         <tr>
-          <th scope="row">{{ forloop.counter }}. {{ row.question.prompt }}</th>
+          <th scope="row">{{ forloop.counter }}. {{ row.question.prompt|prompt_text }}</th>
           <td>{{ row.answer|default:"-" }}</td>
           <td>{% if row.score == 1 %}<span class="badge badge-done">{% translate "Juste" %}</span>{% elif row.score > 0 %}<span class="badge badge-warn">{% translate "Partiel" %}</span>{% else %}<span class="badge badge-wrong">{% translate "Faux" %}</span>{% endif %}</td>
           <td class="num">{% blocktranslate with s=row.time_spent_s %}{{ s }} s{% endblocktranslate %}</td>

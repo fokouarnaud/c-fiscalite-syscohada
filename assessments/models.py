@@ -55,6 +55,8 @@ class Question(models.Model):
     exercice = models.PositiveSmallIntegerField(_("exercice"), null=True, blank=True)
     params = models.CharField(_("paramètres utilisés"), max_length=255, blank=True,
                               help_text=_("Clés séparées par des espaces, par exemple « tva.taux_global is.taux »."))
+    # Simulation (US-82) : pièces citées par [[piece:]] dans l'énoncé, renseignées à l'import.
+    pieces = models.ManyToManyField("simulation.Piece", blank=True, related_name="questions", verbose_name=_("pièces"))
     # Zone cliquable : schéma SVG affiché en ligne ; chaque choix porte sa zone (Choice.shape).
     hotspot_svg = models.TextField(_("schéma SVG"), blank=True)
     reviewed_fr = models.BooleanField(_("relue en français"), default=False)

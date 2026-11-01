@@ -1,4 +1,4 @@
-{% extends "base.html" %}{% load i18n %}
+{% extends "base.html" %}{% load i18n acad_pieces %}
 {% block title %}{% translate "Réussite par question" %}{% endblock %}
 {% block content %}
 {% include "progress/_trainer_nav.html" %}
@@ -12,7 +12,7 @@
     <tbody>
       {% for stat in stats %}
         <tr>
-          <th scope="row">{{ stat.question.prompt }}</th>
+          <th scope="row">{{ stat.question.prompt|prompt_text }}</th>
           <td>{{ stat.question.module.title }}</td>
           <td><span class="badge">{{ stat.question.get_qtype_display }}</span></td>
           <td class="num">{{ stat.answers }}</td>

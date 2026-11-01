@@ -25,6 +25,36 @@ def tva_depuis_ht(ht, taux_tva, taux_cac):
     return {"ht": ht, "tva": tva, "cac": cac, "taxes": tva + cac, "ttc": ht + tva + cac}
 
 
+def retenue_source(ht, taux, taux_cac):
+    """Acompte d'IS retenu à la source sur le HT, majoré des centimes additionnels communaux (CGI art. 21 (2)) :
+    5 % + CAC = 5,5 % sur la commande publique, 10 % + CAC = 11 % hors fichier des contribuables actifs."""
+    principal = franc(ht * taux / CENT)
+    cac = franc(principal * taux_cac / CENT)
+    return {"principal": principal, "cac": cac, "retenue": principal + cac}
+
+
+def reintegration_amortissement(dotation, valeur, taux_max, mois):
+    """Part d'une dotation comptable au-delà du taux d'amortissement fiscal maximal (CGI art. 7), au prorata des mois
+    d'utilisation de l'exercice ; jamais négative."""
+    deductible = franc(valeur * taux_max / CENT * mois / 12)
+    return max(dotation - deductible, Decimal(0))
+
+
+def reintegration_dons(dons, chiffre_affaires, plafond):
+    """Part des dons à des organismes d'intérêt général au-delà de la limite du chiffre d'affaires (CGI art. 7)."""
+    return max(dons - franc(chiffre_affaires * plafond / CENT), Decimal(0))
+
+
+def igs_annuel(chiffre_affaires, classes, centre_agree=False):
+    """Impôt général synthétique annuel (CGI art. C 40) : montant de la première classe [(plafond exclu, montant)]
+    dont le plafond dépasse le chiffre d'affaires HT ; réduit de moitié en cas d'adhésion à un Centre de Gestion
+    Agréé (al. 2). Au-delà de la dernière classe, le contribuable relève du réel (art. C 39 et 93 quater)."""
+    for plafond, montant in classes:
+        if chiffre_affaires < plafond:
+            return franc(montant / 2) if centre_agree else montant
+    raise ValueError("Chiffre d'affaires hors IGS : le contribuable relève du régime du réel.")
+
+
 def tva_depuis_ttc(ttc, taux_tva, taux_cac):
     """Prix HT retrouvé à partir du TTC ; les taxes sont la différence, pour que HT + taxes = TTC au franc près."""
     taux_global = taux_tva * (1 + taux_cac / CENT)

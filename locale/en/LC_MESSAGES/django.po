@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Acad Ventisax\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-29 04:34+0100\n"
+"POT-Creation-Date: 2026-10-30 05:01+0100\n"
 "PO-Revision-Date: 2026-10-17 12:00+0100\n"
 "Last-Translator: Acad Ventisax\n"
 "Language-Team: English\n"
@@ -185,11 +185,11 @@ msgstr "Clickable area on a diagram"
 msgid "Écriture au journal"
 msgstr "Journal entry"
 
-#: .\assessments\models.py:28 .\assessments\models.py:210
+#: .\assessments\models.py:28 .\assessments\models.py:212
 msgid "Quiz de module"
 msgstr "Module quiz"
 
-#: .\assessments\models.py:29 .\assessments\models.py:211
+#: .\assessments\models.py:29 .\assessments\models.py:213
 msgid "Examen de partie"
 msgstr "Part exam"
 
@@ -201,7 +201,7 @@ msgstr "Draft"
 msgid "Publiée"
 msgstr "Published"
 
-#: .\assessments\models.py:37
+#: .\assessments\models.py:37 .\simulation\models.py:33
 msgid "type"
 msgstr "type"
 
@@ -230,7 +230,7 @@ msgid "valeur attendue"
 msgstr "expected value"
 
 #: .\assessments\models.py:50 .\referentiel\models.py:60
-#: .\templates\assessments\attempt.html:33
+#: .\templates\assessments\attempt.html:34
 msgid "unité"
 msgstr "unit"
 
@@ -255,169 +255,175 @@ msgid "Clés séparées par des espaces, par exemple « tva.taux_global is.taux 
 msgstr "Keys separated by spaces, for example “tva.taux_global is.taux”."
 
 #: .\assessments\models.py:59
+msgid "pièces"
+msgstr "pieces"
+
+#: .\assessments\models.py:61
 msgid "schéma SVG"
 msgstr "SVG diagram"
 
-#: .\assessments\models.py:60
+#: .\assessments\models.py:62
 msgid "relue en français"
 msgstr "reviewed in French"
 
-#: .\assessments\models.py:61
+#: .\assessments\models.py:63
 msgid "relue en anglais"
 msgstr "reviewed in English"
 
-#: .\assessments\models.py:75
+#: .\assessments\models.py:77
 msgid "La question doit être relue en français et en anglais."
 msgstr "The question must be reviewed in French and in English."
 
-#: .\assessments\models.py:79
+#: .\assessments\models.py:81
 msgid "Un QCM à une réponse doit avoir exactement une bonne réponse."
 msgstr "A single-answer MCQ must have exactly one correct answer."
 
-#: .\assessments\models.py:81
+#: .\assessments\models.py:83
 msgid "Un QCM à plusieurs réponses doit avoir au moins deux bonnes réponses."
 msgstr "A multiple-answer MCQ must have at least two correct answers."
 
-#: .\assessments\models.py:83
+#: .\assessments\models.py:85
 msgid "Une question Vrai/Faux doit avoir deux choix dont un seul correct."
 msgstr "A True/False question must have two choices with exactly one correct."
 
-#: .\assessments\models.py:86
+#: .\assessments\models.py:88
 msgid "Une question numérique doit avoir une valeur attendue."
 msgstr "A numeric question needs an expected value."
 
-#: .\assessments\models.py:88
+#: .\assessments\models.py:90
 msgid "Une question chiffrée en FCFA ou en % doit indiquer son exercice."
 msgstr "A question in CFA francs or % must state its financial year."
 
-#: .\assessments\models.py:90
+#: .\assessments\models.py:92
 msgid "Une question numérique n'a pas de choix."
 msgstr "A numeric question has no choices."
 
-#: .\assessments\models.py:92
+#: .\assessments\models.py:94
 msgid "Une question d'appariement doit avoir au moins deux paires."
 msgstr "A matching question needs at least two pairs."
 
-#: .\assessments\models.py:95
+#: .\assessments\models.py:97
 msgid "Une question sur schéma doit avoir un schéma SVG."
 msgstr "A diagram question needs an SVG diagram."
 
-#: .\assessments\models.py:97 .\config\uploads.py:47
+#: .\assessments\models.py:99 .\config\uploads.py:47
 msgid "Ce SVG contient du script ou un lien actif : il est refusé."
 msgstr "This SVG contains a script or an active link: it is rejected."
 
-#: .\assessments\models.py:99
+#: .\assessments\models.py:101
 msgid "Une question sur schéma doit avoir exactement une bonne zone."
 msgstr "A diagram question needs exactly one right area."
 
-#: .\assessments\models.py:101
+#: .\assessments\models.py:103
 msgid "Chaque zone d'une question sur schéma doit avoir une forme."
 msgstr "Every area of a diagram question needs a shape."
 
-#: .\assessments\models.py:114
+#: .\assessments\models.py:116
 msgid "Une écriture au journal doit avoir au moins deux lignes."
 msgstr "A journal entry needs at least two lines."
 
-#: .\assessments\models.py:118
+#: .\assessments\models.py:120
 #, python-format
 msgid "L'écriture n'est pas équilibrée : débit %(debit)s, crédit %(credit)s."
 msgstr "The entry does not balance: debit %(debit)s, credit %(credit)s."
 
-#: .\assessments\models.py:123
+#: .\assessments\models.py:125
 #, python-format
 msgid "Le compte %(code)s n'existe pas dans le plan SYSCOHADA."
 msgstr "Account %(code)s does not exist in the SYSCOHADA chart."
 
-#: .\assessments\models.py:148
+#: .\assessments\models.py:150
 msgid "texte"
 msgstr "text"
 
-#: .\assessments\models.py:149
+#: .\assessments\models.py:151
 msgid "bonne réponse"
 msgstr "correct answer"
 
-#: .\assessments\models.py:152
+#: .\assessments\models.py:154
 msgid "zone"
 msgstr "area"
 
-#: .\assessments\models.py:166 .\templates\assessments\attempt.html:62
-#: .\templates\assessments\result.html:68
-#: .\templates\assessments\result.html:76
+#: .\assessments\models.py:168 .\simulation\rendering.py:34
+#: .\templates\assessments\attempt.html:63
+#: .\templates\assessments\result.html:69
+#: .\templates\assessments\result.html:77
 msgid "Débit"
 msgstr "Debit"
 
-#: .\assessments\models.py:167 .\templates\assessments\attempt.html:63
-#: .\templates\assessments\result.html:68
-#: .\templates\assessments\result.html:76
+#: .\assessments\models.py:169 .\simulation\rendering.py:34
+#: .\templates\assessments\attempt.html:64
+#: .\templates\assessments\result.html:69
+#: .\templates\assessments\result.html:77
 msgid "Crédit"
 msgstr "Credit"
 
-#: .\assessments\models.py:170
+#: .\assessments\models.py:172
 msgid "Classe"
 msgstr "Class"
 
-#: .\assessments\models.py:171
+#: .\assessments\models.py:173
 msgid "2 chiffres"
 msgstr "2 digits"
 
-#: .\assessments\models.py:172
+#: .\assessments\models.py:174
 msgid "3 chiffres"
 msgstr "3 digits"
 
-#: .\assessments\models.py:173
+#: .\assessments\models.py:175
 msgid "4 chiffres"
 msgstr "4 digits"
 
-#: .\assessments\models.py:174
+#: .\assessments\models.py:176
 msgid "Compte exact"
 msgstr "Exact account"
 
-#: .\assessments\models.py:178
+#: .\assessments\models.py:180
 msgid "compte"
 msgstr "account"
 
-#: .\assessments\models.py:179
+#: .\assessments\models.py:181
 msgid "précision du compte"
 msgstr "account precision"
 
-#: .\assessments\models.py:180
+#: .\assessments\models.py:182
 msgid "sens"
 msgstr "side"
 
-#: .\assessments\models.py:181
+#: .\assessments\models.py:183
 msgid "montant (FCFA)"
 msgstr "amount (CFA francs)"
 
-#: .\assessments\models.py:183 .\referentiel\models.py:10
+#: .\assessments\models.py:185 .\referentiel\models.py:10
 #: .\referentiel\models.py:61
 msgid "libellé"
 msgstr "label"
 
-#: .\assessments\models.py:197
+#: .\assessments\models.py:199
 msgid "élément"
 msgstr "item"
 
-#: .\assessments\models.py:198
+#: .\assessments\models.py:200
 msgid "correspondance"
 msgstr "match"
 
-#: .\assessments\models.py:220
+#: .\assessments\models.py:222
 msgid "seuil de réussite (%)"
 msgstr "pass mark (%)"
 
-#: .\assessments\models.py:221
+#: .\assessments\models.py:223
 msgid "tentatives maximum"
 msgstr "maximum attempts"
 
-#: .\assessments\models.py:222
+#: .\assessments\models.py:224
 msgid "durée (minutes)"
 msgstr "duration (minutes)"
 
-#: .\assessments\models.py:223
+#: .\assessments\models.py:225
 msgid "questions par module"
 msgstr "questions per module"
 
-#: .\assessments\models.py:224
+#: .\assessments\models.py:226
 msgid "mélanger questions et choix"
 msgstr "shuffle questions and choices"
 
@@ -532,11 +538,11 @@ msgstr "Issued on %(date)s by ComptaFisca Acad Ventisax"
 msgid "Vérification : %(url)s"
 msgstr "Verification: %(url)s"
 
-#: .\config\settings.py:131
+#: .\config\settings.py:132
 msgid "Français"
 msgstr "French"
 
-#: .\config\settings.py:131
+#: .\config\settings.py:132
 msgid "English"
 msgstr "English"
 
@@ -548,86 +554,96 @@ msgstr "Accounting (ledger)"
 msgid "Fiscalité (reçu)"
 msgstr "Taxation (receipt)"
 
-#: .\courses\models.py:16 .\courses\models.py:40 .\courses\models.py:58
-#: .\courses\models.py:87 .\courses\models.py:103 .\progress\models.py:19
+#: .\courses\models.py:14
+msgid "Simulation (mallette)"
+msgstr "Simulation (briefcase)"
+
+#: .\courses\models.py:17 .\courses\models.py:41 .\courses\models.py:59
+#: .\courses\models.py:88 .\courses\models.py:104 .\progress\models.py:19
+#: .\simulation\models.py:35
 msgid "titre"
 msgstr "title"
 
-#: .\courses\models.py:18 .\courses\models.py:41
+#: .\courses\models.py:19 .\courses\models.py:42
 msgid "description"
 msgstr "description"
 
-#: .\courses\models.py:21
+#: .\courses\models.py:22
 msgid "ouverte au catalogue"
 msgstr "open in the catalogue"
 
-#: .\courses\models.py:22
+#: .\courses\models.py:23
 msgid "Visible dans le catalogue public et ouverte à l’inscription libre."
 msgstr "Listed in the public catalogue and open to self-enrolment."
 
-#: .\courses\models.py:24
+#: .\courses\models.py:25
 msgid "icône"
 msgstr "icon"
 
-#: .\courses\models.py:26
+#: .\courses\models.py:27
 msgid "référence juridique"
 msgstr "legal reference"
 
-#: .\courses\models.py:28
+#: .\courses\models.py:29
 msgid "prérequis indicatif"
 msgstr "advisory prerequisite"
 
-#: .\courses\models.py:60
+#: .\courses\models.py:61
 msgid "durée (heures)"
 msgstr "duration (hours)"
 
-#: .\courses\models.py:61
+#: .\courses\models.py:62
 msgid "compétence visée"
 msgstr "target skill"
 
-#: .\courses\models.py:62
+#: .\courses\models.py:63
 msgid "modalités d'évaluation"
 msgstr "assessment method"
 
-#: .\courses\models.py:82
+#: .\courses\models.py:83
 msgid "Contenu"
 msgstr "Content"
 
-#: .\courses\models.py:83
+#: .\courses\models.py:84
 msgid "Activités pratiques"
 msgstr "Practical activities"
 
-#: .\courses\models.py:90
+#: .\courses\models.py:91
 msgid "contenu (Markdown)"
 msgstr "content (Markdown)"
 
-#: .\courses\rendering.py:49
+#: .\courses\rendering.py:53
 #, python-format
 msgid "art. %(number)s"
 msgstr "s. %(number)s"
 
-#: .\courses\rendering.py:51
+#: .\courses\rendering.py:55
 #, python-format
 msgid "Code général des impôts du Cameroun, édition %(year)s"
 msgstr "General Tax Code of Cameroon, %(year)s edition"
 
-#: .\courses\rendering.py:52
+#: .\courses\rendering.py:56
 #, python-format
 msgid "CGI %(year)s, %(ref)s"
 msgstr "GTC %(year)s, %(ref)s"
 
-#: .\courses\rendering.py:62
+#: .\courses\rendering.py:66
 msgid "Plan comptable SYSCOHADA révisé"
 msgstr "Revised SYSCOHADA chart of accounts"
 
-#: .\courses\rendering.py:67
+#: .\courses\rendering.py:71
 msgid "Guide d'application du SYSCOHADA révisé (OHADA)"
 msgstr "Revised SYSCOHADA implementation guide (OHADA)"
 
-#: .\courses\rendering.py:68
+#: .\courses\rendering.py:72
 #, python-format
 msgid "Guide SYSCOHADA, %(ref)s"
 msgstr "SYSCOHADA Guide, %(ref)s"
+
+#: .\courses\rendering.py:119
+#, python-format
+msgid "consulté le %(date)s"
+msgstr "accessed on %(date)s"
 
 #: .\progress\models.py:20
 msgid "message"
@@ -641,7 +657,7 @@ msgstr "published on"
 msgid "date limite"
 msgstr "deadline"
 
-#: .\progress\views.py:95 .\progress\views.py:199 .\progress\views.py:224
+#: .\progress\views.py:95 .\progress\views.py:204 .\progress\views.py:229
 #: .\templates\progress\trainer_table.html:17
 msgid "Promotion"
 msgstr "Cohort"
@@ -673,23 +689,23 @@ msgstr "yes"
 msgid "non"
 msgstr "no"
 
-#: .\progress\views.py:194
+#: .\progress\views.py:199
 msgid "Titre"
 msgstr "Title"
 
-#: .\progress\views.py:195
+#: .\progress\views.py:200
 msgid "Message"
 msgstr "Message"
 
-#: .\progress\views.py:219 .\templates\progress\deadlines.html:15
+#: .\progress\views.py:224 .\templates\progress\deadlines.html:15
 msgid "Quiz ou examen"
 msgstr "Quiz or exam"
 
-#: .\progress\views.py:220 .\templates\progress\deadlines.html:27
+#: .\progress\views.py:225 .\templates\progress\deadlines.html:27
 msgid "Date limite"
 msgstr "Deadline"
 
-#: .\progress\views.py:243
+#: .\progress\views.py:248
 msgid "Choisissez un quiz ou un examen de la formation de cette promotion."
 msgstr "Choose a quiz or an exam from this cohort's course."
 
@@ -748,6 +764,224 @@ msgstr "tax parameter"
 #: .\referentiel\models.py:69
 msgid "paramètres fiscaux"
 msgstr "tax parameters"
+
+#: .\simulation\apps.py:8
+msgid "Simulation"
+msgstr "Simulation"
+
+#: .\simulation\models.py:14
+msgid "Facture d'achat"
+msgstr "Purchase invoice"
+
+#: .\simulation\models.py:15
+msgid "Facture de vente"
+msgstr "Sales invoice"
+
+#: .\simulation\models.py:16
+msgid "Reçu de caisse"
+msgstr "Cash receipt"
+
+#: .\simulation\models.py:17
+msgid "Reçu Mobile Money"
+msgstr "Mobile Money receipt"
+
+#: .\simulation\models.py:18
+msgid "Relevé bancaire"
+msgstr "Bank statement"
+
+#: .\simulation\models.py:19
+msgid "Relevé Mobile Money"
+msgstr "Mobile Money statement"
+
+#: .\simulation\models.py:20
+msgid "Bulletin de paie"
+msgstr "Payslip"
+
+#: .\simulation\models.py:21
+msgid "Statuts"
+msgstr "Articles of association"
+
+#: .\simulation\models.py:22
+msgid "Bail"
+msgstr "Lease"
+
+#: .\simulation\models.py:23
+msgid "Avis de douane"
+msgstr "Customs notice"
+
+#: .\simulation\models.py:24
+msgid "Fiche de stock"
+msgstr "Stock card"
+
+#: .\simulation\models.py:25
+msgid "Balance"
+msgstr "Trial balance"
+
+#: .\simulation\models.py:26
+msgid "Déclaration"
+msgstr "Tax return"
+
+#: .\simulation\models.py:27
+msgid "Démarche auprès d'un organisme"
+msgstr "Procedure with an external body"
+
+#: .\simulation\models.py:31
+msgid "parcours"
+msgstr "track"
+
+#: .\simulation\models.py:32
+msgid "référence"
+msgstr "reference"
+
+#: .\simulation\models.py:34
+msgid "date"
+msgstr "date"
+
+#: .\simulation\models.py:36
+msgid "contenu"
+msgstr "content"
+
+#: .\simulation\models.py:40
+msgid "pièce justificative"
+msgstr "supporting document"
+
+#: .\simulation\models.py:41
+msgid "pièces justificatives"
+msgstr "supporting documents"
+
+#: .\simulation\models.py:49
+msgid "La référence d'une pièce commence par S- (formation Simulation)."
+msgstr "A document reference starts with S- (Simulation course)."
+
+#: .\simulation\models.py:57
+#, python-format
+msgid "%(label)s : montant en FCFA entiers attendu."
+msgstr "%(label)s: a whole FCFA amount is expected."
+
+#: .\simulation\models.py:79
+#, python-format
+msgid "Facture : émetteur sans %(field)s."
+msgstr "Invoice: issuer without %(field)s."
+
+#: .\simulation\models.py:82
+msgid "Facture : NIU de l'émetteur hors du format de la DGI."
+msgstr "Invoice: issuer taxpayer number not in the DGI format."
+
+#: .\simulation\models.py:83
+#, python-format
+msgid "Facture sans %(field)s."
+msgstr "Invoice without %(field)s."
+
+#: .\simulation\models.py:86
+#, python-format
+msgid "Démarche sans %(field)s."
+msgstr "Procedure without %(field)s."
+
+#: .\simulation\models.py:90
+msgid ""
+"Démarche : la source doit citer un texte officiel ([[cgi:]], [[syscohada:]], "
+"[[guide:]], [[source:]])."
+msgstr ""
+"Procedure: the source must cite an official text ([[cgi:]], [[syscohada:]], "
+"[[guide:]], [[source:]])."
+
+#: .\simulation\models.py:106
+#, python-format
+msgid "%(label)s : quantité × prix unitaire ≠ montant."
+msgstr "%(label)s: quantity × unit price ≠ amount."
+
+#: .\simulation\models.py:116
+msgid "La somme des lignes ne donne pas le total HT."
+msgstr "The lines do not add up to the total before tax."
+
+#: .\simulation\models.py:119
+msgid "Total HT + taxes ≠ total TTC."
+msgstr "Total before tax + taxes ≠ total including tax."
+
+#: .\simulation\models.py:122
+msgid "Total débit ≠ total crédit."
+msgstr "Total debit ≠ total credit."
+
+#: .\simulation\rendering.py:33
+msgid "Qté"
+msgstr "Qty"
+
+#: .\simulation\rendering.py:33
+msgid "Prix unitaire"
+msgstr "Unit price"
+
+#: .\simulation\rendering.py:33
+msgid "Montant"
+msgstr "Amount"
+
+#: .\simulation\rendering.py:55 .\templates\assessments\attempt.html:55
+#: .\templates\assessments\result.html:77
+msgid "Libellé"
+msgstr "Label"
+
+#: .\simulation\rendering.py:59
+msgid "Document pédagogique fictif"
+msgstr "Fictitious teaching document"
+
+#: .\simulation\rendering.py:69
+msgid "Émetteur"
+msgstr "Issuer"
+
+#: .\simulation\rendering.py:69
+msgid "Adresse"
+msgstr "Address"
+
+#: .\simulation\rendering.py:70
+msgid "NIU"
+msgstr "Taxpayer number (NIU)"
+
+#: .\simulation\rendering.py:70
+msgid "RCCM"
+msgstr "Trade register (RCCM)"
+
+#: .\simulation\rendering.py:71
+msgid "Régime"
+msgstr "Tax regime"
+
+#: .\simulation\rendering.py:71
+msgid "Centre des impôts"
+msgstr "Tax office"
+
+#: .\simulation\rendering.py:72
+msgid "Facture n°"
+msgstr "Invoice no."
+
+#: .\simulation\rendering.py:73
+msgid "Référence de facturation électronique DGI"
+msgstr "DGI e-invoicing reference"
+
+#: .\simulation\rendering.py:75
+msgid "Client"
+msgstr "Customer"
+
+#: .\simulation\rendering.py:75
+msgid "NIU du client"
+msgstr "Customer taxpayer number"
+
+#: .\simulation\rendering.py:94
+msgid "Organisme"
+msgstr "Body"
+
+#: .\simulation\rendering.py:94
+msgid "Objet"
+msgstr "Purpose"
+
+#: .\simulation\rendering.py:95
+msgid "Documents à fournir"
+msgstr "Documents to provide"
+
+#: .\simulation\rendering.py:95
+msgid "Document obtenu"
+msgstr "Document obtained"
+
+#: .\simulation\rendering.py:96
+msgid "Source"
+msgstr "Source"
 
 #: .\templates\accounts\dashboard.html:2 .\templates\accounts\dashboard.html:6
 #: .\templates\base.html:25 .\templates\certificates\mine.html:40
@@ -955,7 +1189,9 @@ msgstr "Create an account"
 msgid ""
 "Lien de confirmation jamais reçu ? Réinscrivez-vous avec la même adresse : "
 "un nouveau lien vous sera envoyé."
-msgstr "Never received the confirmation link? Sign up again with the same address: a new link will be sent to you."
+msgstr ""
+"Never received the confirmation link? Sign up again with the same address: a "
+"new link will be sent to you."
 
 #: .\templates\accounts\password_reset_complete.html:2
 #: .\templates\accounts\password_reset_complete.html:5
@@ -1156,7 +1392,7 @@ msgstr "Quiz: %(m)s"
 msgid "Temps restant"
 msgstr "Time left"
 
-#: .\templates\assessments\attempt.html:28
+#: .\templates\assessments\attempt.html:29
 msgid ""
 "Saisissez un nombre : espaces ou points pour les milliers, virgule pour les "
 "décimales (ex. 1 250 000 ou 19,25)."
@@ -1164,20 +1400,20 @@ msgstr ""
 "Enter a number: spaces or commas for thousands, a point for decimals (e.g. "
 "1,250,000 or 19.25)."
 
-#: .\templates\assessments\attempt.html:30
-#: .\templates\assessments\result.html:99
+#: .\templates\assessments\attempt.html:31
+#: .\templates\assessments\result.html:100
 msgid "Votre réponse"
 msgstr "Your answer"
 
-#: .\templates\assessments\attempt.html:37
+#: .\templates\assessments\attempt.html:38
 msgid "Associez chaque élément à sa correspondance."
 msgstr "Match each item with its counterpart."
 
-#: .\templates\assessments\attempt.html:44
+#: .\templates\assessments\attempt.html:45
 msgid "Choisir"
 msgstr "Choose"
 
-#: .\templates\assessments\attempt.html:51
+#: .\templates\assessments\attempt.html:52
 msgid ""
 "Passez l'écriture : un compte SYSCOHADA, un sens et un montant en FCFA par "
 "ligne ; l'ordre des lignes est libre."
@@ -1185,89 +1421,84 @@ msgstr ""
 "Record the entry: one SYSCOHADA account, side and amount in CFA francs per "
 "line; lines may be in any order."
 
-#: .\templates\assessments\attempt.html:54
-#: .\templates\assessments\result.html:76
+#: .\templates\assessments\attempt.html:55
+#: .\templates\assessments\result.html:77
 msgid "Compte"
 msgstr "Account"
 
-#: .\templates\assessments\attempt.html:54
-#: .\templates\assessments\result.html:76
-msgid "Libellé"
-msgstr "Label"
-
-#: .\templates\assessments\attempt.html:54
+#: .\templates\assessments\attempt.html:55
 msgid "Sens"
 msgstr "Side"
 
-#: .\templates\assessments\attempt.html:54
+#: .\templates\assessments\attempt.html:55
 #: .\templates\courses\_calc_labels.html:5
 msgid "Montant (FCFA)"
 msgstr "Amount (CFA francs)"
 
-#: .\templates\assessments\attempt.html:58
+#: .\templates\assessments\attempt.html:59
 #, python-format
 msgid "Compte, ligne %(n)s"
 msgstr "Account, line %(n)s"
 
-#: .\templates\assessments\attempt.html:59
+#: .\templates\assessments\attempt.html:60
 #, python-format
 msgid "Libellé, ligne %(n)s"
 msgstr "Label, line %(n)s"
 
-#: .\templates\assessments\attempt.html:60
+#: .\templates\assessments\attempt.html:61
 #, python-format
 msgid "Sens, ligne %(n)s"
 msgstr "Side, line %(n)s"
 
-#: .\templates\assessments\attempt.html:65
+#: .\templates\assessments\attempt.html:66
 #, python-format
 msgid "Montant, ligne %(n)s"
 msgstr "Amount, line %(n)s"
 
-#: .\templates\assessments\attempt.html:72
+#: .\templates\assessments\attempt.html:73
 msgid "Cliquez la bonne zone du schéma, ou choisissez-la dans la liste."
 msgstr "Click the right area of the diagram, or pick it from the list."
 
-#: .\templates\assessments\attempt.html:83
+#: .\templates\assessments\attempt.html:84
 msgid "Plusieurs réponses possibles."
 msgstr "Several answers possible."
 
-#: .\templates\assessments\attempt.html:83
+#: .\templates\assessments\attempt.html:84
 msgid "Une seule réponse."
 msgstr "One answer only."
 
-#: .\templates\assessments\attempt.html:94
+#: .\templates\assessments\attempt.html:95
 msgid "Enregistrer cette réponse"
 msgstr "Save this answer"
 
-#: .\templates\assessments\attempt.html:98
+#: .\templates\assessments\attempt.html:99
 msgid "Aucune question publiée pour le moment."
 msgstr "No published question yet."
 
-#: .\templates\assessments\attempt.html:105
+#: .\templates\assessments\attempt.html:106
 #, python-format
 msgid "%(n)s question sans réponse"
 msgid_plural "%(n)s questions sans réponse"
 msgstr[0] "%(n)s unanswered question"
 msgstr[1] "%(n)s unanswered questions"
 
-#: .\templates\assessments\attempt.html:109
+#: .\templates\assessments\attempt.html:110
 msgid "Envoyer quand même"
 msgstr "Submit anyway"
 
-#: .\templates\assessments\attempt.html:111
+#: .\templates\assessments\attempt.html:112
 msgid "Une fois envoyé, l'examen ne peut plus être modifié."
 msgstr "Once submitted, the exam can no longer be changed."
 
-#: .\templates\assessments\attempt.html:111
+#: .\templates\assessments\attempt.html:112
 msgid "Vous verrez la correction juste après l'envoi."
 msgstr "You will see the answers right after submitting."
 
-#: .\templates\assessments\attempt.html:112
+#: .\templates\assessments\attempt.html:113
 msgid "Envoyer l'examen"
 msgstr "Submit the exam"
 
-#: .\templates\assessments\attempt.html:112
+#: .\templates\assessments\attempt.html:113
 msgid "Voir la correction"
 msgstr "See the answers"
 
@@ -1435,34 +1666,34 @@ msgstr "Partial"
 msgid "Incorrect"
 msgstr "Incorrect"
 
-#: .\templates\assessments\result.html:61
+#: .\templates\assessments\result.html:62
 msgid "Votre réponse :"
 msgstr "Your answer:"
 
-#: .\templates\assessments\result.html:61
-#: .\templates\assessments\result.html:71
-#: .\templates\assessments\result.html:89
+#: .\templates\assessments\result.html:62
+#: .\templates\assessments\result.html:72
+#: .\templates\assessments\result.html:90
 msgid "Sans réponse"
 msgstr "No answer"
 
-#: .\templates\assessments\result.html:61
+#: .\templates\assessments\result.html:62
 msgid "Valeur attendue :"
 msgstr "Expected value:"
 
-#: .\templates\assessments\result.html:63
+#: .\templates\assessments\result.html:64
 msgid "Votre écriture"
 msgstr "Your entry"
 
-#: .\templates\assessments\result.html:74
+#: .\templates\assessments\result.html:75
 msgid "Écriture attendue"
 msgstr "Expected entry"
 
-#: .\templates\assessments\result.html:89
+#: .\templates\assessments\result.html:90
 #, python-format
 msgid "Vous : %(g)s"
 msgstr "You: %(g)s"
 
-#: .\templates\assessments\result.html:103
+#: .\templates\assessments\result.html:104
 msgid "Sans réponse."
 msgstr "No answer."
 

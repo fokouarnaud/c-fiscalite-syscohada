@@ -11,6 +11,7 @@ class Formation(models.Model):
         # Icônes Tabler du projet (templates/icons/<nom>.svg), C16 : une par formation, liste fermée.
         LEDGER = "ledger", _("Comptabilité (registre)")
         RECEIPT = "receipt", _("Fiscalité (reçu)")
+        BRIEFCASE = "briefcase", _("Simulation (mallette)")
 
     public_id = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)  # identifiant des URL et formulaires
     title = models.CharField(_("titre"), max_length=200)

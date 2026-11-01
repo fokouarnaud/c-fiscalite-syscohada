@@ -1,11 +1,13 @@
 """Import idempotent du contenu versionné (manifeste JSON + fichiers Markdown fr/en + questions JSON)."""
+import datetime
 import json
+import re
 from decimal import Decimal
 from pathlib import Path
 
 from django.db import transaction
 
-from assessments.models import Question
+from assessments.models import Assessment, Question
 
 from .models import Formation, Module, Partie, Section
 
@@ -39,6 +41,43 @@ def _read_inside(folder, relative):
     if not path.is_relative_to(folder.resolve()):
         raise ValueError(f"Chemin hors du dossier du module : {relative}")
     return path.read_text(encoding="utf-8")
+
+
+PIECE_REFS = re.compile(r"\[\[piece:(S-[A-Z0-9-]{1,38})\]\]")
+
+
+def _import_pieces(partie, path):
+    """US-82 : pièces justificatives d'un parcours de la simulation ; une pièce incohérente annule tout l'import."""
+    from django.core.exceptions import ValidationError
+
+    from simulation.models import Piece
+
+    for data in json.loads(path.read_text(encoding="utf-8")):
+        piece = Piece.objects.filter(ref=data["ref"]).first() or Piece(ref=data["ref"])
+        piece.partie, piece.kind = partie, data["kind"]
+        piece.issued_on = datetime.date.fromisoformat(data["date"])
+        piece.payload = data.get("payload", {})
+        for field, value in _translated(data, "title").items():
+            setattr(piece, field, value)
+        try:
+            piece.full_clean()
+        except ValidationError as error:
+            raise ValueError(f"Pièce {data['ref']} incohérente : {'; '.join(error.messages)}") from error
+        piece.save()
+
+
+def _link_pieces(question):
+    """US-82 et US-85 : relie la question aux pièces de son énoncé et de son explication (formulaire rempli) ; une pièce
+    inconnue annule tout l'import."""
+    from simulation.models import Piece
+
+    texts = (question.prompt_fr, question.prompt_en, question.explanation_fr, question.explanation_en)
+    refs = set(PIECE_REFS.findall("\n".join(texts)))
+    pieces = list(Piece.objects.filter(ref__in=refs))
+    missing = refs - {piece.ref for piece in pieces}
+    if missing:
+        raise ValueError(f"Question {question.external_id} : pièce inconnue {', '.join(sorted(missing))}")
+    question.pieces.set(pieces)
 
 
 def _import_questions(module, path, stats, prefix=""):
@@ -106,6 +145,7 @@ def _import_questions(module, path, stats, prefix=""):
             line.save()
         for extra in lines[len(data.get("journal", [])):]:
             extra.delete()
+        _link_pieces(question)
         if before is not None and before != _question_signature(question):
             # Un texte modifié doit être relu à nouveau avant d'être servi.
             question.status = Question.Status.DRAFT
@@ -137,6 +177,21 @@ def import_formation(manifest_path):
                 **_translated(partie_data, "description"),
             },
         )
+        for code, labels in partie_data.get("sous_comptes", {}).items():
+            # S19 : sous-compte propre à l'entité (ex. 5521 MTN MoMo), admis seulement sous un compte du plan révisé.
+            from referentiel.models import SyscohadaAccount
+
+            if not SyscohadaAccount.objects.filter(code__in=[code[:n] for n in range(1, len(code))]).exists():
+                raise ValueError(f"Sous-compte {code} sans compte parent dans le plan SYSCOHADA")
+            SyscohadaAccount.objects.update_or_create(code=code, defaults={
+                "label_fr": labels.get("fr", ""), "label_en": labels.get("en", ""), "label": labels.get("fr", "")})
+        if partie_data.get("pieces"):
+            _import_pieces(partie, root / partie_data["pieces"])
+        if partie_data.get("exam"):
+            # US-94 (S11) : réglages de l'examen de partie fixés par le manifeste.
+            exam = Assessment.exam_for(partie)
+            exam.questions_per_module = partie_data["exam"].get("questions_per_module", exam.questions_per_module)
+            exam.save(update_fields=["questions_per_module"])
         for module_data in partie_data.get("modules", []):
             module, _ = Module.objects.update_or_create(
                 partie=partie, order=module_data["order"],

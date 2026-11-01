@@ -21,6 +21,9 @@ class Command(BaseCommand):
         for line, row in enumerate(rows, start=2):
             if row["unit"] not in FiscalParameter.Unit.values:
                 raise CommandError(f"Ligne {line} : unité inconnue « {row['unit']} ».")
+            if not row["source_article"].strip():
+                # US-95 : un taux s'appuie toujours sur son article (C15).
+                raise CommandError(f"Ligne {line} : article source manquant pour « {row['key']} ».")
             try:
                 value = Decimal(row["value"].replace(",", "."))
             except InvalidOperation:
