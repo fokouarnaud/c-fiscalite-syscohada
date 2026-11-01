@@ -24,11 +24,12 @@ def parcours_a(db):
     return Formation.objects.get(slug="simulation")
 
 
-def test_the_simulation_stays_closed_with_its_seven_modules(parcours_a):
-    """US-80 : formation fermée tant que la DoD-Parcours n'est pas vérifiée en navigateur ; 7 modules."""
+def test_the_simulation_opens_with_parcours_a_and_its_seven_modules(parcours_a):
+    """US-80 (S1, S20) : la formation s'ouvre au catalogue une fois le parcours A livré (ouverture décidée le
+    2026-11-01) ; 7 modules."""
     partie = parcours_a.parties.get(slug="a")
 
-    assert (parcours_a.is_open, parcours_a.icon, partie.modules.count()) == (False, "briefcase", 7)
+    assert (parcours_a.is_open, parcours_a.icon, partie.modules.count()) == (True, "briefcase", 7)
     assert Assessment.exam_for(partie).questions_per_module == 4
 
 

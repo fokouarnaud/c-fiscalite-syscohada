@@ -419,6 +419,11 @@ MUTATIONS = [
      "            if not low <= count <= high]", "            if False]", "simulation/tests"),
     ("Pièce sans lignes : pas d'en-tête de colonne vide", "simulation/rendering.py",
      'gettext("Libellé"), head) if lines else ""', 'gettext("Libellé"), head)', "simulation/tests"),
+    ("US-93 générateur : pièces nommées par la lettre du parcours", "tools/simulation/build_parcours_a.py",
+     'ref = f"S-{self.code}-{prefix}', 'ref = f"S-A-{prefix}', "simulation/tests/test_parcours_generators.py"),
+    ("US-93 générateur : les autres parcours restent dans formation.json", "tools/simulation/build_parcours_a.py",
+     '        parties = {p["slug"]: p for p in current.get("parties", [])}', "        parties = {}",
+     "simulation/tests/test_parcours_generators.py"),
 ]
 # Filtre facultatif : `mutation_sweep.py US-82 US-93` ne balaie que les stories dont le libellé commence ainsi.
 if sys.argv[1:]:

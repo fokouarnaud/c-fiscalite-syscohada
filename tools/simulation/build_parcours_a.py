@@ -975,7 +975,7 @@ def main():
     write(OUT / "a" / "pieces.json", sorted(book.pieces, key=lambda p: (p["date"], p["ref"])))
     write(OUT / "a" / "ledger.json", book.entries)
     manifest = {
-        "slug": "simulation", "prefix": "S", "icon": "briefcase", "open": False, "order": 3,
+        "slug": "simulation", "prefix": "S", "icon": "briefcase", "open": True, "order": 3,
         "title": text("Simulation Compta et Fisca", "Accounting and Tax Simulation"),
         "description": text("Une année complète d'entreprises camerounaises fictives, sur pièces justificatives.",
                             "A full year of fictitious Cameroonian businesses, from source documents."),

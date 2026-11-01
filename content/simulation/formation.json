@@ -2,7 +2,7 @@
  "slug": "simulation",
  "prefix": "S",
  "icon": "briefcase",
- "open": false,
+ "open": true,
  "order": 3,
  "title": {
   "fr": "Simulation Compta et Fisca",
