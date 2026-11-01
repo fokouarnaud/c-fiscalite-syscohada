@@ -13,9 +13,9 @@ import datetime
 from decimal import Decimal as D
 
 from referentiel import calculs
-from tools.simulation import ledger
+from tools.simulation import ledger, narrative_e
 from tools.simulation.build_parcours_a import (
-    LABELS, MONTHS_EN, MONTHS_FR, OUT, P, YEAR, Book, d, line, piece_list, split_usage, text, tva, write,
+    LABELS, MONTHS_EN, MONTHS_FR, OUT, P, YEAR, Book, d, line, piece_list, split_usage, text, tva, workday, write,
     write_manifest,
 )
 
@@ -87,12 +87,12 @@ def build():
                                                                "16 shares to the civil servant, 4 to the manager")}],
                                      "totals": [{"label": text("Capital libéré", "Paid-up capital"), "amount": CAPITAL}]})
     book.entry(d(1, 3), special["capital"], line("521", "debit", CAPITAL), line("1013", "credit", CAPITAL))
-    special["advance"] = book.piece(1, "releve_bancaire", d(1, 4), "Avis de crédit : avance en compte courant d'associé",
+    special["advance"] = book.piece(1, "releve_bancaire", workday(1, 4), "Avis de crédit : avance en compte courant d'associé",
                                     "Credit notice: partner's current-account advance",
                                     {"fields": [{"label": text("Associé", "Partner"),
                                                  "value": text("Fonctionnaire associé à 80 %", "Civil servant, 80% partner")}],
                                      "totals": [{"label": text("Avance reçue", "Advance received"), "amount": ADVANCE}]})
-    book.entry(d(1, 4), special["advance"], line("521", "debit", ADVANCE), line("4621", "credit", ADVANCE))
+    book.entry(workday(1, 4), special["advance"], line("521", "debit", ADVANCE), line("4621", "credit", ADVANCE))
     tools = tva(TOOLS_HT)
     special["tools"] = book.piece(1, "facture_achat", d(1, 6), "Facture d'outillage de climatisation",
                                   "Air-conditioning tools invoice",
@@ -120,7 +120,7 @@ def build():
         taxes = tva(ht)
         withheld = calculs.franc(D(ht) * P["precompte.taux_igs"] / 100)
         lots.append((qty, unit))
-        refs["purchase"] = book.piece(month, "facture_achat", d(month, 5), f"Facture de matériel de {mfr}",
+        refs["purchase"] = book.piece(month, "facture_achat", workday(month, 5), f"Facture de matériel de {mfr}",
                                       f"{men} equipment invoice",
                                       {"issuer": SUPPLIER, "customer": OWN, "number": f"CDW-2026-{100 + month:04d}",
                                        "einvoice": f"DGI-SFE-2026-{2100 + month:06d}",
@@ -133,12 +133,12 @@ def build():
                                                    "role": "tax", "amount": int(withheld)},
                                                   {"label": text("Net à payer", "Amount due"), "role": "ttc",
                                                    "amount": int(taxes["ttc"] + withheld)}]})
-        book.entry(d(month, 5), refs["purchase"], line("6011", "debit", taxes["ttc"]), line("4492", "debit", withheld),
+        book.entry(workday(month, 5), refs["purchase"], line("6011", "debit", taxes["ttc"]), line("4492", "debit", withheld),
                    line("521", "credit", taxes["ttc"] + withheld))
         # Deux interventions facturées, sans TVA (IGS) ; encaissées par virement et par Orange Money.
         for i, (amount, account) in enumerate(zip(SERVICES, ("521", "5522"))):
             client, niu = CLIENTS[(month + i) % 3]
-            ref = book.piece(month, "facture_vente", d(month, 10 + 8 * i), f"Facture d'intervention n° {month}-{i + 1}",
+            ref = book.piece(month, "facture_vente", workday(month, 10 + 8 * i), f"Facture d'intervention n° {month}-{i + 1}",
                              f"Service invoice no. {month}-{i + 1}",
                              {"issuer": SELLER, "customer": {"name": client, "niu": niu},
                               "number": f"FES-2026-{month:02d}{i + 1}", "einvoice": f"DGI-SFE-2026-{3000 + 10 * month + i:06d}",
@@ -148,20 +148,20 @@ def build():
                                          "amount": amount}],
                               "totals": [{"label": text("Total", "Total"), "role": "ht", "amount": amount},
                                          {"label": text("Net à payer", "Amount due"), "role": "ttc", "amount": amount}]})
-            book.entry(d(month, 10 + 8 * i), ref, line(account, "debit", amount), line("7061", "credit", amount))
+            book.entry(workday(month, 10 + 8 * i), ref, line(account, "debit", amount), line("7061", "credit", amount))
             refs[f"service{i}"] = ref
         refs["cash"] = book.piece(month, "recu_caisse", d(month, end), f"Ventes de matériel au comptant de {mfr}",
                                   f"{men} cash equipment sales",
                                   {"totals": [{"label": text("Ventes encaissées", "Sales collected"), "amount": CASH_SALES}]})
         book.entry(d(month, end), refs["cash"], line("5711", "debit", CASH_SALES), line("7011", "credit", CASH_SALES))
-        refs["vacation"] = book.piece(month, "recu_caisse", d(month, 25), f"Note d'honoraires du vacataire, {mfr}",
+        refs["vacation"] = book.piece(month, "recu_caisse", workday(month, 25), f"Note d'honoraires du vacataire, {mfr}",
                                       f"Part-time instructor's fee note, {men}",
                                       {"fields": [{"label": text("Intervenant", "Provider"),
                                                    "value": text("Fonctionnaire associé, vacataire (formation des clients)",
                                                                  "Civil servant partner, part-time trainer")}],
                                        "totals": [{"label": text("Honoraires payés en espèces", "Fees paid in cash"),
                                                    "amount": VACATION}]})
-        book.entry(d(month, 25), refs["vacation"], line("632", "debit", VACATION), line("5711", "credit", VACATION))
+        book.entry(workday(month, 25), refs["vacation"], line("632", "debit", VACATION), line("5711", "credit", VACATION))
         # Relevé Orange Money : transfert de la recette vers la banque (585, S19) et frais de l'opérateur (631).
         transfer = SERVICES[1] - 3000
         refs["momo"] = book.piece(month, "releve_momo", d(month, end), f"Relevé Orange Money de {mfr}",
@@ -465,29 +465,28 @@ def sections(book, special):
                   "[[syscohada:5711]] [[syscohada:4621]] [[syscohada:7061]]\n\n### Rates\n\n- IGS purchase withholding "
                   "[[param:precompte.taux_igs]] [[cgi:art. 21]];\n- minimum LLC capital [[param:sarl.capital_minimum]].\n"
                   ).format(y=YEAR)
-    out[1].append(("01-dossier", "Dossier d'entreprise", "Company file", company, company_en))
+    out[1].append(("01-dossier", "Dossier d'entreprise", "Company file",
+                   company + "\n" + narrative_e.company_extra("fr"), company_en + "\n" + narrative_e.company_extra("en")))
     proc = piece_list(special["procedures"])
     out[1].append(("02-creation", "Démarches de création", "Set-up procedures",
                    f"Les démarches et leurs sources officielles [[cgi:art. C 41]].\n\n{proc}\n",
                    f"Procedures and their official sources [[cgi:art. C 41]].\n\n{proc}\n"))
+    kinds = {p["ref"]: p["kind"] for p in book.pieces}
     for month in range(1, 13):
+        # S34 : chaque mois est raconté scène par scène ; la balance d'ouverture suit l'accroche.
         module = MODULE_OF_MONTH[month]
-        refs = piece_list(by_month[month])
+        opening = [ref for ref in by_month[month] if kinds[ref] == "balance"]
+        told = {s["ref"] for s in narrative_e.month_scenes(book, special, month)}
+        others = [ref for ref in by_month[month] if ref not in told and ref not in opening]
         name = MONTHS_FR[month - 1].replace("é", "e").replace("û", "u")
         out[module].append((f"{len(out[module]) + 1:02d}-{name}", f"{MONTHS_FR[month - 1].capitalize()} {YEAR}",
                             f"{MONTHS_EN[month - 1]} {YEAR}",
-                            f"Recettes et dépenses de {MONTHS_FR[month - 1]} {YEAR}, sans TVA à l'IGS "
-                            f"[[cgi:art. 21]] [[cgi:art. C 40]].\n\n{refs}\n",
-                            f"{MONTHS_EN[month - 1]} {YEAR} receipts and payments [[cgi:art. 21]].\n\n{refs}\n"))
-    stock = piece_list([special["stock"][0]])
-    out[6].append(("01-cloture", "Clôture et inventaire", "Year-end and inventory",
-                   f"Inventaire physique des climatiseurs et bilan de trésorerie [[syscohada:5711]] [[source:ohada-audcif]].\n\n{stock}\n",
-                   f"Physical count and cash summary [[syscohada:5711]] [[source:ohada-audcif]].\n\n{stock}\n"))
-    igs = piece_list([special["igs_return"]])
-    out[7].append(("01-igs", "IGS annuel", "Yearly IGS",
-                   f"Tarif de l'IGS par classe de chiffre d'affaires [[cgi:art. C 40]], déclaration avant le 15 mars "
-                   f"[[cgi:art. C 41]].\n\n{igs}\n",
-                   f"IGS tariff by turnover class [[cgi:art. C 40]], return by 15 March [[cgi:art. C 41]].\n\n{igs}\n"))
+                            narrative_e.month_section(book, special, month, opening, others, "fr"),
+                            narrative_e.month_section(book, special, month, opening, others, "en")))
+    told = narrative_e.year_end_sections(book, special)
+    out[6].append(("01-cloture", "Clôture et inventaire", "Year-end and inventory", told["close"]["fr"],
+                   told["close"]["en"]))
+    out[7].append(("01-igs", "IGS annuel", "Yearly IGS", told["igs"]["fr"], told["igs"]["en"]))
     return out
 
 

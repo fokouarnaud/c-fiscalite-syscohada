@@ -28,7 +28,8 @@ def test_parcours_e_has_only_numeric_and_choice_questions(parcours_a):  # noqa: 
 def test_parcours_e_starts_with_minimal_capital_and_a_partner_advance():
     """S31 : capital de 100 000 FCFA (1013) et avance du fonctionnaire en compte courant d'associé (4621)."""
     entries = json.loads((CONTENT / "simulation" / "e" / "ledger.json").read_text(encoding="utf-8"))
-    january = [l for e in entries if e["date"] <= "2026-01-04" for l in e["lines"]]
+    # Dès la première semaine : l'avance, prévue le dimanche 4, est créditée le lundi 5 (pièce bancaire en jour ouvré).
+    january = [l for e in entries if e["date"] <= "2026-01-05" for l in e["lines"]]
 
     assert {"account": "1013", "side": "credit", "amount": 100000} in january
     assert any(l["account"] == "4621" and l["side"] == "credit" for l in january)

@@ -14,7 +14,7 @@ from decimal import Decimal as D
 from pathlib import Path
 
 from referentiel import calculs
-from tools.simulation import ledger
+from tools.simulation import ledger, narrative_a
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "content" / "simulation"
@@ -69,6 +69,12 @@ def text(fr, en):
 
 def d(month, day, year=YEAR):
     return datetime.date(year, month, day).isoformat()
+
+
+def workday(month, day, year=YEAR):
+    """Date d'une pièce émise par un commerce, une banque ou un bailleur : un dimanche, elle passe au lundi."""
+    date = datetime.date(year, month, day)
+    return (date + datetime.timedelta(days=1 if date.weekday() == 6 else 0)).isoformat()
 
 
 def last_day(month):
@@ -149,7 +155,7 @@ def invoice_payload(issuer, number, einvoice, lines, ht, extra_totals=()):
             "totals": totals}
 
 
-def payroll():
+def payroll(staff=STAFF):
     """Paie mensuelle : IRPP (barème annuel par douzièmes, CAC), RAV, TDL, CFC ; CNPS pension 4,2 % salariale et
     4,2 % patronale (décret n° 2016/072, montants portés sur le bulletin, S15)."""
     bareme = [(P["irpp.tranche1_plafond"], P["irpp.tranche1_taux"]), (P["irpp.tranche2_plafond"], P["irpp.tranche2_taux"]),
@@ -157,7 +163,7 @@ def payroll():
     rav = [(P.get(f"rav.tranche{i}_plafond"), P[f"rav.tranche{i}_montant"]) for i in range(1, 13)]
     tdl = [(P.get(f"tdl.tranche{i}_plafond"), P[f"tdl.tranche{i}_montant"]) for i in range(1, 11)]
     rows = []
-    for name_fr, name_en, gross in STAFF:
+    for name_fr, name_en, gross in staff:
         gross = D(gross)
         cnps = calculs.franc(gross * D("4.2") / 100)
         irpp = calculs.irpp_salaire(gross * 12, cnps * 12, P["irpp.taux_frais_professionnels"],
@@ -180,7 +186,6 @@ def build():
                                                      "cnps_pat")}
     salary_taxes = totals["irpp"] + totals["rav"] + totals["tdl"] + totals["cfc"] + totals["cfc_pat"]
     lots = {f[0]: [] for f in FAMILIES}
-    previous_cash_sales = 0
     special = {}
 
     # Jour 1 : démarches (S28), sources officielles (US-97).
@@ -249,7 +254,7 @@ def build():
                           "totals": [{"label": text("Capital libéré", "Paid-up capital"), "amount": 5000000}]})
     book.entry(d(1, 2), capital, line("521", "debit", 5000000), line("1013", "credit", 5000000))
     notary_ht = 225000
-    notary = book.piece(1, "facture_achat", d(1, 3), "Facture du notaire (statuts)", "Notary's invoice (articles)",
+    notary = book.piece(1, "facture_achat", d(1, 6), "Facture du notaire (statuts)", "Notary's invoice (articles)",
                         invoice_payload(NOTARY, "N-2026-0004", "DGI-SFE-2026-000214",
                                         [{"label": text("Honoraires de rédaction des statuts", "Drafting fees"),
                                           "amount": 200000},
@@ -262,7 +267,7 @@ def build():
             total["amount"] = int(tva(200000)["tva"] if total["label"]["fr"].startswith("TVA") else tva(200000)["cac"])
         if total["role"] == "ttc":
             total["amount"] = int(notary_ht + notary_tax)
-    book.entry(d(1, 3), notary, line("6324", "debit", 200000), line("4454", "debit", notary_tax),
+    book.entry(d(1, 6), notary, line("6324", "debit", 200000), line("4454", "debit", notary_tax),
                line("646", "debit", 25000), line("521", "credit", notary_ht + notary_tax))
     special["notary"] = notary
 
@@ -275,7 +280,7 @@ def build():
         bank_piece = book.pieces[-1]
         # Loyer (précompte de 10 % retenu par le locataire au réel, CGI art. 87).
         withheld = calculs.franc(D(RENT) * P["precompte.taux_loyer"] / 100)
-        refs["rent"] = book.piece(month, "recu_caisse", d(month, 2), f"Quittance de loyer de {MONTHS_FR[month - 1]}",
+        refs["rent"] = book.piece(month, "recu_caisse", workday(month, 6 if month == 1 else 2), f"Quittance de loyer de {MONTHS_FR[month - 1]}",
                                   f"{MONTHS_EN[month - 1]} rent receipt",
                                   {"fields": [{"label": text("Bailleur", "Landlord"), "value": "M. Tchoua (fictif)"}],
                                    "totals": [{"label": text("Loyer brut", "Gross rent"), "amount": RENT},
@@ -283,7 +288,7 @@ def build():
                                                "amount": int(withheld)},
                                               {"label": text("Net versé par virement", "Net paid by transfer"),
                                                "amount": int(RENT - withheld)}]})
-        book.entry(d(month, 2), refs["rent"], line("6222", "debit", RENT), line("4478", "credit", withheld),
+        book.entry(workday(month, 6 if month == 1 else 2), refs["rent"], line("6222", "debit", RENT), line("4478", "credit", withheld),
                    line("521", "credit", RENT - withheld))
         # Achats du mois (S18 : trois familles, coût unitaire variable, précompte de 2 %).
         lines_, ht = [], 0
@@ -294,7 +299,7 @@ def build():
                            "amount": qty * unit})
             ht += qty * unit
         precompte = calculs.franc(D(ht) * P["precompte.taux_reel"] / 100)
-        refs["purchase"] = book.piece(month, "facture_achat", d(month, 5), f"Facture Sawa Textiles de {MONTHS_FR[month - 1]}",
+        refs["purchase"] = book.piece(month, "facture_achat", workday(month, 5), f"Facture Sawa Textiles de {MONTHS_FR[month - 1]}",
                                       f"Sawa Textiles {MONTHS_EN[month - 1]} invoice",
                                       invoice_payload(SUPPLIER, f"FA-2026-{month:04d}", f"DGI-SFE-2026-{1000 + month:06d}",
                                                       lines_, ht, [{"label": text("Précompte sur achats 2 %",
@@ -302,20 +307,12 @@ def build():
                                                                     "role": "tax", "amount": int(precompte)}]))
         taxes = tva(ht)
         due = ht + taxes["taxes"] + precompte
-        book.entry(d(month, 5), refs["purchase"], line("6011", "debit", ht), line("4452", "debit", taxes["taxes"]),
+        book.entry(workday(month, 5), refs["purchase"], line("6011", "debit", ht), line("4452", "debit", taxes["taxes"]),
                    line("4492", "debit", precompte), line("401", "credit", due))
         book.entry(d(month, 12), refs["bank"], line("401", "debit", due), line("521", "credit", due))
         # Règlement de la déclaration du mois précédent, le 15 (US-85).
         if month > 1:
             refs["settlement"] = settle(book, month - 1, d(month, 15), month)
-        # Versement en banque des espèces du mois précédent et transfert des soldes Mobile Money (S19 : 585).
-        if month > 1:
-            refs["cash_out"] = book.piece(month, "recu_caisse", d(month, 25), "Bordereau de sortie de caisse vers la banque",
-                                          "Cash transfer slip to the bank",
-                                          {"totals": [{"label": text("Espèces versées", "Cash deposited"),
-                                                       "amount": int(previous_cash_sales)}]})
-            book.entry(d(month, 25), refs["cash_out"], line("585", "debit", previous_cash_sales),
-                       line("5711", "credit", previous_cash_sales))
         # Ventes du mois.
         sales = {k: tva(v) for k, v in SALES_HT.items()}
         refs["cash"] = book.piece(month, "recu_caisse", d(month, end), f"Récapitulatif des ventes au comptant de {MONTHS_FR[month - 1]}",
@@ -328,7 +325,6 @@ def build():
                                                "role": "ttc", "amount": int(sales["cash"]["ttc"])}]})
         book.entry(d(month, end), refs["cash"], line("5711", "debit", sales["cash"]["ttc"]),
                    line("7011", "credit", SALES_HT["cash"]), line("4431", "credit", sales["cash"]["taxes"]))
-        previous_cash_sales = sales["cash"]["ttc"]
         for key, account, operator_fr, operator_en, fee in (("orange", "5522", "Orange Money", "Orange Money", 9500),
                                                             ("mtn", "5521", "MTN MoMo", "MTN MoMo", 7200)):
             refs[key] = book.piece(month, "releve_momo", d(month, end), f"Relevé {operator_fr} de {MONTHS_FR[month - 1]}",
@@ -364,21 +360,31 @@ def build():
                    line("4472", "credit", salary_taxes), line("431", "credit", totals["cnps"] + totals["cnps_pat"]),
                    line("422", "credit", totals["net"]))
         book.entry(d(month, end), refs["bank"], line("422", "debit", totals["net"]), line("521", "credit", totals["net"]))
+        special.setdefault("months", {})[month] = refs
+        events(book, month, special)
+        # Versements hebdomadaires des espèces, récapitulés le dernier jour du mois (S19 : virement interne par 585).
+        cash_left = ledger.account_balance(book.entries, "5711", datetime.date(YEAR, month, end))
+        refs["cash_out"] = book.piece(month, "recu_caisse", d(month, end),
+                                      f"Bordereaux de versement des espèces de {MONTHS_FR[month - 1]}",
+                                      f"{MONTHS_EN[month - 1]} cash deposit slips",
+                                      {"totals": [{"label": text("Espèces versées", "Cash deposited"),
+                                                   "amount": int(cash_left)}]})
+        book.entry(d(month, end), refs["cash_out"], line("585", "debit", cash_left), line("5711", "credit", cash_left))
         # Transfert des encaissements Mobile Money vers la banque, puis relevé bancaire du mois (frais de tenue 3 500).
         transfer = sales["orange"]["ttc"] - 9500 + sales["mtn"]["ttc"] - 7200
         book.entry(d(month, end), refs["bank"], line("585", "debit", transfer),
                    line("5522", "credit", sales["orange"]["ttc"] - 9500), line("5521", "credit", sales["mtn"]["ttc"] - 7200))
-        bank_in = transfer + (previous_deposit(book, month))
+        bank_in = transfer + cash_left
         book.entry(d(month, end), refs["bank"], line("521", "debit", bank_in), line("585", "credit", bank_in),
                    line("631", "debit", 3500), line("521", "credit", 3500))
-        bank_piece["payload"] = {"totals": [
+        instalment = [{"label": text("Échéance réglée à Auto Wouri", "Instalment paid to Auto Wouri"),
+                       "amount": 4770000}] if month in (5, 6, 7) else []
+        bank_piece["payload"] = {"totals": instalment + [
             {"label": text("Virement à Sawa Textiles", "Transfer to Sawa Textiles"), "amount": int(due)},
             {"label": text("Salaires nets virés", "Net pay transferred"), "amount": int(totals["net"])},
             {"label": text("Virements internes reçus (espèces et Mobile Money)", "Internal transfers received"),
              "amount": int(bank_in)},
             {"label": text("Frais de tenue de compte", "Account fees"), "amount": 3500}]}
-        special.setdefault("months", {})[month] = refs
-        events(book, month, special)
 
     year_end(book, special, lots)
     return book, special, staff
@@ -443,8 +449,8 @@ def settle(book, month, date, settled_in):
 def events(book, month, special):
     """Événements ponctuels de l'année, chacun sur une pièce (passerelle S21, S23)."""
     if month == 3:
-        ref = book.piece(3, "recu_caisse", d(3, 10), "Mise en demeure d'un ancien bailleur (litige)",
-                         "Formal notice from a former landlord (dispute)",
+        ref = book.piece(3, "recu_caisse", d(3, 10), "Mise en demeure du propriétaire voisin (litige)",
+                         "Formal notice from the neighbouring owner (dispute)",
                          {"fields": [{"label": text("Réclamation", "Claim"), "value": text("Remise en état des locaux",
                                                                                             "Restoring the premises")}],
                           "totals": [{"label": text("Montant réclamé", "Amount claimed"), "amount": 500000}]})
@@ -463,9 +469,6 @@ def events(book, month, special):
     if month in (5, 6, 7):
         bank = special["months"][month]["bank"]
         book.entry(d(month, 20), bank, line("4812", "debit", 4770000), line("521", "credit", 4770000))
-        piece = next(p for p in book.pieces if p["ref"] == bank)
-        piece["payload"]["totals"].insert(0, {"label": text("Échéance réglée à Auto Wouri", "Instalment paid to Auto Wouri"),
-                                              "amount": 4770000})
     if month == 7:
         ref = book.piece(7, "recu_caisse", d(7, 22), "Quittance de pénalité de retard (recette des impôts, fictive)",
                          "Late-filing penalty receipt (tax office, fictitious)",
@@ -485,8 +488,8 @@ def events(book, month, special):
         book.entry(d(10, 8), ref, line("6582", "debit", 600000), line("521", "credit", 600000))
         special["donation"] = ref
     if month == 11:
-        ref = book.piece(11, "recu_caisse", d(11, 10), "Accord transactionnel avec l'ancien bailleur",
-                         "Settlement agreement with the former landlord",
+        ref = book.piece(11, "recu_caisse", d(11, 10), "Accord transactionnel avec le propriétaire voisin",
+                         "Settlement agreement with the neighbouring owner",
                          {"totals": [{"label": text("Litige clos sans paiement", "Dispute closed without payment"),
                                       "amount": 0}]})
         book.entry(d(11, 10), ref, line("191", "debit", 500000), line("7911", "credit", 500000))
@@ -892,39 +895,45 @@ def sections(book, special):
         "- VAT [[param:tva.taux_principal]], council cents [[param:cac.taux]] [[cgi:art. 142]];\n"
         "- purchase withholding [[param:precompte.taux_reel]] [[cgi:art. 21]];\n"
         "- rent withholding [[param:precompte.taux_loyer]] [[cgi:art. 87]].\n")
-    out[1].append(("01-dossier", "Dossier d'entreprise", "Company file", company_fr, company_en))
+    out[1].append(("01-dossier", "Dossier d'entreprise", "Company file", company_fr + "\n" + narrative_a.company_extra("fr"),
+                   company_en + "\n" + narrative_a.company_extra("en")))
     proc = piece_list(special["procedures"])
     out[1].append(("02-creation", "Démarches de création", "Set-up procedures",
                    "Chaque démarche précise l'organisme, les documents à fournir et ce que l'on obtient, avec sa source "
                    f"officielle [[cgi:art. L 1]].\n\n{proc}\n",
                    f"Each procedure gives the body, the documents and what you obtain [[cgi:art. L 1]].\n\n{proc}\n"))
+    kinds = {p["ref"]: p["kind"] for p in book.pieces}
+    special["why"] = {}
     for month in range(1, 13):
+        # S34 : chaque mois est raconté scène par scène ; la balance d'ouverture suit l'accroche.
         module = MODULE_OF_MONTH[month]
-        intro_fr = (f"Pièces de {MONTHS_FR[month - 1]} {YEAR}. Passez chaque écriture, puis préparez la déclaration du 15 "
-                    "du mois suivant [[cgi:art. 21]] [[cgi:art. 143]].")
-        intro_en = f"{MONTHS_EN[month - 1]} {YEAR} documents [[cgi:art. 21]] [[cgi:art. 143]]."
-        refs = piece_list(by_month[month])
-        out[module].append((f"{len(out[module]) + 1:02d}-{ascii_name(month)}",
-                            f"{MONTHS_FR[month - 1].capitalize()} {YEAR}", f"{MONTHS_EN[month - 1]} {YEAR}",
-                            f"{intro_fr}\n\n{refs}\n", f"{intro_en}\n\n{refs}\n"))
-    inventory = piece_list(list(dict.fromkeys(v[0] for v in special["stock"].values())) + [special["schedule"]])
-    out[6].append(("01-inventaire", "Inventaire au 31 décembre", "Year-end inventory",
-                   "Valorisez le stock final au CMUP, comparez avec le PEPS [[syscohada:6031]], puis amortissez la "
-                   f"voiture au prorata temporis [[syscohada:2845]].\n\n{inventory}\n\n[[calc:stock]]\n\n"
-                   "[[calc:amortissement]]\n",
-                   "Value closing stock at WAC, compare with FIFO [[syscohada:6031]], then depreciate the car "
-                   f"[[syscohada:2845]].\n\n{inventory}\n\n[[calc:stock]]\n\n[[calc:amortissement]]\n"))
-    bridge = piece_list([special[k] for k in ("penalty", "no_receipt", "donation", "provision", "reversal")])
-    out[7].append(("01-passerelle", "Passerelle fiscale", "Tax bridge",
-                   "Réintégrez les charges non déductibles et déduisez la reprise taxée [[cgi:art. 7]], puis comparez "
-                   f"l'IS au minimum de perception [[cgi:art. 21]].\n\n{bridge}\n",
-                   "Add back non-deductible charges [[cgi:art. 7]], compare CIT with the minimum tax "
-                   f"[[cgi:art. 21]].\n\n{bridge}\n"))
-    dsf = piece_list([p["ref"] for p in book.pieces if p.get("dsf")])
-    out[7].append(("02-dsf", "DSF 2026", "2026 return",
-                   f"Déposez la DSF au plus tard le 15 avril 2027, échéance du CIME [[cgi:art. 18]].\n\n{dsf}\n",
-                   f"File the return by 15 April 2027 [[cgi:art. 18]].\n\n{dsf}\n"))
+        opening = [ref for ref in by_month[month] if kinds[ref] == "balance"]
+        told = {sc["ref"] for sc in narrative_a.month_scenes(book, special, month)}
+        others = [ref for ref in by_month[month] if ref not in told and ref not in opening]
+        body_fr, why = narrative_a.month_section(book, special, month, opening, others, "fr")
+        body_en, _ = narrative_a.month_section(book, special, month, opening, others, "en")
+        special["why"].update(why)
+        out[module].append((f"{len(out[module]) + 1:02d}-{ascii_name(month)}", f"{MONTHS_FR[month - 1].capitalize()} {YEAR}",
+                            f"{MONTHS_EN[month - 1]} {YEAR}", body_fr, body_en))
+    told, why = narrative_a.year_end_sections(book, special)
+    special["why"].update(why)
+    out[6].append(("01-inventaire", "Inventaire au 31 décembre", "Year-end inventory", told["inventory"]["fr"],
+                   told["inventory"]["en"]))
+    out[7].append(("01-passerelle", "Passerelle fiscale", "Tax bridge", told["bridge"]["fr"], told["bridge"]["en"]))
+    out[7].append(("02-dsf", "DSF 2026", "2026 return", told["dsf"]["fr"], told["dsf"]["en"]))
     return out
+
+
+def explain(book, why):
+    """S34 : l'explication d'une question journal sur une pièce narrée reprend le « pourquoi » de sa scène."""
+    for questions in book.questions.values():
+        for question in questions:
+            if question["type"] != "journal":
+                continue
+            for ref, (fr, en) in why.items():
+                if f"[[piece:{ref}]]" in question["prompt"]["fr"]:
+                    question["explanation"] = text(f"{question['explanation']['fr']} Pourquoi pas autre chose : {fr}",
+                                                   f"{question['explanation']['en']} Why not something else: {en}")
 
 
 def write(path, data):
@@ -961,6 +970,7 @@ def main():
     balances(book)
     build_questions(book, special)
     module_sections = sections(book, special)
+    explain(book, special["why"])
     modules = []
     for number, (title_fr, title_en, comp_fr, comp_en) in enumerate(MODULES, start=1):
         folder = f"a/m{number}"
