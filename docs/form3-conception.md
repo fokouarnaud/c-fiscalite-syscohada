@@ -174,3 +174,94 @@ Le parcours A est généré par `tools/simulation/build_parcours_a.py` dans `con
 1. **Sous-comptes Mobile Money :** réglé (5521, 5522 déclarés par le parcours, S19).
 2. **Démarches hors fiscalité (U21) :** CFCE, greffe et rattachement fiscal sont sourcés (MINFI, DGI). La CNPS est sourcée par sa FAQ officielle (copie archivée, le site étant injoignable le 2026-10-30) ; elle confirme le taux salarial de la branche pensions (4,2 %, plafond 750 000 FCFA, décret n° 2016/072), cohérent avec les 6 300 FCFA du bulletin. La banque et Orange Money sont sourcés par leurs pages publiques. MTN ne publie pas de liste de pièces pour le Cameroun (momo.mtn.cm injoignable, page « MoMo Business » générique) : le parcours A encaisse sur MTN MoMo, mais seule la démarche Orange Money est rédigée.
 3. **Bulletin type de paie :** réglé pour la branche pensions (6 300 patronal, source CNPS) ; prestations familiales et accidents du travail non simulés faute de source.
+
+## 5. Récit pédagogique (S33, S34, demande de l'utilisateur du 2026-11-01)
+
+> À valider sur le pilote « janvier du parcours B3 » avant d'étendre le récit à B3 entier, puis de reprendre A et E.
+
+### 5.1 Constat
+
+Les parcours A et E livrés sont **muets** : chaque mois aligne des pièces et des questions, sans dire ce qui s'est passé,
+pourquoi la pièce existe, ni pourquoi tel compte ou tel impôt s'applique plutôt qu'un autre. Un débutant voit une
+facture mais ne comprend ni la scène ni le choix.
+
+### 5.2 Règles d'écriture du récit (bonnes pratiques retenues)
+
+1. **Des personnages récurrents**, nommés et fictifs, avec un rôle stable : le lecteur suit des gens, pas des comptes.
+2. **Une scène par événement, dans l'ordre du calendrier** : jour, lieu, qui fait quoi et pourquoi (besoin concret :
+   livrer un client, payer le loyer, réapprovisionner avant le week-end). La pièce apparaît **dans** la scène, au moment
+   où elle naît.
+3. **Chaque scène suit le même canevas en cinq temps**, pour que le débutant sache toujours où regarder :
+   - *Ce qui se passe* : le récit en trois à six phrases, avec la pièce ;
+   - *La règle* : le concept du cours et sa source citée (`[[cgi:]]`, `[[syscohada:]]`, `[[guide:]]`) ;
+   - *Pourquoi ce choix et pas un autre* : l'option qu'un débutant prendrait (le piège) et pourquoi elle est fausse ;
+   - *Ce que ça change* : trésorerie, déclaration du 15, résultat ou bilan ;
+   - *Où ça se range* : le classeur ou le registre où finit la pièce et le journal du logiciel où elle est saisie
+     (AUDCIF art. 17, 19, 22 et 24 : pièces datées, classées et annotées de leur référence ; journaux auxiliaires
+     centralisés chaque mois ; clôture informatique au moins trimestrielle ; conservation dix ans). Le dossier
+     d'entreprise décrit les outils (logiciel comptable, classeurs, brouillard de caisse, fiche de stock, cahier des
+     vides) et les routines du soir, de la semaine, du mois, du trimestre et de l'année.
+4. **Un renvoi au cours** : « Revoir : Comptabilité M7 (Les ventes) » ou « Fiscalité M4 (La TVA et les droits
+   d'accises) », en numérotation continue de la plateforme ; le récit applique le cours, il ne le remplace pas.
+5. **Le récit précède la question** : on n'interroge l'apprenant qu'après lui avoir montré la scène ; l'explication de
+   la question reprend le « pourquoi pas un autre ».
+6. **Un bilan de fin de mois** : trois à cinq points « ce qu'il faut retenir », et l'échéance du 15 que le mois prépare.
+7. **Tension utile, sans fiction gratuite** : un événement n'existe que s'il porte une règle ; jamais d'anecdote qui
+   n'aboutit à aucune écriture ni décision.
+8. **Aucune règle inventée** : une scène qui touche une règle absente de nos sources n'est pas écrite (U21). Par exemple,
+   le traitement fiscal des repas offerts au personnel reste à vérifier dans le CGI.
+9. **Phrases courtes, et vocabulaire du métier expliqué à sa première apparition** (consigne, vide, casier, précompte).
+
+### 5.3 Visuels (S33)
+
+Des scènes isométriques sont dessinées avec le skill anatomy et **exportées en SVG statique**, en FR et en EN, sans
+script : `static/content/simulation/<parcours>/<scene>.<lang>.svg`. Elles sont insérées par une image Markdown, que le
+rendu agrandit déjà au toucher (`courses/rendering.py`, `DIAGRAM`). Node ne sert qu'à l'écriture du contenu et n'est
+jamais déployé ; la CSP reste inchangée. S33 amende C13 (« figures interactives supprimées ») : aucune figure
+interactive, seulement des SVG statiques. Budget : au plus deux figures par mois et 1 Mo par parcours (NFR-11).
+
+### 5.4 Distribution du parcours B3
+
+| Personnage | Rôle |
+|---|---|
+| Rose Ateba | Associée majoritaire, ancienne revendeuse de boissons au marché Mvog-Mbi |
+| Serge Mballa | Gérant salarié : achats, banque, déclarations |
+| Didier | Magasinier : réception, vides, comptage |
+| Paul | Chauffeur-livreur : tournées avec le camion (à partir de février) |
+| Mme Ngah | Propriétaire du Snack-Bar Le Rond-Point, cliente à crédit |
+| M. Fouda | Commercial des Brasseries de la Sanaga (fictives) |
+
+### 5.5 Pilote : janvier 2026 du parcours B3
+
+| Jour | Scène (ce qui se passe) | Pièce | Règle et source | Pourquoi pas autre chose | Revoir |
+|---|---|---|---|---|---|
+| 2 | Rose et Serge déposent 10 millions en banque : les fonds sont déposés avant l'immatriculation | Attestation de dépôt | Capital souscrit, appelé, versé 1013 | Pas un produit : un apport n'est pas un revenu ; pas une dette envers Rose (4621) : c'est du capital, rémunéré par les dividendes | Compta M3 |
+| 2 | Le dépôt ouvre dans un entrepôt loué ; Serge paie le loyer en retenant 10 %, qu'il reversera aux impôts | Quittance de loyer | Précompte sur loyer, CGI art. 87 | Pas tout le loyer à la propriétaire : le locataire au réel collecte pour l'État (4478, dette) | Fisca M3 |
+| 3 | Le notaire remet les statuts : au-delà d'un million de capital, la SARL passe chez lui | Facture du notaire | Charges par nature 6324 et 646 (S6), TVA 4454 | Pas des « frais d'établissement » à l'actif : le SYSCOHADA révisé les a supprimés | Compta M1 |
+| 5 | Les camions de la brasserie ont rempli l'entrepôt en plusieurs tournées (3 570 casiers) ; M. Fouda récapitule les bons de livraison sur une facture ; bouteilles et casiers sont consignés | Facture des Brasseries | 6011 (droit d'accises de 25 % et droit spécifique additionnel compris, art. 142 (9)), 4452, 4492 (art. 21 (3)), 4094 (Guide, 1re partie, ch. 2) | Accises : pas de compte à part, elles sont dans le prix ; consigne : pas un achat, une créance récupérée au retour des vides ; précompte : pas une charge, une avance d'impôt | Compta M6, Fisca M4 |
+| 6 | Didier reçoit 400 casiers marqués « Ateba », qui serviront des années | Facture Plasti-Centre | Matériel d'emballage récupérable 243, TVA 4451 | Pas 6082 (consommé) : durable et identifiable ; pas 2493 : c'est la ligne des immobilisations en cours | Compta M13 |
+| 20 | Mme Ngah commande pour sa soirée de fin de mois ; le dépôt lui consigne les casiers | Facture au Snack-Bar | 411, 7011, 4431, 4194 ; consigne hors base de TVA (art. 139 (2)) | Consigne : pas une vente, une dette remboursable au retour ; pas de TVA dessus, l'emballage est identifiable | Compta M7 |
+| 31 | Les clients du comptoir paient en espèces et échangent leurs vides | Récapitulatif des ventes | 5711, 7011, 4431 | Pas de consigne : l'échange vide contre plein est immédiat | Compta M7 |
+| 31 | Les bars du quartier paient par Orange Money ; l'opérateur prélève ses frais | Relevé Orange Money | 5522, 631, 585 (S19) | Frais : pas une réduction de la vente, un service bancaire (631) ; transfert : par 585, jamais directement de 5522 à 521 | Compta M12 |
+| 31 | Serge prépare la paie des trois salariés | Journal de paie | 6611, 6413, 6641, 4472, 431, 422 | IRPP et CNPS salariale retenus : pas des charges de l'entreprise, des dettes envers l'État et la CNPS | Compta M11, Fisca M3 |
+| 31 | Didier porte la recette du mois à la banque | Bordereau de versement | 585, 5711 | Pas 521 directement depuis la caisse : le virement interne transite par 585 jusqu'au relevé | Compta M12 |
+| 31 | Le relevé de la banque arrive | Relevé bancaire | 521, 422, 585, 631 | Le solde du relevé et celui du 521 se rapprochent : un écart s'explique, il ne se « corrige » pas | Compta M29 |
+
+**Bilan de janvier** : un apport n'est pas un produit ; une consigne n'est ni un achat ni une vente ; les accises sont
+dans le prix ; le précompte et la retenue sur loyer sont des créances ou des dettes envers l'État ; tout ce qui passe
+entre la caisse, Orange Money et la banque transite par 585. Prochaine étape : la déclaration du 15 février.
+
+**Figures du pilote** (anatomy, SVG statique) :
+1. *Le circuit des casiers* : brasserie → dépôt → snack-bar, casiers pleins à l'aller et vides au retour, avec la
+   consigne qui suit chaque casier (4094 côté brasserie, 4194 côté snack-bar).
+2. *Les trois caisses du dépôt* : comptoir (5711), téléphone Orange Money (5522) et banque (521), reliés par le
+   virement interne 585.
+
+### 5.6 Mise en œuvre prévue
+
+- Le générateur porte le récit en données : chaque pièce reçoit une scène `{jour, récit, règle, pourquoi_pas, effet,
+  revoir}` en FR et en EN ; la section du mois devient récit, pièces et bilan.
+- Contrôle bloquant ajouté en TDD : dans un parcours narré, chaque pièce comptable d'une section mensuelle est précédée
+  de sa scène (rubriques « Pourquoi ce choix » et « Revoir », au moins une source citée) ; chaque renvoi « Revoir »
+  désigne un module existant ; chaque figure citée existe en FR et en EN.
+- Les explications des questions `journal` reprennent le « pourquoi pas autre chose » de leur scène.
