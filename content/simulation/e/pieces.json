@@ -182,7 +182,7 @@
  {
   "ref": "S-E-01-006",
   "kind": "releve_bancaire",
-  "date": "2026-01-04",
+  "date": "2026-01-05",
   "title": {
    "fr": "Avis de crédit : avance en compte courant d'associé",
    "en": "Credit notice: partner's current-account advance"
@@ -410,7 +410,7 @@
  {
   "ref": "S-E-01-010",
   "kind": "facture_vente",
-  "date": "2026-01-18",
+  "date": "2026-01-19",
   "title": {
    "fr": "Facture d'intervention n° 1-2",
    "en": "Service invoice no. 1-2"
@@ -474,7 +474,7 @@
  {
   "ref": "S-E-01-012",
   "kind": "recu_caisse",
-  "date": "2026-01-25",
+  "date": "2026-01-26",
   "title": {
    "fr": "Note d'honoraires du vacataire, janvier",
    "en": "Part-time instructor's fee note, January"
@@ -1479,7 +1479,7 @@
  {
   "ref": "S-E-04-001",
   "kind": "facture_achat",
-  "date": "2026-04-05",
+  "date": "2026-04-06",
   "title": {
    "fr": "Facture de matériel de avril",
    "en": "April equipment invoice"
@@ -1950,7 +1950,7 @@
  {
   "ref": "S-E-05-002",
   "kind": "facture_vente",
-  "date": "2026-05-10",
+  "date": "2026-05-11",
   "title": {
    "fr": "Facture d'intervention n° 5-1",
    "en": "Service invoice no. 5-1"
@@ -2682,7 +2682,7 @@
  {
   "ref": "S-E-07-001",
   "kind": "facture_achat",
-  "date": "2026-07-05",
+  "date": "2026-07-06",
   "title": {
    "fr": "Facture de matériel de juillet",
    "en": "July equipment invoice"
@@ -4040,7 +4040,7 @@
  {
   "ref": "S-E-10-003",
   "kind": "facture_vente",
-  "date": "2026-10-18",
+  "date": "2026-10-19",
   "title": {
    "fr": "Facture d'intervention n° 10-2",
    "en": "Service invoice no. 10-2"
@@ -4104,7 +4104,7 @@
  {
   "ref": "S-E-10-005",
   "kind": "recu_caisse",
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "title": {
    "fr": "Note d'honoraires du vacataire, octobre",
    "en": "Part-time instructor's fee note, October"

@@ -13,8 +13,8 @@
    "en": "Record the October purchase invoice (2% withholding included).\n\n[[piece:S-A-10-003]]"
   },
   "explanation": {
-   "fr": "Achats en 6011, TVA et CAC récupérables en 4452, précompte en 4492, dette fournisseur en 401 (CGI art. 21 et 143).",
-   "en": "Purchases in 6011, recoverable VAT in 4452, withholding in 4492, supplier debt in 401."
+   "fr": "Achats en 6011, TVA et CAC récupérables en 4452, précompte en 4492, dette fournisseur en 401 (CGI art. 21 et 143). Pourquoi pas autre chose : Rappel : le précompte est une avance sur l'impôt ; le stock ne se compte qu'au 31 décembre.",
+   "en": "Purchases in 6011, recoverable VAT in 4452, withholding in 4492, supplier debt in 401. Why not something else: Reminder: the withholding is an advance on tax; stock is counted only on 31 December."
   },
   "journal": [
    {
@@ -49,12 +49,12 @@
   "usage": "exam",
   "exercice": 2026,
   "prompt": {
-   "fr": "Passez l'écriture des ventes au comptant de octobre.\n\n[[piece:S-A-10-006]]",
-   "en": "Record the October cash sales.\n\n[[piece:S-A-10-006]]"
+   "fr": "Passez l'écriture des ventes au comptant de octobre.\n\n[[piece:S-A-10-005]]",
+   "en": "Record the October cash sales.\n\n[[piece:S-A-10-005]]"
   },
   "explanation": {
-   "fr": "Caisse 5711 au TTC, ventes 7011 au HT, TVA facturée 4431.",
-   "en": "Cash 5711 incl. tax, sales 7011, VAT charged 4431."
+   "fr": "Caisse 5711 au TTC, ventes 7011 au HT, TVA facturée 4431. Pourquoi pas autre chose : La TVA encaissée n'appartient pas à la boutique : elle sera reversée le 15.",
+   "en": "Cash 5711 incl. tax, sales 7011, VAT charged 4431. Why not something else: VAT collected does not belong to the shop: it is paid over on the 15th."
   },
   "journal": [
    {
@@ -84,12 +84,12 @@
   "usage": "exam",
   "exercice": 2026,
   "prompt": {
-   "fr": "Passez l'écriture du relevé Orange Money de octobre.\n\n[[piece:S-A-10-007]]",
-   "en": "Record the October Orange Money statement.\n\n[[piece:S-A-10-007]]"
+   "fr": "Passez l'écriture du relevé Orange Money de octobre.\n\n[[piece:S-A-10-006]]",
+   "en": "Record the October Orange Money statement.\n\n[[piece:S-A-10-006]]"
   },
   "explanation": {
-   "fr": "Sous-compte 5522, ventes et TVA ; frais de l'opérateur en 631 (S19).",
-   "en": "Sub-account 5522, sales and VAT; operator fees in 631."
+   "fr": "Sous-compte 5522, ventes et TVA ; frais de l'opérateur en 631 (S19). Pourquoi pas autre chose : Un sous-compte par opérateur : chacun se rapproche de son propre relevé. Les frais sont un service, pas une remise accordée aux clientes.",
+   "en": "Sub-account 5522, sales and VAT; operator fees in 631. Why not something else: One sub-account per operator: each is reconciled with its own statement. Fees are a service, not a discount to customers."
   },
   "journal": [
    {
@@ -129,12 +129,12 @@
   "usage": "quiz",
   "exercice": 2026,
   "prompt": {
-   "fr": "Passez l'écriture du journal de paie de octobre.\n\n[[piece:S-A-10-009]]",
-   "en": "Record the October payroll journal.\n\n[[piece:S-A-10-009]]"
+   "fr": "Passez l'écriture du journal de paie de octobre.\n\n[[piece:S-A-10-008]]",
+   "en": "Record the October payroll journal.\n\n[[piece:S-A-10-008]]"
   },
   "explanation": {
-   "fr": "Salaires 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues fiscales 4472, CNPS 431, nets 422.",
-   "en": "Gross pay 6611, employer levies 6413 and 6641; tax withholdings 4472, CNPS 431, net pay 422."
+   "fr": "Salaires 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues fiscales 4472, CNPS 431, nets 422. Pourquoi pas autre chose : Les retenues sont des dettes envers l'État et la CNPS, pas des charges : la charge est le brut et les cotisations patronales.",
+   "en": "Gross pay 6611, employer levies 6413 and 6641; tax withholdings 4472, CNPS 431, net pay 422. Why not something else: Withholdings are debts to the State and the CNPS, not expenses."
   },
   "journal": [
    {
@@ -183,8 +183,8 @@
    "en": "Record the October bank statement entries.\n\n[[piece:S-A-10-001]]"
   },
   "explanation": {
-   "fr": "Virement au fournisseur (401), salaires nets (422), virements internes via 585 (S19), frais en 631.",
-   "en": "Supplier transfer (401), net pay (422), internal transfers through 585, fees in 631."
+   "fr": "Virement au fournisseur (401), salaires nets (422), virements internes via 585 (S19), frais en 631. Pourquoi pas autre chose : Un écart s'explique avant de s'écrire ; on ne force jamais le compte.",
+   "en": "Supplier transfer (401), net pay (422), internal transfers through 585, fees in 631. Why not something else: A gap is explained before it is booked."
   },
   "journal": [
    {
@@ -254,12 +254,12 @@
   "usage": "exam",
   "exercice": 2026,
   "prompt": {
-   "fr": "Passez l'écriture du relevé MTN MoMo de octobre.\n\n[[piece:S-A-10-008]]",
-   "en": "Record the October MTN MoMo statement.\n\n[[piece:S-A-10-008]]"
+   "fr": "Passez l'écriture du relevé MTN MoMo de octobre.\n\n[[piece:S-A-10-007]]",
+   "en": "Record the October MTN MoMo statement.\n\n[[piece:S-A-10-007]]"
   },
   "explanation": {
-   "fr": "Sous-compte 5521, ventes et TVA ; frais de l'opérateur en 631 (S19).",
-   "en": "Sub-account 5521, sales and VAT; operator fees in 631."
+   "fr": "Sous-compte 5521, ventes et TVA ; frais de l'opérateur en 631 (S19). Pourquoi pas autre chose : Un sous-compte par opérateur : chacun se rapproche de son propre relevé. Les frais sont un service, pas une remise accordée aux clientes.",
+   "en": "Sub-account 5521, sales and VAT; operator fees in 631. Why not something else: One sub-account per operator: each is reconciled with its own statement. Fees are a service, not a discount to customers."
   },
   "journal": [
    {
@@ -303,8 +303,8 @@
    "en": "Record the October rent receipt.\n\n[[piece:S-A-10-002]]"
   },
   "explanation": {
-   "fr": "Loyer brut en 6222 ; précompte de 10 % retenu en 4478 (CGI art. 87) ; net payé par la banque.",
-   "en": "Gross rent in 6222; 10% withholding in 4478; net paid by bank."
+   "fr": "Loyer brut en 6222 ; précompte de 10 % retenu en 4478 (CGI art. 87) ; net payé par la banque. Pourquoi pas autre chose : La charge est le loyer brut ; la retenue est une dette envers l'État.",
+   "en": "Gross rent in 6222; 10% withholding in 4478; net paid by bank. Why not something else: The expense is the gross rent; the withholding is a debt to the State."
   },
   "journal": [
    {
@@ -338,8 +338,8 @@
    "en": "Record the payment of the October 15th return.\n\n[[piece:S-A-10-004]]"
   },
   "explanation": {
-   "fr": "Solde de la TVA (4431, 445, 4449), acompte d'IS en 441 net du précompte imputé, retenues et CNPS reversées.",
-   "en": "VAT settled, CIT instalment in 441 net of withholding, withholdings and CNPS paid over."
+   "fr": "Solde de la TVA (4431, 445, 4449), acompte d'IS en 441 net du précompte imputé, retenues et CNPS reversées. Pourquoi pas autre chose : Le précompte payé à Sawa Textiles vient en déduction de l'acompte : il n'est pas perdu.",
+   "en": "VAT settled, CIT instalment in 441 net of withholding, withholdings and CNPS paid over. Why not something else: The withholding paid to Sawa Textiles reduces the instalment: it is not lost."
   },
   "journal": [
    {
@@ -502,7 +502,7 @@
    "en": "Debits less credits of 521 up to that date, to reconcile with the bank statement."
   },
   "numeric": {
-   "value": 17452871,
+   "value": 22182871,
    "unit": "FCFA"
   },
   "rapprochement": {
@@ -524,8 +524,8 @@
    "en": "Record the November purchase invoice (2% withholding included).\n\n[[piece:S-A-11-003]]"
   },
   "explanation": {
-   "fr": "Achats en 6011, TVA et CAC récupérables en 4452, précompte en 4492, dette fournisseur en 401 (CGI art. 21 et 143).",
-   "en": "Purchases in 6011, recoverable VAT in 4452, withholding in 4492, supplier debt in 401."
+   "fr": "Achats en 6011, TVA et CAC récupérables en 4452, précompte en 4492, dette fournisseur en 401 (CGI art. 21 et 143). Pourquoi pas autre chose : Rappel : le précompte est une avance sur l'impôt ; le stock ne se compte qu'au 31 décembre.",
+   "en": "Purchases in 6011, recoverable VAT in 4452, withholding in 4492, supplier debt in 401. Why not something else: Reminder: the withholding is an advance on tax; stock is counted only on 31 December."
   },
   "journal": [
    {
@@ -560,12 +560,12 @@
   "usage": "exam",
   "exercice": 2026,
   "prompt": {
-   "fr": "Passez l'écriture des ventes au comptant de novembre.\n\n[[piece:S-A-11-006]]",
-   "en": "Record the November cash sales.\n\n[[piece:S-A-11-006]]"
+   "fr": "Passez l'écriture des ventes au comptant de novembre.\n\n[[piece:S-A-11-005]]",
+   "en": "Record the November cash sales.\n\n[[piece:S-A-11-005]]"
   },
   "explanation": {
-   "fr": "Caisse 5711 au TTC, ventes 7011 au HT, TVA facturée 4431.",
-   "en": "Cash 5711 incl. tax, sales 7011, VAT charged 4431."
+   "fr": "Caisse 5711 au TTC, ventes 7011 au HT, TVA facturée 4431. Pourquoi pas autre chose : La TVA encaissée n'appartient pas à la boutique : elle sera reversée le 15.",
+   "en": "Cash 5711 incl. tax, sales 7011, VAT charged 4431. Why not something else: VAT collected does not belong to the shop: it is paid over on the 15th."
   },
   "journal": [
    {
@@ -595,12 +595,12 @@
   "usage": "exam",
   "exercice": 2026,
   "prompt": {
-   "fr": "Passez l'écriture du relevé Orange Money de novembre.\n\n[[piece:S-A-11-007]]",
-   "en": "Record the November Orange Money statement.\n\n[[piece:S-A-11-007]]"
+   "fr": "Passez l'écriture du relevé Orange Money de novembre.\n\n[[piece:S-A-11-006]]",
+   "en": "Record the November Orange Money statement.\n\n[[piece:S-A-11-006]]"
   },
   "explanation": {
-   "fr": "Sous-compte 5522, ventes et TVA ; frais de l'opérateur en 631 (S19).",
-   "en": "Sub-account 5522, sales and VAT; operator fees in 631."
+   "fr": "Sous-compte 5522, ventes et TVA ; frais de l'opérateur en 631 (S19). Pourquoi pas autre chose : Un sous-compte par opérateur : chacun se rapproche de son propre relevé. Les frais sont un service, pas une remise accordée aux clientes.",
+   "en": "Sub-account 5522, sales and VAT; operator fees in 631. Why not something else: One sub-account per operator: each is reconciled with its own statement. Fees are a service, not a discount to customers."
   },
   "journal": [
    {
@@ -640,12 +640,12 @@
   "usage": "quiz",
   "exercice": 2026,
   "prompt": {
-   "fr": "Passez l'écriture du journal de paie de novembre.\n\n[[piece:S-A-11-009]]",
-   "en": "Record the November payroll journal.\n\n[[piece:S-A-11-009]]"
+   "fr": "Passez l'écriture du journal de paie de novembre.\n\n[[piece:S-A-11-008]]",
+   "en": "Record the November payroll journal.\n\n[[piece:S-A-11-008]]"
   },
   "explanation": {
-   "fr": "Salaires 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues fiscales 4472, CNPS 431, nets 422.",
-   "en": "Gross pay 6611, employer levies 6413 and 6641; tax withholdings 4472, CNPS 431, net pay 422."
+   "fr": "Salaires 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues fiscales 4472, CNPS 431, nets 422. Pourquoi pas autre chose : Les retenues sont des dettes envers l'État et la CNPS, pas des charges : la charge est le brut et les cotisations patronales.",
+   "en": "Gross pay 6611, employer levies 6413 and 6641; tax withholdings 4472, CNPS 431, net pay 422. Why not something else: Withholdings are debts to the State and the CNPS, not expenses."
   },
   "journal": [
    {
@@ -694,8 +694,8 @@
    "en": "Record the November bank statement entries.\n\n[[piece:S-A-11-001]]"
   },
   "explanation": {
-   "fr": "Virement au fournisseur (401), salaires nets (422), virements internes via 585 (S19), frais en 631.",
-   "en": "Supplier transfer (401), net pay (422), internal transfers through 585, fees in 631."
+   "fr": "Virement au fournisseur (401), salaires nets (422), virements internes via 585 (S19), frais en 631. Pourquoi pas autre chose : Un écart s'explique avant de s'écrire ; on ne force jamais le compte.",
+   "en": "Supplier transfer (401), net pay (422), internal transfers through 585, fees in 631. Why not something else: A gap is explained before it is booked."
   },
   "journal": [
    {
@@ -765,12 +765,12 @@
   "usage": "exam",
   "exercice": 2026,
   "prompt": {
-   "fr": "Passez l'écriture du relevé MTN MoMo de novembre.\n\n[[piece:S-A-11-008]]",
-   "en": "Record the November MTN MoMo statement.\n\n[[piece:S-A-11-008]]"
+   "fr": "Passez l'écriture du relevé MTN MoMo de novembre.\n\n[[piece:S-A-11-007]]",
+   "en": "Record the November MTN MoMo statement.\n\n[[piece:S-A-11-007]]"
   },
   "explanation": {
-   "fr": "Sous-compte 5521, ventes et TVA ; frais de l'opérateur en 631 (S19).",
-   "en": "Sub-account 5521, sales and VAT; operator fees in 631."
+   "fr": "Sous-compte 5521, ventes et TVA ; frais de l'opérateur en 631 (S19). Pourquoi pas autre chose : Un sous-compte par opérateur : chacun se rapproche de son propre relevé. Les frais sont un service, pas une remise accordée aux clientes.",
+   "en": "Sub-account 5521, sales and VAT; operator fees in 631. Why not something else: One sub-account per operator: each is reconciled with its own statement. Fees are a service, not a discount to customers."
   },
   "journal": [
    {
@@ -814,8 +814,8 @@
    "en": "Record the November rent receipt.\n\n[[piece:S-A-11-002]]"
   },
   "explanation": {
-   "fr": "Loyer brut en 6222 ; précompte de 10 % retenu en 4478 (CGI art. 87) ; net payé par la banque.",
-   "en": "Gross rent in 6222; 10% withholding in 4478; net paid by bank."
+   "fr": "Loyer brut en 6222 ; précompte de 10 % retenu en 4478 (CGI art. 87) ; net payé par la banque. Pourquoi pas autre chose : La charge est le loyer brut ; la retenue est une dette envers l'État.",
+   "en": "Gross rent in 6222; 10% withholding in 4478; net paid by bank. Why not something else: The expense is the gross rent; the withholding is a debt to the State."
   },
   "journal": [
    {
@@ -849,8 +849,8 @@
    "en": "Record the payment of the November 15th return.\n\n[[piece:S-A-11-004]]"
   },
   "explanation": {
-   "fr": "Solde de la TVA (4431, 445, 4449), acompte d'IS en 441 net du précompte imputé, retenues et CNPS reversées.",
-   "en": "VAT settled, CIT instalment in 441 net of withholding, withholdings and CNPS paid over."
+   "fr": "Solde de la TVA (4431, 445, 4449), acompte d'IS en 441 net du précompte imputé, retenues et CNPS reversées. Pourquoi pas autre chose : Le précompte payé à Sawa Textiles vient en déduction de l'acompte : il n'est pas perdu.",
+   "en": "VAT settled, CIT instalment in 441 net of withholding, withholdings and CNPS paid over. Why not something else: The withholding paid to Sawa Textiles reduces the instalment: it is not lost."
   },
   "journal": [
    {
@@ -1013,7 +1013,7 @@
    "en": "Debits less credits of 521 up to that date, to reconcile with the bank statement."
   },
   "numeric": {
-   "value": 20296959,
+   "value": 25026959,
    "unit": "FCFA"
   },
   "rapprochement": {
@@ -1035,8 +1035,8 @@
    "en": "Record the December purchase invoice (2% withholding included).\n\n[[piece:S-A-12-003]]"
   },
   "explanation": {
-   "fr": "Achats en 6011, TVA et CAC récupérables en 4452, précompte en 4492, dette fournisseur en 401 (CGI art. 21 et 143).",
-   "en": "Purchases in 6011, recoverable VAT in 4452, withholding in 4492, supplier debt in 401."
+   "fr": "Achats en 6011, TVA et CAC récupérables en 4452, précompte en 4492, dette fournisseur en 401 (CGI art. 21 et 143). Pourquoi pas autre chose : Rappel : le précompte est une avance sur l'impôt ; le stock ne se compte qu'au 31 décembre.",
+   "en": "Purchases in 6011, recoverable VAT in 4452, withholding in 4492, supplier debt in 401. Why not something else: Reminder: the withholding is an advance on tax; stock is counted only on 31 December."
   },
   "journal": [
    {
@@ -1071,12 +1071,12 @@
   "usage": "exam",
   "exercice": 2026,
   "prompt": {
-   "fr": "Passez l'écriture des ventes au comptant de décembre.\n\n[[piece:S-A-12-006]]",
-   "en": "Record the December cash sales.\n\n[[piece:S-A-12-006]]"
+   "fr": "Passez l'écriture des ventes au comptant de décembre.\n\n[[piece:S-A-12-005]]",
+   "en": "Record the December cash sales.\n\n[[piece:S-A-12-005]]"
   },
   "explanation": {
-   "fr": "Caisse 5711 au TTC, ventes 7011 au HT, TVA facturée 4431.",
-   "en": "Cash 5711 incl. tax, sales 7011, VAT charged 4431."
+   "fr": "Caisse 5711 au TTC, ventes 7011 au HT, TVA facturée 4431. Pourquoi pas autre chose : La TVA encaissée n'appartient pas à la boutique : elle sera reversée le 15.",
+   "en": "Cash 5711 incl. tax, sales 7011, VAT charged 4431. Why not something else: VAT collected does not belong to the shop: it is paid over on the 15th."
   },
   "journal": [
    {
@@ -1106,12 +1106,12 @@
   "usage": "quiz",
   "exercice": 2026,
   "prompt": {
-   "fr": "Passez l'écriture du relevé Orange Money de décembre.\n\n[[piece:S-A-12-007]]",
-   "en": "Record the December Orange Money statement.\n\n[[piece:S-A-12-007]]"
+   "fr": "Passez l'écriture du relevé Orange Money de décembre.\n\n[[piece:S-A-12-006]]",
+   "en": "Record the December Orange Money statement.\n\n[[piece:S-A-12-006]]"
   },
   "explanation": {
-   "fr": "Sous-compte 5522, ventes et TVA ; frais de l'opérateur en 631 (S19).",
-   "en": "Sub-account 5522, sales and VAT; operator fees in 631."
+   "fr": "Sous-compte 5522, ventes et TVA ; frais de l'opérateur en 631 (S19). Pourquoi pas autre chose : Un sous-compte par opérateur : chacun se rapproche de son propre relevé. Les frais sont un service, pas une remise accordée aux clientes.",
+   "en": "Sub-account 5522, sales and VAT; operator fees in 631. Why not something else: One sub-account per operator: each is reconciled with its own statement. Fees are a service, not a discount to customers."
   },
   "journal": [
    {
@@ -1151,12 +1151,12 @@
   "usage": "exam",
   "exercice": 2026,
   "prompt": {
-   "fr": "Passez l'écriture du journal de paie de décembre.\n\n[[piece:S-A-12-009]]",
-   "en": "Record the December payroll journal.\n\n[[piece:S-A-12-009]]"
+   "fr": "Passez l'écriture du journal de paie de décembre.\n\n[[piece:S-A-12-008]]",
+   "en": "Record the December payroll journal.\n\n[[piece:S-A-12-008]]"
   },
   "explanation": {
-   "fr": "Salaires 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues fiscales 4472, CNPS 431, nets 422.",
-   "en": "Gross pay 6611, employer levies 6413 and 6641; tax withholdings 4472, CNPS 431, net pay 422."
+   "fr": "Salaires 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues fiscales 4472, CNPS 431, nets 422. Pourquoi pas autre chose : Les retenues sont des dettes envers l'État et la CNPS, pas des charges : la charge est le brut et les cotisations patronales.",
+   "en": "Gross pay 6611, employer levies 6413 and 6641; tax withholdings 4472, CNPS 431, net pay 422. Why not something else: Withholdings are debts to the State and the CNPS, not expenses."
   },
   "journal": [
    {
@@ -1205,8 +1205,8 @@
    "en": "Record the December bank statement entries.\n\n[[piece:S-A-12-001]]"
   },
   "explanation": {
-   "fr": "Virement au fournisseur (401), salaires nets (422), virements internes via 585 (S19), frais en 631.",
-   "en": "Supplier transfer (401), net pay (422), internal transfers through 585, fees in 631."
+   "fr": "Virement au fournisseur (401), salaires nets (422), virements internes via 585 (S19), frais en 631. Pourquoi pas autre chose : Un écart s'explique avant de s'écrire ; on ne force jamais le compte.",
+   "en": "Supplier transfer (401), net pay (422), internal transfers through 585, fees in 631. Why not something else: A gap is explained before it is booked."
   },
   "journal": [
    {
@@ -1276,12 +1276,12 @@
   "usage": "exam",
   "exercice": 2026,
   "prompt": {
-   "fr": "Passez l'écriture du relevé MTN MoMo de décembre.\n\n[[piece:S-A-12-008]]",
-   "en": "Record the December MTN MoMo statement.\n\n[[piece:S-A-12-008]]"
+   "fr": "Passez l'écriture du relevé MTN MoMo de décembre.\n\n[[piece:S-A-12-007]]",
+   "en": "Record the December MTN MoMo statement.\n\n[[piece:S-A-12-007]]"
   },
   "explanation": {
-   "fr": "Sous-compte 5521, ventes et TVA ; frais de l'opérateur en 631 (S19).",
-   "en": "Sub-account 5521, sales and VAT; operator fees in 631."
+   "fr": "Sous-compte 5521, ventes et TVA ; frais de l'opérateur en 631 (S19). Pourquoi pas autre chose : Un sous-compte par opérateur : chacun se rapproche de son propre relevé. Les frais sont un service, pas une remise accordée aux clientes.",
+   "en": "Sub-account 5521, sales and VAT; operator fees in 631. Why not something else: One sub-account per operator: each is reconciled with its own statement. Fees are a service, not a discount to customers."
   },
   "journal": [
    {
@@ -1325,8 +1325,8 @@
    "en": "Record the December rent receipt.\n\n[[piece:S-A-12-002]]"
   },
   "explanation": {
-   "fr": "Loyer brut en 6222 ; précompte de 10 % retenu en 4478 (CGI art. 87) ; net payé par la banque.",
-   "en": "Gross rent in 6222; 10% withholding in 4478; net paid by bank."
+   "fr": "Loyer brut en 6222 ; précompte de 10 % retenu en 4478 (CGI art. 87) ; net payé par la banque. Pourquoi pas autre chose : La charge est le loyer brut ; la retenue est une dette envers l'État.",
+   "en": "Gross rent in 6222; 10% withholding in 4478; net paid by bank. Why not something else: The expense is the gross rent; the withholding is a debt to the State."
   },
   "journal": [
    {
@@ -1360,8 +1360,8 @@
    "en": "Record the payment of the December 15th return.\n\n[[piece:S-A-12-004]]"
   },
   "explanation": {
-   "fr": "Solde de la TVA (4431, 445, 4449), acompte d'IS en 441 net du précompte imputé, retenues et CNPS reversées.",
-   "en": "VAT settled, CIT instalment in 441 net of withholding, withholdings and CNPS paid over."
+   "fr": "Solde de la TVA (4431, 445, 4449), acompte d'IS en 441 net du précompte imputé, retenues et CNPS reversées. Pourquoi pas autre chose : Le précompte payé à Sawa Textiles vient en déduction de l'acompte : il n'est pas perdu.",
+   "en": "VAT settled, CIT instalment in 441 net of withholding, withholdings and CNPS paid over. Why not something else: The withholding paid to Sawa Textiles reduces the instalment: it is not lost."
   },
   "journal": [
    {
@@ -1524,7 +1524,7 @@
    "en": "Debits less credits of 521 up to that date, to reconcile with the bank statement."
   },
   "numeric": {
-   "value": 23076046,
+   "value": 27806046,
    "unit": "FCFA"
   },
   "rapprochement": {
@@ -1542,12 +1542,12 @@
   "usage": "exam",
   "exercice": 2026,
   "prompt": {
-   "fr": "Passez l'écriture du don.\n\n[[piece:S-A-10-010]]",
-   "en": "Record the donation.\n\n[[piece:S-A-10-010]]"
+   "fr": "Passez l'écriture du don.\n\n[[piece:S-A-10-009]]",
+   "en": "Record the donation.\n\n[[piece:S-A-10-009]]"
   },
   "explanation": {
-   "fr": "Dons 6582 ; déductibles dans la limite de 0,5 % du CA (CGI art. 7).",
-   "en": "Donations 6582; deductible up to 0.5%."
+   "fr": "Dons 6582 ; déductibles dans la limite de 0,5 % du CA (CGI art. 7). Pourquoi pas autre chose : Le don n'est pas interdit fiscalement, il est plafonné : seule la part au-delà sera réintégrée.",
+   "en": "Donations 6582; deductible up to 0.5%. Why not something else: A donation is not barred for tax, only capped: the excess is added back."
   },
   "journal": [
    {
@@ -1572,12 +1572,12 @@
   "usage": "exam",
   "exercice": 2026,
   "prompt": {
-   "fr": "Passez l'écriture de la reprise de provision.\n\n[[piece:S-A-11-010]]",
-   "en": "Record the provision reversal.\n\n[[piece:S-A-11-010]]"
+   "fr": "Passez l'écriture de la reprise de provision.\n\n[[piece:S-A-11-009]]",
+   "en": "Record the provision reversal.\n\n[[piece:S-A-11-009]]"
   },
   "explanation": {
-   "fr": "Provision 191 soldée par 7911 ; la reprise d'une provision déjà taxée se déduit.",
-   "en": "Provision 191 reversed through 7911; deducted for tax."
+   "fr": "Provision 191 soldée par 7911 ; la reprise d'une provision déjà taxée se déduit. Pourquoi pas autre chose : La provision a été réintégrée quand elle a été dotée : sa reprise, déjà taxée, se déduit du résultat fiscal, sinon elle serait imposée deux fois.",
+   "en": "Provision 191 reversed through 7911; deducted for tax. Why not something else: The provision was added back when it was booked: its reversal, already taxed, is deducted, otherwise it would be taxed twice."
   },
   "journal": [
    {

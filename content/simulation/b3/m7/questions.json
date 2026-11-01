@@ -1,0 +1,593 @@
+[
+ {
+  "id": "S-B3-M7-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Montant de l'amende à réintégrer ?\n\n[[piece:S-B3-05-009]]",
+   "en": "Fine to add back?\n\n[[piece:S-B3-05-009]]"
+  },
+  "explanation": {
+   "fr": "Les amendes et pénalités ne sont pas déductibles (CGI art. 7).",
+   "en": "Les amendes et pénalités ne sont pas déductibles (CGI art. 7)."
+  },
+  "numeric": {
+   "value": 25000,
+   "unit": "FCFA"
+  },
+  "passerelle": "amendes"
+ },
+ {
+  "id": "S-B3-M7-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Part du don à réintégrer (limite de 0,5 % du CA) ?\n\n[[piece:S-B3-10-009]]",
+   "en": "Donation to add back (0.5% of turnover cap)?\n\n[[piece:S-B3-10-009]]"
+  },
+  "explanation": {
+   "fr": "Déductible dans la limite de 0,5 % du chiffre d'affaires (CGI art. 7).",
+   "en": "Déductible dans la limite de 0,5 % du chiffre d'affaires (CGI art. 7)."
+  },
+  "numeric": {
+   "value": 69510,
+   "unit": "FCFA"
+  },
+  "passerelle": "dons_excedentaires",
+  "calcul": {
+   "fonction": "reintegration_dons",
+   "args": [
+    1500000,
+    286098000,
+    0.5
+   ],
+   "resultat": []
+  }
+ },
+ {
+  "id": "S-B3-M7-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Charge à réintégrer faute de justificatif ?\n\n[[piece:S-B3-08-009]]",
+   "en": "Expense to add back for lack of receipt?\n\n[[piece:S-B3-08-009]]"
+  },
+  "explanation": {
+   "fr": "Une charge sans pièce justificative n'est pas déductible (CGI art. 7).",
+   "en": "Une charge sans pièce justificative n'est pas déductible (CGI art. 7)."
+  },
+  "numeric": {
+   "value": 60000,
+   "unit": "FCFA"
+  },
+  "passerelle": "charge_sans_piece"
+ },
+ {
+  "id": "S-B3-M7-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "IS dû pour 2026 (le plus élevé de l'IS et du minimum de perception) ?\n\n[[piece:S-B3-16-001]]",
+   "en": "2026 CIT due (higher of CIT and minimum)?\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "IS au taux de 25 % (art. 17 bis) comparé au minimum de 2 % du CA, CAC compris : le minimum l'emporte.",
+   "en": "IS au taux de 25 % (art. 17 bis) comparé au minimum de 2 % du CA, CAC compris : le minimum l'emporte."
+  },
+  "numeric": {
+   "value": 6294156,
+   "unit": "FCFA"
+  },
+  "passerelle": "impot_societes",
+  "calcul": {
+   "fonction": "impot_societes",
+   "args": [
+    2044790,
+    286098000,
+    25.0,
+    2,
+    10
+   ],
+   "resultat": [
+    "du"
+   ]
+  }
+ },
+ {
+  "id": "S-B3-M7-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Résultat comptable avant impôt 2026 ?\n\n[[piece:S-B3-16-001]]",
+   "en": "2026 accounting profit before tax?\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "Produits moins charges des classes 6, 7 et 8.",
+   "en": "Produits moins charges des classes 6, 7 et 8."
+  },
+  "numeric": {
+   "value": 1890280,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B3-M7-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Résultat fiscal 2026 ?\n\n[[piece:S-B3-16-001]]",
+   "en": "2026 taxable profit?\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "Résultat comptable + réintégrations.",
+   "en": "Résultat comptable + réintégrations."
+  },
+  "numeric": {
+   "value": 2044790,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B3-M7-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des réintégrations ?\n\n[[piece:S-B3-16-001]]",
+   "en": "Total add-backs?\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "Amende, charge sans pièce et don excédentaire.",
+   "en": "Amende, charge sans pièce et don excédentaire."
+  },
+  "numeric": {
+   "value": 154510,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B3-M7-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "IS calculé au taux de 25 %, CAC compris ?\n\n[[piece:S-B3-16-001]]",
+   "en": "CIT at 25%, council cents included?\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "Résultat fiscal × 25 %, majoré de 10 % de CAC (CGI art. 17 bis).",
+   "en": "Résultat fiscal × 25 %, majoré de 10 % de CAC (CGI art. 17 bis)."
+  },
+  "numeric": {
+   "value": 562100,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B3-M7-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Minimum de perception 2026, CAC compris ?\n\n[[piece:S-B3-16-001]]",
+   "en": "2026 minimum tax, council cents included?\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "2 % du CA arrondi au millier inférieur, majoré de 10 % (CGI art. 21 et 23).",
+   "en": "2 % du CA arrondi au millier inférieur, majoré de 10 % (CGI art. 21 et 23)."
+  },
+  "numeric": {
+   "value": 6294156,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B3-M7-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des acomptes d'IS versés au titre de 2026 ?\n\n[[piece:S-B3-16-001]]",
+   "en": "Total 2026 CIT instalments?\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "Somme des acomptes bruts des douze déclarations (compte 441).",
+   "en": "Somme des acomptes bruts des douze déclarations (compte 441)."
+  },
+  "numeric": {
+   "value": 6294156,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B3-M7-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chiffre d'affaires HT 2026 (ventes et bonis sur emballages) ?\n\n[[piece:S-B3-16-001]]",
+   "en": "2026 turnover excl. tax (sales and packaging gains)?\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "Total des comptes 70 (7011 et 7074).",
+   "en": "Total des comptes 70 (7011 et 7074)."
+  },
+  "numeric": {
+   "value": 286098000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B3-M7-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Résultat net 2026 ?\n\n[[piece:S-B3-16-001]]",
+   "en": "2026 net profit?\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "Résultat avant impôt − IS dû.",
+   "en": "Résultat avant impôt − IS dû."
+  },
+  "numeric": {
+   "value": -4403876,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B3-M7-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Stocks de marchandises au bilan 2026 ?\n\n[[piece:S-B3-16-001]]",
+   "en": "2026 balance-sheet goods inventory?\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "Stock final des deux formats au CMUP.",
+   "en": "Stock final des deux formats au CMUP."
+  },
+  "numeric": {
+   "value": 5485200,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B3-M7-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Emprunt restant dû au bilan 2026 ?\n\n[[piece:S-B3-16-001]]",
+   "en": "Loan outstanding on the 2026 balance sheet?\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "Capital emprunté moins les remboursements de l'année.",
+   "en": "Capital emprunté moins les remboursements de l'année."
+  },
+  "numeric": {
+   "value": 8666670,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B3-M7-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Excédent d'acomptes sur l'IS dû ?\n\n[[piece:S-B3-16-001]]",
+   "en": "Instalments in excess of CIT due?\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "Acomptes versés moins IS dû.",
+   "en": "Instalments less CIT due."
+  },
+  "numeric": {
+   "value": 0,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B3-M7-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de l'IS de l'exercice.\n\n[[piece:S-B3-16-001]]",
+   "en": "Record the CIT for the year.\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "Impôt sur les bénéfices 891 au débit, État 441 au crédit.",
+   "en": "Income tax 891 debit, State 441 credit."
+  },
+  "journal": [
+   {
+    "account": "891",
+    "side": "debit",
+    "amount": 6294156
+   },
+   {
+    "account": "441",
+    "side": "credit",
+    "amount": 6294156
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M7-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Date limite de dépôt de la DSF 2026 d'Ateba Boissons SARL (CIME) ?\n\n[[piece:S-B3-16-001]]",
+   "en": "Filing deadline (MTO)?\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "CIME : 15 avril (CGI art. 18 (1), S22).",
+   "en": "CIME : 15 avril (CGI art. 18 (1), S22)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "15 avril 2027",
+     "en": "15 April 2027"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "15 mars 2027",
+     "en": "15 March 2027"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "15 mai 2027",
+     "en": "15 May 2027"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M7-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "La bière est-elle un produit à marge administrée pour l'acompte d'IS ?\n\n[[piece:S-B3-16-001]]",
+   "en": "Is beer an administered-margin product for the CIT instalment?\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "Non : l'art. 21 (1) c vise les produits pétroliers, de la minoterie, pharmaceutiques, de la presse et les engrais.",
+   "en": "Non : l'art. 21 (1) c vise les produits pétroliers, de la minoterie, pharmaceutiques, de la presse et les engrais."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non : acompte de 2 % du CA, majoré des CAC",
+     "en": "No: 2% of turnover plus council cents"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui : 14 % de la marge brute",
+     "en": "Yes: 14% of gross margin"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M7-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Quels tableaux de la DSF sont travaillés dans la simulation ?\n\n[[piece:S-B3-16-001]]",
+   "en": "Which return tables are covered?\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "Périmètre S12.",
+   "en": "Périmètre S12."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Bilan, compte de résultat, tableau de passage, liquidation de l'IS",
+     "en": "Balance sheet, income statement, reconciliation, CIT"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Tous les tableaux de la DSF",
+     "en": "All tables"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M7-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "L'IS de l'exercice est une charge déductible.\n\n[[piece:S-B3-16-001]]",
+   "en": "The year's CIT is deductible.\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "Faux : l'IS n'est pas admis en charge (CGI art. 7).",
+   "en": "Faux : l'IS n'est pas admis en charge (CGI art. 7)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M7-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Le minimum de perception s'applique même quand l'IS calculé est plus faible.\n\n[[piece:S-B3-16-001]]",
+   "en": "The minimum tax applies even when the computed CIT is lower.\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "Vrai : c'est le cas d'Ateba Boissons (CGI art. 21 et 23).",
+   "en": "Vrai : c'est le cas d'Ateba Boissons (CGI art. 21 et 23)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M7-022",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Les accises comprises dans le prix d'achat sont déductibles comme la TVA.\n\n[[piece:S-B3-16-001]]",
+   "en": "Excise included in the purchase price is recoverable like VAT.\n\n[[piece:S-B3-16-001]]"
+  },
+  "explanation": {
+   "fr": "Faux : payées par la brasserie et comprises dans son prix, elles font partie du coût d'achat (6011).",
+   "en": "Faux : payées par la brasserie et comprises dans son prix, elles font partie du coût d'achat (6011)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ }
+]

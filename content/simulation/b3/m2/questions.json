@@ -1,0 +1,1338 @@
+[
+ {
+  "id": "S-B3-M2-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture de la brasserie de février (précompte, consigne et vides compris).\n\n[[piece:S-B3-02-005]]",
+   "en": "Record the February brewery invoice (withholding, deposits and empties included).\n\n[[piece:S-B3-02-005]]"
+  },
+  "explanation": {
+   "fr": "Achats 6011 (accises comprises dans le prix), TVA et CAC 4452, précompte de 2 % en 4492 (CGI art. 21 (3)) ; consigne des casiers livrés en 4094, déconsigne des vides au crédit de 4094, mali éventuel en 6224 (Guide SYSCOHADA, 1re partie, ch. 2) ; net dû au fournisseur 401. Pourquoi pas autre chose : La déconsigne n'est ni un produit ni une réduction d'achat : elle solde la créance de [[syscohada:4094]], créée quand les casiers sont arrivés pleins.",
+   "en": "Purchases 6011 (excise included), VAT 4452, 2% withholding 4492; deposits debited to 4094, empties returned credited to 4094, any loss in 6224; net payable 401. Why not something else: The refund is neither income nor a purchase discount: it clears the 4094 receivable created when the crates arrived full."
+  },
+  "journal": [
+   {
+    "account": "6011",
+    "side": "debit",
+    "amount": 22505000
+   },
+   {
+    "account": "4452",
+    "side": "debit",
+    "amount": 4332213
+   },
+   {
+    "account": "4492",
+    "side": "debit",
+    "amount": 450100
+   },
+   {
+    "account": "4094",
+    "side": "debit",
+    "amount": 13476000
+   },
+   {
+    "account": "4094",
+    "side": "credit",
+    "amount": 13200000
+   },
+   {
+    "account": "401",
+    "side": "credit",
+    "amount": 27563313
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture au snack-bar de février.\n\n[[piece:S-B3-02-006]]",
+   "en": "Record the February snack-bar invoice.\n\n[[piece:S-B3-02-006]]"
+  },
+  "explanation": {
+   "fr": "Client 411 au net, ventes 7011, TVA facturée 4431 ; consigne facturée en 4194 (hors base de TVA, emballages identifiables, CGI art. 139) ; vides rendus au débit de 4194, boni éventuel en 7074. Pourquoi pas autre chose : La déconsigne rembourse une dette : elle se passe au débit de [[syscohada:4194]], jamais en réduction du chiffre d'affaires.",
+   "en": "Customer 411, sales 7011, VAT 4431; deposit charged to 4194 (outside the VAT base); empties returned debited to 4194, any gain in 7074. Why not something else: The refund settles a debt: it is debited to 4194, never deducted from turnover."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "side": "debit",
+    "amount": 1234953
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 1035600
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 199353
+   },
+   {
+    "account": "4194",
+    "side": "credit",
+    "amount": 576000
+   },
+   {
+    "account": "4194",
+    "side": "debit",
+    "amount": 576000
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture des ventes au comptant de février.\n\n[[piece:S-B3-02-007]]",
+   "en": "Record the February cash sales.\n\n[[piece:S-B3-02-007]]"
+  },
+  "explanation": {
+   "fr": "Caisse 5711 au TTC, ventes 7011 au HT, TVA facturée 4431 ; les vides s'échangent, sans consigne. Pourquoi pas autre chose : Une seule écriture récapitulative pour le mois est régulière, à condition que le brouillard quotidien la justifie [[source:ohada-audcif]].",
+   "en": "Cash 5711 incl. tax, sales 7011, VAT charged 4431; empties are swapped, no deposit. Why not something else: One monthly summary entry is lawful, provided the daily cash book supports it."
+  },
+  "journal": [
+   {
+    "account": "5711",
+    "side": "debit",
+    "amount": 17057520
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 14304000
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 2753520
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du relevé Orange Money de février.\n\n[[piece:S-B3-02-008]]",
+   "en": "Record the February Orange Money statement.\n\n[[piece:S-B3-02-008]]"
+  },
+  "explanation": {
+   "fr": "Sous-compte 5522 : ventes et TVA, frais de l'opérateur en 631, transfert vers la banque par 585 (S19). Pourquoi pas autre chose : Les frais restent des services bancaires (631), jamais une réduction de la vente.",
+   "en": "Sub-account 5522: sales and VAT, operator fees 631, transfer to the bank through 585. Why not something else: Fees stay bank services (631), never a sales discount."
+  },
+  "journal": [
+   {
+    "account": "5522",
+    "side": "debit",
+    "amount": 10136727
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 8500400
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 1636327
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 8500
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 8500
+   },
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 10128227
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 10128227
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du journal de paie de février.\n\n[[piece:S-B3-02-009]]",
+   "en": "Record the February payroll journal.\n\n[[piece:S-B3-02-009]]"
+  },
+  "explanation": {
+   "fr": "Salaires 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues fiscales 4472, CNPS 431, nets 422. Pourquoi pas autre chose : Rappel : les retenues sont des dettes envers l'État et la CNPS, pas des charges.",
+   "en": "Gross pay 6611, employer levies 6413 and 6641; tax withholdings 4472, CNPS 431, net pay 422. Why not something else: Reminder: withholdings are debts to the State and the CNPS, not expenses."
+  },
+  "journal": [
+   {
+    "account": "6611",
+    "side": "debit",
+    "amount": 680000
+   },
+   {
+    "account": "6413",
+    "side": "debit",
+    "amount": 17000
+   },
+   {
+    "account": "6641",
+    "side": "debit",
+    "amount": 28560
+   },
+   {
+    "account": "4472",
+    "side": "credit",
+    "amount": 73427
+   },
+   {
+    "account": "431",
+    "side": "credit",
+    "amount": 57120
+   },
+   {
+    "account": "422",
+    "side": "credit",
+    "amount": 595013
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez les écritures du relevé bancaire de février.\n\n[[piece:S-B3-02-001]]",
+   "en": "Record the February bank statement entries.\n\n[[piece:S-B3-02-001]]"
+  },
+  "explanation": {
+   "fr": "Règlements à 30 jours (401, 411), salaires nets (422), échéance de l'emprunt (162 et 6712), virements internes par 585, frais en 631. Pourquoi pas autre chose : Le rapprochement explique les écarts ; il ne force jamais le compte.",
+   "en": "30-day settlements, net pay, loan instalment (162, 6712), internal transfers, fees. Why not something else: Reconciliation explains gaps; it never forces the account."
+  },
+  "journal": [
+   {
+    "account": "4812",
+    "side": "debit",
+    "amount": 21465000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 21465000
+   },
+   {
+    "account": "401",
+    "side": "debit",
+    "amount": 40763313
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 40763313
+   },
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 1810953
+   },
+   {
+    "account": "411",
+    "side": "credit",
+    "amount": 1810953
+   },
+   {
+    "account": "422",
+    "side": "debit",
+    "amount": 595013
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 595013
+   },
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 27185747
+   },
+   {
+    "account": "585",
+    "side": "credit",
+    "amount": 27185747
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 3500
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 3500
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la quittance de loyer de février.\n\n[[piece:S-B3-02-004]]",
+   "en": "Record the February rent receipt.\n\n[[piece:S-B3-02-004]]"
+  },
+  "explanation": {
+   "fr": "Loyer brut 6222 ; précompte de 10 % retenu en 4478 (CGI art. 87) ; net payé par la banque. Pourquoi pas autre chose : Rappel de janvier : la charge est le loyer brut ; la retenue appartient à l'État.",
+   "en": "Gross rent 6222; 10% withholding 4478; net paid by bank. Why not something else: Reminder from January: the expense is the gross rent; the withholding belongs to the State."
+  },
+  "journal": [
+   {
+    "account": "6222",
+    "side": "debit",
+    "amount": 250000
+   },
+   {
+    "account": "4478",
+    "side": "credit",
+    "amount": 25000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 225000
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du bordereau de versement des espèces de février.\n\n[[piece:S-B3-02-011]]",
+   "en": "Record the February cash deposit slip.\n\n[[piece:S-B3-02-011]]"
+  },
+  "explanation": {
+   "fr": "Virement interne : 585 au débit, caisse 5711 au crédit (S19). Pourquoi pas autre chose : 585 garantit une seule écriture par pièce : la caisse sort l'argent, la banque le reçoit.",
+   "en": "Internal transfer: 585 debit, cash 5711 credit. Why not something else: 585 keeps one entry per document: the till pays out, the bank receives."
+  },
+  "journal": [
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 17057520
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 17057520
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du règlement de la déclaration du 15 février.\n\n[[piece:S-B3-02-010]]",
+   "en": "Record the payment of the February 15th return.\n\n[[piece:S-B3-02-010]]"
+  },
+  "explanation": {
+   "fr": "Solde de la TVA (4431, 445, 4449), acompte d'IS en 441 net du précompte imputé, retenues et CNPS reversées. Pourquoi pas autre chose : Le précompte payé à la brasserie n'est pas perdu : il s'impute sur l'acompte. Et un crédit de TVA ne se rembourse pas tout seul : il se reporte sur le mois suivant.",
+   "en": "VAT settled, CIT instalment in 441 net of withholding, withholdings and CNPS paid over. Why not something else: The withholding paid to the brewery is not lost: it is credited against the instalment. A VAT credit is not refunded by itself: it is carried forward."
+  },
+  "journal": [
+   {
+    "account": "4431",
+    "side": "debit",
+    "amount": 4589200
+   },
+   {
+    "account": "4451",
+    "side": "credit",
+    "amount": 192500
+   },
+   {
+    "account": "4452",
+    "side": "credit",
+    "amount": 4332213
+   },
+   {
+    "account": "4454",
+    "side": "credit",
+    "amount": 57750
+   },
+   {
+    "account": "441",
+    "side": "debit",
+    "amount": 524480
+   },
+   {
+    "account": "4492",
+    "side": "credit",
+    "amount": 450100
+   },
+   {
+    "account": "4472",
+    "side": "debit",
+    "amount": 73427
+   },
+   {
+    "account": "4478",
+    "side": "debit",
+    "amount": 25000
+   },
+   {
+    "account": "431",
+    "side": "debit",
+    "amount": 57120
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 236664
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour février 2026 : TVA due (ou crédit à reporter) ?",
+   "en": "15th return for February 2026: VAT due (or credit carried forward)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 3208013,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-02",
+   "field": "credit_tva"
+  }
+ },
+ {
+  "id": "S-B3-M2-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour février 2026 : Acompte d'IS net du précompte imputé ?",
+   "en": "15th return for February 2026: CIT instalment net of withholding?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 74380,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-02",
+   "field": "acompte_is_net"
+  }
+ },
+ {
+  "id": "S-B3-M2-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour février 2026 : Retenues à la source du mois (salaires et loyer) ?",
+   "en": "15th return for February 2026: Withholdings of the month (pay and rent)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 98427,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-02",
+   "field": "retenues_salaires"
+  }
+ },
+ {
+  "id": "S-B3-M2-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Montant du droit d'accises spécifique additionnel compris dans la facture de la brasserie de février ?\n\n[[piece:S-B3-02-005]]",
+   "en": "Additional specific excise duty included in the February brewery invoice?\n\n[[piece:S-B3-02-005]]"
+  },
+  "explanation": {
+   "fr": "Droit spécifique additionnel (CGI art. 142 (9)) : 75 par bouteille de 65 cl et 37,5 par bouteille de 33 cl, soit 900 par casier dans les deux formats. Il s'ajoute au droit d'accises de 25 % ; la brasserie paie les deux et les comprend dans son prix : ils font partie du coût d'achat (6011).",
+   "en": "Additional specific duty: 75 per 65 cl bottle and 37.5 per 33 cl bottle, 900 per crate either way. It comes on top of the 25% excise; the brewer pays both and includes them in its price."
+  },
+  "numeric": {
+   "value": 3213000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B3-M2-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde comptable du compte 521 au 28 février 2026 ?\n\n[[piece:S-B3-02-001]]",
+   "en": "Book balance of account 521 at February 28, 2026?\n\n[[piece:S-B3-02-001]]"
+  },
+  "explanation": {
+   "fr": "Débits moins crédits de 521 jusqu'à cette date : c'est le solde à rapprocher du relevé bancaire.",
+   "en": "Debits less credits of 521 up to that date."
+  },
+  "numeric": {
+   "value": 12470194,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-02-28"
+  }
+ },
+ {
+  "id": "S-B3-M2-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture de la brasserie de mars (précompte, consigne et vides compris).\n\n[[piece:S-B3-03-003]]",
+   "en": "Record the March brewery invoice (withholding, deposits and empties included).\n\n[[piece:S-B3-03-003]]"
+  },
+  "explanation": {
+   "fr": "Achats 6011 (accises comprises dans le prix), TVA et CAC 4452, précompte de 2 % en 4492 (CGI art. 21 (3)) ; consigne des casiers livrés en 4094, déconsigne des vides au crédit de 4094, mali éventuel en 6224 (Guide SYSCOHADA, 1re partie, ch. 2) ; net dû au fournisseur 401. Pourquoi pas autre chose : La déconsigne n'est ni un produit ni une réduction d'achat : elle solde la créance de [[syscohada:4094]], créée quand les casiers sont arrivés pleins.",
+   "en": "Purchases 6011 (excise included), VAT 4452, 2% withholding 4492; deposits debited to 4094, empties returned credited to 4094, any loss in 6224; net payable 401. Why not something else: The refund is neither income nor a purchase discount: it clears the 4094 receivable created when the crates arrived full."
+  },
+  "journal": [
+   {
+    "account": "6011",
+    "side": "debit",
+    "amount": 22505000
+   },
+   {
+    "account": "4452",
+    "side": "debit",
+    "amount": 4332213
+   },
+   {
+    "account": "4492",
+    "side": "debit",
+    "amount": 450100
+   },
+   {
+    "account": "4094",
+    "side": "debit",
+    "amount": 13476000
+   },
+   {
+    "account": "4094",
+    "side": "credit",
+    "amount": 13200000
+   },
+   {
+    "account": "401",
+    "side": "credit",
+    "amount": 27563313
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture au snack-bar de mars.\n\n[[piece:S-B3-03-004]]",
+   "en": "Record the March snack-bar invoice.\n\n[[piece:S-B3-03-004]]"
+  },
+  "explanation": {
+   "fr": "Client 411 au net, ventes 7011, TVA facturée 4431 ; consigne facturée en 4194 (hors base de TVA, emballages identifiables, CGI art. 139) ; vides rendus au débit de 4194, boni éventuel en 7074. Pourquoi pas autre chose : La déconsigne rembourse une dette : elle se passe au débit de [[syscohada:4194]], jamais en réduction du chiffre d'affaires.",
+   "en": "Customer 411, sales 7011, VAT 4431; deposit charged to 4194 (outside the VAT base); empties returned debited to 4194, any gain in 7074. Why not something else: The refund settles a debt: it is debited to 4194, never deducted from turnover."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "side": "debit",
+    "amount": 1234953
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 1035600
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 199353
+   },
+   {
+    "account": "4194",
+    "side": "credit",
+    "amount": 576000
+   },
+   {
+    "account": "4194",
+    "side": "debit",
+    "amount": 576000
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture des ventes au comptant de mars.\n\n[[piece:S-B3-03-005]]",
+   "en": "Record the March cash sales.\n\n[[piece:S-B3-03-005]]"
+  },
+  "explanation": {
+   "fr": "Caisse 5711 au TTC, ventes 7011 au HT, TVA facturée 4431 ; les vides s'échangent, sans consigne. Pourquoi pas autre chose : Une seule écriture récapitulative pour le mois est régulière, à condition que le brouillard quotidien la justifie [[source:ohada-audcif]].",
+   "en": "Cash 5711 incl. tax, sales 7011, VAT charged 4431; empties are swapped, no deposit. Why not something else: One monthly summary entry is lawful, provided the daily cash book supports it."
+  },
+  "journal": [
+   {
+    "account": "5711",
+    "side": "debit",
+    "amount": 17057520
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 14304000
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 2753520
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du relevé Orange Money de mars.\n\n[[piece:S-B3-03-006]]",
+   "en": "Record the March Orange Money statement.\n\n[[piece:S-B3-03-006]]"
+  },
+  "explanation": {
+   "fr": "Sous-compte 5522 : ventes et TVA, frais de l'opérateur en 631, transfert vers la banque par 585 (S19). Pourquoi pas autre chose : Les frais restent des services bancaires (631), jamais une réduction de la vente.",
+   "en": "Sub-account 5522: sales and VAT, operator fees 631, transfer to the bank through 585. Why not something else: Fees stay bank services (631), never a sales discount."
+  },
+  "journal": [
+   {
+    "account": "5522",
+    "side": "debit",
+    "amount": 10136727
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 8500400
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 1636327
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 8500
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 8500
+   },
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 10128227
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 10128227
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du journal de paie de mars.\n\n[[piece:S-B3-03-007]]",
+   "en": "Record the March payroll journal.\n\n[[piece:S-B3-03-007]]"
+  },
+  "explanation": {
+   "fr": "Salaires 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues fiscales 4472, CNPS 431, nets 422. Pourquoi pas autre chose : Rappel : les retenues sont des dettes envers l'État et la CNPS, pas des charges.",
+   "en": "Gross pay 6611, employer levies 6413 and 6641; tax withholdings 4472, CNPS 431, net pay 422. Why not something else: Reminder: withholdings are debts to the State and the CNPS, not expenses."
+  },
+  "journal": [
+   {
+    "account": "6611",
+    "side": "debit",
+    "amount": 680000
+   },
+   {
+    "account": "6413",
+    "side": "debit",
+    "amount": 17000
+   },
+   {
+    "account": "6641",
+    "side": "debit",
+    "amount": 28560
+   },
+   {
+    "account": "4472",
+    "side": "credit",
+    "amount": 73427
+   },
+   {
+    "account": "431",
+    "side": "credit",
+    "amount": 57120
+   },
+   {
+    "account": "422",
+    "side": "credit",
+    "amount": 595013
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez les écritures du relevé bancaire de mars.\n\n[[piece:S-B3-03-001]]",
+   "en": "Record the March bank statement entries.\n\n[[piece:S-B3-03-001]]"
+  },
+  "explanation": {
+   "fr": "Règlements à 30 jours (401, 411), salaires nets (422), échéance de l'emprunt (162 et 6712), virements internes par 585, frais en 631. Pourquoi pas autre chose : L'échéance se coupe en deux : le capital remboursé diminue la dette (162), seuls les intérêts sont une charge (6712).",
+   "en": "30-day settlements, net pay, loan instalment (162, 6712), internal transfers, fees. Why not something else: The instalment splits in two: principal reduces the debt (162), only interest is an expense (6712)."
+  },
+  "journal": [
+   {
+    "account": "401",
+    "side": "debit",
+    "amount": 27563313
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 27563313
+   },
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 1234953
+   },
+   {
+    "account": "411",
+    "side": "credit",
+    "amount": 1234953
+   },
+   {
+    "account": "422",
+    "side": "debit",
+    "amount": 595013
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 595013
+   },
+   {
+    "account": "162",
+    "side": "debit",
+    "amount": 333333
+   },
+   {
+    "account": "6712",
+    "side": "debit",
+    "amount": 120000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 453333
+   },
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 27185747
+   },
+   {
+    "account": "585",
+    "side": "credit",
+    "amount": 27185747
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 3500
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 3500
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la quittance de loyer de mars.\n\n[[piece:S-B3-03-002]]",
+   "en": "Record the March rent receipt.\n\n[[piece:S-B3-03-002]]"
+  },
+  "explanation": {
+   "fr": "Loyer brut 6222 ; précompte de 10 % retenu en 4478 (CGI art. 87) ; net payé par la banque. Pourquoi pas autre chose : Rappel de janvier : la charge est le loyer brut ; la retenue appartient à l'État.",
+   "en": "Gross rent 6222; 10% withholding 4478; net paid by bank. Why not something else: Reminder from January: the expense is the gross rent; the withholding belongs to the State."
+  },
+  "journal": [
+   {
+    "account": "6222",
+    "side": "debit",
+    "amount": 250000
+   },
+   {
+    "account": "4478",
+    "side": "credit",
+    "amount": 25000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 225000
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-022",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du bordereau de versement des espèces de mars.\n\n[[piece:S-B3-03-009]]",
+   "en": "Record the March cash deposit slip.\n\n[[piece:S-B3-03-009]]"
+  },
+  "explanation": {
+   "fr": "Virement interne : 585 au débit, caisse 5711 au crédit (S19). Pourquoi pas autre chose : 585 garantit une seule écriture par pièce : la caisse sort l'argent, la banque le reçoit.",
+   "en": "Internal transfer: 585 debit, cash 5711 credit. Why not something else: 585 keeps one entry per document: the till pays out, the bank receives."
+  },
+  "journal": [
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 17057520
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 17057520
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-023",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du règlement de la déclaration du 15 mars.\n\n[[piece:S-B3-03-008]]",
+   "en": "Record the payment of the March 15th return.\n\n[[piece:S-B3-03-008]]"
+  },
+  "explanation": {
+   "fr": "Solde de la TVA (4431, 445, 4449), acompte d'IS en 441 net du précompte imputé, retenues et CNPS reversées. Pourquoi pas autre chose : Rien de nouveau dans la méthode : c'est la régularité qui compte, une déclaration en retard coûte des pénalités.",
+   "en": "VAT settled, CIT instalment in 441 net of withholding, withholdings and CNPS paid over. Why not something else: Nothing new in the method: regularity matters, a late return costs penalties."
+  },
+  "journal": [
+   {
+    "account": "4431",
+    "side": "debit",
+    "amount": 4589200
+   },
+   {
+    "account": "4451",
+    "side": "credit",
+    "amount": 3465000
+   },
+   {
+    "account": "4452",
+    "side": "credit",
+    "amount": 4332213
+   },
+   {
+    "account": "4449",
+    "side": "debit",
+    "amount": 3208013
+   },
+   {
+    "account": "441",
+    "side": "debit",
+    "amount": 524480
+   },
+   {
+    "account": "4492",
+    "side": "credit",
+    "amount": 450100
+   },
+   {
+    "account": "4472",
+    "side": "debit",
+    "amount": 73427
+   },
+   {
+    "account": "4478",
+    "side": "debit",
+    "amount": 25000
+   },
+   {
+    "account": "431",
+    "side": "debit",
+    "amount": 57120
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 229927
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-024",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour mars 2026 : TVA due (ou crédit à reporter) ?",
+   "en": "15th return for March 2026: VAT due (or credit carried forward)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 2951026,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-03",
+   "field": "credit_tva"
+  }
+ },
+ {
+  "id": "S-B3-M2-025",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour mars 2026 : Acompte d'IS net du précompte imputé ?",
+   "en": "15th return for March 2026: CIT instalment net of withholding?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 74380,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-03",
+   "field": "acompte_is_net"
+  }
+ },
+ {
+  "id": "S-B3-M2-026",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour mars 2026 : Retenues à la source du mois (salaires et loyer) ?",
+   "en": "15th return for March 2026: Withholdings of the month (pay and rent)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 98427,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-03",
+   "field": "retenues_salaires"
+  }
+ },
+ {
+  "id": "S-B3-M2-027",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Montant du droit d'accises spécifique additionnel compris dans la facture de la brasserie de mars ?\n\n[[piece:S-B3-03-003]]",
+   "en": "Additional specific excise duty included in the March brewery invoice?\n\n[[piece:S-B3-03-003]]"
+  },
+  "explanation": {
+   "fr": "Droit spécifique additionnel (CGI art. 142 (9)) : 75 par bouteille de 65 cl et 37,5 par bouteille de 33 cl, soit 900 par casier dans les deux formats. Il s'ajoute au droit d'accises de 25 % ; la brasserie paie les deux et les comprend dans son prix : ils font partie du coût d'achat (6011).",
+   "en": "Additional specific duty: 75 per 65 cl bottle and 37.5 per 33 cl bottle, 900 per crate either way. It comes on top of the 25% excise; the brewer pays both and includes them in its price."
+  },
+  "numeric": {
+   "value": 3213000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B3-M2-028",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde comptable du compte 521 au 31 mars 2026 ?\n\n[[piece:S-B3-03-001]]",
+   "en": "Book balance of account 521 at March 31, 2026?\n\n[[piece:S-B3-03-001]]"
+  },
+  "explanation": {
+   "fr": "Débits moins crédits de 521 jusqu'à cette date : c'est le solde à rapprocher du relevé bancaire.",
+   "en": "Debits less credits of 521 up to that date."
+  },
+  "numeric": {
+   "value": 11820808,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-03-31"
+  }
+ },
+ {
+  "id": "S-B3-M2-029",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde du compte 4094 (consignes à récupérer auprès de la brasserie) au 31 mars ?\n\n[[piece:S-B3-03-003]]",
+   "en": "Balance of account 4094 (deposits receivable from the brewery) at March 31?\n\n[[piece:S-B3-03-003]]"
+  },
+  "explanation": {
+   "fr": "Consignes facturées moins vides rendus depuis le début de l'exercice.",
+   "en": "Deposits charged less empties returned since the start of the year."
+  },
+  "numeric": {
+   "value": 14028000,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "4094",
+   "date": "2026-03-31"
+  }
+ },
+ {
+  "id": "S-B3-M2-030",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde créditeur du compte 4194 (consignes dues au snack-bar) au 31 mars ?\n\n[[piece:S-B3-03-004]]",
+   "en": "Credit balance of account 4194 (deposits owed to the snack bar) at March 31?\n\n[[piece:S-B3-03-004]]"
+  },
+  "explanation": {
+   "fr": "Consignes facturées moins vides rendus depuis le début de l'exercice.",
+   "en": "Deposits charged less empties returned since the start of the year."
+  },
+  "numeric": {
+   "value": 576000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B3-M2-031",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du déblocage de l'emprunt.\n\n[[piece:S-B3-02-002]]",
+   "en": "Record the loan drawdown.\n\n[[piece:S-B3-02-002]]"
+  },
+  "explanation": {
+   "fr": "Banque 521 au débit, emprunts auprès des établissements de crédit 162 au crédit. Pourquoi pas autre chose : L'argent prêté n'est pas un produit : il faudra le rendre. Les intérêts, eux, seront des charges, mois après mois.",
+   "en": "Bank 521 debit, bank borrowings 162 credit. Why not something else: Borrowed money is not income: it must be repaid. Interest will be an expense, month by month."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 12000000
+   },
+   {
+    "account": "162",
+    "side": "credit",
+    "amount": 12000000
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-032",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture du camion.\n\n[[piece:S-B3-02-003]]",
+   "en": "Record the truck invoice.\n\n[[piece:S-B3-02-003]]"
+  },
+  "explanation": {
+   "fr": "Matériel automobile 2451, TVA sur immobilisations 4451, fournisseur d'immobilisations 4812. Pourquoi pas autre chose : Le camion servira des années : ce n'est pas une charge du mois. Et son vendeur n'est pas un fournisseur de marchandises : la dette va en 4812, pas en 401.",
+   "en": "Vehicles 2451, VAT on fixed assets 4451, fixed-asset supplier 4812. Why not something else: The truck will serve for years: it is not this month's expense. Its seller is not a goods supplier: the debt goes to 4812, not 401."
+  },
+  "journal": [
+   {
+    "account": "2451",
+    "side": "debit",
+    "amount": 18000000
+   },
+   {
+    "account": "4451",
+    "side": "debit",
+    "amount": 3465000
+   },
+   {
+    "account": "4812",
+    "side": "credit",
+    "amount": 21465000
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-033",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Les intérêts de l'emprunt du camion s'ajoutent au coût du camion.\n\n[[piece:S-B3-02-002]]",
+   "en": "Loan interest is added to the truck's cost.\n\n[[piece:S-B3-02-002]]"
+  },
+  "explanation": {
+   "fr": "Faux : ce sont des charges financières (6712) de chaque échéance.",
+   "en": "False: they are finance costs (6712) of each instalment."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M2-034",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "La consigne de casiers identifiables entre dans la base de la TVA.\n\n[[piece:S-B3-02-006]]",
+   "en": "Deposits on identifiable crates are in the VAT base.\n\n[[piece:S-B3-02-006]]"
+  },
+  "explanation": {
+   "fr": "Faux : exclue de la base pour des emballages récupérables, réutilisables et identifiables (CGI art. 139 (2)).",
+   "en": "Faux : exclue de la base pour des emballages récupérables, réutilisables et identifiables (CGI art. 139 (2))."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ }
+]

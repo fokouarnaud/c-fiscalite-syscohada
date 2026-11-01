@@ -1,0 +1,772 @@
+[
+ {
+  "id": "S-B3-M1-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Pourquoi les statuts d'Ateba Boissons SARL passent-ils par un notaire ?\n\n[[piece:S-B3-01-001]]",
+   "en": "Why are the articles of Ateba Boissons SARL notarised?\n\n[[piece:S-B3-01-001]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le capital dépasse un million de FCFA (loi n° 2016/014, art. 4)",
+     "en": "Capital above one million FCFA"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Toute SARL doit passer par un notaire",
+     "en": "Every LLC must use a notary"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M1-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Quel centre des impôts suit Ateba Boissons SARL ?\n\n[[piece:S-B3-01-002]]",
+   "en": "Which tax office follows Ateba Boissons SARL?\n\n[[piece:S-B3-01-002]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le CIME (CA compris entre 50 millions et 3 milliards)",
+     "en": "The MTO (turnover between 50 million and 3 billion)"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Le centre de fiscalité locale",
+     "en": "The local tax office"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M1-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Dans quel délai faut-il immatriculer un salarié à la CNPS ?\n\n[[piece:S-B3-01-003]]",
+   "en": "Within how long must an employee be registered?\n\n[[piece:S-B3-01-003]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "8 jours après l'embauche",
+     "en": "8 days after hiring"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Trois mois après l'embauche",
+     "en": "Three months after hiring"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M1-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Que remet la banque à l'ouverture du compte ?\n\n[[piece:S-B3-01-004]]",
+   "en": "What does the bank give when opening the account?\n\n[[piece:S-B3-01-004]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Un relevé d'identité bancaire (RIB)",
+     "en": "Bank details (RIB)"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Une carte de contribuable",
+     "en": "A taxpayer card"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M1-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Quelle pièce Orange exige-t-il en plus des documents légaux ?\n\n[[piece:S-B3-01-005]]",
+   "en": "Which document does Orange require besides legal papers?\n\n[[piece:S-B3-01-005]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le relevé d'identité bancaire (RIB)",
+     "en": "Bank details (RIB)"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Un bilan certifié",
+     "en": "A certified balance sheet"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M1-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Les frais de constitution de la SARL s'inscrivent à l'actif en frais d'établissement.\n\n[[piece:S-B3-01-007]]",
+   "en": "The LLC's set-up costs are capitalised as formation expenses.\n\n[[piece:S-B3-01-007]]"
+  },
+  "explanation": {
+   "fr": "Faux : le SYSCOHADA révisé n'immobilise plus les frais d'établissement ; honoraires (6324) et droits d'enregistrement (646) sont des charges par nature (S6).",
+   "en": "False: revised SYSCOHADA no longer capitalises formation expenses; they are expenses by nature."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ],
+  "piege": "frais_etablissement"
+ },
+ {
+  "id": "S-B3-M1-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du dépôt du capital.\n\n[[piece:S-B3-01-006]]",
+   "en": "Record the capital deposit.\n\n[[piece:S-B3-01-006]]"
+  },
+  "explanation": {
+   "fr": "Banque 521 au débit, capital souscrit, appelé, versé 1013 au crédit. Pourquoi pas autre chose : Un débutant y voit une « recette » : ce n'est pas un produit, l'entreprise n'a rien vendu. Ce n'est pas non plus une dette envers Rose ([[syscohada:4621]]) : le capital reste dans la société et se rémunère par les dividendes, pas par un remboursement.",
+   "en": "Bank 521 debit, capital 1013 credit. Why not something else: A beginner sees “income”: it is not revenue, nothing was sold. Nor is it a debt to Rose (4621): capital stays in the company and is rewarded by dividends, not repaid."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 10000000
+   },
+   {
+    "account": "1013",
+    "side": "credit",
+    "amount": 10000000
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M1-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture du notaire.\n\n[[piece:S-B3-01-007]]",
+   "en": "Record the notary's invoice.\n\n[[piece:S-B3-01-007]]"
+  },
+  "explanation": {
+   "fr": "Honoraires 6324, droits d'enregistrement 646, TVA récupérable sur services 4454 : des charges (S6). Pourquoi pas autre chose : Le réflexe hérité est de les immobiliser en « frais d'établissement ». Le SYSCOHADA révisé a supprimé ce poste : ce sont des charges de l'exercice, par nature.",
+   "en": "Fees 6324, registration duties 646, recoverable VAT 4454: expenses (S6). Why not something else: The old reflex is to capitalise them as formation expenses. Revised SYSCOHADA removed that line: they are expenses of the year, by nature."
+  },
+  "journal": [
+   {
+    "account": "6324",
+    "side": "debit",
+    "amount": 300000
+   },
+   {
+    "account": "4454",
+    "side": "debit",
+    "amount": 57750
+   },
+   {
+    "account": "646",
+    "side": "debit",
+    "amount": 50000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 407750
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M1-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture des casiers propres.\n\n[[piece:S-B3-01-008]]",
+   "en": "Record the invoice for the company's own crates.\n\n[[piece:S-B3-01-008]]"
+  },
+  "explanation": {
+   "fr": "Casiers marqués au nom de l'entreprise, durables : matériel d'emballage récupérable et identifiable 243 (et non 2493, réservé aux immobilisations en cours), TVA sur immobilisations 4451. Pourquoi pas autre chose : Pas [[syscohada:6082]] : ces casiers ne sont pas consommés dans l'année. Pas [[syscohada:2493]] non plus, malgré son libellé : c'est la ligne des immobilisations en cours, pas celle des casiers en service.",
+   "en": "Branded, durable crates: returnable packaging equipment 243 (2493 is for assets in progress), VAT 4451. Why not something else: Not 6082: these crates are not used up within the year. Not 2493 either, despite its label: that line is for assets in progress, not crates in service."
+  },
+  "journal": [
+   {
+    "account": "243",
+    "side": "debit",
+    "amount": 1000000
+   },
+   {
+    "account": "4451",
+    "side": "debit",
+    "amount": 192500
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 1192500
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M1-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture de la brasserie de janvier (précompte, consigne et vides compris).\n\n[[piece:S-B3-01-011]]",
+   "en": "Record the January brewery invoice (withholding, deposits and empties included).\n\n[[piece:S-B3-01-011]]"
+  },
+  "explanation": {
+   "fr": "Achats 6011 (accises comprises dans le prix), TVA et CAC 4452, précompte de 2 % en 4492 (CGI art. 21 (3)) ; consigne des casiers livrés en 4094, déconsigne des vides au crédit de 4094, mali éventuel en 6224 (Guide SYSCOHADA, 1re partie, ch. 2) ; net dû au fournisseur 401. Pourquoi pas autre chose : Trois pièges. Les accises n'ont pas de compte à elles chez le dépôt : la brasserie paie le droit de 25 % et le droit spécifique additionnel (75 par bouteille de 65 cl), et les comprend dans son prix ; la facture ne montre que le second, pour information. La consigne n'est pas un achat : c'est une créance que la brasserie rendra au retour des vides. Le précompte n'est pas une charge : c'est une avance sur l'impôt, qui s'impute sur l'acompte d'IS.",
+   "en": "Purchases 6011 (excise included), VAT 4452, 2% withholding 4492; deposits debited to 4094, empties returned credited to 4094, any loss in 6224; net payable 401. Why not something else: Three traps. Excise has no account of its own at the depot: the brewer pays the 25% duty and the additional specific duty (75 per 65 cl bottle) and includes both in its price; the invoice shows only the latter, for information. The deposit is not a purchase: it is a receivable refunded when the empties go back. The withholding is not an expense: it is an advance on tax, credited against the CIT instalment."
+  },
+  "journal": [
+   {
+    "account": "6011",
+    "side": "debit",
+    "amount": 22505000
+   },
+   {
+    "account": "4452",
+    "side": "debit",
+    "amount": 4332213
+   },
+   {
+    "account": "4492",
+    "side": "debit",
+    "amount": 450100
+   },
+   {
+    "account": "4094",
+    "side": "debit",
+    "amount": 13476000
+   },
+   {
+    "account": "401",
+    "side": "credit",
+    "amount": 40763313
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M1-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture au snack-bar de janvier.\n\n[[piece:S-B3-01-012]]",
+   "en": "Record the January snack-bar invoice.\n\n[[piece:S-B3-01-012]]"
+  },
+  "explanation": {
+   "fr": "Client 411 au net, ventes 7011, TVA facturée 4431 ; consigne facturée en 4194 (hors base de TVA, emballages identifiables, CGI art. 139) ; vides rendus au débit de 4194, boni éventuel en 7074. Pourquoi pas autre chose : La consigne n'est pas une vente : le dépôt devra la rendre quand les vides reviendront. La mettre en 7011 gonflerait le chiffre d'affaires, l'acompte d'IS et la TVA.",
+   "en": "Customer 411, sales 7011, VAT 4431; deposit charged to 4194 (outside the VAT base); empties returned debited to 4194, any gain in 7074. Why not something else: The deposit is not a sale: the depot must refund it when the empties come back. Booking it in 7011 would inflate turnover, the CIT instalment and VAT."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "side": "debit",
+    "amount": 1810953
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 1035600
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 199353
+   },
+   {
+    "account": "4194",
+    "side": "credit",
+    "amount": 576000
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M1-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture des ventes au comptant de janvier.\n\n[[piece:S-B3-01-013]]",
+   "en": "Record the January cash sales.\n\n[[piece:S-B3-01-013]]"
+  },
+  "explanation": {
+   "fr": "Caisse 5711 au TTC, ventes 7011 au HT, TVA facturée 4431 ; les vides s'échangent, sans consigne. Pourquoi pas autre chose : Pas de consigne ici : l'échange vide contre plein est immédiat, rien n'est dû de part et d'autre.",
+   "en": "Cash 5711 incl. tax, sales 7011, VAT charged 4431; empties are swapped, no deposit. Why not something else: No deposit here: empties are swapped for full crates on the spot, nothing is owed either way."
+  },
+  "journal": [
+   {
+    "account": "5711",
+    "side": "debit",
+    "amount": 17057520
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 14304000
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 2753520
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M1-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du relevé Orange Money de janvier.\n\n[[piece:S-B3-01-014]]",
+   "en": "Record the January Orange Money statement.\n\n[[piece:S-B3-01-014]]"
+  },
+  "explanation": {
+   "fr": "Sous-compte 5522 : ventes et TVA, frais de l'opérateur en 631, transfert vers la banque par 585 (S19). Pourquoi pas autre chose : Les frais ne réduisent pas la vente : c'est un service, comme les frais bancaires. Et le transfert ne passe jamais directement de 5522 à 521 : il transite par 585 jusqu'à ce que la banque le reçoive.",
+   "en": "Sub-account 5522: sales and VAT, operator fees 631, transfer to the bank through 585. Why not something else: Fees do not reduce the sale: they are a service, like bank charges. The transfer never goes straight from 5522 to 521: it waits in 585 until the bank receives it."
+  },
+  "journal": [
+   {
+    "account": "5522",
+    "side": "debit",
+    "amount": 10136727
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 8500400
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 1636327
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 8500
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 8500
+   },
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 10128227
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 10128227
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M1-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du journal de paie de janvier.\n\n[[piece:S-B3-01-015]]",
+   "en": "Record the January payroll journal.\n\n[[piece:S-B3-01-015]]"
+  },
+  "explanation": {
+   "fr": "Salaires 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues fiscales 4472, CNPS 431, nets 422. Pourquoi pas autre chose : Les retenues ne sont pas des charges de l'entreprise : elles appartiennent aux salariés, que le dépôt verse pour eux à l'État et à la CNPS. La charge, c'est le brut et les cotisations patronales.",
+   "en": "Gross pay 6611, employer levies 6413 and 6641; tax withholdings 4472, CNPS 431, net pay 422. Why not something else: Withholdings are not the company's expenses: they belong to the employees and the depot pays them over to the State and the CNPS. The expense is gross pay plus employer contributions."
+  },
+  "journal": [
+   {
+    "account": "6611",
+    "side": "debit",
+    "amount": 680000
+   },
+   {
+    "account": "6413",
+    "side": "debit",
+    "amount": 17000
+   },
+   {
+    "account": "6641",
+    "side": "debit",
+    "amount": 28560
+   },
+   {
+    "account": "4472",
+    "side": "credit",
+    "amount": 73427
+   },
+   {
+    "account": "431",
+    "side": "credit",
+    "amount": 57120
+   },
+   {
+    "account": "422",
+    "side": "credit",
+    "amount": 595013
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M1-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez les écritures du relevé bancaire de janvier.\n\n[[piece:S-B3-01-009]]",
+   "en": "Record the January bank statement entries.\n\n[[piece:S-B3-01-009]]"
+  },
+  "explanation": {
+   "fr": "Règlements à 30 jours (401, 411), salaires nets (422), échéance de l'emprunt (162 et 6712), virements internes par 585, frais en 631. Pourquoi pas autre chose : Un écart entre le relevé et le 521 ne se « corrige » pas en forçant le compte : il s'explique (opération pas encore passée d'un côté), puis on passe l'écriture qui manque.",
+   "en": "30-day settlements, net pay, loan instalment (162, 6712), internal transfers, fees. Why not something else: A gap between the statement and 521 is not “fixed” by forcing the account: it is explained (an item not yet recorded on one side), then the missing entry is booked."
+  },
+  "journal": [
+   {
+    "account": "422",
+    "side": "debit",
+    "amount": 595013
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 595013
+   },
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 27185747
+   },
+   {
+    "account": "585",
+    "side": "credit",
+    "amount": 27185747
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 3500
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 3500
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M1-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la quittance de loyer de janvier.\n\n[[piece:S-B3-01-010]]",
+   "en": "Record the January rent receipt.\n\n[[piece:S-B3-01-010]]"
+  },
+  "explanation": {
+   "fr": "Loyer brut 6222 ; précompte de 10 % retenu en 4478 (CGI art. 87) ; net payé par la banque. Pourquoi pas autre chose : Passer seulement le net en charge serait faux : la charge est le loyer brut, et la retenue est une dette envers l'État, pas une économie.",
+   "en": "Gross rent 6222; 10% withholding 4478; net paid by bank. Why not something else: Booking only the net is wrong: the expense is the gross rent, and the withholding is a debt to the State, not a saving."
+  },
+  "journal": [
+   {
+    "account": "6222",
+    "side": "debit",
+    "amount": 250000
+   },
+   {
+    "account": "4478",
+    "side": "credit",
+    "amount": 25000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 225000
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M1-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du bordereau de versement des espèces de janvier.\n\n[[piece:S-B3-01-016]]",
+   "en": "Record the January cash deposit slip.\n\n[[piece:S-B3-01-016]]"
+  },
+  "explanation": {
+   "fr": "Virement interne : 585 au débit, caisse 5711 au crédit (S19). Pourquoi pas autre chose : Débiter directement 521 depuis la caisse marche une fois, puis tout se complique : la pièce de caisse et le relevé bancaire passeraient chacun leur écriture, et le versement serait compté deux fois. 585 garantit une seule écriture par pièce.",
+   "en": "Internal transfer: 585 debit, cash 5711 credit. Why not something else: Debiting 521 straight from the till works once, then breaks: the cash slip and the bank statement would each record the deposit, counting it twice. 585 keeps one entry per document."
+  },
+  "journal": [
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 17057520
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 17057520
+   }
+  ]
+ },
+ {
+  "id": "S-B3-M1-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour janvier 2026 : TVA due (ou crédit à reporter) ?",
+   "en": "15th return for January 2026: VAT due (or credit carried forward)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 6737,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-01",
+   "field": "tva_due"
+  }
+ },
+ {
+  "id": "S-B3-M1-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour janvier 2026 : Acompte d'IS net du précompte imputé ?",
+   "en": "15th return for January 2026: CIT instalment net of withholding?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 74380,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-01",
+   "field": "acompte_is_net"
+  }
+ },
+ {
+  "id": "S-B3-M1-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour janvier 2026 : Retenues à la source du mois (salaires et loyer) ?",
+   "en": "15th return for January 2026: Withholdings of the month (pay and rent)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 98427,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-01",
+   "field": "retenues_salaires"
+  }
+ },
+ {
+  "id": "S-B3-M1-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Montant du droit d'accises spécifique additionnel compris dans la facture de la brasserie de janvier ?\n\n[[piece:S-B3-01-011]]",
+   "en": "Additional specific excise duty included in the January brewery invoice?\n\n[[piece:S-B3-01-011]]"
+  },
+  "explanation": {
+   "fr": "Droit spécifique additionnel (CGI art. 142 (9)) : 75 par bouteille de 65 cl et 37,5 par bouteille de 33 cl, soit 900 par casier dans les deux formats. Il s'ajoute au droit d'accises de 25 % ; la brasserie paie les deux et les comprend dans son prix : ils font partie du coût d'achat (6011).",
+   "en": "Additional specific duty: 75 per 65 cl bottle and 37.5 per 33 cl bottle, 900 per crate either way. It comes on top of the 25% excise; the brewer pays both and includes them in its price."
+  },
+  "numeric": {
+   "value": 3213000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B3-M1-022",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde comptable du compte 521 au 31 janvier 2026 ?\n\n[[piece:S-B3-01-009]]",
+   "en": "Book balance of account 521 at January 31, 2026?\n\n[[piece:S-B3-01-009]]"
+  },
+  "explanation": {
+   "fr": "Débits moins crédits de 521 jusqu'à cette date : c'est le solde à rapprocher du relevé bancaire.",
+   "en": "Debits less credits of 521 up to that date."
+  },
+  "numeric": {
+   "value": 34761984,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-01-31"
+  }
+ }
+]

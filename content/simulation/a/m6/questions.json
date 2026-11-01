@@ -985,8 +985,8 @@
    "en": "Record the closing stock of the three families.\n\n[[piece:S-A-12-010]]"
   },
   "explanation": {
-   "fr": "Stocks 3111, 3112 et 3121 au débit, variation des stocks 6031 au crédit (inventaire intermittent).",
-   "en": "Stock accounts debited, change in inventories 6031 credited."
+   "fr": "Stocks 3111, 3112 et 3121 au débit, variation des stocks 6031 au crédit (inventaire intermittent). Pourquoi pas autre chose : Le CMUP lisse les hausses de prix du grossiste ; le PEPS, en contraste, valoriserait le stock aux derniers prix, plus élevés.",
+   "en": "Stock accounts debited, change in inventories 6031 credited. Why not something else: WAC smooths the wholesaler's price rises; FIFO would value stock at the latest, higher prices."
   },
   "journal": [
    {
@@ -1059,8 +1059,8 @@
    "en": "Record the depreciation charge.\n\n[[piece:S-A-12-011]]"
   },
   "explanation": {
-   "fr": "Dotations 6813, amortissements du matériel de transport 2845.",
-   "en": "Charge 6813, accumulated depreciation 2845."
+   "fr": "Dotations 6813, amortissements du matériel de transport 2845. Pourquoi pas autre chose : Le taux comptable (33,33 %) dépasse le taux fiscal maximal d'une voiture légère en ville (25 %) [[cgi:art. 7]] : l'écart sera réintégré.",
+   "en": "Charge 6813, accumulated depreciation 2845. Why not something else: The book rate (33.33%) exceeds the 25% maximum tax rate for a light car in town: the gap is added back."
   },
   "journal": [
    {

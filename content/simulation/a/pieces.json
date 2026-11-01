@@ -235,124 +235,6 @@
   }
  },
  {
-  "ref": "S-A-01-009",
-  "kind": "recu_caisse",
-  "date": "2026-01-02",
-  "title": {
-   "fr": "Quittance de loyer de janvier",
-   "en": "January rent receipt"
-  },
-  "payload": {
-   "fields": [
-    {
-     "label": {
-      "fr": "Bailleur",
-      "en": "Landlord"
-     },
-     "value": "M. Tchoua (fictif)"
-    }
-   ],
-   "totals": [
-    {
-     "label": {
-      "fr": "Loyer brut",
-      "en": "Gross rent"
-     },
-     "amount": 300000
-    },
-    {
-     "label": {
-      "fr": "Précompte sur loyer 10 % retenu",
-      "en": "10% rent withholding"
-     },
-     "amount": 30000
-    },
-    {
-     "label": {
-      "fr": "Net versé par virement",
-      "en": "Net paid by transfer"
-     },
-     "amount": 270000
-    }
-   ]
-  }
- },
- {
-  "ref": "S-A-01-007",
-  "kind": "facture_achat",
-  "date": "2026-01-03",
-  "title": {
-   "fr": "Facture du notaire (statuts)",
-   "en": "Notary's invoice (articles)"
-  },
-  "payload": {
-   "issuer": {
-    "name": "Étude de Maître Ekambi, notaire",
-    "niu": "P011500002203M",
-    "rccm": "Office notarial n° 12",
-    "regime": "réel",
-    "centre": "CIME Douala",
-    "address": "Rue Joss, Bonanjo, Douala"
-   },
-   "customer": {
-    "name": "Ngono Mode SARL",
-    "niu": "M012600008421K"
-   },
-   "number": "N-2026-0004",
-   "einvoice": "DGI-SFE-2026-000214",
-   "lines": [
-    {
-     "label": {
-      "fr": "Honoraires de rédaction des statuts",
-      "en": "Drafting fees"
-     },
-     "amount": 200000
-    },
-    {
-     "label": {
-      "fr": "Débours : droits d'enregistrement",
-      "en": "Registration duties"
-     },
-     "amount": 25000
-    }
-   ],
-   "totals": [
-    {
-     "label": {
-      "fr": "Total HT",
-      "en": "Total excl. tax"
-     },
-     "role": "ht",
-     "amount": 225000
-    },
-    {
-     "label": {
-      "fr": "TVA 17,5 %",
-      "en": "VAT 17.5%"
-     },
-     "role": "tax",
-     "amount": 35000
-    },
-    {
-     "label": {
-      "fr": "CAC 10 % de la TVA",
-      "en": "Council cents 10% of VAT"
-     },
-     "role": "tax",
-     "amount": 3500
-    },
-    {
-     "label": {
-      "fr": "Net à payer",
-      "en": "Amount due"
-     },
-     "role": "ttc",
-     "amount": 263500
-    }
-   ]
-  }
- },
- {
   "ref": "S-A-01-010",
   "kind": "facture_achat",
   "date": "2026-01-05",
@@ -449,6 +331,124 @@
   }
  },
  {
+  "ref": "S-A-01-007",
+  "kind": "facture_achat",
+  "date": "2026-01-06",
+  "title": {
+   "fr": "Facture du notaire (statuts)",
+   "en": "Notary's invoice (articles)"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Étude de Maître Ekambi, notaire",
+    "niu": "P011500002203M",
+    "rccm": "Office notarial n° 12",
+    "regime": "réel",
+    "centre": "CIME Douala",
+    "address": "Rue Joss, Bonanjo, Douala"
+   },
+   "customer": {
+    "name": "Ngono Mode SARL",
+    "niu": "M012600008421K"
+   },
+   "number": "N-2026-0004",
+   "einvoice": "DGI-SFE-2026-000214",
+   "lines": [
+    {
+     "label": {
+      "fr": "Honoraires de rédaction des statuts",
+      "en": "Drafting fees"
+     },
+     "amount": 200000
+    },
+    {
+     "label": {
+      "fr": "Débours : droits d'enregistrement",
+      "en": "Registration duties"
+     },
+     "amount": 25000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 225000
+    },
+    {
+     "label": {
+      "fr": "TVA 17,5 %",
+      "en": "VAT 17.5%"
+     },
+     "role": "tax",
+     "amount": 35000
+    },
+    {
+     "label": {
+      "fr": "CAC 10 % de la TVA",
+      "en": "Council cents 10% of VAT"
+     },
+     "role": "tax",
+     "amount": 3500
+    },
+    {
+     "label": {
+      "fr": "Net à payer",
+      "en": "Amount due"
+     },
+     "role": "ttc",
+     "amount": 263500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-01-009",
+  "kind": "recu_caisse",
+  "date": "2026-01-06",
+  "title": {
+   "fr": "Quittance de loyer de janvier",
+   "en": "January rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Tchoua (fictif)"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer brut",
+      "en": "Gross rent"
+     },
+     "amount": 300000
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer 10 % retenu",
+      "en": "10% rent withholding"
+     },
+     "amount": 30000
+    },
+    {
+     "label": {
+      "fr": "Net versé par virement",
+      "en": "Net paid by transfer"
+     },
+     "amount": 270000
+    }
+   ]
+  }
+ },
+ {
   "ref": "S-A-01-008",
   "kind": "releve_bancaire",
   "date": "2026-01-31",
@@ -477,7 +477,7 @@
       "fr": "Virements internes reçus (espèces et Mobile Money)",
       "en": "Internal transfers received"
      },
-     "amount": 4157050
+     "amount": 8927050
     },
     {
      "label": {
@@ -715,6 +715,26 @@
   }
  },
  {
+  "ref": "S-A-01-015",
+  "kind": "recu_caisse",
+  "date": "2026-01-31",
+  "title": {
+   "fr": "Bordereaux de versement des espèces de janvier",
+   "en": "January cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
   "ref": "S-A-02-010",
   "kind": "balance",
   "date": "2026-02-01",
@@ -785,14 +805,7 @@
       "fr": "521 BANQUES LOCALES",
       "en": "521 Local banks"
      },
-     "debit": 4032084
-    },
-    {
-     "label": {
-      "fr": "5711 Caisse en monnaie nationale",
-      "en": "5711 Cash in national currency"
-     },
-     "debit": 4770000
+     "debit": 8802084
     },
     {
      "label": {
@@ -1078,26 +1091,6 @@
   }
  },
  {
-  "ref": "S-A-02-005",
-  "kind": "recu_caisse",
-  "date": "2026-02-25",
-  "title": {
-   "fr": "Bordereau de sortie de caisse vers la banque",
-   "en": "Cash transfer slip to the bank"
-  },
-  "payload": {
-   "totals": [
-    {
-     "label": {
-      "fr": "Espèces versées",
-      "en": "Cash deposited"
-     },
-     "amount": 4770000
-    }
-   ]
-  }
- },
- {
   "ref": "S-A-02-001",
   "kind": "releve_bancaire",
   "date": "2026-02-28",
@@ -1139,7 +1132,7 @@
   }
  },
  {
-  "ref": "S-A-02-006",
+  "ref": "S-A-02-005",
   "kind": "recu_caisse",
   "date": "2026-02-28",
   "title": {
@@ -1176,7 +1169,7 @@
   }
  },
  {
-  "ref": "S-A-02-007",
+  "ref": "S-A-02-006",
   "kind": "releve_momo",
   "date": "2026-02-28",
   "title": {
@@ -1220,7 +1213,7 @@
   }
  },
  {
-  "ref": "S-A-02-008",
+  "ref": "S-A-02-007",
   "kind": "releve_momo",
   "date": "2026-02-28",
   "title": {
@@ -1264,7 +1257,7 @@
   }
  },
  {
-  "ref": "S-A-02-009",
+  "ref": "S-A-02-008",
   "kind": "bulletin_paie",
   "date": "2026-02-28",
   "title": {
@@ -1364,6 +1357,26 @@
   }
  },
  {
+  "ref": "S-A-02-009",
+  "kind": "recu_caisse",
+  "date": "2026-02-28",
+  "title": {
+   "fr": "Bordereaux de versement des espèces de février",
+   "en": "February cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
   "ref": "S-A-03-011",
   "kind": "balance",
   "date": "2026-03-01",
@@ -1434,14 +1447,7 @@
       "fr": "521 BANQUES LOCALES",
       "en": "521 Local banks"
      },
-     "debit": 6979671
-    },
-    {
-     "label": {
-      "fr": "5711 Caisse en monnaie nationale",
-      "en": "5711 Cash in national currency"
-     },
-     "debit": 4770000
+     "debit": 11749671
     },
     {
      "label": {
@@ -1649,12 +1655,12 @@
   }
  },
  {
-  "ref": "S-A-03-010",
+  "ref": "S-A-03-009",
   "kind": "recu_caisse",
   "date": "2026-03-10",
   "title": {
-   "fr": "Mise en demeure d'un ancien bailleur (litige)",
-   "en": "Formal notice from a former landlord (dispute)"
+   "fr": "Mise en demeure du propriétaire voisin (litige)",
+   "en": "Formal notice from the neighbouring owner (dispute)"
   },
   "payload": {
    "fields": [
@@ -1759,26 +1765,6 @@
   }
  },
  {
-  "ref": "S-A-03-005",
-  "kind": "recu_caisse",
-  "date": "2026-03-25",
-  "title": {
-   "fr": "Bordereau de sortie de caisse vers la banque",
-   "en": "Cash transfer slip to the bank"
-  },
-  "payload": {
-   "totals": [
-    {
-     "label": {
-      "fr": "Espèces versées",
-      "en": "Cash deposited"
-     },
-     "amount": 4770000
-    }
-   ]
-  }
- },
- {
   "ref": "S-A-03-001",
   "kind": "releve_bancaire",
   "date": "2026-03-31",
@@ -1820,7 +1806,7 @@
   }
  },
  {
-  "ref": "S-A-03-006",
+  "ref": "S-A-03-005",
   "kind": "recu_caisse",
   "date": "2026-03-31",
   "title": {
@@ -1857,7 +1843,7 @@
   }
  },
  {
-  "ref": "S-A-03-007",
+  "ref": "S-A-03-006",
   "kind": "releve_momo",
   "date": "2026-03-31",
   "title": {
@@ -1901,7 +1887,7 @@
   }
  },
  {
-  "ref": "S-A-03-008",
+  "ref": "S-A-03-007",
   "kind": "releve_momo",
   "date": "2026-03-31",
   "title": {
@@ -1945,7 +1931,7 @@
   }
  },
  {
-  "ref": "S-A-03-009",
+  "ref": "S-A-03-008",
   "kind": "bulletin_paie",
   "date": "2026-03-31",
   "title": {
@@ -2045,7 +2031,27 @@
   }
  },
  {
-  "ref": "S-A-04-010",
+  "ref": "S-A-03-010",
+  "kind": "recu_caisse",
+  "date": "2026-03-31",
+  "title": {
+   "fr": "Bordereaux de versement des espèces de mars",
+   "en": "March cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-04-009",
   "kind": "facture_achat",
   "date": "2026-04-01",
   "title": {
@@ -2192,14 +2198,7 @@
       "fr": "521 BANQUES LOCALES",
       "en": "521 Local banks"
      },
-     "debit": 9823759
-    },
-    {
-     "label": {
-      "fr": "5711 Caisse en monnaie nationale",
-      "en": "5711 Cash in national currency"
-     },
-     "debit": 4770000
+     "debit": 14593759
     },
     {
      "label": {
@@ -2320,7 +2319,7 @@
  {
   "ref": "S-A-04-003",
   "kind": "facture_achat",
-  "date": "2026-04-05",
+  "date": "2026-04-06",
   "title": {
    "fr": "Facture Sawa Textiles de avril",
    "en": "Sawa Textiles April invoice"
@@ -2492,26 +2491,6 @@
   }
  },
  {
-  "ref": "S-A-04-005",
-  "kind": "recu_caisse",
-  "date": "2026-04-25",
-  "title": {
-   "fr": "Bordereau de sortie de caisse vers la banque",
-   "en": "Cash transfer slip to the bank"
-  },
-  "payload": {
-   "totals": [
-    {
-     "label": {
-      "fr": "Espèces versées",
-      "en": "Cash deposited"
-     },
-     "amount": 4770000
-    }
-   ]
-  }
- },
- {
   "ref": "S-A-04-001",
   "kind": "releve_bancaire",
   "date": "2026-04-30",
@@ -2553,7 +2532,7 @@
   }
  },
  {
-  "ref": "S-A-04-006",
+  "ref": "S-A-04-005",
   "kind": "recu_caisse",
   "date": "2026-04-30",
   "title": {
@@ -2590,7 +2569,7 @@
   }
  },
  {
-  "ref": "S-A-04-007",
+  "ref": "S-A-04-006",
   "kind": "releve_momo",
   "date": "2026-04-30",
   "title": {
@@ -2634,7 +2613,7 @@
   }
  },
  {
-  "ref": "S-A-04-008",
+  "ref": "S-A-04-007",
   "kind": "releve_momo",
   "date": "2026-04-30",
   "title": {
@@ -2678,7 +2657,7 @@
   }
  },
  {
-  "ref": "S-A-04-009",
+  "ref": "S-A-04-008",
   "kind": "bulletin_paie",
   "date": "2026-04-30",
   "title": {
@@ -2773,6 +2752,26 @@
       "en": "Employer CNPS (pension 4.2%)"
      },
      "amount": 29400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-04-010",
+  "kind": "recu_caisse",
+  "date": "2026-04-30",
+  "title": {
+   "fr": "Bordereaux de versement des espèces de avril",
+   "en": "April cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
     }
    ]
   }
@@ -2876,14 +2875,7 @@
       "fr": "521 BANQUES LOCALES",
       "en": "521 Local banks"
      },
-     "debit": 12602846
-    },
-    {
-     "label": {
-      "fr": "5711 Caisse en monnaie nationale",
-      "en": "5711 Cash in national currency"
-     },
-     "debit": 4770000
+     "debit": 17372846
     },
     {
      "label": {
@@ -3176,26 +3168,6 @@
   }
  },
  {
-  "ref": "S-A-05-005",
-  "kind": "recu_caisse",
-  "date": "2026-05-25",
-  "title": {
-   "fr": "Bordereau de sortie de caisse vers la banque",
-   "en": "Cash transfer slip to the bank"
-  },
-  "payload": {
-   "totals": [
-    {
-     "label": {
-      "fr": "Espèces versées",
-      "en": "Cash deposited"
-     },
-     "amount": 4770000
-    }
-   ]
-  }
- },
- {
   "ref": "S-A-05-001",
   "kind": "releve_bancaire",
   "date": "2026-05-31",
@@ -3244,7 +3216,7 @@
   }
  },
  {
-  "ref": "S-A-05-006",
+  "ref": "S-A-05-005",
   "kind": "recu_caisse",
   "date": "2026-05-31",
   "title": {
@@ -3281,7 +3253,7 @@
   }
  },
  {
-  "ref": "S-A-05-007",
+  "ref": "S-A-05-006",
   "kind": "releve_momo",
   "date": "2026-05-31",
   "title": {
@@ -3325,7 +3297,7 @@
   }
  },
  {
-  "ref": "S-A-05-008",
+  "ref": "S-A-05-007",
   "kind": "releve_momo",
   "date": "2026-05-31",
   "title": {
@@ -3369,7 +3341,7 @@
   }
  },
  {
-  "ref": "S-A-05-009",
+  "ref": "S-A-05-008",
   "kind": "bulletin_paie",
   "date": "2026-05-31",
   "title": {
@@ -3464,6 +3436,26 @@
       "en": "Employer CNPS (pension 4.2%)"
      },
      "amount": 29400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-05-009",
+  "kind": "recu_caisse",
+  "date": "2026-05-31",
+  "title": {
+   "fr": "Bordereaux de versement des espèces de mai",
+   "en": "May cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
     }
    ]
   }
@@ -3567,14 +3559,7 @@
       "fr": "521 BANQUES LOCALES",
       "en": "521 Local banks"
      },
-     "debit": 11636996
-    },
-    {
-     "label": {
-      "fr": "5711 Caisse en monnaie nationale",
-      "en": "5711 Cash in national currency"
-     },
-     "debit": 4770000
+     "debit": 16406996
     },
     {
      "label": {
@@ -3867,26 +3852,6 @@
   }
  },
  {
-  "ref": "S-A-06-005",
-  "kind": "recu_caisse",
-  "date": "2026-06-25",
-  "title": {
-   "fr": "Bordereau de sortie de caisse vers la banque",
-   "en": "Cash transfer slip to the bank"
-  },
-  "payload": {
-   "totals": [
-    {
-     "label": {
-      "fr": "Espèces versées",
-      "en": "Cash deposited"
-     },
-     "amount": 4770000
-    }
-   ]
-  }
- },
- {
   "ref": "S-A-06-001",
   "kind": "releve_bancaire",
   "date": "2026-06-30",
@@ -3935,7 +3900,7 @@
   }
  },
  {
-  "ref": "S-A-06-006",
+  "ref": "S-A-06-005",
   "kind": "recu_caisse",
   "date": "2026-06-30",
   "title": {
@@ -3972,7 +3937,7 @@
   }
  },
  {
-  "ref": "S-A-06-007",
+  "ref": "S-A-06-006",
   "kind": "releve_momo",
   "date": "2026-06-30",
   "title": {
@@ -4016,7 +3981,7 @@
   }
  },
  {
-  "ref": "S-A-06-008",
+  "ref": "S-A-06-007",
   "kind": "releve_momo",
   "date": "2026-06-30",
   "title": {
@@ -4060,7 +4025,7 @@
   }
  },
  {
-  "ref": "S-A-06-009",
+  "ref": "S-A-06-008",
   "kind": "bulletin_paie",
   "date": "2026-06-30",
   "title": {
@@ -4155,6 +4120,26 @@
       "en": "Employer CNPS (pension 4.2%)"
      },
      "amount": 29400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-06-009",
+  "kind": "recu_caisse",
+  "date": "2026-06-30",
+  "title": {
+   "fr": "Bordereaux de versement des espèces de juin",
+   "en": "June cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
     }
    ]
   }
@@ -4258,14 +4243,7 @@
       "fr": "521 BANQUES LOCALES",
       "en": "521 Local banks"
      },
-     "debit": 10588433
-    },
-    {
-     "label": {
-      "fr": "5711 Caisse en monnaie nationale",
-      "en": "5711 Cash in national currency"
-     },
-     "debit": 4770000
+     "debit": 15358433
     },
     {
      "label": {
@@ -4386,7 +4364,7 @@
  {
   "ref": "S-A-07-003",
   "kind": "facture_achat",
-  "date": "2026-07-05",
+  "date": "2026-07-06",
   "title": {
    "fr": "Facture Sawa Textiles de juillet",
    "en": "Sawa Textiles July invoice"
@@ -4558,7 +4536,7 @@
   }
  },
  {
-  "ref": "S-A-07-010",
+  "ref": "S-A-07-009",
   "kind": "recu_caisse",
   "date": "2026-07-22",
   "title": {
@@ -4573,26 +4551,6 @@
       "en": "Penalty paid"
      },
      "amount": 50000
-    }
-   ]
-  }
- },
- {
-  "ref": "S-A-07-005",
-  "kind": "recu_caisse",
-  "date": "2026-07-25",
-  "title": {
-   "fr": "Bordereau de sortie de caisse vers la banque",
-   "en": "Cash transfer slip to the bank"
-  },
-  "payload": {
-   "totals": [
-    {
-     "label": {
-      "fr": "Espèces versées",
-      "en": "Cash deposited"
-     },
-     "amount": 4770000
     }
    ]
   }
@@ -4646,7 +4604,7 @@
   }
  },
  {
-  "ref": "S-A-07-006",
+  "ref": "S-A-07-005",
   "kind": "recu_caisse",
   "date": "2026-07-31",
   "title": {
@@ -4683,7 +4641,7 @@
   }
  },
  {
-  "ref": "S-A-07-007",
+  "ref": "S-A-07-006",
   "kind": "releve_momo",
   "date": "2026-07-31",
   "title": {
@@ -4727,7 +4685,7 @@
   }
  },
  {
-  "ref": "S-A-07-008",
+  "ref": "S-A-07-007",
   "kind": "releve_momo",
   "date": "2026-07-31",
   "title": {
@@ -4771,7 +4729,7 @@
   }
  },
  {
-  "ref": "S-A-07-009",
+  "ref": "S-A-07-008",
   "kind": "bulletin_paie",
   "date": "2026-07-31",
   "title": {
@@ -4871,6 +4829,26 @@
   }
  },
  {
+  "ref": "S-A-07-010",
+  "kind": "recu_caisse",
+  "date": "2026-07-31",
+  "title": {
+   "fr": "Bordereaux de versement des espèces de juillet",
+   "en": "July cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
   "ref": "S-A-08-010",
   "kind": "balance",
   "date": "2026-08-01",
@@ -4955,14 +4933,7 @@
       "fr": "521 BANQUES LOCALES",
       "en": "521 Local banks"
      },
-     "debit": 9335359
-    },
-    {
-     "label": {
-      "fr": "5711 Caisse en monnaie nationale",
-      "en": "5711 Cash in national currency"
-     },
-     "debit": 4770000
+     "debit": 14105359
     },
     {
      "label": {
@@ -5047,7 +5018,7 @@
  {
   "ref": "S-A-08-002",
   "kind": "recu_caisse",
-  "date": "2026-08-02",
+  "date": "2026-08-03",
   "title": {
    "fr": "Quittance de loyer de août",
    "en": "August rent receipt"
@@ -5262,26 +5233,6 @@
   }
  },
  {
-  "ref": "S-A-08-005",
-  "kind": "recu_caisse",
-  "date": "2026-08-25",
-  "title": {
-   "fr": "Bordereau de sortie de caisse vers la banque",
-   "en": "Cash transfer slip to the bank"
-  },
-  "payload": {
-   "totals": [
-    {
-     "label": {
-      "fr": "Espèces versées",
-      "en": "Cash deposited"
-     },
-     "amount": 4770000
-    }
-   ]
-  }
- },
- {
   "ref": "S-A-08-001",
   "kind": "releve_bancaire",
   "date": "2026-08-31",
@@ -5323,7 +5274,7 @@
   }
  },
  {
-  "ref": "S-A-08-006",
+  "ref": "S-A-08-005",
   "kind": "recu_caisse",
   "date": "2026-08-31",
   "title": {
@@ -5360,7 +5311,7 @@
   }
  },
  {
-  "ref": "S-A-08-007",
+  "ref": "S-A-08-006",
   "kind": "releve_momo",
   "date": "2026-08-31",
   "title": {
@@ -5404,7 +5355,7 @@
   }
  },
  {
-  "ref": "S-A-08-008",
+  "ref": "S-A-08-007",
   "kind": "releve_momo",
   "date": "2026-08-31",
   "title": {
@@ -5448,7 +5399,7 @@
   }
  },
  {
-  "ref": "S-A-08-009",
+  "ref": "S-A-08-008",
   "kind": "bulletin_paie",
   "date": "2026-08-31",
   "title": {
@@ -5548,6 +5499,26 @@
   }
  },
  {
+  "ref": "S-A-08-009",
+  "kind": "recu_caisse",
+  "date": "2026-08-31",
+  "title": {
+   "fr": "Bordereaux de versement des espèces de août",
+   "en": "August cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
   "ref": "S-A-09-011",
   "kind": "balance",
   "date": "2026-09-01",
@@ -5632,14 +5603,7 @@
       "fr": "521 BANQUES LOCALES",
       "en": "521 Local banks"
      },
-     "debit": 12114446
-    },
-    {
-     "label": {
-      "fr": "5711 Caisse en monnaie nationale",
-      "en": "5711 Cash in national currency"
-     },
-     "debit": 4770000
+     "debit": 16884446
     },
     {
      "label": {
@@ -5939,7 +5903,7 @@
   }
  },
  {
-  "ref": "S-A-09-010",
+  "ref": "S-A-09-009",
   "kind": "recu_caisse",
   "date": "2026-09-18",
   "title": {
@@ -5954,26 +5918,6 @@
       "en": "Cash expense"
      },
      "amount": 40000
-    }
-   ]
-  }
- },
- {
-  "ref": "S-A-09-005",
-  "kind": "recu_caisse",
-  "date": "2026-09-25",
-  "title": {
-   "fr": "Bordereau de sortie de caisse vers la banque",
-   "en": "Cash transfer slip to the bank"
-  },
-  "payload": {
-   "totals": [
-    {
-     "label": {
-      "fr": "Espèces versées",
-      "en": "Cash deposited"
-     },
-     "amount": 4770000
     }
    ]
   }
@@ -6007,7 +5951,7 @@
       "fr": "Virements internes reçus (espèces et Mobile Money)",
       "en": "Internal transfers received"
      },
-     "amount": 8927050
+     "amount": 8887050
     },
     {
      "label": {
@@ -6020,7 +5964,7 @@
   }
  },
  {
-  "ref": "S-A-09-006",
+  "ref": "S-A-09-005",
   "kind": "recu_caisse",
   "date": "2026-09-30",
   "title": {
@@ -6057,7 +6001,7 @@
   }
  },
  {
-  "ref": "S-A-09-007",
+  "ref": "S-A-09-006",
   "kind": "releve_momo",
   "date": "2026-09-30",
   "title": {
@@ -6101,7 +6045,7 @@
   }
  },
  {
-  "ref": "S-A-09-008",
+  "ref": "S-A-09-007",
   "kind": "releve_momo",
   "date": "2026-09-30",
   "title": {
@@ -6145,7 +6089,7 @@
   }
  },
  {
-  "ref": "S-A-09-009",
+  "ref": "S-A-09-008",
   "kind": "bulletin_paie",
   "date": "2026-09-30",
   "title": {
@@ -6245,6 +6189,26 @@
   }
  },
  {
+  "ref": "S-A-09-010",
+  "kind": "recu_caisse",
+  "date": "2026-09-30",
+  "title": {
+   "fr": "Bordereaux de versement des espèces de septembre",
+   "en": "September cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4730000
+    }
+   ]
+  }
+ },
+ {
   "ref": "S-A-10-011",
   "kind": "balance",
   "date": "2026-10-01",
@@ -6329,14 +6293,7 @@
       "fr": "521 BANQUES LOCALES",
       "en": "521 Local banks"
      },
-     "debit": 15143784
-    },
-    {
-     "label": {
-      "fr": "5711 Caisse en monnaie nationale",
-      "en": "5711 Cash in national currency"
-     },
-     "debit": 4730000
+     "debit": 19873784
     },
     {
      "label": {
@@ -6565,7 +6522,7 @@
   }
  },
  {
-  "ref": "S-A-10-010",
+  "ref": "S-A-10-009",
   "kind": "recu_caisse",
   "date": "2026-10-08",
   "title": {
@@ -6663,26 +6620,6 @@
   }
  },
  {
-  "ref": "S-A-10-005",
-  "kind": "recu_caisse",
-  "date": "2026-10-25",
-  "title": {
-   "fr": "Bordereau de sortie de caisse vers la banque",
-   "en": "Cash transfer slip to the bank"
-  },
-  "payload": {
-   "totals": [
-    {
-     "label": {
-      "fr": "Espèces versées",
-      "en": "Cash deposited"
-     },
-     "amount": 4770000
-    }
-   ]
-  }
- },
- {
   "ref": "S-A-10-001",
   "kind": "releve_bancaire",
   "date": "2026-10-31",
@@ -6724,7 +6661,7 @@
   }
  },
  {
-  "ref": "S-A-10-006",
+  "ref": "S-A-10-005",
   "kind": "recu_caisse",
   "date": "2026-10-31",
   "title": {
@@ -6761,7 +6698,7 @@
   }
  },
  {
-  "ref": "S-A-10-007",
+  "ref": "S-A-10-006",
   "kind": "releve_momo",
   "date": "2026-10-31",
   "title": {
@@ -6805,7 +6742,7 @@
   }
  },
  {
-  "ref": "S-A-10-008",
+  "ref": "S-A-10-007",
   "kind": "releve_momo",
   "date": "2026-10-31",
   "title": {
@@ -6849,7 +6786,7 @@
   }
  },
  {
-  "ref": "S-A-10-009",
+  "ref": "S-A-10-008",
   "kind": "bulletin_paie",
   "date": "2026-10-31",
   "title": {
@@ -6949,6 +6886,26 @@
   }
  },
  {
+  "ref": "S-A-10-010",
+  "kind": "recu_caisse",
+  "date": "2026-10-31",
+  "title": {
+   "fr": "Bordereaux de versement des espèces de octobre",
+   "en": "October cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
   "ref": "S-A-11-011",
   "kind": "balance",
   "date": "2026-11-01",
@@ -7033,14 +6990,7 @@
       "fr": "521 BANQUES LOCALES",
       "en": "521 Local banks"
      },
-     "debit": 17452871
-    },
-    {
-     "label": {
-      "fr": "5711 Caisse en monnaie nationale",
-      "en": "5711 Cash in national currency"
-     },
-     "debit": 4730000
+     "debit": 22182871
     },
     {
      "label": {
@@ -7276,12 +7226,12 @@
   }
  },
  {
-  "ref": "S-A-11-010",
+  "ref": "S-A-11-009",
   "kind": "recu_caisse",
   "date": "2026-11-10",
   "title": {
-   "fr": "Accord transactionnel avec l'ancien bailleur",
-   "en": "Settlement agreement with the former landlord"
+   "fr": "Accord transactionnel avec le propriétaire voisin",
+   "en": "Settlement agreement with the neighbouring owner"
   },
   "payload": {
    "totals": [
@@ -7374,26 +7324,6 @@
   }
  },
  {
-  "ref": "S-A-11-005",
-  "kind": "recu_caisse",
-  "date": "2026-11-25",
-  "title": {
-   "fr": "Bordereau de sortie de caisse vers la banque",
-   "en": "Cash transfer slip to the bank"
-  },
-  "payload": {
-   "totals": [
-    {
-     "label": {
-      "fr": "Espèces versées",
-      "en": "Cash deposited"
-     },
-     "amount": 4770000
-    }
-   ]
-  }
- },
- {
   "ref": "S-A-11-001",
   "kind": "releve_bancaire",
   "date": "2026-11-30",
@@ -7435,7 +7365,7 @@
   }
  },
  {
-  "ref": "S-A-11-006",
+  "ref": "S-A-11-005",
   "kind": "recu_caisse",
   "date": "2026-11-30",
   "title": {
@@ -7472,7 +7402,7 @@
   }
  },
  {
-  "ref": "S-A-11-007",
+  "ref": "S-A-11-006",
   "kind": "releve_momo",
   "date": "2026-11-30",
   "title": {
@@ -7516,7 +7446,7 @@
   }
  },
  {
-  "ref": "S-A-11-008",
+  "ref": "S-A-11-007",
   "kind": "releve_momo",
   "date": "2026-11-30",
   "title": {
@@ -7560,7 +7490,7 @@
   }
  },
  {
-  "ref": "S-A-11-009",
+  "ref": "S-A-11-008",
   "kind": "bulletin_paie",
   "date": "2026-11-30",
   "title": {
@@ -7660,6 +7590,26 @@
   }
  },
  {
+  "ref": "S-A-11-010",
+  "kind": "recu_caisse",
+  "date": "2026-11-30",
+  "title": {
+   "fr": "Bordereaux de versement des espèces de novembre",
+   "en": "November cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
+    }
+   ]
+  }
+ },
+ {
   "ref": "S-A-12-012",
   "kind": "balance",
   "date": "2026-12-01",
@@ -7737,14 +7687,7 @@
       "fr": "521 BANQUES LOCALES",
       "en": "521 Local banks"
      },
-     "debit": 20296959
-    },
-    {
-     "label": {
-      "fr": "5711 Caisse en monnaie nationale",
-      "en": "5711 Cash in national currency"
-     },
-     "debit": 4730000
+     "debit": 25026959
     },
     {
      "label": {
@@ -8065,26 +8008,6 @@
   }
  },
  {
-  "ref": "S-A-12-005",
-  "kind": "recu_caisse",
-  "date": "2026-12-25",
-  "title": {
-   "fr": "Bordereau de sortie de caisse vers la banque",
-   "en": "Cash transfer slip to the bank"
-  },
-  "payload": {
-   "totals": [
-    {
-     "label": {
-      "fr": "Espèces versées",
-      "en": "Cash deposited"
-     },
-     "amount": 4770000
-    }
-   ]
-  }
- },
- {
   "ref": "S-A-12-001",
   "kind": "releve_bancaire",
   "date": "2026-12-31",
@@ -8126,7 +8049,7 @@
   }
  },
  {
-  "ref": "S-A-12-006",
+  "ref": "S-A-12-005",
   "kind": "recu_caisse",
   "date": "2026-12-31",
   "title": {
@@ -8163,7 +8086,7 @@
   }
  },
  {
-  "ref": "S-A-12-007",
+  "ref": "S-A-12-006",
   "kind": "releve_momo",
   "date": "2026-12-31",
   "title": {
@@ -8207,7 +8130,7 @@
   }
  },
  {
-  "ref": "S-A-12-008",
+  "ref": "S-A-12-007",
   "kind": "releve_momo",
   "date": "2026-12-31",
   "title": {
@@ -8251,7 +8174,7 @@
   }
  },
  {
-  "ref": "S-A-12-009",
+  "ref": "S-A-12-008",
   "kind": "bulletin_paie",
   "date": "2026-12-31",
   "title": {
@@ -8346,6 +8269,26 @@
       "en": "Employer CNPS (pension 4.2%)"
      },
      "amount": 29400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-A-12-009",
+  "kind": "recu_caisse",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Bordereaux de versement des espèces de décembre",
+   "en": "December cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Espèces versées",
+      "en": "Cash deposited"
+     },
+     "amount": 4770000
     }
    ]
   }

@@ -9,8 +9,8 @@
   "usage": "quiz",
   "exercice": 2026,
   "prompt": {
-   "fr": "Montant de la pénalité à réintégrer ?\n\n[[piece:S-A-07-010]]",
-   "en": "Penalty to add back?\n\n[[piece:S-A-07-010]]"
+   "fr": "Montant de la pénalité à réintégrer ?\n\n[[piece:S-A-07-009]]",
+   "en": "Penalty to add back?\n\n[[piece:S-A-07-009]]"
   },
   "explanation": {
    "fr": "Les amendes et pénalités ne sont pas déductibles (CGI art. 7).",
@@ -65,8 +65,8 @@
   "usage": "quiz",
   "exercice": 2026,
   "prompt": {
-   "fr": "Part du don à réintégrer (limite de 0,5 % du CA) ?\n\n[[piece:S-A-10-010]]",
-   "en": "Donation to add back (0.5% of turnover cap)?\n\n[[piece:S-A-10-010]]"
+   "fr": "Part du don à réintégrer (limite de 0,5 % du CA) ?\n\n[[piece:S-A-10-009]]",
+   "en": "Donation to add back (0.5% of turnover cap)?\n\n[[piece:S-A-10-009]]"
   },
   "explanation": {
    "fr": "Déductible dans la limite de 0,5 % du chiffre d'affaires (CGI art. 7).",
@@ -97,8 +97,8 @@
   "usage": "exam",
   "exercice": 2026,
   "prompt": {
-   "fr": "Charge à réintégrer faute de justificatif ?\n\n[[piece:S-A-09-010]]",
-   "en": "Expense to add back for lack of receipt?\n\n[[piece:S-A-09-010]]"
+   "fr": "Charge à réintégrer faute de justificatif ?\n\n[[piece:S-A-09-009]]",
+   "en": "Expense to add back for lack of receipt?\n\n[[piece:S-A-09-009]]"
   },
   "explanation": {
    "fr": "Une charge sans pièce justificative n'est pas déductible (CGI art. 7).",
@@ -156,8 +156,8 @@
   "usage": "quiz",
   "exercice": 2026,
   "prompt": {
-   "fr": "Montant à déduire au titre de la reprise de provision ?\n\n[[piece:S-A-11-010]]",
-   "en": "Amount deducted for the provision reversal?\n\n[[piece:S-A-11-010]]"
+   "fr": "Montant à déduire au titre de la reprise de provision ?\n\n[[piece:S-A-11-009]]",
+   "en": "Amount deducted for the provision reversal?\n\n[[piece:S-A-11-009]]"
   },
   "explanation": {
    "fr": "La provision a été réintégrée à sa dotation : sa reprise se déduit.",
@@ -179,8 +179,8 @@
   "usage": "exam",
   "exercice": 2026,
   "prompt": {
-   "fr": "Dotation à la provision pour litige à réintégrer ?\n\n[[piece:S-A-03-010]]",
-   "en": "Litigation provision to add back?\n\n[[piece:S-A-03-010]]"
+   "fr": "Dotation à la provision pour litige à réintégrer ?\n\n[[piece:S-A-03-009]]",
+   "en": "Litigation provision to add back?\n\n[[piece:S-A-03-009]]"
   },
   "explanation": {
    "fr": "Provision pour un risque non déductible : réintégrée.",
@@ -359,8 +359,8 @@
    "en": "Record the CIT for the year.\n\n[[piece:S-A-16-001]]"
   },
   "explanation": {
-   "fr": "Impôt sur les bénéfices 891 au débit, État 441 au crédit.",
-   "en": "Income tax 891 debit, State 441 credit."
+   "fr": "Impôt sur les bénéfices 891 au débit, État 441 au crédit. Pourquoi pas autre chose : Une boutique à forte marge paie l'IS sur son bénéfice ; le minimum ne joue que si le bénéfice est faible : comparez avec le dépôt de boissons du parcours B3.",
+   "en": "Income tax 891 debit, State 441 credit. Why not something else: A high-margin shop pays CIT on its profit; the minimum only bites when profit is low: compare with the beverage depot of track B3."
   },
   "journal": [
    {

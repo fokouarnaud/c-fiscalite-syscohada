@@ -16,7 +16,7 @@
   ]
  },
  {
-  "date": "2026-01-03",
+  "date": "2026-01-06",
   "piece": "S-A-01-007",
   "lines": [
    {
@@ -42,7 +42,7 @@
   ]
  },
  {
-  "date": "2026-01-02",
+  "date": "2026-01-06",
   "piece": "S-A-01-009",
   "lines": [
    {
@@ -241,6 +241,22 @@
  },
  {
   "date": "2026-01-31",
+  "piece": "S-A-01-015",
+  "lines": [
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 4770000
+   }
+  ]
+ },
+ {
+  "date": "2026-01-31",
   "piece": "S-A-01-008",
   "lines": [
    {
@@ -267,12 +283,12 @@
    {
     "account": "521",
     "side": "debit",
-    "amount": 4157050
+    "amount": 8927050
    },
    {
     "account": "585",
     "side": "credit",
-    "amount": 4157050
+    "amount": 8927050
    },
    {
     "account": "631",
@@ -401,24 +417,8 @@
   ]
  },
  {
-  "date": "2026-02-25",
-  "piece": "S-A-02-005",
-  "lines": [
-   {
-    "account": "585",
-    "side": "debit",
-    "amount": 4770000
-   },
-   {
-    "account": "5711",
-    "side": "credit",
-    "amount": 4770000
-   }
-  ]
- },
- {
   "date": "2026-02-28",
-  "piece": "S-A-02-006",
+  "piece": "S-A-02-005",
   "lines": [
    {
     "account": "5711",
@@ -439,7 +439,7 @@
  },
  {
   "date": "2026-02-28",
-  "piece": "S-A-02-007",
+  "piece": "S-A-02-006",
   "lines": [
    {
     "account": "5522",
@@ -470,7 +470,7 @@
  },
  {
   "date": "2026-02-28",
-  "piece": "S-A-02-008",
+  "piece": "S-A-02-007",
   "lines": [
    {
     "account": "5521",
@@ -501,7 +501,7 @@
  },
  {
   "date": "2026-02-28",
-  "piece": "S-A-02-009",
+  "piece": "S-A-02-008",
   "lines": [
    {
     "account": "6611",
@@ -548,6 +548,22 @@
     "account": "521",
     "side": "credit",
     "amount": 610966
+   }
+  ]
+ },
+ {
+  "date": "2026-02-28",
+  "piece": "S-A-02-009",
+  "lines": [
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 4770000
    }
   ]
  },
@@ -708,24 +724,8 @@
   ]
  },
  {
-  "date": "2026-03-25",
-  "piece": "S-A-03-005",
-  "lines": [
-   {
-    "account": "585",
-    "side": "debit",
-    "amount": 4770000
-   },
-   {
-    "account": "5711",
-    "side": "credit",
-    "amount": 4770000
-   }
-  ]
- },
- {
   "date": "2026-03-31",
-  "piece": "S-A-03-006",
+  "piece": "S-A-03-005",
   "lines": [
    {
     "account": "5711",
@@ -746,7 +746,7 @@
  },
  {
   "date": "2026-03-31",
-  "piece": "S-A-03-007",
+  "piece": "S-A-03-006",
   "lines": [
    {
     "account": "5522",
@@ -777,7 +777,7 @@
  },
  {
   "date": "2026-03-31",
-  "piece": "S-A-03-008",
+  "piece": "S-A-03-007",
   "lines": [
    {
     "account": "5521",
@@ -808,7 +808,7 @@
  },
  {
   "date": "2026-03-31",
-  "piece": "S-A-03-009",
+  "piece": "S-A-03-008",
   "lines": [
    {
     "account": "6611",
@@ -855,6 +855,38 @@
     "account": "521",
     "side": "credit",
     "amount": 610966
+   }
+  ]
+ },
+ {
+  "date": "2026-03-10",
+  "piece": "S-A-03-009",
+  "lines": [
+   {
+    "account": "6911",
+    "side": "debit",
+    "amount": 500000
+   },
+   {
+    "account": "191",
+    "side": "credit",
+    "amount": 500000
+   }
+  ]
+ },
+ {
+  "date": "2026-03-31",
+  "piece": "S-A-03-010",
+  "lines": [
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 4770000
    }
   ]
  },
@@ -906,22 +938,6 @@
   ]
  },
  {
-  "date": "2026-03-10",
-  "piece": "S-A-03-010",
-  "lines": [
-   {
-    "account": "6911",
-    "side": "debit",
-    "amount": 500000
-   },
-   {
-    "account": "191",
-    "side": "credit",
-    "amount": 500000
-   }
-  ]
- },
- {
   "date": "2026-04-02",
   "piece": "S-A-04-002",
   "lines": [
@@ -943,7 +959,7 @@
   ]
  },
  {
-  "date": "2026-04-05",
+  "date": "2026-04-06",
   "piece": "S-A-04-003",
   "lines": [
    {
@@ -1031,24 +1047,8 @@
   ]
  },
  {
-  "date": "2026-04-25",
-  "piece": "S-A-04-005",
-  "lines": [
-   {
-    "account": "585",
-    "side": "debit",
-    "amount": 4770000
-   },
-   {
-    "account": "5711",
-    "side": "credit",
-    "amount": 4770000
-   }
-  ]
- },
- {
   "date": "2026-04-30",
-  "piece": "S-A-04-006",
+  "piece": "S-A-04-005",
   "lines": [
    {
     "account": "5711",
@@ -1069,7 +1069,7 @@
  },
  {
   "date": "2026-04-30",
-  "piece": "S-A-04-007",
+  "piece": "S-A-04-006",
   "lines": [
    {
     "account": "5522",
@@ -1100,7 +1100,7 @@
  },
  {
   "date": "2026-04-30",
-  "piece": "S-A-04-008",
+  "piece": "S-A-04-007",
   "lines": [
    {
     "account": "5521",
@@ -1131,7 +1131,7 @@
  },
  {
   "date": "2026-04-30",
-  "piece": "S-A-04-009",
+  "piece": "S-A-04-008",
   "lines": [
    {
     "account": "6611",
@@ -1182,6 +1182,43 @@
   ]
  },
  {
+  "date": "2026-04-01",
+  "piece": "S-A-04-009",
+  "lines": [
+   {
+    "account": "2451",
+    "side": "debit",
+    "amount": 12000000
+   },
+   {
+    "account": "4451",
+    "side": "debit",
+    "amount": 2310000
+   },
+   {
+    "account": "4812",
+    "side": "credit",
+    "amount": 14310000
+   }
+  ]
+ },
+ {
+  "date": "2026-04-30",
+  "piece": "S-A-04-010",
+  "lines": [
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 4770000
+   }
+  ]
+ },
+ {
   "date": "2026-04-30",
   "piece": "S-A-04-001",
   "lines": [
@@ -1225,27 +1262,6 @@
     "account": "521",
     "side": "credit",
     "amount": 3500
-   }
-  ]
- },
- {
-  "date": "2026-04-01",
-  "piece": "S-A-04-010",
-  "lines": [
-   {
-    "account": "2451",
-    "side": "debit",
-    "amount": 12000000
-   },
-   {
-    "account": "4451",
-    "side": "debit",
-    "amount": 2310000
-   },
-   {
-    "account": "4812",
-    "side": "credit",
-    "amount": 14310000
    }
   ]
  },
@@ -1369,24 +1385,8 @@
   ]
  },
  {
-  "date": "2026-05-25",
-  "piece": "S-A-05-005",
-  "lines": [
-   {
-    "account": "585",
-    "side": "debit",
-    "amount": 4770000
-   },
-   {
-    "account": "5711",
-    "side": "credit",
-    "amount": 4770000
-   }
-  ]
- },
- {
   "date": "2026-05-31",
-  "piece": "S-A-05-006",
+  "piece": "S-A-05-005",
   "lines": [
    {
     "account": "5711",
@@ -1407,7 +1407,7 @@
  },
  {
   "date": "2026-05-31",
-  "piece": "S-A-05-007",
+  "piece": "S-A-05-006",
   "lines": [
    {
     "account": "5522",
@@ -1438,7 +1438,7 @@
  },
  {
   "date": "2026-05-31",
-  "piece": "S-A-05-008",
+  "piece": "S-A-05-007",
   "lines": [
    {
     "account": "5521",
@@ -1469,7 +1469,7 @@
  },
  {
   "date": "2026-05-31",
-  "piece": "S-A-05-009",
+  "piece": "S-A-05-008",
   "lines": [
    {
     "account": "6611",
@@ -1520,6 +1520,38 @@
   ]
  },
  {
+  "date": "2026-05-20",
+  "piece": "S-A-05-001",
+  "lines": [
+   {
+    "account": "4812",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 4770000
+   }
+  ]
+ },
+ {
+  "date": "2026-05-31",
+  "piece": "S-A-05-009",
+  "lines": [
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 4770000
+   }
+  ]
+ },
+ {
   "date": "2026-05-31",
   "piece": "S-A-05-001",
   "lines": [
@@ -1563,22 +1595,6 @@
     "account": "521",
     "side": "credit",
     "amount": 3500
-   }
-  ]
- },
- {
-  "date": "2026-05-20",
-  "piece": "S-A-05-001",
-  "lines": [
-   {
-    "account": "4812",
-    "side": "debit",
-    "amount": 4770000
-   },
-   {
-    "account": "521",
-    "side": "credit",
-    "amount": 4770000
    }
   ]
  },
@@ -1702,24 +1718,8 @@
   ]
  },
  {
-  "date": "2026-06-25",
-  "piece": "S-A-06-005",
-  "lines": [
-   {
-    "account": "585",
-    "side": "debit",
-    "amount": 4770000
-   },
-   {
-    "account": "5711",
-    "side": "credit",
-    "amount": 4770000
-   }
-  ]
- },
- {
   "date": "2026-06-30",
-  "piece": "S-A-06-006",
+  "piece": "S-A-06-005",
   "lines": [
    {
     "account": "5711",
@@ -1740,7 +1740,7 @@
  },
  {
   "date": "2026-06-30",
-  "piece": "S-A-06-007",
+  "piece": "S-A-06-006",
   "lines": [
    {
     "account": "5522",
@@ -1771,7 +1771,7 @@
  },
  {
   "date": "2026-06-30",
-  "piece": "S-A-06-008",
+  "piece": "S-A-06-007",
   "lines": [
    {
     "account": "5521",
@@ -1802,7 +1802,7 @@
  },
  {
   "date": "2026-06-30",
-  "piece": "S-A-06-009",
+  "piece": "S-A-06-008",
   "lines": [
    {
     "account": "6611",
@@ -1849,6 +1849,38 @@
     "account": "521",
     "side": "credit",
     "amount": 610966
+   }
+  ]
+ },
+ {
+  "date": "2026-06-20",
+  "piece": "S-A-06-001",
+  "lines": [
+   {
+    "account": "4812",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 4770000
+   }
+  ]
+ },
+ {
+  "date": "2026-06-30",
+  "piece": "S-A-06-009",
+  "lines": [
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 4770000
    }
   ]
  },
@@ -1900,22 +1932,6 @@
   ]
  },
  {
-  "date": "2026-06-20",
-  "piece": "S-A-06-001",
-  "lines": [
-   {
-    "account": "4812",
-    "side": "debit",
-    "amount": 4770000
-   },
-   {
-    "account": "521",
-    "side": "credit",
-    "amount": 4770000
-   }
-  ]
- },
- {
   "date": "2026-07-02",
   "piece": "S-A-07-002",
   "lines": [
@@ -1937,7 +1953,7 @@
   ]
  },
  {
-  "date": "2026-07-05",
+  "date": "2026-07-06",
   "piece": "S-A-07-003",
   "lines": [
    {
@@ -2030,24 +2046,8 @@
   ]
  },
  {
-  "date": "2026-07-25",
-  "piece": "S-A-07-005",
-  "lines": [
-   {
-    "account": "585",
-    "side": "debit",
-    "amount": 4770000
-   },
-   {
-    "account": "5711",
-    "side": "credit",
-    "amount": 4770000
-   }
-  ]
- },
- {
   "date": "2026-07-31",
-  "piece": "S-A-07-006",
+  "piece": "S-A-07-005",
   "lines": [
    {
     "account": "5711",
@@ -2068,7 +2068,7 @@
  },
  {
   "date": "2026-07-31",
-  "piece": "S-A-07-007",
+  "piece": "S-A-07-006",
   "lines": [
    {
     "account": "5522",
@@ -2099,7 +2099,7 @@
  },
  {
   "date": "2026-07-31",
-  "piece": "S-A-07-008",
+  "piece": "S-A-07-007",
   "lines": [
    {
     "account": "5521",
@@ -2130,7 +2130,7 @@
  },
  {
   "date": "2026-07-31",
-  "piece": "S-A-07-009",
+  "piece": "S-A-07-008",
   "lines": [
    {
     "account": "6611",
@@ -2177,6 +2177,54 @@
     "account": "521",
     "side": "credit",
     "amount": 610966
+   }
+  ]
+ },
+ {
+  "date": "2026-07-20",
+  "piece": "S-A-07-001",
+  "lines": [
+   {
+    "account": "4812",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 4770000
+   }
+  ]
+ },
+ {
+  "date": "2026-07-22",
+  "piece": "S-A-07-009",
+  "lines": [
+   {
+    "account": "6471",
+    "side": "debit",
+    "amount": 50000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 50000
+   }
+  ]
+ },
+ {
+  "date": "2026-07-31",
+  "piece": "S-A-07-010",
+  "lines": [
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 4770000
    }
   ]
  },
@@ -2228,39 +2276,7 @@
   ]
  },
  {
-  "date": "2026-07-20",
-  "piece": "S-A-07-001",
-  "lines": [
-   {
-    "account": "4812",
-    "side": "debit",
-    "amount": 4770000
-   },
-   {
-    "account": "521",
-    "side": "credit",
-    "amount": 4770000
-   }
-  ]
- },
- {
-  "date": "2026-07-22",
-  "piece": "S-A-07-010",
-  "lines": [
-   {
-    "account": "6471",
-    "side": "debit",
-    "amount": 50000
-   },
-   {
-    "account": "521",
-    "side": "credit",
-    "amount": 50000
-   }
-  ]
- },
- {
-  "date": "2026-08-02",
+  "date": "2026-08-03",
   "piece": "S-A-08-002",
   "lines": [
    {
@@ -2369,24 +2385,8 @@
   ]
  },
  {
-  "date": "2026-08-25",
-  "piece": "S-A-08-005",
-  "lines": [
-   {
-    "account": "585",
-    "side": "debit",
-    "amount": 4770000
-   },
-   {
-    "account": "5711",
-    "side": "credit",
-    "amount": 4770000
-   }
-  ]
- },
- {
   "date": "2026-08-31",
-  "piece": "S-A-08-006",
+  "piece": "S-A-08-005",
   "lines": [
    {
     "account": "5711",
@@ -2407,7 +2407,7 @@
  },
  {
   "date": "2026-08-31",
-  "piece": "S-A-08-007",
+  "piece": "S-A-08-006",
   "lines": [
    {
     "account": "5522",
@@ -2438,7 +2438,7 @@
  },
  {
   "date": "2026-08-31",
-  "piece": "S-A-08-008",
+  "piece": "S-A-08-007",
   "lines": [
    {
     "account": "5521",
@@ -2469,7 +2469,7 @@
  },
  {
   "date": "2026-08-31",
-  "piece": "S-A-08-009",
+  "piece": "S-A-08-008",
   "lines": [
    {
     "account": "6611",
@@ -2516,6 +2516,22 @@
     "account": "521",
     "side": "credit",
     "amount": 610966
+   }
+  ]
+ },
+ {
+  "date": "2026-08-31",
+  "piece": "S-A-08-009",
+  "lines": [
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 4770000
    }
   ]
  },
@@ -2676,24 +2692,8 @@
   ]
  },
  {
-  "date": "2026-09-25",
-  "piece": "S-A-09-005",
-  "lines": [
-   {
-    "account": "585",
-    "side": "debit",
-    "amount": 4770000
-   },
-   {
-    "account": "5711",
-    "side": "credit",
-    "amount": 4770000
-   }
-  ]
- },
- {
   "date": "2026-09-30",
-  "piece": "S-A-09-006",
+  "piece": "S-A-09-005",
   "lines": [
    {
     "account": "5711",
@@ -2714,7 +2714,7 @@
  },
  {
   "date": "2026-09-30",
-  "piece": "S-A-09-007",
+  "piece": "S-A-09-006",
   "lines": [
    {
     "account": "5522",
@@ -2745,7 +2745,7 @@
  },
  {
   "date": "2026-09-30",
-  "piece": "S-A-09-008",
+  "piece": "S-A-09-007",
   "lines": [
    {
     "account": "5521",
@@ -2776,7 +2776,7 @@
  },
  {
   "date": "2026-09-30",
-  "piece": "S-A-09-009",
+  "piece": "S-A-09-008",
   "lines": [
    {
     "account": "6611",
@@ -2827,6 +2827,38 @@
   ]
  },
  {
+  "date": "2026-09-18",
+  "piece": "S-A-09-009",
+  "lines": [
+   {
+    "account": "6588",
+    "side": "debit",
+    "amount": 40000
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 40000
+   }
+  ]
+ },
+ {
+  "date": "2026-09-30",
+  "piece": "S-A-09-010",
+  "lines": [
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 4730000
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 4730000
+   }
+  ]
+ },
+ {
   "date": "2026-09-30",
   "piece": "S-A-09-001",
   "lines": [
@@ -2854,12 +2886,12 @@
    {
     "account": "521",
     "side": "debit",
-    "amount": 8927050
+    "amount": 8887050
    },
    {
     "account": "585",
     "side": "credit",
-    "amount": 8927050
+    "amount": 8887050
    },
    {
     "account": "631",
@@ -2870,22 +2902,6 @@
     "account": "521",
     "side": "credit",
     "amount": 3500
-   }
-  ]
- },
- {
-  "date": "2026-09-18",
-  "piece": "S-A-09-010",
-  "lines": [
-   {
-    "account": "6588",
-    "side": "debit",
-    "amount": 40000
-   },
-   {
-    "account": "5711",
-    "side": "credit",
-    "amount": 40000
    }
   ]
  },
@@ -2999,24 +3015,8 @@
   ]
  },
  {
-  "date": "2026-10-25",
-  "piece": "S-A-10-005",
-  "lines": [
-   {
-    "account": "585",
-    "side": "debit",
-    "amount": 4770000
-   },
-   {
-    "account": "5711",
-    "side": "credit",
-    "amount": 4770000
-   }
-  ]
- },
- {
   "date": "2026-10-31",
-  "piece": "S-A-10-006",
+  "piece": "S-A-10-005",
   "lines": [
    {
     "account": "5711",
@@ -3037,7 +3037,7 @@
  },
  {
   "date": "2026-10-31",
-  "piece": "S-A-10-007",
+  "piece": "S-A-10-006",
   "lines": [
    {
     "account": "5522",
@@ -3068,7 +3068,7 @@
  },
  {
   "date": "2026-10-31",
-  "piece": "S-A-10-008",
+  "piece": "S-A-10-007",
   "lines": [
    {
     "account": "5521",
@@ -3099,7 +3099,7 @@
  },
  {
   "date": "2026-10-31",
-  "piece": "S-A-10-009",
+  "piece": "S-A-10-008",
   "lines": [
    {
     "account": "6611",
@@ -3150,6 +3150,38 @@
   ]
  },
  {
+  "date": "2026-10-08",
+  "piece": "S-A-10-009",
+  "lines": [
+   {
+    "account": "6582",
+    "side": "debit",
+    "amount": 600000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 600000
+   }
+  ]
+ },
+ {
+  "date": "2026-10-31",
+  "piece": "S-A-10-010",
+  "lines": [
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 4770000
+   }
+  ]
+ },
+ {
   "date": "2026-10-31",
   "piece": "S-A-10-001",
   "lines": [
@@ -3193,22 +3225,6 @@
     "account": "521",
     "side": "credit",
     "amount": 3500
-   }
-  ]
- },
- {
-  "date": "2026-10-08",
-  "piece": "S-A-10-010",
-  "lines": [
-   {
-    "account": "6582",
-    "side": "debit",
-    "amount": 600000
-   },
-   {
-    "account": "521",
-    "side": "credit",
-    "amount": 600000
    }
   ]
  },
@@ -3322,24 +3338,8 @@
   ]
  },
  {
-  "date": "2026-11-25",
-  "piece": "S-A-11-005",
-  "lines": [
-   {
-    "account": "585",
-    "side": "debit",
-    "amount": 4770000
-   },
-   {
-    "account": "5711",
-    "side": "credit",
-    "amount": 4770000
-   }
-  ]
- },
- {
   "date": "2026-11-30",
-  "piece": "S-A-11-006",
+  "piece": "S-A-11-005",
   "lines": [
    {
     "account": "5711",
@@ -3360,7 +3360,7 @@
  },
  {
   "date": "2026-11-30",
-  "piece": "S-A-11-007",
+  "piece": "S-A-11-006",
   "lines": [
    {
     "account": "5522",
@@ -3391,7 +3391,7 @@
  },
  {
   "date": "2026-11-30",
-  "piece": "S-A-11-008",
+  "piece": "S-A-11-007",
   "lines": [
    {
     "account": "5521",
@@ -3422,7 +3422,7 @@
  },
  {
   "date": "2026-11-30",
-  "piece": "S-A-11-009",
+  "piece": "S-A-11-008",
   "lines": [
    {
     "account": "6611",
@@ -3473,6 +3473,38 @@
   ]
  },
  {
+  "date": "2026-11-10",
+  "piece": "S-A-11-009",
+  "lines": [
+   {
+    "account": "191",
+    "side": "debit",
+    "amount": 500000
+   },
+   {
+    "account": "7911",
+    "side": "credit",
+    "amount": 500000
+   }
+  ]
+ },
+ {
+  "date": "2026-11-30",
+  "piece": "S-A-11-010",
+  "lines": [
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 4770000
+   }
+  ]
+ },
+ {
   "date": "2026-11-30",
   "piece": "S-A-11-001",
   "lines": [
@@ -3516,22 +3548,6 @@
     "account": "521",
     "side": "credit",
     "amount": 3500
-   }
-  ]
- },
- {
-  "date": "2026-11-10",
-  "piece": "S-A-11-010",
-  "lines": [
-   {
-    "account": "191",
-    "side": "debit",
-    "amount": 500000
-   },
-   {
-    "account": "7911",
-    "side": "credit",
-    "amount": 500000
    }
   ]
  },
@@ -3645,24 +3661,8 @@
   ]
  },
  {
-  "date": "2026-12-25",
-  "piece": "S-A-12-005",
-  "lines": [
-   {
-    "account": "585",
-    "side": "debit",
-    "amount": 4770000
-   },
-   {
-    "account": "5711",
-    "side": "credit",
-    "amount": 4770000
-   }
-  ]
- },
- {
   "date": "2026-12-31",
-  "piece": "S-A-12-006",
+  "piece": "S-A-12-005",
   "lines": [
    {
     "account": "5711",
@@ -3683,7 +3683,7 @@
  },
  {
   "date": "2026-12-31",
-  "piece": "S-A-12-007",
+  "piece": "S-A-12-006",
   "lines": [
    {
     "account": "5522",
@@ -3714,7 +3714,7 @@
  },
  {
   "date": "2026-12-31",
-  "piece": "S-A-12-008",
+  "piece": "S-A-12-007",
   "lines": [
    {
     "account": "5521",
@@ -3745,7 +3745,7 @@
  },
  {
   "date": "2026-12-31",
-  "piece": "S-A-12-009",
+  "piece": "S-A-12-008",
   "lines": [
    {
     "account": "6611",
@@ -3792,6 +3792,22 @@
     "account": "521",
     "side": "credit",
     "amount": 610966
+   }
+  ]
+ },
+ {
+  "date": "2026-12-31",
+  "piece": "S-A-12-009",
+  "lines": [
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 4770000
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 4770000
    }
   ]
  },
