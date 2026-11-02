@@ -1,0 +1,749 @@
+[
+ {
+  "id": "S-D-M1-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Que délivre le CFCE à M. Tchinda ?\n\n[[piece:S-D-01-001]]",
+   "en": "What does the CFCE give Mr Tchinda?\n\n[[piece:S-D-01-001]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Registre de commerce, carte de contribuable et attestation de création",
+     "en": "Trade register, taxpayer card, creation certificate"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Des statuts notariés",
+     "en": "Notarised articles"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-D-M1-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Pourquoi Ets Tchinda Froid relève-t-il du CIME et du réel ?\n\n[[piece:S-D-01-002]]",
+   "en": "Why is Ets Tchinda Froid at the MTO, actual regime?\n\n[[piece:S-D-01-002]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Son CA visé dépasse 50 millions",
+     "en": "Its target turnover exceeds 50 million"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Parce qu'il emploie un salarié",
+     "en": "Because it has an employee"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-D-M1-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Dans quel délai l'aide-technicien doit-il être immatriculé à la CNPS ?\n\n[[piece:S-D-01-003]]",
+   "en": "Within how long must the assistant be registered?\n\n[[piece:S-D-01-003]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "8 jours après l'embauche",
+     "en": "8 days after hiring"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "À la fin de l'année",
+     "en": "At year end"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-D-M1-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Pourquoi ouvrir un compte bancaire professionnel ?\n\n[[piece:S-D-01-004]]",
+   "en": "Why open a business bank account?\n\n[[piece:S-D-01-004]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Pour séparer l'argent de l'atelier de celui du ménage",
+     "en": "To separate business and household money"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Parce que la loi interdit les espèces",
+     "en": "Because the law bans cash"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-D-M1-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Quelle pièce Orange demande-t-il en plus des documents légaux ?\n\n[[piece:S-D-01-005]]",
+   "en": "Which extra document does Orange require?\n\n[[piece:S-D-01-005]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le RIB",
+     "en": "Bank details (RIB)"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Un bilan certifié",
+     "en": "A certified balance sheet"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-D-M1-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Un établissement individuel a-t-il un capital social (compte 101) ?\n\n[[piece:S-D-01-006]]",
+   "en": "Does a sole proprietorship have share capital (account 101)?\n\n[[piece:S-D-01-006]]"
+  },
+  "explanation": {
+   "fr": "Pas d'associés, pas de parts : l'apport de l'exploitant va en 103.",
+   "en": "No partners, no shares: 103."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non : le capital personnel de l'exploitant (103)",
+     "en": "No: the owner's personal capital (103)"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui, comme une SARL",
+     "en": "Yes, like an LLC"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-D-M1-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "L'outillage de 450 000 HT s'inscrit à l'actif et s'amortit.\n\n[[piece:S-D-01-007]]",
+   "en": "The 450,000 tools are capitalised and depreciated.\n\n[[piece:S-D-01-007]]"
+  },
+  "explanation": {
+   "fr": "Faux : sous le seuil de 500 000 HT, le petit outillage est une charge (6056, CGI art. 7).",
+   "en": "False: below the 500,000 threshold small tools are an expense (6056)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "S-D-M1-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture des apports de l'exploitant.\n\n[[piece:S-D-01-006]]",
+   "en": "Record the owner's contributions.\n\n[[piece:S-D-01-006]]"
+  },
+  "explanation": {
+   "fr": "Camionnette 2451 et banque 521 au débit, capital personnel 103 au crédit. Pourquoi pas autre chose : Pourquoi 103 et pas 101 ? Il n'y a ni société ni associés : le capital social n'existe pas. Ce que l'exploitant apporte reste à lui, mais l'atelier le suit dans ses comptes.",
+   "en": "Van 2451 and bank 521 debit, personal capital 103 credit. Why not something else: Why 103 and not 101? There is no company and no partners: share capital does not exist. What the owner contributes remains his, but the workshop tracks it in its books."
+  },
+  "journal": [
+   {
+    "account": "2451",
+    "side": "debit",
+    "amount": 6000000
+   },
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 3000000
+   },
+   {
+    "account": "103",
+    "side": "credit",
+    "amount": 9000000
+   }
+  ]
+ },
+ {
+  "id": "S-D-M1-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture d'outillage.\n\n[[piece:S-D-01-007]]",
+   "en": "Record the tools invoice.\n\n[[piece:S-D-01-007]]"
+  },
+  "explanation": {
+   "fr": "Petit outillage 6056 (sous le seuil de 500 000 HT, CGI art. 7), TVA 4454, payé par la banque. Pourquoi pas autre chose : Pourquoi une charge et pas une immobilisation ? Sous le seuil de 500 000 FCFA HT, le petit outillage se passe en charge [[param:petit_materiel.seuil]] ; Tech Clim, au-dessus du seuil, l'avait immobilisé.",
+   "en": "Small tools 6056 (below the 500,000 threshold), VAT 4454, paid by bank. Why not something else: Why an expense and not a fixed asset? Below the 500,000 FCFA threshold, small tools are expensed; Tech Clim, above it, had capitalised them."
+  },
+  "journal": [
+   {
+    "account": "6056",
+    "side": "debit",
+    "amount": 450000
+   },
+   {
+    "account": "4454",
+    "side": "debit",
+    "amount": 86625
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 536625
+   }
+  ]
+ },
+ {
+  "id": "S-D-M1-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture du grossiste de janvier (précompte compris).\n\n[[piece:S-D-01-010]]",
+   "en": "Record the parts supplier's January invoice (withholding included).\n\n[[piece:S-D-01-010]]"
+  },
+  "explanation": {
+   "fr": "Matières consommables 6041, TVA 4452, précompte de 2 % en 4492 (CGI art. 21 (3)), fournisseur 401. Pourquoi pas autre chose : Pourquoi 6041 et pas 6011 ? Jean-Claude ne revend pas ces pièces en l'état : il les consomme dans ses interventions, qu'il facture comme des services.",
+   "en": "Consumables 6041, VAT 4452, 2% withholding 4492, supplier 401. Why not something else: Why 6041 and not 6011? Jean-Claude does not resell these parts as such: he uses them in jobs he invoices as services."
+  },
+  "journal": [
+   {
+    "account": "6041",
+    "side": "debit",
+    "amount": 3160000
+   },
+   {
+    "account": "4452",
+    "side": "debit",
+    "amount": 608300
+   },
+   {
+    "account": "4492",
+    "side": "debit",
+    "amount": 63200
+   },
+   {
+    "account": "401",
+    "side": "credit",
+    "amount": 3831500
+   }
+  ]
+ },
+ {
+  "id": "S-D-M1-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture de dépannages de janvier.\n\n[[piece:S-D-01-011]]",
+   "en": "Record the January repair invoice.\n\n[[piece:S-D-01-011]]"
+  },
+  "explanation": {
+   "fr": "Client 411 au TTC, services vendus 706, TVA en attente 471 : la TVA des services n'est exigible qu'à l'encaissement (CGI art. 134 (1) b). Pourquoi pas autre chose : Pourquoi 471 et pas 4432 ? Pour une prestation de services, la TVA n'est due qu'à l'encaissement : tant que le client n'a pas payé, elle n'est pas encore une dette envers l'État, mais elle est déjà facturée.",
+   "en": "Customer 411, services sold 706, VAT pending 471: VAT on services is due on collection. Why not something else: Why 471 and not 4432? For services VAT is due only on collection: until the customer pays, it is not yet a debt to the State, though it is already invoiced."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "side": "debit",
+    "amount": 2718900
+   },
+   {
+    "account": "706",
+    "side": "credit",
+    "amount": 2280000
+   },
+   {
+    "account": "471",
+    "side": "credit",
+    "amount": 438900
+   }
+  ]
+ },
+ {
+  "id": "S-D-M1-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture du contrat public de janvier.\n\n[[piece:S-D-01-012]]",
+   "en": "Record the January public contract invoice.\n\n[[piece:S-D-01-012]]"
+  },
+  "explanation": {
+   "fr": "Même schéma : 411, 706 et 471 ; les retenues ne se passent qu'au paiement. Pourquoi pas autre chose : Pourquoi ne pas déduire tout de suite les retenues ? Elles naissent au paiement, quand le Trésor les opère ; à la facture, Jean-Claude réclame le TTC entier.",
+   "en": "Same pattern: 411, 706 and 471; withholdings are booked only on payment. Why not something else: Why not deduct withholdings now? They arise on payment, when the Treasury makes them; on invoicing Jean-Claude claims the full amount."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "side": "debit",
+    "amount": 2385000
+   },
+   {
+    "account": "706",
+    "side": "credit",
+    "amount": 2000000
+   },
+   {
+    "account": "471",
+    "side": "credit",
+    "amount": 385000
+   }
+  ]
+ },
+ {
+  "id": "S-D-M1-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du relevé Orange Money de janvier.\n\n[[piece:S-D-01-013]]",
+   "en": "Record the January Orange Money statement.\n\n[[piece:S-D-01-013]]"
+  },
+  "explanation": {
+   "fr": "5522 au TTC, 706 et 471 ; encaissement immédiat : 471 soldé dans 4432 ; frais 631, transfert par 585. Pourquoi pas autre chose : Pourquoi passer par 471 si le paiement est immédiat ? Le logiciel applique une seule règle à toutes les prestations : la TVA attend en 471 et devient exigible au paiement, ici le jour même.",
+   "en": "5522, 706 and 471; immediate collection: 471 cleared to 4432; fees 631, transfer through 585. Why not something else: Why go through 471 if payment is immediate? The software applies one rule to all services: VAT waits in 471 and falls due on payment, here the same day."
+  },
+  "journal": [
+   {
+    "account": "5522",
+    "side": "debit",
+    "amount": 918225
+   },
+   {
+    "account": "706",
+    "side": "credit",
+    "amount": 770000
+   },
+   {
+    "account": "471",
+    "side": "credit",
+    "amount": 148225
+   },
+   {
+    "account": "471",
+    "side": "debit",
+    "amount": 148225
+   },
+   {
+    "account": "4432",
+    "side": "credit",
+    "amount": 148225
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 6000
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 6000
+   },
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 912225
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 912225
+   }
+  ]
+ },
+ {
+  "id": "S-D-M1-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du bulletin de paie de janvier.\n\n[[piece:S-D-01-014]]",
+   "en": "Record the January payslip.\n\n[[piece:S-D-01-014]]"
+  },
+  "explanation": {
+   "fr": "Salaire 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues 4472 et 431, net 422. Pourquoi pas autre chose : Brice est salarié ; Jean-Claude, lui, n'a pas de bulletin : on ne s'emploie pas soi-même.",
+   "en": "Gross 6611, employer levies 6413 and 6641; withholdings 4472 and 431, net 422. Why not something else: Brice is an employee; Jean-Claude has no payslip: one does not employ oneself."
+  },
+  "journal": [
+   {
+    "account": "6611",
+    "side": "debit",
+    "amount": 130000
+   },
+   {
+    "account": "6413",
+    "side": "debit",
+    "amount": 3250
+   },
+   {
+    "account": "6641",
+    "side": "debit",
+    "amount": 5460
+   },
+   {
+    "account": "4472",
+    "side": "credit",
+    "amount": 12326
+   },
+   {
+    "account": "431",
+    "side": "credit",
+    "amount": 10920
+   },
+   {
+    "account": "422",
+    "side": "credit",
+    "amount": 115464
+   }
+  ]
+ },
+ {
+  "id": "S-D-M1-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez les écritures du relevé bancaire de janvier.\n\n[[piece:S-D-01-008]]",
+   "en": "Record the January bank statement entries.\n\n[[piece:S-D-01-008]]"
+  },
+  "explanation": {
+   "fr": "Client privé 411 et TVA exigible (471 vers 4432), fournisseur 401, salaire 422, transfert 585, prélèvement de l'exploitant 1042, frais 631. Pourquoi pas autre chose : Pourquoi le virement personnel n'est-il pas un salaire ? L'exploitant se rémunère par le bénéfice ; ce qu'il prend en cours d'année est une avance sur ce bénéfice, au compte de l'exploitant, jamais une charge.",
+   "en": "Private customer 411 and VAT due (471 to 4432), supplier 401, pay 422, transfer 585, drawings 1042, fees 631. Why not something else: Why is the personal transfer not a wage? The owner is paid through profit; what he takes during the year is an advance on it, in the owner's account, never an expense."
+  },
+  "journal": [
+   {
+    "account": "422",
+    "side": "debit",
+    "amount": 115464
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 115464
+   },
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 912225
+   },
+   {
+    "account": "585",
+    "side": "credit",
+    "amount": 912225
+   },
+   {
+    "account": "1042",
+    "side": "debit",
+    "amount": 300000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 300000
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 3500
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 3500
+   }
+  ]
+ },
+ {
+  "id": "S-D-M1-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la quittance de loyer de janvier.\n\n[[piece:S-D-01-009]]",
+   "en": "Record the January rent receipt.\n\n[[piece:S-D-01-009]]"
+  },
+  "explanation": {
+   "fr": "Loyer brut 6222, précompte de 10 % en 4478 (CGI art. 87), net payé par la banque. Pourquoi pas autre chose : Au réel, le locataire retient le précompte et le reverse : la charge reste le loyer brut.",
+   "en": "Gross rent 6222, 10% withholding 4478, net paid by bank. Why not something else: Under the actual regime the tenant withholds and pays over: the expense remains the gross rent."
+  },
+  "journal": [
+   {
+    "account": "6222",
+    "side": "debit",
+    "amount": 150000
+   },
+   {
+    "account": "4478",
+    "side": "credit",
+    "amount": 15000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 135000
+   }
+  ]
+ },
+ {
+  "id": "S-D-M1-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour janvier 2026 : TVA due (ou crédit à reporter) ?",
+   "en": "15th return for January 2026: VAT due (or credit carried forward)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA devenue exigible à l'encaissement (4432) moins TVA déductible, TVA retenue à la source comprise, et crédit reporté ; acompte de 2 % du CA facturé majoré de 10 % de CAC, moins les précomptes et retenues (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21, 134, 149)."
+  },
+  "numeric": {
+   "value": 546700,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-01",
+   "field": "credit_tva"
+  }
+ },
+ {
+  "id": "S-D-M1-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour janvier 2026 : Acompte d'IRPP net des précomptes et retenues imputés ?",
+   "en": "15th return for January 2026: Income tax instalment net of withholdings?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA devenue exigible à l'encaissement (4432) moins TVA déductible, TVA retenue à la source comprise, et crédit reporté ; acompte de 2 % du CA facturé majoré de 10 % de CAC, moins les précomptes et retenues (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21, 134, 149)."
+  },
+  "numeric": {
+   "value": 47900,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-01",
+   "field": "acompte_is_net"
+  }
+ },
+ {
+  "id": "S-D-M1-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour janvier 2026 : Retenues à la source du mois (salaire et loyer) ?",
+   "en": "15th return for January 2026: Withholdings of the month (pay and rent)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA devenue exigible à l'encaissement (4432) moins TVA déductible, TVA retenue à la source comprise, et crédit reporté ; acompte de 2 % du CA facturé majoré de 10 % de CAC, moins les précomptes et retenues (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21, 134, 149)."
+  },
+  "numeric": {
+   "value": 27326,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-01",
+   "field": "retenues_salaires"
+  }
+ },
+ {
+  "id": "S-D-M1-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde comptable du compte 521 au 31 janvier 2026 ?\n\n[[piece:S-D-01-008]]",
+   "en": "Book balance of account 521 at January 31, 2026?\n\n[[piece:S-D-01-008]]"
+  },
+  "explanation": {
+   "fr": "Débits moins crédits de 521 jusqu'à cette date : le solde à rapprocher du relevé.",
+   "en": "Debits less credits of 521 up to that date."
+  },
+  "numeric": {
+   "value": 2821636,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-01-31"
+  }
+ },
+ {
+  "id": "S-D-M1-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chiffre d'affaires HT des dépannages aux entreprises de janvier ?\n\n[[piece:S-D-01-011]]",
+   "en": "January business repair revenue excluding tax?\n\n[[piece:S-D-01-011]]"
+  },
+  "explanation": {
+   "fr": "Nombre d'interventions × prix, hors TVA (706).",
+   "en": "Number of jobs × price, excluding VAT."
+  },
+  "numeric": {
+   "value": 2280000,
+   "unit": "FCFA"
+  }
+ }
+]

@@ -1,0 +1,1046 @@
+[
+ {
+  "id": "S-D-M6-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Fluide frigorigène r410a (bouteille) : coût moyen unitaire pondéré ?\n\n[[piece:S-D-12-010]]",
+   "en": "fluide frigorigène R410A (bouteille): weighted average unit cost?\n\n[[piece:S-D-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 50250,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      20,
+      48000
+     ],
+     [
+      20,
+      48000
+     ],
+     [
+      20,
+      48000
+     ],
+     [
+      20,
+      49500
+     ],
+     [
+      20,
+      49500
+     ],
+     [
+      20,
+      49500
+     ],
+     [
+      20,
+      51000
+     ],
+     [
+      20,
+      51000
+     ],
+     [
+      20,
+      51000
+     ],
+     [
+      20,
+      52500
+     ],
+     [
+      20,
+      52500
+     ],
+     [
+      20,
+      52500
+     ]
+    ],
+    216
+   ],
+   "resultat": [
+    "cout_unitaire"
+   ]
+  }
+ },
+ {
+  "id": "S-D-M6-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Fluide frigorigène r410a (bouteille) : coût des consommations au CMUP ?\n\n[[piece:S-D-12-010]]",
+   "en": "fluide frigorigène R410A (bouteille): cost of items used at WAC?\n\n[[piece:S-D-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 10854000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      20,
+      48000
+     ],
+     [
+      20,
+      48000
+     ],
+     [
+      20,
+      48000
+     ],
+     [
+      20,
+      49500
+     ],
+     [
+      20,
+      49500
+     ],
+     [
+      20,
+      49500
+     ],
+     [
+      20,
+      51000
+     ],
+     [
+      20,
+      51000
+     ],
+     [
+      20,
+      51000
+     ],
+     [
+      20,
+      52500
+     ],
+     [
+      20,
+      52500
+     ],
+     [
+      20,
+      52500
+     ]
+    ],
+    216
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-D-M6-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Fluide frigorigène r410a (bouteille) : valeur du stock final au CMUP ?\n\n[[piece:S-D-12-010]]",
+   "en": "fluide frigorigène R410A (bouteille): closing stock at WAC?\n\n[[piece:S-D-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 1206000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      20,
+      48000
+     ],
+     [
+      20,
+      48000
+     ],
+     [
+      20,
+      48000
+     ],
+     [
+      20,
+      49500
+     ],
+     [
+      20,
+      49500
+     ],
+     [
+      20,
+      49500
+     ],
+     [
+      20,
+      51000
+     ],
+     [
+      20,
+      51000
+     ],
+     [
+      20,
+      51000
+     ],
+     [
+      20,
+      52500
+     ],
+     [
+      20,
+      52500
+     ],
+     [
+      20,
+      52500
+     ]
+    ],
+    216
+   ],
+   "resultat": [
+    "valeur_stock"
+   ]
+  }
+ },
+ {
+  "id": "S-D-M6-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Fluide frigorigène r410a (bouteille) : coût des consommations en PEPS (contraste) ?\n\n[[piece:S-D-12-010]]",
+   "en": "fluide frigorigène R410A (bouteille): cost of items used under FIFO?\n\n[[piece:S-D-12-010]]"
+  },
+  "explanation": {
+   "fr": "Les lots les plus anciens sortent d'abord.",
+   "en": "Oldest lots go first."
+  },
+  "numeric": {
+   "value": 10800000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_peps",
+   "args": [
+    [
+     [
+      20,
+      48000
+     ],
+     [
+      20,
+      48000
+     ],
+     [
+      20,
+      48000
+     ],
+     [
+      20,
+      49500
+     ],
+     [
+      20,
+      49500
+     ],
+     [
+      20,
+      49500
+     ],
+     [
+      20,
+      51000
+     ],
+     [
+      20,
+      51000
+     ],
+     [
+      20,
+      51000
+     ],
+     [
+      20,
+      52500
+     ],
+     [
+      20,
+      52500
+     ],
+     [
+      20,
+      52500
+     ]
+    ],
+    216
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-D-M6-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Pièces détachées (kit) : coût moyen unitaire pondéré ?\n\n[[piece:S-D-12-010]]",
+   "en": "pièces détachées (kit): weighted average unit cost?\n\n[[piece:S-D-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 58000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      40,
+      55000
+     ],
+     [
+      40,
+      55000
+     ],
+     [
+      40,
+      55000
+     ],
+     [
+      40,
+      57000
+     ],
+     [
+      40,
+      57000
+     ],
+     [
+      40,
+      57000
+     ],
+     [
+      40,
+      59000
+     ],
+     [
+      40,
+      59000
+     ],
+     [
+      40,
+      59000
+     ],
+     [
+      40,
+      61000
+     ],
+     [
+      40,
+      61000
+     ],
+     [
+      40,
+      61000
+     ]
+    ],
+    444
+   ],
+   "resultat": [
+    "cout_unitaire"
+   ]
+  }
+ },
+ {
+  "id": "S-D-M6-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Pièces détachées (kit) : coût des consommations au CMUP ?\n\n[[piece:S-D-12-010]]",
+   "en": "pièces détachées (kit): cost of items used at WAC?\n\n[[piece:S-D-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 25752000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      40,
+      55000
+     ],
+     [
+      40,
+      55000
+     ],
+     [
+      40,
+      55000
+     ],
+     [
+      40,
+      57000
+     ],
+     [
+      40,
+      57000
+     ],
+     [
+      40,
+      57000
+     ],
+     [
+      40,
+      59000
+     ],
+     [
+      40,
+      59000
+     ],
+     [
+      40,
+      59000
+     ],
+     [
+      40,
+      61000
+     ],
+     [
+      40,
+      61000
+     ],
+     [
+      40,
+      61000
+     ]
+    ],
+    444
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-D-M6-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Pièces détachées (kit) : valeur du stock final au CMUP ?\n\n[[piece:S-D-12-010]]",
+   "en": "pièces détachées (kit): closing stock at WAC?\n\n[[piece:S-D-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 2088000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      40,
+      55000
+     ],
+     [
+      40,
+      55000
+     ],
+     [
+      40,
+      55000
+     ],
+     [
+      40,
+      57000
+     ],
+     [
+      40,
+      57000
+     ],
+     [
+      40,
+      57000
+     ],
+     [
+      40,
+      59000
+     ],
+     [
+      40,
+      59000
+     ],
+     [
+      40,
+      59000
+     ],
+     [
+      40,
+      61000
+     ],
+     [
+      40,
+      61000
+     ],
+     [
+      40,
+      61000
+     ]
+    ],
+    444
+   ],
+   "resultat": [
+    "valeur_stock"
+   ]
+  }
+ },
+ {
+  "id": "S-D-M6-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Pièces détachées (kit) : coût des consommations en PEPS (contraste) ?\n\n[[piece:S-D-12-010]]",
+   "en": "pièces détachées (kit): cost of items used under FIFO?\n\n[[piece:S-D-12-010]]"
+  },
+  "explanation": {
+   "fr": "Les lots les plus anciens sortent d'abord.",
+   "en": "Oldest lots go first."
+  },
+  "numeric": {
+   "value": 25644000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_peps",
+   "args": [
+    [
+     [
+      40,
+      55000
+     ],
+     [
+      40,
+      55000
+     ],
+     [
+      40,
+      55000
+     ],
+     [
+      40,
+      57000
+     ],
+     [
+      40,
+      57000
+     ],
+     [
+      40,
+      57000
+     ],
+     [
+      40,
+      59000
+     ],
+     [
+      40,
+      59000
+     ],
+     [
+      40,
+      59000
+     ],
+     [
+      40,
+      61000
+     ],
+     [
+      40,
+      61000
+     ],
+     [
+      40,
+      61000
+     ]
+    ],
+    444
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-D-M6-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du stock final de fluide et de pièces.\n\n[[piece:S-D-12-010]]",
+   "en": "Record the closing stock of refrigerant and parts.\n\n[[piece:S-D-12-010]]"
+  },
+  "explanation": {
+   "fr": "Stocks 3311 et 3312 au débit, variation des stocks d'autres approvisionnements 6033 au crédit. Pourquoi pas autre chose : Pourquoi 6033 et pas 6031 ? Ce ne sont pas des marchandises revendues mais des approvisionnements consommés ; leur variation a son propre compte.",
+   "en": "Stock accounts 3311 and 3312 debited, 6033 credited. Why not something else: Why 6033 and not 6031? These are not goods for resale but supplies used up; their change has its own account."
+  },
+  "journal": [
+   {
+    "account": "3311",
+    "side": "debit",
+    "amount": 1206000
+   },
+   {
+    "account": "3312",
+    "side": "debit",
+    "amount": 2088000
+   },
+   {
+    "account": "6033",
+    "side": "credit",
+    "amount": 3294000
+   }
+  ]
+ },
+ {
+  "id": "S-D-M6-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la dotation de la camionnette.\n\n[[piece:S-D-12-011]]",
+   "en": "Record the van's depreciation.\n\n[[piece:S-D-12-011]]"
+  },
+  "explanation": {
+   "fr": "Dotation 6813, amortissements du matériel de transport 2845. Pourquoi pas autre chose : Pourquoi amortir un bien apporté, qui n'a rien coûté à l'atelier ? Il s'use au service de l'atelier ; sa valeur d'apport est son coût d'entrée.",
+   "en": "Charge 6813, depreciation of transport equipment 2845. Why not something else: Why depreciate a contributed asset that cost the workshop nothing? It wears out in the workshop's service; its contribution value is its cost."
+  },
+  "journal": [
+   {
+    "account": "6813",
+    "side": "debit",
+    "amount": 1500000
+   },
+   {
+    "account": "2845",
+    "side": "credit",
+    "amount": 1500000
+   }
+  ]
+ },
+ {
+  "id": "S-D-M6-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Dotation 2026 de la camionnette (6 000 000, 4 ans, depuis janvier) ?\n\n[[piece:S-D-12-011]]",
+   "en": "2026 depreciation of the van (6,000,000, 4 years, from January)?\n\n[[piece:S-D-12-011]]"
+  },
+  "explanation": {
+   "fr": "Linéaire sur douze mois au taux de 25 %, le taux fiscal maximal du matériel automobile léger (CGI art. 7).",
+   "en": "Straight-line over twelve months at 25%, the maximum tax rate for light vehicles."
+  },
+  "numeric": {
+   "value": 1500000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "amortissement_lineaire",
+   "args": [
+    6000000,
+    4,
+    1
+   ],
+   "resultat": [
+    0,
+    "dotation"
+   ]
+  }
+ },
+ {
+  "id": "S-D-M6-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Montant de la variation des stocks (6033) au 31 décembre ?\n\n[[piece:S-D-12-010]]",
+   "en": "Change in inventories (6033) at 31 December?\n\n[[piece:S-D-12-010]]"
+  },
+  "explanation": {
+   "fr": "Premier exercice : égale au stock final.",
+   "en": "First year: equals the closing stock."
+  },
+  "numeric": {
+   "value": 3294000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M6-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Valeur nette comptable de la camionnette au 31 décembre ?\n\n[[piece:S-D-12-011]]",
+   "en": "Net book value of the van at 31 December?\n\n[[piece:S-D-12-011]]"
+  },
+  "explanation": {
+   "fr": "Valeur d'apport moins amortissements.",
+   "en": "Contribution value less depreciation."
+  },
+  "numeric": {
+   "value": 4500000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M6-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "TVA en attente au compte 471 au 31 décembre ?\n\n[[piece:S-D-12-006]]",
+   "en": "VAT pending in account 471 at 31 December?\n\n[[piece:S-D-12-006]]"
+  },
+  "explanation": {
+   "fr": "La TVA des deux factures de décembre, non encore encaissées : elle sera exigible en janvier 2027.",
+   "en": "VAT on the two December invoices not yet collected: it falls due in January 2027."
+  },
+  "numeric": {
+   "value": 908600,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M6-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Achats de fluide et de pièces de l'exercice (6041) ?\n\n[[piece:S-D-12-010]]",
+   "en": "Refrigerant and parts purchased in the year (6041)?\n\n[[piece:S-D-12-010]]"
+  },
+  "explanation": {
+   "fr": "Somme des lots de la fiche de stock.",
+   "en": "Sum of the stock card lots."
+  },
+  "numeric": {
+   "value": 39900000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M6-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Coût des fluides et pièces consommés en 2026 ?\n\n[[piece:S-D-12-010]]",
+   "en": "Cost of refrigerant and parts used in 2026?\n\n[[piece:S-D-12-010]]"
+  },
+  "explanation": {
+   "fr": "Achats (6041) moins variation des stocks (6033).",
+   "en": "Purchases less the change in inventories."
+  },
+  "numeric": {
+   "value": 36606000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M6-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Depuis quand la camionnette s'amortit-elle ?\n\n[[piece:S-D-12-011]]",
+   "en": "From when is the van depreciated?\n\n[[piece:S-D-12-011]]"
+  },
+  "explanation": {
+   "fr": "Prorata temporis à partir de la mise en service, le 2 janvier.",
+   "en": "Pro rata from first use, 2 January."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Janvier : elle sert à l'atelier dès l'apport",
+     "en": "January: in use from the contribution"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Juillet : demi-année par convention",
+     "en": "July: half-year by convention"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-D-M6-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Créances clients (411) au 31 décembre ?\n\n[[piece:S-D-12-005]]",
+   "en": "Trade receivables (411) at 31 December?\n\n[[piece:S-D-12-005]]"
+  },
+  "explanation": {
+   "fr": "Les deux factures de décembre, TTC.",
+   "en": "The two December invoices, including tax."
+  },
+  "numeric": {
+   "value": 5628600,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M6-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Compte du stock final des pièces détachées ?\n\n[[piece:S-D-12-011]]",
+   "en": "Account for the closing stock of spare parts?\n\n[[piece:S-D-12-011]]"
+  },
+  "explanation": {
+   "fr": "Les pièces ne sont pas revendues en l'état : ce sont des matières consommées par les interventions.",
+   "en": "Les pièces ne sont pas revendues en l'état : ce sont des matières consommées par les interventions."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "3312, sous-compte de 331 matières consommables",
+     "en": "3312, under 331 consumables"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "3111 marchandises",
+     "en": "3111 goods"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-D-M6-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Taux fiscal maximal d'amortissement de la camionnette ?\n\n[[piece:S-D-12-011]]",
+   "en": "Maximum tax depreciation rate for the van?\n\n[[piece:S-D-12-011]]"
+  },
+  "explanation": {
+   "fr": "CGI art. 7 : 25 % pour le matériel automobile léger.",
+   "en": "CGI art. 7 : 25 % pour le matériel automobile léger."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "25 %",
+     "en": "25%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "10 %",
+     "en": "10%"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-D-M6-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "La TVA des factures de décembre non encaissées figure-t-elle dans la déclaration du 15 janvier ?\n\n[[piece:S-D-12-011]]",
+   "en": "Is the VAT on unpaid December invoices in the 15 January return?\n\n[[piece:S-D-12-011]]"
+  },
+  "explanation": {
+   "fr": "CGI art. 134 (1) b.",
+   "en": "CGI art. 134 (1) b."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non : elle attend l'encaissement en 471",
+     "en": "No: it waits for collection in 471"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui, dès la facture",
+     "en": "Yes, from invoicing"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-D-M6-022",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "En période de hausse des prix, le PEPS donne un coût des consommations plus faible que le CMUP.\n\n[[piece:S-D-12-010]]",
+   "en": "When prices rise, FIFO gives a lower cost of items used than WAC.\n\n[[piece:S-D-12-010]]"
+  },
+  "explanation": {
+   "fr": "Vrai : les lots anciens, moins chers, sortent d'abord.",
+   "en": "True: older, cheaper lots go first."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ }
+]

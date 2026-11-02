@@ -1,0 +1,638 @@
+[
+ {
+  "id": "S-D-M7-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "IRPP dû pour 2026 (le plus élevé de l'impôt calculé et du minimum) ?\n\n[[piece:S-D-15-001]]",
+   "en": "2026 income tax due?\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Bénéfice imposable × 30 % (taux de l'art. 17, art. 69 (2)), CAC compris (art. 71), comparé à 2 % du CA.",
+   "en": "Taxable profit × 30% plus council cents, compared with 2% of turnover."
+  },
+  "numeric": {
+   "value": 7314450,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "impot_societes",
+   "args": [
+    22165480,
+    64300000,
+    30,
+    2,
+    10
+   ],
+   "resultat": [
+    "du"
+   ]
+  }
+ },
+ {
+  "id": "S-D-M7-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Résultat comptable 2026 ?\n\n[[piece:S-D-15-001]]",
+   "en": "2026 accounting profit?\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Produits moins charges des classes 6 et 7 ; ni prélèvements ni IRPP ne sont des charges.",
+   "en": "Produits moins charges des classes 6 et 7 ; ni prélèvements ni IRPP ne sont des charges."
+  },
+  "numeric": {
+   "value": 22165480,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M7-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Bénéfice imposable 2026 ?\n\n[[piece:S-D-15-001]]",
+   "en": "2026 taxable profit?\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Aucune réintégration : prélèvements et IRPP n'ont jamais été passés en charges.",
+   "en": "Aucune réintégration : prélèvements et IRPP n'ont jamais été passés en charges."
+  },
+  "numeric": {
+   "value": 22165480,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M7-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Minimum de perception 2026, CAC compris ?\n\n[[piece:S-D-15-001]]",
+   "en": "2026 minimum tax?\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "2 % du CA arrondi au millier inférieur, majoré de 10 % (art. 69 (2) et 71).",
+   "en": "2 % du CA arrondi au millier inférieur, majoré de 10 % (art. 69 (2) et 71)."
+  },
+  "numeric": {
+   "value": 1414600,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M7-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Acomptes d'IRPP comptabilisés au titre de 2026 (441) ?\n\n[[piece:S-D-15-001]]",
+   "en": "2026 instalments (441)?\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Somme des acomptes des douze déclarations, précomptes imputés compris.",
+   "en": "Somme des acomptes des douze déclarations, précomptes imputés compris."
+  },
+  "numeric": {
+   "value": 1414600,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M7-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précomptes et retenues non encore imputés au 31 décembre (4492) ?\n\n[[piece:S-D-15-001]]",
+   "en": "Withholdings not yet credited at 31 December (4492)?\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Les retenues de 5,5 % ont souvent dépassé l'acompte du mois : l'excédent s'impute sur le solde.",
+   "en": "Les retenues de 5,5 % ont souvent dépassé l'acompte du mois : l'excédent s'impute sur le solde."
+  },
+  "numeric": {
+   "value": 707300,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M7-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde d'IRPP à payer avec la déclaration des résultats ?\n\n[[piece:S-D-15-001]]",
+   "en": "Income tax balance due?\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "IRPP dû moins acomptes et retenues.",
+   "en": "IRPP dû moins acomptes et retenues."
+  },
+  "numeric": {
+   "value": 5192550,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M7-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chiffre d'affaires HT 2026 ?\n\n[[piece:S-D-15-001]]",
+   "en": "2026 turnover?\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Compte 706, toutes factures.",
+   "en": "Compte 706, toutes factures."
+  },
+  "numeric": {
+   "value": 64300000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M7-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Prélèvements de l'exploitant en 2026 (1042) ?\n\n[[piece:S-D-15-001]]",
+   "en": "Owner's drawings in 2026 (1042)?\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Douze virements personnels de 300 000.",
+   "en": "Douze virements personnels de 300 000."
+  },
+  "numeric": {
+   "value": 3600000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M7-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Résultat net de l'exercice inscrit au bilan ?\n\n[[piece:S-D-15-001]]",
+   "en": "Net profit in the balance sheet?\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Pour un exploitant individuel, l'IRPP n'est pas une charge : le résultat net égale le résultat comptable.",
+   "en": "Pour un exploitant individuel, l'IRPP n'est pas une charge : le résultat net égale le résultat comptable."
+  },
+  "numeric": {
+   "value": 22165480,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M7-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "IRPP calculé au taux de 30 %, CAC compris ?\n\n[[piece:S-D-15-001]]",
+   "en": "Income tax computed at 30%, council cents included?\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Bénéfice arrondi au millier inférieur × 30 %, puis 10 % de CAC (art. 69 (2) et 71).",
+   "en": "Bénéfice arrondi au millier inférieur × 30 %, puis 10 % de CAC (art. 69 (2) et 71)."
+  },
+  "numeric": {
+   "value": 7314450,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M7-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Débit total du compte de l'exploitant (104) pour 2026 ?\n\n[[piece:S-D-15-001]]",
+   "en": "Total debit of the owner's account (104) for 2026?\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Prélèvements (1042) et IRPP de l'exploitant (1043).",
+   "en": "Prélèvements (1042) et IRPP de l'exploitant (1043)."
+  },
+  "numeric": {
+   "value": 10914450,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M7-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Acomptes de 5,5 % retenus par les payeurs publics en 2026 ?\n\n[[piece:S-D-15-001]]",
+   "en": "5.5% instalments withheld by public payers in 2026?\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Somme des onze ARS de l'année.",
+   "en": "Somme des onze ARS de l'année."
+  },
+  "numeric": {
+   "value": 1276000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M7-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "TVA retenue à la source par les payeurs publics en 2026 (4458) ?\n\n[[piece:S-D-15-001]]",
+   "en": "VAT withheld by public payers in 2026 (4458)?\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Somme des onze ARS ; chaque montant a été déduit de la TVA due du mois (art. 143 et 149 (2)).",
+   "en": "Somme des onze ARS ; chaque montant a été déduit de la TVA due du mois (art. 143 et 149 (2))."
+  },
+  "numeric": {
+   "value": 4466000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M7-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de l'IRPP de l'exploitant.\n\n[[piece:S-D-15-001]]",
+   "en": "Record the owner's income tax.\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Compte de l'exploitant 1043 au débit (impôt personnel, pas une charge) ; retenues non imputées 4492 et État 441 au crédit. Pourquoi pas autre chose : Pourquoi au compte de l'exploitant et pas en 891 ? L'établissement n'est pas un contribuable distinct : l'impôt est celui de Jean-Claude sur son revenu, payé par l'atelier pour lui. Et pourquoi 30 % et pas le taux réduit de 25 % ? L'art. 17 bis vise l'IS des sociétés ; l'art. 69 renvoie au taux de l'art. 17.",
+   "en": "Owner's account 1043 debit; withholdings 4492 and State 441 credit. Why not something else: Why the owner's account and not 891? The business is not a separate taxpayer: the tax is Jean-Claude's, paid by the workshop for him. Why 30% and not 25%? Art. 17 bis concerns corporate tax; art. 69 refers to art. 17."
+  },
+  "journal": [
+   {
+    "account": "1043",
+    "side": "debit",
+    "amount": 7314450
+   },
+   {
+    "account": "4492",
+    "side": "credit",
+    "amount": 707300
+   },
+   {
+    "account": "441",
+    "side": "credit",
+    "amount": 6607150
+   }
+  ]
+ },
+ {
+  "id": "S-D-M7-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du règlement de la déclaration du 15 janvier 2027.\n\n[[piece:S-D-13-001]]",
+   "en": "Record the payment of the 15 January 2027 return.\n\n[[piece:S-D-13-001]]"
+  },
+  "explanation": {
+   "fr": "Période de décembre : même schéma que les autres mois.",
+   "en": "December period: same pattern."
+  },
+  "journal": [
+   {
+    "account": "4432",
+    "side": "debit",
+    "amount": 1041425
+   },
+   {
+    "account": "4452",
+    "side": "credit",
+    "amount": 671825
+   },
+   {
+    "account": "4458",
+    "side": "credit",
+    "amount": 404250
+   },
+   {
+    "account": "4449",
+    "side": "credit",
+    "amount": 729575
+   },
+   {
+    "account": "4449",
+    "side": "debit",
+    "amount": 764225
+   },
+   {
+    "account": "441",
+    "side": "debit",
+    "amount": 123860
+   },
+   {
+    "account": "4492",
+    "side": "credit",
+    "amount": 123860
+   },
+   {
+    "account": "4472",
+    "side": "debit",
+    "amount": 12326
+   },
+   {
+    "account": "4478",
+    "side": "debit",
+    "amount": 15000
+   },
+   {
+    "account": "431",
+    "side": "debit",
+    "amount": 10920
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 38246
+   }
+  ]
+ },
+ {
+  "id": "S-D-M7-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Date limite de la déclaration des résultats 2026 d'Ets Tchinda Froid ?\n\n[[piece:S-D-15-001]]",
+   "en": "Filing deadline for 2026?\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "CGI art. 74 : 15 mars pour l'exploitant individuel au réel, même rattaché au CIME ; le 15 avril de l'art. 18 vise l'IS des sociétés.",
+   "en": "CGI art. 74 : 15 mars pour l'exploitant individuel au réel, même rattaché au CIME ; le 15 avril de l'art. 18 vise l'IS des sociétés."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "15 mars 2027",
+     "en": "15 March 2027"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "15 avril 2027",
+     "en": "15 April 2027"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-D-M7-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Taux de l'IRPP sur les bénéfices industriels et commerciaux ?\n\n[[piece:S-D-15-001]]",
+   "en": "Income tax rate on business profits?\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "CGI art. 69 (2).",
+   "en": "CGI art. 69 (2)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "30 %, taux de l'art. 17",
+     "en": "30%, art. 17 rate"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Le barème des salaires",
+     "en": "The salary scale"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "25 %, taux réduit de l'art. 17 bis",
+     "en": "25%, art. 17 bis reduced rate"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-D-M7-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "L'IRPP de l'exploitant est une charge de l'exercice (891).\n\n[[piece:S-D-15-001]]",
+   "en": "The owner's income tax is an expense (891).\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Faux : c'est un impôt personnel, porté au compte de l'exploitant (1043).",
+   "en": "Faux : c'est un impôt personnel, porté au compte de l'exploitant (1043)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "S-D-M7-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Les prélèvements de l'exploitant se réintègrent au bénéfice imposable.\n\n[[piece:S-D-15-001]]",
+   "en": "Drawings are added back.\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Faux : ils n'ont jamais été déduits, puisqu'ils ne sont pas des charges.",
+   "en": "Faux : ils n'ont jamais été déduits, puisqu'ils ne sont pas des charges."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "S-D-M7-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "L'IRPP calculé dépasse ici le minimum de perception.\n\n[[piece:S-D-15-001]]",
+   "en": "Here the computed tax exceeds the minimum.\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Comparer l'impôt calculé et 2 % du CA, CAC compris.",
+   "en": "Comparer l'impôt calculé et 2 % du CA, CAC compris."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-D-M7-022",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Un excédent de retenues subies est perdu en fin d'année.\n\n[[piece:S-D-15-001]]",
+   "en": "Excess withholdings are lost at year end.\n\n[[piece:S-D-15-001]]"
+  },
+  "explanation": {
+   "fr": "Faux : il s'impute sur l'impôt de l'année (art. 21 (2)).",
+   "en": "Faux : il s'impute sur l'impôt de l'année (art. 21 (2))."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ }
+]

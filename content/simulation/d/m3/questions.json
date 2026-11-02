@@ -1,0 +1,1970 @@
+[
+ {
+  "id": "S-D-M3-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture du grossiste de avril (précompte compris).\n\n[[piece:S-D-04-004]]",
+   "en": "Record the parts supplier's April invoice (withholding included).\n\n[[piece:S-D-04-004]]"
+  },
+  "explanation": {
+   "fr": "Matières consommables 6041, TVA 4452, précompte de 2 % en 4492 (CGI art. 21 (3)), fournisseur 401. Pourquoi pas autre chose : Rappel : 6041 toute l'année, stock compté au 31 décembre, précompte imputable sur l'acompte.",
+   "en": "Consumables 6041, VAT 4452, 2% withholding 4492, supplier 401. Why not something else: Reminder: 6041 all year, stock counted on 31 December, withholding credited."
+  },
+  "journal": [
+   {
+    "account": "6041",
+    "side": "debit",
+    "amount": 3270000
+   },
+   {
+    "account": "4452",
+    "side": "debit",
+    "amount": 629475
+   },
+   {
+    "account": "4492",
+    "side": "debit",
+    "amount": 65400
+   },
+   {
+    "account": "401",
+    "side": "credit",
+    "amount": 3964875
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture de dépannages de avril.\n\n[[piece:S-D-04-005]]",
+   "en": "Record the April repair invoice.\n\n[[piece:S-D-04-005]]"
+  },
+  "explanation": {
+   "fr": "Client 411 au TTC, services vendus 706, TVA en attente 471 : la TVA des services n'est exigible qu'à l'encaissement (CGI art. 134 (1) b). Pourquoi pas autre chose : Rappel : 471 à la facture, 4432 au paiement.",
+   "en": "Customer 411, services sold 706, VAT pending 471: VAT on services is due on collection. Why not something else: Reminder: 471 on invoicing, 4432 on payment."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "side": "debit",
+    "amount": 3291300
+   },
+   {
+    "account": "706",
+    "side": "credit",
+    "amount": 2760000
+   },
+   {
+    "account": "471",
+    "side": "credit",
+    "amount": 531300
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture du contrat public de avril.\n\n[[piece:S-D-04-006]]",
+   "en": "Record the April public contract invoice.\n\n[[piece:S-D-04-006]]"
+  },
+  "explanation": {
+   "fr": "Même schéma : 411, 706 et 471 ; les retenues ne se passent qu'au paiement. Pourquoi pas autre chose : Rappel : les retenues s'écrivent au paiement, avec l'ARS.",
+   "en": "Same pattern: 411, 706 and 471; withholdings are booked only on payment. Why not something else: Reminder: withholdings are booked on payment, with the certificate."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "side": "debit",
+    "amount": 2862000
+   },
+   {
+    "account": "706",
+    "side": "credit",
+    "amount": 2400000
+   },
+   {
+    "account": "471",
+    "side": "credit",
+    "amount": 462000
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du paiement public et de l'ARS de avril.\n\n[[piece:S-D-04-003]]",
+   "en": "Record the April public payment and withholding certificate.\n\n[[piece:S-D-04-003]]"
+  },
+  "explanation": {
+   "fr": "Banque 521 pour le net, acompte retenu de 5,5 % en 4492 (art. 21 (2)), TVA retenue en 4458 (art. 149 (2)), client 411 soldé ; la TVA devient exigible : 471 au débit, 4432 au crédit. Pourquoi pas autre chose : Pourquoi ne pas passer le net en chiffre d'affaires ? Le client a payé toute la facture : une part à Jean-Claude, une part au fisc pour son compte. Les deux retenues sont des avances sur ses propres impôts, pas des remises.",
+   "en": "Bank 521 net, 5.5% instalment 4492, withheld VAT 4458, customer 411 cleared; VAT becomes due: 471 to 4432. Why not something else: Why not book the net as revenue? The customer paid the whole invoice: part to Jean-Claude, part to the tax office on his behalf. Both withholdings are advances on his own taxes, not discounts."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 2362500
+   },
+   {
+    "account": "4492",
+    "side": "debit",
+    "amount": 137500
+   },
+   {
+    "account": "4458",
+    "side": "debit",
+    "amount": 481250
+   },
+   {
+    "account": "411",
+    "side": "credit",
+    "amount": 2981250
+   },
+   {
+    "account": "471",
+    "side": "debit",
+    "amount": 481250
+   },
+   {
+    "account": "4432",
+    "side": "credit",
+    "amount": 481250
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du relevé Orange Money de avril.\n\n[[piece:S-D-04-007]]",
+   "en": "Record the April Orange Money statement.\n\n[[piece:S-D-04-007]]"
+  },
+  "explanation": {
+   "fr": "5522 au TTC, 706 et 471 ; encaissement immédiat : 471 soldé dans 4432 ; frais 631, transfert par 585. Pourquoi pas autre chose : Pourquoi passer par 471 si le paiement est immédiat ? Le logiciel applique une seule règle à toutes les prestations : la TVA attend en 471 et devient exigible au paiement, ici le jour même.",
+   "en": "5522, 706 and 471; immediate collection: 471 cleared to 4432; fees 631, transfer through 585. Why not something else: Why go through 471 if payment is immediate? The software applies one rule to all services: VAT waits in 471 and falls due on payment, here the same day."
+  },
+  "journal": [
+   {
+    "account": "5522",
+    "side": "debit",
+    "amount": 1252125
+   },
+   {
+    "account": "706",
+    "side": "credit",
+    "amount": 1050000
+   },
+   {
+    "account": "471",
+    "side": "credit",
+    "amount": 202125
+   },
+   {
+    "account": "471",
+    "side": "debit",
+    "amount": 202125
+   },
+   {
+    "account": "4432",
+    "side": "credit",
+    "amount": 202125
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 6000
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 6000
+   },
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 1246125
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 1246125
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du bulletin de paie de avril.\n\n[[piece:S-D-04-008]]",
+   "en": "Record the April payslip.\n\n[[piece:S-D-04-008]]"
+  },
+  "explanation": {
+   "fr": "Salaire 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues 4472 et 431, net 422. Pourquoi pas autre chose : Brice est salarié ; Jean-Claude, lui, n'a pas de bulletin : on ne s'emploie pas soi-même.",
+   "en": "Gross 6611, employer levies 6413 and 6641; withholdings 4472 and 431, net 422. Why not something else: Brice is an employee; Jean-Claude has no payslip: one does not employ oneself."
+  },
+  "journal": [
+   {
+    "account": "6611",
+    "side": "debit",
+    "amount": 130000
+   },
+   {
+    "account": "6413",
+    "side": "debit",
+    "amount": 3250
+   },
+   {
+    "account": "6641",
+    "side": "debit",
+    "amount": 5460
+   },
+   {
+    "account": "4472",
+    "side": "credit",
+    "amount": 12326
+   },
+   {
+    "account": "431",
+    "side": "credit",
+    "amount": 10920
+   },
+   {
+    "account": "422",
+    "side": "credit",
+    "amount": 115464
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez les écritures du relevé bancaire de avril.\n\n[[piece:S-D-04-001]]",
+   "en": "Record the April bank statement entries.\n\n[[piece:S-D-04-001]]"
+  },
+  "explanation": {
+   "fr": "Client privé 411 et TVA exigible (471 vers 4432), fournisseur 401, salaire 422, transfert 585, prélèvement de l'exploitant 1042, frais 631. Pourquoi pas autre chose : Un écart s'explique avant de s'écrire.",
+   "en": "Private customer 411 and VAT due (471 to 4432), supplier 401, pay 422, transfer 585, drawings 1042, fees 631. Why not something else: A gap is explained before it is booked."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 3577500
+   },
+   {
+    "account": "411",
+    "side": "credit",
+    "amount": 3577500
+   },
+   {
+    "account": "471",
+    "side": "debit",
+    "amount": 577500
+   },
+   {
+    "account": "4432",
+    "side": "credit",
+    "amount": 577500
+   },
+   {
+    "account": "401",
+    "side": "debit",
+    "amount": 3831500
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 3831500
+   },
+   {
+    "account": "422",
+    "side": "debit",
+    "amount": 115464
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 115464
+   },
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 1246125
+   },
+   {
+    "account": "585",
+    "side": "credit",
+    "amount": 1246125
+   },
+   {
+    "account": "1042",
+    "side": "debit",
+    "amount": 300000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 300000
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 3500
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 3500
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la quittance de loyer de avril.\n\n[[piece:S-D-04-002]]",
+   "en": "Record the April rent receipt.\n\n[[piece:S-D-04-002]]"
+  },
+  "explanation": {
+   "fr": "Loyer brut 6222, précompte de 10 % en 4478 (CGI art. 87), net payé par la banque. Pourquoi pas autre chose : Au réel, le locataire retient le précompte et le reverse : la charge reste le loyer brut.",
+   "en": "Gross rent 6222, 10% withholding 4478, net paid by bank. Why not something else: Under the actual regime the tenant withholds and pays over: the expense remains the gross rent."
+  },
+  "journal": [
+   {
+    "account": "6222",
+    "side": "debit",
+    "amount": 150000
+   },
+   {
+    "account": "4478",
+    "side": "credit",
+    "amount": 15000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 135000
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du règlement de la déclaration du 15 avril.\n\n[[piece:S-D-04-009]]",
+   "en": "Record the payment of the April 15th return.\n\n[[piece:S-D-04-009]]"
+  },
+  "explanation": {
+   "fr": "TVA exigible 4432 moins TVA déductible et retenue (445) ; acompte d'IRPP en 441, précomptes et retenues imputés (4492) ; retenues et CNPS reversées. Pourquoi pas autre chose : La régularité évite les pénalités.",
+   "en": "VAT due less recoverable and withheld VAT; instalment 441 net of withholdings; withholdings and CNPS paid over. Why not something else: Regularity avoids penalties."
+  },
+  "journal": [
+   {
+    "account": "4432",
+    "side": "debit",
+    "amount": 1208900
+   },
+   {
+    "account": "4452",
+    "side": "credit",
+    "amount": 608300
+   },
+   {
+    "account": "4458",
+    "side": "credit",
+    "amount": 462000
+   },
+   {
+    "account": "4449",
+    "side": "credit",
+    "amount": 513975
+   },
+   {
+    "account": "4449",
+    "side": "debit",
+    "amount": 375375
+   },
+   {
+    "account": "441",
+    "side": "debit",
+    "amount": 145640
+   },
+   {
+    "account": "4492",
+    "side": "credit",
+    "amount": 145640
+   },
+   {
+    "account": "4472",
+    "side": "debit",
+    "amount": 12326
+   },
+   {
+    "account": "4478",
+    "side": "debit",
+    "amount": 15000
+   },
+   {
+    "account": "431",
+    "side": "debit",
+    "amount": 10920
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 38246
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour avril 2026 : TVA due (ou crédit à reporter) ?",
+   "en": "15th return for April 2026: VAT due (or credit carried forward)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA devenue exigible à l'encaissement (4432) moins TVA déductible, TVA retenue à la source comprise, et crédit reporté ; acompte de 2 % du CA facturé majoré de 10 % de CAC, moins les précomptes et retenues (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21, 134, 149)."
+  },
+  "numeric": {
+   "value": 225225,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-04",
+   "field": "credit_tva"
+  }
+ },
+ {
+  "id": "S-D-M3-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour avril 2026 : Acompte d'IRPP net des précomptes et retenues imputés ?",
+   "en": "15th return for April 2026: Income tax instalment net of withholdings?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA devenue exigible à l'encaissement (4432) moins TVA déductible, TVA retenue à la source comprise, et crédit reporté ; acompte de 2 % du CA facturé majoré de 10 % de CAC, moins les précomptes et retenues (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21, 134, 149)."
+  },
+  "numeric": {
+   "value": 0,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-04",
+   "field": "acompte_is_net"
+  }
+ },
+ {
+  "id": "S-D-M3-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour avril 2026 : Retenues à la source du mois (salaire et loyer) ?",
+   "en": "15th return for April 2026: Withholdings of the month (pay and rent)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA devenue exigible à l'encaissement (4432) moins TVA déductible, TVA retenue à la source comprise, et crédit reporté ; acompte de 2 % du CA facturé majoré de 10 % de CAC, moins les précomptes et retenues (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21, 134, 149)."
+  },
+  "numeric": {
+   "value": 27326,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-04",
+   "field": "retenues_salaires"
+  }
+ },
+ {
+  "id": "S-D-M3-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde comptable du compte 521 au 30 avril 2026 ?\n\n[[piece:S-D-04-001]]",
+   "en": "Book balance of account 521 at April 30, 2026?\n\n[[piece:S-D-04-001]]"
+  },
+  "explanation": {
+   "fr": "Débits moins crédits de 521 jusqu'à cette date : le solde à rapprocher du relevé.",
+   "en": "Debits less credits of 521 up to that date."
+  },
+  "numeric": {
+   "value": 9432656,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-04-30"
+  }
+ },
+ {
+  "id": "S-D-M3-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Acompte d'IRPP retenu par le payeur public en avril ?\n\n[[piece:S-D-04-003]]",
+   "en": "Income tax instalment withheld by the public payer in April?\n\n[[piece:S-D-04-003]]"
+  },
+  "explanation": {
+   "fr": "5 % du HT de la facture, majorés de 10 % de CAC : 5,5 % (CGI art. 21 (2)).",
+   "en": "5% of the invoice before tax plus 10% council cents: 5.5%."
+  },
+  "numeric": {
+   "value": 137500,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "retenue_source",
+   "args": [
+    2500000,
+    5,
+    10
+   ],
+   "resultat": [
+    "retenue"
+   ]
+  }
+ },
+ {
+  "id": "S-D-M3-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chiffre d'affaires HT des dépannages aux entreprises de avril ?\n\n[[piece:S-D-04-005]]",
+   "en": "April business repair revenue excluding tax?\n\n[[piece:S-D-04-005]]"
+  },
+  "explanation": {
+   "fr": "Nombre d'interventions × prix, hors TVA (706).",
+   "en": "Number of jobs × price, excluding VAT."
+  },
+  "numeric": {
+   "value": 2760000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M3-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture du grossiste de mai (précompte compris).\n\n[[piece:S-D-05-004]]",
+   "en": "Record the parts supplier's May invoice (withholding included).\n\n[[piece:S-D-05-004]]"
+  },
+  "explanation": {
+   "fr": "Matières consommables 6041, TVA 4452, précompte de 2 % en 4492 (CGI art. 21 (3)), fournisseur 401. Pourquoi pas autre chose : Rappel : 6041 toute l'année, stock compté au 31 décembre, précompte imputable sur l'acompte.",
+   "en": "Consumables 6041, VAT 4452, 2% withholding 4492, supplier 401. Why not something else: Reminder: 6041 all year, stock counted on 31 December, withholding credited."
+  },
+  "journal": [
+   {
+    "account": "6041",
+    "side": "debit",
+    "amount": 3270000
+   },
+   {
+    "account": "4452",
+    "side": "debit",
+    "amount": 629475
+   },
+   {
+    "account": "4492",
+    "side": "debit",
+    "amount": 65400
+   },
+   {
+    "account": "401",
+    "side": "credit",
+    "amount": 3964875
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture de dépannages de mai.\n\n[[piece:S-D-05-005]]",
+   "en": "Record the May repair invoice.\n\n[[piece:S-D-05-005]]"
+  },
+  "explanation": {
+   "fr": "Client 411 au TTC, services vendus 706, TVA en attente 471 : la TVA des services n'est exigible qu'à l'encaissement (CGI art. 134 (1) b). Pourquoi pas autre chose : Rappel : 471 à la facture, 4432 au paiement.",
+   "en": "Customer 411, services sold 706, VAT pending 471: VAT on services is due on collection. Why not something else: Reminder: 471 on invoicing, 4432 on payment."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "side": "debit",
+    "amount": 2862000
+   },
+   {
+    "account": "706",
+    "side": "credit",
+    "amount": 2400000
+   },
+   {
+    "account": "471",
+    "side": "credit",
+    "amount": 462000
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture du contrat public de mai.\n\n[[piece:S-D-05-006]]",
+   "en": "Record the May public contract invoice.\n\n[[piece:S-D-05-006]]"
+  },
+  "explanation": {
+   "fr": "Même schéma : 411, 706 et 471 ; les retenues ne se passent qu'au paiement. Pourquoi pas autre chose : Rappel : les retenues s'écrivent au paiement, avec l'ARS.",
+   "en": "Same pattern: 411, 706 and 471; withholdings are booked only on payment. Why not something else: Reminder: withholdings are booked on payment, with the certificate."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "side": "debit",
+    "amount": 2504250
+   },
+   {
+    "account": "706",
+    "side": "credit",
+    "amount": 2100000
+   },
+   {
+    "account": "471",
+    "side": "credit",
+    "amount": 404250
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du paiement public et de l'ARS de mai.\n\n[[piece:S-D-05-003]]",
+   "en": "Record the May public payment and withholding certificate.\n\n[[piece:S-D-05-003]]"
+  },
+  "explanation": {
+   "fr": "Banque 521 pour le net, acompte retenu de 5,5 % en 4492 (art. 21 (2)), TVA retenue en 4458 (art. 149 (2)), client 411 soldé ; la TVA devient exigible : 471 au débit, 4432 au crédit. Pourquoi pas autre chose : Pourquoi ne pas passer le net en chiffre d'affaires ? Le client a payé toute la facture : une part à Jean-Claude, une part au fisc pour son compte. Les deux retenues sont des avances sur ses propres impôts, pas des remises.",
+   "en": "Bank 521 net, 5.5% instalment 4492, withheld VAT 4458, customer 411 cleared; VAT becomes due: 471 to 4432. Why not something else: Why not book the net as revenue? The customer paid the whole invoice: part to Jean-Claude, part to the tax office on his behalf. Both withholdings are advances on his own taxes, not discounts."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 2268000
+   },
+   {
+    "account": "4492",
+    "side": "debit",
+    "amount": 132000
+   },
+   {
+    "account": "4458",
+    "side": "debit",
+    "amount": 462000
+   },
+   {
+    "account": "411",
+    "side": "credit",
+    "amount": 2862000
+   },
+   {
+    "account": "471",
+    "side": "debit",
+    "amount": 462000
+   },
+   {
+    "account": "4432",
+    "side": "credit",
+    "amount": 462000
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du relevé Orange Money de mai.\n\n[[piece:S-D-05-007]]",
+   "en": "Record the May Orange Money statement.\n\n[[piece:S-D-05-007]]"
+  },
+  "explanation": {
+   "fr": "5522 au TTC, 706 et 471 ; encaissement immédiat : 471 soldé dans 4432 ; frais 631, transfert par 585. Pourquoi pas autre chose : Pourquoi passer par 471 si le paiement est immédiat ? Le logiciel applique une seule règle à toutes les prestations : la TVA attend en 471 et devient exigible au paiement, ici le jour même.",
+   "en": "5522, 706 and 471; immediate collection: 471 cleared to 4432; fees 631, transfer through 585. Why not something else: Why go through 471 if payment is immediate? The software applies one rule to all services: VAT waits in 471 and falls due on payment, here the same day."
+  },
+  "journal": [
+   {
+    "account": "5522",
+    "side": "debit",
+    "amount": 1001700
+   },
+   {
+    "account": "706",
+    "side": "credit",
+    "amount": 840000
+   },
+   {
+    "account": "471",
+    "side": "credit",
+    "amount": 161700
+   },
+   {
+    "account": "471",
+    "side": "debit",
+    "amount": 161700
+   },
+   {
+    "account": "4432",
+    "side": "credit",
+    "amount": 161700
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 6000
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 6000
+   },
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 995700
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 995700
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du bulletin de paie de mai.\n\n[[piece:S-D-05-008]]",
+   "en": "Record the May payslip.\n\n[[piece:S-D-05-008]]"
+  },
+  "explanation": {
+   "fr": "Salaire 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues 4472 et 431, net 422. Pourquoi pas autre chose : Brice est salarié ; Jean-Claude, lui, n'a pas de bulletin : on ne s'emploie pas soi-même.",
+   "en": "Gross 6611, employer levies 6413 and 6641; withholdings 4472 and 431, net 422. Why not something else: Brice is an employee; Jean-Claude has no payslip: one does not employ oneself."
+  },
+  "journal": [
+   {
+    "account": "6611",
+    "side": "debit",
+    "amount": 130000
+   },
+   {
+    "account": "6413",
+    "side": "debit",
+    "amount": 3250
+   },
+   {
+    "account": "6641",
+    "side": "debit",
+    "amount": 5460
+   },
+   {
+    "account": "4472",
+    "side": "credit",
+    "amount": 12326
+   },
+   {
+    "account": "431",
+    "side": "credit",
+    "amount": 10920
+   },
+   {
+    "account": "422",
+    "side": "credit",
+    "amount": 115464
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-022",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez les écritures du relevé bancaire de mai.\n\n[[piece:S-D-05-001]]",
+   "en": "Record the May bank statement entries.\n\n[[piece:S-D-05-001]]"
+  },
+  "explanation": {
+   "fr": "Client privé 411 et TVA exigible (471 vers 4432), fournisseur 401, salaire 422, transfert 585, prélèvement de l'exploitant 1042, frais 631. Pourquoi pas autre chose : Un écart s'explique avant de s'écrire.",
+   "en": "Private customer 411 and VAT due (471 to 4432), supplier 401, pay 422, transfer 585, drawings 1042, fees 631. Why not something else: A gap is explained before it is booked."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 3291300
+   },
+   {
+    "account": "411",
+    "side": "credit",
+    "amount": 3291300
+   },
+   {
+    "account": "471",
+    "side": "debit",
+    "amount": 531300
+   },
+   {
+    "account": "4432",
+    "side": "credit",
+    "amount": 531300
+   },
+   {
+    "account": "401",
+    "side": "debit",
+    "amount": 3964875
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 3964875
+   },
+   {
+    "account": "422",
+    "side": "debit",
+    "amount": 115464
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 115464
+   },
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 995700
+   },
+   {
+    "account": "585",
+    "side": "credit",
+    "amount": 995700
+   },
+   {
+    "account": "1042",
+    "side": "debit",
+    "amount": 300000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 300000
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 3500
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 3500
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-023",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la quittance de loyer de mai.\n\n[[piece:S-D-05-002]]",
+   "en": "Record the May rent receipt.\n\n[[piece:S-D-05-002]]"
+  },
+  "explanation": {
+   "fr": "Loyer brut 6222, précompte de 10 % en 4478 (CGI art. 87), net payé par la banque. Pourquoi pas autre chose : Au réel, le locataire retient le précompte et le reverse : la charge reste le loyer brut.",
+   "en": "Gross rent 6222, 10% withholding 4478, net paid by bank. Why not something else: Under the actual regime the tenant withholds and pays over: the expense remains the gross rent."
+  },
+  "journal": [
+   {
+    "account": "6222",
+    "side": "debit",
+    "amount": 150000
+   },
+   {
+    "account": "4478",
+    "side": "credit",
+    "amount": 15000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 135000
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-024",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du règlement de la déclaration du 15 mai.\n\n[[piece:S-D-05-009]]",
+   "en": "Record the payment of the May 15th return.\n\n[[piece:S-D-05-009]]"
+  },
+  "explanation": {
+   "fr": "TVA exigible 4432 moins TVA déductible et retenue (445) ; acompte d'IRPP en 441, précomptes et retenues imputés (4492) ; retenues et CNPS reversées. Pourquoi pas autre chose : La régularité évite les pénalités.",
+   "en": "VAT due less recoverable and withheld VAT; instalment 441 net of withholdings; withholdings and CNPS paid over. Why not something else: Regularity avoids penalties."
+  },
+  "journal": [
+   {
+    "account": "4432",
+    "side": "debit",
+    "amount": 1260875
+   },
+   {
+    "account": "4452",
+    "side": "credit",
+    "amount": 629475
+   },
+   {
+    "account": "4458",
+    "side": "credit",
+    "amount": 481250
+   },
+   {
+    "account": "4449",
+    "side": "credit",
+    "amount": 375375
+   },
+   {
+    "account": "4449",
+    "side": "debit",
+    "amount": 225225
+   },
+   {
+    "account": "441",
+    "side": "debit",
+    "amount": 136620
+   },
+   {
+    "account": "4492",
+    "side": "credit",
+    "amount": 136620
+   },
+   {
+    "account": "4472",
+    "side": "debit",
+    "amount": 12326
+   },
+   {
+    "account": "4478",
+    "side": "debit",
+    "amount": 15000
+   },
+   {
+    "account": "431",
+    "side": "debit",
+    "amount": 10920
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 38246
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-025",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour mai 2026 : TVA due (ou crédit à reporter) ?",
+   "en": "15th return for May 2026: VAT due (or credit carried forward)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA devenue exigible à l'encaissement (4432) moins TVA déductible, TVA retenue à la source comprise, et crédit reporté ; acompte de 2 % du CA facturé majoré de 10 % de CAC, moins les précomptes et retenues (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21, 134, 149)."
+  },
+  "numeric": {
+   "value": 161700,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-05",
+   "field": "credit_tva"
+  }
+ },
+ {
+  "id": "S-D-M3-026",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour mai 2026 : Acompte d'IRPP net des précomptes et retenues imputés ?",
+   "en": "15th return for May 2026: Income tax instalment net of withholdings?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA devenue exigible à l'encaissement (4432) moins TVA déductible, TVA retenue à la source comprise, et crédit reporté ; acompte de 2 % du CA facturé majoré de 10 % de CAC, moins les précomptes et retenues (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21, 134, 149)."
+  },
+  "numeric": {
+   "value": 0,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-05",
+   "field": "acompte_is_net"
+  }
+ },
+ {
+  "id": "S-D-M3-027",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour mai 2026 : Retenues à la source du mois (salaire et loyer) ?",
+   "en": "15th return for May 2026: Withholdings of the month (pay and rent)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA devenue exigible à l'encaissement (4432) moins TVA déductible, TVA retenue à la source comprise, et crédit reporté ; acompte de 2 % du CA facturé majoré de 10 % de CAC, moins les précomptes et retenues (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21, 134, 149)."
+  },
+  "numeric": {
+   "value": 27326,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-05",
+   "field": "retenues_salaires"
+  }
+ },
+ {
+  "id": "S-D-M3-028",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde comptable du compte 521 au 31 mai 2026 ?\n\n[[piece:S-D-05-001]]",
+   "en": "Book balance of account 521 at May 31, 2026?\n\n[[piece:S-D-05-001]]"
+  },
+  "explanation": {
+   "fr": "Débits moins crédits de 521 jusqu'à cette date : le solde à rapprocher du relevé.",
+   "en": "Debits less credits of 521 up to that date."
+  },
+  "numeric": {
+   "value": 11430571,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-05-31"
+  }
+ },
+ {
+  "id": "S-D-M3-029",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Acompte d'IRPP retenu par le payeur public en mai ?\n\n[[piece:S-D-05-003]]",
+   "en": "Income tax instalment withheld by the public payer in May?\n\n[[piece:S-D-05-003]]"
+  },
+  "explanation": {
+   "fr": "5 % du HT de la facture, majorés de 10 % de CAC : 5,5 % (CGI art. 21 (2)).",
+   "en": "5% of the invoice before tax plus 10% council cents: 5.5%."
+  },
+  "numeric": {
+   "value": 132000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "retenue_source",
+   "args": [
+    2400000,
+    5,
+    10
+   ],
+   "resultat": [
+    "retenue"
+   ]
+  }
+ },
+ {
+  "id": "S-D-M3-030",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chiffre d'affaires HT des dépannages aux entreprises de mai ?\n\n[[piece:S-D-05-005]]",
+   "en": "May business repair revenue excluding tax?\n\n[[piece:S-D-05-005]]"
+  },
+  "explanation": {
+   "fr": "Nombre d'interventions × prix, hors TVA (706).",
+   "en": "Number of jobs × price, excluding VAT."
+  },
+  "numeric": {
+   "value": 2400000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M3-031",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture du grossiste de juin (précompte compris).\n\n[[piece:S-D-06-004]]",
+   "en": "Record the parts supplier's June invoice (withholding included).\n\n[[piece:S-D-06-004]]"
+  },
+  "explanation": {
+   "fr": "Matières consommables 6041, TVA 4452, précompte de 2 % en 4492 (CGI art. 21 (3)), fournisseur 401. Pourquoi pas autre chose : Rappel : 6041 toute l'année, stock compté au 31 décembre, précompte imputable sur l'acompte.",
+   "en": "Consumables 6041, VAT 4452, 2% withholding 4492, supplier 401. Why not something else: Reminder: 6041 all year, stock counted on 31 December, withholding credited."
+  },
+  "journal": [
+   {
+    "account": "6041",
+    "side": "debit",
+    "amount": 3270000
+   },
+   {
+    "account": "4452",
+    "side": "debit",
+    "amount": 629475
+   },
+   {
+    "account": "4492",
+    "side": "debit",
+    "amount": 65400
+   },
+   {
+    "account": "401",
+    "side": "credit",
+    "amount": 3964875
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-032",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture de dépannages de juin.\n\n[[piece:S-D-06-005]]",
+   "en": "Record the June repair invoice.\n\n[[piece:S-D-06-005]]"
+  },
+  "explanation": {
+   "fr": "Client 411 au TTC, services vendus 706, TVA en attente 471 : la TVA des services n'est exigible qu'à l'encaissement (CGI art. 134 (1) b). Pourquoi pas autre chose : Rappel : 471 à la facture, 4432 au paiement.",
+   "en": "Customer 411, services sold 706, VAT pending 471: VAT on services is due on collection. Why not something else: Reminder: 471 on invoicing, 4432 on payment."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "side": "debit",
+    "amount": 2575800
+   },
+   {
+    "account": "706",
+    "side": "credit",
+    "amount": 2160000
+   },
+   {
+    "account": "471",
+    "side": "credit",
+    "amount": 415800
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-033",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture du contrat public de juin.\n\n[[piece:S-D-06-006]]",
+   "en": "Record the June public contract invoice.\n\n[[piece:S-D-06-006]]"
+  },
+  "explanation": {
+   "fr": "Même schéma : 411, 706 et 471 ; les retenues ne se passent qu'au paiement. Pourquoi pas autre chose : Rappel : les retenues s'écrivent au paiement, avec l'ARS.",
+   "en": "Same pattern: 411, 706 and 471; withholdings are booked only on payment. Why not something else: Reminder: withholdings are booked on payment, with the certificate."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "side": "debit",
+    "amount": 2385000
+   },
+   {
+    "account": "706",
+    "side": "credit",
+    "amount": 2000000
+   },
+   {
+    "account": "471",
+    "side": "credit",
+    "amount": 385000
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-034",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du paiement public et de l'ARS de juin.\n\n[[piece:S-D-06-003]]",
+   "en": "Record the June public payment and withholding certificate.\n\n[[piece:S-D-06-003]]"
+  },
+  "explanation": {
+   "fr": "Banque 521 pour le net, acompte retenu de 5,5 % en 4492 (art. 21 (2)), TVA retenue en 4458 (art. 149 (2)), client 411 soldé ; la TVA devient exigible : 471 au débit, 4432 au crédit. Pourquoi pas autre chose : Pourquoi ne pas passer le net en chiffre d'affaires ? Le client a payé toute la facture : une part à Jean-Claude, une part au fisc pour son compte. Les deux retenues sont des avances sur ses propres impôts, pas des remises.",
+   "en": "Bank 521 net, 5.5% instalment 4492, withheld VAT 4458, customer 411 cleared; VAT becomes due: 471 to 4432. Why not something else: Why not book the net as revenue? The customer paid the whole invoice: part to Jean-Claude, part to the tax office on his behalf. Both withholdings are advances on his own taxes, not discounts."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 1984500
+   },
+   {
+    "account": "4492",
+    "side": "debit",
+    "amount": 115500
+   },
+   {
+    "account": "4458",
+    "side": "debit",
+    "amount": 404250
+   },
+   {
+    "account": "411",
+    "side": "credit",
+    "amount": 2504250
+   },
+   {
+    "account": "471",
+    "side": "debit",
+    "amount": 404250
+   },
+   {
+    "account": "4432",
+    "side": "credit",
+    "amount": 404250
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-035",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du relevé Orange Money de juin.\n\n[[piece:S-D-06-007]]",
+   "en": "Record the June Orange Money statement.\n\n[[piece:S-D-06-007]]"
+  },
+  "explanation": {
+   "fr": "5522 au TTC, 706 et 471 ; encaissement immédiat : 471 soldé dans 4432 ; frais 631, transfert par 585. Pourquoi pas autre chose : Pourquoi passer par 471 si le paiement est immédiat ? Le logiciel applique une seule règle à toutes les prestations : la TVA attend en 471 et devient exigible au paiement, ici le jour même.",
+   "en": "5522, 706 and 471; immediate collection: 471 cleared to 4432; fees 631, transfer through 585. Why not something else: Why go through 471 if payment is immediate? The software applies one rule to all services: VAT waits in 471 and falls due on payment, here the same day."
+  },
+  "journal": [
+   {
+    "account": "5522",
+    "side": "debit",
+    "amount": 918225
+   },
+   {
+    "account": "706",
+    "side": "credit",
+    "amount": 770000
+   },
+   {
+    "account": "471",
+    "side": "credit",
+    "amount": 148225
+   },
+   {
+    "account": "471",
+    "side": "debit",
+    "amount": 148225
+   },
+   {
+    "account": "4432",
+    "side": "credit",
+    "amount": 148225
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 6000
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 6000
+   },
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 912225
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 912225
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-036",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du bulletin de paie de juin.\n\n[[piece:S-D-06-008]]",
+   "en": "Record the June payslip.\n\n[[piece:S-D-06-008]]"
+  },
+  "explanation": {
+   "fr": "Salaire 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues 4472 et 431, net 422. Pourquoi pas autre chose : Brice est salarié ; Jean-Claude, lui, n'a pas de bulletin : on ne s'emploie pas soi-même.",
+   "en": "Gross 6611, employer levies 6413 and 6641; withholdings 4472 and 431, net 422. Why not something else: Brice is an employee; Jean-Claude has no payslip: one does not employ oneself."
+  },
+  "journal": [
+   {
+    "account": "6611",
+    "side": "debit",
+    "amount": 130000
+   },
+   {
+    "account": "6413",
+    "side": "debit",
+    "amount": 3250
+   },
+   {
+    "account": "6641",
+    "side": "debit",
+    "amount": 5460
+   },
+   {
+    "account": "4472",
+    "side": "credit",
+    "amount": 12326
+   },
+   {
+    "account": "431",
+    "side": "credit",
+    "amount": 10920
+   },
+   {
+    "account": "422",
+    "side": "credit",
+    "amount": 115464
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-037",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez les écritures du relevé bancaire de juin.\n\n[[piece:S-D-06-001]]",
+   "en": "Record the June bank statement entries.\n\n[[piece:S-D-06-001]]"
+  },
+  "explanation": {
+   "fr": "Client privé 411 et TVA exigible (471 vers 4432), fournisseur 401, salaire 422, transfert 585, prélèvement de l'exploitant 1042, frais 631. Pourquoi pas autre chose : Un écart s'explique avant de s'écrire.",
+   "en": "Private customer 411 and VAT due (471 to 4432), supplier 401, pay 422, transfer 585, drawings 1042, fees 631. Why not something else: A gap is explained before it is booked."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 2862000
+   },
+   {
+    "account": "411",
+    "side": "credit",
+    "amount": 2862000
+   },
+   {
+    "account": "471",
+    "side": "debit",
+    "amount": 462000
+   },
+   {
+    "account": "4432",
+    "side": "credit",
+    "amount": 462000
+   },
+   {
+    "account": "401",
+    "side": "debit",
+    "amount": 3964875
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 3964875
+   },
+   {
+    "account": "422",
+    "side": "debit",
+    "amount": 115464
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 115464
+   },
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 912225
+   },
+   {
+    "account": "585",
+    "side": "credit",
+    "amount": 912225
+   },
+   {
+    "account": "1042",
+    "side": "debit",
+    "amount": 300000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 300000
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 3500
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 3500
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-038",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la quittance de loyer de juin.\n\n[[piece:S-D-06-002]]",
+   "en": "Record the June rent receipt.\n\n[[piece:S-D-06-002]]"
+  },
+  "explanation": {
+   "fr": "Loyer brut 6222, précompte de 10 % en 4478 (CGI art. 87), net payé par la banque. Pourquoi pas autre chose : Au réel, le locataire retient le précompte et le reverse : la charge reste le loyer brut.",
+   "en": "Gross rent 6222, 10% withholding 4478, net paid by bank. Why not something else: Under the actual regime the tenant withholds and pays over: the expense remains the gross rent."
+  },
+  "journal": [
+   {
+    "account": "6222",
+    "side": "debit",
+    "amount": 150000
+   },
+   {
+    "account": "4478",
+    "side": "credit",
+    "amount": 15000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 135000
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-039",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du règlement de la déclaration du 15 juin.\n\n[[piece:S-D-06-009]]",
+   "en": "Record the payment of the June 15th return.\n\n[[piece:S-D-06-009]]"
+  },
+  "explanation": {
+   "fr": "TVA exigible 4432 moins TVA déductible et retenue (445) ; acompte d'IRPP en 441, précomptes et retenues imputés (4492) ; retenues et CNPS reversées. Pourquoi pas autre chose : Pourquoi l'acompte net est-il souvent nul ? Les retenues de 5,5 % des payeurs publics et le précompte dépassent l'acompte du mois ; l'excédent attend en 4492.",
+   "en": "VAT due less recoverable and withheld VAT; instalment 441 net of withholdings; withholdings and CNPS paid over. Why not something else: Why is the net instalment often nil? Public withholdings exceed it; the excess waits."
+  },
+  "journal": [
+   {
+    "account": "4432",
+    "side": "debit",
+    "amount": 1155000
+   },
+   {
+    "account": "4452",
+    "side": "credit",
+    "amount": 629475
+   },
+   {
+    "account": "4458",
+    "side": "credit",
+    "amount": 462000
+   },
+   {
+    "account": "4449",
+    "side": "credit",
+    "amount": 225225
+   },
+   {
+    "account": "4449",
+    "side": "debit",
+    "amount": 161700
+   },
+   {
+    "account": "441",
+    "side": "debit",
+    "amount": 117480
+   },
+   {
+    "account": "4492",
+    "side": "credit",
+    "amount": 117480
+   },
+   {
+    "account": "4472",
+    "side": "debit",
+    "amount": 12326
+   },
+   {
+    "account": "4478",
+    "side": "debit",
+    "amount": 15000
+   },
+   {
+    "account": "431",
+    "side": "debit",
+    "amount": 10920
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 38246
+   }
+  ]
+ },
+ {
+  "id": "S-D-M3-040",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour juin 2026 : TVA due (ou crédit à reporter) ?",
+   "en": "15th return for June 2026: VAT due (or credit carried forward)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA devenue exigible à l'encaissement (4432) moins TVA déductible, TVA retenue à la source comprise, et crédit reporté ; acompte de 2 % du CA facturé majoré de 10 % de CAC, moins les précomptes et retenues (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21, 134, 149)."
+  },
+  "numeric": {
+   "value": 180950,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-06",
+   "field": "credit_tva"
+  }
+ },
+ {
+  "id": "S-D-M3-041",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour juin 2026 : Acompte d'IRPP net des précomptes et retenues imputés ?",
+   "en": "15th return for June 2026: Income tax instalment net of withholdings?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA devenue exigible à l'encaissement (4432) moins TVA déductible, TVA retenue à la source comprise, et crédit reporté ; acompte de 2 % du CA facturé majoré de 10 % de CAC, moins les précomptes et retenues (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21, 134, 149)."
+  },
+  "numeric": {
+   "value": 0,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-06",
+   "field": "acompte_is_net"
+  }
+ },
+ {
+  "id": "S-D-M3-042",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour juin 2026 : Retenues à la source du mois (salaire et loyer) ?",
+   "en": "15th return for June 2026: Withholdings of the month (pay and rent)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA devenue exigible à l'encaissement (4432) moins TVA déductible, TVA retenue à la source comprise, et crédit reporté ; acompte de 2 % du CA facturé majoré de 10 % de CAC, moins les précomptes et retenues (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21, 134, 149)."
+  },
+  "numeric": {
+   "value": 27326,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-06",
+   "field": "retenues_salaires"
+  }
+ },
+ {
+  "id": "S-D-M3-043",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde comptable du compte 521 au 30 juin 2026 ?\n\n[[piece:S-D-06-001]]",
+   "en": "Book balance of account 521 at June 30, 2026?\n\n[[piece:S-D-06-001]]"
+  },
+  "explanation": {
+   "fr": "Débits moins crédits de 521 jusqu'à cette date : le solde à rapprocher du relevé.",
+   "en": "Debits less credits of 521 up to that date."
+  },
+  "numeric": {
+   "value": 12632211,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-06-30"
+  }
+ },
+ {
+  "id": "S-D-M3-044",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Acompte d'IRPP retenu par le payeur public en juin ?\n\n[[piece:S-D-06-003]]",
+   "en": "Income tax instalment withheld by the public payer in June?\n\n[[piece:S-D-06-003]]"
+  },
+  "explanation": {
+   "fr": "5 % du HT de la facture, majorés de 10 % de CAC : 5,5 % (CGI art. 21 (2)).",
+   "en": "5% of the invoice before tax plus 10% council cents: 5.5%."
+  },
+  "numeric": {
+   "value": 115500,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "retenue_source",
+   "args": [
+    2100000,
+    5,
+    10
+   ],
+   "resultat": [
+    "retenue"
+   ]
+  }
+ },
+ {
+  "id": "S-D-M3-045",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chiffre d'affaires HT des dépannages aux entreprises de juin ?\n\n[[piece:S-D-06-005]]",
+   "en": "June business repair revenue excluding tax?\n\n[[piece:S-D-06-005]]"
+  },
+  "explanation": {
+   "fr": "Nombre d'interventions × prix, hors TVA (706).",
+   "en": "Number of jobs × price, excluding VAT."
+  },
+  "numeric": {
+   "value": 2160000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-D-M3-046",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Contraste : si Ets Tchinda Froid ne figurait pas au fichier des contribuables actifs, quelle retenue le payeur public aurait-il opérée sur la facture réglée en juin ?\n\n[[piece:S-D-06-003]]",
+   "en": "Contrast: had Ets Tchinda Froid not been on the active taxpayer file, what would the public payer have withheld on the invoice paid in June?\n\n[[piece:S-D-06-003]]"
+  },
+  "explanation": {
+   "fr": "10 % du HT majorés de 10 % de CAC, soit 11 % (CGI art. 21 (2)) : le double. Rester à jour de ses déclarations garde le taux de 5,5 %.",
+   "en": "10% plus council cents, 11%: double. Keeping returns up to date keeps the 5.5% rate."
+  },
+  "numeric": {
+   "value": 231000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "retenue_source",
+   "args": [
+    2100000,
+    10,
+    10
+   ],
+   "resultat": [
+    "retenue"
+   ]
+  }
+ },
+ {
+  "id": "S-D-M3-047",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Le virement personnel de M. Tchinda est une charge de l'atelier.\n\n[[piece:S-D-05-001]]",
+   "en": "Mr Tchinda's personal transfer is a business expense.\n\n[[piece:S-D-05-001]]"
+  },
+  "explanation": {
+   "fr": "Faux : c'est un prélèvement de l'exploitant (1042), jamais une charge ni un salaire.",
+   "en": "Faux : c'est un prélèvement de l'exploitant (1042), jamais une charge ni un salaire."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ }
+]

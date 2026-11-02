@@ -1166,6 +1166,306 @@
     }
    ],
    "order": 4
+  },
+  {
+   "slug": "d",
+   "title": {
+    "fr": "Parcours D : prestataire en froid et climatisation (Ets Tchinda Froid)",
+    "en": "Track D: refrigeration and air-conditioning contractor (Ets Tchinda Froid)"
+   },
+   "description": {
+    "fr": "Établissement individuel au réel à Yaoundé, rattaché au CIME : TVA à l'encaissement, retenues des clients publics, IRPP de l'exploitant.",
+    "en": "Sole proprietorship under the actual regime in Yaoundé: VAT on collection, public withholdings, owner's income tax."
+   },
+   "forme": "individuelle",
+   "centre_impots": "cime",
+   "chiffre_affaires_vise": 65000000,
+   "tva_encaissement": true,
+   "compte_tva_attente": "471",
+   "sous_comptes": {
+    "5522": {
+     "fr": "Orange Money",
+     "en": "Orange Money"
+    },
+    "4458": {
+     "fr": "TVA retenue à la source par les clients publics",
+     "en": "VAT withheld at source by public customers"
+    },
+    "3311": {
+     "fr": "Fluides frigorigènes",
+     "en": "Refrigerants"
+    },
+    "3312": {
+     "fr": "Pièces détachées",
+     "en": "Spare parts"
+    }
+   },
+   "pieces": "d/pieces.json",
+   "ledger": "d/ledger.json",
+   "exam": {
+    "questions_per_module": 4
+   },
+   "modules": [
+    {
+     "order": 1,
+     "dir": "d/m1",
+     "title": {
+      "fr": "Création et janvier",
+      "en": "Set-up and January"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Immatriculer l'établissement, apporter ses biens, tenir le premier mois.",
+      "en": "Register the business, contribute assets, keep the first month."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-dossier",
+       "kind": "content",
+       "title": {
+        "fr": "Dossier d'entreprise",
+        "en": "Company file"
+       }
+      },
+      {
+       "order": 2,
+       "file": "02-creation",
+       "kind": "content",
+       "title": {
+        "fr": "Démarches de création",
+        "en": "Set-up procedures"
+       }
+      },
+      {
+       "order": 3,
+       "file": "03-janvier",
+       "kind": "content",
+       "title": {
+        "fr": "Janvier 2026",
+        "en": "January 2026"
+       }
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "dir": "d/m2",
+     "title": {
+      "fr": "Premier trimestre (février et mars)",
+      "en": "First quarter (February and March)"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Encaisser, constater la TVA, subir les retenues publiques.",
+      "en": "Collect, recognise VAT, bear public withholdings."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-fevrier",
+       "kind": "content",
+       "title": {
+        "fr": "Février 2026",
+        "en": "February 2026"
+       }
+      },
+      {
+       "order": 2,
+       "file": "02-mars",
+       "kind": "content",
+       "title": {
+        "fr": "Mars 2026",
+        "en": "March 2026"
+       }
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "dir": "d/m3",
+     "title": {
+      "fr": "Deuxième trimestre",
+      "en": "Second quarter"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Comparer 5,5 % et 11 %.",
+      "en": "Compare 5.5% and 11%."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-avril",
+       "kind": "content",
+       "title": {
+        "fr": "Avril 2026",
+        "en": "April 2026"
+       }
+      },
+      {
+       "order": 2,
+       "file": "02-mai",
+       "kind": "content",
+       "title": {
+        "fr": "Mai 2026",
+        "en": "May 2026"
+       }
+      },
+      {
+       "order": 3,
+       "file": "03-juin",
+       "kind": "content",
+       "title": {
+        "fr": "Juin 2026",
+        "en": "June 2026"
+       }
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "dir": "d/m4",
+     "title": {
+      "fr": "Troisième trimestre",
+      "en": "Third quarter"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Suivre la hausse des prix des pièces.",
+      "en": "Follow rising parts prices."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-juillet",
+       "kind": "content",
+       "title": {
+        "fr": "Juillet 2026",
+        "en": "July 2026"
+       }
+      },
+      {
+       "order": 2,
+       "file": "02-aout",
+       "kind": "content",
+       "title": {
+        "fr": "Août 2026",
+        "en": "August 2026"
+       }
+      },
+      {
+       "order": 3,
+       "file": "03-septembre",
+       "kind": "content",
+       "title": {
+        "fr": "Septembre 2026",
+        "en": "September 2026"
+       }
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "dir": "d/m5",
+     "title": {
+      "fr": "Quatrième trimestre",
+      "en": "Fourth quarter"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Préparer la clôture.",
+      "en": "Prepare the year end."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-octobre",
+       "kind": "content",
+       "title": {
+        "fr": "Octobre 2026",
+        "en": "October 2026"
+       }
+      },
+      {
+       "order": 2,
+       "file": "02-novembre",
+       "kind": "content",
+       "title": {
+        "fr": "Novembre 2026",
+        "en": "November 2026"
+       }
+      },
+      {
+       "order": 3,
+       "file": "03-decembre",
+       "kind": "content",
+       "title": {
+        "fr": "Décembre 2026",
+        "en": "December 2026"
+       }
+      }
+     ]
+    },
+    {
+     "order": 6,
+     "dir": "d/m6",
+     "title": {
+      "fr": "Inventaire",
+      "en": "Year-end inventory"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Valoriser les stocks, amortir la camionnette, isoler la TVA en attente.",
+      "en": "Value stock, depreciate the van, isolate pending VAT."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-inventaire",
+       "kind": "content",
+       "title": {
+        "fr": "Inventaire au 31 décembre",
+        "en": "Year-end inventory"
+       }
+      }
+     ]
+    },
+    {
+     "order": 7,
+     "dir": "d/m7",
+     "title": {
+      "fr": "Passerelle et déclaration des résultats",
+      "en": "Tax bridge and income return"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Liquider l'IRPP de l'exploitant avant le 15 mars.",
+      "en": "Compute the owner's income tax before 15 March."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-passerelle",
+       "kind": "content",
+       "title": {
+        "fr": "Passerelle fiscale",
+        "en": "Tax bridge"
+       }
+      },
+      {
+       "order": 2,
+       "file": "02-declaration",
+       "kind": "content",
+       "title": {
+        "fr": "Déclaration des résultats 2026",
+        "en": "2026 income return"
+       }
+      }
+     ]
+    }
+   ],
+   "order": 5
   }
  ]
 }
