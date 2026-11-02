@@ -22,7 +22,7 @@ def _sections(slug):
         yield month, path
 
 
-@pytest.mark.parametrize("slug", ["a", "b3", "c", "d", "e"])
+@pytest.mark.parametrize("slug", ["a", "b1", "b3", "c", "d", "e"])
 @pytest.mark.parametrize("lang", ["fr", "en"])
 def test_every_accounting_piece_of_a_month_is_told_in_a_full_scene(slug, lang):
     pieces = json.loads((SIMULATION / slug / "pieces.json").read_text(encoding="utf-8"))
@@ -37,7 +37,7 @@ def test_every_accounting_piece_of_a_month_is_told_in_a_full_scene(slug, lang):
             assert all(beat in scene for beat in BEATS[lang]), f"{slug} {fr_path.name} : {ref} sans les cinq temps"
 
 
-@pytest.mark.parametrize("slug", ["a", "b3", "c", "d", "e"])
+@pytest.mark.parametrize("slug", ["a", "b1", "b3", "c", "d", "e"])
 def test_the_company_file_presents_people_and_routines(slug):
     body = next(SIMULATION.joinpath(slug).glob("m1/01-dossier.fr.md")).read_text(encoding="utf-8")
     assert "### Les personnages" in body
