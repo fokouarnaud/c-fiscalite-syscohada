@@ -91,6 +91,7 @@ SESSION_COOKIE_AGE = 8 * 3600
 SESSION_COOKIE_HTTPONLY = True
 SESSION_COOKIE_SAMESITE = "Lax"
 CSRF_COOKIE_HTTPONLY = True  # le jeton CSRF est injecté par le gabarit (hx-headers), jamais lu dans le cookie
+CSRF_FAILURE_VIEW = "accounts.csrf.csrf_failure"  # US-02 : page claire, ou suite du parcours si déjà connecté
 # Force brute : verrouillage d'un identifiant après LOGIN_MAX_FAILURES échecs en LOGIN_LOCKOUT (accounts/throttling.py).
 LOGIN_MAX_FAILURES = 5
 LOGIN_LOCKOUT = timedelta(minutes=15)

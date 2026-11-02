@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Acad Ventisax\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-30 05:01+0100\n"
+"POT-Creation-Date: 2026-11-02 20:43+0100\n"
 "PO-Revision-Date: 2026-10-17 12:00+0100\n"
 "Last-Translator: Acad Ventisax\n"
 "Language-Team: English\n"
@@ -538,11 +538,11 @@ msgstr "Issued on %(date)s by ComptaFisca Acad Ventisax"
 msgid "Vérification : %(url)s"
 msgstr "Verification: %(url)s"
 
-#: .\config\settings.py:132
+#: .\config\settings.py:133
 msgid "Français"
 msgstr "French"
 
-#: .\config\settings.py:132
+#: .\config\settings.py:133
 msgid "English"
 msgstr "English"
 
@@ -914,74 +914,95 @@ msgstr "Unit price"
 msgid "Montant"
 msgstr "Amount"
 
-#: .\simulation\rendering.py:55 .\templates\assessments\attempt.html:55
+#: .\simulation\rendering.py:53 .\templates\assessments\attempt.html:55
 #: .\templates\assessments\result.html:77
 msgid "Libellé"
 msgstr "Label"
 
-#: .\simulation\rendering.py:59
+#: .\simulation\rendering.py:60
 msgid "Document pédagogique fictif"
 msgstr "Fictitious teaching document"
 
-#: .\simulation\rendering.py:69
+#: .\simulation\rendering.py:70
 msgid "Émetteur"
 msgstr "Issuer"
 
-#: .\simulation\rendering.py:69
+#: .\simulation\rendering.py:70
 msgid "Adresse"
 msgstr "Address"
 
-#: .\simulation\rendering.py:70
+#: .\simulation\rendering.py:71
 msgid "NIU"
 msgstr "Taxpayer number (NIU)"
 
-#: .\simulation\rendering.py:70
+#: .\simulation\rendering.py:71
 msgid "RCCM"
 msgstr "Trade register (RCCM)"
 
-#: .\simulation\rendering.py:71
+#: .\simulation\rendering.py:72
 msgid "Régime"
 msgstr "Tax regime"
 
-#: .\simulation\rendering.py:71
+#: .\simulation\rendering.py:72
 msgid "Centre des impôts"
 msgstr "Tax office"
 
-#: .\simulation\rendering.py:72
+#: .\simulation\rendering.py:73
 msgid "Facture n°"
 msgstr "Invoice no."
 
-#: .\simulation\rendering.py:73
+#: .\simulation\rendering.py:74
 msgid "Référence de facturation électronique DGI"
 msgstr "DGI e-invoicing reference"
 
-#: .\simulation\rendering.py:75
+#: .\simulation\rendering.py:76
 msgid "Client"
 msgstr "Customer"
 
-#: .\simulation\rendering.py:75
+#: .\simulation\rendering.py:76
 msgid "NIU du client"
 msgstr "Customer taxpayer number"
 
-#: .\simulation\rendering.py:94
+#: .\simulation\rendering.py:95
 msgid "Organisme"
 msgstr "Body"
 
-#: .\simulation\rendering.py:94
+#: .\simulation\rendering.py:95
 msgid "Objet"
 msgstr "Purpose"
 
-#: .\simulation\rendering.py:95
+#: .\simulation\rendering.py:96
 msgid "Documents à fournir"
 msgstr "Documents to provide"
 
-#: .\simulation\rendering.py:95
+#: .\simulation\rendering.py:96
 msgid "Document obtenu"
 msgstr "Document obtained"
 
-#: .\simulation\rendering.py:96
+#: .\simulation\rendering.py:97
 msgid "Source"
 msgstr "Source"
+
+#: .\templates\403_csrf.html:2 .\templates\403_csrf.html:5
+msgid "La page a expiré"
+msgstr "This page has expired"
+
+#: .\templates\403_csrf.html:6
+msgid ""
+"Ce formulaire a été ouvert avant une connexion ou une déconnexion, par "
+"exemple dans un autre onglet ou par un retour arrière. Par sécurité, il n'a "
+"pas été envoyé."
+msgstr ""
+"This form was opened before a sign-in or sign-out, for example in another tab "
+"or through the back button. For your security, it was not sent."
+
+#: .\templates\403_csrf.html:7
+msgid "Rechargez la page, puis recommencez."
+msgstr "Reload the page, then try again."
+
+#: .\templates\403_csrf.html:8
+msgid "Recharger la page"
+msgstr "Reload the page"
 
 #: .\templates\accounts\dashboard.html:2 .\templates\accounts\dashboard.html:6
 #: .\templates\base.html:25 .\templates\certificates\mine.html:40

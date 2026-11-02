@@ -8,6 +8,7 @@ urlpatterns = [
     path("", views.dashboard, name="dashboard"),
     path("connexion/", auth_views.LoginView.as_view(
         template_name="accounts/login.html", authentication_form=ThrottledAuthenticationForm,
+        redirect_authenticated_user=True,
     ), name="login"),
     path("deconnexion/", auth_views.LogoutView.as_view(), name="logout"),
     path("inscription/", views.signup, name="signup"),

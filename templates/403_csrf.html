@@ -1,0 +1,9 @@
+{% extends "accounts/_single_panel.html" %}{% load i18n %}
+{% block title %}{% translate "La page a expiré" %}{% endblock %}
+{% block icon %}<span class="panel-icon">{% include "icons/alert-triangle.svg" %}</span>{% endblock %}
+{% block panel %}
+  <h1 id="titre-page">{% translate "La page a expiré" %}</h1>
+  <p>{% translate "Ce formulaire a été ouvert avant une connexion ou une déconnexion, par exemple dans un autre onglet ou par un retour arrière. Par sécurité, il n'a pas été envoyé." %}</p>
+  <p class="muted small">{% translate "Rechargez la page, puis recommencez." %}</p>
+  <a class="btn" href="{{ retry }}">{% translate "Recharger la page" %}</a>
+{% endblock %}
