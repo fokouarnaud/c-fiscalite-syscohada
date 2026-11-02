@@ -1,0 +1,5975 @@
+[
+ {
+  "ref": "S-B1-01-001",
+  "kind": "demarche",
+  "date": "2026-01-02",
+  "title": {
+   "fr": "Démarche : Immatriculation de l'établissement au CFCE de Yaoundé",
+   "en": "Procedure: Registering the sole proprietorship at the Yaoundé business centre"
+  },
+  "payload": {
+   "organisme": {
+    "fr": "Centre de formalités de création d'entreprises (CFCE) de Yaoundé",
+    "en": "Yaoundé business formalities centre"
+   },
+   "objet": {
+    "fr": "Immatriculer l'établissement individuel de Mme Bilounga au registre du commerce",
+    "en": "Register Mrs Bilounga's sole proprietorship in the trade register"
+   },
+   "documents_a_fournir": [
+    {
+     "fr": "CNI de l'exploitante, extrait de casier judiciaire ou déclaration sur l'honneur",
+     "en": "Owner's ID, criminal record extract or sworn statement"
+    },
+    {
+     "fr": "Plan de localisation du dépôt, contact téléphonique",
+     "en": "Depot location map, phone"
+    },
+    {
+     "fr": "Frais de création (à vérifier au CFCE)",
+     "en": "Creation fees (check at the CFCE)"
+    }
+   ],
+   "document_obtenu": {
+    "fr": "Registre de commerce, carte de contribuable (NIU), attestation de création",
+    "en": "Trade register, taxpayer card, creation certificate"
+   },
+   "source": "[[source:minfi-cfce]] [[source:minfi-formalites]]"
+  }
+ },
+ {
+  "ref": "S-B1-01-002",
+  "kind": "demarche",
+  "date": "2026-01-02",
+  "title": {
+   "fr": "Démarche : Rattachement à l'IGS au centre de fiscalité locale",
+   "en": "Procedure: IGS attachment at the local tax office"
+  },
+  "payload": {
+   "organisme": {
+    "fr": "Centre de fiscalité locale de Yaoundé IV",
+    "en": "Yaoundé IV local tax office"
+   },
+   "objet": {
+    "fr": "Suivi à l'IGS : chiffre d'affaires prévisionnel de 28 millions, sous le seuil de 50 millions du négoce",
+    "en": "IGS follow-up: forecast turnover of 28 million, below the 50 million trading threshold"
+   },
+   "documents_a_fournir": [
+    {
+     "fr": "Carte de contribuable délivrée au CFCE",
+     "en": "Taxpayer card issued by the CFCE"
+    },
+    {
+     "fr": "Déclaration du chiffre d'affaires prévisionnel",
+     "en": "Forecast turnover statement"
+    }
+   ],
+   "document_obtenu": {
+    "fr": "Suivi à l'IGS : déclaration et paiement avant le 15 avril, DSF du SMT avant le 15 mai",
+    "en": "IGS follow-up: return and payment by 15 April, cash-basis return by 15 May"
+   },
+   "source": "[[cgi:art. C 39]] [[cgi:art. C 41]] [[cgi:art. C 44]]"
+  }
+ },
+ {
+  "ref": "S-B1-01-003",
+  "kind": "demarche",
+  "date": "2026-01-02",
+  "title": {
+   "fr": "Démarche : Ouverture du compte bancaire",
+   "en": "Procedure: Opening the bank account"
+  },
+  "payload": {
+   "organisme": {
+    "fr": "Banque commerciale (Banque X, fictive)",
+    "en": "Commercial bank (Bank X, fictitious)"
+   },
+   "objet": {
+    "fr": "Payer la brasserie par virement et verser la recette chaque semaine",
+    "en": "Pay the brewery by transfer and deposit the takings every week"
+   },
+   "documents_a_fournir": [
+    {
+     "fr": "Demande d'ouverture, registre de commerce, carte de contribuable",
+     "en": "Request, trade register, taxpayer card"
+    },
+    {
+     "fr": "CNI de l'exploitante, plan de localisation",
+     "en": "Owner's ID, location map"
+    }
+   ],
+   "document_obtenu": {
+    "fr": "Relevé d'identité bancaire (RIB)",
+    "en": "Bank details (RIB)"
+   },
+   "source": "[[source:sg-cm-compte-entreprise]]"
+  }
+ },
+ {
+  "ref": "S-B1-01-004",
+  "kind": "demarche",
+  "date": "2026-01-02",
+  "title": {
+   "fr": "Démarche : Compte marchand Orange Money",
+   "en": "Procedure: Orange Money merchant account"
+  },
+  "payload": {
+   "organisme": {
+    "fr": "Orange Cameroun, partenaires Orange Money",
+    "en": "Orange Cameroon, Orange Money partners"
+   },
+   "objet": {
+    "fr": "Encaisser les ventes par Orange Money",
+    "en": "Collect sales through Orange Money"
+   },
+   "documents_a_fournir": [
+    {
+     "fr": "Registre de commerce, carte de contribuable",
+     "en": "Trade register, taxpayer card"
+    },
+    {
+     "fr": "CNI de l'exploitante, RIB",
+     "en": "Owner's ID, bank details"
+    }
+   ],
+   "document_obtenu": {
+    "fr": "Code marchand Orange Money",
+    "en": "Orange Money merchant code"
+   },
+   "source": "[[source:orange-om-partenaire]]"
+  }
+ },
+ {
+  "ref": "S-B1-01-005",
+  "kind": "releve_bancaire",
+  "date": "2026-01-02",
+  "title": {
+   "fr": "Avis de crédit : apport de l'exploitante (Banque X)",
+   "en": "Credit notice: owner's contribution (Bank X)"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Déposante",
+      "en": "Depositor"
+     },
+     "value": "Thérèse Bilounga"
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Économies versées au compte du dépôt",
+      "en": "Savings paid into the depot account"
+     },
+     "amount": 3000000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-01-006",
+  "kind": "facture_achat",
+  "date": "2026-01-05",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 5 janvier",
+   "en": "Brewery invoice, delivery of January 5"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04101",
+   "einvoice": "DGI-SFE-2026-008101",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 130,
+     "unit_price": 6100,
+     "amount": 793000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 793000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 152653
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 39650
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 985303
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-01-010",
+  "kind": "recu_caisse",
+  "date": "2026-01-15",
+  "title": {
+   "fr": "Quittance de loyer du dépôt, janvier",
+   "en": "January depot rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Owona (fictif)"
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer",
+      "en": "Rent withholding"
+     },
+     "value": {
+      "fr": "Aucun : locataire à l'IGS, loyer payé brut",
+      "en": "None: IGS tenant, rent paid gross"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer payé en espèces",
+      "en": "Rent paid in cash"
+     },
+     "amount": 50000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-01-007",
+  "kind": "facture_achat",
+  "date": "2026-01-19",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 19 janvier",
+   "en": "Brewery invoice, delivery of January 19"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04102",
+   "einvoice": "DGI-SFE-2026-008102",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 130,
+     "unit_price": 6100,
+     "amount": 793000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 793000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 152653
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 39650
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 985303
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-01-008",
+  "kind": "recu_caisse",
+  "date": "2026-01-31",
+  "title": {
+   "fr": "Brouillard de caisse de janvier : ventes au comptant",
+   "en": "January cash book: cash sales"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers de bière 65 cl vendus (casier vide rendu)",
+      "en": "65 cl beer crates sold (empty crate returned)"
+     },
+     "qty": 154,
+     "unit_price": 8400,
+     "amount": 1293600
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Recettes en espèces",
+      "en": "Cash receipts"
+     },
+     "role": "ht",
+     "amount": 1293600
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-01-009",
+  "kind": "releve_momo",
+  "date": "2026-01-31",
+  "title": {
+   "fr": "Relevé Orange Money de janvier",
+   "en": "January Orange Money statement"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers payés par Orange Money",
+      "en": "Crates paid by Orange Money"
+     },
+     "qty": 76,
+     "unit_price": 8400,
+     "amount": 638400
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements",
+      "en": "Receipts"
+     },
+     "role": "ht",
+     "amount": 638400
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 4000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 634400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-01-011",
+  "kind": "recu_caisse",
+  "date": "2026-01-31",
+  "title": {
+   "fr": "Courses de pousse-pousse de janvier",
+   "en": "January push-cart deliveries"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Livraisons aux clients, 10 casiers par course",
+      "en": "Deliveries to customers, 10 crates a trip"
+     },
+     "qty": 23,
+     "unit_price": 1500,
+     "amount": 34500
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Payé en espèces aux pousseurs",
+      "en": "Paid in cash"
+     },
+     "role": "ht",
+     "amount": 34500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-01-012",
+  "kind": "recu_caisse",
+  "date": "2026-01-31",
+  "title": {
+   "fr": "Bordereaux de versement d'espèces de janvier",
+   "en": "January cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versement du 15",
+      "en": "Deposit on the 15th"
+     },
+     "amount": 576000
+    },
+    {
+     "label": {
+      "fr": "Versement de fin de mois",
+      "en": "Month-end deposit"
+     },
+     "amount": 613100
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-01-013",
+  "kind": "releve_bancaire",
+  "date": "2026-01-31",
+  "title": {
+   "fr": "Relevé bancaire de janvier (Banque X)",
+   "en": "January bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versements d'espèces reçus",
+      "en": "Cash deposits received"
+     },
+     "amount": 1189100
+    },
+    {
+     "label": {
+      "fr": "Transfert reçu d'Orange Money",
+      "en": "Transfer received from Orange Money"
+     },
+     "amount": 634400
+    },
+    {
+     "label": {
+      "fr": "Virements à la brasserie",
+      "en": "Transfers to the brewery"
+     },
+     "amount": 1970606
+    },
+    {
+     "label": {
+      "fr": "Virement personnel de l'exploitante (prélèvement)",
+      "en": "Owner's personal transfer (drawings)"
+     },
+     "amount": 100000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-02-009",
+  "kind": "balance",
+  "date": "2026-02-01",
+  "title": {
+   "fr": "Balance au 31 janvier 2026",
+   "en": "Trial balance at January 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "103 Capital personnel",
+      "en": "103 Sole proprietor's capital"
+     },
+     "credit": 3000000
+    },
+    {
+     "label": {
+      "fr": "1042 Opérations courantes",
+      "en": "1042 Current transactions"
+     },
+     "debit": 100000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 2750394
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 20000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 1970606
+    },
+    {
+     "label": {
+      "fr": "612 TRANSPORTS SUR VENTES",
+      "en": "612 Transport on sales"
+     },
+     "debit": 34500
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 50000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 6500
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 1932000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-02-001",
+  "kind": "facture_achat",
+  "date": "2026-02-05",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 5 février",
+   "en": "Brewery invoice, delivery of February 5"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04103",
+   "einvoice": "DGI-SFE-2026-008103",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 122,
+     "unit_price": 6100,
+     "amount": 744200
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 744200
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 143259
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 37210
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 924669
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-02-005",
+  "kind": "recu_caisse",
+  "date": "2026-02-15",
+  "title": {
+   "fr": "Quittance de loyer du dépôt, février",
+   "en": "February depot rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Owona (fictif)"
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer",
+      "en": "Rent withholding"
+     },
+     "value": {
+      "fr": "Aucun : locataire à l'IGS, loyer payé brut",
+      "en": "None: IGS tenant, rent paid gross"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer payé en espèces",
+      "en": "Rent paid in cash"
+     },
+     "amount": 50000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-02-002",
+  "kind": "facture_achat",
+  "date": "2026-02-19",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 19 février",
+   "en": "Brewery invoice, delivery of February 19"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04104",
+   "einvoice": "DGI-SFE-2026-008104",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 123,
+     "unit_price": 6100,
+     "amount": 750300
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 750300
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 144433
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 37515
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 932248
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-02-003",
+  "kind": "recu_caisse",
+  "date": "2026-02-28",
+  "title": {
+   "fr": "Brouillard de caisse de février : ventes au comptant",
+   "en": "February cash book: cash sales"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers de bière 65 cl vendus (casier vide rendu)",
+      "en": "65 cl beer crates sold (empty crate returned)"
+     },
+     "qty": 164,
+     "unit_price": 8400,
+     "amount": 1377600
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Recettes en espèces",
+      "en": "Cash receipts"
+     },
+     "role": "ht",
+     "amount": 1377600
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-02-004",
+  "kind": "releve_momo",
+  "date": "2026-02-28",
+  "title": {
+   "fr": "Relevé Orange Money de février",
+   "en": "February Orange Money statement"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers payés par Orange Money",
+      "en": "Crates paid by Orange Money"
+     },
+     "qty": 81,
+     "unit_price": 8400,
+     "amount": 680400
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements",
+      "en": "Receipts"
+     },
+     "role": "ht",
+     "amount": 680400
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 4000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 676400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-02-006",
+  "kind": "recu_caisse",
+  "date": "2026-02-28",
+  "title": {
+   "fr": "Courses de pousse-pousse de février",
+   "en": "February push-cart deliveries"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Livraisons aux clients, 10 casiers par course",
+      "en": "Deliveries to customers, 10 crates a trip"
+     },
+     "qty": 25,
+     "unit_price": 1500,
+     "amount": 37500
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Payé en espèces aux pousseurs",
+      "en": "Paid in cash"
+     },
+     "role": "ht",
+     "amount": 37500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-02-007",
+  "kind": "recu_caisse",
+  "date": "2026-02-28",
+  "title": {
+   "fr": "Bordereaux de versement d'espèces de février",
+   "en": "February cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versement du 15",
+      "en": "Deposit on the 15th"
+     },
+     "amount": 638000
+    },
+    {
+     "label": {
+      "fr": "Versement de fin de mois",
+      "en": "Month-end deposit"
+     },
+     "amount": 652100
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-02-008",
+  "kind": "releve_bancaire",
+  "date": "2026-02-28",
+  "title": {
+   "fr": "Relevé bancaire de février (Banque X)",
+   "en": "February bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versements d'espèces reçus",
+      "en": "Cash deposits received"
+     },
+     "amount": 1290100
+    },
+    {
+     "label": {
+      "fr": "Transfert reçu d'Orange Money",
+      "en": "Transfer received from Orange Money"
+     },
+     "amount": 676400
+    },
+    {
+     "label": {
+      "fr": "Virements à la brasserie",
+      "en": "Transfers to the brewery"
+     },
+     "amount": 1856917
+    },
+    {
+     "label": {
+      "fr": "Virement personnel de l'exploitante (prélèvement)",
+      "en": "Owner's personal transfer (drawings)"
+     },
+     "amount": 100000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-03-009",
+  "kind": "balance",
+  "date": "2026-03-01",
+  "title": {
+   "fr": "Balance au 28 février 2026",
+   "en": "Trial balance at February 28, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "103 Capital personnel",
+      "en": "103 Sole proprietor's capital"
+     },
+     "credit": 3000000
+    },
+    {
+     "label": {
+      "fr": "1042 Opérations courantes",
+      "en": "1042 Current transactions"
+     },
+     "debit": 200000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 2757477
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 20000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 3827523
+    },
+    {
+     "label": {
+      "fr": "612 TRANSPORTS SUR VENTES",
+      "en": "612 Transport on sales"
+     },
+     "debit": 72000
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 100000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 13000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 3990000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-03-001",
+  "kind": "facture_achat",
+  "date": "2026-03-05",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 5 mars",
+   "en": "Brewery invoice, delivery of March 5"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04105",
+   "einvoice": "DGI-SFE-2026-008105",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 127,
+     "unit_price": 6100,
+     "amount": 774700
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 774700
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 149130
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 38735
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 962565
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-03-005",
+  "kind": "recu_caisse",
+  "date": "2026-03-15",
+  "title": {
+   "fr": "Quittance de loyer du dépôt, mars",
+   "en": "March depot rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Owona (fictif)"
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer",
+      "en": "Rent withholding"
+     },
+     "value": {
+      "fr": "Aucun : locataire à l'IGS, loyer payé brut",
+      "en": "None: IGS tenant, rent paid gross"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer payé en espèces",
+      "en": "Rent paid in cash"
+     },
+     "amount": 50000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-03-002",
+  "kind": "facture_achat",
+  "date": "2026-03-19",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 19 mars",
+   "en": "Brewery invoice, delivery of March 19"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04106",
+   "einvoice": "DGI-SFE-2026-008106",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 128,
+     "unit_price": 6100,
+     "amount": 780800
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 780800
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 150304
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 39040
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 970144
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-03-003",
+  "kind": "recu_caisse",
+  "date": "2026-03-31",
+  "title": {
+   "fr": "Brouillard de caisse de mars : ventes au comptant",
+   "en": "March cash book: cash sales"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers de bière 65 cl vendus (casier vide rendu)",
+      "en": "65 cl beer crates sold (empty crate returned)"
+     },
+     "qty": 170,
+     "unit_price": 8400,
+     "amount": 1428000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Recettes en espèces",
+      "en": "Cash receipts"
+     },
+     "role": "ht",
+     "amount": 1428000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-03-004",
+  "kind": "releve_momo",
+  "date": "2026-03-31",
+  "title": {
+   "fr": "Relevé Orange Money de mars",
+   "en": "March Orange Money statement"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers payés par Orange Money",
+      "en": "Crates paid by Orange Money"
+     },
+     "qty": 85,
+     "unit_price": 8400,
+     "amount": 714000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements",
+      "en": "Receipts"
+     },
+     "role": "ht",
+     "amount": 714000
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 4000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 710000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-03-006",
+  "kind": "recu_caisse",
+  "date": "2026-03-31",
+  "title": {
+   "fr": "Courses de pousse-pousse de mars",
+   "en": "March push-cart deliveries"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Livraisons aux clients, 10 casiers par course",
+      "en": "Deliveries to customers, 10 crates a trip"
+     },
+     "qty": 26,
+     "unit_price": 1500,
+     "amount": 39000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Payé en espèces aux pousseurs",
+      "en": "Paid in cash"
+     },
+     "role": "ht",
+     "amount": 39000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-03-007",
+  "kind": "recu_caisse",
+  "date": "2026-03-31",
+  "title": {
+   "fr": "Bordereaux de versement d'espèces de mars",
+   "en": "March cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versement du 15",
+      "en": "Deposit on the 15th"
+     },
+     "amount": 664000
+    },
+    {
+     "label": {
+      "fr": "Versement de fin de mois",
+      "en": "Month-end deposit"
+     },
+     "amount": 675000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-03-008",
+  "kind": "releve_bancaire",
+  "date": "2026-03-31",
+  "title": {
+   "fr": "Relevé bancaire de mars (Banque X)",
+   "en": "March bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versements d'espèces reçus",
+      "en": "Cash deposits received"
+     },
+     "amount": 1339000
+    },
+    {
+     "label": {
+      "fr": "Transfert reçu d'Orange Money",
+      "en": "Transfer received from Orange Money"
+     },
+     "amount": 710000
+    },
+    {
+     "label": {
+      "fr": "Virements à la brasserie",
+      "en": "Transfers to the brewery"
+     },
+     "amount": 1932709
+    },
+    {
+     "label": {
+      "fr": "Virement personnel de l'exploitante (prélèvement)",
+      "en": "Owner's personal transfer (drawings)"
+     },
+     "amount": 100000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-04-009",
+  "kind": "balance",
+  "date": "2026-04-01",
+  "title": {
+   "fr": "Balance au 31 mars 2026",
+   "en": "Trial balance at March 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "103 Capital personnel",
+      "en": "103 Sole proprietor's capital"
+     },
+     "credit": 3000000
+    },
+    {
+     "label": {
+      "fr": "1042 Opérations courantes",
+      "en": "1042 Current transactions"
+     },
+     "debit": 300000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 2771268
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 20000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 5760232
+    },
+    {
+     "label": {
+      "fr": "612 TRANSPORTS SUR VENTES",
+      "en": "612 Transport on sales"
+     },
+     "debit": 111000
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 150000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 19500
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 6132000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-04-001",
+  "kind": "facture_achat",
+  "date": "2026-04-06",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 6 avril",
+   "en": "Brewery invoice, delivery of April 6"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04107",
+   "einvoice": "DGI-SFE-2026-008107",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 125,
+     "unit_price": 6100,
+     "amount": 762500
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 762500
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 146782
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 38125
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 947407
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-04-005",
+  "kind": "recu_caisse",
+  "date": "2026-04-15",
+  "title": {
+   "fr": "Quittance de loyer du dépôt, avril",
+   "en": "April depot rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Owona (fictif)"
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer",
+      "en": "Rent withholding"
+     },
+     "value": {
+      "fr": "Aucun : locataire à l'IGS, loyer payé brut",
+      "en": "None: IGS tenant, rent paid gross"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer payé en espèces",
+      "en": "Rent paid in cash"
+     },
+     "amount": 50000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-04-002",
+  "kind": "facture_achat",
+  "date": "2026-04-20",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 20 avril",
+   "en": "Brewery invoice, delivery of April 20"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04108",
+   "einvoice": "DGI-SFE-2026-008108",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 125,
+     "unit_price": 6100,
+     "amount": 762500
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 762500
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 146782
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 38125
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 947407
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-04-003",
+  "kind": "recu_caisse",
+  "date": "2026-04-30",
+  "title": {
+   "fr": "Brouillard de caisse de avril : ventes au comptant",
+   "en": "April cash book: cash sales"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers de bière 65 cl vendus (casier vide rendu)",
+      "en": "65 cl beer crates sold (empty crate returned)"
+     },
+     "qty": 167,
+     "unit_price": 8400,
+     "amount": 1402800
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Recettes en espèces",
+      "en": "Cash receipts"
+     },
+     "role": "ht",
+     "amount": 1402800
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-04-004",
+  "kind": "releve_momo",
+  "date": "2026-04-30",
+  "title": {
+   "fr": "Relevé Orange Money de avril",
+   "en": "April Orange Money statement"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers payés par Orange Money",
+      "en": "Crates paid by Orange Money"
+     },
+     "qty": 83,
+     "unit_price": 8400,
+     "amount": 697200
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements",
+      "en": "Receipts"
+     },
+     "role": "ht",
+     "amount": 697200
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 4000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 693200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-04-006",
+  "kind": "recu_caisse",
+  "date": "2026-04-30",
+  "title": {
+   "fr": "Courses de pousse-pousse de avril",
+   "en": "April push-cart deliveries"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Livraisons aux clients, 10 casiers par course",
+      "en": "Deliveries to customers, 10 crates a trip"
+     },
+     "qty": 25,
+     "unit_price": 1500,
+     "amount": 37500
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Payé en espèces aux pousseurs",
+      "en": "Paid in cash"
+     },
+     "role": "ht",
+     "amount": 37500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-04-007",
+  "kind": "recu_caisse",
+  "date": "2026-04-30",
+  "title": {
+   "fr": "Bordereaux de versement d'espèces de avril",
+   "en": "April cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versement du 15",
+      "en": "Deposit on the 15th"
+     },
+     "amount": 647000
+    },
+    {
+     "label": {
+      "fr": "Versement de fin de mois",
+      "en": "Month-end deposit"
+     },
+     "amount": 668300
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-04-008",
+  "kind": "releve_bancaire",
+  "date": "2026-04-30",
+  "title": {
+   "fr": "Relevé bancaire de avril (Banque X)",
+   "en": "April bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versements d'espèces reçus",
+      "en": "Cash deposits received"
+     },
+     "amount": 1315300
+    },
+    {
+     "label": {
+      "fr": "Transfert reçu d'Orange Money",
+      "en": "Transfer received from Orange Money"
+     },
+     "amount": 693200
+    },
+    {
+     "label": {
+      "fr": "Virements à la brasserie",
+      "en": "Transfers to the brewery"
+     },
+     "amount": 1894814
+    },
+    {
+     "label": {
+      "fr": "Virement personnel de l'exploitante (prélèvement)",
+      "en": "Owner's personal transfer (drawings)"
+     },
+     "amount": 100000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-05-009",
+  "kind": "balance",
+  "date": "2026-05-01",
+  "title": {
+   "fr": "Balance au 30 avril 2026",
+   "en": "Trial balance at April 30, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "103 Capital personnel",
+      "en": "103 Sole proprietor's capital"
+     },
+     "credit": 3000000
+    },
+    {
+     "label": {
+      "fr": "1042 Opérations courantes",
+      "en": "1042 Current transactions"
+     },
+     "debit": 400000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 2782454
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 20000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 7655046
+    },
+    {
+     "label": {
+      "fr": "612 TRANSPORTS SUR VENTES",
+      "en": "612 Transport on sales"
+     },
+     "debit": 148500
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 200000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 26000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 8232000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-05-001",
+  "kind": "facture_achat",
+  "date": "2026-05-05",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 5 mai",
+   "en": "Brewery invoice, delivery of May 5"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04109",
+   "einvoice": "DGI-SFE-2026-008109",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 127,
+     "unit_price": 6100,
+     "amount": 774700
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 774700
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 149130
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 38735
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 962565
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-05-005",
+  "kind": "recu_caisse",
+  "date": "2026-05-15",
+  "title": {
+   "fr": "Quittance de loyer du dépôt, mai",
+   "en": "May depot rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Owona (fictif)"
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer",
+      "en": "Rent withholding"
+     },
+     "value": {
+      "fr": "Aucun : locataire à l'IGS, loyer payé brut",
+      "en": "None: IGS tenant, rent paid gross"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer payé en espèces",
+      "en": "Rent paid in cash"
+     },
+     "amount": 50000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-05-002",
+  "kind": "facture_achat",
+  "date": "2026-05-19",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 19 mai",
+   "en": "Brewery invoice, delivery of May 19"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04110",
+   "einvoice": "DGI-SFE-2026-008110",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 128,
+     "unit_price": 6100,
+     "amount": 780800
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 780800
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 150304
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 39040
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 970144
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-05-003",
+  "kind": "recu_caisse",
+  "date": "2026-05-31",
+  "title": {
+   "fr": "Brouillard de caisse de mai : ventes au comptant",
+   "en": "May cash book: cash sales"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers de bière 65 cl vendus (casier vide rendu)",
+      "en": "65 cl beer crates sold (empty crate returned)"
+     },
+     "qty": 170,
+     "unit_price": 8400,
+     "amount": 1428000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Recettes en espèces",
+      "en": "Cash receipts"
+     },
+     "role": "ht",
+     "amount": 1428000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-05-004",
+  "kind": "releve_momo",
+  "date": "2026-05-31",
+  "title": {
+   "fr": "Relevé Orange Money de mai",
+   "en": "May Orange Money statement"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers payés par Orange Money",
+      "en": "Crates paid by Orange Money"
+     },
+     "qty": 85,
+     "unit_price": 8400,
+     "amount": 714000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements",
+      "en": "Receipts"
+     },
+     "role": "ht",
+     "amount": 714000
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 4000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 710000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-05-006",
+  "kind": "recu_caisse",
+  "date": "2026-05-31",
+  "title": {
+   "fr": "Courses de pousse-pousse de mai",
+   "en": "May push-cart deliveries"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Livraisons aux clients, 10 casiers par course",
+      "en": "Deliveries to customers, 10 crates a trip"
+     },
+     "qty": 26,
+     "unit_price": 1500,
+     "amount": 39000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Payé en espèces aux pousseurs",
+      "en": "Paid in cash"
+     },
+     "role": "ht",
+     "amount": 39000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-05-007",
+  "kind": "recu_caisse",
+  "date": "2026-05-31",
+  "title": {
+   "fr": "Bordereaux de versement d'espèces de mai",
+   "en": "May cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versement du 15",
+      "en": "Deposit on the 15th"
+     },
+     "amount": 664000
+    },
+    {
+     "label": {
+      "fr": "Versement de fin de mois",
+      "en": "Month-end deposit"
+     },
+     "amount": 675000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-05-008",
+  "kind": "releve_bancaire",
+  "date": "2026-05-31",
+  "title": {
+   "fr": "Relevé bancaire de mai (Banque X)",
+   "en": "May bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versements d'espèces reçus",
+      "en": "Cash deposits received"
+     },
+     "amount": 1339000
+    },
+    {
+     "label": {
+      "fr": "Transfert reçu d'Orange Money",
+      "en": "Transfer received from Orange Money"
+     },
+     "amount": 710000
+    },
+    {
+     "label": {
+      "fr": "Virements à la brasserie",
+      "en": "Transfers to the brewery"
+     },
+     "amount": 1932709
+    },
+    {
+     "label": {
+      "fr": "Virement personnel de l'exploitante (prélèvement)",
+      "en": "Owner's personal transfer (drawings)"
+     },
+     "amount": 100000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-06-009",
+  "kind": "balance",
+  "date": "2026-06-01",
+  "title": {
+   "fr": "Balance au 31 mai 2026",
+   "en": "Trial balance at May 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "103 Capital personnel",
+      "en": "103 Sole proprietor's capital"
+     },
+     "credit": 3000000
+    },
+    {
+     "label": {
+      "fr": "1042 Opérations courantes",
+      "en": "1042 Current transactions"
+     },
+     "debit": 500000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 2796245
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 20000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 9587755
+    },
+    {
+     "label": {
+      "fr": "612 TRANSPORTS SUR VENTES",
+      "en": "612 Transport on sales"
+     },
+     "debit": 187500
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 250000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 32500
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 10374000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-06-001",
+  "kind": "facture_achat",
+  "date": "2026-06-05",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 5 juin",
+   "en": "Brewery invoice, delivery of June 5"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04111",
+   "einvoice": "DGI-SFE-2026-008111",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 122,
+     "unit_price": 6100,
+     "amount": 744200
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 744200
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 143259
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 37210
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 924669
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-06-005",
+  "kind": "recu_caisse",
+  "date": "2026-06-15",
+  "title": {
+   "fr": "Quittance de loyer du dépôt, juin",
+   "en": "June depot rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Owona (fictif)"
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer",
+      "en": "Rent withholding"
+     },
+     "value": {
+      "fr": "Aucun : locataire à l'IGS, loyer payé brut",
+      "en": "None: IGS tenant, rent paid gross"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer payé en espèces",
+      "en": "Rent paid in cash"
+     },
+     "amount": 50000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-06-002",
+  "kind": "facture_achat",
+  "date": "2026-06-19",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 19 juin",
+   "en": "Brewery invoice, delivery of June 19"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04112",
+   "einvoice": "DGI-SFE-2026-008112",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 123,
+     "unit_price": 6100,
+     "amount": 750300
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 750300
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 144433
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 37515
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 932248
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-06-003",
+  "kind": "recu_caisse",
+  "date": "2026-06-30",
+  "title": {
+   "fr": "Brouillard de caisse de juin : ventes au comptant",
+   "en": "June cash book: cash sales"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers de bière 65 cl vendus (casier vide rendu)",
+      "en": "65 cl beer crates sold (empty crate returned)"
+     },
+     "qty": 164,
+     "unit_price": 8400,
+     "amount": 1377600
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Recettes en espèces",
+      "en": "Cash receipts"
+     },
+     "role": "ht",
+     "amount": 1377600
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-06-004",
+  "kind": "releve_momo",
+  "date": "2026-06-30",
+  "title": {
+   "fr": "Relevé Orange Money de juin",
+   "en": "June Orange Money statement"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers payés par Orange Money",
+      "en": "Crates paid by Orange Money"
+     },
+     "qty": 81,
+     "unit_price": 8400,
+     "amount": 680400
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements",
+      "en": "Receipts"
+     },
+     "role": "ht",
+     "amount": 680400
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 4000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 676400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-06-006",
+  "kind": "recu_caisse",
+  "date": "2026-06-30",
+  "title": {
+   "fr": "Courses de pousse-pousse de juin",
+   "en": "June push-cart deliveries"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Livraisons aux clients, 10 casiers par course",
+      "en": "Deliveries to customers, 10 crates a trip"
+     },
+     "qty": 25,
+     "unit_price": 1500,
+     "amount": 37500
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Payé en espèces aux pousseurs",
+      "en": "Paid in cash"
+     },
+     "role": "ht",
+     "amount": 37500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-06-007",
+  "kind": "recu_caisse",
+  "date": "2026-06-30",
+  "title": {
+   "fr": "Bordereaux de versement d'espèces de juin",
+   "en": "June cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versement du 15",
+      "en": "Deposit on the 15th"
+     },
+     "amount": 638000
+    },
+    {
+     "label": {
+      "fr": "Versement de fin de mois",
+      "en": "Month-end deposit"
+     },
+     "amount": 652100
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-06-008",
+  "kind": "releve_bancaire",
+  "date": "2026-06-30",
+  "title": {
+   "fr": "Relevé bancaire de juin (Banque X)",
+   "en": "June bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versements d'espèces reçus",
+      "en": "Cash deposits received"
+     },
+     "amount": 1290100
+    },
+    {
+     "label": {
+      "fr": "Transfert reçu d'Orange Money",
+      "en": "Transfer received from Orange Money"
+     },
+     "amount": 676400
+    },
+    {
+     "label": {
+      "fr": "Virements à la brasserie",
+      "en": "Transfers to the brewery"
+     },
+     "amount": 1856917
+    },
+    {
+     "label": {
+      "fr": "Virement personnel de l'exploitante (prélèvement)",
+      "en": "Owner's personal transfer (drawings)"
+     },
+     "amount": 100000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-07-009",
+  "kind": "balance",
+  "date": "2026-07-01",
+  "title": {
+   "fr": "Balance au 30 juin 2026",
+   "en": "Trial balance at June 30, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "103 Capital personnel",
+      "en": "103 Sole proprietor's capital"
+     },
+     "credit": 3000000
+    },
+    {
+     "label": {
+      "fr": "1042 Opérations courantes",
+      "en": "1042 Current transactions"
+     },
+     "debit": 600000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 2803328
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 20000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 11444672
+    },
+    {
+     "label": {
+      "fr": "612 TRANSPORTS SUR VENTES",
+      "en": "612 Transport on sales"
+     },
+     "debit": 225000
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 300000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 39000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 12432000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-07-001",
+  "kind": "facture_achat",
+  "date": "2026-07-06",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 6 juillet",
+   "en": "Brewery invoice, delivery of July 6"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04113",
+   "einvoice": "DGI-SFE-2026-008113",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 125,
+     "unit_price": 6160,
+     "amount": 770000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 770000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 148225
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 38500
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 956725
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-07-005",
+  "kind": "recu_caisse",
+  "date": "2026-07-15",
+  "title": {
+   "fr": "Quittance de loyer du dépôt, juillet",
+   "en": "July depot rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Owona (fictif)"
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer",
+      "en": "Rent withholding"
+     },
+     "value": {
+      "fr": "Aucun : locataire à l'IGS, loyer payé brut",
+      "en": "None: IGS tenant, rent paid gross"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer payé en espèces",
+      "en": "Rent paid in cash"
+     },
+     "amount": 50000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-07-002",
+  "kind": "facture_achat",
+  "date": "2026-07-20",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 20 juillet",
+   "en": "Brewery invoice, delivery of July 20"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04114",
+   "einvoice": "DGI-SFE-2026-008114",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 125,
+     "unit_price": 6160,
+     "amount": 770000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 770000
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 148225
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 38500
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 956725
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-07-003",
+  "kind": "recu_caisse",
+  "date": "2026-07-31",
+  "title": {
+   "fr": "Brouillard de caisse de juillet : ventes au comptant",
+   "en": "July cash book: cash sales"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers de bière 65 cl vendus (casier vide rendu)",
+      "en": "65 cl beer crates sold (empty crate returned)"
+     },
+     "qty": 167,
+     "unit_price": 8400,
+     "amount": 1402800
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Recettes en espèces",
+      "en": "Cash receipts"
+     },
+     "role": "ht",
+     "amount": 1402800
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-07-004",
+  "kind": "releve_momo",
+  "date": "2026-07-31",
+  "title": {
+   "fr": "Relevé Orange Money de juillet",
+   "en": "July Orange Money statement"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers payés par Orange Money",
+      "en": "Crates paid by Orange Money"
+     },
+     "qty": 83,
+     "unit_price": 8400,
+     "amount": 697200
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements",
+      "en": "Receipts"
+     },
+     "role": "ht",
+     "amount": 697200
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 4000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 693200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-07-006",
+  "kind": "recu_caisse",
+  "date": "2026-07-31",
+  "title": {
+   "fr": "Courses de pousse-pousse de juillet",
+   "en": "July push-cart deliveries"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Livraisons aux clients, 10 casiers par course",
+      "en": "Deliveries to customers, 10 crates a trip"
+     },
+     "qty": 25,
+     "unit_price": 1500,
+     "amount": 37500
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Payé en espèces aux pousseurs",
+      "en": "Paid in cash"
+     },
+     "role": "ht",
+     "amount": 37500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-07-007",
+  "kind": "recu_caisse",
+  "date": "2026-07-31",
+  "title": {
+   "fr": "Bordereaux de versement d'espèces de juillet",
+   "en": "July cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versement du 15",
+      "en": "Deposit on the 15th"
+     },
+     "amount": 647000
+    },
+    {
+     "label": {
+      "fr": "Versement de fin de mois",
+      "en": "Month-end deposit"
+     },
+     "amount": 668300
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-07-008",
+  "kind": "releve_bancaire",
+  "date": "2026-07-31",
+  "title": {
+   "fr": "Relevé bancaire de juillet (Banque X)",
+   "en": "July bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versements d'espèces reçus",
+      "en": "Cash deposits received"
+     },
+     "amount": 1315300
+    },
+    {
+     "label": {
+      "fr": "Transfert reçu d'Orange Money",
+      "en": "Transfer received from Orange Money"
+     },
+     "amount": 693200
+    },
+    {
+     "label": {
+      "fr": "Virements à la brasserie",
+      "en": "Transfers to the brewery"
+     },
+     "amount": 1913450
+    },
+    {
+     "label": {
+      "fr": "Virement personnel de l'exploitante (prélèvement)",
+      "en": "Owner's personal transfer (drawings)"
+     },
+     "amount": 100000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-08-009",
+  "kind": "balance",
+  "date": "2026-08-01",
+  "title": {
+   "fr": "Balance au 31 juillet 2026",
+   "en": "Trial balance at July 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "103 Capital personnel",
+      "en": "103 Sole proprietor's capital"
+     },
+     "credit": 3000000
+    },
+    {
+     "label": {
+      "fr": "1042 Opérations courantes",
+      "en": "1042 Current transactions"
+     },
+     "debit": 700000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 2795878
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 20000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 13358122
+    },
+    {
+     "label": {
+      "fr": "612 TRANSPORTS SUR VENTES",
+      "en": "612 Transport on sales"
+     },
+     "debit": 262500
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 350000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 45500
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 14532000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-08-001",
+  "kind": "facture_achat",
+  "date": "2026-08-05",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 5 août",
+   "en": "Brewery invoice, delivery of August 5"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04115",
+   "einvoice": "DGI-SFE-2026-008115",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 127,
+     "unit_price": 6160,
+     "amount": 782320
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 782320
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 150597
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 39116
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 972033
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-08-005",
+  "kind": "recu_caisse",
+  "date": "2026-08-15",
+  "title": {
+   "fr": "Quittance de loyer du dépôt, août",
+   "en": "August depot rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Owona (fictif)"
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer",
+      "en": "Rent withholding"
+     },
+     "value": {
+      "fr": "Aucun : locataire à l'IGS, loyer payé brut",
+      "en": "None: IGS tenant, rent paid gross"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer payé en espèces",
+      "en": "Rent paid in cash"
+     },
+     "amount": 50000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-08-002",
+  "kind": "facture_achat",
+  "date": "2026-08-19",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 19 août",
+   "en": "Brewery invoice, delivery of August 19"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04116",
+   "einvoice": "DGI-SFE-2026-008116",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 128,
+     "unit_price": 6160,
+     "amount": 788480
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 788480
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 151782
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 39424
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 979686
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-08-003",
+  "kind": "recu_caisse",
+  "date": "2026-08-31",
+  "title": {
+   "fr": "Brouillard de caisse de août : ventes au comptant",
+   "en": "August cash book: cash sales"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers de bière 65 cl vendus (casier vide rendu)",
+      "en": "65 cl beer crates sold (empty crate returned)"
+     },
+     "qty": 170,
+     "unit_price": 8400,
+     "amount": 1428000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Recettes en espèces",
+      "en": "Cash receipts"
+     },
+     "role": "ht",
+     "amount": 1428000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-08-004",
+  "kind": "releve_momo",
+  "date": "2026-08-31",
+  "title": {
+   "fr": "Relevé Orange Money de août",
+   "en": "August Orange Money statement"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers payés par Orange Money",
+      "en": "Crates paid by Orange Money"
+     },
+     "qty": 85,
+     "unit_price": 8400,
+     "amount": 714000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements",
+      "en": "Receipts"
+     },
+     "role": "ht",
+     "amount": 714000
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 4000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 710000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-08-006",
+  "kind": "recu_caisse",
+  "date": "2026-08-31",
+  "title": {
+   "fr": "Courses de pousse-pousse de août",
+   "en": "August push-cart deliveries"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Livraisons aux clients, 10 casiers par course",
+      "en": "Deliveries to customers, 10 crates a trip"
+     },
+     "qty": 26,
+     "unit_price": 1500,
+     "amount": 39000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Payé en espèces aux pousseurs",
+      "en": "Paid in cash"
+     },
+     "role": "ht",
+     "amount": 39000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-08-007",
+  "kind": "recu_caisse",
+  "date": "2026-08-31",
+  "title": {
+   "fr": "Bordereaux de versement d'espèces de août",
+   "en": "August cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versement du 15",
+      "en": "Deposit on the 15th"
+     },
+     "amount": 664000
+    },
+    {
+     "label": {
+      "fr": "Versement de fin de mois",
+      "en": "Month-end deposit"
+     },
+     "amount": 675000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-08-008",
+  "kind": "releve_bancaire",
+  "date": "2026-08-31",
+  "title": {
+   "fr": "Relevé bancaire de août (Banque X)",
+   "en": "August bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versements d'espèces reçus",
+      "en": "Cash deposits received"
+     },
+     "amount": 1339000
+    },
+    {
+     "label": {
+      "fr": "Transfert reçu d'Orange Money",
+      "en": "Transfer received from Orange Money"
+     },
+     "amount": 710000
+    },
+    {
+     "label": {
+      "fr": "Virements à la brasserie",
+      "en": "Transfers to the brewery"
+     },
+     "amount": 1951719
+    },
+    {
+     "label": {
+      "fr": "Virement personnel de l'exploitante (prélèvement)",
+      "en": "Owner's personal transfer (drawings)"
+     },
+     "amount": 100000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-09-009",
+  "kind": "balance",
+  "date": "2026-09-01",
+  "title": {
+   "fr": "Balance au 31 août 2026",
+   "en": "Trial balance at August 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "103 Capital personnel",
+      "en": "103 Sole proprietor's capital"
+     },
+     "credit": 3000000
+    },
+    {
+     "label": {
+      "fr": "1042 Opérations courantes",
+      "en": "1042 Current transactions"
+     },
+     "debit": 800000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 2790659
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 20000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 15309841
+    },
+    {
+     "label": {
+      "fr": "612 TRANSPORTS SUR VENTES",
+      "en": "612 Transport on sales"
+     },
+     "debit": 301500
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 400000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 52000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 16674000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-09-001",
+  "kind": "facture_achat",
+  "date": "2026-09-05",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 5 septembre",
+   "en": "Brewery invoice, delivery of September 5"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04117",
+   "einvoice": "DGI-SFE-2026-008117",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 130,
+     "unit_price": 6160,
+     "amount": 800800
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 800800
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 154154
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 40040
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 994994
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-09-005",
+  "kind": "recu_caisse",
+  "date": "2026-09-15",
+  "title": {
+   "fr": "Quittance de loyer du dépôt, septembre",
+   "en": "September depot rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Owona (fictif)"
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer",
+      "en": "Rent withholding"
+     },
+     "value": {
+      "fr": "Aucun : locataire à l'IGS, loyer payé brut",
+      "en": "None: IGS tenant, rent paid gross"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer payé en espèces",
+      "en": "Rent paid in cash"
+     },
+     "amount": 50000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-09-002",
+  "kind": "facture_achat",
+  "date": "2026-09-19",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 19 septembre",
+   "en": "Brewery invoice, delivery of September 19"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04118",
+   "einvoice": "DGI-SFE-2026-008118",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 130,
+     "unit_price": 6160,
+     "amount": 800800
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 800800
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 154154
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 40040
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 994994
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-09-003",
+  "kind": "recu_caisse",
+  "date": "2026-09-30",
+  "title": {
+   "fr": "Brouillard de caisse de septembre : ventes au comptant",
+   "en": "September cash book: cash sales"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers de bière 65 cl vendus (casier vide rendu)",
+      "en": "65 cl beer crates sold (empty crate returned)"
+     },
+     "qty": 174,
+     "unit_price": 8400,
+     "amount": 1461600
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Recettes en espèces",
+      "en": "Cash receipts"
+     },
+     "role": "ht",
+     "amount": 1461600
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-09-004",
+  "kind": "releve_momo",
+  "date": "2026-09-30",
+  "title": {
+   "fr": "Relevé Orange Money de septembre",
+   "en": "September Orange Money statement"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers payés par Orange Money",
+      "en": "Crates paid by Orange Money"
+     },
+     "qty": 86,
+     "unit_price": 8400,
+     "amount": 722400
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements",
+      "en": "Receipts"
+     },
+     "role": "ht",
+     "amount": 722400
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 4000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 718400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-09-006",
+  "kind": "recu_caisse",
+  "date": "2026-09-30",
+  "title": {
+   "fr": "Courses de pousse-pousse de septembre",
+   "en": "September push-cart deliveries"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Livraisons aux clients, 10 casiers par course",
+      "en": "Deliveries to customers, 10 crates a trip"
+     },
+     "qty": 26,
+     "unit_price": 1500,
+     "amount": 39000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Payé en espèces aux pousseurs",
+      "en": "Paid in cash"
+     },
+     "role": "ht",
+     "amount": 39000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-09-007",
+  "kind": "recu_caisse",
+  "date": "2026-09-30",
+  "title": {
+   "fr": "Bordereaux de versement d'espèces de septembre",
+   "en": "September cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versement du 15",
+      "en": "Deposit on the 15th"
+     },
+     "amount": 680000
+    },
+    {
+     "label": {
+      "fr": "Versement de fin de mois",
+      "en": "Month-end deposit"
+     },
+     "amount": 692600
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-09-008",
+  "kind": "releve_bancaire",
+  "date": "2026-09-30",
+  "title": {
+   "fr": "Relevé bancaire de septembre (Banque X)",
+   "en": "September bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versements d'espèces reçus",
+      "en": "Cash deposits received"
+     },
+     "amount": 1372600
+    },
+    {
+     "label": {
+      "fr": "Transfert reçu d'Orange Money",
+      "en": "Transfer received from Orange Money"
+     },
+     "amount": 718400
+    },
+    {
+     "label": {
+      "fr": "Virements à la brasserie",
+      "en": "Transfers to the brewery"
+     },
+     "amount": 1989988
+    },
+    {
+     "label": {
+      "fr": "Virement personnel de l'exploitante (prélèvement)",
+      "en": "Owner's personal transfer (drawings)"
+     },
+     "amount": 100000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-10-009",
+  "kind": "balance",
+  "date": "2026-10-01",
+  "title": {
+   "fr": "Balance au 30 septembre 2026",
+   "en": "Trial balance at September 30, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "103 Capital personnel",
+      "en": "103 Sole proprietor's capital"
+     },
+     "credit": 3000000
+    },
+    {
+     "label": {
+      "fr": "1042 Opérations courantes",
+      "en": "1042 Current transactions"
+     },
+     "debit": 900000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 2789171
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 20000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 17299829
+    },
+    {
+     "label": {
+      "fr": "612 TRANSPORTS SUR VENTES",
+      "en": "612 Transport on sales"
+     },
+     "debit": 340500
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 450000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 58500
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 18858000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-10-001",
+  "kind": "facture_achat",
+  "date": "2026-10-05",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 5 octobre",
+   "en": "Brewery invoice, delivery of October 5"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04119",
+   "einvoice": "DGI-SFE-2026-008119",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 132,
+     "unit_price": 6160,
+     "amount": 813120
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 813120
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 156526
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 40656
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 1010302
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-10-005",
+  "kind": "recu_caisse",
+  "date": "2026-10-15",
+  "title": {
+   "fr": "Quittance de loyer du dépôt, octobre",
+   "en": "October depot rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Owona (fictif)"
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer",
+      "en": "Rent withholding"
+     },
+     "value": {
+      "fr": "Aucun : locataire à l'IGS, loyer payé brut",
+      "en": "None: IGS tenant, rent paid gross"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer payé en espèces",
+      "en": "Rent paid in cash"
+     },
+     "amount": 50000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-10-002",
+  "kind": "facture_achat",
+  "date": "2026-10-19",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 19 octobre",
+   "en": "Brewery invoice, delivery of October 19"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04120",
+   "einvoice": "DGI-SFE-2026-008120",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 133,
+     "unit_price": 6160,
+     "amount": 819280
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 819280
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 157711
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 40964
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 1017955
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-10-003",
+  "kind": "recu_caisse",
+  "date": "2026-10-31",
+  "title": {
+   "fr": "Brouillard de caisse de octobre : ventes au comptant",
+   "en": "October cash book: cash sales"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers de bière 65 cl vendus (casier vide rendu)",
+      "en": "65 cl beer crates sold (empty crate returned)"
+     },
+     "qty": 177,
+     "unit_price": 8400,
+     "amount": 1486800
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Recettes en espèces",
+      "en": "Cash receipts"
+     },
+     "role": "ht",
+     "amount": 1486800
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-10-004",
+  "kind": "releve_momo",
+  "date": "2026-10-31",
+  "title": {
+   "fr": "Relevé Orange Money de octobre",
+   "en": "October Orange Money statement"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers payés par Orange Money",
+      "en": "Crates paid by Orange Money"
+     },
+     "qty": 88,
+     "unit_price": 8400,
+     "amount": 739200
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements",
+      "en": "Receipts"
+     },
+     "role": "ht",
+     "amount": 739200
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 4000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 735200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-10-006",
+  "kind": "recu_caisse",
+  "date": "2026-10-31",
+  "title": {
+   "fr": "Courses de pousse-pousse de octobre",
+   "en": "October push-cart deliveries"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Livraisons aux clients, 10 casiers par course",
+      "en": "Deliveries to customers, 10 crates a trip"
+     },
+     "qty": 27,
+     "unit_price": 1500,
+     "amount": 40500
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Payé en espèces aux pousseurs",
+      "en": "Paid in cash"
+     },
+     "role": "ht",
+     "amount": 40500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-10-007",
+  "kind": "recu_caisse",
+  "date": "2026-10-31",
+  "title": {
+   "fr": "Bordereaux de versement d'espèces de octobre",
+   "en": "October cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versement du 15",
+      "en": "Deposit on the 15th"
+     },
+     "amount": 689000
+    },
+    {
+     "label": {
+      "fr": "Versement de fin de mois",
+      "en": "Month-end deposit"
+     },
+     "amount": 707300
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-10-008",
+  "kind": "releve_bancaire",
+  "date": "2026-10-31",
+  "title": {
+   "fr": "Relevé bancaire de octobre (Banque X)",
+   "en": "October bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versements d'espèces reçus",
+      "en": "Cash deposits received"
+     },
+     "amount": 1396300
+    },
+    {
+     "label": {
+      "fr": "Transfert reçu d'Orange Money",
+      "en": "Transfer received from Orange Money"
+     },
+     "amount": 735200
+    },
+    {
+     "label": {
+      "fr": "Virements à la brasserie",
+      "en": "Transfers to the brewery"
+     },
+     "amount": 2028257
+    },
+    {
+     "label": {
+      "fr": "Virement personnel de l'exploitante (prélèvement)",
+      "en": "Owner's personal transfer (drawings)"
+     },
+     "amount": 100000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-11-009",
+  "kind": "balance",
+  "date": "2026-11-01",
+  "title": {
+   "fr": "Balance au 31 octobre 2026",
+   "en": "Trial balance at October 31, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "103 Capital personnel",
+      "en": "103 Sole proprietor's capital"
+     },
+     "credit": 3000000
+    },
+    {
+     "label": {
+      "fr": "1042 Opérations courantes",
+      "en": "1042 Current transactions"
+     },
+     "debit": 1000000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 2789914
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 20000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 19328086
+    },
+    {
+     "label": {
+      "fr": "612 TRANSPORTS SUR VENTES",
+      "en": "612 Transport on sales"
+     },
+     "debit": 381000
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 500000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 65000
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 21084000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-11-001",
+  "kind": "facture_achat",
+  "date": "2026-11-05",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 5 novembre",
+   "en": "Brewery invoice, delivery of November 5"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04121",
+   "einvoice": "DGI-SFE-2026-008121",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 140,
+     "unit_price": 6160,
+     "amount": 862400
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 862400
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 166012
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 43120
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 1071532
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-11-005",
+  "kind": "recu_caisse",
+  "date": "2026-11-15",
+  "title": {
+   "fr": "Quittance de loyer du dépôt, novembre",
+   "en": "November depot rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Owona (fictif)"
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer",
+      "en": "Rent withholding"
+     },
+     "value": {
+      "fr": "Aucun : locataire à l'IGS, loyer payé brut",
+      "en": "None: IGS tenant, rent paid gross"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer payé en espèces",
+      "en": "Rent paid in cash"
+     },
+     "amount": 50000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-11-002",
+  "kind": "facture_achat",
+  "date": "2026-11-19",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 19 novembre",
+   "en": "Brewery invoice, delivery of November 19"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04122",
+   "einvoice": "DGI-SFE-2026-008122",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 140,
+     "unit_price": 6160,
+     "amount": 862400
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 862400
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 166012
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 43120
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 1071532
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-11-003",
+  "kind": "recu_caisse",
+  "date": "2026-11-30",
+  "title": {
+   "fr": "Brouillard de caisse de novembre : ventes au comptant",
+   "en": "November cash book: cash sales"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers de bière 65 cl vendus (casier vide rendu)",
+      "en": "65 cl beer crates sold (empty crate returned)"
+     },
+     "qty": 187,
+     "unit_price": 8400,
+     "amount": 1570800
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Recettes en espèces",
+      "en": "Cash receipts"
+     },
+     "role": "ht",
+     "amount": 1570800
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-11-004",
+  "kind": "releve_momo",
+  "date": "2026-11-30",
+  "title": {
+   "fr": "Relevé Orange Money de novembre",
+   "en": "November Orange Money statement"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers payés par Orange Money",
+      "en": "Crates paid by Orange Money"
+     },
+     "qty": 93,
+     "unit_price": 8400,
+     "amount": 781200
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements",
+      "en": "Receipts"
+     },
+     "role": "ht",
+     "amount": 781200
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 4000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 777200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-11-006",
+  "kind": "recu_caisse",
+  "date": "2026-11-30",
+  "title": {
+   "fr": "Courses de pousse-pousse de novembre",
+   "en": "November push-cart deliveries"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Livraisons aux clients, 10 casiers par course",
+      "en": "Deliveries to customers, 10 crates a trip"
+     },
+     "qty": 28,
+     "unit_price": 1500,
+     "amount": 42000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Payé en espèces aux pousseurs",
+      "en": "Paid in cash"
+     },
+     "role": "ht",
+     "amount": 42000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-11-007",
+  "kind": "recu_caisse",
+  "date": "2026-11-30",
+  "title": {
+   "fr": "Bordereaux de versement d'espèces de novembre",
+   "en": "November cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versement du 15",
+      "en": "Deposit on the 15th"
+     },
+     "amount": 731000
+    },
+    {
+     "label": {
+      "fr": "Versement de fin de mois",
+      "en": "Month-end deposit"
+     },
+     "amount": 747800
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-11-008",
+  "kind": "releve_bancaire",
+  "date": "2026-11-30",
+  "title": {
+   "fr": "Relevé bancaire de novembre (Banque X)",
+   "en": "November bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versements d'espèces reçus",
+      "en": "Cash deposits received"
+     },
+     "amount": 1478800
+    },
+    {
+     "label": {
+      "fr": "Transfert reçu d'Orange Money",
+      "en": "Transfer received from Orange Money"
+     },
+     "amount": 777200
+    },
+    {
+     "label": {
+      "fr": "Virements à la brasserie",
+      "en": "Transfers to the brewery"
+     },
+     "amount": 2143064
+    },
+    {
+     "label": {
+      "fr": "Virement personnel de l'exploitante (prélèvement)",
+      "en": "Owner's personal transfer (drawings)"
+     },
+     "amount": 100000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-12-010",
+  "kind": "balance",
+  "date": "2026-12-01",
+  "title": {
+   "fr": "Balance au 30 novembre 2026",
+   "en": "Trial balance at November 30, 2026"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "103 Capital personnel",
+      "en": "103 Sole proprietor's capital"
+     },
+     "credit": 3000000
+    },
+    {
+     "label": {
+      "fr": "1042 Opérations courantes",
+      "en": "1042 Current transactions"
+     },
+     "debit": 1100000
+    },
+    {
+     "label": {
+      "fr": "521 BANQUES LOCALES",
+      "en": "521 Local banks"
+     },
+     "debit": 2800350
+    },
+    {
+     "label": {
+      "fr": "5711 Caisse en monnaie nationale",
+      "en": "5711 Cash in national currency"
+     },
+     "debit": 20000
+    },
+    {
+     "label": {
+      "fr": "6011 Achats de marchandises dans la Région",
+      "en": "6011 Purchases of goods within the Region"
+     },
+     "debit": 21471150
+    },
+    {
+     "label": {
+      "fr": "612 TRANSPORTS SUR VENTES",
+      "en": "612 Transport on sales"
+     },
+     "debit": 423000
+    },
+    {
+     "label": {
+      "fr": "6222 Locations de bâtiments",
+      "en": "6222 Building rental"
+     },
+     "debit": 550000
+    },
+    {
+     "label": {
+      "fr": "631 FRAIS BANCAIRES",
+      "en": "631 Bank charges"
+     },
+     "debit": 71500
+    },
+    {
+     "label": {
+      "fr": "7011 Ventes de marchandises dans la Région",
+      "en": "7011 Sales of goods within the Region"
+     },
+     "credit": 23436000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-12-001",
+  "kind": "facture_achat",
+  "date": "2026-12-05",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 5 décembre",
+   "en": "Brewery invoice, delivery of December 5"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04123",
+   "einvoice": "DGI-SFE-2026-008123",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 170,
+     "unit_price": 6160,
+     "amount": 1047200
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 1047200
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 201586
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 52360
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 1301146
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-12-005",
+  "kind": "recu_caisse",
+  "date": "2026-12-15",
+  "title": {
+   "fr": "Quittance de loyer du dépôt, décembre",
+   "en": "December depot rent receipt"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Bailleur",
+      "en": "Landlord"
+     },
+     "value": "M. Owona (fictif)"
+    },
+    {
+     "label": {
+      "fr": "Précompte sur loyer",
+      "en": "Rent withholding"
+     },
+     "value": {
+      "fr": "Aucun : locataire à l'IGS, loyer payé brut",
+      "en": "None: IGS tenant, rent paid gross"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Loyer payé en espèces",
+      "en": "Rent paid in cash"
+     },
+     "amount": 50000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-12-002",
+  "kind": "facture_achat",
+  "date": "2026-12-19",
+  "title": {
+   "fr": "Facture de la brasserie, livraison du 19 décembre",
+   "en": "Brewery invoice, delivery of December 19"
+  },
+  "payload": {
+   "issuer": {
+    "name": "Brasseries de la Sanaga SA (fictive)",
+    "niu": "M019800000731S",
+    "rccm": "RC/YAO/1998/B/0071",
+    "regime": "réel",
+    "centre": "DGE",
+    "address": "Zone industrielle de Nsam, Yaoundé"
+   },
+   "customer": {
+    "name": "Ets Bilounga Boissons",
+    "niu": "P012600025517B"
+   },
+   "number": "BS-2026-04124",
+   "einvoice": "DGI-SFE-2026-008124",
+   "fields": [
+    {
+     "label": {
+      "fr": "Régime du client",
+      "en": "Customer's regime"
+     },
+     "value": {
+      "fr": "Contribuable à l'IGS : précompte de 5 %",
+      "en": "IGS taxpayer: 5% withholding"
+     }
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Bière 65 cl, casier de 12 (accises comprises)",
+      "en": "65 cl beer, crate of 12 (excise included)"
+     },
+     "qty": 170,
+     "unit_price": 6160,
+     "amount": 1047200
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Total HT",
+      "en": "Total excl. tax"
+     },
+     "role": "ht",
+     "amount": 1047200
+    },
+    {
+     "label": {
+      "fr": "TVA et CAC (19,25 %)",
+      "en": "VAT and council cents (19.25%)"
+     },
+     "role": "tax",
+     "amount": 201586
+    },
+    {
+     "label": {
+      "fr": "Précompte sur achats 5 %",
+      "en": "5% purchase withholding"
+     },
+     "role": "tax",
+     "amount": 52360
+    },
+    {
+     "label": {
+      "fr": "Net payé par virement",
+      "en": "Net paid by transfer"
+     },
+     "role": "ttc",
+     "amount": 1301146
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-12-003",
+  "kind": "recu_caisse",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Brouillard de caisse de décembre : ventes au comptant",
+   "en": "December cash book: cash sales"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers de bière 65 cl vendus (casier vide rendu)",
+      "en": "65 cl beer crates sold (empty crate returned)"
+     },
+     "qty": 227,
+     "unit_price": 8400,
+     "amount": 1906800
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Recettes en espèces",
+      "en": "Cash receipts"
+     },
+     "role": "ht",
+     "amount": 1906800
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-12-004",
+  "kind": "releve_momo",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Relevé Orange Money de décembre",
+   "en": "December Orange Money statement"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Casiers payés par Orange Money",
+      "en": "Crates paid by Orange Money"
+     },
+     "qty": 113,
+     "unit_price": 8400,
+     "amount": 949200
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Encaissements",
+      "en": "Receipts"
+     },
+     "role": "ht",
+     "amount": 949200
+    },
+    {
+     "label": {
+      "fr": "Frais de l'opérateur",
+      "en": "Operator fees"
+     },
+     "amount": 4000
+    },
+    {
+     "label": {
+      "fr": "Transfert vers la banque",
+      "en": "Transfer to the bank"
+     },
+     "amount": 945200
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-12-006",
+  "kind": "recu_caisse",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Courses de pousse-pousse de décembre",
+   "en": "December push-cart deliveries"
+  },
+  "payload": {
+   "lines": [
+    {
+     "label": {
+      "fr": "Livraisons aux clients, 10 casiers par course",
+      "en": "Deliveries to customers, 10 crates a trip"
+     },
+     "qty": 34,
+     "unit_price": 1500,
+     "amount": 51000
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Payé en espèces aux pousseurs",
+      "en": "Paid in cash"
+     },
+     "role": "ht",
+     "amount": 51000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-12-007",
+  "kind": "recu_caisse",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Bordereaux de versement d'espèces de décembre",
+   "en": "December cash deposit slips"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versement du 15",
+      "en": "Deposit on the 15th"
+     },
+     "amount": 899000
+    },
+    {
+     "label": {
+      "fr": "Versement de fin de mois",
+      "en": "Month-end deposit"
+     },
+     "amount": 906800
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-12-008",
+  "kind": "releve_bancaire",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Relevé bancaire de décembre (Banque X)",
+   "en": "December bank statement (Bank X)"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Versements d'espèces reçus",
+      "en": "Cash deposits received"
+     },
+     "amount": 1805800
+    },
+    {
+     "label": {
+      "fr": "Transfert reçu d'Orange Money",
+      "en": "Transfer received from Orange Money"
+     },
+     "amount": 945200
+    },
+    {
+     "label": {
+      "fr": "Virements à la brasserie",
+      "en": "Transfers to the brewery"
+     },
+     "amount": 2602292
+    },
+    {
+     "label": {
+      "fr": "Virement personnel de l'exploitante (prélèvement)",
+      "en": "Owner's personal transfer (drawings)"
+     },
+     "amount": 100000
+    },
+    {
+     "label": {
+      "fr": "Frais de tenue de compte",
+      "en": "Account fees"
+     },
+     "amount": 2500
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-12-009",
+  "kind": "fiche_stock",
+  "date": "2026-12-31",
+  "title": {
+   "fr": "Fiche de stock des casiers (inventaire du 31 décembre)",
+   "en": "Crate stock card (31 December count)"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Achetés / vendus / comptés au 31/12",
+      "en": "Bought / sold / counted at 31/12"
+     },
+     "value": "3160 / 3130 / 30"
+    }
+   ],
+   "lines": [
+    {
+     "label": {
+      "fr": "Lot de janvier",
+      "en": "January lot"
+     },
+     "qty": 260,
+     "unit_price": 6100,
+     "amount": 1586000
+    },
+    {
+     "label": {
+      "fr": "Lot de février",
+      "en": "February lot"
+     },
+     "qty": 245,
+     "unit_price": 6100,
+     "amount": 1494500
+    },
+    {
+     "label": {
+      "fr": "Lot de mars",
+      "en": "March lot"
+     },
+     "qty": 255,
+     "unit_price": 6100,
+     "amount": 1555500
+    },
+    {
+     "label": {
+      "fr": "Lot de avril",
+      "en": "April lot"
+     },
+     "qty": 250,
+     "unit_price": 6100,
+     "amount": 1525000
+    },
+    {
+     "label": {
+      "fr": "Lot de mai",
+      "en": "May lot"
+     },
+     "qty": 255,
+     "unit_price": 6100,
+     "amount": 1555500
+    },
+    {
+     "label": {
+      "fr": "Lot de juin",
+      "en": "June lot"
+     },
+     "qty": 245,
+     "unit_price": 6100,
+     "amount": 1494500
+    },
+    {
+     "label": {
+      "fr": "Lot de juillet",
+      "en": "July lot"
+     },
+     "qty": 250,
+     "unit_price": 6160,
+     "amount": 1540000
+    },
+    {
+     "label": {
+      "fr": "Lot de août",
+      "en": "August lot"
+     },
+     "qty": 255,
+     "unit_price": 6160,
+     "amount": 1570800
+    },
+    {
+     "label": {
+      "fr": "Lot de septembre",
+      "en": "September lot"
+     },
+     "qty": 260,
+     "unit_price": 6160,
+     "amount": 1601600
+    },
+    {
+     "label": {
+      "fr": "Lot de octobre",
+      "en": "October lot"
+     },
+     "qty": 265,
+     "unit_price": 6160,
+     "amount": 1632400
+    },
+    {
+     "label": {
+      "fr": "Lot de novembre",
+      "en": "November lot"
+     },
+     "qty": 280,
+     "unit_price": 6160,
+     "amount": 1724800
+    },
+    {
+     "label": {
+      "fr": "Lot de décembre",
+      "en": "December lot"
+     },
+     "qty": 340,
+     "unit_price": 6160,
+     "amount": 2094400
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-15-001",
+  "kind": "declaration",
+  "date": "2027-03-10",
+  "title": {
+   "fr": "Déclaration annuelle de revenus 2026 (art. 74)",
+   "en": "2026 yearly income return (art. 74)"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Contribuable",
+      "en": "Taxpayer"
+     },
+     "value": {
+      "fr": "Personne physique à l'IGS (CGI art. C 39 (4))",
+      "en": "Individual under the IGS"
+     }
+    },
+    {
+     "label": {
+      "fr": "Revenus de l'activité",
+      "en": "Business income"
+     },
+     "value": {
+      "fr": "Dépôt de boissons, IGS libératoire de l'IRPP (BIC)",
+      "en": "Drinks depot, IGS in full discharge of income tax"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "Chiffre d'affaires déclaré",
+      "en": "Turnover declared"
+     },
+     "amount": 26292000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-16-001",
+  "kind": "declaration",
+  "date": "2027-04-09",
+  "title": {
+   "fr": "Déclaration annuelle de l'IGS 2026",
+   "en": "2026 yearly IGS return"
+  },
+  "payload": {
+   "fields": [
+    {
+     "label": {
+      "fr": "Chiffre d'affaires HT 2026",
+      "en": "2026 turnover"
+     },
+     "value": "26 292 000"
+    },
+    {
+     "label": {
+      "fr": "Classe du tarif",
+      "en": "Tariff class"
+     },
+     "value": {
+      "fr": "Classe 9 : de 20 à moins de 30 millions",
+      "en": "Class 9: 20 to under 30 million"
+     }
+    },
+    {
+     "label": {
+      "fr": "Échéance",
+      "en": "Deadline"
+     },
+     "value": {
+      "fr": "15 avril 2027, paiement compris (CGI art. C 41)",
+      "en": "15 April 2027, payment included"
+     }
+    }
+   ],
+   "totals": [
+    {
+     "label": {
+      "fr": "IGS annuel (CGI art. C 40)",
+      "en": "Yearly IGS"
+     },
+     "amount": 1000000
+    }
+   ]
+  }
+ },
+ {
+  "ref": "S-B1-17-001",
+  "kind": "declaration",
+  "date": "2027-05-07",
+  "title": {
+   "fr": "DSF du SMT 2026 : compte de résultat",
+   "en": "2026 cash-basis return: income statement"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Recettes de l'exercice (ventes au casier)",
+      "en": "Receipts of the year (crate sales)"
+     },
+     "amount": 26292000
+    },
+    {
+     "label": {
+      "fr": "Dépenses de l'exercice (achats, loyer, transport, frais)",
+      "en": "Payments of the year"
+     },
+     "amount": 25225442
+    },
+    {
+     "label": {
+      "fr": "Variation des stocks (stock final)",
+      "en": "Change in inventories (closing stock)"
+     },
+     "amount": 183930
+    },
+    {
+     "label": {
+      "fr": "Résultat de l'exercice",
+      "en": "Profit for the year"
+     },
+     "amount": 1250488
+    }
+   ]
+  },
+  "dsf": "compte_resultat_smt"
+ },
+ {
+  "ref": "S-B1-17-002",
+  "kind": "declaration",
+  "date": "2027-05-07",
+  "title": {
+   "fr": "DSF du SMT 2026 : bilan",
+   "en": "2026 cash-basis return: balance sheet"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Trésorerie : banque, caisse et Orange Money",
+      "en": "Cash: bank, till and Orange Money"
+     },
+     "amount": 2866558
+    },
+    {
+     "label": {
+      "fr": "Stock de casiers",
+      "en": "Crate stock"
+     },
+     "amount": 183930
+    },
+    {
+     "label": {
+      "fr": "Capital personnel",
+      "en": "Personal capital"
+     },
+     "amount": 3000000
+    },
+    {
+     "label": {
+      "fr": "Prélèvements de l'exploitante (à déduire)",
+      "en": "Owner's drawings (deducted)"
+     },
+     "amount": 1200000
+    },
+    {
+     "label": {
+      "fr": "Résultat de l'exercice",
+      "en": "Profit for the year"
+     },
+     "amount": 1250488
+    }
+   ]
+  },
+  "dsf": "bilan_smt"
+ }
+]

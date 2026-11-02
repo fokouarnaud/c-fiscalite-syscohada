@@ -1,0 +1,685 @@
+[
+ {
+  "id": "S-B1-M6-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Inventaire : coût moyen unitaire pondéré du casier (prix HT de la brasserie) ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Count: weighted average crate cost (brewery HT price)?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "CMUP sur les prix HT des lots de l'année, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC."
+  },
+  "numeric": {
+   "value": 6131,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      260,
+      6100
+     ],
+     [
+      245,
+      6100
+     ],
+     [
+      255,
+      6100
+     ],
+     [
+      250,
+      6100
+     ],
+     [
+      255,
+      6100
+     ],
+     [
+      245,
+      6100
+     ],
+     [
+      250,
+      6160
+     ],
+     [
+      255,
+      6160
+     ],
+     [
+      260,
+      6160
+     ],
+     [
+      265,
+      6160
+     ],
+     [
+      280,
+      6160
+     ],
+     [
+      340,
+      6160
+     ]
+    ],
+    3130
+   ],
+   "resultat": [
+    "cout_unitaire"
+   ]
+  }
+ },
+ {
+  "id": "S-B1-M6-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Inventaire : coût des casiers vendus au CMUP (prix HT de la brasserie) ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Count: cost of crates sold at WAC (brewery HT price)?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "CMUP sur les prix HT des lots de l'année, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC."
+  },
+  "numeric": {
+   "value": 19190030,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      260,
+      6100
+     ],
+     [
+      245,
+      6100
+     ],
+     [
+      255,
+      6100
+     ],
+     [
+      250,
+      6100
+     ],
+     [
+      255,
+      6100
+     ],
+     [
+      245,
+      6100
+     ],
+     [
+      250,
+      6160
+     ],
+     [
+      255,
+      6160
+     ],
+     [
+      260,
+      6160
+     ],
+     [
+      265,
+      6160
+     ],
+     [
+      280,
+      6160
+     ],
+     [
+      340,
+      6160
+     ]
+    ],
+    3130
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-B1-M6-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Inventaire : valeur du stock final au CMUP, portée à la DSF du SMT ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Count: closing stock at WAC, carried to the cash-basis return?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "Casiers comptés × coût moyen pondéré ; pas d'écriture au SMT, la valeur va à la DSF.",
+   "en": "Crates counted × WAC; no entry under the cash basis."
+  },
+  "numeric": {
+   "value": 183930,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M6-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Inventaire : coût des casiers vendus en PEPS (contraste) ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Count: cost of crates sold under FIFO?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "Les lots les plus anciens, moins chers, sortent d'abord.",
+   "en": "Oldest, cheaper lots go first."
+  },
+  "numeric": {
+   "value": 19190200,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_peps",
+   "args": [
+    [
+     [
+      260,
+      6100
+     ],
+     [
+      245,
+      6100
+     ],
+     [
+      255,
+      6100
+     ],
+     [
+      250,
+      6100
+     ],
+     [
+      255,
+      6100
+     ],
+     [
+      245,
+      6100
+     ],
+     [
+      250,
+      6160
+     ],
+     [
+      255,
+      6160
+     ],
+     [
+      260,
+      6160
+     ],
+     [
+      265,
+      6160
+     ],
+     [
+      280,
+      6160
+     ],
+     [
+      340,
+      6160
+     ]
+    ],
+    3130
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-B1-M6-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Inventaire : valeur du stock final en PEPS (contraste) ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Count: closing stock under FIFO?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "Les casiers en stock sont les derniers achetés, au prix de juillet.",
+   "en": "The crates left are the last bought."
+  },
+  "numeric": {
+   "value": 184800,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M6-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Encaissements Orange Money de l'année ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Year's Orange Money receipts?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "Un casier sur trois, payé par téléphone (5522).",
+   "en": "One crate in three, paid by phone."
+  },
+  "numeric": {
+   "value": 8727600,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M6-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recettes en espèces de l'année ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Year's cash receipts?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "Recettes totales moins Orange Money.",
+   "en": "Total receipts less Orange Money."
+  },
+  "numeric": {
+   "value": 17564400,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M6-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Casiers comptés au 31 décembre ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Crates counted on 31 December?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "Achetés moins vendus : les 30 casiers d'avance de janvier.",
+   "en": "Bought less sold."
+  },
+  "numeric": {
+   "value": 30,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M6-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recettes de l'année (ventes au casier) ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Year's receipts?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "Compte 7011, espèces et Orange Money.",
+   "en": "Compte 7011, espèces et Orange Money."
+  },
+  "numeric": {
+   "value": 26292000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M6-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Coût total des achats de bière de l'année ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Year's beer purchases, full cost?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "HT, TVA et précompte : tout reste dans le coût à l'IGS (6011).",
+   "en": "HT, TVA et précompte : tout reste dans le coût à l'IGS (6011)."
+  },
+  "numeric": {
+   "value": 24073442,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M6-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précomptes de 5 % subis sur l'année ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Withholdings suffered over the year?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "Vingt-quatre livraisons ; ils ne s'imputent pas sur l'IGS (S40).",
+   "en": "Vingt-quatre livraisons ; ils ne s'imputent pas sur l'IGS (S40)."
+  },
+  "numeric": {
+   "value": 968750,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M6-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "TVA et CAC payées à la brasserie sur l'année, non récupérables ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Non-recoverable VAT paid to the brewery?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "À l'IGS, la TVA payée est un coût.",
+   "en": "À l'IGS, la TVA payée est un coût."
+  },
+  "numeric": {
+   "value": 3729692,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M6-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Marge de l'année : recettes moins coût des achats ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Year's margin: receipts less purchases?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "Environ 800 F par casier : le métier de dépôt vit de petites marges.",
+   "en": "Environ 800 F par casier : le métier de dépôt vit de petites marges."
+  },
+  "numeric": {
+   "value": 2218558,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M6-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Loyers payés sur l'année ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Rent paid over the year?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "Douze loyers bruts de 50 000.",
+   "en": "Douze loyers bruts de 50 000."
+  },
+  "numeric": {
+   "value": 600000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M6-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Courses de pousse-pousse de l'année ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Year's push-cart costs?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "Compte 612.",
+   "en": "Compte 612."
+  },
+  "numeric": {
+   "value": 474000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M6-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Frais bancaires et Orange Money de l'année ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Year's bank and Orange Money fees?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "Compte 631.",
+   "en": "Compte 631."
+  },
+  "numeric": {
+   "value": 78000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M6-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Prélèvements de Mme Bilounga sur l'année ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Mrs Bilounga's drawings over the year?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "Douze virements personnels de 100 000 (1042).",
+   "en": "Douze virements personnels de 100 000 (1042)."
+  },
+  "numeric": {
+   "value": 1200000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M6-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Pourquoi compter le stock à l'IGS, sans écritures d'inventaire ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Why count stock under the IGS?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "AUDCIF art. 28.",
+   "en": "AUDCIF art. 28."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "La DSF du SMT corrige le résultat de la variation des stocks",
+     "en": "The cash-basis return adjusts for stock"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Ce n'est pas utile",
+     "en": "It is not useful"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B1-M6-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Quel est le coût unitaire le plus élevé au 31 décembre ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Which unit cost is higher on 31 December?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "Les prix ont monté en juillet : le PEPS garde les derniers casiers, les plus chers.",
+   "en": "Les prix ont monté en juillet : le PEPS garde les derniers casiers, les plus chers."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le PEPS (derniers prix)",
+     "en": "FIFO (latest prices)"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Le CMUP",
+     "en": "WAC"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B1-M6-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "La TVA payée à la brasserie est-elle une créance sur l'État ?\n\n[[piece:S-B1-12-009]]",
+   "en": "Is the VAT paid a receivable on the State?\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "L'IGS est libératoire de la TVA (CGI art. C 38).",
+   "en": "L'IGS est libératoire de la TVA (CGI art. C 38)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non : un coût, à l'IGS",
+     "en": "No: a cost under the IGS"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui (445)",
+     "en": "Yes (445)"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B1-M6-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Les prélèvements de l'exploitante réduisent le résultat du SMT.\n\n[[piece:S-B1-12-009]]",
+   "en": "The owner's drawings reduce the cash-basis profit.\n\n[[piece:S-B1-12-009]]"
+  },
+  "explanation": {
+   "fr": "Faux : ils réduisent ses capitaux, pas le résultat.",
+   "en": "False: they reduce equity, not profit."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ }
+]

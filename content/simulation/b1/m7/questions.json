@@ -1,0 +1,678 @@
+[
+ {
+  "id": "S-B1-M7-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "IGS annuel 2026 du dépôt ?\n\n[[piece:S-B1-16-001]]",
+   "en": "2026 yearly IGS of the depot?\n\n[[piece:S-B1-16-001]]"
+  },
+  "explanation": {
+   "fr": "Tarif de la classe 9 (de 20 à moins de 30 millions) (CGI art. C 40 (1)).",
+   "en": "Class 9 tariff."
+  },
+  "numeric": {
+   "value": 1000000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "igs_annuel",
+   "args": [
+    26292000,
+    [
+     [
+      500000,
+      20000
+     ],
+     [
+      1000000,
+      30000
+     ],
+     [
+      1500000,
+      40000
+     ],
+     [
+      2000000,
+      50000
+     ],
+     [
+      2500000,
+      60000
+     ],
+     [
+      5000000,
+      150000
+     ],
+     [
+      10000000,
+      300000
+     ],
+     [
+      20000000,
+      500000
+     ],
+     [
+      30000000,
+      1000000
+     ],
+     [
+      50000000,
+      2000000
+     ]
+    ]
+   ],
+   "resultat": []
+  }
+ },
+ {
+  "id": "S-B1-M7-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "IGS 2026 si Mme Bilounga adhère à un Centre de Gestion Agréé ?\n\n[[piece:S-B1-16-001]]",
+   "en": "2026 IGS with a registered management centre?\n\n[[piece:S-B1-16-001]]"
+  },
+  "explanation": {
+   "fr": "Tarif réduit de moitié (CGI art. C 40 (4)).",
+   "en": "Halved tariff."
+  },
+  "numeric": {
+   "value": 500000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "igs_annuel",
+   "args": [
+    26292000,
+    [
+     [
+      500000,
+      20000
+     ],
+     [
+      1000000,
+      30000
+     ],
+     [
+      1500000,
+      40000
+     ],
+     [
+      2000000,
+      50000
+     ],
+     [
+      2500000,
+      60000
+     ],
+     [
+      5000000,
+      150000
+     ],
+     [
+      10000000,
+      300000
+     ],
+     [
+      20000000,
+      500000
+     ],
+     [
+      30000000,
+      1000000
+     ],
+     [
+      50000000,
+      2000000
+     ]
+    ],
+    true
+   ],
+   "resultat": []
+  }
+ },
+ {
+  "id": "S-B1-M7-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Contraste : IGS dû si le chiffre d'affaires avait atteint 30 millions ?\n\n[[piece:S-B1-16-001]]",
+   "en": "Contrast: IGS due had turnover reached 30 million?\n\n[[piece:S-B1-16-001]]"
+  },
+  "explanation": {
+   "fr": "Classe 10 (de 30 à moins de 50 millions) : le tarif double d'une classe à l'autre (art. C 40).",
+   "en": "Class 10: the tariff doubles."
+  },
+  "numeric": {
+   "value": 2000000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "igs_annuel",
+   "args": [
+    30000000,
+    [
+     [
+      500000,
+      20000
+     ],
+     [
+      1000000,
+      30000
+     ],
+     [
+      1500000,
+      40000
+     ],
+     [
+      2000000,
+      50000
+     ],
+     [
+      2500000,
+      60000
+     ],
+     [
+      5000000,
+      150000
+     ],
+     [
+      10000000,
+      300000
+     ],
+     [
+      20000000,
+      500000
+     ],
+     [
+      30000000,
+      1000000
+     ],
+     [
+      50000000,
+      2000000
+     ]
+    ]
+   ],
+   "resultat": []
+  }
+ },
+ {
+  "id": "S-B1-M7-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chiffre d'affaires à partir duquel la DSF du SMT est obligatoire ?\n\n[[piece:S-B1-17-002]]",
+   "en": "Turnover from which the cash-basis return is compulsory?\n\n[[piece:S-B1-17-002]]"
+  },
+  "explanation": {
+   "fr": "10 millions (CGI art. C 44).",
+   "en": "10 millions (CGI art. C 44)."
+  },
+  "numeric": {
+   "value": 10000000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M7-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Seuil de chiffre d'affaires du négoce au-delà duquel le dépôt passerait au réel ?\n\n[[piece:S-B1-16-001]]",
+   "en": "Trading turnover threshold above which the depot would move to the actual regime?\n\n[[piece:S-B1-16-001]]"
+  },
+  "explanation": {
+   "fr": "50 millions pour le négoce, 30 pour les professions libérales (CGI art. C 39).",
+   "en": "50 millions pour le négoce, 30 pour les professions libérales (CGI art. C 39)."
+  },
+  "numeric": {
+   "value": 50000000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M7-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chiffre d'affaires déclaré pour l'IGS 2026 ?\n\n[[piece:S-B1-16-001]]",
+   "en": "Turnover declared for the 2026 IGS?\n\n[[piece:S-B1-16-001]]"
+  },
+  "explanation": {
+   "fr": "Total des recettes de l'année.",
+   "en": "Total des recettes de l'année."
+  },
+  "numeric": {
+   "value": 26292000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M7-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Économie d'IGS procurée par un Centre de Gestion Agréé ?\n\n[[piece:S-B1-16-001]]",
+   "en": "IGS saving with a management centre?\n\n[[piece:S-B1-16-001]]"
+  },
+  "explanation": {
+   "fr": "La moitié du tarif.",
+   "en": "La moitié du tarif."
+  },
+  "numeric": {
+   "value": 500000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M7-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Montant à payer avec la déclaration de l'IGS, au plus tard le 15 avril 2027 ?\n\n[[piece:S-B1-16-001]]",
+   "en": "Amount due with the IGS return by 15 April 2027?\n\n[[piece:S-B1-16-001]]"
+  },
+  "explanation": {
+   "fr": "Paiement en une fois avec la déclaration (art. C 41).",
+   "en": "Paiement en une fois avec la déclaration (art. C 41)."
+  },
+  "numeric": {
+   "value": 1000000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M7-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Quotité trimestrielle si Mme Bilounga opte pour le paiement fractionné ?\n\n[[piece:S-B1-16-001]]",
+   "en": "Quarterly instalment under the split-payment option?\n\n[[piece:S-B1-16-001]]"
+  },
+  "explanation": {
+   "fr": "Un quart de l'IGS annuel, dans les 15 jours qui suivent chaque trimestre (art. C 41, circulaire LF 2026).",
+   "en": "Un quart de l'IGS annuel, dans les 15 jours qui suivent chaque trimestre (art. C 41, circulaire LF 2026)."
+  },
+  "numeric": {
+   "value": 250000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M7-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "DSF du SMT : résultat de l'exercice 2026 ?\n\n[[piece:S-B1-17-002]]",
+   "en": "Cash-basis return: 2026 profit?\n\n[[piece:S-B1-17-002]]"
+  },
+  "explanation": {
+   "fr": "Recettes moins dépenses, plus le stock final (AUDCIF art. 28).",
+   "en": "Recettes moins dépenses, plus le stock final (AUDCIF art. 28)."
+  },
+  "numeric": {
+   "value": 1250488,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M7-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "DSF du SMT : trésorerie au 31 décembre ?\n\n[[piece:S-B1-17-002]]",
+   "en": "Cash-basis return: cash at 31 December?\n\n[[piece:S-B1-17-002]]"
+  },
+  "explanation": {
+   "fr": "Banque, caisse et Orange Money.",
+   "en": "Banque, caisse et Orange Money."
+  },
+  "numeric": {
+   "value": 2866558,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M7-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "DSF du SMT : stock de casiers au 31 décembre ?\n\n[[piece:S-B1-17-002]]",
+   "en": "Cash-basis return: crate stock?\n\n[[piece:S-B1-17-002]]"
+  },
+  "explanation": {
+   "fr": "Stock final au CMUP.",
+   "en": "Stock final au CMUP."
+  },
+  "numeric": {
+   "value": 183930,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M7-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "DSF du SMT : dépenses de l'exercice ?\n\n[[piece:S-B1-17-002]]",
+   "en": "Cash-basis return: payments of the year?\n\n[[piece:S-B1-17-002]]"
+  },
+  "explanation": {
+   "fr": "Achats, loyer, pousse-pousse et frais (classes 6).",
+   "en": "Achats, loyer, pousse-pousse et frais (classes 6)."
+  },
+  "numeric": {
+   "value": 25225442,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M7-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Résultat 2026 après l'IGS dû en 2027 ?\n\n[[piece:S-B1-16-001]]",
+   "en": "2026 profit after the IGS?\n\n[[piece:S-B1-16-001]]"
+  },
+  "explanation": {
+   "fr": "L'IGS pèse lourd sur une petite marge : d'où l'intérêt d'un Centre de Gestion Agréé.",
+   "en": "L'IGS pèse lourd sur une petite marge : d'où l'intérêt d'un Centre de Gestion Agréé."
+  },
+  "numeric": {
+   "value": 250488,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M7-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chiffre d'affaires porté sur la déclaration de l'art. 74 ?\n\n[[piece:S-B1-15-001]]",
+   "en": "Turnover on the art. 74 return?\n\n[[piece:S-B1-15-001]]"
+  },
+  "explanation": {
+   "fr": "Une personne physique à l'IGS dépose aussi sa déclaration annuelle de revenus (CGI art. C 39 (4) et 74).",
+   "en": "Une personne physique à l'IGS dépose aussi sa déclaration annuelle de revenus (CGI art. C 39 (4) et 74)."
+  },
+  "numeric": {
+   "value": 26292000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M7-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Date limite de la déclaration et du paiement de l'IGS 2026 ?\n\n[[piece:S-B1-16-001]]",
+   "en": "Deadline of the 2026 IGS return?\n\n[[piece:S-B1-16-001]]"
+  },
+  "explanation": {
+   "fr": "CGI art. C 41, modifié par la LF 2026.",
+   "en": "CGI art. C 41, modifié par la LF 2026."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "15 avril 2027",
+     "en": "15 April 2027"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "15 mars 2027",
+     "en": "15 March 2027"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B1-M7-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Date limite de la DSF du SMT ?\n\n[[piece:S-B1-17-002]]",
+   "en": "Deadline of the cash-basis return?\n\n[[piece:S-B1-17-002]]"
+  },
+  "explanation": {
+   "fr": "CGI art. C 44 : dès 10 millions de chiffre d'affaires.",
+   "en": "CGI art. C 44 : dès 10 millions de chiffre d'affaires."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "15 mai 2027",
+     "en": "15 May 2027"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "15 avril 2027",
+     "en": "15 April 2027"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B1-M7-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Date limite de la déclaration de revenus de l'art. 74 ?\n\n[[piece:S-B1-15-001]]",
+   "en": "Deadline of the art. 74 income return?\n\n[[piece:S-B1-15-001]]"
+  },
+  "explanation": {
+   "fr": "CGI art. 74, rendu applicable aux personnes physiques à l'IGS par l'art. C 39 (4).",
+   "en": "CGI art. 74, rendu applicable aux personnes physiques à l'IGS par l'art. C 39 (4)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "15 mars 2027",
+     "en": "15 March 2027"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "15 mai 2027",
+     "en": "15 May 2027"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B1-M7-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Mme Bilounga dépose-t-elle une DSF du système normal ?\n\n[[piece:S-B1-17-002]]",
+   "en": "Does Mrs Bilounga file the standard return?\n\n[[piece:S-B1-17-002]]"
+  },
+  "explanation": {
+   "fr": "À l'IGS, SMT et DSF du SMT (art. C 44, S14, S38).",
+   "en": "À l'IGS, SMT et DSF du SMT (art. C 44, S14, S38)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non : la DSF du SMT",
+     "en": "No: the cash-basis return"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui",
+     "en": "Yes"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B1-M7-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "L'IGS dépend-il du bénéfice du dépôt ?\n\n[[piece:S-B1-16-001]]",
+   "en": "Does the IGS depend on the depot's profit?\n\n[[piece:S-B1-16-001]]"
+  },
+  "explanation": {
+   "fr": "Tarif forfaitaire par classe (art. C 40).",
+   "en": "Tarif forfaitaire par classe (art. C 40)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non : de la classe de chiffre d'affaires",
+     "en": "No: on the turnover class"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui",
+     "en": "Yes"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B1-M7-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "L'IGS libère-t-il Mme Bilounga de la TVA et de l'IRPP sur ses bénéfices ?\n\n[[piece:S-B1-16-001]]",
+   "en": "Does the IGS discharge VAT and income tax on profits?\n\n[[piece:S-B1-16-001]]"
+  },
+  "explanation": {
+   "fr": "Impôt synthétique, libératoire de la patente, de la TVA et de l'IRPP (BIC).",
+   "en": "Impôt synthétique, libératoire de la patente, de la TVA et de l'IRPP (BIC)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Oui (art. C 38)",
+     "en": "Yes (art. C 38)"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Non",
+     "en": "No"
+    },
+    "correct": false
+   }
+  ]
+ }
+]

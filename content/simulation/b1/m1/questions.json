@@ -1,0 +1,567 @@
+[
+ {
+  "id": "S-B1-M1-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Que délivre le CFCE à Mme Bilounga ?\n\n[[piece:S-B1-01-001]]",
+   "en": "What does the CFCE give Mrs Bilounga?\n\n[[piece:S-B1-01-001]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Registre de commerce, carte de contribuable et attestation de création",
+     "en": "Trade register, taxpayer card"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Des statuts",
+     "en": "Articles of association"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B1-M1-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Pourquoi le dépôt relève-t-il de l'IGS ?\n\n[[piece:S-B1-01-002]]",
+   "en": "Why is the depot under the IGS?\n\n[[piece:S-B1-01-002]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "CA prévisionnel sous 50 millions, activité de négoce",
+     "en": "Forecast turnover below 50 million, trading"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Parce qu'il n'a pas de salarié",
+     "en": "Because it has no employee"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B1-M1-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Pourquoi un compte bancaire ?\n\n[[piece:S-B1-01-003]]",
+   "en": "Why a bank account?\n\n[[piece:S-B1-01-003]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Pour payer la brasserie par virement et sécuriser la recette",
+     "en": "To pay the brewery and secure the takings"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "La loi interdit les espèces",
+     "en": "The law bans cash"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B1-M1-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Que remet Orange à la fin de la démarche ?\n\n[[piece:S-B1-01-004]]",
+   "en": "What does Orange give at the end?\n\n[[piece:S-B1-01-004]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Un code marchand",
+     "en": "A merchant code"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Une patente",
+     "en": "A business licence"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B1-M1-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Économies apportées par Mme Bilounga au démarrage ?\n\n[[piece:S-B1-01-005]]",
+   "en": "Owner's start-up savings?\n\n[[piece:S-B1-01-005]]"
+  },
+  "explanation": {
+   "fr": "Capital personnel (103) : un établissement individuel n'a ni capital social ni associés.",
+   "en": "Personal capital (103)."
+  },
+  "numeric": {
+   "value": 3000000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M1-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Un établissement individuel a-t-il un capital social (101) ?\n\n[[piece:S-B1-01-005]]",
+   "en": "Does a sole proprietorship have share capital (101)?\n\n[[piece:S-B1-01-005]]"
+  },
+  "explanation": {
+   "fr": "Pas d'associés, pas de parts.",
+   "en": "No partners, no shares."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non : capital personnel de l'exploitante (103)",
+     "en": "No: owner's personal capital (103)"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui",
+     "en": "Yes"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B1-M1-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Casiers achetés en janvier, les deux livraisons ensemble ?\n\n[[piece:S-B1-01-006]]",
+   "en": "Crates bought in January, both deliveries?\n\n[[piece:S-B1-01-006]]"
+  },
+  "explanation": {
+   "fr": "Ventes du mois et 30 casiers d'avance pour ne jamais manquer.",
+   "en": "Ventes du mois et 30 casiers d'avance pour ne jamais manquer."
+  },
+  "numeric": {
+   "value": 260,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M1-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Coût total des achats de janvier ?\n\n[[piece:S-B1-01-007]]",
+   "en": "January purchases, full cost?\n\n[[piece:S-B1-01-007]]"
+  },
+  "explanation": {
+   "fr": "Les deux factures, TVA et précompte compris.",
+   "en": "Les deux factures, TVA et précompte compris."
+  },
+  "numeric": {
+   "value": 1970606,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M1-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Marge par casier en janvier, au franc près (prix de vente moins coût complet) ?\n\n[[piece:S-B1-01-006]]",
+   "en": "January margin per crate (selling price less full cost)?\n\n[[piece:S-B1-01-006]]"
+  },
+  "explanation": {
+   "fr": "8 400 moins le coût d'un casier, TVA et précompte compris (division arrondie à l'unité inférieure).",
+   "en": "8 400 moins le coût d'un casier, TVA et précompte compris (division arrondie à l'unité inférieure)."
+  },
+  "numeric": {
+   "value": 821,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M1-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Frais Orange Money de janvier ?\n\n[[piece:S-B1-01-009]]",
+   "en": "January Orange Money fees?\n\n[[piece:S-B1-01-009]]"
+  },
+  "explanation": {
+   "fr": "Frais de l'opérateur en services bancaires (631).",
+   "en": "Frais de l'opérateur en services bancaires (631)."
+  },
+  "numeric": {
+   "value": 4000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M1-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précompte de 5 % subi sur la première livraison de janvier ?\n\n[[piece:S-B1-01-006]]",
+   "en": "5% withholding on the first January delivery?\n\n[[piece:S-B1-01-006]]"
+  },
+  "explanation": {
+   "fr": "5 % du HT : Mme Bilounga est à l'IGS (CGI art. 21 (3)).",
+   "en": "5 % du HT : Mme Bilounga est à l'IGS (CGI art. 21 (3))."
+  },
+  "numeric": {
+   "value": 39650,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M1-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Coût de la première livraison de janvier, tout compris ?\n\n[[piece:S-B1-01-006]]",
+   "en": "Full cost of the first January delivery?\n\n[[piece:S-B1-01-006]]"
+  },
+  "explanation": {
+   "fr": "HT, TVA et précompte : à l'IGS, rien ne se récupère ; tout entre dans le coût d'achat (S40).",
+   "en": "HT, TVA et précompte : à l'IGS, rien ne se récupère ; tout entre dans le coût d'achat (S40)."
+  },
+  "numeric": {
+   "value": 985303,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M1-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "TVA et CAC payées sur la seconde livraison de janvier, non récupérables ?\n\n[[piece:S-B1-01-007]]",
+   "en": "Non-recoverable VAT on the second January delivery?\n\n[[piece:S-B1-01-007]]"
+  },
+  "explanation": {
+   "fr": "19,25 % du HT, facturés par la brasserie au réel.",
+   "en": "19,25 % du HT, facturés par la brasserie au réel."
+  },
+  "numeric": {
+   "value": 152653,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M1-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recettes en espèces de janvier ?\n\n[[piece:S-B1-01-008]]",
+   "en": "January cash receipts?\n\n[[piece:S-B1-01-008]]"
+  },
+  "explanation": {
+   "fr": "Casiers vendus au comptant × 8 400 ; aucune TVA facturée à l'IGS.",
+   "en": "Casiers vendus au comptant × 8 400 ; aucune TVA facturée à l'IGS."
+  },
+  "numeric": {
+   "value": 1293600,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M1-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Encaissements Orange Money de janvier ?\n\n[[piece:S-B1-01-009]]",
+   "en": "January Orange Money receipts?\n\n[[piece:S-B1-01-009]]"
+  },
+  "explanation": {
+   "fr": "Casiers payés par téléphone × 8 400, au sous-compte 5522 (S19).",
+   "en": "Casiers payés par téléphone × 8 400, au sous-compte 5522 (S19)."
+  },
+  "numeric": {
+   "value": 638400,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M1-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Courses de pousse-pousse payées en janvier ?\n\n[[piece:S-B1-01-011]]",
+   "en": "January push-cart costs?\n\n[[piece:S-B1-01-011]]"
+  },
+  "explanation": {
+   "fr": "Une course de 1 500 F pour 10 casiers livrés ; transport sur ventes (612).",
+   "en": "Une course de 1 500 F pour 10 casiers livrés ; transport sur ventes (612)."
+  },
+  "numeric": {
+   "value": 34500,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M1-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Espèces versées à la banque en janvier ?\n\n[[piece:S-B1-01-012]]",
+   "en": "Cash deposited in January?\n\n[[piece:S-B1-01-012]]"
+  },
+  "explanation": {
+   "fr": "Le 15 et en fin de mois, la caisse ne garde que son fonds de 20 000 ; virement interne par 585.",
+   "en": "Le 15 et en fin de mois, la caisse ne garde que son fonds de 20 000 ; virement interne par 585."
+  },
+  "numeric": {
+   "value": 1189100,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M1-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des recettes de janvier au cahier du SMT ?\n\n[[piece:S-B1-01-008]]",
+   "en": "Total January receipts in the cash book?\n\n[[piece:S-B1-01-008]]"
+  },
+  "explanation": {
+   "fr": "Espèces et Orange Money : tous les casiers vendus × 8 400.",
+   "en": "Cash and Orange Money."
+  },
+  "numeric": {
+   "value": 1932000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M1-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des dépenses de janvier au cahier du SMT (hors prélèvement) ?\n\n[[piece:S-B1-01-013]]",
+   "en": "Total January payments (drawings excluded)?\n\n[[piece:S-B1-01-013]]"
+  },
+  "explanation": {
+   "fr": "Brasserie, loyer, pousse-pousse et frais ; le prélèvement de l'exploitante n'est pas une dépense de l'activité.",
+   "en": "Brewery, rent, carts and fees; drawings are not a business payment."
+  },
+  "numeric": {
+   "value": 2061606,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B1-M1-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde du compte bancaire au 31 janvier ?\n\n[[piece:S-B1-01-013]]",
+   "en": "Bank balance at January 31?\n\n[[piece:S-B1-01-013]]"
+  },
+  "explanation": {
+   "fr": "Recettes moins dépenses passées par la banque à cette date.",
+   "en": "Bank receipts less payments."
+  },
+  "numeric": {
+   "value": 2750394,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-01-31"
+  }
+ },
+ {
+  "id": "S-B1-M1-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Mme Bilounga récupère la TVA payée à la brasserie.\n\n[[piece:S-B1-01-006]]",
+   "en": "Mrs Bilounga recovers the VAT paid to the brewery.\n\n[[piece:S-B1-01-006]]"
+  },
+  "explanation": {
+   "fr": "Faux : à l'IGS, on ne facture ni ne déduit la TVA ; elle reste dans le coût (CGI art. C 38).",
+   "en": "Faux : à l'IGS, on ne facture ni ne déduit la TVA ; elle reste dans le coût (CGI art. C 38)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "S-B1-M1-022",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Le dépôt retient 10 % de précompte sur le loyer.\n\n[[piece:S-B1-01-010]]",
+   "en": "The depot withholds 10% on the rent.\n\n[[piece:S-B1-01-010]]"
+  },
+  "explanation": {
+   "fr": "Faux : un locataire à l'IGS paie le loyer brut ; le précompte de l'art. 87 vise les locataires au réel.",
+   "en": "Faux : un locataire à l'IGS paie le loyer brut ; le précompte de l'art. 87 vise les locataires au réel."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ }
+]

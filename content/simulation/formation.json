@@ -1466,6 +1466,285 @@
     }
    ],
    "order": 5
+  },
+  {
+   "slug": "b1",
+   "title": {
+    "fr": "Parcours B1 : dépôt de boissons à l'IGS (Ets Bilounga Boissons)",
+    "en": "Track B1: drinks depot under the IGS (Ets Bilounga Boissons)"
+   },
+   "description": {
+    "fr": "Établissement individuel à l'IGS, au SMT : dépôt de boissons à Yaoundé-Ekounou.",
+    "en": "Sole proprietorship under the IGS, cash basis: drinks depot in Yaoundé."
+   },
+   "regime": "igs",
+   "systeme_comptable": "smt",
+   "forme": "individuelle",
+   "centre_impots": "cfl",
+   "chiffre_affaires_vise": 28000000,
+   "sous_comptes": {
+    "5522": {
+     "fr": "Orange Money",
+     "en": "Orange Money"
+    }
+   },
+   "pieces": "b1/pieces.json",
+   "ledger": "b1/ledger.json",
+   "exam": {
+    "questions_per_module": 4
+   },
+   "modules": [
+    {
+     "order": 1,
+     "dir": "b1/m1",
+     "title": {
+      "fr": "Création et janvier",
+      "en": "Set-up and January"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Ouvrir le dépôt et tenir le premier mois au SMT.",
+      "en": "Open the depot and keep the first month on a cash basis."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-dossier",
+       "kind": "content",
+       "title": {
+        "fr": "Dossier d'entreprise",
+        "en": "Company file"
+       }
+      },
+      {
+       "order": 2,
+       "file": "02-creation",
+       "kind": "content",
+       "title": {
+        "fr": "Démarches de création",
+        "en": "Set-up procedures"
+       }
+      },
+      {
+       "order": 3,
+       "file": "03-janvier",
+       "kind": "content",
+       "title": {
+        "fr": "Janvier 2026",
+        "en": "January 2026"
+       }
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "dir": "b1/m2",
+     "title": {
+      "fr": "Premier trimestre (février et mars)",
+      "en": "First quarter (February and March)"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Tenir recettes et dépenses.",
+      "en": "Keep receipts and payments."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-fevrier",
+       "kind": "content",
+       "title": {
+        "fr": "Février 2026",
+        "en": "February 2026"
+       }
+      },
+      {
+       "order": 2,
+       "file": "02-mars",
+       "kind": "content",
+       "title": {
+        "fr": "Mars 2026",
+        "en": "March 2026"
+       }
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "dir": "b1/m3",
+     "title": {
+      "fr": "Deuxième trimestre",
+      "en": "Second quarter"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Rapprocher caisse, Orange Money et banque.",
+      "en": "Reconcile till, Orange Money and bank."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-avril",
+       "kind": "content",
+       "title": {
+        "fr": "Avril 2026",
+        "en": "April 2026"
+       }
+      },
+      {
+       "order": 2,
+       "file": "02-mai",
+       "kind": "content",
+       "title": {
+        "fr": "Mai 2026",
+        "en": "May 2026"
+       }
+      },
+      {
+       "order": 3,
+       "file": "03-juin",
+       "kind": "content",
+       "title": {
+        "fr": "Juin 2026",
+        "en": "June 2026"
+       }
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "dir": "b1/m4",
+     "title": {
+      "fr": "Troisième trimestre",
+      "en": "Third quarter"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Suivre la hausse du prix de la brasserie.",
+      "en": "Follow the brewery's price rise."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-juillet",
+       "kind": "content",
+       "title": {
+        "fr": "Juillet 2026",
+        "en": "July 2026"
+       }
+      },
+      {
+       "order": 2,
+       "file": "02-aout",
+       "kind": "content",
+       "title": {
+        "fr": "Août 2026",
+        "en": "August 2026"
+       }
+      },
+      {
+       "order": 3,
+       "file": "03-septembre",
+       "kind": "content",
+       "title": {
+        "fr": "Septembre 2026",
+        "en": "September 2026"
+       }
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "dir": "b1/m5",
+     "title": {
+      "fr": "Quatrième trimestre",
+      "en": "Fourth quarter"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Préparer la clôture des fêtes.",
+      "en": "Prepare the festive year end."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-octobre",
+       "kind": "content",
+       "title": {
+        "fr": "Octobre 2026",
+        "en": "October 2026"
+       }
+      },
+      {
+       "order": 2,
+       "file": "02-novembre",
+       "kind": "content",
+       "title": {
+        "fr": "Novembre 2026",
+        "en": "November 2026"
+       }
+      },
+      {
+       "order": 3,
+       "file": "03-decembre",
+       "kind": "content",
+       "title": {
+        "fr": "Décembre 2026",
+        "en": "December 2026"
+       }
+      }
+     ]
+    },
+    {
+     "order": 6,
+     "dir": "b1/m6",
+     "title": {
+      "fr": "Clôture et inventaire",
+      "en": "Year-end and count"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Compter les casiers et faire les totaux de l'année.",
+      "en": "Count crates and total the year."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-cloture",
+       "kind": "content",
+       "title": {
+        "fr": "Clôture et inventaire",
+        "en": "Year-end and count"
+       }
+      }
+     ]
+    },
+    {
+     "order": 7,
+     "dir": "b1/m7",
+     "title": {
+      "fr": "IGS et DSF du SMT",
+      "en": "IGS and cash-basis return"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Déclarer l'art. 74, l'IGS et la DSF du SMT à leurs échéances.",
+      "en": "File the art. 74 return, the IGS and the cash-basis return on time."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-declarations",
+       "kind": "content",
+       "title": {
+        "fr": "Déclarations de 2027",
+        "en": "2027 returns"
+       }
+      }
+     ]
+    }
+   ],
+   "order": 6
   }
  ]
 }
