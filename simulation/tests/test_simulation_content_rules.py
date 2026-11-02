@@ -573,3 +573,53 @@ def test_an_invoice_without_its_cameroonian_tax_identity_is_reported(tmp_path):
     problems = simulation_problems(tree(tmp_path, pieces=[bare, BALANCE]))
 
     assert any("S-A-01-001" in p and "émetteur" in p for p in problems)
+
+
+SCENE_FR = ("### Lundi 5 janvier : la facture\n\nLe grossiste livre.\n\n[[piece:S-A-01-001]]\n\n**La règle.** Achats "
+            "[[syscohada:6011]].\n\n> **Pourquoi ce choix et pas un autre.** Pas une immobilisation.\n\n**Ce que ça change.** "
+            "Dette.\n\n**Où ça se range.** Classeur Achats.\n\n**Revoir :** Comptabilité M1 « Les achats ».\n")
+SCENE_EN = ("### Monday 5 January: the invoice\n\nThe wholesaler delivers.\n\n[[piece:S-A-01-001]]\n\n**The rule.** "
+            "Purchases [[syscohada:6011]].\n\n> **Why this choice and not another.** Not an asset.\n\n**What it changes.** "
+            "Debt.\n\n**Where it is filed.** Purchases binder.\n\n**See again:** Accounting M1 “Purchases”.\n")
+
+
+def narrated_tree(tmp_path, fr=SCENE_FR, en=SCENE_EN):
+    root = tree(tmp_path, body=COMPANY_FILE + "\n\n" + fr, body_en=COMPANY_FILE_EN + "\n\n" + en)
+    write(root / "compta" / "formation.json", {"slug": "compta", "prefix": "C", "parties": [
+        {"slug": "p1", "modules": [{"order": 1, "dir": "p1/m1", "sections": []}]}]})
+    return root
+
+
+def test_a_month_piece_told_in_a_full_scene_passes(tmp_path):
+    """S34 : une pièce comptable d'une section mensuelle racontée dans une scène aux cinq temps ne pose aucun problème."""
+    assert not [p for p in simulation_problems(narrated_tree(tmp_path)) if "scène" in p or "Revoir" in p]
+
+
+def test_a_month_piece_shown_without_its_scene_is_reported(tmp_path):
+    """S34 : un parcours muet, qui aligne ses pièces sans les raconter, est refusé."""
+    problems = simulation_problems(narrated_tree(tmp_path, fr="[[piece:S-A-01-001]]\n", en="[[piece:S-A-01-001]]\n"))
+
+    assert any("S-A-01-001" in p and "sans scène" in p for p in problems)
+
+
+def test_a_scene_missing_one_of_its_five_beats_is_reported(tmp_path):
+    """S34 : chaque scène dit la règle, le pourquoi, l'effet, le rangement et le renvoi au cours."""
+    problems = simulation_problems(narrated_tree(tmp_path, en=SCENE_EN.replace("**Where it is filed.** Purchases binder.\n\n",
+                                                                                 "")))
+
+    assert any("S-A-01-001" in p and "Where it is filed" in p for p in problems)
+
+
+def test_a_course_reference_to_a_missing_module_is_reported(tmp_path):
+    """S34 : « Revoir » désigne un module existant de la formation citée."""
+    problems = simulation_problems(narrated_tree(tmp_path, fr=SCENE_FR.replace("Comptabilité M1", "Comptabilité M99")))
+
+    assert any("Revoir" in p and "M99" in p for p in problems)
+
+
+def test_a_cited_figure_must_exist_in_static(tmp_path):
+    """S33 : une figure citée par une scène existe dans static/content/."""
+    figure = "\n\n![Circuit](/static/content/simulation/a/absente.fr.svg)\n"
+    problems = simulation_problems(narrated_tree(tmp_path, fr=SCENE_FR + figure))
+
+    assert any("absente.fr.svg" in p and "figure" in p for p in problems)

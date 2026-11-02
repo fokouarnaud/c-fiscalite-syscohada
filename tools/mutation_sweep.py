@@ -424,6 +424,18 @@ MUTATIONS = [
     ("US-93 générateur : les autres parcours restent dans formation.json", "tools/simulation/build_parcours_a.py",
      '        parties = {p["slug"]: p for p in current.get("parties", [])}', "        parties = {}",
      "simulation/tests/test_parcours_generators.py"),
+    ("S34 récit : pièce affichée sans scène", "courses/tests/content_rules.py",
+     '                        problems.append(f"{section[\'file\']}.{lang} : pièce {ref} sans scène (S34)")\n',
+     "", "simulation/tests/test_simulation_content_rules.py"),
+    ("S34 récit : scène aux cinq temps", "courses/tests/content_rules.py",
+     "for beat in SCENE_BEATS[lang] if beat not in scene]", "for beat in SCENE_BEATS[lang] if False]",
+     "simulation/tests/test_simulation_content_rules.py"),
+    ("S34 récit : renvoi Revoir vers un module existant", "courses/tests/content_rules.py",
+     "if name in modules and not 1 <= int(number) <= modules[name]:", "if False:",
+     "simulation/tests/test_simulation_content_rules.py"),
+    ("S33 figure citée présente dans static/", "courses/tests/content_rules.py",
+     'if not (root.parent / src.lstrip("/")).exists():', "if False:",
+     "simulation/tests/test_simulation_content_rules.py"),
 ]
 # Filtre facultatif : `mutation_sweep.py US-82 US-93` ne balaie que les stories dont le libellé commence ainsi.
 if sys.argv[1:]:

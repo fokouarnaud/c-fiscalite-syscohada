@@ -477,6 +477,69 @@ def scan_content(root):
                              for p in simulation_problems(base, partie, partie_questions, labels, rates)]
                 problems += [f"{partie['slug']} : {p}" for p in company_file_problems(base, partie)]
                 problems += [f"{partie['slug']} : {p}" for p in inventory_module_problems(base, partie)]
+                problems += [f"{partie['slug']} : {p}" for p in narrative_problems(base, partie, root)]
+    return problems
+
+
+MONTH_SECTION = re.compile(r"^\d\d-(janvier|fevrier|mars|avril|mai|juin|juillet|aout|septembre|octobre|novembre|"
+                           r"decembre)$")
+SCENE_BEATS = {"fr": ("**La règle.**", "**Pourquoi ce choix et pas un autre.**", "**Ce que ça change.**",
+                      "**Où ça se range.**", "**Revoir :**"),
+               "en": ("**The rule.**", "**Why this choice and not another.**", "**What it changes.**",
+                      "**Where it is filed.**", "**See again:**")}
+UNTOLD_KINDS = ("balance", "fiche_stock", "demarche")  # balance d'ouverture ; fiches racontées au module Inventaire
+COURSE_REFERENCE = re.compile(r"(Comptabilité|Fiscalité|Accounting|Taxation) M(\d+)")
+FIGURE = re.compile(r"!\[[^\]]*\]\((/static/content/[\w/.-]+\.svg)\)")
+
+
+def _module_counts(root):
+    """Nombre de modules des formations Comptabilité et Fiscalité, pour contrôler les renvois « Revoir »."""
+    import json
+
+    counts = {}
+    for slug, names in (("compta", ("Comptabilité", "Accounting")), ("fisca", ("Fiscalité", "Taxation"))):
+        path = root / slug / "formation.json"
+        if path.exists():
+            total = sum(len(p.get("modules", [])) for p in json.loads(path.read_text(encoding="utf-8")).get("parties", []))
+            counts.update({name: total for name in names})
+    return counts
+
+
+def narrative_problems(base, partie, root):
+    """S34 : dans une section mensuelle d'un parcours, toute pièce comptable affichée l'est dans une scène (titre ###)
+    aux cinq temps, en FR et en EN ; « Revoir » désigne un module existant ; S33 : toute figure citée existe."""
+    import json
+
+    kinds = {}
+    if partie.get("pieces") and (base / partie["pieces"]).exists():
+        kinds = {p["ref"]: p["kind"] for p in json.loads((base / partie["pieces"]).read_text(encoding="utf-8"))}
+    modules = _module_counts(root)
+    problems = []
+    for module in partie.get("modules", []):
+        for section in module.get("sections", []):
+            for lang in ("fr", "en"):
+                path = base / module.get("dir", "") / f"{section['file']}.{lang}.md"
+                if not path.exists():
+                    continue
+                body = path.read_text(encoding="utf-8").replace(" ", " ")
+                for src in FIGURE.findall(body):
+                    if not (root.parent / src.lstrip("/")).exists():
+                        problems.append(f"{section['file']}.{lang} : figure {src} absente de static/")
+                for name, number in COURSE_REFERENCE.findall(body):
+                    if name in modules and not 1 <= int(number) <= modules[name]:
+                        problems.append(f"{section['file']}.{lang} : Revoir {name} M{number}, module inexistant")
+                if not MONTH_SECTION.match(section["file"]):
+                    continue
+                scenes = body.split("\n### ")
+                for ref in PIECE_REFS.findall(body):
+                    if kinds.get(ref) in UNTOLD_KINDS:
+                        continue
+                    scene = next((s for s in scenes[1:] if f"[[piece:{ref}]]" in s), None)
+                    if scene is None:
+                        problems.append(f"{section['file']}.{lang} : pièce {ref} sans scène (S34)")
+                        continue
+                    problems += [f"{section['file']}.{lang} : pièce {ref}, scène sans « {beat.strip('*: .')} »"
+                                 for beat in SCENE_BEATS[lang] if beat not in scene]
     return problems
 
 
