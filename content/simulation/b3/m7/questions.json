@@ -343,12 +343,12 @@
   "usage": "quiz",
   "exercice": 2026,
   "prompt": {
-   "fr": "Excédent d'acomptes sur l'IS dû ?\n\n[[piece:S-B3-16-001]]",
-   "en": "Instalments in excess of CIT due?\n\n[[piece:S-B3-16-001]]"
+   "fr": "Solde d'IS à payer avec la DSF (0 si tout est déjà réglé) ?\n\n[[piece:S-B3-16-001]]",
+   "en": "CIT balance due with the return (0 if already paid)?\n\n[[piece:S-B3-16-001]]"
   },
   "explanation": {
-   "fr": "Acomptes versés moins IS dû.",
-   "en": "Instalments less CIT due."
+   "fr": "IS dû moins acomptes versés. Quand c'est le minimum de perception qui est dû, les douze acomptes de 2 % du chiffre d'affaires, centimes compris, l'ont déjà payé : le solde est nul.",
+   "en": "CIT due less instalments. When the minimum tax is due, the twelve 2% instalments, council cents included, have already paid it: the balance is zero."
   },
   "numeric": {
    "value": 0,

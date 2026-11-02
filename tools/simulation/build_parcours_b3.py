@@ -790,12 +790,17 @@ def bridge_questions(book, special):
          "Capital emprunté moins les remboursements de l'année."),
     ):
         book.numeric(7, "exam", value, fr, en, why, why, piece=liq)
-    if tax["solde"]:
-        book.numeric(7, "exam", tax["solde"], "Solde d'IS à payer avec la DSF ?", "CIT balance due with the return?",
-                     "IS dû moins acomptes versés.", "CIT due less instalments.", piece=liq)
-    else:
+    if tax["excedent"]:
         book.numeric(7, "exam", tax["excedent"], "Excédent d'acomptes sur l'IS dû ?", "Instalments in excess of CIT due?",
                      "Acomptes versés moins IS dû.", "Instalments less CIT due.", piece=liq)
+    else:
+        # Un solde nul s'explique : les douze acomptes de 2 % du CA (CAC compris) couvrent exactement le minimum.
+        book.numeric(7, "exam", tax["solde"], "Solde d'IS à payer avec la DSF (0 si tout est déjà réglé) ?",
+                     "CIT balance due with the return (0 if already paid)?",
+                     "IS dû moins acomptes versés. Quand c'est le minimum de perception qui est dû, les douze acomptes de "
+                     "2 % du chiffre d'affaires, centimes compris, l'ont déjà payé : le solde est nul.",
+                     "CIT due less instalments. When the minimum tax is due, the twelve 2% instalments, council cents "
+                     "included, have already paid it: the balance is zero.", piece=liq)
     book.journal(7, "exam", liq, "Passez l'écriture de l'IS de l'exercice.", "Record the CIT for the year.",
                  "Impôt sur les bénéfices 891 au débit, État 441 au crédit.", "Income tax 891 debit, State 441 credit.")
     for fr, en, qtype, choices, why in (
