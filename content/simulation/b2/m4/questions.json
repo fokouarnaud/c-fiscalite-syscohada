@@ -1,0 +1,1034 @@
+[
+ {
+  "id": "S-B2-M4-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précompte de 5 % subi sur la première livraison de juillet ?\n\n[[piece:S-B2-07-001]]",
+   "en": "5% withholding on the first July delivery?\n\n[[piece:S-B2-07-001]]"
+  },
+  "explanation": {
+   "fr": "5 % du HT : M. Essomba est à l'IGS (CGI art. 21 (3)).",
+   "en": "5 % du HT : M. Essomba est à l'IGS (CGI art. 21 (3))."
+  },
+  "numeric": {
+   "value": 70840,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Coût de la première livraison de juillet, tout compris ?\n\n[[piece:S-B2-07-001]]",
+   "en": "Full cost of the first July delivery?\n\n[[piece:S-B2-07-001]]"
+  },
+  "explanation": {
+   "fr": "HT, TVA et précompte : à l'IGS, rien ne se récupère ; tout entre dans le coût d'achat (S40).",
+   "en": "HT, TVA et précompte : à l'IGS, rien ne se récupère ; tout entre dans le coût d'achat (S40)."
+  },
+  "numeric": {
+   "value": 1760374,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "TVA et CAC payées sur la seconde livraison de juillet, non récupérables ?\n\n[[piece:S-B2-07-002]]",
+   "en": "Non-recoverable VAT on the second July delivery?\n\n[[piece:S-B2-07-002]]"
+  },
+  "explanation": {
+   "fr": "19,25 % du HT, facturés par la brasserie au réel.",
+   "en": "19,25 % du HT, facturés par la brasserie au réel."
+  },
+  "numeric": {
+   "value": 272734,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recettes en espèces de juillet ?\n\n[[piece:S-B2-07-003]]",
+   "en": "July cash receipts?\n\n[[piece:S-B2-07-003]]"
+  },
+  "explanation": {
+   "fr": "Casiers vendus au comptant × 8 400 ; aucune TVA facturée à l'IGS.",
+   "en": "Casiers vendus au comptant × 8 400 ; aucune TVA facturée à l'IGS."
+  },
+  "numeric": {
+   "value": 2578800,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Encaissements Orange Money de juillet ?\n\n[[piece:S-B2-07-004]]",
+   "en": "July Orange Money receipts?\n\n[[piece:S-B2-07-004]]"
+  },
+  "explanation": {
+   "fr": "Casiers payés par téléphone × 8 400, au sous-compte 5522 (S19).",
+   "en": "Casiers payés par téléphone × 8 400, au sous-compte 5522 (S19)."
+  },
+  "numeric": {
+   "value": 1285200,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Courses de pousse-pousse payées en juillet ?\n\n[[piece:S-B2-07-006]]",
+   "en": "July push-cart costs?\n\n[[piece:S-B2-07-006]]"
+  },
+  "explanation": {
+   "fr": "Une course de 1 500 F pour 10 casiers livrés ; transport sur ventes (612).",
+   "en": "Une course de 1 500 F pour 10 casiers livrés ; transport sur ventes (612)."
+  },
+  "numeric": {
+   "value": 69000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Espèces versées à la banque en juillet ?\n\n[[piece:S-B2-07-007]]",
+   "en": "Cash deposited in July?\n\n[[piece:S-B2-07-007]]"
+  },
+  "explanation": {
+   "fr": "Le 15 et en fin de mois, la caisse ne garde que son fonds de 20 000 (rien en décembre, à la cessation) ; virement interne par 585.",
+   "en": "Le 15 et en fin de mois, la caisse ne garde que son fonds de 20 000 (rien en décembre, à la cessation) ; virement interne par 585."
+  },
+  "numeric": {
+   "value": 2434800,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des recettes de juillet au cahier du SMT ?\n\n[[piece:S-B2-07-003]]",
+   "en": "Total July receipts in the cash book?\n\n[[piece:S-B2-07-003]]"
+  },
+  "explanation": {
+   "fr": "Espèces et Orange Money : tous les casiers vendus × 8 400.",
+   "en": "Cash and Orange Money."
+  },
+  "numeric": {
+   "value": 3864000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des dépenses de juillet au cahier du SMT (hors prélèvements) ?\n\n[[piece:S-B2-07-008]]",
+   "en": "Total July payments (drawings excluded)?\n\n[[piece:S-B2-07-008]]"
+  },
+  "explanation": {
+   "fr": "Brasserie, loyer, pousse-pousse et frais ; les prélèvements de l'exploitant ne sont pas des dépenses de l'activité.",
+   "en": "Brewery, rent, carts and fees; drawings are not a business payment."
+  },
+  "numeric": {
+   "value": 3673248,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde du compte bancaire du dépôt au 31 juillet ?\n\n[[piece:S-B2-07-008]]",
+   "en": "Depot bank balance at July 31?\n\n[[piece:S-B2-07-008]]"
+  },
+  "explanation": {
+   "fr": "Recettes moins dépenses passées par la banque à cette date.",
+   "en": "Bank receipts less payments."
+  },
+  "numeric": {
+   "value": 9193829,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-07-31"
+  }
+ },
+ {
+  "id": "S-B2-M4-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Fonds de caisse au début de juillet, d'après la balance ?\n\n[[piece:S-B2-07-009]]",
+   "en": "Cash float at the start of July?\n\n[[piece:S-B2-07-009]]"
+  },
+  "explanation": {
+   "fr": "Solde débiteur du compte 5711 : le fonds gardé pour rendre la monnaie.",
+   "en": "Debit balance of 5711."
+  },
+  "numeric": {
+   "value": 20000,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "5711",
+   "date": "2026-06-30"
+  }
+ },
+ {
+  "id": "S-B2-M4-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précompte de 5 % subi sur la première livraison de août ?\n\n[[piece:S-B2-08-001]]",
+   "en": "5% withholding on the first August delivery?\n\n[[piece:S-B2-08-001]]"
+  },
+  "explanation": {
+   "fr": "5 % du HT : M. Essomba est à l'IGS (CGI art. 21 (3)).",
+   "en": "5 % du HT : M. Essomba est à l'IGS (CGI art. 21 (3))."
+  },
+  "numeric": {
+   "value": 71456,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Coût de la première livraison de août, tout compris ?\n\n[[piece:S-B2-08-001]]",
+   "en": "Full cost of the first August delivery?\n\n[[piece:S-B2-08-001]]"
+  },
+  "explanation": {
+   "fr": "HT, TVA et précompte : à l'IGS, rien ne se récupère ; tout entre dans le coût d'achat (S40).",
+   "en": "HT, TVA et précompte : à l'IGS, rien ne se récupère ; tout entre dans le coût d'achat (S40)."
+  },
+  "numeric": {
+   "value": 1775682,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "TVA et CAC payées sur la seconde livraison de août, non récupérables ?\n\n[[piece:S-B2-08-002]]",
+   "en": "Non-recoverable VAT on the second August delivery?\n\n[[piece:S-B2-08-002]]"
+  },
+  "explanation": {
+   "fr": "19,25 % du HT, facturés par la brasserie au réel.",
+   "en": "19,25 % du HT, facturés par la brasserie au réel."
+  },
+  "numeric": {
+   "value": 276291,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recettes en espèces de août ?\n\n[[piece:S-B2-08-003]]",
+   "en": "August cash receipts?\n\n[[piece:S-B2-08-003]]"
+  },
+  "explanation": {
+   "fr": "Casiers vendus au comptant × 8 400 ; aucune TVA facturée à l'IGS.",
+   "en": "Casiers vendus au comptant × 8 400 ; aucune TVA facturée à l'IGS."
+  },
+  "numeric": {
+   "value": 2604000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Encaissements Orange Money de août ?\n\n[[piece:S-B2-08-004]]",
+   "en": "August Orange Money receipts?\n\n[[piece:S-B2-08-004]]"
+  },
+  "explanation": {
+   "fr": "Casiers payés par téléphone × 8 400, au sous-compte 5522 (S19).",
+   "en": "Casiers payés par téléphone × 8 400, au sous-compte 5522 (S19)."
+  },
+  "numeric": {
+   "value": 1302000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Courses de pousse-pousse payées en août ?\n\n[[piece:S-B2-08-006]]",
+   "en": "August push-cart costs?\n\n[[piece:S-B2-08-006]]"
+  },
+  "explanation": {
+   "fr": "Une course de 1 500 F pour 10 casiers livrés ; transport sur ventes (612).",
+   "en": "Une course de 1 500 F pour 10 casiers livrés ; transport sur ventes (612)."
+  },
+  "numeric": {
+   "value": 70500,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Espèces versées à la banque en août ?\n\n[[piece:S-B2-08-007]]",
+   "en": "Cash deposited in August?\n\n[[piece:S-B2-08-007]]"
+  },
+  "explanation": {
+   "fr": "Le 15 et en fin de mois, la caisse ne garde que son fonds de 20 000 (rien en décembre, à la cessation) ; virement interne par 585.",
+   "en": "Le 15 et en fin de mois, la caisse ne garde que son fonds de 20 000 (rien en décembre, à la cessation) ; virement interne par 585."
+  },
+  "numeric": {
+   "value": 2458500,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des recettes de août au cahier du SMT ?\n\n[[piece:S-B2-08-003]]",
+   "en": "Total August receipts in the cash book?\n\n[[piece:S-B2-08-003]]"
+  },
+  "explanation": {
+   "fr": "Espèces et Orange Money : tous les casiers vendus × 8 400.",
+   "en": "Cash and Orange Money."
+  },
+  "numeric": {
+   "value": 3906000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des dépenses de août au cahier du SMT (hors prélèvements) ?\n\n[[piece:S-B2-08-008]]",
+   "en": "Total August payments (drawings excluded)?\n\n[[piece:S-B2-08-008]]"
+  },
+  "explanation": {
+   "fr": "Brasserie, loyer, pousse-pousse et frais ; les prélèvements de l'exploitant ne sont pas des dépenses de l'activité.",
+   "en": "Brewery, rent, carts and fees; drawings are not a business payment."
+  },
+  "numeric": {
+   "value": 3713017,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde du compte bancaire du dépôt au 31 août ?\n\n[[piece:S-B2-08-008]]",
+   "en": "Depot bank balance at August 31?\n\n[[piece:S-B2-08-008]]"
+  },
+  "explanation": {
+   "fr": "Recettes moins dépenses passées par la banque à cette date.",
+   "en": "Bank receipts less payments."
+  },
+  "numeric": {
+   "value": 9266812,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-08-31"
+  }
+ },
+ {
+  "id": "S-B2-M4-022",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Fonds de caisse au début de août, d'après la balance ?\n\n[[piece:S-B2-08-009]]",
+   "en": "Cash float at the start of August?\n\n[[piece:S-B2-08-009]]"
+  },
+  "explanation": {
+   "fr": "Solde débiteur du compte 5711 : le fonds gardé pour rendre la monnaie.",
+   "en": "Debit balance of 5711."
+  },
+  "numeric": {
+   "value": 20000,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "5711",
+   "date": "2026-07-31"
+  }
+ },
+ {
+  "id": "S-B2-M4-023",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précompte de 5 % subi sur la première livraison de septembre ?\n\n[[piece:S-B2-09-002]]",
+   "en": "5% withholding on the first September delivery?\n\n[[piece:S-B2-09-002]]"
+  },
+  "explanation": {
+   "fr": "5 % du HT : M. Essomba est à l'IGS (CGI art. 21 (3)).",
+   "en": "5 % du HT : M. Essomba est à l'IGS (CGI art. 21 (3))."
+  },
+  "numeric": {
+   "value": 72380,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-024",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Coût de la première livraison de septembre, tout compris ?\n\n[[piece:S-B2-09-002]]",
+   "en": "Full cost of the first September delivery?\n\n[[piece:S-B2-09-002]]"
+  },
+  "explanation": {
+   "fr": "HT, TVA et précompte : à l'IGS, rien ne se récupère ; tout entre dans le coût d'achat (S40).",
+   "en": "HT, TVA et précompte : à l'IGS, rien ne se récupère ; tout entre dans le coût d'achat (S40)."
+  },
+  "numeric": {
+   "value": 1798643,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-025",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "TVA et CAC payées sur la seconde livraison de septembre, non récupérables ?\n\n[[piece:S-B2-09-003]]",
+   "en": "Non-recoverable VAT on the second September delivery?\n\n[[piece:S-B2-09-003]]"
+  },
+  "explanation": {
+   "fr": "19,25 % du HT, facturés par la brasserie au réel.",
+   "en": "19,25 % du HT, facturés par la brasserie au réel."
+  },
+  "numeric": {
+   "value": 278663,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-026",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recettes en espèces de septembre ?\n\n[[piece:S-B2-09-004]]",
+   "en": "September cash receipts?\n\n[[piece:S-B2-09-004]]"
+  },
+  "explanation": {
+   "fr": "Casiers vendus au comptant × 8 400 ; aucune TVA facturée à l'IGS.",
+   "en": "Casiers vendus au comptant × 8 400 ; aucune TVA facturée à l'IGS."
+  },
+  "numeric": {
+   "value": 2637600,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-027",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Encaissements Orange Money de septembre ?\n\n[[piece:S-B2-09-005]]",
+   "en": "September Orange Money receipts?\n\n[[piece:S-B2-09-005]]"
+  },
+  "explanation": {
+   "fr": "Casiers payés par téléphone × 8 400, au sous-compte 5522 (S19).",
+   "en": "Casiers payés par téléphone × 8 400, au sous-compte 5522 (S19)."
+  },
+  "numeric": {
+   "value": 1310400,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-028",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Courses de pousse-pousse payées en septembre ?\n\n[[piece:S-B2-09-007]]",
+   "en": "September push-cart costs?\n\n[[piece:S-B2-09-007]]"
+  },
+  "explanation": {
+   "fr": "Une course de 1 500 F pour 10 casiers livrés ; transport sur ventes (612).",
+   "en": "Une course de 1 500 F pour 10 casiers livrés ; transport sur ventes (612)."
+  },
+  "numeric": {
+   "value": 70500,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-029",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Espèces versées à la banque en septembre ?\n\n[[piece:S-B2-09-008]]",
+   "en": "Cash deposited in September?\n\n[[piece:S-B2-09-008]]"
+  },
+  "explanation": {
+   "fr": "Le 15 et en fin de mois, la caisse ne garde que son fonds de 20 000 (rien en décembre, à la cessation) ; virement interne par 585.",
+   "en": "Le 15 et en fin de mois, la caisse ne garde que son fonds de 20 000 (rien en décembre, à la cessation) ; virement interne par 585."
+  },
+  "numeric": {
+   "value": 2492100,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-030",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des recettes de septembre au cahier du SMT ?\n\n[[piece:S-B2-09-004]]",
+   "en": "Total September receipts in the cash book?\n\n[[piece:S-B2-09-004]]"
+  },
+  "explanation": {
+   "fr": "Espèces et Orange Money : tous les casiers vendus × 8 400.",
+   "en": "Cash and Orange Money."
+  },
+  "numeric": {
+   "value": 3948000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-031",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des dépenses de septembre au cahier du SMT (hors prélèvements) ?\n\n[[piece:S-B2-09-009]]",
+   "en": "Total September payments (drawings excluded)?\n\n[[piece:S-B2-09-009]]"
+  },
+  "explanation": {
+   "fr": "Brasserie, loyer, pousse-pousse et frais ; les prélèvements de l'exploitant ne sont pas des dépenses de l'activité.",
+   "en": "Brewery, rent, carts and fees; drawings are not a business payment."
+  },
+  "numeric": {
+   "value": 3751286,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-032",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde du compte bancaire du dépôt au 30 septembre ?\n\n[[piece:S-B2-09-009]]",
+   "en": "Depot bank balance at September 30?\n\n[[piece:S-B2-09-009]]"
+  },
+  "explanation": {
+   "fr": "Recettes moins dépenses passées par la banque à cette date.",
+   "en": "Bank receipts less payments."
+  },
+  "numeric": {
+   "value": 9343526,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-09-30"
+  }
+ },
+ {
+  "id": "S-B2-M4-033",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Fonds de caisse au début de septembre, d'après la balance ?\n\n[[piece:S-B2-09-010]]",
+   "en": "Cash float at the start of September?\n\n[[piece:S-B2-09-010]]"
+  },
+  "explanation": {
+   "fr": "Solde débiteur du compte 5711 : le fonds gardé pour rendre la monnaie.",
+   "en": "Debit balance of 5711."
+  },
+  "numeric": {
+   "value": 20000,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "5711",
+   "date": "2026-08-31"
+  }
+ },
+ {
+  "id": "S-B2-M4-034",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Un client qui paie par Orange Money doit une TVA en plus du prix.\n\n[[piece:S-B2-08-004]]",
+   "en": "A customer paying by Orange Money owes VAT on top.\n\n[[piece:S-B2-08-004]]"
+  },
+  "explanation": {
+   "fr": "Faux : le dépôt est à l'IGS, il ne facture pas de TVA.",
+   "en": "Faux : le dépôt est à l'IGS, il ne facture pas de TVA."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M4-035",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Si le dépôt dépassait 50 millions de CA dès novembre 2026, il serait reclassé d'office au réel en cours d'exercice.\n\n[[piece:S-B2-09-001]]",
+   "en": "Above 50 million of turnover by November 2026, the depot would be moved to the actual regime mid-year.\n\n[[piece:S-B2-09-001]]"
+  },
+  "explanation": {
+   "fr": "Vrai : tout dépassement du seuil au cours d'un exercice entraîne le reclassement d'office (CGI art. C 39 (2)) ; d'où le soin de Paul à rester sous 50 millions en 2026.",
+   "en": "Vrai : tout dépassement du seuil au cours d'un exercice entraîne le reclassement d'office (CGI art. C 39 (2)) ; d'où le soin de Paul à rester sous 50 millions en 2026."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M4-036",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Le prix d'achat passe à 6 160 en juillet. Effet sur la marge ?\n\n[[piece:S-B2-07-002]]",
+   "en": "The price rises to 6,160 in July. Effect on the margin?\n\n[[piece:S-B2-07-002]]"
+  },
+  "explanation": {
+   "fr": "Coût du casier plus élevé, prix de vente inchangé.",
+   "en": "Coût du casier plus élevé, prix de vente inchangé."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Elle baisse, le prix de vente restant à 8 400",
+     "en": "It falls, the selling price staying at 8,400"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Aucun",
+     "en": "None"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M4-037",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chiffre d'affaires prévisionnel 2027 annoncé dans la déclaration de cessation ?\n\n[[piece:S-B2-09-001]]",
+   "en": "2027 forecast turnover stated in the cessation notice?\n\n[[piece:S-B2-09-001]]"
+  },
+  "explanation": {
+   "fr": "Le contrat de l'hôtel s'ajoute aux ventes du dépôt : 75 millions, au-delà du seuil de 50 millions.",
+   "en": "The hotel contract adds to the depot's sales."
+  },
+  "numeric": {
+   "value": 75000000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-038",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Seuil de chiffre d'affaires du négoce au-delà duquel on relève du réel ?\n\n[[piece:S-B2-09-001]]",
+   "en": "Trading turnover threshold above which the actual regime applies?\n\n[[piece:S-B2-09-001]]"
+  },
+  "explanation": {
+   "fr": "50 millions pour le négoce, 30 pour les professions libérales (CGI art. C 39 et 93 quater).",
+   "en": "50 million for trading."
+  },
+  "numeric": {
+   "value": 50000000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M4-039",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Au plus tard quand Paul doit-il déclarer une cessation prévue le 31 décembre 2026 ?\n\n[[piece:S-B2-09-001]]",
+   "en": "By when must Paul file notice of a cessation planned for 31 December 2026?\n\n[[piece:S-B2-09-001]]"
+  },
+  "explanation": {
+   "fr": "La déclaration préalable précède d'au moins trois mois la cessation (CGI art. 95 (1)).",
+   "en": "La déclaration préalable précède d'au moins trois mois la cessation (CGI art. 95 (1))."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le 30 septembre 2026 : trois mois avant",
+     "en": "30 September 2026: three months ahead"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Le 31 décembre 2026",
+     "en": "31 December 2026"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Le 15 mars 2027",
+     "en": "15 March 2027"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M4-040",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Sur quel chiffre d'affaires apprécie-t-on le régime d'une entreprise nouvelle ?\n\n[[piece:S-B2-09-001]]",
+   "en": "Which turnover sets the regime of a new business?\n\n[[piece:S-B2-09-001]]"
+  },
+  "explanation": {
+   "fr": "Pour une entreprise nouvelle, le CA prévisionnel, sous réserve de régularisation (circulaire de la LF 2026, art. C 39) : la SARL, avec 75 millions prévus, relève du réel dès sa création.",
+   "en": "Pour une entreprise nouvelle, le CA prévisionnel, sous réserve de régularisation (circulaire de la LF 2026, art. C 39) : la SARL, avec 75 millions prévus, relève du réel dès sa création."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le prévisionnel déclaré à l'immatriculation",
+     "en": "The forecast declared at registration"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Celui de l'établissement de 2026",
+     "en": "The 2026 sole proprietorship's"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M4-041",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Pourquoi Paul crée-t-il une SARL au 1er janvier plutôt que de garder l'Ets en 2027 ?\n\n[[piece:S-B2-09-001]]",
+   "en": "Why does Paul set up an LLC on 1 January rather than keep the sole proprietorship in 2027?\n\n[[piece:S-B2-09-001]]"
+  },
+  "explanation": {
+   "fr": "Le changement de régime se fait à une date nette (CGI art. C 39 (2)) ; la SARL limite aussi la responsabilité de Paul à ses apports.",
+   "en": "Le changement de régime se fait à une date nette (CGI art. C 39 (2)) ; la SARL limite aussi la responsabilité de Paul à ses apports."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "L'Ets dépasserait 50 millions en 2027 et serait reclassé d'office en cours d'année ; la SARL part au réel dès le premier jour, et sépare son patrimoine",
+     "en": "The sole proprietorship would cross 50 million in 2027 and be reclassified mid-year; the LLC starts under the actual regime and ring-fences his assets"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Parce qu'une SARL ne paie pas d'impôt",
+     "en": "Because an LLC pays no tax"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M4-042",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Que déclenche la déclaration de cessation ?\n\n[[piece:S-B2-09-001]]",
+   "en": "What does the cessation notice trigger?\n\n[[piece:S-B2-09-001]]"
+  },
+  "explanation": {
+   "fr": "CGI art. 95 bis.",
+   "en": "CGI art. 95 bis."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Un contrôle de la situation fiscale de l'Ets",
+     "en": "A review of the tax position"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Le remboursement des précomptes",
+     "en": "A refund of withholdings"
+    },
+    "correct": false
+   }
+  ]
+ }
+]

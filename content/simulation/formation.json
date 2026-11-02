@@ -1745,6 +1745,303 @@
     }
    ],
    "order": 6
+  },
+  {
+   "slug": "b2",
+   "title": {
+    "fr": "Parcours B2 : dépôt de boissons, de l'IGS à la SARL (Ets Essomba Boissons)",
+    "en": "Track B2: drinks depot, from the IGS to an LLC (Ets Essomba Boissons)"
+   },
+   "description": {
+    "fr": "Établissement individuel à l'IGS, au SMT, à Douala-Bépanda, apporté le 1er janvier 2027 à une SARL au réel.",
+    "en": "Sole proprietorship under the IGS, cash basis, in Douala, contributed on 1 January 2027 to an LLC under the actual regime."
+   },
+   "regime": "igs_puis_reel",
+   "systeme_comptable": "smt",
+   "forme": "individuelle",
+   "centre_impots": "cfl",
+   "chiffre_affaires_vise": 46000000,
+   "sous_comptes": {
+    "5522": {
+     "fr": "Orange Money",
+     "en": "Orange Money"
+    }
+   },
+   "pieces": "b2/pieces.json",
+   "ledger": "b2/ledger.json",
+   "exam": {
+    "questions_per_module": 4
+   },
+   "modules": [
+    {
+     "order": 1,
+     "dir": "b2/m1",
+     "title": {
+      "fr": "Création et janvier",
+      "en": "Set-up and January"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Ouvrir le dépôt et tenir le premier mois au SMT.",
+      "en": "Open the depot and keep the first month on a cash basis."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-dossier",
+       "kind": "content",
+       "title": {
+        "fr": "Dossier d'entreprise",
+        "en": "Company file"
+       }
+      },
+      {
+       "order": 2,
+       "file": "02-creation",
+       "kind": "content",
+       "title": {
+        "fr": "Démarches de création",
+        "en": "Set-up procedures"
+       }
+      },
+      {
+       "order": 3,
+       "file": "03-janvier",
+       "kind": "content",
+       "title": {
+        "fr": "Janvier 2026",
+        "en": "January 2026"
+       }
+      }
+     ]
+    },
+    {
+     "order": 2,
+     "dir": "b2/m2",
+     "title": {
+      "fr": "Premier trimestre (février et mars)",
+      "en": "First quarter (February and March)"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Tenir recettes et dépenses.",
+      "en": "Keep receipts and payments."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-fevrier",
+       "kind": "content",
+       "title": {
+        "fr": "Février 2026",
+        "en": "February 2026"
+       }
+      },
+      {
+       "order": 2,
+       "file": "02-mars",
+       "kind": "content",
+       "title": {
+        "fr": "Mars 2026",
+        "en": "March 2026"
+       }
+      }
+     ]
+    },
+    {
+     "order": 3,
+     "dir": "b2/m3",
+     "title": {
+      "fr": "Deuxième trimestre",
+      "en": "Second quarter"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Rapprocher caisse, Orange Money et banque.",
+      "en": "Reconcile till, Orange Money and bank."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-avril",
+       "kind": "content",
+       "title": {
+        "fr": "Avril 2026",
+        "en": "April 2026"
+       }
+      },
+      {
+       "order": 2,
+       "file": "02-mai",
+       "kind": "content",
+       "title": {
+        "fr": "Mai 2026",
+        "en": "May 2026"
+       }
+      },
+      {
+       "order": 3,
+       "file": "03-juin",
+       "kind": "content",
+       "title": {
+        "fr": "Juin 2026",
+        "en": "June 2026"
+       }
+      }
+     ]
+    },
+    {
+     "order": 4,
+     "dir": "b2/m4",
+     "title": {
+      "fr": "Troisième trimestre et décision",
+      "en": "Third quarter and decision"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Rester sous le seuil et déclarer la cessation à temps.",
+      "en": "Stay below the threshold and give notice of cessation in time."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-juillet",
+       "kind": "content",
+       "title": {
+        "fr": "Juillet 2026",
+        "en": "July 2026"
+       }
+      },
+      {
+       "order": 2,
+       "file": "02-aout",
+       "kind": "content",
+       "title": {
+        "fr": "Août 2026",
+        "en": "August 2026"
+       }
+      },
+      {
+       "order": 3,
+       "file": "03-septembre",
+       "kind": "content",
+       "title": {
+        "fr": "Septembre 2026",
+        "en": "September 2026"
+       }
+      },
+      {
+       "order": 4,
+       "file": "04-cessation",
+       "kind": "content",
+       "title": {
+        "fr": "Déclarer la cessation",
+        "en": "Notice of cessation"
+       }
+      }
+     ]
+    },
+    {
+     "order": 5,
+     "dir": "b2/m5",
+     "title": {
+      "fr": "Quatrième trimestre : naissance de la SARL",
+      "en": "Fourth quarter: the LLC is born"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Déposer le numéraire, évaluer les apports, signer les statuts.",
+      "en": "Pay in the cash, value the contributions, sign the articles."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-octobre",
+       "kind": "content",
+       "title": {
+        "fr": "Octobre 2026",
+        "en": "October 2026"
+       }
+      },
+      {
+       "order": 2,
+       "file": "02-novembre",
+       "kind": "content",
+       "title": {
+        "fr": "Novembre 2026",
+        "en": "November 2026"
+       }
+      },
+      {
+       "order": 3,
+       "file": "03-decembre",
+       "kind": "content",
+       "title": {
+        "fr": "Décembre 2026",
+        "en": "December 2026"
+       }
+      },
+      {
+       "order": 4,
+       "file": "04-creation-sarl",
+       "kind": "content",
+       "title": {
+        "fr": "Créer la SARL",
+        "en": "Setting up the LLC"
+       }
+      }
+     ]
+    },
+    {
+     "order": 6,
+     "dir": "b2/m6",
+     "title": {
+      "fr": "Clôture de l'Ets et bilan d'ouverture",
+      "en": "Closing the business and opening balance sheet"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Compter le stock, solder les comptes du dépôt, ouvrir le bilan de la SARL.",
+      "en": "Count the stock, settle the depot's accounts, open the LLC's balance sheet."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-cloture",
+       "kind": "content",
+       "title": {
+        "fr": "Clôture de l'Ets et bilan d'ouverture de la SARL",
+        "en": "Closing the business and the LLC's opening balance sheet"
+       }
+      }
+     ]
+    },
+    {
+     "order": 7,
+     "dir": "b2/m7",
+     "title": {
+      "fr": "Déclarations de clôture",
+      "en": "Closing returns"
+     },
+     "duration_hours": 6,
+     "competence": {
+      "fr": "Déclarer l'art. 74, la clôture avec l'IGS et la DSF du SMT.",
+      "en": "File the art. 74 return, the closing return with the IGS and the cash-basis return."
+     },
+     "sections": [
+      {
+       "order": 1,
+       "file": "01-declarations",
+       "kind": "content",
+       "title": {
+        "fr": "Déclarations de 2027",
+        "en": "2027 returns"
+       }
+      }
+     ]
+    }
+   ],
+   "order": 7
   }
  ]
 }

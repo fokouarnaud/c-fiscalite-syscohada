@@ -1,0 +1,607 @@
+[
+ {
+  "id": "S-B2-M7-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "IGS annuel 2026 du dépôt ?\n\n[[piece:S-B2-15-002]]",
+   "en": "2026 yearly IGS of the depot?\n\n[[piece:S-B2-15-002]]"
+  },
+  "explanation": {
+   "fr": "Tarif de la classe 10 (de 30 à moins de 50 millions) (CGI art. C 40 (1)).",
+   "en": "Class 10 tariff."
+  },
+  "numeric": {
+   "value": 2000000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "igs_annuel",
+   "args": [
+    46872000,
+    [
+     [
+      500000,
+      20000
+     ],
+     [
+      1000000,
+      30000
+     ],
+     [
+      1500000,
+      40000
+     ],
+     [
+      2000000,
+      50000
+     ],
+     [
+      2500000,
+      60000
+     ],
+     [
+      5000000,
+      150000
+     ],
+     [
+      10000000,
+      300000
+     ],
+     [
+      20000000,
+      500000
+     ],
+     [
+      30000000,
+      1000000
+     ],
+     [
+      50000000,
+      2000000
+     ]
+    ]
+   ],
+   "resultat": []
+  }
+ },
+ {
+  "id": "S-B2-M7-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "IGS 2026 si Paul avait adhéré à un Centre de Gestion Agréé ?\n\n[[piece:S-B2-15-002]]",
+   "en": "2026 IGS with a registered management centre?\n\n[[piece:S-B2-15-002]]"
+  },
+  "explanation": {
+   "fr": "Tarif réduit de moitié (CGI art. C 40 (4)).",
+   "en": "Halved tariff."
+  },
+  "numeric": {
+   "value": 1000000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "igs_annuel",
+   "args": [
+    46872000,
+    [
+     [
+      500000,
+      20000
+     ],
+     [
+      1000000,
+      30000
+     ],
+     [
+      1500000,
+      40000
+     ],
+     [
+      2000000,
+      50000
+     ],
+     [
+      2500000,
+      60000
+     ],
+     [
+      5000000,
+      150000
+     ],
+     [
+      10000000,
+      300000
+     ],
+     [
+      20000000,
+      500000
+     ],
+     [
+      30000000,
+      1000000
+     ],
+     [
+      50000000,
+      2000000
+     ]
+    ],
+    true
+   ],
+   "resultat": []
+  }
+ },
+ {
+  "id": "S-B2-M7-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chiffre d'affaires déclaré à la clôture ?\n\n[[piece:S-B2-15-002]]",
+   "en": "Turnover declared at closing?\n\n[[piece:S-B2-15-002]]"
+  },
+  "explanation": {
+   "fr": "Total des recettes de 2026.",
+   "en": "Total des recettes de 2026."
+  },
+  "numeric": {
+   "value": 46872000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M7-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Stock déclaré comme apporté au cessionnaire ?\n\n[[piece:S-B2-15-002]]",
+   "en": "Stock declared as transferred?\n\n[[piece:S-B2-15-002]]"
+  },
+  "explanation": {
+   "fr": "La déclaration de clôture détaille les stocks et le cessionnaire (art. 95 (2)).",
+   "en": "La déclaration de clôture détaille les stocks et le cessionnaire (art. 95 (2))."
+  },
+  "numeric": {
+   "value": 367800,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M7-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Montant à payer avec la déclaration de clôture, au plus tard le 31 mars 2027 ?\n\n[[piece:S-B2-15-002]]",
+   "en": "Amount due with the closing return by 31 March 2027?\n\n[[piece:S-B2-15-002]]"
+  },
+  "explanation": {
+   "fr": "La déclaration de cessation s'accompagne du paiement des droits (art. 96) : l'IGS 2026 part avant le 15 avril.",
+   "en": "La déclaration de cessation s'accompagne du paiement des droits (art. 96) : l'IGS 2026 part avant le 15 avril."
+  },
+  "numeric": {
+   "value": 2000000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M7-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Quotité trimestrielle si l'Ets avait opté pour le paiement fractionné ?\n\n[[piece:S-B2-15-002]]",
+   "en": "Quarterly instalment under the split-payment option?\n\n[[piece:S-B2-15-002]]"
+  },
+  "explanation": {
+   "fr": "Un quart de l'IGS annuel (art. C 41).",
+   "en": "Un quart de l'IGS annuel (art. C 41)."
+  },
+  "numeric": {
+   "value": 500000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M7-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "DSF du SMT : résultat de l'exercice 2026 ?\n\n[[piece:S-B2-15-004]]",
+   "en": "Cash-basis return: 2026 profit?\n\n[[piece:S-B2-15-004]]"
+  },
+  "explanation": {
+   "fr": "Recettes moins dépenses, plus le stock final (AUDCIF art. 28).",
+   "en": "Recettes moins dépenses, plus le stock final (AUDCIF art. 28)."
+  },
+  "numeric": {
+   "value": 2437240,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M7-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "DSF du SMT : trésorerie au 31 décembre ?\n\n[[piece:S-B2-15-004]]",
+   "en": "Cash-basis return: cash at 31 December?\n\n[[piece:S-B2-15-004]]"
+  },
+  "explanation": {
+   "fr": "Zéro : les comptes du dépôt sont soldés à la cessation.",
+   "en": "Zéro : les comptes du dépôt sont soldés à la cessation."
+  },
+  "numeric": {
+   "value": 0,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M7-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "DSF du SMT : dépenses de l'exercice ?\n\n[[piece:S-B2-15-004]]",
+   "en": "Cash-basis return: payments of the year?\n\n[[piece:S-B2-15-004]]"
+  },
+  "explanation": {
+   "fr": "Achats, loyer, pousse-pousse et frais (classes 6).",
+   "en": "Achats, loyer, pousse-pousse et frais (classes 6)."
+  },
+  "numeric": {
+   "value": 44802560,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M7-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Résultat 2026 après l'IGS ?\n\n[[piece:S-B2-15-002]]",
+   "en": "2026 profit after the IGS?\n\n[[piece:S-B2-15-002]]"
+  },
+  "explanation": {
+   "fr": "L'IGS de la classe 10 pèse sur une marge de quelques centaines de francs par casier.",
+   "en": "L'IGS de la classe 10 pèse sur une marge de quelques centaines de francs par casier."
+  },
+  "numeric": {
+   "value": 437240,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M7-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chiffre d'affaires porté sur la déclaration de l'art. 74 ?\n\n[[piece:S-B2-15-001]]",
+   "en": "Turnover on the art. 74 return?\n\n[[piece:S-B2-15-001]]"
+  },
+  "explanation": {
+   "fr": "Une personne physique à l'IGS dépose aussi sa déclaration annuelle de revenus (CGI art. C 39 (4) et 74).",
+   "en": "Une personne physique à l'IGS dépose aussi sa déclaration annuelle de revenus (CGI art. C 39 (4) et 74)."
+  },
+  "numeric": {
+   "value": 46872000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M7-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Dette de la SARL envers Paul au 1er janvier 2027 (4621) ?\n\n[[piece:S-B2-12-007]]",
+   "en": "The LLC's debt to Paul on 1 January 2027 (4621)?\n\n[[piece:S-B2-12-007]]"
+  },
+  "explanation": {
+   "fr": "La SARL reprend les frais avancés pour elle (AUSCGIE art. 110) et les doit à son associé.",
+   "en": "La SARL reprend les frais avancés pour elle (AUSCGIE art. 110) et les doit à son associé."
+  },
+  "numeric": {
+   "value": 398125,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M7-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "TVA récupérable par la SARL sur la facture du notaire (4454) ?\n\n[[piece:S-B2-12-007]]",
+   "en": "VAT recoverable by the LLC on the notary's invoice (4454)?\n\n[[piece:S-B2-12-007]]"
+  },
+  "explanation": {
+   "fr": "La SARL est au réel : elle déduira cette TVA sur sa première déclaration, en février 2027.",
+   "en": "La SARL est au réel : elle déduira cette TVA sur sa première déclaration, en février 2027."
+  },
+  "numeric": {
+   "value": 48125,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M7-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Charges de constitution de la SARL au 1er janvier 2027 (6324 et 6468) ?\n\n[[piece:S-B2-12-007]]",
+   "en": "The LLC's formation expenses on 1 January 2027 (6324 and 6468)?\n\n[[piece:S-B2-12-007]]"
+  },
+  "explanation": {
+   "fr": "Honoraires et droits d'enregistrement, en charges par nature (S6).",
+   "en": "Honoraires et droits d'enregistrement, en charges par nature (S6)."
+  },
+  "numeric": {
+   "value": 350000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M7-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Date limite de la déclaration de clôture de l'Ets ?\n\n[[piece:S-B2-15-002]]",
+   "en": "Deadline of the closing return?\n\n[[piece:S-B2-15-002]]"
+  },
+  "explanation": {
+   "fr": "CGI art. 95 (2) ; plus tôt que l'échéance de l'IGS (art. C 41).",
+   "en": "CGI art. 95 (2) ; plus tôt que l'échéance de l'IGS (art. C 41)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "31 mars 2027 : trois mois après la cessation",
+     "en": "31 March 2027: three months after cessation"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "15 avril 2027",
+     "en": "15 April 2027"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M7-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Date limite de la déclaration de revenus de l'art. 74 ?\n\n[[piece:S-B2-15-001]]",
+   "en": "Deadline of the art. 74 income return?\n\n[[piece:S-B2-15-001]]"
+  },
+  "explanation": {
+   "fr": "CGI art. 74, rendu applicable aux personnes physiques à l'IGS par l'art. C 39 (4).",
+   "en": "CGI art. 74, rendu applicable aux personnes physiques à l'IGS par l'art. C 39 (4)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "15 mars 2027",
+     "en": "15 March 2027"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "15 mai 2027",
+     "en": "15 May 2027"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M7-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Pourquoi déposer la DSF du SMT avec la déclaration de clôture ?\n\n[[piece:S-B2-15-004]]",
+   "en": "Why file the cash-basis return with the closing return?\n\n[[piece:S-B2-15-004]]"
+  },
+  "explanation": {
+   "fr": "Art. 95 (2) et C 44 : l'échéance du 15 mai reste la limite, la clôture l'avance.",
+   "en": "Art. 95 (2) et C 44 : l'échéance du 15 mai reste la limite, la clôture l'avance."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "La clôture liquide les revenus jusqu'à la cessation, états à l'appui",
+     "en": "The closing return settles income up to cessation, with statements"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Parce que le 15 mai est supprimé",
+     "en": "Because 15 May was abolished"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M7-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Paul dépose-t-il une DSF du système normal pour 2026 ?\n\n[[piece:S-B2-15-004]]",
+   "en": "Does Paul file the standard return for 2026?\n\n[[piece:S-B2-15-004]]"
+  },
+  "explanation": {
+   "fr": "À l'IGS, SMT et DSF du SMT (art. C 44, S14) ; la DSF normale viendra pour la SARL, sur 2027.",
+   "en": "À l'IGS, SMT et DSF du SMT (art. C 44, S14) ; la DSF normale viendra pour la SARL, sur 2027."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non : la DSF du SMT de l'Ets",
+     "en": "No: the sole proprietorship's cash-basis return"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui",
+     "en": "Yes"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M7-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "À quel centre des impôts la SARL est-elle rattachée ?\n\n[[piece:S-B2-12-007]]",
+   "en": "Which tax office does the LLC belong to?\n\n[[piece:S-B2-12-007]]"
+  },
+  "explanation": {
+   "fr": "Rattachement selon le chiffre d'affaires (DGI) ; régime du réel dès la création.",
+   "en": "Rattachement selon le chiffre d'affaires (DGI) ; régime du réel dès la création."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le CIME de Douala : 75 millions prévus, entre 50 millions et 3 milliards",
+     "en": "Douala CIME: 75 million forecast"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Le centre de fiscalité locale",
+     "en": "The local tax office"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M7-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "L'IGS dépend-il du bénéfice du dépôt ?\n\n[[piece:S-B2-15-002]]",
+   "en": "Does the IGS depend on the depot's profit?\n\n[[piece:S-B2-15-002]]"
+  },
+  "explanation": {
+   "fr": "Tarif forfaitaire par classe (art. C 40).",
+   "en": "Tarif forfaitaire par classe (art. C 40)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non : de la classe de chiffre d'affaires",
+     "en": "No: on the turnover class"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui",
+     "en": "Yes"
+    },
+    "correct": false
+   }
+  ]
+ }
+]

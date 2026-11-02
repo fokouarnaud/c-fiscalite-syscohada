@@ -1,0 +1,1336 @@
+[
+ {
+  "id": "S-B2-M5-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précompte de 5 % subi sur la première livraison de octobre ?\n\n[[piece:S-B2-10-001]]",
+   "en": "5% withholding on the first October delivery?\n\n[[piece:S-B2-10-001]]"
+  },
+  "explanation": {
+   "fr": "5 % du HT : M. Essomba est à l'IGS (CGI art. 21 (3)).",
+   "en": "5 % du HT : M. Essomba est à l'IGS (CGI art. 21 (3))."
+  },
+  "numeric": {
+   "value": 72380,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Coût de la première livraison de octobre, tout compris ?\n\n[[piece:S-B2-10-001]]",
+   "en": "Full cost of the first October delivery?\n\n[[piece:S-B2-10-001]]"
+  },
+  "explanation": {
+   "fr": "HT, TVA et précompte : à l'IGS, rien ne se récupère ; tout entre dans le coût d'achat (S40).",
+   "en": "HT, TVA et précompte : à l'IGS, rien ne se récupère ; tout entre dans le coût d'achat (S40)."
+  },
+  "numeric": {
+   "value": 1798643,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "TVA et CAC payées sur la seconde livraison de octobre, non récupérables ?\n\n[[piece:S-B2-10-002]]",
+   "en": "Non-recoverable VAT on the second October delivery?\n\n[[piece:S-B2-10-002]]"
+  },
+  "explanation": {
+   "fr": "19,25 % du HT, facturés par la brasserie au réel.",
+   "en": "19,25 % du HT, facturés par la brasserie au réel."
+  },
+  "numeric": {
+   "value": 278663,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recettes en espèces de octobre ?\n\n[[piece:S-B2-10-003]]",
+   "en": "October cash receipts?\n\n[[piece:S-B2-10-003]]"
+  },
+  "explanation": {
+   "fr": "Casiers vendus au comptant × 8 400 ; aucune TVA facturée à l'IGS.",
+   "en": "Casiers vendus au comptant × 8 400 ; aucune TVA facturée à l'IGS."
+  },
+  "numeric": {
+   "value": 2637600,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Encaissements Orange Money de octobre ?\n\n[[piece:S-B2-10-004]]",
+   "en": "October Orange Money receipts?\n\n[[piece:S-B2-10-004]]"
+  },
+  "explanation": {
+   "fr": "Casiers payés par téléphone × 8 400, au sous-compte 5522 (S19).",
+   "en": "Casiers payés par téléphone × 8 400, au sous-compte 5522 (S19)."
+  },
+  "numeric": {
+   "value": 1310400,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Courses de pousse-pousse payées en octobre ?\n\n[[piece:S-B2-10-006]]",
+   "en": "October push-cart costs?\n\n[[piece:S-B2-10-006]]"
+  },
+  "explanation": {
+   "fr": "Une course de 1 500 F pour 10 casiers livrés ; transport sur ventes (612).",
+   "en": "Une course de 1 500 F pour 10 casiers livrés ; transport sur ventes (612)."
+  },
+  "numeric": {
+   "value": 70500,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Espèces versées à la banque en octobre ?\n\n[[piece:S-B2-10-007]]",
+   "en": "Cash deposited in October?\n\n[[piece:S-B2-10-007]]"
+  },
+  "explanation": {
+   "fr": "Le 15 et en fin de mois, la caisse ne garde que son fonds de 20 000 (rien en décembre, à la cessation) ; virement interne par 585.",
+   "en": "Le 15 et en fin de mois, la caisse ne garde que son fonds de 20 000 (rien en décembre, à la cessation) ; virement interne par 585."
+  },
+  "numeric": {
+   "value": 2492100,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des recettes de octobre au cahier du SMT ?\n\n[[piece:S-B2-10-003]]",
+   "en": "Total October receipts in the cash book?\n\n[[piece:S-B2-10-003]]"
+  },
+  "explanation": {
+   "fr": "Espèces et Orange Money : tous les casiers vendus × 8 400.",
+   "en": "Cash and Orange Money."
+  },
+  "numeric": {
+   "value": 3948000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des dépenses de octobre au cahier du SMT (hors prélèvements) ?\n\n[[piece:S-B2-10-008]]",
+   "en": "Total October payments (drawings excluded)?\n\n[[piece:S-B2-10-008]]"
+  },
+  "explanation": {
+   "fr": "Brasserie, loyer, pousse-pousse et frais ; les prélèvements de l'exploitant ne sont pas des dépenses de l'activité.",
+   "en": "Brewery, rent, carts and fees; drawings are not a business payment."
+  },
+  "numeric": {
+   "value": 3751286,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde du compte bancaire du dépôt au 31 octobre ?\n\n[[piece:S-B2-10-008]]",
+   "en": "Depot bank balance at October 31?\n\n[[piece:S-B2-10-008]]"
+  },
+  "explanation": {
+   "fr": "Recettes moins dépenses passées par la banque à cette date.",
+   "en": "Bank receipts less payments."
+  },
+  "numeric": {
+   "value": 9420240,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-10-31"
+  }
+ },
+ {
+  "id": "S-B2-M5-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Fonds de caisse au début de octobre, d'après la balance ?\n\n[[piece:S-B2-10-009]]",
+   "en": "Cash float at the start of October?\n\n[[piece:S-B2-10-009]]"
+  },
+  "explanation": {
+   "fr": "Solde débiteur du compte 5711 : le fonds gardé pour rendre la monnaie.",
+   "en": "Debit balance of 5711."
+  },
+  "numeric": {
+   "value": 20000,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "5711",
+   "date": "2026-09-30"
+  }
+ },
+ {
+  "id": "S-B2-M5-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précompte de 5 % subi sur la première livraison de novembre ?\n\n[[piece:S-B2-11-002]]",
+   "en": "5% withholding on the first November delivery?\n\n[[piece:S-B2-11-002]]"
+  },
+  "explanation": {
+   "fr": "5 % du HT : M. Essomba est à l'IGS (CGI art. 21 (3)).",
+   "en": "5 % du HT : M. Essomba est à l'IGS (CGI art. 21 (3))."
+  },
+  "numeric": {
+   "value": 73920,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Coût de la première livraison de novembre, tout compris ?\n\n[[piece:S-B2-11-002]]",
+   "en": "Full cost of the first November delivery?\n\n[[piece:S-B2-11-002]]"
+  },
+  "explanation": {
+   "fr": "HT, TVA et précompte : à l'IGS, rien ne se récupère ; tout entre dans le coût d'achat (S40).",
+   "en": "HT, TVA et précompte : à l'IGS, rien ne se récupère ; tout entre dans le coût d'achat (S40)."
+  },
+  "numeric": {
+   "value": 1836912,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "TVA et CAC payées sur la seconde livraison de novembre, non récupérables ?\n\n[[piece:S-B2-11-003]]",
+   "en": "Non-recoverable VAT on the second November delivery?\n\n[[piece:S-B2-11-003]]"
+  },
+  "explanation": {
+   "fr": "19,25 % du HT, facturés par la brasserie au réel.",
+   "en": "19,25 % du HT, facturés par la brasserie au réel."
+  },
+  "numeric": {
+   "value": 284592,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recettes en espèces de novembre ?\n\n[[piece:S-B2-11-006]]",
+   "en": "November cash receipts?\n\n[[piece:S-B2-11-006]]"
+  },
+  "explanation": {
+   "fr": "Casiers vendus au comptant × 8 400 ; aucune TVA facturée à l'IGS.",
+   "en": "Casiers vendus au comptant × 8 400 ; aucune TVA facturée à l'IGS."
+  },
+  "numeric": {
+   "value": 2688000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Encaissements Orange Money de novembre ?\n\n[[piece:S-B2-11-007]]",
+   "en": "November Orange Money receipts?\n\n[[piece:S-B2-11-007]]"
+  },
+  "explanation": {
+   "fr": "Casiers payés par téléphone × 8 400, au sous-compte 5522 (S19).",
+   "en": "Casiers payés par téléphone × 8 400, au sous-compte 5522 (S19)."
+  },
+  "numeric": {
+   "value": 1344000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Courses de pousse-pousse payées en novembre ?\n\n[[piece:S-B2-11-009]]",
+   "en": "November push-cart costs?\n\n[[piece:S-B2-11-009]]"
+  },
+  "explanation": {
+   "fr": "Une course de 1 500 F pour 10 casiers livrés ; transport sur ventes (612).",
+   "en": "Une course de 1 500 F pour 10 casiers livrés ; transport sur ventes (612)."
+  },
+  "numeric": {
+   "value": 72000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Espèces versées à la banque en novembre ?\n\n[[piece:S-B2-11-010]]",
+   "en": "Cash deposited in November?\n\n[[piece:S-B2-11-010]]"
+  },
+  "explanation": {
+   "fr": "Le 15 et en fin de mois, la caisse ne garde que son fonds de 20 000 (rien en décembre, à la cessation) ; virement interne par 585.",
+   "en": "Le 15 et en fin de mois, la caisse ne garde que son fonds de 20 000 (rien en décembre, à la cessation) ; virement interne par 585."
+  },
+  "numeric": {
+   "value": 2541000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des recettes de novembre au cahier du SMT ?\n\n[[piece:S-B2-11-006]]",
+   "en": "Total November receipts in the cash book?\n\n[[piece:S-B2-11-006]]"
+  },
+  "explanation": {
+   "fr": "Espèces et Orange Money : tous les casiers vendus × 8 400.",
+   "en": "Cash and Orange Money."
+  },
+  "numeric": {
+   "value": 4032000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des dépenses de novembre au cahier du SMT (hors prélèvements) ?\n\n[[piece:S-B2-11-011]]",
+   "en": "Total November payments (drawings excluded)?\n\n[[piece:S-B2-11-011]]"
+  },
+  "explanation": {
+   "fr": "Brasserie, loyer, pousse-pousse et frais ; les prélèvements de l'exploitant ne sont pas des dépenses de l'activité.",
+   "en": "Brewery, rent, carts and fees; drawings are not a business payment."
+  },
+  "numeric": {
+   "value": 3829324,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde du compte bancaire du dépôt au 30 novembre ?\n\n[[piece:S-B2-11-011]]",
+   "en": "Depot bank balance at November 30?\n\n[[piece:S-B2-11-011]]"
+  },
+  "explanation": {
+   "fr": "Recettes moins dépenses passées par la banque à cette date.",
+   "en": "Bank receipts less payments."
+  },
+  "numeric": {
+   "value": 4870636,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-11-30"
+  }
+ },
+ {
+  "id": "S-B2-M5-022",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Fonds de caisse au début de novembre, d'après la balance ?\n\n[[piece:S-B2-11-012]]",
+   "en": "Cash float at the start of November?\n\n[[piece:S-B2-11-012]]"
+  },
+  "explanation": {
+   "fr": "Solde débiteur du compte 5711 : le fonds gardé pour rendre la monnaie.",
+   "en": "Debit balance of 5711."
+  },
+  "numeric": {
+   "value": 20000,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "5711",
+   "date": "2026-10-31"
+  }
+ },
+ {
+  "id": "S-B2-M5-023",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précompte de 5 % subi sur la première livraison de décembre ?\n\n[[piece:S-B2-12-004]]",
+   "en": "5% withholding on the first December delivery?\n\n[[piece:S-B2-12-004]]"
+  },
+  "explanation": {
+   "fr": "5 % du HT : M. Essomba est à l'IGS (CGI art. 21 (3)).",
+   "en": "5 % du HT : M. Essomba est à l'IGS (CGI art. 21 (3))."
+  },
+  "numeric": {
+   "value": 80080,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-024",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Coût de la première livraison de décembre, tout compris ?\n\n[[piece:S-B2-12-004]]",
+   "en": "Full cost of the first December delivery?\n\n[[piece:S-B2-12-004]]"
+  },
+  "explanation": {
+   "fr": "HT, TVA et précompte : à l'IGS, rien ne se récupère ; tout entre dans le coût d'achat (S40).",
+   "en": "HT, TVA et précompte : à l'IGS, rien ne se récupère ; tout entre dans le coût d'achat (S40)."
+  },
+  "numeric": {
+   "value": 1989988,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-025",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "TVA et CAC payées sur la seconde livraison de décembre, non récupérables ?\n\n[[piece:S-B2-12-005]]",
+   "en": "Non-recoverable VAT on the second December delivery?\n\n[[piece:S-B2-12-005]]"
+  },
+  "explanation": {
+   "fr": "19,25 % du HT, facturés par la brasserie au réel.",
+   "en": "19,25 % du HT, facturés par la brasserie au réel."
+  },
+  "numeric": {
+   "value": 308308,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-026",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recettes en espèces de décembre ?\n\n[[piece:S-B2-12-008]]",
+   "en": "December cash receipts?\n\n[[piece:S-B2-12-008]]"
+  },
+  "explanation": {
+   "fr": "Casiers vendus au comptant × 8 400 ; aucune TVA facturée à l'IGS.",
+   "en": "Casiers vendus au comptant × 8 400 ; aucune TVA facturée à l'IGS."
+  },
+  "numeric": {
+   "value": 2914800,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-027",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Encaissements Orange Money de décembre ?\n\n[[piece:S-B2-12-009]]",
+   "en": "December Orange Money receipts?\n\n[[piece:S-B2-12-009]]"
+  },
+  "explanation": {
+   "fr": "Casiers payés par téléphone × 8 400, au sous-compte 5522 (S19).",
+   "en": "Casiers payés par téléphone × 8 400, au sous-compte 5522 (S19)."
+  },
+  "numeric": {
+   "value": 1453200,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-028",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Courses de pousse-pousse payées en décembre ?\n\n[[piece:S-B2-12-011]]",
+   "en": "December push-cart costs?\n\n[[piece:S-B2-12-011]]"
+  },
+  "explanation": {
+   "fr": "Une course de 1 500 F pour 10 casiers livrés ; transport sur ventes (612).",
+   "en": "Une course de 1 500 F pour 10 casiers livrés ; transport sur ventes (612)."
+  },
+  "numeric": {
+   "value": 78000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-029",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Espèces versées à la banque en décembre ?\n\n[[piece:S-B2-12-012]]",
+   "en": "Cash deposited in December?\n\n[[piece:S-B2-12-012]]"
+  },
+  "explanation": {
+   "fr": "Le 15 et en fin de mois, la caisse ne garde que son fonds de 20 000 (rien en décembre, à la cessation) ; virement interne par 585.",
+   "en": "Le 15 et en fin de mois, la caisse ne garde que son fonds de 20 000 (rien en décembre, à la cessation) ; virement interne par 585."
+  },
+  "numeric": {
+   "value": 2781800,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-030",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des recettes de décembre au cahier du SMT ?\n\n[[piece:S-B2-12-008]]",
+   "en": "Total December receipts in the cash book?\n\n[[piece:S-B2-12-008]]"
+  },
+  "explanation": {
+   "fr": "Espèces et Orange Money : tous les casiers vendus × 8 400.",
+   "en": "Cash and Orange Money."
+  },
+  "numeric": {
+   "value": 4368000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-031",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des dépenses de décembre au cahier du SMT (hors prélèvements) ?\n\n[[piece:S-B2-12-013]]",
+   "en": "Total December payments (drawings excluded)?\n\n[[piece:S-B2-12-013]]"
+  },
+  "explanation": {
+   "fr": "Brasserie, loyer, pousse-pousse et frais ; les prélèvements de l'exploitant ne sont pas des dépenses de l'activité.",
+   "en": "Brewery, rent, carts and fees; drawings are not a business payment."
+  },
+  "numeric": {
+   "value": 4141476,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-032",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde du compte bancaire du dépôt au 31 décembre ?\n\n[[piece:S-B2-12-013]]",
+   "en": "Depot bank balance at December 31?\n\n[[piece:S-B2-12-013]]"
+  },
+  "explanation": {
+   "fr": "Recettes moins dépenses passées par la banque à cette date.",
+   "en": "Bank receipts less payments."
+  },
+  "numeric": {
+   "value": 0,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-12-31"
+  }
+ },
+ {
+  "id": "S-B2-M5-033",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Fonds de caisse au début de décembre, d'après la balance ?\n\n[[piece:S-B2-12-015]]",
+   "en": "Cash float at the start of December?\n\n[[piece:S-B2-12-015]]"
+  },
+  "explanation": {
+   "fr": "Solde débiteur du compte 5711 : le fonds gardé pour rendre la monnaie.",
+   "en": "Debit balance of 5711."
+  },
+  "numeric": {
+   "value": 20000,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "5711",
+   "date": "2026-11-30"
+  }
+ },
+ {
+  "id": "S-B2-M5-034",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "La SARL pourra déduire la TVA de la facture du tricycle.\n\n[[piece:S-B2-11-005]]",
+   "en": "The LLC will deduct the VAT on the tricycle invoice.\n\n[[piece:S-B2-11-005]]"
+  },
+  "explanation": {
+   "fr": "Faux : Paul a acheté le tricycle à titre personnel ; la SARL le reçoit en apport, sans TVA facturée à son nom.",
+   "en": "Faux : Paul a acheté le tricycle à titre personnel ; la SARL le reçoit en apport, sans TVA facturée à son nom."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M5-035",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Que montre le relevé bancaire chaque mois ?\n\n[[piece:S-B2-10-008]]",
+   "en": "What does the bank statement show each month?\n\n[[piece:S-B2-10-008]]"
+  },
+  "explanation": {
+   "fr": "Le cahier du SMT se rapproche de ce relevé.",
+   "en": "Le cahier du SMT se rapproche de ce relevé."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Versements, transfert Orange Money, virements à la brasserie, prélèvement, frais",
+     "en": "Deposits, Orange Money transfer, brewery transfers, drawings, fees"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Seulement les ventes",
+     "en": "Only sales"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M5-036",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Apport en numéraire déposé sur le compte bloqué ?\n\n[[piece:S-B2-11-004]]",
+   "en": "Cash contribution paid into the blocked account?\n\n[[piece:S-B2-11-004]]"
+  },
+  "explanation": {
+   "fr": "Capital moins les apports en nature (stock et tricycle) ; libéré en totalité, alors que la moitié suffisait (AUSCGIE art. 311-1).",
+   "en": "Capital moins les apports en nature (stock et tricycle) ; libéré en totalité, alors que la moitié suffisait (AUSCGIE art. 311-1)."
+  },
+  "numeric": {
+   "value": 3182200,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-037",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Prix payé par Paul pour le tricycle, TVA comprise ?\n\n[[piece:S-B2-11-005]]",
+   "en": "Price paid by Paul for the tricycle, VAT included?\n\n[[piece:S-B2-11-005]]"
+  },
+  "explanation": {
+   "fr": "HT plus TVA et CAC : Paul achète en personne privée, il ne récupère rien.",
+   "en": "HT plus TVA et CAC : Paul achète en personne privée, il ne récupère rien."
+  },
+  "numeric": {
+   "value": 1450080,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-038",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "TVA et CAC comprises dans le prix du tricycle ?\n\n[[piece:S-B2-11-005]]",
+   "en": "VAT and council cents in the tricycle price?\n\n[[piece:S-B2-11-005]]"
+  },
+  "explanation": {
+   "fr": "19,25 % du HT, facturés par le vendeur au réel.",
+   "en": "19,25 % du HT, facturés par le vendeur au réel."
+  },
+  "numeric": {
+   "value": 234080,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-039",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Capital social d'Essomba Boissons SARL ?\n\n[[piece:S-B2-12-006]]",
+   "en": "Share capital of Essomba Boissons SARL?\n\n[[piece:S-B2-12-006]]"
+  },
+  "explanation": {
+   "fr": "Somme des apports : stock, tricycle et numéraire.",
+   "en": "Somme des apports : stock, tricycle et numéraire."
+  },
+  "numeric": {
+   "value": 5000000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-040",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Nombre de parts sociales de 10 000 ?\n\n[[piece:S-B2-12-006]]",
+   "en": "Number of 10,000 shares?\n\n[[piece:S-B2-12-006]]"
+  },
+  "explanation": {
+   "fr": "Capital divisé par la valeur nominale (au moins 5 000 au Cameroun, loi n° 2016/014 art. 2).",
+   "en": "Capital divisé par la valeur nominale (au moins 5 000 au Cameroun, loi n° 2016/014 art. 2)."
+  },
+  "numeric": {
+   "value": 500,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-041",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des apports en nature ?\n\n[[piece:S-B2-12-006]]",
+   "en": "Total contributions in kind?\n\n[[piece:S-B2-12-006]]"
+  },
+  "explanation": {
+   "fr": "Stock et tricycle : sous 5 millions, pas de commissaire aux apports (AUSCGIE art. 312).",
+   "en": "Stock et tricycle : sous 5 millions, pas de commissaire aux apports (AUSCGIE art. 312)."
+  },
+  "numeric": {
+   "value": 1817800,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-042",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Valeur d'apport du stock de casiers ?\n\n[[piece:S-B2-12-006]]",
+   "en": "Value of the crate stock contributed?\n\n[[piece:S-B2-12-006]]"
+  },
+  "explanation": {
+   "fr": "60 casiers au coût moyen pondéré de l'année.",
+   "en": "60 casiers au coût moyen pondéré de l'année."
+  },
+  "numeric": {
+   "value": 367800,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-043",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Droits d'enregistrement des statuts ?\n\n[[piece:S-B2-12-007]]",
+   "en": "Registration duty on the articles?\n\n[[piece:S-B2-12-007]]"
+  },
+  "explanation": {
+   "fr": "Droits dégressifs de 2 % du capital pour la tranche jusqu'à 750 millions (CGI art. 346 et 544 A).",
+   "en": "Droits dégressifs de 2 % du capital pour la tranche jusqu'à 750 millions (CGI art. 346 et 544 A)."
+  },
+  "numeric": {
+   "value": 100000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-044",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Montant total de la facture du notaire, avancé par Paul ?\n\n[[piece:S-B2-12-007]]",
+   "en": "Total of the notary's invoice, advanced by Paul?\n\n[[piece:S-B2-12-007]]"
+  },
+  "explanation": {
+   "fr": "Honoraires, TVA et droits d'enregistrement.",
+   "en": "Honoraires, TVA et droits d'enregistrement."
+  },
+  "numeric": {
+   "value": 398125,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-045",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "TVA facturée par le notaire sur ses honoraires ?\n\n[[piece:S-B2-12-007]]",
+   "en": "VAT charged by the notary on the fees?\n\n[[piece:S-B2-12-007]]"
+  },
+  "explanation": {
+   "fr": "19,25 % des honoraires ; la SARL la récupérera (4454).",
+   "en": "19,25 % des honoraires ; la SARL la récupérera (4454)."
+  },
+  "numeric": {
+   "value": 48125,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M5-046",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Pourquoi des statuts notariés ?\n\n[[piece:S-B2-12-006]]",
+   "en": "Why notarised articles?\n\n[[piece:S-B2-12-006]]"
+  },
+  "explanation": {
+   "fr": "Le notaire est facultatif jusqu'à un million de capital (loi n° 2016/014 art. 4).",
+   "en": "Le notaire est facultatif jusqu'à un million de capital (loi n° 2016/014 art. 4)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le capital dépasse un million de francs",
+     "en": "The capital exceeds one million francs"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Parce qu'il y a un apport en numéraire",
+     "en": "Because there is a cash contribution"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M5-047",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Faut-il un commissaire aux apports ?\n\n[[piece:S-B2-12-006]]",
+   "en": "Is a contributions auditor needed?\n\n[[piece:S-B2-12-006]]"
+  },
+  "explanation": {
+   "fr": "AUSCGIE art. 312 ; l'associé reste responsable cinq ans de la valeur retenue.",
+   "en": "AUSCGIE art. 312 ; l'associé reste responsable cinq ans de la valeur retenue."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non : les apports en nature ne dépassent pas 5 millions",
+     "en": "No: contributions in kind do not exceed 5 million"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui, dès qu'il y a un apport en nature",
+     "en": "Yes, for any contribution in kind"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M5-048",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Pourquoi bloquer les fonds jusqu'à l'immatriculation ?\n\n[[piece:S-B2-11-004]]",
+   "en": "Why block the funds until registration?\n\n[[piece:S-B2-11-004]]"
+  },
+  "explanation": {
+   "fr": "AUSCGIE art. 313 et 314.",
+   "en": "AUSCGIE art. 313 et 314."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Pour garantir le capital aux tiers",
+     "en": "To guarantee the capital to third parties"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Pour gagner des intérêts",
+     "en": "To earn interest"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M5-049",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Quel compte recevra le tricycle dans la SARL ?\n\n[[piece:S-B2-11-005]]",
+   "en": "Which account receives the tricycle in the LLC?\n\n[[piece:S-B2-11-005]]"
+  },
+  "explanation": {
+   "fr": "Un bien durable utilisé pour l'activité est une immobilisation [[syscohada:2458]].",
+   "en": "Un bien durable utilisé pour l'activité est une immobilisation [[syscohada:2458]]."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "2458 : autres matériels de transport (vélo, mobylette, moto)",
+     "en": "2458: other transport equipment"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "6011 : achats de marchandises",
+     "en": "6011: purchases of goods"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M5-050",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Que remet la banque après le dépôt des fonds de la SARL en formation ?\n\n[[piece:S-B2-11-001]]",
+   "en": "What does the bank give after the deposit?\n\n[[piece:S-B2-11-001]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Un certificat du dépositaire",
+     "en": "A depositary's certificate"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Une carte de contribuable",
+     "en": "A taxpayer card"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M5-051",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Quel acte le notaire fait-il enregistrer ?\n\n[[piece:S-B2-12-001]]",
+   "en": "Which deed does the notary register?\n\n[[piece:S-B2-12-001]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Les statuts, aux droits de 2 % du capital",
+     "en": "The articles, at 2% of the capital"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Le bail du dépôt",
+     "en": "The depot lease"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M5-052",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Qu'obtient Paul au CFCE pour la SARL ?\n\n[[piece:S-B2-12-002]]",
+   "en": "What does Paul obtain at the CFCE for the LLC?\n\n[[piece:S-B2-12-002]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Registre de commerce, NIU de la SARL, attestation de création",
+     "en": "Trade register, the LLC's taxpayer number"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Un code marchand Orange Money",
+     "en": "An Orange Money merchant code"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M5-053",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Pourquoi la SARL relève-t-elle du CIME ?\n\n[[piece:S-B2-12-003]]",
+   "en": "Why does the LLC belong to the CIME?\n\n[[piece:S-B2-12-003]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "CA prévisionnel de 75 millions, entre 50 millions et 3 milliards",
+     "en": "Forecast of 75 million"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Parce qu'elle a un associé fonctionnaire",
+     "en": "Because a partner is a civil servant"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M5-054",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "La SARL inscrit les frais de constitution (notaire, droits d'enregistrement) en frais d'établissement à l'actif.\n\n[[piece:S-B2-12-007]]",
+   "en": "The LLC capitalises its formation costs as set-up costs.\n\n[[piece:S-B2-12-007]]"
+  },
+  "explanation": {
+   "fr": "Faux : le SYSCOHADA révisé les passe en charges par nature (6324 pour le notaire, 6468 pour les droits) ; l'ancien compte de frais d'établissement a disparu.",
+   "en": "False: revised SYSCOHADA expenses them by nature."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ],
+  "piege": "frais_etablissement"
+ }
+]

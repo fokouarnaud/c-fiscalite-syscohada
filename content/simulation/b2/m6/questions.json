@@ -1,0 +1,751 @@
+[
+ {
+  "id": "S-B2-M6-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Inventaire : coût moyen unitaire pondéré du casier (prix HT de la brasserie) ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Count: weighted average crate cost (brewery HT price)?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "CMUP sur les prix HT des lots de l'année, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC."
+  },
+  "numeric": {
+   "value": 6130,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      500,
+      6100
+     ],
+     [
+      450,
+      6100
+     ],
+     [
+      455,
+      6100
+     ],
+     [
+      455,
+      6100
+     ],
+     [
+      460,
+      6100
+     ],
+     [
+      455,
+      6100
+     ],
+     [
+      460,
+      6160
+     ],
+     [
+      465,
+      6160
+     ],
+     [
+      470,
+      6160
+     ],
+     [
+      470,
+      6160
+     ],
+     [
+      480,
+      6160
+     ],
+     [
+      520,
+      6160
+     ]
+    ],
+    5580
+   ],
+   "resultat": [
+    "cout_unitaire"
+   ]
+  }
+ },
+ {
+  "id": "S-B2-M6-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Inventaire : coût des casiers vendus au CMUP (prix HT de la brasserie) ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Count: cost of crates sold at WAC (brewery HT price)?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "CMUP sur les prix HT des lots de l'année, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC."
+  },
+  "numeric": {
+   "value": 34205400,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      500,
+      6100
+     ],
+     [
+      450,
+      6100
+     ],
+     [
+      455,
+      6100
+     ],
+     [
+      455,
+      6100
+     ],
+     [
+      460,
+      6100
+     ],
+     [
+      455,
+      6100
+     ],
+     [
+      460,
+      6160
+     ],
+     [
+      465,
+      6160
+     ],
+     [
+      470,
+      6160
+     ],
+     [
+      470,
+      6160
+     ],
+     [
+      480,
+      6160
+     ],
+     [
+      520,
+      6160
+     ]
+    ],
+    5580
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-B2-M6-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Inventaire : valeur du stock final au CMUP, apportée à la SARL ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Count: closing stock at WAC, contributed to the LLC?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "Casiers comptés × coût moyen pondéré ; pas d'écriture au SMT ; la même valeur figure aux statuts.",
+   "en": "Crates counted × WAC; the same value appears in the articles."
+  },
+  "numeric": {
+   "value": 367800,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Inventaire : coût des casiers vendus en PEPS (contraste) ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Count: cost of crates sold under FIFO?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "Les lots les plus anciens, moins chers, sortent d'abord.",
+   "en": "Oldest, cheaper lots go first."
+  },
+  "numeric": {
+   "value": 34206300,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_peps",
+   "args": [
+    [
+     [
+      500,
+      6100
+     ],
+     [
+      450,
+      6100
+     ],
+     [
+      455,
+      6100
+     ],
+     [
+      455,
+      6100
+     ],
+     [
+      460,
+      6100
+     ],
+     [
+      455,
+      6100
+     ],
+     [
+      460,
+      6160
+     ],
+     [
+      465,
+      6160
+     ],
+     [
+      470,
+      6160
+     ],
+     [
+      470,
+      6160
+     ],
+     [
+      480,
+      6160
+     ],
+     [
+      520,
+      6160
+     ]
+    ],
+    5580
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-B2-M6-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Inventaire : valeur du stock final en PEPS (contraste) ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Count: closing stock under FIFO?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "Les casiers en stock sont les derniers achetés, au prix de juillet.",
+   "en": "The crates left are the last bought."
+  },
+  "numeric": {
+   "value": 369600,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Casiers comptés au 31 décembre ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Crates counted on 31 December?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "Achetés moins vendus : les 60 casiers d'avance de janvier.",
+   "en": "Bought less sold."
+  },
+  "numeric": {
+   "value": 60,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Recettes de l'année (ventes au casier) ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Year's receipts?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "Compte 7011, espèces et Orange Money : sous 50 millions, le dépôt reste à l'IGS toute l'année.",
+   "en": "Compte 7011, espèces et Orange Money : sous 50 millions, le dépôt reste à l'IGS toute l'année."
+  },
+  "numeric": {
+   "value": 46872000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Encaissements Orange Money de l'année ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Year's Orange Money receipts?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "Un casier sur trois.",
+   "en": "Un casier sur trois."
+  },
+  "numeric": {
+   "value": 15582000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Coût total des achats de bière de l'année ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Year's beer purchases, full cost?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "HT, TVA et précompte : tout reste dans le coût à l'IGS (6011).",
+   "en": "HT, TVA et précompte : tout reste dans le coût à l'IGS (6011)."
+  },
+  "numeric": {
+   "value": 42960560,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Précomptes de 5 % subis sur l'année ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Withholdings suffered over the year?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "Vingt-quatre livraisons ; ils ne s'imputent pas sur l'IGS (S40).",
+   "en": "Vingt-quatre livraisons ; ils ne s'imputent pas sur l'IGS (S40)."
+  },
+  "numeric": {
+   "value": 1728795,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "TVA et CAC payées à la brasserie sur l'année, non récupérables ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Non-recoverable VAT paid to the brewery?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "À l'IGS, la TVA payée est un coût.",
+   "en": "À l'IGS, la TVA payée est un coût."
+  },
+  "numeric": {
+   "value": 6655865,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Loyers payés sur l'année ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Rent paid over the year?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "Douze loyers bruts de 75 000.",
+   "en": "Douze loyers bruts de 75 000."
+  },
+  "numeric": {
+   "value": 900000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Courses de pousse-pousse de l'année ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Year's push-cart costs?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "Compte 612.",
+   "en": "Compte 612."
+  },
+  "numeric": {
+   "value": 840000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Frais bancaires et Orange Money de l'année ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Year's bank and Orange Money fees?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "Compte 631.",
+   "en": "Compte 631."
+  },
+  "numeric": {
+   "value": 102000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Total des prélèvements de l'exploitant (1042), apports à la SARL et clôture compris ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Total owner's drawings (1042), LLC contributions and closing included?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "Prélèvements mensuels, numéraire, tricycle, notaire et solde de clôture : tout ce qui quitte le dépôt pour Paul.",
+   "en": "Prélèvements mensuels, numéraire, tricycle, notaire et solde de clôture : tout ce qui quitte le dépôt pour Paul."
+  },
+  "numeric": {
+   "value": 11069440,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde du compte du dépôt viré à Paul le 31 décembre ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Depot account balance transferred to Paul on 31 December?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "L'établissement cesse : la banque est soldée ; Paul garde de quoi payer l'IGS de mars 2027.",
+   "en": "L'établissement cesse : la banque est soldée ; Paul garde de quoi payer l'IGS de mars 2027."
+  },
+  "numeric": {
+   "value": 4599035,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Résultat 2026 du SMT : recettes moins dépenses, plus le stock final ?\n\n[[piece:S-B2-12-014]]",
+   "en": "2026 cash-basis profit: receipts less payments, plus closing stock?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "AUDCIF art. 28.",
+   "en": "AUDCIF art. 28."
+  },
+  "numeric": {
+   "value": 2437240,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Bilan d'ouverture de la SARL au 1er janvier 2027 : total de l'actif ?\n\n[[piece:S-B2-12-006]]",
+   "en": "LLC opening balance sheet at 1 January 2027: total assets?\n\n[[piece:S-B2-12-006]]"
+  },
+  "explanation": {
+   "fr": "Stock, tricycle et banque : exactement le capital, avant toute opération.",
+   "en": "Stock, tricycle et banque : exactement le capital, avant toute opération."
+  },
+  "numeric": {
+   "value": 5000000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Bilan d'ouverture : banque de la SARL (521) ?\n\n[[piece:S-B2-12-006]]",
+   "en": "Opening balance sheet: the LLC's bank (521)?\n\n[[piece:S-B2-12-006]]"
+  },
+  "explanation": {
+   "fr": "Le numéraire débloqué après l'immatriculation.",
+   "en": "Le numéraire débloqué après l'immatriculation."
+  },
+  "numeric": {
+   "value": 3182200,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Bilan d'ouverture : tricycle (2458) ?\n\n[[piece:S-B2-12-006]]",
+   "en": "Opening balance sheet: tricycle (2458)?\n\n[[piece:S-B2-12-006]]"
+  },
+  "explanation": {
+   "fr": "Valeur d'apport retenue aux statuts, sous le prix payé TVA comprise.",
+   "en": "Valeur d'apport retenue aux statuts, sous le prix payé TVA comprise."
+  },
+  "numeric": {
+   "value": 1450000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-B2-M6-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Pourquoi compter le stock au 31 décembre ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Why count stock on 31 December?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "AUDCIF art. 28 ; le même chiffre passe dans les statuts.",
+   "en": "AUDCIF art. 28 ; le même chiffre passe dans les statuts."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Il corrige le résultat du SMT et fixe la valeur apportée à la SARL",
+     "en": "It adjusts the cash-basis profit and sets the value contributed"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Ce n'est pas utile",
+     "en": "It is not useful"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M6-022",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Pourquoi les comptes de trésorerie du dépôt sont-ils soldés au 31 décembre ?\n\n[[piece:S-B2-12-013]]",
+   "en": "Why are the depot's cash accounts settled on 31 December?\n\n[[piece:S-B2-12-013]]"
+  },
+  "explanation": {
+   "fr": "Deux personnes distinctes : Paul, puis la SARL.",
+   "en": "Deux personnes distinctes : Paul, puis la SARL."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "L'établissement cesse ; la SARL ouvre ses propres comptes",
+     "en": "The business ceases; the LLC opens its own"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Pour éviter l'IGS",
+     "en": "To avoid the IGS"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M6-023",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Quel est le coût unitaire le plus élevé au 31 décembre ?\n\n[[piece:S-B2-12-014]]",
+   "en": "Which unit cost is higher on 31 December?\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "Les prix ont monté en juillet : le PEPS garde les derniers casiers, les plus chers.",
+   "en": "Les prix ont monté en juillet : le PEPS garde les derniers casiers, les plus chers."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le PEPS (derniers prix)",
+     "en": "FIFO (latest prices)"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Le CMUP",
+     "en": "WAC"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-B2-M6-024",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Les prélèvements de l'exploitant réduisent le résultat du SMT.\n\n[[piece:S-B2-12-014]]",
+   "en": "The owner's drawings reduce the cash-basis profit.\n\n[[piece:S-B2-12-014]]"
+  },
+  "explanation": {
+   "fr": "Faux : ils réduisent ses capitaux, pas le résultat.",
+   "en": "False: they reduce equity, not profit."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ }
+]
