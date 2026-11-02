@@ -30,7 +30,7 @@ A → B3 → C → D → B1 → B2. Chaque partie a 7 modules, avec un examen de
 | C Électronique et climatisation | SARL au réel ; associé fonctionnaire à 80 %, gérant tiers | Vacations en honoraires (632) avec retenue de 5 %, dividendes et IRCM | CGI art. 70, 92 bis |
 | D Prestataire froid | Établissement au réel | Prestations 706, TVA à l'encaissement (compte d'attente 471, S24), retenue de 5,5 % et contraste à 11 % | CGI art. 21 (2), 134 (1) b |
 | B1 Boissons | Établissement à l'IGS, SMT (S26) | Tarif IGS, précompte de 5 %, questions numériques seulement | CGI art. 21 (3), C 39, C 40 |
-| B2 Boissons | IGS en 2026, puis SARL au réel au 1er janvier 2027 | Apport du fonds, bilan d'ouverture | CGI art. 93 quater |
+| B2 Boissons | IGS en 2026, puis SARL au réel au 1er janvier 2027 | Apport du fonds, bilan d'ouverture | CGI art. 93 quater, C 39 (2), 95 et 96 (S41) |
 
 ## 2. Scénario du mois 1 (janvier 2026) : Ngono Mode SARL
 
