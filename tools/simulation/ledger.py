@@ -143,10 +143,11 @@ def tax_office(turnover, seuil_cime, seuil_dge):
 TAX_RETURN_DEADLINES = {"dge": (3, 15), "cime": (4, 15), "cfl": (5, 15)}
 
 
-def tax_return_deadline(centre, exercice, regime="reel"):
+def tax_return_deadline(centre, exercice, regime="reel", forme="societe"):
     """Date limite de la déclaration de l'exercice : CGI art. 18 (1) selon le centre de rattachement (DGE, CIME,
-    centre de fiscalité locale) ; 15 mars pour la déclaration annuelle d'un contribuable à l'IGS (art. C 41)."""
-    month, day = (3, 15) if regime != "reel" else TAX_RETURN_DEADLINES[centre]
+    centre de fiscalité locale) pour l'IS ; 15 mars pour la déclaration annuelle d'un contribuable à l'IGS (art. C 41)
+    et pour celle des résultats d'un exploitant individuel au réel (art. 74 et 91)."""
+    month, day = (3, 15) if regime != "reel" or forme == "individuelle" else TAX_RETURN_DEADLINES[centre]
     return datetime.date(exercice + 1, month, day)
 
 

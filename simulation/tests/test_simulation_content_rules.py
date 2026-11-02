@@ -539,6 +539,16 @@ def test_the_tax_return_is_dated_by_its_deadline(tmp_path):
     assert any("S-A-13-001" in p and "2027-03-15" in p for p in problems)
 
 
+def test_an_individual_business_files_by_15_march_even_under_a_cime(tmp_path):
+    """US-89 (S37, CGI art. 74 et 91) : déclaration des résultats d'un exploitant individuel au plus tard le 15 mars."""
+    root = tree(tmp_path, pieces=[INVOICE, BALANCE, DSF], centre="cime")
+    manifest = json.loads((root / "simulation" / "formation.json").read_text(encoding="utf-8"))
+    manifest["parties"][0]["forme"] = "individuelle"
+    write(root / "simulation" / "formation.json", manifest)
+
+    assert any("S-A-13-001" in p and "2027-03-15" in p for p in simulation_problems(root))
+
+
 def test_cash_basis_vat_needs_its_suspense_account(tmp_path):
     """US-92 (U20) : la TVA facturée attend l'encaissement sur le compte déclaré par le parcours ; à l'encaissement,
     ce compte est débité du montant porté au crédit de 4432."""

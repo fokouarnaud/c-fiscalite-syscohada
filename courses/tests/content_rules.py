@@ -125,7 +125,8 @@ def simulation_problems(base, partie, questions, accounts, rates=None):
                                     f"d'attente {suspense}")
     if partie.get("centre_impots") in TAX_OFFICES:
         # US-89 (CGI art. 18 (1), art. C 41) : la déclaration de l'exercice est datée au plus tard à son échéance.
-        deadline = ledger.tax_return_deadline(partie["centre_impots"], 2026, partie.get("regime", "reel"))
+        deadline = ledger.tax_return_deadline(partie["centre_impots"], 2026, partie.get("regime", "reel"),
+                                              partie.get("forme", "societe"))
         problems += [f"{piece['ref']} : déclaration du {piece['date']} après l'échéance du {deadline.isoformat()}"
                      for piece in pieces if piece["kind"] == "declaration" and piece["date"] >= "2027-01-01"
                      and datetime.date.fromisoformat(piece["date"]) > deadline]

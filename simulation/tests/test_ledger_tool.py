@@ -167,6 +167,13 @@ def test_the_tax_return_deadline_depends_on_the_tax_office():
     assert ledger.tax_return_deadline("cfl", 2026, regime="igs") == datetime.date(2027, 3, 15)
 
 
+def test_an_individual_business_files_its_results_by_15_march_whatever_its_office():
+    """US-89 (S37, CGI art. 74 et 91) : un exploitant individuel au réel souscrit la déclaration annuelle de ses
+    résultats et paie le solde de l'IRPP au plus tard le 15 mars, même rattaché au CIME ; l'art. 18 (1) vise l'IS."""
+    assert ledger.tax_return_deadline("cime", 2026, forme="individuelle") == datetime.date(2027, 3, 15)
+    assert ledger.tax_return_deadline("cime", 2026, forme="societe") == datetime.date(2027, 4, 15)
+
+
 def test_settling_last_month_return_does_not_change_this_month_return():
     """US-85 : le règlement du 15 (débit de 443, crédit de 445 et des retenues 447) solde le mois précédent ; la
     déclaration du mois en cours ne retient que la TVA facturée, la TVA déductible et les retenues du mois."""
