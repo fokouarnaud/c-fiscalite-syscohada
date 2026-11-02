@@ -1,0 +1,795 @@
+[
+ {
+  "id": "S-C-M1-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Pourquoi les statuts passent-ils chez le notaire ?\n\n[[piece:S-C-01-001]]",
+   "en": "Why are the articles notarised?\n\n[[piece:S-C-01-001]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le capital dépasse un million de FCFA (loi n° 2016/014)",
+     "en": "Capital above one million FCFA"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Parce qu'un associé est fonctionnaire",
+     "en": "Because a partner is a civil servant"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Quel centre des impôts suit la SARL ?\n\n[[piece:S-C-01-002]]",
+   "en": "Which tax office follows the company?\n\n[[piece:S-C-01-002]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le CIME (CA compris entre 50 millions et 3 milliards)",
+     "en": "The MTO"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "La DGE",
+     "en": "The LTO"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Dans quel délai faut-il immatriculer un salarié à la CNPS ?\n\n[[piece:S-C-01-003]]",
+   "en": "Within how long must an employee be registered?\n\n[[piece:S-C-01-003]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "8 jours après l'embauche",
+     "en": "8 days after hiring"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Trois mois",
+     "en": "Three months"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Que remet la banque à l'ouverture du compte ?\n\n[[piece:S-C-01-004]]",
+   "en": "What does the bank give?\n\n[[piece:S-C-01-004]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Un RIB",
+     "en": "Bank details (RIB)"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Une patente",
+     "en": "A licence"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Quelle pièce Orange exige-t-il en plus des documents légaux ?\n\n[[piece:S-C-01-005]]",
+   "en": "Which extra document does Orange require?\n\n[[piece:S-C-01-005]]"
+  },
+  "explanation": {
+   "fr": "Voir la démarche et sa source officielle.",
+   "en": "See the procedure and its official source."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Le RIB",
+     "en": "Bank details (RIB)"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Un bilan certifié",
+     "en": "A certified balance sheet"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Les frais de constitution s'inscrivent à l'actif en frais d'établissement.\n\n[[piece:S-C-01-007]]",
+   "en": "Set-up costs are capitalised as formation expenses.\n\n[[piece:S-C-01-007]]"
+  },
+  "explanation": {
+   "fr": "Faux : le SYSCOHADA révisé les passe en charges par nature (6324, 646).",
+   "en": "False: revised SYSCOHADA expenses them by nature."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ],
+  "piege": "frais_etablissement"
+ },
+ {
+  "id": "S-C-M1-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Le fonctionnaire associé à 80 % peut-il être le gérant de la SARL ?\n\n[[piece:S-C-01-006]]",
+   "en": "May the 80% civil-servant partner manage the company?\n\n[[piece:S-C-01-006]]"
+  },
+  "explanation": {
+   "fr": "S35 : il est associé, jamais gérant ni salarié ; la gérance est confiée à un tiers non fonctionnaire.",
+   "en": "He is a partner, never manager or employee."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Non : la gérance est confiée à un tiers",
+     "en": "No: a third party manages it"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Oui, s'il détient la majorité",
+     "en": "Yes, if he holds the majority"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du dépôt du capital.\n\n[[piece:S-C-01-006]]",
+   "en": "Record the capital deposit.\n\n[[piece:S-C-01-006]]"
+  },
+  "explanation": {
+   "fr": "Banque 521, capital 1013. Pourquoi pas autre chose : Être associé ne fait pas de M. Kamga un dirigeant : fonctionnaire, il détient des parts mais confie la gérance à Patrice, un tiers.",
+   "en": "Bank 521, capital 1013. Why not something else: Being a partner does not make Mr Kamga a manager: as a civil servant he holds shares but entrusts the management to Patrice, a third party."
+  },
+  "journal": [
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 2000000
+   },
+   {
+    "account": "1013",
+    "side": "credit",
+    "amount": 2000000
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture du notaire.\n\n[[piece:S-C-01-007]]",
+   "en": "Record the notary's invoice.\n\n[[piece:S-C-01-007]]"
+  },
+  "explanation": {
+   "fr": "Honoraires 6324, droits 646, TVA 4454 : des charges (S6). Pourquoi pas autre chose : Pas de « frais d'établissement » à l'actif : le SYSCOHADA révisé en fait des charges.",
+   "en": "Fees 6324, duties 646, VAT 4454. Why not something else: No capitalised formation expenses: revised SYSCOHADA expenses them."
+  },
+  "journal": [
+   {
+    "account": "6324",
+    "side": "debit",
+    "amount": 250000
+   },
+   {
+    "account": "4454",
+    "side": "debit",
+    "amount": 48125
+   },
+   {
+    "account": "646",
+    "side": "debit",
+    "amount": 40000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 338125
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture d'outillage.\n\n[[piece:S-C-01-008]]",
+   "en": "Record the tools invoice.\n\n[[piece:S-C-01-008]]"
+  },
+  "explanation": {
+   "fr": "Outillage industriel 2412 (au-delà du seuil de 500 000 HT, CGI art. 7), TVA sur immobilisations 4451, fournisseur d'immobilisations 4812 : payé à 30 jours. Pourquoi pas autre chose : Au-delà de 500 000 FCFA HT, le petit outillage s'inscrit à l'actif [[cgi:art. 7]] : il sera amorti, pas passé en charge d'un coup.",
+   "en": "Industrial tools 2412 (above the 500,000 threshold), VAT on fixed assets 4451. Why not something else: Above 500,000 FCFA before tax, tools go on the balance sheet: they are depreciated, not expensed at once."
+  },
+  "journal": [
+   {
+    "account": "2412",
+    "side": "debit",
+    "amount": 1600000
+   },
+   {
+    "account": "4451",
+    "side": "debit",
+    "amount": 308000
+   },
+   {
+    "account": "4812",
+    "side": "credit",
+    "amount": 1908000
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture de l'importateur de janvier (précompte compris).\n\n[[piece:S-C-01-011]]",
+   "en": "Record the importer's January invoice (withholding included).\n\n[[piece:S-C-01-011]]"
+  },
+  "explanation": {
+   "fr": "Achats 6011, TVA et CAC 4452, précompte de 2 % en 4492 (CGI art. 21 (3)), fournisseur 401. Pourquoi pas autre chose : Les appareils restent en achats (6011) toute l'année ; le stock ne se compte qu'au 31 décembre. Le précompte est une avance sur l'impôt, pas un coût.",
+   "en": "Purchases 6011, VAT 4452, 2% withholding 4492, supplier 401. Why not something else: Appliances stay in purchases (6011) all year; stock is counted on 31 December. The withholding is an advance on tax, not a cost."
+  },
+  "journal": [
+   {
+    "account": "6011",
+    "side": "debit",
+    "amount": 8350000
+   },
+   {
+    "account": "4452",
+    "side": "debit",
+    "amount": 1607375
+   },
+   {
+    "account": "4492",
+    "side": "debit",
+    "amount": 167000
+   },
+   {
+    "account": "401",
+    "side": "credit",
+    "amount": 10124375
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la facture de pose de janvier.\n\n[[piece:S-C-01-012]]",
+   "en": "Record the January installation invoice.\n\n[[piece:S-C-01-012]]"
+  },
+  "explanation": {
+   "fr": "Client 411, services vendus 706, TVA facturée 4431 : une prestation, pas une vente de marchandises. Pourquoi pas autre chose : Pourquoi 706 et pas 7011 ? L'appareil est une marchandise vendue ; la pose est un travail, une prestation de services. Séparer les deux montre ce que rapporte l'atelier.",
+   "en": "Customer 411, services sold 706, VAT charged 4431: a service, not a sale of goods. Why not something else: Why 706 and not 7011? The unit is goods sold; installing it is work, a service."
+  },
+  "journal": [
+   {
+    "account": "411",
+    "side": "debit",
+    "amount": 584325
+   },
+   {
+    "account": "706",
+    "side": "credit",
+    "amount": 490000
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 94325
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture des ventes au comptoir de janvier.\n\n[[piece:S-C-01-013]]",
+   "en": "Record the January counter sales.\n\n[[piece:S-C-01-013]]"
+  },
+  "explanation": {
+   "fr": "Caisse 5711 au TTC, ventes de marchandises 7011, TVA 4431. Pourquoi pas autre chose : La TVA encaissée n'appartient pas à la boutique.",
+   "en": "Cash 5711, sales 7011, VAT 4431. Why not something else: VAT collected does not belong to the shop."
+  },
+  "journal": [
+   {
+    "account": "5711",
+    "side": "debit",
+    "amount": 5976810
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 5012000
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 964810
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du relevé Orange Money de janvier.\n\n[[piece:S-C-01-014]]",
+   "en": "Record the January Orange Money statement.\n\n[[piece:S-C-01-014]]"
+  },
+  "explanation": {
+   "fr": "Sous-compte 5522 : ventes et TVA, frais 631, transfert vers la banque par 585 (S19). Pourquoi pas autre chose : Les frais sont un service bancaire, pas une remise.",
+   "en": "Sub-account 5522: sales and VAT, fees 631, transfer through 585. Why not something else: Fees are a bank service, not a discount."
+  },
+  "journal": [
+   {
+    "account": "5522",
+    "side": "debit",
+    "amount": 5719230
+   },
+   {
+    "account": "7011",
+    "side": "credit",
+    "amount": 4796000
+   },
+   {
+    "account": "4431",
+    "side": "credit",
+    "amount": 923230
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 9000
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 9000
+   },
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 5710230
+   },
+   {
+    "account": "5522",
+    "side": "credit",
+    "amount": 5710230
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du journal de paie de janvier.\n\n[[piece:S-C-01-015]]",
+   "en": "Record the January payroll journal.\n\n[[piece:S-C-01-015]]"
+  },
+  "explanation": {
+   "fr": "Salaires 6611, CFC patronale 6413, CNPS patronale 6641 ; retenues 4472 et 431, nets 422. Pourquoi pas autre chose : Le gérant non associé est salarié ; le fonctionnaire associé ne l'est pas.",
+   "en": "Gross 6611, employer levies 6413 and 6641; withholdings 4472 and 431, net 422. Why not something else: The non-partner manager is an employee; the civil-servant partner is not."
+  },
+  "journal": [
+   {
+    "account": "6611",
+    "side": "debit",
+    "amount": 720000
+   },
+   {
+    "account": "6413",
+    "side": "debit",
+    "amount": 18000
+   },
+   {
+    "account": "6641",
+    "side": "debit",
+    "amount": 30240
+   },
+   {
+    "account": "4472",
+    "side": "credit",
+    "amount": 72831
+   },
+   {
+    "account": "431",
+    "side": "credit",
+    "amount": 60480
+   },
+   {
+    "account": "422",
+    "side": "credit",
+    "amount": 634929
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez les écritures du relevé bancaire de janvier.\n\n[[piece:S-C-01-009]]",
+   "en": "Record the January bank statement entries.\n\n[[piece:S-C-01-009]]"
+  },
+  "explanation": {
+   "fr": "Fournisseur 401, client 411, salaires 422, virements internes 585, frais 631. Pourquoi pas autre chose : Un écart s'explique avant de s'écrire.",
+   "en": "Supplier 401, customer 411, salaries 422, internal transfers 585, fees 631. Why not something else: A gap is explained before it is booked."
+  },
+  "journal": [
+   {
+    "account": "422",
+    "side": "debit",
+    "amount": 634929
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 634929
+   },
+   {
+    "account": "521",
+    "side": "debit",
+    "amount": 11687040
+   },
+   {
+    "account": "585",
+    "side": "credit",
+    "amount": 11687040
+   },
+   {
+    "account": "631",
+    "side": "debit",
+    "amount": 3500
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 3500
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la quittance de loyer de janvier.\n\n[[piece:S-C-01-010]]",
+   "en": "Record the January rent receipt.\n\n[[piece:S-C-01-010]]"
+  },
+  "explanation": {
+   "fr": "Loyer brut 6222, précompte de 10 % en 4478 (CGI art. 87), net payé par la banque. Pourquoi pas autre chose : La charge est le loyer brut ; la retenue est une dette envers l'État.",
+   "en": "Gross rent 6222, 10% withholding 4478, net paid by bank. Why not something else: The expense is gross rent; the withholding is a debt to the State."
+  },
+  "journal": [
+   {
+    "account": "6222",
+    "side": "debit",
+    "amount": 250000
+   },
+   {
+    "account": "4478",
+    "side": "credit",
+    "amount": 25000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 225000
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture des versements d'espèces de janvier.\n\n[[piece:S-C-01-016]]",
+   "en": "Record the January cash deposits.\n\n[[piece:S-C-01-016]]"
+  },
+  "explanation": {
+   "fr": "Virement interne : 585 au débit, caisse 5711 au crédit. Pourquoi pas autre chose : 585 évite de compter deux fois le même versement.",
+   "en": "Internal transfer: 585 debit, cash 5711 credit. Why not something else: 585 avoids counting the same deposit twice."
+  },
+  "journal": [
+   {
+    "account": "585",
+    "side": "debit",
+    "amount": 5976810
+   },
+   {
+    "account": "5711",
+    "side": "credit",
+    "amount": 5976810
+   }
+  ]
+ },
+ {
+  "id": "S-C-M1-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour janvier 2026 : TVA due (ou crédit à reporter) ?",
+   "en": "15th return for January 2026: VAT due (or credit carried forward)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 18865,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-01",
+   "field": "tva_due"
+  }
+ },
+ {
+  "id": "S-C-M1-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour janvier 2026 : Acompte d'IS net du précompte imputé ?",
+   "en": "15th return for January 2026: CIT instalment net of withholding?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 59556,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-01",
+   "field": "acompte_is_net"
+  }
+ },
+ {
+  "id": "S-C-M1-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Déclaration du 15 pour janvier 2026 : Retenues à la source du mois (salaires et loyer) ?",
+   "en": "15th return for January 2026: Withholdings of the month (pay and rent)?"
+  },
+  "explanation": {
+   "fr": "Calcul sur les écritures du mois : TVA facturée moins TVA déductible et crédit reporté ; acompte de 2 % du CA majoré de 10 % de CAC, moins le précompte (CGI art. 21) ; retenues portées en 447.",
+   "en": "Computed from the month's entries (CGI art. 21)."
+  },
+  "numeric": {
+   "value": 97831,
+   "unit": "FCFA"
+  },
+  "declaration": {
+   "period": "2026-01",
+   "field": "retenues_salaires"
+  }
+ },
+ {
+  "id": "S-C-M1-022",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde comptable du compte 521 au 31 janvier 2026 ?\n\n[[piece:S-C-01-009]]",
+   "en": "Book balance of account 521 at January 31, 2026?\n\n[[piece:S-C-01-009]]"
+  },
+  "explanation": {
+   "fr": "Débits moins crédits de 521 jusqu'à cette date : le solde à rapprocher du relevé.",
+   "en": "Debits less credits of 521 up to that date."
+  },
+  "numeric": {
+   "value": 12485486,
+   "unit": "FCFA"
+  },
+  "rapprochement": {
+   "account": "521",
+   "date": "2026-01-31"
+  }
+ },
+ {
+  "id": "S-C-M1-023",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chiffre d'affaires HT des poses de janvier ?\n\n[[piece:S-C-01-012]]",
+   "en": "January installation revenue excluding tax?\n\n[[piece:S-C-01-012]]"
+  },
+  "explanation": {
+   "fr": "Nombre de poses × prix de la pose, hors TVA (706).",
+   "en": "Number of installations × price, excluding VAT."
+  },
+  "numeric": {
+   "value": 490000,
+   "unit": "FCFA"
+  }
+ }
+]

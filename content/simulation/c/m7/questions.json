@@ -1,0 +1,635 @@
+[
+ {
+  "id": "S-C-M7-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "IS dû pour 2026 (le plus élevé de l'IS et du minimum) ?\n\n[[piece:S-C-16-001]]",
+   "en": "2026 CIT due?\n\n[[piece:S-C-16-001]]"
+  },
+  "explanation": {
+   "fr": "IS au taux de 25 % (art. 17 bis), CAC compris, supérieur au minimum de perception.",
+   "en": "CIT at 25%, above the minimum tax."
+  },
+  "numeric": {
+   "value": 4126925,
+   "unit": "FCFA"
+  },
+  "passerelle": "impot_societes",
+  "calcul": {
+   "fonction": "impot_societes",
+   "args": [
+    15007120,
+    123576000,
+    25.0,
+    2,
+    10
+   ],
+   "resultat": [
+    "du"
+   ]
+  }
+ },
+ {
+  "id": "S-C-M7-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Résultat comptable avant impôt 2026 ?\n\n[[piece:S-C-16-001]]",
+   "en": "2026 profit before tax?\n\n[[piece:S-C-16-001]]"
+  },
+  "explanation": {
+   "fr": "Produits moins charges des classes 6, 7 et 8.",
+   "en": "Produits moins charges des classes 6, 7 et 8."
+  },
+  "numeric": {
+   "value": 15007120,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-C-M7-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Résultat fiscal 2026 ?\n\n[[piece:S-C-16-001]]",
+   "en": "2026 taxable profit?\n\n[[piece:S-C-16-001]]"
+  },
+  "explanation": {
+   "fr": "Aucune réintégration : la provision pour garantie remplit les conditions de l'art. 7.",
+   "en": "Aucune réintégration : la provision pour garantie remplit les conditions de l'art. 7."
+  },
+  "numeric": {
+   "value": 15007120,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-C-M7-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Minimum de perception 2026, CAC compris ?\n\n[[piece:S-C-16-001]]",
+   "en": "2026 minimum tax?\n\n[[piece:S-C-16-001]]"
+  },
+  "explanation": {
+   "fr": "2 % du CA arrondi au millier inférieur, majoré de 10 %.",
+   "en": "2 % du CA arrondi au millier inférieur, majoré de 10 %."
+  },
+  "numeric": {
+   "value": 2718672,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-C-M7-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Acomptes d'IS versés au titre de 2026 ?\n\n[[piece:S-C-16-001]]",
+   "en": "2026 CIT instalments?\n\n[[piece:S-C-16-001]]"
+  },
+  "explanation": {
+   "fr": "Somme des acomptes des douze déclarations.",
+   "en": "Somme des acomptes des douze déclarations."
+  },
+  "numeric": {
+   "value": 2718672,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-C-M7-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Solde d'IS à payer avec la DSF ?\n\n[[piece:S-C-16-001]]",
+   "en": "CIT balance due with the return?\n\n[[piece:S-C-16-001]]"
+  },
+  "explanation": {
+   "fr": "IS dû moins acomptes versés.",
+   "en": "IS dû moins acomptes versés."
+  },
+  "numeric": {
+   "value": 1408253,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-C-M7-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Chiffre d'affaires HT 2026 (ventes et poses) ?\n\n[[piece:S-C-16-001]]",
+   "en": "2026 turnover?\n\n[[piece:S-C-16-001]]"
+  },
+  "explanation": {
+   "fr": "Comptes 7011 et 706.",
+   "en": "Comptes 7011 et 706."
+  },
+  "numeric": {
+   "value": 123576000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-C-M7-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Résultat net 2026 ?\n\n[[piece:S-C-16-001]]",
+   "en": "2026 net profit?\n\n[[piece:S-C-16-001]]"
+  },
+  "explanation": {
+   "fr": "Résultat avant impôt moins IS dû.",
+   "en": "Résultat avant impôt moins IS dû."
+  },
+  "numeric": {
+   "value": 10880195,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-C-M7-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Dotation à la réserve légale décidée en juin 2027 ?\n\n[[piece:S-C-18-001]]",
+   "en": "Legal reserve allocation in June 2027?\n\n[[piece:S-C-18-001]]"
+  },
+  "explanation": {
+   "fr": "Un dixième au moins du bénéfice, plafonné au cinquième du capital (AUSCGIE art. 346).",
+   "en": "Un dixième au moins du bénéfice, plafonné au cinquième du capital (AUSCGIE art. 346)."
+  },
+  "numeric": {
+   "value": 400000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-C-M7-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Report à nouveau décidé en juin 2027 ?\n\n[[piece:S-C-18-001]]",
+   "en": "Retained earnings decided in June 2027?\n\n[[piece:S-C-18-001]]"
+  },
+  "explanation": {
+   "fr": "Bénéfice net moins réserve légale et dividendes.",
+   "en": "Bénéfice net moins réserve légale et dividendes."
+  },
+  "numeric": {
+   "value": 4480195,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-C-M7-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "IRCM retenu sur les dividendes ?\n\n[[piece:S-C-19-001]]",
+   "en": "Withholding tax on dividends?\n\n[[piece:S-C-19-001]]"
+  },
+  "explanation": {
+   "fr": "15 % majorés de 10 % de CAC, soit 16,5 % des dividendes bruts (CGI art. 70).",
+   "en": "15 % majorés de 10 % de CAC, soit 16,5 % des dividendes bruts (CGI art. 70)."
+  },
+  "numeric": {
+   "value": 990000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-C-M7-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Dividendes nets versés aux associés ?\n\n[[piece:S-C-19-001]]",
+   "en": "Net dividends paid?\n\n[[piece:S-C-19-001]]"
+  },
+  "explanation": {
+   "fr": "Dividendes bruts moins IRCM.",
+   "en": "Dividendes bruts moins IRCM."
+  },
+  "numeric": {
+   "value": 5010000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-C-M7-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Part nette du fonctionnaire associé (80 %) ?\n\n[[piece:S-C-19-001]]",
+   "en": "Net share of the civil-servant partner (80%)?\n\n[[piece:S-C-19-001]]"
+  },
+  "explanation": {
+   "fr": "80 % des dividendes nets.",
+   "en": "80 % des dividendes nets."
+  },
+  "numeric": {
+   "value": 4008000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-C-M7-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de l'IS de l'exercice.\n\n[[piece:S-C-16-001]]",
+   "en": "Record the CIT for the year.\n\n[[piece:S-C-16-001]]"
+  },
+  "explanation": {
+   "fr": "Impôt 891, État 441. Pourquoi pas autre chose : Pourquoi l'IS cette fois ? Une marge confortable sur les appareils et les poses : le bénéfice dépasse ce que représente le minimum, au contraire du dépôt de boissons.",
+   "en": "Tax 891, State 441. Why not something else: Why CIT this time? A comfortable margin on appliances and installations: profit exceeds what the minimum represents, unlike the beverage depot."
+  },
+  "journal": [
+   {
+    "account": "891",
+    "side": "debit",
+    "amount": 4126925
+   },
+   {
+    "account": "441",
+    "side": "credit",
+    "amount": 4126925
+   }
+  ]
+ },
+ {
+  "id": "S-C-M7-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture d'affectation du résultat.\n\n[[piece:S-C-18-001]]",
+   "en": "Record the appropriation of profit.\n\n[[piece:S-C-18-001]]"
+  },
+  "explanation": {
+   "fr": "Bénéfice 131 au débit ; réserve légale 111, dividendes à payer 465 et report à nouveau 121 au crédit. Pourquoi pas autre chose : Pourquoi seulement 400 000 FCFA de réserve et pas le dixième du bénéfice ? La réserve s'arrête au cinquième du capital, soit 400 000 FCFA. Et les dividendes ne sont pas une charge : ils partagent un bénéfice déjà imposé.",
+   "en": "Profit 131 debit; legal reserve 111, dividends payable 465 and retained earnings 121 credit. Why not something else: Why only 400,000 FCFA? The reserve stops at one fifth of capital, 400,000 FCFA. Dividends are not an expense: they share a profit already taxed."
+  },
+  "journal": [
+   {
+    "account": "131",
+    "side": "debit",
+    "amount": 10880195
+   },
+   {
+    "account": "111",
+    "side": "credit",
+    "amount": 400000
+   },
+   {
+    "account": "465",
+    "side": "credit",
+    "amount": 6000000
+   },
+   {
+    "account": "121",
+    "side": "credit",
+    "amount": 4480195
+   }
+  ]
+ },
+ {
+  "id": "S-C-M7-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture de la mise en paiement des dividendes.\n\n[[piece:S-C-19-001]]",
+   "en": "Record the dividend payment.\n\n[[piece:S-C-19-001]]"
+  },
+  "explanation": {
+   "fr": "Dividendes à payer 465 au débit ; IRCM retenu en 4478, banque 521 pour le net. Pourquoi pas autre chose : La SARL retient l'impôt de ses associés : c'est leur impôt, pas le sien. Elle le reverse, sans le payer de sa poche.",
+   "en": "Dividends payable 465 debit; withholding 4478, bank 521 for the net. Why not something else: The company withholds its partners' tax: it is their tax, not the company's."
+  },
+  "journal": [
+   {
+    "account": "465",
+    "side": "debit",
+    "amount": 6000000
+   },
+   {
+    "account": "4478",
+    "side": "credit",
+    "amount": 990000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 5010000
+   }
+  ]
+ },
+ {
+  "id": "S-C-M7-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du reversement de l'IRCM.\n\n[[piece:S-C-20-001]]",
+   "en": "Record paying over the withholding tax.\n\n[[piece:S-C-20-001]]"
+  },
+  "explanation": {
+   "fr": "4478 soldé par la banque. Pourquoi pas autre chose : Garder l'IRCM retenu serait garder l'argent de l'État.",
+   "en": "4478 cleared by the bank. Why not something else: Keeping the withholding would keep the State's money."
+  },
+  "journal": [
+   {
+    "account": "4478",
+    "side": "debit",
+    "amount": 990000
+   },
+   {
+    "account": "521",
+    "side": "credit",
+    "amount": 990000
+   }
+  ]
+ },
+ {
+  "id": "S-C-M7-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "Date limite de dépôt de la DSF 2026 (CIME) ?\n\n[[piece:S-C-16-001]]",
+   "en": "Filing deadline (MTO)?\n\n[[piece:S-C-16-001]]"
+  },
+  "explanation": {
+   "fr": "CGI art. 18 (1).",
+   "en": "CGI art. 18 (1)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "15 avril 2027",
+     "en": "15 April 2027"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "15 mars 2027",
+     "en": "15 March 2027"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-C-M7-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Délai de réunion de l'assemblée annuelle d'une SARL ?\n\n[[piece:S-C-16-001]]",
+   "en": "Deadline for the annual meeting of an LLC?\n\n[[piece:S-C-16-001]]"
+  },
+  "explanation": {
+   "fr": "AUSCGIE art. 348.",
+   "en": "AUSCGIE art. 348."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Six mois après la clôture",
+     "en": "Six months after year end"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Un an",
+     "en": "One year"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-C-M7-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Les dividendes sont une charge déductible.\n\n[[piece:S-C-16-001]]",
+   "en": "Dividends are a deductible expense.\n\n[[piece:S-C-16-001]]"
+  },
+  "explanation": {
+   "fr": "Faux : ils répartissent le bénéfice après impôt.",
+   "en": "Faux : ils répartissent le bénéfice après impôt."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "S-C-M7-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "L'IRCM est exigible à la mise à disposition des dividendes.\n\n[[piece:S-C-16-001]]",
+   "en": "The withholding tax is due when dividends are made available.\n\n[[piece:S-C-16-001]]"
+  },
+  "explanation": {
+   "fr": "Vrai (CGI art. 70).",
+   "en": "Vrai (CGI art. 70)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-C-M7-022",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "La réserve légale reste obligatoire au-delà du cinquième du capital.\n\n[[piece:S-C-16-001]]",
+   "en": "The legal reserve stays compulsory above one fifth of capital.\n\n[[piece:S-C-16-001]]"
+  },
+  "explanation": {
+   "fr": "Faux : la dotation cesse d'être obligatoire à ce seuil (AUSCGIE art. 346).",
+   "en": "Faux : la dotation cesse d'être obligatoire à ce seuil (AUSCGIE art. 346)."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": true
+   }
+  ]
+ },
+ {
+  "id": "S-C-M7-023",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Ici, l'IS l'emporte sur le minimum de perception.\n\n[[piece:S-C-16-001]]",
+   "en": "Here CIT exceeds the minimum tax.\n\n[[piece:S-C-16-001]]"
+  },
+  "explanation": {
+   "fr": "Vrai : la marge est suffisante, contrairement au dépôt B3.",
+   "en": "Vrai : la marge est suffisante, contrairement au dépôt B3."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ }
+]

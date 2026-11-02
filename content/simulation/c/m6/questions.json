@@ -1,0 +1,1293 @@
+[
+ {
+  "id": "S-C-M6-001",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Téléviseurs : coût moyen unitaire pondéré ?\n\n[[piece:S-C-12-010]]",
+   "en": "téléviseurs: weighted average unit cost?\n\n[[piece:S-C-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 183750,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      20,
+      180000
+     ],
+     [
+      20,
+      180000
+     ],
+     [
+      20,
+      180000
+     ],
+     [
+      20,
+      182500
+     ],
+     [
+      20,
+      182500
+     ],
+     [
+      20,
+      182500
+     ],
+     [
+      20,
+      185000
+     ],
+     [
+      20,
+      185000
+     ],
+     [
+      20,
+      185000
+     ],
+     [
+      20,
+      187500
+     ],
+     [
+      20,
+      187500
+     ],
+     [
+      20,
+      187500
+     ]
+    ],
+    216
+   ],
+   "resultat": [
+    "cout_unitaire"
+   ]
+  }
+ },
+ {
+  "id": "S-C-M6-002",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Téléviseurs : coût des sorties au CMUP ?\n\n[[piece:S-C-12-010]]",
+   "en": "téléviseurs: cost of goods sold at WAC?\n\n[[piece:S-C-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 39690000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      20,
+      180000
+     ],
+     [
+      20,
+      180000
+     ],
+     [
+      20,
+      180000
+     ],
+     [
+      20,
+      182500
+     ],
+     [
+      20,
+      182500
+     ],
+     [
+      20,
+      182500
+     ],
+     [
+      20,
+      185000
+     ],
+     [
+      20,
+      185000
+     ],
+     [
+      20,
+      185000
+     ],
+     [
+      20,
+      187500
+     ],
+     [
+      20,
+      187500
+     ],
+     [
+      20,
+      187500
+     ]
+    ],
+    216
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-C-M6-003",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Téléviseurs : valeur du stock final au CMUP ?\n\n[[piece:S-C-12-010]]",
+   "en": "téléviseurs: closing stock at WAC?\n\n[[piece:S-C-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 4410000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      20,
+      180000
+     ],
+     [
+      20,
+      180000
+     ],
+     [
+      20,
+      180000
+     ],
+     [
+      20,
+      182500
+     ],
+     [
+      20,
+      182500
+     ],
+     [
+      20,
+      182500
+     ],
+     [
+      20,
+      185000
+     ],
+     [
+      20,
+      185000
+     ],
+     [
+      20,
+      185000
+     ],
+     [
+      20,
+      187500
+     ],
+     [
+      20,
+      187500
+     ],
+     [
+      20,
+      187500
+     ]
+    ],
+    216
+   ],
+   "resultat": [
+    "valeur_stock"
+   ]
+  }
+ },
+ {
+  "id": "S-C-M6-004",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Téléviseurs : coût des sorties en PEPS (contraste) ?\n\n[[piece:S-C-12-010]]",
+   "en": "téléviseurs: cost of goods sold under FIFO?\n\n[[piece:S-C-12-010]]"
+  },
+  "explanation": {
+   "fr": "Les lots les plus anciens sortent d'abord.",
+   "en": "Oldest lots go first."
+  },
+  "numeric": {
+   "value": 39600000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_peps",
+   "args": [
+    [
+     [
+      20,
+      180000
+     ],
+     [
+      20,
+      180000
+     ],
+     [
+      20,
+      180000
+     ],
+     [
+      20,
+      182500
+     ],
+     [
+      20,
+      182500
+     ],
+     [
+      20,
+      182500
+     ],
+     [
+      20,
+      185000
+     ],
+     [
+      20,
+      185000
+     ],
+     [
+      20,
+      185000
+     ],
+     [
+      20,
+      187500
+     ],
+     [
+      20,
+      187500
+     ],
+     [
+      20,
+      187500
+     ]
+    ],
+    216
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-C-M6-005",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Climatiseurs : coût moyen unitaire pondéré ?\n\n[[piece:S-C-12-010]]",
+   "en": "climatiseurs: weighted average unit cost?\n\n[[piece:S-C-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 253750,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      15,
+      250000
+     ],
+     [
+      15,
+      250000
+     ],
+     [
+      15,
+      250000
+     ],
+     [
+      15,
+      252500
+     ],
+     [
+      15,
+      252500
+     ],
+     [
+      15,
+      252500
+     ],
+     [
+      15,
+      255000
+     ],
+     [
+      15,
+      255000
+     ],
+     [
+      15,
+      255000
+     ],
+     [
+      15,
+      257500
+     ],
+     [
+      15,
+      257500
+     ],
+     [
+      15,
+      257500
+     ]
+    ],
+    168
+   ],
+   "resultat": [
+    "cout_unitaire"
+   ]
+  }
+ },
+ {
+  "id": "S-C-M6-006",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Climatiseurs : coût des sorties au CMUP ?\n\n[[piece:S-C-12-010]]",
+   "en": "climatiseurs: cost of goods sold at WAC?\n\n[[piece:S-C-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 42630000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      15,
+      250000
+     ],
+     [
+      15,
+      250000
+     ],
+     [
+      15,
+      250000
+     ],
+     [
+      15,
+      252500
+     ],
+     [
+      15,
+      252500
+     ],
+     [
+      15,
+      252500
+     ],
+     [
+      15,
+      255000
+     ],
+     [
+      15,
+      255000
+     ],
+     [
+      15,
+      255000
+     ],
+     [
+      15,
+      257500
+     ],
+     [
+      15,
+      257500
+     ],
+     [
+      15,
+      257500
+     ]
+    ],
+    168
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-C-M6-007",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Climatiseurs : valeur du stock final au CMUP ?\n\n[[piece:S-C-12-010]]",
+   "en": "climatiseurs: closing stock at WAC?\n\n[[piece:S-C-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 3045000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      15,
+      250000
+     ],
+     [
+      15,
+      250000
+     ],
+     [
+      15,
+      250000
+     ],
+     [
+      15,
+      252500
+     ],
+     [
+      15,
+      252500
+     ],
+     [
+      15,
+      252500
+     ],
+     [
+      15,
+      255000
+     ],
+     [
+      15,
+      255000
+     ],
+     [
+      15,
+      255000
+     ],
+     [
+      15,
+      257500
+     ],
+     [
+      15,
+      257500
+     ],
+     [
+      15,
+      257500
+     ]
+    ],
+    168
+   ],
+   "resultat": [
+    "valeur_stock"
+   ]
+  }
+ },
+ {
+  "id": "S-C-M6-008",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Climatiseurs : coût des sorties en PEPS (contraste) ?\n\n[[piece:S-C-12-010]]",
+   "en": "climatiseurs: cost of goods sold under FIFO?\n\n[[piece:S-C-12-010]]"
+  },
+  "explanation": {
+   "fr": "Les lots les plus anciens sortent d'abord.",
+   "en": "Oldest lots go first."
+  },
+  "numeric": {
+   "value": 42585000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_peps",
+   "args": [
+    [
+     [
+      15,
+      250000
+     ],
+     [
+      15,
+      250000
+     ],
+     [
+      15,
+      250000
+     ],
+     [
+      15,
+      252500
+     ],
+     [
+      15,
+      252500
+     ],
+     [
+      15,
+      252500
+     ],
+     [
+      15,
+      255000
+     ],
+     [
+      15,
+      255000
+     ],
+     [
+      15,
+      255000
+     ],
+     [
+      15,
+      257500
+     ],
+     [
+      15,
+      257500
+     ],
+     [
+      15,
+      257500
+     ]
+    ],
+    168
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-C-M6-009",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Petit électroménager : coût moyen unitaire pondéré ?\n\n[[piece:S-C-12-010]]",
+   "en": "petit électroménager: weighted average unit cost?\n\n[[piece:S-C-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 28750,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      40,
+      25000
+     ],
+     [
+      40,
+      25000
+     ],
+     [
+      40,
+      25000
+     ],
+     [
+      40,
+      27500
+     ],
+     [
+      40,
+      27500
+     ],
+     [
+      40,
+      27500
+     ],
+     [
+      40,
+      30000
+     ],
+     [
+      40,
+      30000
+     ],
+     [
+      40,
+      30000
+     ],
+     [
+      40,
+      32500
+     ],
+     [
+      40,
+      32500
+     ],
+     [
+      40,
+      32500
+     ]
+    ],
+    432
+   ],
+   "resultat": [
+    "cout_unitaire"
+   ]
+  }
+ },
+ {
+  "id": "S-C-M6-010",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Petit électroménager : coût des sorties au CMUP ?\n\n[[piece:S-C-12-010]]",
+   "en": "petit électroménager: cost of goods sold at WAC?\n\n[[piece:S-C-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 12420000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      40,
+      25000
+     ],
+     [
+      40,
+      25000
+     ],
+     [
+      40,
+      25000
+     ],
+     [
+      40,
+      27500
+     ],
+     [
+      40,
+      27500
+     ],
+     [
+      40,
+      27500
+     ],
+     [
+      40,
+      30000
+     ],
+     [
+      40,
+      30000
+     ],
+     [
+      40,
+      30000
+     ],
+     [
+      40,
+      32500
+     ],
+     [
+      40,
+      32500
+     ],
+     [
+      40,
+      32500
+     ]
+    ],
+    432
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-C-M6-011",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Petit électroménager : valeur du stock final au CMUP ?\n\n[[piece:S-C-12-010]]",
+   "en": "petit électroménager: closing stock at WAC?\n\n[[piece:S-C-12-010]]"
+  },
+  "explanation": {
+   "fr": "CMUP de l'exercice, arrondi au franc ; calculateur stock.",
+   "en": "Period WAC, rounded."
+  },
+  "numeric": {
+   "value": 1380000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_cmup",
+   "args": [
+    [
+     [
+      40,
+      25000
+     ],
+     [
+      40,
+      25000
+     ],
+     [
+      40,
+      25000
+     ],
+     [
+      40,
+      27500
+     ],
+     [
+      40,
+      27500
+     ],
+     [
+      40,
+      27500
+     ],
+     [
+      40,
+      30000
+     ],
+     [
+      40,
+      30000
+     ],
+     [
+      40,
+      30000
+     ],
+     [
+      40,
+      32500
+     ],
+     [
+      40,
+      32500
+     ],
+     [
+      40,
+      32500
+     ]
+    ],
+    432
+   ],
+   "resultat": [
+    "valeur_stock"
+   ]
+  }
+ },
+ {
+  "id": "S-C-M6-012",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Petit électroménager : coût des sorties en PEPS (contraste) ?\n\n[[piece:S-C-12-010]]",
+   "en": "petit électroménager: cost of goods sold under FIFO?\n\n[[piece:S-C-12-010]]"
+  },
+  "explanation": {
+   "fr": "Les lots les plus anciens sortent d'abord.",
+   "en": "Oldest lots go first."
+  },
+  "numeric": {
+   "value": 12240000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "sortie_peps",
+   "args": [
+    [
+     [
+      40,
+      25000
+     ],
+     [
+      40,
+      25000
+     ],
+     [
+      40,
+      25000
+     ],
+     [
+      40,
+      27500
+     ],
+     [
+      40,
+      27500
+     ],
+     [
+      40,
+      27500
+     ],
+     [
+      40,
+      30000
+     ],
+     [
+      40,
+      30000
+     ],
+     [
+      40,
+      30000
+     ],
+     [
+      40,
+      32500
+     ],
+     [
+      40,
+      32500
+     ],
+     [
+      40,
+      32500
+     ]
+    ],
+    432
+   ],
+   "resultat": [
+    "valeur_sortie"
+   ]
+  }
+ },
+ {
+  "id": "S-C-M6-013",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture du stock final.\n\n[[piece:S-C-12-010]]",
+   "en": "Record the closing stock.\n\n[[piece:S-C-12-010]]"
+  },
+  "explanation": {
+   "fr": "Stocks 3111, 3112 et 3121 au débit, variation 6031 au crédit. Pourquoi pas autre chose : Le CMUP lisse les hausses trimestrielles de l'importateur ; le PEPS donnerait un stock plus élevé.",
+   "en": "Stock accounts debited, 6031 credited. Why not something else: WAC smooths the importer's quarterly rises; FIFO would give a higher stock."
+  },
+  "journal": [
+   {
+    "account": "3111",
+    "side": "debit",
+    "amount": 4410000
+   },
+   {
+    "account": "3112",
+    "side": "debit",
+    "amount": 3045000
+   },
+   {
+    "account": "3121",
+    "side": "debit",
+    "amount": 1380000
+   },
+   {
+    "account": "6031",
+    "side": "credit",
+    "amount": 8835000
+   }
+  ]
+ },
+ {
+  "id": "S-C-M6-014",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "journal",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Passez l'écriture des charges de clôture.\n\n[[piece:S-C-12-011]]",
+   "en": "Record the year-end charges.\n\n[[piece:S-C-12-011]]"
+  },
+  "explanation": {
+   "fr": "Dotation 6813 et amortissement 2841 ; provision pour garantie : 6911 au débit, 192 au crédit. Pourquoi pas autre chose : Pourquoi cette provision est-elle déductible, alors que celle du litige de Ngono Mode ne l'était pas ? Ici, la charge est nettement précisée (neuf réparations chiffrées), probable (pannes déclarées) et comptabilisée : les trois conditions du CGI sont réunies [[cgi:art. 7]].",
+   "en": "Charge 6813 and depreciation 2841; warranty provision: 6911 debit, 192 credit. Why not something else: Why is this provision deductible, unlike Ngono Mode's litigation provision? Here the charge is precise (nine costed repairs), probable (failures reported) and booked: the CGI's three conditions are met."
+  },
+  "journal": [
+   {
+    "account": "6813",
+    "side": "debit",
+    "amount": 320000
+   },
+   {
+    "account": "2841",
+    "side": "credit",
+    "amount": 320000
+   },
+   {
+    "account": "6911",
+    "side": "debit",
+    "amount": 450000
+   },
+   {
+    "account": "192",
+    "side": "credit",
+    "amount": 450000
+   }
+  ]
+ },
+ {
+  "id": "S-C-M6-015",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Dotation 2026 de l'outillage (1 600 000 HT, 5 ans, depuis janvier) ?\n\n[[piece:S-C-12-011]]",
+   "en": "2026 depreciation of the tools (1,600,000, 5 years, from January)?\n\n[[piece:S-C-12-011]]"
+  },
+  "explanation": {
+   "fr": "Linéaire sur douze mois ; 20 %, le taux fiscal maximal des machines-outils légers (CGI art. 7).",
+   "en": "Straight-line over twelve months; 20%, the maximum tax rate for light machine tools."
+  },
+  "numeric": {
+   "value": 320000,
+   "unit": "FCFA"
+  },
+  "calcul": {
+   "fonction": "amortissement_lineaire",
+   "args": [
+    1600000,
+    5,
+    1
+   ],
+   "resultat": [
+    0,
+    "dotation"
+   ]
+  }
+ },
+ {
+  "id": "S-C-M6-016",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Montant de la provision pour garantie au 31 décembre ?\n\n[[piece:S-C-12-011]]",
+   "en": "Warranty provision at 31 December?\n\n[[piece:S-C-12-011]]"
+  },
+  "explanation": {
+   "fr": "Neuf réparations déclarées, estimées à 50 000 chacune.",
+   "en": "Nine reported repairs, estimated at 50,000 each."
+  },
+  "numeric": {
+   "value": 450000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-C-M6-017",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "quiz",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Montant de la variation des stocks (6031) au 31 décembre ?\n\n[[piece:S-C-12-010]]",
+   "en": "Change in inventories (6031) at 31 December?\n\n[[piece:S-C-12-010]]"
+  },
+  "explanation": {
+   "fr": "Premier exercice : égale au stock final.",
+   "en": "First year: equals the closing stock."
+  },
+  "numeric": {
+   "value": 8835000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-C-M6-018",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "numeric",
+  "usage": "exam",
+  "exercice": 2026,
+  "prompt": {
+   "fr": "Valeur nette comptable de l'outillage au 31 décembre ?\n\n[[piece:S-C-12-011]]",
+   "en": "Net book value of the tools at 31 December?\n\n[[piece:S-C-12-011]]"
+  },
+  "explanation": {
+   "fr": "Coût HT moins amortissements.",
+   "en": "Cost less depreciation."
+  },
+  "numeric": {
+   "value": 1280000,
+   "unit": "FCFA"
+  }
+ },
+ {
+  "id": "S-C-M6-019",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Compte de la provision pour garantie ?\n\n[[piece:S-C-12-011]]",
+   "en": "Account for the warranty provision?\n\n[[piece:S-C-12-011]]"
+  },
+  "explanation": {
+   "fr": "192 Provisions pour garanties données aux clients ; 191 vise les litiges.",
+   "en": "192 Provisions pour garanties données aux clients ; 191 vise les litiges."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "192",
+     "en": "192"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "191",
+     "en": "191"
+    },
+    "correct": false
+   },
+   {
+    "text": {
+     "fr": "6911",
+     "en": "6911"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-C-M6-020",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "quiz",
+  "prompt": {
+   "fr": "La provision pour garantie est-elle déductible ?\n\n[[piece:S-C-12-011]]",
+   "en": "Is the warranty provision deductible?\n\n[[piece:S-C-12-011]]"
+  },
+  "explanation": {
+   "fr": "CGI art. 7 E : conditions de déduction des provisions.",
+   "en": "CGI art. 7 E : conditions de déduction des provisions."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Oui : charge nettement précisée, probable et comptabilisée",
+     "en": "Yes: precise, probable and booked"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Non, jamais",
+     "en": "No, never"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-C-M6-021",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "single",
+  "usage": "exam",
+  "prompt": {
+   "fr": "Taux fiscal maximal des machines-outils légers ?\n\n[[piece:S-C-12-011]]",
+   "en": "Maximum tax rate for light machine tools?\n\n[[piece:S-C-12-011]]"
+  },
+  "explanation": {
+   "fr": "CGI art. 7 : 20 %.",
+   "en": "CGI art. 7 : 20 %."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "20 %",
+     "en": "20%"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "33,33 %",
+     "en": "33.33%"
+    },
+    "correct": false
+   }
+  ]
+ },
+ {
+  "id": "S-C-M6-022",
+  "reviewed": {
+   "fr": true,
+   "en": true
+  },
+  "type": "truefalse",
+  "usage": "exam",
+  "prompt": {
+   "fr": "En période de hausse des prix, le PEPS donne un stock final plus élevé que le CMUP.\n\n[[piece:S-C-12-010]]",
+   "en": "When prices rise, FIFO gives a higher closing stock than WAC.\n\n[[piece:S-C-12-010]]"
+  },
+  "explanation": {
+   "fr": "Vrai.",
+   "en": "True."
+  },
+  "choices": [
+   {
+    "text": {
+     "fr": "Vrai",
+     "en": "True"
+    },
+    "correct": true
+   },
+   {
+    "text": {
+     "fr": "Faux",
+     "en": "False"
+    },
+    "correct": false
+   }
+  ]
+ }
+]
