@@ -4,7 +4,7 @@ SARL de prestations de climatisation et froid et de vente de matériel à Douala
 
 ### Comptes utilisés
 
-[[syscohada:521]] [[syscohada:5711]] [[syscohada:552]] (sous-compte 5522 Orange Money) [[syscohada:7061]] [[syscohada:7011]] [[syscohada:6011]] [[syscohada:4492]] [[syscohada:632]]
+[[syscohada:521]] [[syscohada:5711]] [[syscohada:552]] (sous-compte 5522 Orange Money) [[syscohada:7061]] [[syscohada:7011]] [[syscohada:6011]] [[syscohada:632]]
 
 ### Taux de l'exercice
 
@@ -30,4 +30,4 @@ Tous sont fictifs, comme les entreprises et les montants.
 
 - *Chaque soir* : Hervé compte la caisse et inscrit les recettes et les dépenses du jour.
 - *Chaque mois* : il rapproche le cahier du relevé bancaire et du relevé Orange Money, verse les espèces à la banque.
-- *Chaque année* : inventaire des climatiseurs en stock, déclaration annuelle de l'IGS avant le 15 mars [[cgi:art. C 41]] ; les pièces se conservent dix ans.
+- *Chaque année* : inventaire des climatiseurs en stock, déclaration et paiement de l'IGS avant le 15 avril [[cgi:art. C 41]], DSF du SMT avant le 15 mai [[cgi:art. C 44]] ; les pièces se conservent dix ans.

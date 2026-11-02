@@ -61,7 +61,8 @@ def build():
               "Follow-up under the IGS: target turnover below 50 million"),
          [text("Carte de contribuable délivrée au CFCE", "Taxpayer card from the CFCE"),
           text("Statuts et registre de commerce", "Articles and trade register")],
-         text("Suivi au régime de l'IGS et déclaration annuelle avant le 15 mars", "IGS follow-up, yearly return by 15 March"),
+         text("Suivi au régime de l'IGS : déclaration et paiement avant le 15 avril, DSF du SMT avant le 15 mai",
+              "IGS follow-up: return and payment by 15 April, cash-basis tax return by 15 May"),
          "[[cgi:art. 93 quater]] [[cgi:art. C 41]]"),
         ("Ouverture du compte bancaire", "Opening the bank account",
          text("Banque commerciale (Banque X, fictive)", "Commercial bank (Bank X, fictitious)"),
@@ -133,7 +134,8 @@ def build():
                                                    "role": "tax", "amount": int(withheld)},
                                                   {"label": text("Net à payer", "Amount due"), "role": "ttc",
                                                    "amount": int(taxes["ttc"] + withheld)}]})
-        book.entry(workday(month, 5), refs["purchase"], line("6011", "debit", taxes["ttc"]), line("4492", "debit", withheld),
+        # S40 : à l'IGS, le précompte n'est pas imputable (CGI art. 21 (3)) ; il entre dans le coût d'achat.
+        book.entry(workday(month, 5), refs["purchase"], line("6011", "debit", taxes["ttc"] + withheld),
                    line("521", "credit", taxes["ttc"] + withheld))
         # Deux interventions facturées, sans TVA (IGS) ; encaissées par virement et par Orange Money.
         for i, (amount, account) in enumerate(zip(SERVICES, ("521", "5522"))):
@@ -214,17 +216,49 @@ def year_end(book, special):
     igs = calculs.igs_annuel(D(turnover), classes)
     special.update(turnover=turnover, igs=int(igs), igs_cga=int(calculs.igs_annuel(D(turnover), classes, True)),
                    classes=[[int(c), int(m)] for c, m in classes],
-                   precompte=sum(l["amount"] for e in entries for l in e["lines"]
-                                 if l["account"] == "4492" and l["side"] == "debit"),
+                   precompte=sum(t["amount"] for p in book.pieces if p["kind"] == "facture_achat"
+                                 for t in p["payload"].get("totals", []) if t["label"]["fr"].startswith("Précompte")),
                    current_account=-ledger.account_balance(entries, "4621", datetime.date(YEAR, 12, 31)),
                    cash_result=sum(l["amount"] for e in entries for l in e["lines"] if l["account"][0] == "7")
                    - sum(l["amount"] for e in entries for l in e["lines"] if l["account"][0] == "6"))
-    special["igs_return"] = book.piece(3, "declaration", d(3, 15, YEAR + 1), "Déclaration annuelle de l'IGS 2026",
+    special["igs_return"] = book.piece(4, "declaration", d(4, 9, YEAR + 1), "Déclaration annuelle de l'IGS 2026",
                                        "2026 yearly IGS return",
                                        {"fields": [{"label": text("Chiffre d'affaires HT 2026", "2026 turnover"),
-                                                    "value": f"{turnover:,}".replace(",", " ")}],
+                                                    "value": f"{turnover:,}".replace(",", " ")},
+                                                   {"label": text("Échéance", "Deadline"),
+                                                    "value": text("15 avril 2027, paiement compris (CGI art. C 41)",
+                                                                  "15 April 2027, payment included")}],
                                         "totals": [{"label": text("IGS annuel (CGI art. C 40)", "Yearly IGS"),
                                                     "amount": int(igs)}]}, year=YEAR + 1)
+    smt_returns(book, special, entries)
+
+
+def smt_returns(book, special, entries):
+    """S38 (CGI art. C 44 ; AUDCIF art. 28) : dès 10 millions de CA, DSF du SMT au 15 mai : bilan et compte de
+    résultat établis à partir de la trésorerie, corrigés de la variation des stocks."""
+    end = datetime.date(YEAR, 12, 31)
+    cash = sum(ledger.account_balance(entries, acc, end) for acc in ("521", "5711", "5522"))
+    stock = int(special["stock"][3]["valeur_stock"])
+    result = special["cash_result"] + stock
+    assert cash + stock == CAPITAL + special["current_account"] + result, "bilan du SMT déséquilibré"
+    special.update(smt_cash=int(cash), smt_stock=stock, smt_result=int(result))
+    for table, fr, en, rows in (
+        ("compte_resultat_smt", "DSF du SMT 2026 : compte de résultat", "2026 cash-basis return: income statement",
+         [("Recettes de l'exercice (classes 7)", "Receipts of the year", special["turnover"]),
+          ("Dépenses de l'exercice (classes 6)", "Payments of the year", special["turnover"] - special["cash_result"]),
+          ("Variation des stocks (stock final)", "Change in inventories (closing stock)", stock),
+          ("Résultat de l'exercice", "Profit for the year", result)]),
+        ("bilan_smt", "DSF du SMT 2026 : bilan", "2026 cash-basis return: balance sheet",
+         [("Trésorerie : banque, caisse et Orange Money", "Cash: bank, till and Orange Money", cash),
+          ("Stock de climatiseurs", "Air-conditioner stock", stock),
+          ("Capital social", "Share capital", CAPITAL),
+          ("Compte courant d'associé", "Partner's current account", special["current_account"]),
+          ("Résultat de l'exercice", "Profit for the year", result)]),
+    ):
+        book.piece(5, "declaration", d(5, 7, YEAR + 1), fr, en,
+                   {"totals": [{"label": text(a, b), "amount": int(v)} for a, b, v in rows]}, year=YEAR + 1)
+        book.pieces[-1]["dsf"] = table
+    special["smt_return"] = book.pieces[-1]["ref"]
 
 
 def balances(book):
@@ -330,7 +364,7 @@ def build_questions(book, special):
         (special["turnover"], "Chiffre d'affaires HT 2026 (prestations et ventes) ?", "2026 turnover?",
          "Prestations 7061 et ventes de marchandises 7011."),
         (special["precompte"], "Total des précomptes de 5 % subis en 2026 ?", "Total 2026 withholdings?",
-         "Somme des précomptes portés en 4492."),
+         "Somme des précomptes ; à l'IGS, ils restent dans le coût des achats (CGI art. 21 (3), S40)."),
         (special["current_account"], "Solde du compte courant d'associé au 31 décembre ?", "Partner account balance?",
          "Avance de 1 400 000 moins six remboursements de 100 000."),
         (special["cash_result"], "Excédent des recettes sur les dépenses de 2026 (classes 7 et 6) ?",
@@ -406,16 +440,26 @@ def build_questions(book, special):
          "Tarif annuel de la classe (CGI art. C 40)."),
         (special["tools_ttc"], "Coût de l'outillage acheté en janvier ?", "Tools bought in January?",
          "Petit outillage, TVA comprise."),
+        (special["smt_result"], "DSF du SMT : résultat de l'exercice 2026 ?", "Cash-basis return: 2026 profit?",
+         "Recettes moins dépenses, plus la variation des stocks (AUDCIF art. 28)."),
+        (special["smt_cash"], "DSF du SMT : trésorerie au 31 décembre (banque, caisse, Orange Money) ?",
+         "Cash-basis return: cash at 31 December?", "Soldes de 521, 5711 et 5522 au 31 décembre."),
         (12 * SERVICES[0], "Recettes annuelles des premières interventions du mois ?", "Yearly receipts of first jobs?",
          "Douze factures."),
     ):
         book.numeric(7, "exam", value, fr, en, why, why, piece=igs_ref)
     for fr, en, choices, why in (
-        ("Date limite de la déclaration annuelle de l'IGS 2026 ?", "Deadline of the 2026 IGS return?",
-         [("15 mars 2027", "15 March 2027", True), ("15 avril 2027", "15 April 2027", False)], "CGI art. C 41."),
-        ("La SARL dépose-t-elle une DSF normale ?", "Does the LLC file a standard return?",
-         [("Non : déclaration annuelle de l'IGS", "No: yearly IGS return", True), ("Oui", "Yes", False)],
-         "À l'IGS et au SMT, pas de DSF normale (S14)."),
+        ("Date limite de la déclaration et du paiement de l'IGS 2026 ?", "Deadline of the 2026 IGS return and payment?",
+         [("15 avril 2027", "15 April 2027", True), ("15 mars 2027", "15 March 2027", False)],
+         "CGI art. C 41, modifié par la LF 2026 : 15 avril, paiement compris ; paiement trimestriel sur option."),
+        ("Quelle DSF la SARL dépose-t-elle ?", "Which tax return does the LLC file?",
+         [("La DSF du SMT, au plus tard le 15 mai (CA d'au moins 10 millions)", "The cash-basis return, by 15 May",
+           True), ("La DSF du système normal", "The standard return", False), ("Aucune", "None", False)],
+         "CGI art. C 44 : à l'IGS, dès 10 millions de CA, SMT et DSF au 15 mai ; jamais la DSF normale (S14, S38)."),
+        ("Le précompte de 5 % subi s'impute-t-il sur l'IGS ?", "Is the 5% withholding credited against the IGS?",
+         [("Non : il reste dans le coût des achats", "No: it stays in the purchase cost", True),
+          ("Oui", "Yes", False)],
+         "CGI art. 21 (3) : l'imputation ne vise que les assujettis à l'IS ou à l'IRPP (S40)."),
         ("Quel article fixe le tarif de l'IGS ?", "Which article sets the IGS tariff?",
          [("CGI art. C 40", "CGI art. C 40", True), ("CGI art. 17", "CGI art. 17", False)], "Article C 40 (1)."),
         ("Le tarif de l'IGS dépend-il du bénéfice ?", "Does the IGS depend on profit?",
@@ -456,7 +500,7 @@ def sections(book, special):
                "[[syscohada:4621]] et intervient comme vacataire. Chiffre d'affaires visé sous 30 millions : régime de "
                "l'IGS [[cgi:art. 93 quater]] et système minimal de trésorerie [[source:ohada-audcif]].\n\n"
                "### Comptes utilisés\n\n[[syscohada:521]] [[syscohada:5711]] [[syscohada:552]] (sous-compte 5522 Orange "
-               "Money) [[syscohada:7061]] [[syscohada:7011]] [[syscohada:6011]] [[syscohada:4492]] [[syscohada:632]]\n\n"
+               "Money) [[syscohada:7061]] [[syscohada:7011]] [[syscohada:6011]] [[syscohada:632]]\n\n"
                "### Taux de l'exercice\n\n- précompte sur achats à l'IGS [[param:precompte.taux_igs]] [[cgi:art. 21]] ;\n"
                "- capital minimum d'une SARL [[param:sarl.capital_minimum]].\n").format(y=YEAR)
     company_en = ("## Froid Équipe Services SARL\n\nAir-conditioning services and equipment LLC in Douala, created on "

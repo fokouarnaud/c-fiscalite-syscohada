@@ -26,4 +26,4 @@ All are fictitious, like the companies and the amounts.
 
 **Tools.** Under the cash-basis system Hervé keeps a receipts and payments book, on paper or a spreadsheet: each line shows the date, document, amount and means of payment (cash, bank, Orange Money) [[source:ohada-audcif]]. Documents go into three binders: Receipts, Payments, Bank and Mobile Money; articles, Mr Etoga's advance and the taxpayer card go to the permanent file.
 
-**Routines.** Every evening: count the cash and enter the day's receipts and payments. Every month: reconcile the book with the bank and Orange Money statements, deposit the cash. Every year: count the units in stock and file the yearly IGS return by 15 March [[cgi:art. C 41]]; documents are kept ten years.
+**Routines.** Every evening: count the cash and enter the day's receipts and payments. Every month: reconcile the book with the bank and Orange Money statements, deposit the cash. Every year: count the units in stock and file the yearly IGS return and payment by 15 April [[cgi:art. C 41]], the cash-basis tax return by 15 May [[cgi:art. C 44]]; documents are kept ten years.

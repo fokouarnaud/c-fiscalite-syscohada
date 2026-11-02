@@ -40,7 +40,7 @@ Hervé achète les climatiseurs split à revendre. Le fournisseur, au réel, fac
 
 **La règle.** Précompte de 5 % pour un client à l'IGS [[cgi:art. 21]] [[param:precompte.taux_igs]] ; TVA non déductible.
 
-> **Pourquoi ce choix et pas un autre.** Pourquoi 5 % et pas 2 % ? Le taux de 2 % vise les acheteurs au réel ; un contribuable à l'IGS subit 5 %. Ce précompte est un impôt payé d'avance, prélevé par le fournisseur.
+> **Pourquoi ce choix et pas un autre.** Pourquoi 5 % et pas 2 % ? Le taux de 2 % vise les acheteurs au réel ; un contribuable à l'IGS subit 5 %. Et pourquoi le compter dans le coût ? Le CGI ne prévoit son imputation que sur l'IS ou l'IRPP ; l'IGS, impôt synthétique, n'en offre pas : la SARL le supporte, comme la TVA.
 
 **Ce que ça change.** Dépense de 646 100 FCFA au cahier.
 

@@ -54,12 +54,7 @@
    {
     "account": "6011",
     "side": "debit",
-    "amount": 620100
-   },
-   {
-    "account": "4492",
-    "side": "debit",
-    "amount": 26000
+    "amount": 646100
    },
    {
     "account": "521",
@@ -186,12 +181,7 @@
    {
     "account": "6011",
     "side": "debit",
-    "amount": 624870
-   },
-   {
-    "account": "4492",
-    "side": "debit",
-    "amount": 26200
+    "amount": 651070
    },
    {
     "account": "521",
@@ -323,12 +313,7 @@
    {
     "account": "6011",
     "side": "debit",
-    "amount": 629640
-   },
-   {
-    "account": "4492",
-    "side": "debit",
-    "amount": 26400
+    "amount": 656040
    },
    {
     "account": "521",
@@ -460,12 +445,7 @@
    {
     "account": "6011",
     "side": "debit",
-    "amount": 634410
-   },
-   {
-    "account": "4492",
-    "side": "debit",
-    "amount": 26600
+    "amount": 661010
    },
    {
     "account": "521",
@@ -597,12 +577,7 @@
    {
     "account": "6011",
     "side": "debit",
-    "amount": 639180
-   },
-   {
-    "account": "4492",
-    "side": "debit",
-    "amount": 26800
+    "amount": 665980
    },
    {
     "account": "521",
@@ -734,12 +709,7 @@
    {
     "account": "6011",
     "side": "debit",
-    "amount": 643950
-   },
-   {
-    "account": "4492",
-    "side": "debit",
-    "amount": 27000
+    "amount": 670950
    },
    {
     "account": "521",
@@ -871,12 +841,7 @@
    {
     "account": "6011",
     "side": "debit",
-    "amount": 648720
-   },
-   {
-    "account": "4492",
-    "side": "debit",
-    "amount": 27200
+    "amount": 675920
    },
    {
     "account": "521",
@@ -1018,12 +983,7 @@
    {
     "account": "6011",
     "side": "debit",
-    "amount": 653490
-   },
-   {
-    "account": "4492",
-    "side": "debit",
-    "amount": 27400
+    "amount": 680890
    },
    {
     "account": "521",
@@ -1165,12 +1125,7 @@
    {
     "account": "6011",
     "side": "debit",
-    "amount": 658260
-   },
-   {
-    "account": "4492",
-    "side": "debit",
-    "amount": 27600
+    "amount": 685860
    },
    {
     "account": "521",
@@ -1312,12 +1267,7 @@
    {
     "account": "6011",
     "side": "debit",
-    "amount": 663030
-   },
-   {
-    "account": "4492",
-    "side": "debit",
-    "amount": 27800
+    "amount": 690830
    },
    {
     "account": "521",
@@ -1459,12 +1409,7 @@
    {
     "account": "6011",
     "side": "debit",
-    "amount": 667800
-   },
-   {
-    "account": "4492",
-    "side": "debit",
-    "amount": 28000
+    "amount": 695800
    },
    {
     "account": "521",
@@ -1606,12 +1551,7 @@
    {
     "account": "6011",
     "side": "debit",
-    "amount": 672570
-   },
-   {
-    "account": "4492",
-    "side": "debit",
-    "amount": 28200
+    "amount": 700770
    },
    {
     "account": "521",

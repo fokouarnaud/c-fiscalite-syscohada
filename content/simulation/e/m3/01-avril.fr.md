@@ -10,7 +10,7 @@ Hervé achète les climatiseurs split à revendre. Le fournisseur, au réel, fac
 
 **La règle.** Précompte de 5 % pour un client à l'IGS [[cgi:art. 21]] [[param:precompte.taux_igs]] ; TVA non déductible.
 
-> **Pourquoi ce choix et pas un autre.** Rappel : 5 % parce que la SARL est à l'IGS ; la TVA reste dans le coût.
+> **Pourquoi ce choix et pas un autre.** Rappel : 5 % parce que la SARL est à l'IGS ; précompte et TVA restent dans le coût.
 
 **Ce que ça change.** Dépense de 661 010 FCFA au cahier.
 

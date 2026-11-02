@@ -37,8 +37,8 @@ ROUTINES_FR = (
     "- *Chaque soir* : Hervé compte la caisse et inscrit les recettes et les dépenses du jour.\n"
     "- *Chaque mois* : il rapproche le cahier du relevé bancaire et du relevé Orange Money, verse les espèces à la "
     "banque.\n"
-    "- *Chaque année* : inventaire des climatiseurs en stock, déclaration annuelle de l'IGS avant le 15 mars "
-    "[[cgi:art. C 41]] ; les pièces se conservent dix ans.\n")
+    "- *Chaque année* : inventaire des climatiseurs en stock, déclaration et paiement de l'IGS avant le 15 avril "
+    "[[cgi:art. C 41]], DSF du SMT avant le 15 mai [[cgi:art. C 44]] ; les pièces se conservent dix ans.\n")
 ROUTINES_EN = (
     "### Tools and routines\n\n"
     "**Tools.** Under the cash-basis system Hervé keeps a receipts and payments book, on paper or a spreadsheet: each "
@@ -47,7 +47,8 @@ ROUTINES_EN = (
     "taxpayer card go to the permanent file.\n\n"
     "**Routines.** Every evening: count the cash and enter the day's receipts and payments. Every month: reconcile the "
     "book with the bank and Orange Money statements, deposit the cash. Every year: count the units in stock and file "
-    "the yearly IGS return by 15 March [[cgi:art. C 41]]; documents are kept ten years.\n")
+    "the yearly IGS return and payment by 15 April [[cgi:art. C 41]], the cash-basis tax return by 15 May "
+    "[[cgi:art. C 44]]; documents are kept ten years.\n")
 STORE = {
     "in": ("Classeur Recettes ; une ligne au cahier des recettes et des dépenses.",
            "Receipts binder; one line in the receipts and payments book."),
@@ -116,11 +117,13 @@ def month_scenes(book, special, month):
         ("Précompte de 5 % pour un client à l'IGS [[cgi:art. 21]] [[param:precompte.taux_igs]] ; TVA non déductible.",
          "5% withholding for an IGS customer; VAT not recoverable."),
         (("Pourquoi 5 % et pas 2 % ? Le taux de 2 % vise les acheteurs au réel ; un contribuable à l'IGS subit 5 %. "
-          "Ce précompte est un impôt payé d'avance, prélevé par le fournisseur." if first else
-          "Rappel : 5 % parce que la SARL est à l'IGS ; la TVA reste dans le coût."),
-         ("Why 5% and not 2%? The 2% rate is for actual-regime buyers; an IGS taxpayer suffers 5%. The withholding is "
-          "tax paid in advance." if first else "Reminder: 5% because the company is under the IGS; VAT stays in the "
-          "cost.")),
+          "Et pourquoi le compter dans le coût ? Le CGI ne prévoit son imputation que sur l'IS ou l'IRPP ; l'IGS, "
+          "impôt synthétique, n'en offre pas : la SARL le supporte, comme la TVA." if first else
+          "Rappel : 5 % parce que la SARL est à l'IGS ; précompte et TVA restent dans le coût."),
+         ("Why 5% and not 2%? The 2% rate is for actual-regime buyers; an IGS taxpayer suffers 5%. Why count it in the "
+          "cost? The CGI credits it only against corporate or personal income tax; the IGS offers no credit, so the "
+          "company bears it, like VAT." if first else "Reminder: 5% because the company is under the IGS; withholding "
+          "and VAT stay in the cost.")),
         (f"Dépense de {fcfa(total(purchase, 'Net'))} au cahier.", f"A {fcfa(total(purchase, 'Net'), 'en')} payment."),
         [("fisca", 1, "Le système fiscal et les régimes d'imposition", "The tax system and regimes")], STORE["out"]))
     for key, how_fr, how_en in (("service0", "par virement", "by transfer"), ("service1", "par Orange Money",
@@ -237,16 +240,18 @@ def year_end_sections(book, special):
     igs = scene(
         piece[igs_ref]["date"], igs_ref, ("la déclaration annuelle de l'IGS", "the yearly IGS return"),
         (f"Hervé additionne les recettes de l'année : {fcfa(special['turnover'])}. Ce chiffre place la SARL dans une classe "
-         f"du tarif de l'IGS : {fcfa(special['igs'])} à payer avec la déclaration, avant le 15 mars 2027.",
+         f"du tarif de l'IGS : {fcfa(special['igs'])} à payer avec la déclaration, avant le 15 avril 2027.",
          f"Hervé adds up the year's receipts: {fcfa(special['turnover'], 'en')}. That turnover places the company in an "
-         f"IGS class: {fcfa(special['igs'], 'en')} due with the return, by 15 March 2027."),
+         f"IGS class: {fcfa(special['igs'], 'en')} due with the return, by 15 April 2027."),
         ("Tarif par classe de chiffre d'affaires [[cgi:art. C 40]], déclaration annuelle [[cgi:art. C 41]].",
          "Tariff by turnover class [[cgi:art. C 40]], yearly return [[cgi:art. C 41]]."),
-        ("Pourquoi pas de DSF normale ? L'IGS est un impôt synthétique : un montant fixe selon la classe de chiffre "
-         "d'affaires, réduit de moitié pour un adhérent d'un Centre de Gestion Agréé "
-         f"({fcfa(special['igs_cga'])}) [[cgi:art. C 38]].",
-         "Why no standard return? The IGS is a synthetic tax: a fixed amount by turnover class, halved for a member of a "
-         f"registered management centre ({fcfa(special['igs_cga'], 'en')})."),
+        ("Pourquoi un tarif et pas un impôt sur le bénéfice ? L'IGS est un impôt synthétique : un montant fixe selon la "
+         "classe de chiffre d'affaires, réduit de moitié pour un adhérent d'un Centre de Gestion Agréé "
+         f"({fcfa(special['igs_cga'])}) [[cgi:art. C 38]]. Le délai est le 15 avril depuis la LF 2026, paiement "
+         "compris ; la SARL pourrait aussi payer par trimestre.",
+         "Why a tariff and not a tax on profit? The IGS is a synthetic tax: a fixed amount by turnover class, halved for "
+         f"a member of a registered management centre ({fcfa(special['igs_cga'], 'en')}). The deadline is 15 April "
+         "since the 2026 Finance Act, payment included; quarterly payment is an option."),
         ("La SARL reste sous le seuil de 50 millions [[cgi:art. C 39]] : elle demeure à l'IGS.",
          "The company stays below the 50 million threshold: it remains under the IGS."),
         [("fisca", 1, "Le système fiscal et les régimes d'imposition", "The tax system and regimes")],
@@ -255,7 +260,18 @@ def year_end_sections(book, special):
     close = {lang: (("Le 31 décembre, l'année se ferme sur l'inventaire [[syscohada:5711]].\n\n" if lang == "fr" else
                      "On 31 December the year closes with the count [[syscohada:5711]].\n\n") + count[lang])
              for lang in ("fr", "en")}
-    yearly = {lang: igs[lang] for lang in ("fr", "en")}
+    smt = "\n\n".join(f"[[piece:{p['ref']}]]" for p in book.pieces if p.get("dsf"))
+    smt_text = {
+        "fr": ("\n### Avant le 15 mai 2027 : la DSF du SMT\n\nAvec plus de 10 millions de chiffre d'affaires, la SARL tient "
+               "le SMT et dépose une DSF au plus tard le 15 mai [[cgi:art. C 44]] : un bilan et un compte de résultat "
+               "établis à partir de la trésorerie, corrigés de la variation des stocks [[source:ohada-audcif]]. Ce n'est "
+               f"pas la DSF du système normal.\n\n{smt}\n\n**Où ça se range.** Dossier permanent, avec l'accusé de "
+               "réception ; conservation dix ans.\n"),
+        "en": ("\n### Before 15 May 2027: the cash-basis tax return\n\nWith more than 10 million of turnover, the company "
+               "keeps the cash-basis system and files a return by 15 May [[cgi:art. C 44]]: a balance sheet and an "
+               "income statement drawn from cash, adjusted for the change in inventories. It is not the standard "
+               f"return.\n\n{smt}\n\n**Where it is filed.** Permanent file, with the acknowledgement; kept ten years.\n")}
+    yearly = {lang: igs[lang] + smt_text[lang] for lang in ("fr", "en")}
     result = {}
     for key, value in (("close", close), ("igs", yearly)):
         result[key] = {"fr": typeset_fr(value["fr"]), "en": value["en"]}

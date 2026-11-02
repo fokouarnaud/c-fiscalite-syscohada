@@ -73,8 +73,8 @@
     }
    ],
    "document_obtenu": {
-    "fr": "Suivi au régime de l'IGS et déclaration annuelle avant le 15 mars",
-    "en": "IGS follow-up, yearly return by 15 March"
+    "fr": "Suivi au régime de l'IGS : déclaration et paiement avant le 15 avril, DSF du SMT avant le 15 mai",
+    "en": "IGS follow-up: return and payment by 15 April, cash-basis tax return by 15 May"
    },
    "source": "[[cgi:art. 93 quater]] [[cgi:art. C 41]]"
   }
@@ -603,13 +603,6 @@
     },
     {
      "label": {
-      "fr": "4492 Etat, avances et acomptes versés sur impôts",
-      "en": "4492 State, advances and instalments paid on taxes"
-     },
-     "debit": 26000
-    },
-    {
-     "label": {
       "fr": "4621 Principal",
       "en": "4621 Principal"
      },
@@ -634,7 +627,7 @@
       "fr": "6011 Achats de marchandises dans la Région",
       "en": "6011 Purchases of goods within the Region"
      },
-     "debit": 620100
+     "debit": 646100
     },
     {
      "label": {
@@ -1004,13 +997,6 @@
     },
     {
      "label": {
-      "fr": "4492 Etat, avances et acomptes versés sur impôts",
-      "en": "4492 State, advances and instalments paid on taxes"
-     },
-     "debit": 52200
-    },
-    {
-     "label": {
       "fr": "4621 Principal",
       "en": "4621 Principal"
      },
@@ -1035,7 +1021,7 @@
       "fr": "6011 Achats de marchandises dans la Région",
       "en": "6011 Purchases of goods within the Region"
      },
-     "debit": 1244970
+     "debit": 1297170
     },
     {
      "label": {
@@ -1405,13 +1391,6 @@
     },
     {
      "label": {
-      "fr": "4492 Etat, avances et acomptes versés sur impôts",
-      "en": "4492 State, advances and instalments paid on taxes"
-     },
-     "debit": 78600
-    },
-    {
-     "label": {
       "fr": "4621 Principal",
       "en": "4621 Principal"
      },
@@ -1436,7 +1415,7 @@
       "fr": "6011 Achats de marchandises dans la Région",
       "en": "6011 Purchases of goods within the Region"
      },
-     "debit": 1874610
+     "debit": 1953210
     },
     {
      "label": {
@@ -1806,13 +1785,6 @@
     },
     {
      "label": {
-      "fr": "4492 Etat, avances et acomptes versés sur impôts",
-      "en": "4492 State, advances and instalments paid on taxes"
-     },
-     "debit": 105200
-    },
-    {
-     "label": {
       "fr": "4621 Principal",
       "en": "4621 Principal"
      },
@@ -1837,7 +1809,7 @@
       "fr": "6011 Achats de marchandises dans la Région",
       "en": "6011 Purchases of goods within the Region"
      },
-     "debit": 2509020
+     "debit": 2614220
     },
     {
      "label": {
@@ -2207,13 +2179,6 @@
     },
     {
      "label": {
-      "fr": "4492 Etat, avances et acomptes versés sur impôts",
-      "en": "4492 State, advances and instalments paid on taxes"
-     },
-     "debit": 132000
-    },
-    {
-     "label": {
       "fr": "4621 Principal",
       "en": "4621 Principal"
      },
@@ -2238,7 +2203,7 @@
       "fr": "6011 Achats de marchandises dans la Région",
       "en": "6011 Purchases of goods within the Region"
      },
-     "debit": 3148200
+     "debit": 3280200
     },
     {
      "label": {
@@ -2608,13 +2573,6 @@
     },
     {
      "label": {
-      "fr": "4492 Etat, avances et acomptes versés sur impôts",
-      "en": "4492 State, advances and instalments paid on taxes"
-     },
-     "debit": 159000
-    },
-    {
-     "label": {
       "fr": "4621 Principal",
       "en": "4621 Principal"
      },
@@ -2639,7 +2597,7 @@
       "fr": "6011 Achats de marchandises dans la Région",
       "en": "6011 Purchases of goods within the Region"
      },
-     "debit": 3792150
+     "debit": 3951150
     },
     {
      "label": {
@@ -3016,13 +2974,6 @@
     },
     {
      "label": {
-      "fr": "4492 Etat, avances et acomptes versés sur impôts",
-      "en": "4492 State, advances and instalments paid on taxes"
-     },
-     "debit": 186200
-    },
-    {
-     "label": {
       "fr": "4621 Principal",
       "en": "4621 Principal"
      },
@@ -3047,7 +2998,7 @@
       "fr": "6011 Achats de marchandises dans la Région",
       "en": "6011 Purchases of goods within the Region"
      },
-     "debit": 4440870
+     "debit": 4627070
     },
     {
      "label": {
@@ -3424,13 +3375,6 @@
     },
     {
      "label": {
-      "fr": "4492 Etat, avances et acomptes versés sur impôts",
-      "en": "4492 State, advances and instalments paid on taxes"
-     },
-     "debit": 213600
-    },
-    {
-     "label": {
       "fr": "4621 Principal",
       "en": "4621 Principal"
      },
@@ -3455,7 +3399,7 @@
       "fr": "6011 Achats de marchandises dans la Région",
       "en": "6011 Purchases of goods within the Region"
      },
-     "debit": 5094360
+     "debit": 5307960
     },
     {
      "label": {
@@ -3832,13 +3776,6 @@
     },
     {
      "label": {
-      "fr": "4492 Etat, avances et acomptes versés sur impôts",
-      "en": "4492 State, advances and instalments paid on taxes"
-     },
-     "debit": 241200
-    },
-    {
-     "label": {
       "fr": "4621 Principal",
       "en": "4621 Principal"
      },
@@ -3863,7 +3800,7 @@
       "fr": "6011 Achats de marchandises dans la Région",
       "en": "6011 Purchases of goods within the Region"
      },
-     "debit": 5752620
+     "debit": 5993820
     },
     {
      "label": {
@@ -4240,13 +4177,6 @@
     },
     {
      "label": {
-      "fr": "4492 Etat, avances et acomptes versés sur impôts",
-      "en": "4492 State, advances and instalments paid on taxes"
-     },
-     "debit": 269000
-    },
-    {
-     "label": {
       "fr": "4621 Principal",
       "en": "4621 Principal"
      },
@@ -4271,7 +4201,7 @@
       "fr": "6011 Achats de marchandises dans la Région",
       "en": "6011 Purchases of goods within the Region"
      },
-     "debit": 6415650
+     "debit": 6684650
     },
     {
      "label": {
@@ -4648,13 +4578,6 @@
     },
     {
      "label": {
-      "fr": "4492 Etat, avances et acomptes versés sur impôts",
-      "en": "4492 State, advances and instalments paid on taxes"
-     },
-     "debit": 297000
-    },
-    {
-     "label": {
       "fr": "4621 Principal",
       "en": "4621 Principal"
      },
@@ -4679,7 +4602,7 @@
       "fr": "6011 Achats de marchandises dans la Région",
       "en": "6011 Purchases of goods within the Region"
      },
-     "debit": 7083450
+     "debit": 7380450
     },
     {
      "label": {
@@ -5168,9 +5091,9 @@
   }
  },
  {
-  "ref": "S-E-15-001",
+  "ref": "S-E-16-001",
   "kind": "declaration",
-  "date": "2027-03-15",
+  "date": "2027-04-09",
   "title": {
    "fr": "Déclaration annuelle de l'IGS 2026",
    "en": "2026 yearly IGS return"
@@ -5183,6 +5106,16 @@
       "en": "2026 turnover"
      },
      "value": "18 960 000"
+    },
+    {
+     "label": {
+      "fr": "Échéance",
+      "en": "Deadline"
+     },
+     "value": {
+      "fr": "15 avril 2027, paiement compris (CGI art. C 41)",
+      "en": "15 April 2027, payment included"
+     }
     }
    ],
    "totals": [
@@ -5195,5 +5128,96 @@
     }
    ]
   }
+ },
+ {
+  "ref": "S-E-17-001",
+  "kind": "declaration",
+  "date": "2027-05-07",
+  "title": {
+   "fr": "DSF du SMT 2026 : compte de résultat",
+   "en": "2026 cash-basis return: income statement"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Recettes de l'exercice (classes 7)",
+      "en": "Receipts of the year"
+     },
+     "amount": 18960000
+    },
+    {
+     "label": {
+      "fr": "Dépenses de l'exercice (classes 6)",
+      "en": "Payments of the year"
+     },
+     "amount": 9344220
+    },
+    {
+     "label": {
+      "fr": "Variation des stocks (stock final)",
+      "en": "Change in inventories (closing stock)"
+     },
+     "amount": 813000
+    },
+    {
+     "label": {
+      "fr": "Résultat de l'exercice",
+      "en": "Profit for the year"
+     },
+     "amount": 10428780
+    }
+   ]
+  },
+  "dsf": "compte_resultat_smt"
+ },
+ {
+  "ref": "S-E-17-002",
+  "kind": "declaration",
+  "date": "2027-05-07",
+  "title": {
+   "fr": "DSF du SMT 2026 : bilan",
+   "en": "2026 cash-basis return: balance sheet"
+  },
+  "payload": {
+   "totals": [
+    {
+     "label": {
+      "fr": "Trésorerie : banque, caisse et Orange Money",
+      "en": "Cash: bank, till and Orange Money"
+     },
+     "amount": 10515780
+    },
+    {
+     "label": {
+      "fr": "Stock de climatiseurs",
+      "en": "Air-conditioner stock"
+     },
+     "amount": 813000
+    },
+    {
+     "label": {
+      "fr": "Capital social",
+      "en": "Share capital"
+     },
+     "amount": 100000
+    },
+    {
+     "label": {
+      "fr": "Compte courant d'associé",
+      "en": "Partner's current account"
+     },
+     "amount": 800000
+    },
+    {
+     "label": {
+      "fr": "Résultat de l'exercice",
+      "en": "Profit for the year"
+     },
+     "amount": 10428780
+    }
+   ]
+  },
+  "dsf": "bilan_smt"
  }
 ]

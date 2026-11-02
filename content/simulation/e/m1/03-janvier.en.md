@@ -40,7 +40,7 @@ Hervé buys split air conditioners for resale. The supplier, under the actual re
 
 **The rule.** 5% withholding for an IGS customer; VAT not recoverable.
 
-> **Why this choice and not another.** Why 5% and not 2%? The 2% rate is for actual-regime buyers; an IGS taxpayer suffers 5%. The withholding is tax paid in advance.
+> **Why this choice and not another.** Why 5% and not 2%? The 2% rate is for actual-regime buyers; an IGS taxpayer suffers 5%. Why count it in the cost? The CGI credits it only against corporate or personal income tax; the IGS offers no credit, so the company bears it, like VAT.
 
 **What it changes.** A 646,100 FCFA payment.
 

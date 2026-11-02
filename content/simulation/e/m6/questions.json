@@ -278,8 +278,8 @@
    "en": "Total 2026 withholdings?\n\n[[piece:S-E-12-008]]"
   },
   "explanation": {
-   "fr": "Somme des précomptes portés en 4492.",
-   "en": "Somme des précomptes portés en 4492."
+   "fr": "Somme des précomptes ; à l'IGS, ils restent dans le coût des achats (CGI art. 21 (3), S40).",
+   "en": "Somme des précomptes ; à l'IGS, ils restent dans le coût des achats (CGI art. 21 (3), S40)."
   },
   "numeric": {
    "value": 325200,
@@ -326,7 +326,7 @@
    "en": "Produits moins charges enregistrés en trésorerie."
   },
   "numeric": {
-   "value": 9940980,
+   "value": 9615780,
    "unit": "FCFA"
   }
  },
@@ -370,7 +370,7 @@
    "en": "Douze factures du fournisseur, TVA non récupérable comprise."
   },
   "numeric": {
-   "value": 7756020,
+   "value": 8081220,
    "unit": "FCFA"
   }
  },

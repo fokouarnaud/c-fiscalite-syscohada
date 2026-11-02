@@ -10,7 +10,7 @@ Hervé buys split air conditioners for resale. The supplier, under the actual re
 
 **The rule.** 5% withholding for an IGS customer; VAT not recoverable.
 
-> **Why this choice and not another.** Reminder: 5% because the company is under the IGS; VAT stays in the cost.
+> **Why this choice and not another.** Reminder: 5% because the company is under the IGS; withholding and VAT stay in the cost.
 
 **What it changes.** A 670,950 FCFA payment.
 
