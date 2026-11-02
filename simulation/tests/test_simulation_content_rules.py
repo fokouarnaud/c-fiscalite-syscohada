@@ -37,7 +37,9 @@ COMPANY_FILE_EN = "Ngono Mode SARL. Chart: [[syscohada:6011]]. VAT: [[param:tva.
 IGS_FILE = "Ets Fouda. Plan : [[syscohada:6011]]. Précompte : [[param:precompte.taux_igs]] [[cgi:art. 93 quater]]."
 IGS_FILE_EN = "Ets Fouda. Chart: [[syscohada:6011]]. Withholding: [[param:precompte.taux_igs]] [[cgi:art. 93 quater]]."
 RATES = ("key;exercice;value;unit;label_fr;label_en;source_article\ntva.taux_global;2026;19.25;%;TVA;VAT;CGI art. 142\n"
-         "precompte.taux_igs;2026;5;%;Précompte IGS;IGS withholding;CGI art. 21 (3)\n")
+         "precompte.taux_igs;2026;5;%;Précompte IGS;IGS withholding;CGI art. 21 (3)\n"
+         "igs.seuil_comptabilite;2026;10000000;FCFA;Seuil du SMT et de la DSF à l'IGS;IGS bookkeeping threshold;"
+         "CGI art. C 44\n")
 DESCRIPTION = {"fr": "SARL au réel, boutique de vêtements à Douala.", "en": "LLC under the actual regime, clothing shop."}
 IGS_DESCRIPTION = {"fr": "Établissement à l'IGS, dépôt de boissons à Yaoundé.", "en": "Sole trader under IGS, drinks depot."}
 IGS = {"slug": "b1", "body": IGS_FILE, "body_en": IGS_FILE_EN, "description": IGS_DESCRIPTION}
@@ -547,6 +549,56 @@ def test_an_individual_business_files_by_15_march_even_under_a_cime(tmp_path):
     write(root / "simulation" / "formation.json", manifest)
 
     assert any("S-A-13-001" in p and "2027-03-15" in p for p in simulation_problems(root))
+
+
+SMT_RETURN = [{"ref": f"S-A-13-{table[:3]}", "kind": "declaration", "date": "2027-05-15", "dsf": table,
+               "title": {"fr": "DSF du SMT", "en": "Cash-basis tax return"},
+               "payload": {"totals": [{"label": {"fr": "Total", "en": "Total"}, "amount": 100000}]}}
+              for table in ("bilan_smt", "compte_resultat_smt")]
+IGS_RETURN = {"ref": "S-A-13-igs", "kind": "declaration", "date": "2027-04-15",
+              "title": {"fr": "Déclaration annuelle de l'IGS", "en": "Yearly IGS return"},
+              "payload": {"totals": [{"label": {"fr": "IGS", "en": "IGS"}, "amount": 1000000}]}}
+
+
+def igs_tree(tmp_path, pieces, turnover=18000000, entries=(ENTRY,)):
+    root = tree(tmp_path, pieces=pieces, entries=entries, questions=[SMT_Q], regime="igs", centre="cfl", **IGS)
+    manifest = json.loads((root / "simulation" / "formation.json").read_text(encoding="utf-8"))
+    manifest["parties"][0]["chiffre_affaires_vise"] = turnover
+    write(root / "simulation" / "formation.json", manifest)
+    return root
+
+
+def test_the_igs_return_is_due_by_15_april(tmp_path):
+    """S38 (CGI art. C 41 modifié par la LF 2026, circulaire § 671) : déclaration et paiement de l'IGS au 15 avril."""
+    assert simulation_problems(igs_tree(tmp_path, [INVOICE, BALANCE, IGS_RETURN, *SMT_RETURN])) == []
+    late = {**IGS_RETURN, "date": "2027-04-16"}
+    problems = simulation_problems(igs_tree(tmp_path, [INVOICE, BALANCE, late, *SMT_RETURN]))
+    assert any("S-A-13-igs" in p and "2027-04-15" in p for p in problems)
+
+
+def test_an_igs_business_files_its_cash_basis_return_by_15_may(tmp_path):
+    """S38 (CGI art. C 44) : la DSF du SMT (bilan et compte de résultat, AUDCIF art. 28) est déposée au 15 mai."""
+    late = [{**piece, "date": "2027-05-16"} for piece in SMT_RETURN]
+    problems = simulation_problems(igs_tree(tmp_path, [INVOICE, BALANCE, IGS_RETURN, *late]))
+    assert any("S-A-13-bil" in p and "2027-05-15" in p for p in problems)
+
+
+def test_an_igs_business_above_10_million_files_a_cash_basis_return(tmp_path):
+    """S38 (CGI art. C 44, circulaire § 677-678) : dès 10 millions de CA, SMT obligatoire et DSF du SMT."""
+    problems = simulation_problems(igs_tree(tmp_path, [INVOICE, BALANCE, IGS_RETURN], turnover=18000000))
+    assert any("DSF du SMT" in p for p in problems)
+    assert not any("DSF du SMT" in p for p in simulation_problems(
+        igs_tree(tmp_path, [INVOICE, BALANCE, IGS_RETURN], turnover=8000000)))
+
+
+def test_an_igs_business_bears_its_purchase_withholding_as_a_cost(tmp_path):
+    """S40 (CGI art. 21 (3)) : le précompte subi n'est imputable que pour l'IS ou l'IRPP ; à l'IGS il entre dans le
+    coût d'achat et ne passe jamais en 4492."""
+    with_advance = {**ENTRY, "lines": [line("6011", "debit", 100000), line("4492", "debit", 5000),
+                                       line("401", "credit", 105000)]}
+    problems = simulation_problems(igs_tree(tmp_path, [INVOICE, BALANCE, IGS_RETURN, *SMT_RETURN],
+                                            entries=[with_advance]))
+    assert any("4492" in p and "IGS" in p for p in problems)
 
 
 def test_cash_basis_vat_needs_its_suspense_account(tmp_path):

@@ -104,3 +104,4 @@ precompte.taux_loyer;2026;10;%;Précompte sur loyers retenu par le locataire au 
 sarl.capital_minimum;2026;100000;FCFA;Capital social minimum d'une SARL au Cameroun;Minimum share capital of a Cameroonian LLC;Loi n° 2016/014 art. 2 (déroge à l'AUSCGIE art. 311)
 sarl.part_minimum;2026;5000;FCFA;Valeur nominale minimale d'une part sociale de SARL;Minimum par value of an LLC share;Loi n° 2016/014 art. 2
 sarl.seuil_notaire_facultatif;2026;1000000;FCFA;Capital jusqu'auquel le recours au notaire est facultatif pour créer une SARL;Capital up to which a notary is optional;Loi n° 2016/014 art. 4
+igs.seuil_comptabilite;2026;10000000;FCFA;Chiffre d'affaires à partir duquel un contribuable à l'IGS tient le SMT et dépose une DSF au 15 mai;Turnover from which an IGS taxpayer keeps cash-basis accounts and files a tax return by 15 May;CGI art. C 44 (circulaire LF 2026, § 677-678)

@@ -80,8 +80,9 @@ def test_an_igs_parcours_stays_under_the_smt_threshold(tmp_path):
     def igs_tree(turnover):
         return set_turnover(thresholds_tree(tmp_path, questions=[SMT_Q], regime="igs", centre="cfl", **IGS), turnover)
 
-    assert not any("SMT" in p for p in simulation_problems(igs_tree(42000000)))
-    assert any("SMT" in p and "60000000" in p for p in simulation_problems(igs_tree(65000000)))
+    # « hors du SMT » : le seuil de l'AUDCIF ; la DSF du SMT exigée dès 10 millions (S38) a son propre test.
+    assert not any("hors du SMT" in p for p in simulation_problems(igs_tree(42000000)))
+    assert any("hors du SMT" in p and "60000000" in p for p in simulation_problems(igs_tree(65000000)))
 
 
 def test_a_procedure_may_cite_a_registered_official_web_source(partie):

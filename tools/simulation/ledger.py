@@ -145,10 +145,19 @@ TAX_RETURN_DEADLINES = {"dge": (3, 15), "cime": (4, 15), "cfl": (5, 15)}
 
 def tax_return_deadline(centre, exercice, regime="reel", forme="societe"):
     """Date limite de la déclaration de l'exercice : CGI art. 18 (1) selon le centre de rattachement (DGE, CIME,
-    centre de fiscalité locale) pour l'IS ; 15 mars pour la déclaration annuelle d'un contribuable à l'IGS (art. C 41)
-    et pour celle des résultats d'un exploitant individuel au réel (art. 74 et 91)."""
-    month, day = (3, 15) if regime != "reel" or forme == "individuelle" else TAX_RETURN_DEADLINES[centre]
+    centre de fiscalité locale) pour l'IS ; 15 avril pour la déclaration annuelle et le paiement de l'IGS (art. C 41
+    modifié par la LF 2026, S38) ; 15 mars pour la déclaration des résultats d'un exploitant individuel au réel
+    (art. 74 et 91)."""
+    if regime != "reel":
+        month, day = 4, 15
+    else:
+        month, day = (3, 15) if forme == "individuelle" else TAX_RETURN_DEADLINES[centre]
     return datetime.date(exercice + 1, month, day)
+
+
+def smt_return_deadline(exercice):
+    """Date limite de la DSF du système minimal de trésorerie d'un contribuable à l'IGS : 15 mai (CGI art. C 44, S38)."""
+    return datetime.date(exercice + 1, 5, 15)
 
 
 def journal_mismatches(entries, questions):

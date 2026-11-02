@@ -127,9 +127,12 @@ def simulation_problems(base, partie, questions, accounts, rates=None):
         # US-89 (CGI art. 18 (1), art. C 41) : la déclaration de l'exercice est datée au plus tard à son échéance.
         deadline = ledger.tax_return_deadline(partie["centre_impots"], 2026, partie.get("regime", "reel"),
                                               partie.get("forme", "societe"))
-        problems += [f"{piece['ref']} : déclaration du {piece['date']} après l'échéance du {deadline.isoformat()}"
+        # S38 (art. C 44) : la DSF du SMT d'un contribuable à l'IGS a sa propre échéance, le 15 mai.
+        smt_deadline = ledger.smt_return_deadline(2026)
+        problems += [f"{piece['ref']} : déclaration du {piece['date']} après l'échéance du {limit.isoformat()}"
                      for piece in pieces if piece["kind"] == "declaration" and piece["date"] >= "2027-01-01"
-                     and datetime.date.fromisoformat(piece["date"]) > deadline]
+                     for limit in [smt_deadline if piece.get("dsf") in SMT_DSF_TABLES else deadline]
+                     if datetime.date.fromisoformat(piece["date"]) > limit]
     bridge = [q for q in questions if q.get("passerelle")]
     if partie["slug"] == "a" and bridge:
         # US-89 (S21, S23) : dès que la passerelle est rédigée, elle met en scène ses six éléments, chacun sur une pièce.
@@ -139,7 +142,14 @@ def simulation_problems(base, partie, questions, accounts, rates=None):
                      if not PIECE_REFS.search((q.get("prompt") or {}).get("fr", ""))]
     if partie.get("regime", "reel") != "reel":
         # US-90 (S14) : à l'IGS, le SMT remplace la DSF normale.
-        problems += [f"{piece['ref']} : DSF normale dans un parcours à l'IGS" for piece in pieces if piece.get("dsf")]
+        problems += [f"{piece['ref']} : DSF normale dans un parcours à l'IGS" for piece in pieces
+                     if piece.get("dsf") and piece["dsf"] not in SMT_DSF_TABLES]
+        threshold = (rates or {}).get("igs.seuil_comptabilite")
+        if threshold is not None and partie.get("chiffre_affaires_vise", 0) >= threshold and not any(
+                piece.get("dsf") in SMT_DSF_TABLES for piece in pieces):
+            # S38 (CGI art. C 44, circulaire § 677-678) : dès 10 millions de CA, SMT et DSF du SMT au 15 mai.
+            problems.append("DSF du SMT absente : obligatoire à l'IGS dès "
+                            f"{int(threshold)} FCFA de chiffre d'affaires (CGI art. C 44)")
     if partie["slug"] == "d":
         # US-92 (S10) : le parcours D explique le contraste de la retenue à 11 % (10 % + CAC, entreprise hors fichier).
         rates = [(q.get("calcul") or {}).get("args", [None, None])[1] for q in questions
@@ -147,7 +157,7 @@ def simulation_problems(base, partie, questions, accounts, rates=None):
         if 10 not in rates:
             problems.append("parcours D sans la retenue de contraste à 11 % (taux 10 % + CAC)")
     problems += [f"{piece['ref']} : tableau « {piece['dsf']} » hors des tableaux de DSF retenus (S12)"
-                 for piece in pieces if piece.get("dsf") and piece["dsf"] not in DSF_TABLES]
+                 for piece in pieces if piece.get("dsf") and piece["dsf"] not in DSF_TABLES + SMT_DSF_TABLES]
     # US-87 (S6) : les frais de constitution (pièce « statuts ») vont en charges, jamais en immobilisation (classe 2).
     articles = {piece["ref"] for piece in pieces if piece["kind"] == "statuts"}
     if articles and not any(q.get("piege") == "frais_etablissement" for q in questions):
@@ -187,6 +197,8 @@ DELIVERY_ORDER = ("a", "e", "b3", "c", "d", "b1", "b2")  # S20, S29
 BRIDGE_ITEMS = ("amendes", "amortissement_excedentaire", "dons_excedentaires", "charge_sans_piece",
                 "impot_societes", "reprise_provision_taxee")
 DSF_TABLES = ("bilan", "compte_resultat", "passage", "liquidation_is")
+# S38 (CGI art. C 44 ; AUDCIF art. 28) : DSF du SMT d'un contribuable à l'IGS, bilan et compte de résultat.
+SMT_DSF_TABLES = ("bilan_smt", "compte_resultat_smt")
 
 
 def manifest_problems(manifest):
@@ -334,6 +346,9 @@ def regime_problems(regime, entries, questions):
         if entry["date"] < "2027-01-01":
             problems += [f"{entry['piece']} : compte de TVA {line['account']} chez un contribuable à l'IGS"
                          for line in entry["lines"] if line["account"].startswith(VAT_ACCOUNTS)]
+            # S40 (CGI art. 21 (3)) : l'imputation du précompte ne vise que l'IS et l'IRPP ; à l'IGS, c'est un coût.
+            problems += [f"{entry['piece']} : précompte porté en 4492 chez un contribuable à l'IGS (S40 : coût d'achat)"
+                         for line in entry["lines"] if line["account"] == "4492"]
         elif regime == "igs" or entry["date"] != "2027-01-01":
             problems.append(f"{entry['piece']} : écriture du {entry['date']} ; la bascule au réel se fait au "
                             f"1er janvier 2027 (bilan d'ouverture) et le parcours s'arrête là")

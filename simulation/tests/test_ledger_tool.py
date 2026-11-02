@@ -160,11 +160,19 @@ def test_overpaid_instalments_leave_a_credit_not_a_negative_tax():
 
 def test_the_tax_return_deadline_depends_on_the_tax_office():
     """US-89 (CGI art. 18 (1)) : 15 mars à la DGE, 15 avril au CIME, 15 mai au centre de fiscalité locale ; une
-    entreprise à l'IGS dépose sa déclaration annuelle au plus tard le 15 mars (art. C 41)."""
+    contribuable à l'IGS dépose sa déclaration annuelle et paie l'IGS au plus tard le 15 avril (art. C 41 modifié
+    par la LF 2026, circulaire § 671, S38), qu'il soit une société ou une personne physique."""
     assert ledger.tax_return_deadline("dge", 2026) == datetime.date(2027, 3, 15)
     assert ledger.tax_return_deadline("cime", 2026) == datetime.date(2027, 4, 15)
     assert ledger.tax_return_deadline("cfl", 2026) == datetime.date(2027, 5, 15)
-    assert ledger.tax_return_deadline("cfl", 2026, regime="igs") == datetime.date(2027, 3, 15)
+    assert ledger.tax_return_deadline("cfl", 2026, regime="igs") == datetime.date(2027, 4, 15)
+    assert ledger.tax_return_deadline("cfl", 2026, regime="igs", forme="individuelle") == datetime.date(2027, 4, 15)
+
+
+def test_the_cash_basis_tax_return_is_due_by_15_may():
+    """S38 (CGI art. C 44, circulaire § 677-678) : à l'IGS, dès 10 millions de CA, DSF du SMT au plus tard le
+    15 mai."""
+    assert ledger.smt_return_deadline(2026) == datetime.date(2027, 5, 15)
 
 
 def test_an_individual_business_files_its_results_by_15_march_whatever_its_office():
