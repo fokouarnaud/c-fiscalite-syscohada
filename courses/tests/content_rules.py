@@ -160,6 +160,9 @@ def simulation_problems(base, partie, questions, accounts, rates=None):
                  for piece in pieces if piece.get("dsf") and piece["dsf"] not in DSF_TABLES + SMT_DSF_TABLES]
     # US-87 (S6) : les frais de constitution (pièce « statuts ») vont en charges, jamais en immobilisation (classe 2).
     articles = {piece["ref"] for piece in pieces if piece["kind"] == "statuts"}
+    # US-91 (S41) : une écriture des statuts qui crédite le capital (101) constate des apports, pas des frais.
+    contributions = {id(entry) for entry in entries if entry["piece"] in articles
+                     and any(l["account"].startswith("101") and l["side"] == "credit" for l in entry["lines"])}
     if articles and not any(q.get("piege") == "frais_etablissement" for q in questions):
         problems.append("frais de constitution sans question piège sur l'ancienne immobilisation des frais d'établissement")
     # US-88 : toute dotation calculée par une question figure au 31 décembre dans le livre officiel (comptes 681).
@@ -179,7 +182,7 @@ def simulation_problems(base, partie, questions, accounts, rates=None):
             problems.append(f"{question['id']} : stock final {question['numeric']['value']} absent du livre officiel "
                             f"au 31 décembre (comptes 3)")
     problems += [f"{entry['piece']} : frais de constitution portés au compte {line['account']} au lieu des charges"
-                 for entry in entries if entry["piece"] in articles
+                 for entry in entries if entry["piece"] in articles and id(entry) not in contributions
                  for line in entry["lines"] if line["side"] == "debit" and line["account"].startswith("2")]
     for piece in pieces:
         if piece["kind"] == "balance":

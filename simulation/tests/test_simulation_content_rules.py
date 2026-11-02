@@ -243,6 +243,21 @@ def test_set_up_costs_are_expensed(tmp_path):
     assert not any("S-A-01-000" in p for p in problems)
 
 
+def test_a_contribution_in_kind_in_the_articles_is_not_a_set_up_cost(tmp_path):
+    """US-87 et US-91 (S41) : les statuts de B2 portent l'apport en nature d'un tricycle (2458) contre le capital
+    (1013) ; ce n'est pas un frais de constitution immobilisé."""
+    root = set_up_tree(tmp_path, "6324")
+    write(root / "referentiel" / "syscohada.csv", "code;label_fr;label_en\n6011;Achats;Purchases\n"
+          "401;Fournisseurs;Suppliers\n6324;Honoraires;Fees\n2458;Autres matériels de transport;Other transport\n"
+          "1013;Capital souscrit, appelé, versé;Paid-up capital\n")
+    write(root / "simulation" / "a" / "ledger.json", [ENTRY, {"date": "2026-01-02", "piece": "S-A-01-000", "lines": [
+        line("2458", "debit", 350000), line("1013", "credit", 350000)]}])
+
+    problems = simulation_problems(root)
+
+    assert not any("S-A-01-000" in p for p in problems)
+
+
 def test_set_up_costs_are_never_capitalised(tmp_path):
     """US-87 (S6) : le SYSCOHADA révisé n'immobilise plus les frais d'établissement."""
     problems = simulation_problems(set_up_tree(tmp_path, "2181"))
